@@ -1,13 +1,95 @@
-import React from 'react';
-import { Upload, Book, MessageSquare, Bot, Briefcase, Folder, FileText, Database, History, Filter, Search } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Upload, Book, MessageSquare, Bot, Briefcase, Folder, FileText, Database, History, Filter, Search, Loader2 } from 'lucide-react';
 import { MOCK_SOURCES, MOCK_DOCUMENTS } from '../mockData';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 import { cn } from '@/lib/utils';
+import { importObsidianFile, importChatGPTFile } from '../services/apiService';
 
 export default function ImportView() {
+  const [importedDocs, setImportedDocs] = useState<any[]>([]);
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadError, setUploadError] = useState<string | null>(null);
+  const [userEmail, setUserEmail] = useState<string>('');
+  const [emailSaved, setEmailSaved] = useState(false);
+
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const savedEmail = localStorage.getItem('cr_session_email');
+    if (savedEmail) {
+      setUserEmail(savedEmail);
+      setEmailSaved(true);
+      const savedDocs = localStorage.getItem('cr_docs_' + savedEmail);
+      if (savedDocs) {
+        try {
+          setImportedDocs(JSON.parse(savedDocs));
+        } catch (e) {
+          console.error("Failed to parse saved docs");
+        }
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    if (emailSaved && userEmail) {
+      localStorage.setItem('cr_docs_' + userEmail, JSON.stringify(importedDocs));
+    }
+  }, [importedDocs, userEmail, emailSaved]);
+
+  const handleSaveSession = () => {
+    if (userEmail.trim()) {
+      localStorage.setItem('cr_session_email', userEmail.trim());
+      setEmailSaved(true);
+    }
+  };
+
+  const handleClearSession = () => {
+    localStorage.removeItem('cr_session_email');
+    setUserEmail('');
+    setEmailSaved(false);
+    setImportedDocs([]);
+  };
+
+  const handleFileUpload = async (files: FileList | null) => {
+    if (!files || files.length === 0) return;
+    setIsUploading(true);
+    setUploadError(null);
+    const newDocs: any[] = [];
+
+    for (const file of Array.from(files)) {
+      try {
+        if (file.name.endsWith('.md')) {
+          const doc = await importObsidianFile(file);
+          newDocs.push(doc);
+        } else if (file.name.endsWith('.json')) {
+          const docs = await importChatGPTFile(file);
+          newDocs.push(...docs);
+        } else {
+          setUploadError(`Unsupported file type: ${file.name}. Use .md or .json`);
+        }
+      } catch (err: any) {
+        setUploadError(err.message ?? 'Upload failed');
+      }
+    }
+
+    setImportedDocs(prev => [...prev, ...newDocs]);
+    setIsUploading(false);
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e: React.DragEvent) => {
+    e.preventDefault();
+    handleFileUpload(e.dataTransfer.files);
+  };
+
+  const displayDocs = importedDocs.length > 0 ? importedDocs : MOCK_DOCUMENTS;
+
   return (
     <div className="px-8 py-12">
       {/* Header Section */}
@@ -24,12 +106,18 @@ export default function ImportView() {
         {/* Central Drop Zone */}
         <div className="lg:col-span-8 bg-white rounded-[2rem] p-8 shadow-sm relative overflow-hidden group border border-outline-variant/10">
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary-fixed opacity-20 blur-[80px] pointer-events-none"></div>
-          <div className="relative h-full flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 rounded-[1.5rem] py-16 px-6 group-hover:border-primary/40 transition-colors bg-surface-container-low/30">
+          <div
+            className="relative h-full flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 rounded-[1.5rem] py-16 px-6 group-hover:border-primary/40 transition-colors bg-surface-container-low/30"
+            onDragOver={handleDragOver}
+            onDrop={handleDrop}
+          >
             <div className="w-20 h-20 bg-primary-fixed text-primary rounded-3xl flex items-center justify-center mb-6 shadow-inner">
-              <Upload className="w-10 h-10" />
+              {isUploading ? <Loader2 className="w-10 h-10 animate-spin" /> : <Upload className="w-10 h-10" />}
             </div>
             <h3 className="text-2xl font-bold mb-2">Drop data to begin</h3>
-            <p className="text-slate-500 text-center mb-8">Support for zip, folder, json, txt, md, csv</p>
+            <p className="text-slate-500 text-center mb-8">
+              {isUploading ? "Importing files..." : "Support for zip, folder, json, txt, md, csv"}
+            </p>
             <div className="flex flex-wrap justify-center gap-3">
               {['.ZIP', '.JSON', '.MD', '.CSV'].map((ext) => (
                 <span key={ext} className="px-4 py-2 bg-white rounded-full text-xs font-bold text-slate-600 border border-outline-variant/20 shadow-sm">
@@ -37,9 +125,23 @@ export default function ImportView() {
                 </span>
               ))}
             </div>
-            <Button className="mt-10 px-8 py-6 bg-on-surface text-white rounded-xl font-bold hover:bg-slate-800 transition-colors">
-              Browse Files
+
+            <input
+              type="file"
+              multiple
+              accept=".md,.json"
+              className="hidden"
+              ref={fileInputRef}
+              onChange={(e) => handleFileUpload(e.target.files)}
+            />
+            <Button
+              className="mt-10 px-8 py-6 bg-on-surface text-white rounded-xl font-bold hover:bg-slate-800 transition-colors"
+              onClick={() => fileInputRef.current?.click()}
+              disabled={isUploading}
+            >
+              {isUploading ? "Uploading..." : "Browse Files"}
             </Button>
+            {uploadError && <div className="mt-4 text-red-500 font-bold">{uploadError}</div>}
           </div>
         </div>
 
@@ -76,7 +178,34 @@ export default function ImportView() {
                 </div>
               ))}
             </div>
-            <Button variant="link" className="mt-auto pt-6 text-sm font-bold text-primary flex items-center justify-center gap-2 hover:translate-x-1 transition-transform no-underline">
+
+            {/* Email Session UI */}
+            <div className="mt-6 pt-6 border-t border-outline-variant/20 flex flex-col gap-2">
+              {!emailSaved ? (
+                <>
+                  <input
+                    type="email"
+                    placeholder="Enter email to save/restore session"
+                    className="w-full text-sm p-2 rounded border border-outline-variant/30"
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleSaveSession()}
+                  />
+                  <Button onClick={handleSaveSession} variant="secondary" size="sm" className="w-full">
+                    Save Session
+                  </Button>
+                </>
+              ) : (
+                <div className="text-sm text-green-600 flex flex-col gap-2">
+                  <span>✓ Session saved for {userEmail}</span>
+                  <Button onClick={handleClearSession} variant="link" size="sm" className="text-red-500 p-0 h-auto self-start">
+                    Clear Session
+                  </Button>
+                </div>
+              )}
+            </div>
+
+            <Button variant="link" className="mt-auto pt-4 text-sm font-bold text-primary flex items-center justify-center gap-2 hover:translate-x-1 transition-transform no-underline">
               Review Mapping <Upload className="w-4 h-4 rotate-90" />
             </Button>
           </div>
@@ -111,24 +240,33 @@ export default function ImportView() {
               </TableRow>
             </TableHeader>
             <TableBody className="divide-y divide-outline-variant/10">
-              {MOCK_DOCUMENTS.map((doc) => (
-                <TableRow key={doc.id} className="hover:bg-surface-container-low/20 transition-colors group">
-                  <TableCell className="px-6 py-5">
-                    <div className="flex items-center gap-3">
-                      {doc.type.includes('Vault') ? <Folder className="w-5 h-5 text-primary" /> : <FileText className="w-5 h-5 text-secondary" />}
-                      <span className="font-semibold text-on-surface">{doc.name}</span>
-                    </div>
-                  </TableCell>
-                  <TableCell className="px-6 py-5 text-sm text-slate-600">{doc.type}</TableCell>
-                  <TableCell className="px-6 py-5 text-sm text-slate-600">{doc.size}</TableCell>
-                  <TableCell className="px-6 py-5 text-sm text-slate-600">{doc.date}</TableCell>
-                  <TableCell className="px-6 py-5 text-right">
-                    <Button variant="link" className="text-primary font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity p-0 h-auto">
-                      View Details
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              ))}
+              {displayDocs.map((doc: any, index: number) => {
+                const isImported = importedDocs.length > 0;
+                const name = isImported ? doc.title : doc.name;
+                const type = isImported ? doc.source?.system : doc.type;
+                const size = isImported ? (doc.content?.cleaned_markdown?.length + " chars") : doc.size;
+                const date = isImported ? (doc.timestamps?.ingested_at || "just now") : doc.date;
+                const keyId = isImported ? doc.id : doc.id;
+
+                return (
+                  <TableRow key={keyId + index} className="hover:bg-surface-container-low/20 transition-colors group">
+                    <TableCell className="px-6 py-5">
+                      <div className="flex items-center gap-3">
+                        {String(type).toLowerCase().includes('vault') ? <Folder className="w-5 h-5 text-primary" /> : <FileText className="w-5 h-5 text-secondary" />}
+                        <span className="font-semibold text-on-surface">{name}</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="px-6 py-5 text-sm text-slate-600">{type}</TableCell>
+                    <TableCell className="px-6 py-5 text-sm text-slate-600">{size}</TableCell>
+                    <TableCell className="px-6 py-5 text-sm text-slate-600">{date}</TableCell>
+                    <TableCell className="px-6 py-5 text-right">
+                      <Button variant="link" className="text-primary font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity p-0 h-auto">
+                        View Details
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
             </TableBody>
           </Table>
         </div>

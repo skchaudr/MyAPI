@@ -8,19 +8,26 @@ import { Input } from './ui/input';
 import { Badge } from './ui/badge';
 import { Switch } from './ui/switch';
 import { ScrollArea } from './ui/scroll-area';
-import { distillContent } from '../services/geminiService';
+import { distillContent } from '../services/apiService';
 import ReactMarkdown from 'react-markdown';
 
 export default function RefineView() {
   const [selectedDoc, setSelectedDoc] = useState<Document>(MOCK_DOCUMENTS[0]);
   const [isDistilling, setIsDistilling] = useState(false);
+  const [apiError, setApiError] = useState<string | null>(null);
   const [summary, setSummary] = useState<string | undefined>(selectedDoc.summary);
 
   const handleDistill = async () => {
     setIsDistilling(true);
-    const result = await distillContent(selectedDoc.content);
-    setSummary(result);
-    setIsDistilling(false);
+    setApiError(null);
+    try {
+      const result = await distillContent(selectedDoc.content);
+      setSummary(result);
+    } catch (err: any) {
+      setApiError(err.message ?? "API unavailable — is the server running?");
+    } finally {
+      setIsDistilling(false);
+    }
   };
 
   return (
@@ -176,6 +183,7 @@ export default function RefineView() {
               <p className="text-[10px] text-slate-400 leading-relaxed">
                 {isDistilling ? "Processing content..." : "Auto-generate a 3-sentence semantic summary for embedding indexes."}
               </p>
+              {apiError && <div className="text-red-500 text-xs font-bold mt-2">{apiError}</div>}
             </div>
           </div>
 
