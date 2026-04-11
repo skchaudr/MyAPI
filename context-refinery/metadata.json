@@ -1,0 +1,5 @@
+{
+  "name": "Context Refinery",
+  "description": "A powerful lab for performantly ingesting, refining, and preparing large datasets for RAG or human readability.",
+  "requestFramePermissions": []
+}
