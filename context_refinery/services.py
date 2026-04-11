@@ -3,7 +3,7 @@ import json
 import re
 from typing import Dict, Any
 
-import google.generativeai as genai
+from google import genai
 
 # Doc types must match CanonicalDoc.doc_type values
 _VALID_DOC_TYPES = {"conversation", "note", "spec", "log", "article", "other"}
@@ -24,16 +24,15 @@ DOCUMENT:
 
 
 class GeminiService:
-    def __init__(self, model_name: str = "gemini-1.5-flash"):
+    def __init__(self, model_name: str = "gemini-2.0-flash"):
         self.api_key = os.environ.get("GEMINI_API_KEY")
         self.has_api_key = bool(self.api_key)
         self.model_name = model_name
 
         if self.has_api_key:
-            genai.configure(api_key=self.api_key)
-            self._model = genai.GenerativeModel(model_name)
+            self._client = genai.Client(api_key=self.api_key)
         else:
-            self._model = None
+            self._client = None
 
     def enrich(self, content: str) -> Dict[str, Any]:
         """
@@ -54,7 +53,10 @@ class GeminiService:
 
         prompt = _PROMPT_TEMPLATE.format(content=truncated)
 
-        response = self._model.generate_content(prompt)
+        response = self._client.models.generate_content(
+            model=self.model_name,
+            contents=prompt,
+        )
         raw = response.text.strip()
 
         # Strip markdown fences if the model wraps its output anyway
