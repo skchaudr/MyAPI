@@ -7,3 +7,5 @@ dist/
 build/
 coverage/
 .tmp/
+__pycache__
+*.pyc
