@@ -1,2 +1,4 @@
-pytest
-pyyaml
+google-generativeai>=0.8.0
+pyyaml>=6.0
+pytest>=8.0
+pytest-mock>=3.0
