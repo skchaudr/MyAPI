@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "A project for utilizing a headless coach instance and a RAG approach to utilizing my thousands of Obsidian notes and exported AI conversations to create an efficient, fast, accurate context database of who I am",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skchaudr/MyAPI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/skchaudr/MyAPI/issues"
+  },
+  "homepage": "https://github.com/skchaudr/MyAPI#readme",
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.6.0",
+    "gray-matter": "^4.0.3",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.9",
+    "typescript": "^6.0.2"
+  }
+}
