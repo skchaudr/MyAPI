@@ -1,6 +1,12 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 .env
 .env.*
 .DS_Store
+.tmp/
+node_modules/
+dist/
+build/
+coverage/
