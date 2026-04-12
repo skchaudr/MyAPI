@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { Upload, Book, MessageSquare, Bot, Briefcase, Folder, FileText, Database, History, Filter, Search, Loader2 } from 'lucide-react';
 import { MOCK_SOURCES, MOCK_DOCUMENTS } from '../mockData';
 import { Button } from './ui/button';
@@ -7,51 +7,23 @@ import { Badge } from './ui/badge';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 import { cn } from '@/lib/utils';
 import { importObsidianFile, importChatGPTFile } from '../services/apiService';
+import { useDocuments } from '../contexts/DocumentContext';
 
 export default function ImportView() {
-  const [importedDocs, setImportedDocs] = useState<any[]>([]);
+  const {
+    importedDocs,
+    setImportedDocs,
+    userEmail,
+    setUserEmail,
+    emailSaved,
+    handleSaveSession,
+    handleClearSession,
+  } = useDocuments();
+
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState<string | null>(null);
-  const [userEmail, setUserEmail] = useState<string>('');
-  const [emailSaved, setEmailSaved] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    const savedEmail = localStorage.getItem('cr_session_email');
-    if (savedEmail) {
-      setUserEmail(savedEmail);
-      setEmailSaved(true);
-      const savedDocs = localStorage.getItem('cr_docs_' + savedEmail);
-      if (savedDocs) {
-        try {
-          setImportedDocs(JSON.parse(savedDocs));
-        } catch (e) {
-          console.error("Failed to parse saved docs");
-        }
-      }
-    }
-  }, []);
-
-  useEffect(() => {
-    if (emailSaved && userEmail) {
-      localStorage.setItem('cr_docs_' + userEmail, JSON.stringify(importedDocs));
-    }
-  }, [importedDocs, userEmail, emailSaved]);
-
-  const handleSaveSession = () => {
-    if (userEmail.trim()) {
-      localStorage.setItem('cr_session_email', userEmail.trim());
-      setEmailSaved(true);
-    }
-  };
-
-  const handleClearSession = () => {
-    localStorage.removeItem('cr_session_email');
-    setUserEmail('');
-    setEmailSaved(false);
-    setImportedDocs([]);
-  };
 
   const handleFileUpload = async (files: FileList | null) => {
     if (!files || files.length === 0) return;

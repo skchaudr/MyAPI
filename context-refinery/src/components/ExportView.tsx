@@ -1,12 +1,127 @@
-import React from 'react';
-import { Database, BookOpen, CheckCircle, Download, FileJson, FileText, Archive, RefreshCw, FileCode, Printer } from 'lucide-react';
+import React, { useState } from 'react';
+import { Database, BookOpen, CheckCircle, Download, FileJson, FileText, Archive, RefreshCw, FileCode, Printer, Loader2 } from 'lucide-react';
 import { MOCK_OUTPUT_FILES } from '../mockData';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { cn } from '@/lib/utils';
+import { useDocuments } from '../contexts/DocumentContext';
+import JSZip from 'jszip';
 
 export default function ExportView() {
+  const { importedDocs } = useDocuments();
+  const [isExporting, setIsExporting] = useState(false);
+
+  // Statistics Calculation
+  const isImported = importedDocs.length > 0;
+  const totalItems = isImported ? importedDocs.length : 2450;
+
+  const processedTokens = isImported
+    ? Math.floor(importedDocs.reduce((acc, doc) => acc + (doc.content?.raw_text?.length || 0), 0) / 4)
+    : "1.2M";
+
+  const activeSources = isImported
+    ? new Set(importedDocs.map(doc => doc.source?.system)).size
+    : 4;
+
+  const handleZipExport = async () => {
+    if (!isImported) return;
+    setIsExporting(true);
+    try {
+      const zip = new JSZip();
+
+      importedDocs.forEach((doc, index) => {
+        let frontmatter = `---\n`;
+        frontmatter += `title: "${doc.title?.replace(/"/g, '\\"') || 'Untitled'}"\n`;
+        if (doc.provenance?.author) frontmatter += `author: "${doc.provenance.author}"\n`;
+        if (doc.tags?.length) frontmatter += `tags: [${doc.tags.map((t: string) => `"${t}"`).join(', ')}]\n`;
+        if (doc.doc_type) frontmatter += `doc_type: "${doc.doc_type}"\n`;
+        if (doc.status) frontmatter += `status: "${doc.status}"\n`;
+        frontmatter += `---\n\n`;
+
+        const content = frontmatter + (doc.content?.cleaned_markdown || doc.content?.raw_text || '');
+        const filename = `${doc.title?.replace(/[^a-z0-9]/gi, '_').toLowerCase() || 'doc'}_${index}.md`;
+
+        zip.file(filename, content);
+      });
+
+      const blob = await zip.generateAsync({ type: 'blob' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'context_refinery_export.zip';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (e) {
+      console.error("Export failed", e);
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
+  const handleHtmlExport = () => {
+    if (!isImported) return;
+
+    let htmlContent = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Context Refinery Export</title>
+        <style>
+          body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 2rem; }
+          h1, h2, h3 { color: #111; }
+          .doc-container { margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 1px solid #eee; }
+          .meta { font-size: 0.85rem; color: #666; margin-bottom: 1.5rem; padding: 1rem; background: #f9f9f9; border-radius: 4px; }
+          .toc { margin-bottom: 3rem; padding: 1.5rem; background: #f5f5f5; border-radius: 8px; }
+          .toc ul { list-style: none; padding-left: 0; }
+          .toc li { margin-bottom: 0.5rem; }
+          .toc a { color: #0066cc; text-decoration: none; }
+          .toc a:hover { text-decoration: underline; }
+        </style>
+      </head>
+      <body>
+        <h1>Context Refinery Export</h1>
+        <div class="toc">
+          <h2>Table of Contents</h2>
+          <ul>
+            ${importedDocs.map((doc, i) => `<li><a href="#doc-${i}">${doc.title || `Document ${i}`}</a></li>`).join('')}
+          </ul>
+        </div>
+    `;
+
+    importedDocs.forEach((doc, i) => {
+      // NOTE: We're rendering raw markdown as text for simplicity in this pure frontend implementation without a markdown parser library dependency in HTML.
+      // In a real scenario you'd parse the markdown to HTML first.
+      htmlContent += `
+        <div class="doc-container" id="doc-${i}">
+          <h2>${doc.title || `Document ${i}`}</h2>
+          <div class="meta">
+            <strong>Source:</strong> ${doc.source?.system || 'Unknown'}<br>
+            <strong>Tags:</strong> ${doc.tags?.join(', ') || 'None'}<br>
+            <strong>Date:</strong> ${doc.timestamps?.ingested_at || 'Unknown'}
+          </div>
+          <pre style="white-space: pre-wrap; font-family: inherit;">${doc.content?.cleaned_markdown || doc.content?.raw_text || ''}</pre>
+        </div>
+      `;
+    });
+
+    htmlContent += `</body></html>`;
+
+    const blob = new Blob([htmlContent], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'context_refinery_export.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   return (
     <div className="px-8 py-12">
       <div className="max-w-6xl mx-auto">
@@ -21,21 +136,21 @@ export default function ExportView() {
           <Card className="p-6 rounded-xl shadow-sm flex flex-col justify-between border-l-4 border-primary bg-white">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Total Items</span>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold text-primary">2,450</span>
+              <span className="text-3xl font-extrabold text-primary">{totalItems}</span>
               <span className="text-xs text-secondary font-medium">Ready</span>
             </div>
           </Card>
           <Card className="p-6 rounded-xl shadow-sm flex flex-col justify-between bg-white">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Processed Tokens</span>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold text-on-surface">1.2M</span>
+              <span className="text-3xl font-extrabold text-on-surface">{processedTokens}</span>
               <span className="text-xs text-slate-400">Distilled</span>
             </div>
           </Card>
           <Card className="p-6 rounded-xl shadow-sm flex flex-col justify-between bg-white">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Active Sources</span>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-extrabold text-on-surface">4</span>
+              <span className="text-3xl font-extrabold text-on-surface">{activeSources}</span>
               <span className="text-xs text-slate-400">Channels</span>
             </div>
           </Card>
@@ -68,9 +183,13 @@ export default function ExportView() {
                 <CheckCircle className="w-4 h-4 text-secondary" /> Relationship Preservation
               </li>
             </ul>
-            <Button className="w-full py-6 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all">
-              <Archive className="w-5 h-5" />
-              Generate Zipped MD
+            <Button
+              className="w-full py-6 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50"
+              onClick={handleZipExport}
+              disabled={isExporting || !isImported}
+            >
+              {isExporting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Archive className="w-5 h-5" />}
+              {isExporting ? 'Generating...' : 'Generate Zipped MD'}
             </Button>
           </Card>
 
@@ -94,7 +213,12 @@ export default function ExportView() {
               </li>
             </ul>
             <div className="grid grid-cols-2 gap-4">
-              <Button variant="secondary" className="bg-surface-container-high text-on-surface py-6 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-surface-container-highest active:scale-[0.98] transition-all">
+              <Button
+                variant="secondary"
+                className="bg-surface-container-high text-on-surface py-6 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-surface-container-highest active:scale-[0.98] transition-all disabled:opacity-50"
+                onClick={handleHtmlExport}
+                disabled={!isImported}
+              >
                 <FileCode className="w-5 h-5" />
                 Web HTML
               </Button>

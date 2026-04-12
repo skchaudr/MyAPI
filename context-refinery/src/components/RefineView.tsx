@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, FileText, Bot, History, Circle, ChevronRight, FileSearch, Verified, Edit3, Archive, CheckCircle, Sparkles, Wand2, Trash2, X } from 'lucide-react';
 import { MOCK_DOCUMENTS } from '../mockData';
 import { Document } from '../types';
@@ -10,18 +10,34 @@ import { Switch } from './ui/switch';
 import { ScrollArea } from './ui/scroll-area';
 import { distillContent } from '../services/apiService';
 import ReactMarkdown from 'react-markdown';
+import { useDocuments } from '../contexts/DocumentContext';
 
 export default function RefineView() {
-  const [selectedDoc, setSelectedDoc] = useState<Document>(MOCK_DOCUMENTS[0]);
+  const { importedDocs } = useDocuments();
+  const displayDocs = importedDocs.length > 0 ? importedDocs : MOCK_DOCUMENTS;
+
+  const [selectedDoc, setSelectedDoc] = useState<any>(displayDocs[0]);
   const [isDistilling, setIsDistilling] = useState(false);
   const [apiError, setApiError] = useState<string | null>(null);
-  const [summary, setSummary] = useState<string | undefined>(selectedDoc.summary);
+  const [summary, setSummary] = useState<string | undefined>(selectedDoc?.summary);
+
+  useEffect(() => {
+    const newDisplayDocs = importedDocs.length > 0 ? importedDocs : MOCK_DOCUMENTS;
+    setSelectedDoc(newDisplayDocs[0]);
+  }, [importedDocs]);
+
+  useEffect(() => {
+    setSummary(selectedDoc?.summary);
+  }, [selectedDoc]);
 
   const handleDistill = async () => {
     setIsDistilling(true);
     setApiError(null);
     try {
-      const result = await distillContent(selectedDoc.content);
+      const contentToDistill = importedDocs.length > 0
+        ? (selectedDoc.content?.cleaned_markdown || selectedDoc.content?.raw_text)
+        : selectedDoc.content;
+      const result = await distillContent(contentToDistill);
       setSummary(result);
     } catch (err: any) {
       setApiError(err.message ?? "API unavailable — is the server running?");
@@ -44,37 +60,44 @@ export default function RefineView() {
           </div>
         </div>
         <ScrollArea className="flex-1 px-3 space-y-1 pb-10">
-          {MOCK_DOCUMENTS.map((doc) => (
-            <div 
-              key={doc.id}
-              onClick={() => setSelectedDoc(doc)}
-              className={cn(
-                "p-3 rounded-xl cursor-pointer transition-all group mb-1",
-                selectedDoc.id === doc.id 
-                  ? "bg-white shadow-sm border border-outline-variant/30" 
-                  : "hover:bg-surface-container-low border border-transparent"
-              )}
-            >
-              <div className="flex items-start gap-3">
-                <div className={cn(
-                  "p-1.5 rounded-lg",
-                  doc.type.includes('Vault') ? "bg-purple-50 text-purple-600" : "bg-secondary/10 text-secondary"
-                )}>
-                  {doc.type.includes('Vault') ? <FileText className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h4 className={cn(
-                    "text-sm truncate mb-0.5",
-                    selectedDoc.id === doc.id ? "font-bold text-on-surface" : "font-medium text-slate-600"
+          {displayDocs.map((doc: any) => {
+            const isImported = importedDocs.length > 0;
+            const name = isImported ? doc.title : doc.name;
+            const type = isImported ? doc.source?.system : doc.type;
+            const source = isImported ? doc.source?.file_path || "Imported" : doc.source;
+
+            return (
+              <div
+                key={doc.id}
+                onClick={() => setSelectedDoc(doc)}
+                className={cn(
+                  "p-3 rounded-xl cursor-pointer transition-all group mb-1",
+                  selectedDoc?.id === doc.id
+                    ? "bg-white shadow-sm border border-outline-variant/30"
+                    : "hover:bg-surface-container-low border border-transparent"
+                )}
+              >
+                <div className="flex items-start gap-3">
+                  <div className={cn(
+                    "p-1.5 rounded-lg",
+                    String(type).toLowerCase().includes('vault') ? "bg-purple-50 text-purple-600" : "bg-secondary/10 text-secondary"
                   )}>
-                    {doc.name}
-                  </h4>
-                  <p className="text-[10px] text-slate-400 truncate">Source: {doc.source}</p>
+                    {String(type).toLowerCase().includes('vault') ? <FileText className="w-4 h-4" /> : <Bot className="w-4 h-4" />}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h4 className={cn(
+                      "text-sm truncate mb-0.5",
+                      selectedDoc?.id === doc.id ? "font-bold text-on-surface" : "font-medium text-slate-600"
+                    )}>
+                      {name}
+                    </h4>
+                    <p className="text-[10px] text-slate-400 truncate">Source: {source}</p>
+                  </div>
+                  {selectedDoc?.id === doc.id && <div className="w-1.5 h-1.5 bg-secondary rounded-full mt-1.5"></div>}
                 </div>
-                {selectedDoc.id === doc.id && <div className="w-1.5 h-1.5 bg-secondary rounded-full mt-1.5"></div>}
               </div>
-            </div>
-          ))}
+            );
+          })}
           <div className="p-3 hover:bg-surface-container-low rounded-xl cursor-pointer transition-all group opacity-60">
             <div className="flex items-start gap-3">
               <div className="bg-slate-100 p-1.5 rounded-lg text-slate-400">
@@ -92,39 +115,47 @@ export default function RefineView() {
       {/* Preview Panel (Center) */}
       <section className="flex-1 bg-white overflow-y-auto no-scrollbar border-r border-outline-variant/10">
         <div className="max-w-3xl mx-auto px-12 py-16 relative">
-          <div className="flex items-center gap-2 mb-8">
-            <Badge className="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border-none">
-              Draft Preview
-            </Badge>
-            <span className="text-slate-300">•</span>
-            <span className="text-xs text-slate-400">Last edited {selectedDoc.date}</span>
-          </div>
-          <h1 className="font-headline text-4xl font-bold tracking-tight text-on-surface mb-8 leading-tight">
-            {selectedDoc.name}
-          </h1>
-          
-          <div className="prose prose-slate max-w-none text-on-surface-variant leading-relaxed space-y-6">
-            <ReactMarkdown
-              components={{
-                h3: ({node, ...props}) => <h3 className="text-xl font-bold text-on-surface mt-10 mb-4" {...props} />,
-                ul: ({node, ...props}) => <ul className="space-y-4 list-none pl-0" {...props} />,
-                li: ({node, ...props}) => (
-                  <li className="flex gap-3">
-                    <Circle className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
-                    <span>{props.children}</span>
-                  </li>
-                ),
-                blockquote: ({node, ...props}) => (
-                  <div className="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary my-8 italic text-slate-600">
-                    {props.children}
-                  </div>
-                ),
-                strong: ({node, ...props}) => <strong className="font-bold text-on-surface" {...props} />,
-              }}
-            >
-              {selectedDoc.content}
-            </ReactMarkdown>
-          </div>
+          {selectedDoc ? (
+            <>
+              <div className="flex items-center gap-2 mb-8">
+                <Badge className="bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase border-none">
+                  Draft Preview
+                </Badge>
+                <span className="text-slate-300">•</span>
+                <span className="text-xs text-slate-400">Last edited {importedDocs.length > 0 ? (selectedDoc.timestamps?.ingested_at || 'just now') : selectedDoc.date}</span>
+              </div>
+              <h1 className="font-headline text-4xl font-bold tracking-tight text-on-surface mb-8 leading-tight">
+                {importedDocs.length > 0 ? selectedDoc.title : selectedDoc.name}
+              </h1>
+
+              <div className="prose prose-slate max-w-none text-on-surface-variant leading-relaxed space-y-6 break-words">
+                <ReactMarkdown
+                  components={{
+                    h3: ({node, ...props}) => <h3 className="text-xl font-bold text-on-surface mt-10 mb-4" {...props} />,
+                    ul: ({node, ...props}) => <ul className="space-y-4 list-none pl-0" {...props} />,
+                    li: ({node, ...props}) => (
+                      <li className="flex gap-3">
+                        <Circle className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
+                        <span>{props.children}</span>
+                      </li>
+                    ),
+                    blockquote: ({node, ...props}) => (
+                      <div className="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary my-8 italic text-slate-600">
+                        {props.children}
+                      </div>
+                    ),
+                    strong: ({node, ...props}) => <strong className="font-bold text-on-surface" {...props} />,
+                  }}
+                >
+                  {importedDocs.length > 0 ? (selectedDoc.content?.cleaned_markdown || selectedDoc.content?.raw_text) : selectedDoc.content}
+                </ReactMarkdown>
+              </div>
+            </>
+          ) : (
+            <div className="flex items-center justify-center h-full text-slate-400">
+              Select a document to preview
+            </div>
+          )}
 
           {summary && (
             <div className="mt-12 p-6 bg-primary/5 rounded-2xl border border-primary/10">
@@ -194,13 +225,13 @@ export default function RefineView() {
               <label className="text-[11px] font-bold text-slate-500 ml-1">Title Override</label>
               <Input 
                 className="w-full bg-surface-container-highest border-none rounded-lg py-2 text-sm focus:ring-2 focus:ring-primary/20" 
-                defaultValue={selectedDoc.name.replace('.md', '')}
+                defaultValue={selectedDoc ? (importedDocs.length > 0 ? selectedDoc.title : selectedDoc.name).replace('.md', '') : ''}
               />
             </div>
             <div className="space-y-2">
               <label className="text-[11px] font-bold text-slate-500 ml-1">Tags</label>
               <div className="flex flex-wrap gap-2 mb-2">
-                {selectedDoc.tags.map(tag => (
+                {selectedDoc?.tags?.map((tag: string) => (
                   <Badge key={tag} className="bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded-full text-[10px] font-bold flex items-center gap-1 border-none">
                     #{tag} <X className="w-3 h-3 cursor-pointer" />
                   </Badge>
@@ -218,13 +249,13 @@ export default function RefineView() {
             <h4 className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Maturity Tagging</h4>
             <div className="grid grid-cols-1 gap-2">
               <Button 
-                variant={selectedDoc.status === 'mature' ? 'default' : 'ghost'}
+                variant={selectedDoc?.status === 'mature' ? 'default' : 'ghost'}
                 className={cn(
                   "flex items-center justify-start gap-3 px-4 py-6 rounded-xl text-sm font-bold text-left shadow-sm",
-                  selectedDoc.status === 'mature' ? "bg-white border-2 border-secondary/30 text-secondary hover:bg-white" : "bg-surface-container-highest/50 text-slate-500 font-medium hover:bg-surface-container-highest"
+                  selectedDoc?.status === 'mature' ? "bg-white border-2 border-secondary/30 text-secondary hover:bg-white" : "bg-surface-container-highest/50 text-slate-500 font-medium hover:bg-surface-container-highest"
                 )}
               >
-                <Verified className={cn("w-5 h-5", selectedDoc.status === 'mature' && "fill-secondary/20")} />
+                <Verified className={cn("w-5 h-5", selectedDoc?.status === 'mature' && "fill-secondary/20")} />
                 Mature
               </Button>
               <Button 

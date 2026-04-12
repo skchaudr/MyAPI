@@ -1,0 +1,12 @@
+🐍 Starting FastAPI on http://localhost:8000
+⚛️  Starting React dev server on http://localhost:3000
+./run_dev.sh: line 5: venv/bin/uvicorn: No such file or directory
+
+> react-example@0.0.0 dev
+> vite --port=3000 --host=0.0.0.0
+
+
+  VITE v6.4.2  ready in 808 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://192.168.0.2:3000/
