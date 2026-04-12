@@ -1,4 +1,5 @@
-from pydantic import BaseModel
+
+from pydantic import BaseModel, Field, field_validator
 from typing import Optional, Literal
 
 # These types mirror src/types/schema.ts exactly.
@@ -18,6 +19,32 @@ class EnrichResponse(BaseModel):
     summary: Optional[str] = None
     doc_type: DocType
     tags: list[str]
+
+
+class EnrichResult(BaseModel):
+    index: int
+    status: Literal["success", "error"]
+    data: Optional[EnrichResponse] = None
+    error: Optional[str] = None
+
+
+class BatchEnrichRequest(BaseModel):
+    documents: list[EnrichRequest] = Field(..., min_length=1, max_length=50)
+
+    @field_validator('documents')
+    @classmethod
+    def check_content(cls, v):
+        for d in v:
+            if not d.content.strip():
+                raise ValueError("content must be non-empty")
+        return v
+
+
+class BatchEnrichResponse(BaseModel):
+    results: list[EnrichResult]
+    total: int
+    succeeded: int
+    failed: int
 
 
 class Source(BaseModel):
