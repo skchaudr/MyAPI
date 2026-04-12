@@ -172,7 +172,7 @@ export default function ExportView() {
                 </div>
                 <div className="flex items-center gap-6">
                   <span className="text-xs font-medium text-slate-500">{file.size}</span>
-                  <Button variant="ghost" size="icon" className="text-slate-400 hover:text-primary">
+                  <Button variant="ghost" size="icon" className="text-slate-400 hover:text-primary" aria-label={`Download ${file.name}`}>
                     <Download className="w-5 h-5" />
                   </Button>
                 </div>
