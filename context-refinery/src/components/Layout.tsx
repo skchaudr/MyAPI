@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
+import { useDocuments } from '../contexts/DocumentContext';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -23,6 +24,8 @@ interface LayoutProps {
 }
 
 export default function Layout({ children, currentView, onViewChange }: LayoutProps) {
+  const { emailSaved, userEmail, handleClearSession } = useDocuments();
+
   return (
     <div className="min-h-screen bg-surface">
       {/* Top Navigation */}
@@ -43,13 +46,17 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
             <Button variant="ghost" size="icon" className="rounded-full text-slate-500">
               <Settings className="w-5 h-5" />
             </Button>
-            <div className="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden border border-outline-variant/20">
-              <img 
-                src="https://picsum.photos/seed/user/100/100" 
-                alt="User Profile" 
-                className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
-              />
+            <div className="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden border border-outline-variant/20 flex items-center justify-center font-bold text-primary">
+              {emailSaved && userEmail ? (
+                <div>{userEmail[0].toUpperCase()}</div>
+              ) : (
+                <img
+                  src="https://picsum.photos/seed/user/100/100"
+                  alt="User Profile"
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -104,7 +111,10 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
           </button>
         </nav>
 
-        <Button className="mt-4 w-full py-6 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
+        <Button
+          className="mt-4 w-full py-6 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
+          onClick={handleClearSession}
+        >
           <Plus className="w-4 h-4" />
           New Project
         </Button>
