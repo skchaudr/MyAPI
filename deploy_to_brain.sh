@@ -23,7 +23,7 @@ echo -n "Enter the path to your extracted khoj bundle (e.g., ~/Downloads/khoj-re
 read LOCAL_DIR
 
 # Expand tilde just in case they use ~/
-eval LOCAL_DIR="$LOCAL_DIR"
+LOCAL_DIR="${LOCAL_DIR/#\~/$HOME}"
 
 if [ -z "$LOCAL_DIR" ] || [ ! -d "$LOCAL_DIR" ]; then
     echo "❌ Error: Directory not found ($LOCAL_DIR)."
