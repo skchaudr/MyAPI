@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.routers import enrich, imports, export
+from api.routers import enrich, imports
 
 app = FastAPI(title="Context Refinery API", version="1.0.0")
 
@@ -18,8 +18,8 @@ app.add_middleware(
 
 app.include_router(enrich.router)
 app.include_router(imports.router, prefix="/import")
-app.include_router(export.router, prefix="/export")
+# export.py is retired — export is now client-side via exportService.ts
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "model": "gemini-2.0-flash"}
+    return {"status": "ok", "model": "gemini-1.5-flash"}

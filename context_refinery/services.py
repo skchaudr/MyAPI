@@ -24,7 +24,7 @@ DOCUMENT:
 
 
 class GeminiService:
-    def __init__(self, model_name: str = "gemini-2.0-flash"):
+    def __init__(self, model_name: str = "gemini-1.5-flash"):
         self.api_key = os.environ.get("GEMINI_API_KEY")
         self.has_api_key = bool(self.api_key)
         self.model_name = model_name

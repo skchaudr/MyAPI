@@ -2,10 +2,9 @@
 set -e
 
 EXPORT_DIR="exports/khoj-ready-bundle"
-REMOTE_IMPORT_DIR="~/khoj-imports"
-ZONE="us-central1-a"
-INSTANCE="khoj-headless-engine"
-PROJECT="gen-lang-client-0824562549"
+REMOTE_IMPORT_DIR="~/khoj-data/ai-exports"
+REMOTE_USER="sbkchaudry_gmail_com"
+TAILSCALE_IP="[ENTER_TAILSCALE_IP_HERE]"
 
 echo "🚀 Starting Khoj Delivery Pipeline..."
 
@@ -17,15 +16,13 @@ else
     exit 1
 fi
 
-# 2. SCP over IAP tunnel
-echo "🌐 Syncing files to $INSTANCE via IAP..."
-gcloud compute scp --recurse "$EXPORT_DIR/"* "$INSTANCE:$REMOTE_IMPORT_DIR" --zone "$ZONE" --tunnel-through-iap --project "$PROJECT"
-echo "✅ Files successfully uploaded to $REMOTE_IMPORT_DIR"
+# 2. RSYNC over Tailscale
+echo "🌐 Differentially syncing files to $TAILSCALE_IP via Tailscale..."
+rsync -avz "$EXPORT_DIR/" "$REMOTE_USER@$TAILSCALE_IP:$REMOTE_IMPORT_DIR/"
+echo "✅ Files successfully synced to $REMOTE_IMPORT_DIR"
 
-# 3. Trigger remote index (Awaiting User Command injection)
-echo "🔄 Connecting to VM to trigger Khoj index cycle..."
-
-# TODO: Inject the exact ingestion trigger based on user's cloud dive
-# e.g., gcloud compute ssh --zone "$ZONE" "$INSTANCE" --tunnel-through-iap --project "$PROJECT" --command "source ~/khoj-engine/venv/bin/activate && khoj update"
+# 3. Native Ingestion Trigger
+echo "🔄 Khoj natively watches ~/khoj-data/ai-exports/ via background workers."
+echo "If manual ingestion is required, use: curl -X POST http://localhost:42110/api/update"
 
 echo "🎉 Delivery Pipeline Complete!"

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, FileText, Bot, History, Circle, ChevronRight, FileSearch, Verified, Edit3, Archive, CheckCircle, Sparkles, Wand2, Trash2, X } from 'lucide-react';
 import { MOCK_DOCUMENTS } from '../mockData';
 import { Document } from '../types';
@@ -16,6 +16,14 @@ export default function RefineView() {
   const [isDistilling, setIsDistilling] = useState(false);
   const [apiError, setApiError] = useState<string | null>(null);
   const [summary, setSummary] = useState<string | undefined>(selectedDoc.summary);
+  const [backendOnline, setBackendOnline] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    // Phase 3: Check backend availability for graceful degradation
+    fetch('http://localhost:8000/health', { signal: AbortSignal.timeout(2000) })
+      .then(r => setBackendOnline(r.ok))
+      .catch(() => setBackendOnline(false));
+  }, []);
 
   const handleDistill = async () => {
     setIsDistilling(true);
@@ -177,12 +185,18 @@ export default function RefineView() {
                     if (checked && !summary) handleDistill();
                     else if (!checked) setSummary(undefined);
                   }}
-                  disabled={isDistilling}
+                  disabled={isDistilling || backendOnline === false}
                 />
               </div>
               <p className="text-[10px] text-slate-400 leading-relaxed">
-                {isDistilling ? "Processing content..." : "Auto-generate a 3-sentence semantic summary for embedding indexes."}
+                {backendOnline === false
+                  ? 'AI enrichment offline. Start the local API server to enable.'
+                  : isDistilling ? 'Processing content...'
+                  : 'Auto-generate a 3-sentence semantic summary for embedding indexes.'}
               </p>
+              {backendOnline === false && (
+                <div className="text-amber-500 text-[10px] font-bold mt-1">⚠ Run ./run_dev.sh to enable AI features</div>
+              )}
               {apiError && <div className="text-red-500 text-xs font-bold mt-2">{apiError}</div>}
             </div>
           </div>

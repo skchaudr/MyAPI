@@ -1,5 +1,13 @@
 from pydantic import BaseModel
-from typing import Optional
+from typing import Optional, Literal
+
+# These types mirror src/types/schema.ts exactly.
+# See docs/01-taxonomy.md for the meaning of each value.
+
+MaturityStatus = Literal["mature", "incubating", "scratchpad", "deprecated", "reference"]
+DocType = Literal["conversation", "note", "spec", "log", "article", "other"]
+SourceSystem = Literal["chatgpt", "claude", "obsidian", "linkedin", "manual"]
+SourceType = Literal["json", "html", "md", "csv"]
 
 
 class EnrichRequest(BaseModel):
@@ -8,13 +16,13 @@ class EnrichRequest(BaseModel):
 
 class EnrichResponse(BaseModel):
     summary: Optional[str] = None
-    doc_type: str
+    doc_type: DocType
     tags: list[str]
 
 
 class Source(BaseModel):
-    system: str
-    type: str
+    system: SourceSystem
+    type: SourceType
     original_file_name: Optional[str] = None
     url: Optional[str] = None
 
@@ -42,8 +50,8 @@ class CanonicalDocumentResponse(BaseModel):
     source: Source
     timestamps: Timestamps
     author: str
-    status: str
-    doc_type: str
+    status: MaturityStatus  # Always "scratchpad" on new imports per taxonomy rules
+    doc_type: DocType
     tags: list[str]
     projects: list[str]
     content: ContentPayload
