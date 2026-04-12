@@ -201,9 +201,6 @@ export default function ImportView() {
               )}
             </div>
 
-            <Button variant="link" className="mt-auto pt-4 text-sm font-bold text-primary flex items-center justify-center gap-2 hover:translate-x-1 transition-transform no-underline">
-              Review Mapping <Upload className="w-4 h-4 rotate-90" />
-            </Button>
           </div>
         </div>
       </div>

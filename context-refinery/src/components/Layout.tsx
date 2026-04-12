@@ -104,10 +104,7 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
           </button>
         </nav>
 
-        <Button className="mt-4 w-full py-6 bg-gradient-to-br from-primary to-primary-container text-white rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all">
-          <Plus className="w-4 h-4" />
-          New Project
-        </Button>
+
 
         <div className="mt-auto flex flex-col gap-1 pt-4 border-t border-outline-variant/10">
           <a className="flex items-center gap-3 p-3 text-slate-600 hover:bg-surface-container-high rounded-lg transition-all text-sm cursor-pointer">
