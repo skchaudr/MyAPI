@@ -21,6 +21,10 @@ async def import_obsidian(file: UploadFile = File(...)):
 
     try:
         result = parse_obsidian_file(tmp_path)
+        # Override the title and filename because the tempfile obscures them
+        result["title"] = file.filename.replace(".md", "")
+        if "source" in result:
+            result["source"]["original_file_name"] = file.filename
         return CanonicalDocumentResponse(**result)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
