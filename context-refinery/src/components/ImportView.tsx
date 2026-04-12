@@ -18,26 +18,21 @@ export default function ImportView() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const savedEmail = localStorage.getItem('cr_session_email');
-    if (savedEmail) {
-      setUserEmail(savedEmail);
-      setEmailSaved(true);
-      const savedDocs = localStorage.getItem('cr_docs_' + savedEmail);
-      if (savedDocs) {
-        try {
-          setImportedDocs(JSON.parse(savedDocs));
-        } catch (e) {
-          console.error("Failed to parse saved docs");
-        }
+    // Phase 4 Fix: Always restore from the default session so email isn't a blocker
+    const savedDocs = localStorage.getItem('cr_docs_default');
+    if (savedDocs) {
+      try {
+        setImportedDocs(JSON.parse(savedDocs));
+      } catch (e) {
+        console.error("Failed to parse saved docs");
       }
     }
   }, []);
 
   useEffect(() => {
-    if (emailSaved && userEmail) {
-      localStorage.setItem('cr_docs_' + userEmail, JSON.stringify(importedDocs));
-    }
-  }, [importedDocs, userEmail, emailSaved]);
+    // Always save to the default session key
+    localStorage.setItem('cr_docs_default', JSON.stringify(importedDocs));
+  }, [importedDocs]);
 
   const handleSaveSession = () => {
     if (userEmail.trim()) {
@@ -48,6 +43,7 @@ export default function ImportView() {
 
   const handleClearSession = () => {
     localStorage.removeItem('cr_session_email');
+    localStorage.removeItem('cr_docs_default');
     setUserEmail('');
     setEmailSaved(false);
     setImportedDocs([]);
@@ -88,7 +84,7 @@ export default function ImportView() {
     handleFileUpload(e.dataTransfer.files);
   };
 
-  const displayDocs = importedDocs.length > 0 ? importedDocs : MOCK_DOCUMENTS;
+  const displayDocs = importedDocs;
 
   return (
     <div className="px-8 py-12">
@@ -240,19 +236,23 @@ export default function ImportView() {
               </TableRow>
             </TableHeader>
             <TableBody className="divide-y divide-outline-variant/10">
-              {displayDocs.map((doc: any, index: number) => {
-                const isImported = importedDocs.length > 0;
-                const name = isImported ? doc.title : doc.name;
-                const type = isImported ? doc.source?.system : doc.type;
-                const size = isImported ? (doc.content?.cleaned_markdown?.length + " chars") : doc.size;
-                const date = isImported ? (doc.timestamps?.ingested_at || "just now") : doc.date;
-                const keyId = isImported ? doc.id : doc.id;
+              {displayDocs.length === 0 ? (
+                <TableRow>
+                  <TableCell colSpan={5} className="px-6 py-12 text-center text-slate-400 text-sm">
+                    No documents imported yet. Drop a <code>.md</code> or <code>.json</code> file above to get started.
+                  </TableCell>
+                </TableRow>
+              ) : displayDocs.map((doc: any, index: number) => {
+                const name = doc.title;
+                const type = doc.source?.system;
+                const size = (doc.content?.cleaned_markdown?.length ?? 0) + " chars";
+                const date = doc.timestamps?.ingested_at || "just now";
 
                 return (
-                  <TableRow key={keyId + index} className="hover:bg-surface-container-low/20 transition-colors group">
+                  <TableRow key={doc.id + index} className="hover:bg-surface-container-low/20 transition-colors group">
                     <TableCell className="px-6 py-5">
                       <div className="flex items-center gap-3">
-                        {String(type).toLowerCase().includes('vault') ? <Folder className="w-5 h-5 text-primary" /> : <FileText className="w-5 h-5 text-secondary" />}
+                        {String(type).toLowerCase().includes('obsidian') ? <Folder className="w-5 h-5 text-primary" /> : <FileText className="w-5 h-5 text-secondary" />}
                         <span className="font-semibold text-on-surface">{name}</span>
                       </div>
                     </TableCell>

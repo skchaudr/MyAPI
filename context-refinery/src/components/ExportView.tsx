@@ -15,12 +15,9 @@ export default function ExportView() {
   const [exportSuccess, setExportSuccess] = useState(false);
 
   useEffect(() => {
-    const email = localStorage.getItem('cr_session_email');
-    if (email) {
-      const saved = localStorage.getItem('cr_docs_' + email);
-      if (saved) {
-        try { setDocs(JSON.parse(saved)); } catch {}
-      }
+    const saved = localStorage.getItem('cr_docs_default');
+    if (saved) {
+      try { setDocs(JSON.parse(saved)); } catch {}
     }
   }, []);
 
