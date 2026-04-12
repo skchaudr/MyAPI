@@ -55,8 +55,9 @@ function toFilename(title: string): string {
 /**
  * Takes an array of CanonicalDocuments, packages them into a ZIP, and triggers a browser download.
  * The ZIP will be named khoj-ready-bundle.zip.
+ * Returns the generated ZIP blob.
  */
-export async function exportToKhojBundle(documents: CanonicalDocument[]): Promise<void> {
+export async function exportToKhojBundle(documents: CanonicalDocument[]): Promise<Blob> {
   if (documents.length === 0) {
     throw new Error('No documents to export.');
   }
@@ -73,4 +74,5 @@ export async function exportToKhojBundle(documents: CanonicalDocument[]): Promis
 
   const blob = await zip.generateAsync({ type: 'blob' });
   saveAs(blob, 'khoj-ready-bundle.zip');
+  return blob;
 }
