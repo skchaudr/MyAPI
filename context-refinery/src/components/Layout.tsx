@@ -37,10 +37,10 @@ export default function Layout({ children, currentView, onViewChange }: LayoutPr
             </nav>
           </div>
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="rounded-full text-slate-500">
+            <Button variant="ghost" size="icon" className="rounded-full text-slate-500" aria-label="Notifications">
               <Bell className="w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full text-slate-500">
+            <Button variant="ghost" size="icon" className="rounded-full text-slate-500" aria-label="Settings">
               <Settings className="w-5 h-5" />
             </Button>
             <div className="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden border border-outline-variant/20">

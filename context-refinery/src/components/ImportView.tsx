@@ -168,7 +168,7 @@ export default function ImportView() {
                       </div>
                     </div>
                   </div>
-                  <Button variant="ghost" size="icon" className="h-8 w-8 text-slate-400">
+                  <Button variant="ghost" size="icon" className="h-8 w-8 text-slate-400" aria-label="Filter documents">
                     <Filter className="w-4 h-4" />
                   </Button>
                 </div>
@@ -213,10 +213,10 @@ export default function ImportView() {
             <p className="text-slate-500 text-sm">Review ingestion logs and processing status.</p>
           </div>
           <div className="flex gap-2">
-            <Button variant="secondary" size="icon" className="bg-surface-container-high hover:bg-surface-container-highest">
+            <Button variant="secondary" size="icon" className="bg-surface-container-high hover:bg-surface-container-highest" aria-label="Filter recent uploads">
               <Filter className="w-4 h-4 text-slate-600" />
             </Button>
-            <Button variant="secondary" size="icon" className="bg-surface-container-high hover:bg-surface-container-highest">
+            <Button variant="secondary" size="icon" className="bg-surface-container-high hover:bg-surface-container-highest" aria-label="Search recent uploads">
               <Search className="w-4 h-4 text-slate-600" />
             </Button>
           </div>

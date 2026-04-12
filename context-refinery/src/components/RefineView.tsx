@@ -210,7 +210,7 @@ export default function RefineView() {
         <section className="w-80 bg-surface-container-low p-6 overflow-y-auto no-scrollbar">
           <div className="flex items-center justify-between mb-8">
             <h3 className="font-headline text-lg font-bold">RAG Optimization</h3>
-            <Button variant="ghost" size="icon" className="text-slate-400">
+            <Button variant="ghost" size="icon" className="text-slate-400" aria-label="Optimize with AI">
               <Wand2 className="w-5 h-5" />
             </Button>
           </div>
