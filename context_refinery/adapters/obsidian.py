@@ -44,10 +44,16 @@ def parse_obsidian_file(filepath: str) -> dict:
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
-    # Extract metadata from frontmatter or use fallbacks
+    # Valid taxonomy values per docs/01-taxonomy.md
+    _VALID_STATUSES = {"mature", "incubating", "scratchpad", "deprecated", "reference"}
+    _VALID_DOC_TYPES = {"conversation", "note", "spec", "log", "article", "other"}
+
+    # Extract metadata from frontmatter — sanitize against taxonomy, fall back to safe defaults
     author = frontmatter.get("author") or "Unknown"
-    status = frontmatter.get("status") or "scratchpad"
-    doc_type = frontmatter.get("doc_type") or "note"
+    raw_status = frontmatter.get("status") or ""
+    status = raw_status if raw_status in _VALID_STATUSES else "scratchpad"
+    raw_doc_type = frontmatter.get("doc_type") or ""
+    doc_type = raw_doc_type if raw_doc_type in _VALID_DOC_TYPES else "note"
 
     created_at_raw = frontmatter.get("created_at")
     if created_at_raw:
