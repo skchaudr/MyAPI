@@ -37,10 +37,14 @@ def parse_obsidian_file(filepath: str) -> dict:
     tags = frontmatter.get('tags') or []
     if isinstance(tags, str):
         tags = [t.strip() for t in tags.split(",") if t.strip()]
+    else:
+        tags = [str(t) for t in tags]
 
     projects = frontmatter.get('projects') or []
     if isinstance(projects, str):
         projects = [p.strip() for p in projects.split(",") if p.strip()]
+    else:
+        projects = [str(p) for p in projects]
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
