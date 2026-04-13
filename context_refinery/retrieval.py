@@ -64,8 +64,17 @@ class MetadataParser:
         """Parse entry text into (metadata_dict, body, snippet).
 
         Returns ({}, entry, entry[:500]) if no frontmatter found.
+        Khoj may prepend the filename before the --- fence, so we
+        strip any leading non-frontmatter lines first.
         """
-        match = MetadataParser._FM_RE.match(entry)
+        # Khoj prepends filename — skip to the first ---
+        text = entry
+        if not text.startswith("---"):
+            idx = text.find("\n---\n")
+            if idx != -1:
+                text = text[idx + 1:]  # skip to the ---
+
+        match = MetadataParser._FM_RE.match(text)
         if not match:
             snippet = entry[:500].strip()
             return {}, entry, snippet
@@ -77,7 +86,7 @@ class MetadataParser:
         except yaml.YAMLError:
             fm = {}
 
-        body = entry[match.end():].strip()
+        body = text[match.end():].strip()
         snippet = body[:500].strip()
 
         metadata = {
