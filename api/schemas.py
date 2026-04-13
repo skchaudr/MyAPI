@@ -83,3 +83,58 @@ class CanonicalDocumentResponse(BaseModel):
     projects: list[str]
     content: ContentPayload
     quality: Quality
+
+
+# ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+
+QueryIntent = Literal["temporal", "factual", "project_overview", "cross_source", "pattern"]
+AnswerMode = Literal["lookup", "summary", "timeline", "dossier", "coach"]
+
+
+class QueryRequest(BaseModel):
+    q: str = Field(..., min_length=1, max_length=2000)
+    n: int = Field(default=10, ge=1, le=50)
+    sources: Optional[list[SourceSystem]] = None
+    projects: Optional[list[str]] = None
+    tags: Optional[list[str]] = None
+    date_from: Optional[str] = None
+    date_to: Optional[str] = None
+    answer_mode: Optional[AnswerMode] = None
+
+
+class RetrievedDocument(BaseModel):
+    corpus_id: str
+    snippet: str
+    khoj_score: float
+    final_score: float
+    title: Optional[str] = None
+    source: Optional[str] = None
+    created_at: Optional[str] = None
+    tags: list[str] = []
+    projects: list[str] = []
+    file: Optional[str] = None
+
+
+class ResultGroup(BaseModel):
+    key: str
+    group_type: str
+    documents: list[RetrievedDocument]
+    count: int
+
+
+class QueryClassification(BaseModel):
+    intent: QueryIntent
+    answer_mode: AnswerMode
+    confidence: float
+    temporal_hint: Optional[str] = None
+
+
+class QueryResponse(BaseModel):
+    query: str
+    classification: QueryClassification
+    results: list[RetrievedDocument]
+    groups: list[ResultGroup]
+    total_from_khoj: int
+    total_after_filter: int
+    answer_mode: AnswerMode
+    timing_ms: float
