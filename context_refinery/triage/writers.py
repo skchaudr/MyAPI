@@ -20,25 +20,69 @@ console = Console()
 
 
 def parse_file(filepath):
-    """Read a markdown file and extract frontmatter + body.
+    """Read a markdown file and extract frontmatter + body."""
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
 
-    Returns (dict, str) — frontmatter dict and body text.
-    """
-    raise NotImplementedError("JULES: Copy from triage.py lines 166-186")
+    frontmatter = {}
+    body = content
+
+    if content.startswith("---"):
+        parts = content.split("---", 2)
+        if len(parts) >= 3:
+            try:
+                frontmatter = yaml.safe_load(parts[1]) or {}
+                body = parts[2].strip()
+            except yaml.YAMLError:
+                pass
+
+    if not isinstance(frontmatter, dict):
+        frontmatter = {}
+
+    return frontmatter, body
 
 
 def preview(filepath):
-    """Return first meaningful line after frontmatter (max 90 chars)."""
-    raise NotImplementedError("JULES: Copy from triage.py lines 189-205")
+    """Return first meaningful line after frontmatter."""
+    try:
+        with open(filepath, encoding="utf-8") as f:
+            in_fm = False
+            for line in f:
+                s = line.strip()
+                if s == "---":
+                    in_fm = not in_fm
+                    continue
+                if in_fm:
+                    continue
+                if s and not s.startswith("#"):
+                    return s[:90]
+    except Exception:
+        pass
+    return ""
 
 
 def write_frontmatter(filepath, frontmatter, body):
-    """Write updated YAML frontmatter + body back to file.
+    """Write updated YAML frontmatter + body back to file."""
+    # Field order per docs/02-target-output.md
+    ordered = {}
+    field_order = [
+        "id", "title", "source", "created_at", "author",
+        "status", "doc_type", "tags", "projects", "related",
+    ]
+    for key in field_order:
+        if key in frontmatter:
+            ordered[key] = frontmatter[key]
+    # Preserve any extra fields not in the standard order
+    for key in frontmatter:
+        if key not in ordered:
+            ordered[key] = frontmatter[key]
 
-    Field order per docs/02-target-output.md:
-    id, title, source, created_at, author, status, doc_type, tags, projects, related
-    """
-    raise NotImplementedError("JULES: Copy from triage.py lines 208-229")
+    yaml_str = yaml.dump(ordered, default_flow_style=False, sort_keys=False, allow_unicode=True)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("---\n")
+        f.write(yaml_str)
+        f.write("---\n\n")
+        f.write(body)
 
 
 def write_related_section(body, related_filenames):
@@ -52,17 +96,37 @@ def write_related_section(body, related_filenames):
         Updated body string with ## Related section containing [[wiki-links]].
         If ## Related already exists, replace its content.
     """
-    raise NotImplementedError("JULES: NEW — implement per spec")
+    import re
+    if not related_filenames:
+        return body
 
+    links = "\n".join(f"- [[{fn}]]" for fn in related_filenames)
+    section = f"\n## Related\n{links}"
+
+    # Match the ## Related section up to the next section or end of string
+    pattern = r"\n## Related\b.*?(?=\n\n## |\Z)"
+
+    if re.search(pattern, body, re.DOTALL):
+        body = re.sub(pattern, section, body, count=1, flags=re.DOTALL)
+    else:
+        body = body.rstrip() + "\n" + section
+
+    return body
 
 def gather_files(directory):
-    """Gather all .md files from directory recursively, sorted."""
-    raise NotImplementedError("JULES: Copy from triage.py lines 232-236")
+    """Gather all .md files from directory."""
+    pattern = os.path.join(directory, "**", "*.md")
+    files = sorted(glob.glob(pattern, recursive=True))
+    return files
 
 
 def make_record(filepath, frontmatter):
-    """Create a triage record dict for a file with current metadata.
-
-    Returns dict with keys: filepath, status, doc_type, tags, projects.
-    """
-    raise NotImplementedError("JULES: Copy from triage.py lines 241-249")
+    """Create a triage record for a file with current metadata."""
+    return {
+        "filepath": filepath,
+        "status": frontmatter.get("status", "scratchpad"),
+        "doc_type": frontmatter.get("doc_type", "note"),
+        "tags": [str(t) for t in (frontmatter.get("tags") or [])],
+        "projects": [str(p) for p in (frontmatter.get("projects") or [])],
+        "related": [str(r) for r in (frontmatter.get("related") or [])],
+    }
