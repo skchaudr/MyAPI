@@ -1,4 +1,4 @@
-import { Source, Document, OutputFile } from './types';
+import { Source, Document } from './types';
 
 export const MOCK_SOURCES: Source[] = [
   { id: '1', name: 'Obsidian Vault', type: 'Markdown Vault', confidence: 'high', icon: 'book' },
@@ -51,29 +51,5 @@ To address this, the **Context Refinery** must implement a more aggressive scrub
     content: 'Roadmap for 2025...',
     status: 'mature',
     tags: ['ROADMAP'],
-  },
-];
-
-export const MOCK_OUTPUT_FILES: OutputFile[] = [
-  {
-    id: 'out1',
-    name: 'Consolidated_Context.json',
-    type: 'Structured data graph',
-    size: '24.8 MB',
-    description: 'UTF-8 Encoding',
-  },
-  {
-    id: 'out2',
-    name: 'Refined_Insights.pdf',
-    type: 'Executive summary',
-    size: '4.2 MB',
-    description: '12 Pages',
-  },
-  {
-    id: 'out3',
-    name: 'RAG_Breadcrumb_Package.zip',
-    type: 'Hierarchical MD',
-    size: '128.5 MB',
-    description: '4,200 Files',
   },
 ];

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Database, BookOpen, CheckCircle, Download, FileJson, FileText, Archive, FileCode, Printer, Loader2 } from 'lucide-react';
-import { MOCK_OUTPUT_FILES } from '../mockData';
+import { Database, CheckCircle, Download, Archive, Loader2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
-import { cn } from '@/lib/utils';
 import { exportToKhojBundle } from '../services/exportService';
 import type { CanonicalDocument } from '../types/schema';
+import { saveAs } from 'file-saver';
 
 export default function ExportView() {
   const [docs, setDocs] = useState<CanonicalDocument[]>([]);
   const [isExporting, setIsExporting] = useState(false);
   const [exportError, setExportError] = useState<string | null>(null);
   const [exportSuccess, setExportSuccess] = useState(false);
+  const [generatedBlob, setGeneratedBlob] = useState<Blob | null>(null);
 
   useEffect(() => {
     const saved = localStorage.getItem('cr_docs_default');
@@ -26,7 +26,8 @@ export default function ExportView() {
     setExportError(null);
     setExportSuccess(false);
     try {
-      await exportToKhojBundle(docs);
+      const blob = await exportToKhojBundle(docs);
+      setGeneratedBlob(blob);
       setExportSuccess(true);
     } catch (err: any) {
       setExportError(err.message ?? 'Export failed.');
@@ -74,7 +75,7 @@ export default function ExportView() {
           </Card>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <section className="grid grid-cols-1 md:max-w-2xl gap-8 mb-12">
           {/* RAG Export */}
           <Card className="p-8 rounded-xl shadow-lg border border-white/50 group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-xl">
             <div className="flex justify-between items-start mb-6">
@@ -112,37 +113,6 @@ export default function ExportView() {
               {isExporting ? 'Generating ZIP...' : 'Generate Zipped MD'}
             </Button>
           </Card>
-
-          {/* Personal Read Export */}
-          <Card className="p-8 rounded-xl shadow-lg border border-white/50 group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-xl">
-            <div className="flex justify-between items-start mb-6">
-              <div className="p-4 bg-secondary/5 rounded-xl">
-                <BookOpen className="w-10 h-10 text-secondary" />
-              </div>
-            </div>
-            <h3 className="text-2xl font-bold font-headline mb-3 group-hover:text-secondary transition-colors">Personal Read Export</h3>
-            <p className="text-slate-500 mb-6 leading-relaxed">
-              Distilled for human consumption. Outputs a clean, single <code className="text-xs bg-surface-container-high px-1 rounded">HTML</code> or <code className="text-xs bg-surface-container-high px-1 rounded">PDF</code> file with refined typography and table of contents.
-            </p>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center gap-2 text-sm text-on-surface-variant">
-                <CheckCircle className="w-4 h-4 text-secondary" /> High-End Editorial Layout
-              </li>
-              <li className="flex items-center gap-2 text-sm text-on-surface-variant">
-                <CheckCircle className="w-4 h-4 text-secondary" /> Offline-Ready Assets
-              </li>
-            </ul>
-            <div className="grid grid-cols-2 gap-4">
-              <Button variant="secondary" className="bg-surface-container-high text-on-surface py-6 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-surface-container-highest active:scale-[0.98] transition-all">
-                <FileCode className="w-5 h-5" />
-                Web HTML
-              </Button>
-              <Button variant="secondary" className="bg-surface-container-high text-on-surface py-6 rounded-xl font-bold flex items-center justify-center gap-3 hover:bg-surface-container-highest active:scale-[0.98] transition-all">
-                <Printer className="w-5 h-5" />
-                Print PDF
-              </Button>
-            </div>
-          </Card>
         </section>
 
         <section className="bg-surface-container-low rounded-2xl p-8 border border-outline-variant/10">
@@ -153,31 +123,34 @@ export default function ExportView() {
             </div>
           </div>
           <div className="space-y-3">
-            {MOCK_OUTPUT_FILES.map((file) => (
-              <div key={file.id} className="bg-white p-4 rounded-xl flex items-center justify-between hover:translate-x-1 transition-all duration-300 shadow-sm border border-outline-variant/5">
+            {!generatedBlob ? (
+              <div className="text-sm text-slate-500 italic p-4 text-center">No files generated yet.</div>
+            ) : (
+              <div className="bg-white p-4 rounded-xl flex items-center justify-between hover:translate-x-1 transition-all duration-300 shadow-sm border border-outline-variant/5">
                 <div className="flex items-center gap-4">
-                  <div className={cn(
-                    "w-10 h-10 rounded-lg flex items-center justify-center",
-                    file.name.endsWith('.json') ? "bg-orange-50 text-orange-400" :
-                    file.name.endsWith('.pdf') ? "bg-red-50 text-red-400" : "bg-blue-50 text-blue-400"
-                  )}>
-                    {file.name.endsWith('.json') && <FileJson className="w-5 h-5" />}
-                    {file.name.endsWith('.pdf') && <FileText className="w-5 h-5" />}
-                    {file.name.endsWith('.zip') && <Archive className="w-5 h-5" />}
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-blue-50 text-blue-400">
+                    <Archive className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold">{file.name}</h4>
-                    <p className="text-[10px] text-slate-400">{file.type} • {file.description}</p>
+                    <h4 className="text-sm font-bold">khoj-ready-bundle.zip</h4>
+                    <p className="text-[10px] text-slate-400">Hierarchical MD • {docs.length} Files</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <span className="text-xs font-medium text-slate-500">{file.size}</span>
-                  <Button variant="ghost" size="icon" className="text-slate-400 hover:text-primary">
+                  <span className="text-xs font-medium text-slate-500">
+                    {(generatedBlob.size / 1024 / 1024).toFixed(2)} MB
+                  </span>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-slate-400 hover:text-primary cursor-pointer"
+                    onClick={() => saveAs(generatedBlob, 'khoj-ready-bundle.zip')}
+                  >
                     <Download className="w-5 h-5" />
                   </Button>
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </section>
       </div>
