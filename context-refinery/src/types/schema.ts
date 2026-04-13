@@ -23,7 +23,8 @@ export type SourceSystem =
   | "claude"
   | "obsidian"
   | "linkedin"
-  | "manual";
+  | "manual"
+  | "codex";
 
 export type SourceType = "json" | "html" | "md" | "csv";
 

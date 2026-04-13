@@ -7,7 +7,7 @@ from typing import Optional, Literal
 
 MaturityStatus = Literal["mature", "incubating", "scratchpad", "deprecated", "reference"]
 DocType = Literal["conversation", "note", "spec", "log", "article", "other"]
-SourceSystem = Literal["chatgpt", "claude", "obsidian", "linkedin", "manual"]
+SourceSystem = Literal["chatgpt", "claude", "obsidian", "linkedin", "manual", "codex"]
 SourceType = Literal["json", "html", "md", "csv"]
 
 
