@@ -1,171 +1,147 @@
-# Jules Task: Modular Triage System
+# Jules Task: Modular Triage System — Fill In Scaffolded Package
 
 ## Summary
-Refactor the CLI triage tool (`context_refinery/triage.py`) into a modular system with a single entry point that dispatches to interchangeable passes. Each pass uses the same interaction pattern (single keypress, Rich formatting, q=quit, s=skip) but operates on different metadata dimensions.
+The package structure at `context_refinery/triage/` has been scaffolded with 12 files containing exact function signatures, docstrings, and `raise NotImplementedError(...)` placeholders. Your job is to **replace every NotImplementedError with working code** by extracting logic from the monolithic `context_refinery/triage.py`.
 
-## Reference Implementations
-Study these existing scripts to match the UX exactly:
-- `context_refinery/triage.py` — the triage tool we just built (based on triage_inbox.py)
-- `/Users/saboor/Obsidian/SoloDeveloper/09 Utilities/Scripts/triage_inbox.py` — the original folder routing tool (4-phase: route → review → execute → subfolder)
-- `/Users/saboor/Obsidian/SoloDeveloper/09 Utilities/Scripts/propertiesWizardV2.js` — shows how related notes are linked via frontmatter `related` field + `## Related` body section with `[[wiki-links]]`
+**This is a fill-in-the-blanks task, not a design task.** Do not change any file names, function signatures, class names, or import structure. Just implement the bodies.
 
-## Architecture
+## CRITICAL RULES
 
-### Directory structure
-```
-context_refinery/
-  triage/
-    __init__.py          # exports main() entry point
-    __main__.py          # allows `python3 -m context_refinery.triage`
-    runner.py            # interactive menu + orchestrator
-    passes/
-      __init__.py
-      base.py            # abstract base class for all passes
-      status.py          # maturity status assignment
-      doctype.py         # doc_type classification
-      tags.py            # tag assignment (presets + custom)
-      projects.py        # project assignment (presets + custom)
-      links.py           # related note linking
-    review.py            # review table + confirm + re-edit
-    terminal.py          # getch(), getline(), getnum() helpers
-    writers.py           # write_frontmatter(), write_related_section()
-```
+1. **DO NOT create new files.** All files already exist in the scaffold.
+2. **DO NOT rename, move, or delete any scaffold files.**
+3. **DO NOT change function signatures, class names, or property names.**
+4. **DO NOT add new dependencies.** Only `rich`, `pyyaml`, and Python stdlib.
+5. **DO NOT modify `passes/base.py`** — the abstract base class is complete.
+6. **DO NOT modify `__init__.py` or `__main__.py`** — they are complete.
+7. **DO NOT modify `passes/__init__.py`** — it is complete.
+8. **DELETE `context_refinery/triage.py`** (the monolith) after all implementations are done.
+9. Every `raise NotImplementedError(...)` message tells you exactly which lines of `triage.py` to reference.
 
-### Base pass interface (`passes/base.py`)
+## Source File
+The monolithic source is `context_refinery/triage.py` (681 lines). Read it FIRST. All code to extract is in this file unless noted as NEW.
+
+## File-by-file Instructions
+
+### `terminal.py` — 3 functions to implement
+| Function | Source | Notes |
+|----------|--------|-------|
+| `getch()` | triage.py lines 89-117 | Copy verbatim. Uses the module-level `console` already defined. |
+| `getline(prompt)` | triage.py lines 120-139 | Copy verbatim. |
+| `getnum(prompt)` | triage.py lines 142-161 | Copy verbatim. |
+
+### `writers.py` — 6 functions to implement
+| Function | Source | Notes |
+|----------|--------|-------|
+| `parse_file(filepath)` | triage.py lines 166-186 | Copy verbatim. |
+| `preview(filepath)` | triage.py lines 189-205 | Copy verbatim. |
+| `write_frontmatter(filepath, frontmatter, body)` | triage.py lines 208-229 | Copy verbatim. Add `"related"` to `field_order` list after `"projects"`. |
+| `write_related_section(body, related_filenames)` | **NEW** | See spec below. |
+| `gather_files(directory)` | triage.py lines 232-236 | Copy verbatim. |
+| `make_record(filepath, frontmatter)` | triage.py lines 241-249 | Copy verbatim. Add `"related": [str(r) for r in (frontmatter.get("related") or [])]` to the returned dict. |
+
+**`write_related_section` spec:**
 ```python
-from abc import ABC, abstractmethod
-
-class TriagePass(ABC):
-    """All passes share the same interaction contract."""
-
-    @property
-    @abstractmethod
-    def name(self) -> str:
-        """Display name for the pass (e.g., 'MATURITY STATUS')."""
-
-    @abstractmethod
-    def print_legend(self) -> None:
-        """Print the keypress legend for this pass."""
-
-    @abstractmethod
-    def process_file(self, record: dict, index: int, total: int) -> bool:
-        """
-        Process a single file. Returns True to continue, False to stop (q pressed).
-        Mutates record in-place.
-        """
-
-    @abstractmethod
-    def get_display_value(self, record: dict) -> str:
-        """Return the current value for this pass (shown in review table)."""
+def write_related_section(body, related_filenames):
+    # If body already has a ## Related section, replace its content.
+    # Otherwise append it.
+    # Format:
+    #   ## Related
+    #   - [[filename-one]]
+    #   - [[filename-two]]
+    #
+    # related_filenames are already without .md extension.
+    # Return the updated body string.
 ```
 
-### Runner (`runner.py`)
-The entry point presents an interactive menu:
-```
-Context Refinery — Triage Console
+### `passes/status.py` — 2 methods to implement
+The class `StatusPass` and constants `STATUSES`, `STATUS_COLORS` are already defined.
 
-  [1] Full pipeline (status → doc_type → tags → projects → links → review)
-  [2] Status only
-  [3] Doc type only
-  [4] Tags only
-  [5] Projects only
-  [6] Links only
-  [7] Custom (pick passes)
-  [q] Quit
-```
+| Method | Source | Notes |
+|--------|--------|-------|
+| `print_legend()` | triage.py lines 254-263 | Copy the console.print call. Use `self` — no arguments needed. |
+| `process_file(record, index, total)` | triage.py lines 314-347 | Adapt the inner loop of `status_phase`. Show filename + preview via `writers.preview()`. Use `getch()` from terminal module. Return `False` on `q`, `True` otherwise. **Important**: `Ctrl+C` (`\x03`) → `sys.exit(0)`. `s` → keep current, return `True`. |
 
-Each option runs the selected passes in order, then the review phase, then writes.
+### `passes/doctype.py` — 2 methods to implement
+| Method | Source | Notes |
+|--------|--------|-------|
+| `print_legend()` | triage.py lines 266-276 | Copy the console.print call. |
+| `process_file(record, index, total)` | triage.py lines 360-387 | Same pattern as StatusPass. Return `False` on `q`, `True` otherwise. |
 
-### Pass details
+### `passes/tags.py` — 2 methods to implement
+| Method | Source | Notes |
+|--------|--------|-------|
+| `print_legend()` | triage.py lines 279-289 | Copy. Reference `PRESET_TAGS` (already defined in the file). |
+| `process_file(record, index, total)` | triage.py lines 399-446 | Multi-select toggle. `t` = custom tag via `getline()`. Enter/space = done with file (return `True`). `q` = done with all (return `False`). |
 
-#### Status pass (`status.py`)
-Move from `triage.py` Phase 1. Single keypress: 1-5 maps to maturity status taxonomy. `s` = skip, `q` = done.
+### `passes/projects.py` — 2 methods to implement
+| Method | Source | Notes |
+|--------|--------|-------|
+| `print_legend()` | triage.py lines 292-301 | Copy. Reference `PRESET_PROJECTS` (already defined). |
+| `process_file(record, index, total)` | triage.py lines 458-498 | Same toggle pattern as tags. |
 
-#### Doc type pass (`doctype.py`)
-Move from `triage.py` Phase 2. Single keypress: 1-6 maps to doc_type taxonomy. `s` = skip, `q` = done.
+### `passes/links.py` — 2 methods to implement (NEW)
+The class `LinksPass` already has `__init__(self, all_records)`.
 
-#### Tags pass (`tags.py`)
-Move from `triage.py` Phase 3. Multi-select toggle from presets + `t` for custom. Enter/space = next file.
+| Method | Source | Notes |
+|--------|--------|-------|
+| `print_legend()` | **NEW** | Print: `[number] toggle link  [enter/space] done  [q] quit  [/] filter` |
+| `process_file(record, index, total)` | **NEW** | See spec below. |
 
-Preset tags (configurable list):
-```python
-PRESET_TAGS = [
-    "ai", "web-dev", "devops", "python", "react", "typescript",
-    "obsidian", "khoj", "infrastructure", "career", "learning",
-    "neovim", "git", "api", "database", "design",
-]
-```
+**LinksPass.process_file spec:**
+1. Build candidate list = `self._all_records` minus current record
+2. If >20 candidates, show filter prompt: `Type to filter, or press Enter to show all:`
+3. Display numbered list of candidates (basename of filepath)
+4. User types a number to toggle that candidate in/out of `record["related"]`
+5. Show current selections after each toggle
+6. Enter/space = done with file, return `True`
+7. `q` = done with all files, return `False`
+8. Store selected filenames WITHOUT .md extension in `record["related"]` (list of strings)
 
-#### Projects pass (`projects.py`)
-Move from `triage.py` Phase 4. Same toggle pattern as tags.
+### `review.py` — 2 functions to implement
+| Function | Source | Notes |
+|----------|--------|-------|
+| `review_phase(records, active_passes)` | triage.py lines 502-583 | Adapt to use DYNAMIC columns from `active_passes`. For each pass in `active_passes`, add a column named `pass.name` and populate with `pass.get_display_value(record)`. The `#` and `File` columns are always present. `r` re-edit should let user pick a pass to re-edit (not hardcoded to status+doctype). |
+| `execute_writes(records)` | triage.py lines 586-617 | Copy and add: if `record.get("related")`, update `frontmatter["related"] = record["related"]` and `body = write_related_section(body, record["related"])`. |
 
-Preset projects (configurable list):
-```python
-PRESET_PROJECTS = [
-    "context-refinery", "bdr-project", "water-and-stone",
-    "socialxp", "smb-ops-hub", "cim",
-]
-```
+### `runner.py` — 3 functions to implement
+| Function | Source | Notes |
+|----------|--------|-------|
+| `show_menu()` | **NEW** | Display menu (see scaffold docstring), read one keypress, return list of pass CLASSES. E.g., `[1]` → `[StatusPass, DocTypePass, TagsPass, ProjectsPass, LinksPass]`. `[7]` Custom: show numbered list of passes, let user toggle, enter to confirm. `q` → return empty list. |
+| `run_passes(records, pass_classes)` | **NEW** | For each class: instantiate (LinksPass gets `all_records=records`), print Rule header, print legend, iterate records calling `process_file`. Collect instances into list, return them. |
+| `main()` | triage.py lines 622-677 | Adapt: parse args same way, build records same way, then call `show_menu()` → `run_passes()` → `review_phase()` → `execute_writes()`. If menu returns empty, quit. |
 
-#### Links pass (`links.py`) — NEW
-This is the most complex pass. Modeled on `propertiesWizardV2.js` behavior:
+## Final Step
+After all implementations are complete:
+- **DELETE** `context_refinery/triage.py` (the monolith)
+- Verify that `python3 -c "from context_refinery.triage import main"` succeeds
 
-1. For each file, show its name + preview
-2. Present a list of all OTHER .md files in the working set (numbered)
-3. User toggles related notes by number (like tags)
-4. Enter/space = done with this file
-5. On write:
-   - Store selected filenames in frontmatter `related` field as a YAML list
-   - Inject/update a `## Related` section at the bottom of the note body:
-     ```markdown
-     ## Related
-     - [[note-title-one]]
-     - [[note-title-two]]
-     ```
-   - If `## Related` section already exists, replace its content
-   - Wiki-link format: `[[filename-without-extension]]`
+## Verification Checklist
+Before submitting your PR, verify:
+- [ ] `context_refinery/triage.py` has been DELETED
+- [ ] `context_refinery/triage/__init__.py` exists and exports `main`
+- [ ] `context_refinery/triage/__main__.py` exists
+- [ ] No `raise NotImplementedError` remains in any file under `context_refinery/triage/`
+- [ ] `python3 -c "from context_refinery.triage import main"` succeeds
+- [ ] No new files were created beyond the scaffold
+- [ ] No new dependencies were added
 
-For large file sets (>20 files), show a search/filter prompt before the numbered list:
-```
-  Type to filter, or press Enter to show all:
-```
+## Tests
+Add `tests/test_triage_modular.py`:
+1. `test_write_related_section_new` — body without ## Related → appended
+2. `test_write_related_section_replace` — body with existing ## Related → replaced
+3. `test_make_record_includes_related` — verify related field in record
+4. `test_frontmatter_roundtrip` — parse → modify → write → parse gives same result
+5. `test_pass_interface` — verify StatusPass, DocTypePass, TagsPass, ProjectsPass, LinksPass all have name, print_legend, process_file, get_display_value
 
-### Review phase (`review.py`)
-Move from `triage.py` Phase 5. Show a Rich table with columns for each active pass. `y` = write, `n` = cancel, `r` = re-edit a file.
-
-The review table columns should be dynamic based on which passes were run. Only show columns for active passes.
-
-### Writer (`writers.py`)
-Move `write_frontmatter()` and `parse_file()` from `triage.py`. Add:
-- `write_related_section(body, related_filenames) -> str` — injects or replaces `## Related` section
-- Field ordering per `docs/02-target-output.md`: id, title, source, created_at, author, status, doc_type, tags, projects, related
-
-### Terminal helpers (`terminal.py`)
-Move `getch()`, `getline()`, `getnum()` from `triage.py`. These are shared across all passes.
-
-## Migration
-- Delete the monolithic `context_refinery/triage.py` after the module is working
-- The entry point should work the same way: `python3 -m context_refinery.triage [directory|files...]`
-- All existing functionality must be preserved — this is a refactor, not a rewrite
-
-## Key constraints
-- Python 3 stdlib + `rich` + `pyyaml` only (no new dependencies)
-- Single keypress input everywhere — never require Enter for option selection
-- `q` always means "soft quit, save progress so far"
-- `Ctrl+C` always means "hard abort, nothing saved"
-- `s` means "skip this file" in single-select passes
-- Enter/space means "done with this file" in multi-select passes (tags, projects, links)
-- Taxonomy values MUST match `docs/01-taxonomy.md` exactly
-
-## Testing
-- Test each pass independently with mock records
-- Test the runner dispatches correctly
-- Test `write_related_section` injects and replaces correctly
-- Test frontmatter round-trip (parse → modify → write → parse gives same result)
+## Key files to reference (don't modify except as instructed)
+- `context_refinery/triage.py` — the source of truth (READ this, then DELETE it)
+- `docs/01-taxonomy.md` — valid values for status, doc_type
+- `docs/02-target-output.md` — field ordering
 
 ## Do NOT
-- Change the taxonomy values
+- Create any new files beyond `tests/test_triage_modular.py`
+- Change function signatures in the scaffold
 - Add dependencies beyond rich and pyyaml
-- Use any async/await patterns — this is a synchronous terminal tool
-- Move or modify the Obsidian vault scripts (they are reference only)
-- Break the `python3 -m context_refinery.triage` entry point
+- Keep `context_refinery/triage.py` — it MUST be deleted
+- Use async/await — this is a synchronous terminal tool
+- Modify files outside `context_refinery/triage/` and `tests/`
