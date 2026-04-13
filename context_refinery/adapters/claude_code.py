@@ -65,11 +65,18 @@ def parse_claude_session(filepath: str) -> Dict[str, Any]:
                 first_user_event = event
 
             message = event.get("message", {})
-            content_blocks = message.get("content", [])
+            if not isinstance(message, dict):
+                continue
+            content = message.get("content", [])
             text_content = ""
-            for block in content_blocks:
-                if block.get("type") == "text":
-                    text_content += block.get("text", "")
+            if isinstance(content, str):
+                text_content = content
+            elif isinstance(content, list):
+                for block in content:
+                    if isinstance(block, str):
+                        text_content += block
+                    elif isinstance(block, dict) and block.get("type") == "text":
+                        text_content += block.get("text", "")
 
             if text_content:
                 if markdown_parts:
@@ -80,11 +87,18 @@ def parse_claude_session(filepath: str) -> Dict[str, Any]:
         elif event_type == "assistant":
             assistant_count += 1
             message = event.get("message", {})
-            content_blocks = message.get("content", [])
+            if not isinstance(message, dict):
+                continue
+            content = message.get("content", [])
             text_content = ""
-            for block in content_blocks:
-                if block.get("type") == "text":
-                    text_content += block.get("text", "")
+            if isinstance(content, str):
+                text_content = content
+            elif isinstance(content, list):
+                for block in content:
+                    if isinstance(block, str):
+                        text_content += block
+                    elif isinstance(block, dict) and block.get("type") == "text":
+                        text_content += block.get("text", "")
 
             if text_content:
                 markdown_parts.append(f"**Assistant:** {text_content.strip()}")
