@@ -3,8 +3,6 @@ import json
 import re
 from typing import Dict, Any
 
-from google import genai
-
 # Doc types must match CanonicalDoc.doc_type values
 _VALID_DOC_TYPES = {"conversation", "note", "spec", "log", "article", "other"}
 
@@ -30,6 +28,7 @@ class GeminiService:
         self.model_name = model_name
 
         if self.has_api_key:
+            from google import genai
             self._client = genai.Client(api_key=self.api_key)
         else:
             self._client = None
