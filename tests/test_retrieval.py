@@ -43,7 +43,8 @@ def test_parse_valid_frontmatter():
 
 def test_parse_missing_frontmatter():
     meta, body, snippet = MetadataParser.parse("Just plain text without frontmatter.")
-    assert meta == {}
+    assert meta["title"] == "untitled"
+    assert meta["source"] == "unknown"
     assert body == "Just plain text without frontmatter."
     assert "plain text" in snippet
 
@@ -59,7 +60,8 @@ def test_parse_malformed_yaml():
 
 def test_parse_empty_entry():
     meta, body, snippet = MetadataParser.parse("")
-    assert meta == {}
+    assert meta["title"] == "untitled"
+    assert meta["source"] == "unknown"
     assert body == ""
     assert snippet == ""
 

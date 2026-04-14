@@ -81,7 +81,16 @@ class MetadataParser:
         match = MetadataParser._FM_RE.match(text)
         if not match:
             snippet = entry[:500].strip()
-            return {}, entry, snippet
+            return {
+                "title": "untitled",
+                "source": "unknown",
+                "created_at": None,
+                "author": None,
+                "status": None,
+                "doc_type": None,
+                "tags": [],
+                "projects": [],
+            }, entry, snippet
 
         try:
             fm = yaml.safe_load(match.group(1))
