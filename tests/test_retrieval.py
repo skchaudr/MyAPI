@@ -52,7 +52,8 @@ def test_parse_malformed_yaml():
     entry = "---\n!!python/object: __main__.Exploit\n---\nBody here."
     meta, body, snippet = MetadataParser.parse(entry)
     # safe_load rejects dangerous tags — returns empty metadata
-    assert meta.get("title") is None
+    assert meta.get("title") == "untitled"
+    assert meta.get("source") == "unknown"
     assert "Body here" in body
 
 
@@ -61,6 +62,14 @@ def test_parse_empty_entry():
     assert meta == {}
     assert body == ""
     assert snippet == ""
+
+
+def test_parse_defaults_unknown_source_and_filename_title():
+    entry = """my-note.md\n---\ntitle:\nsource:\ncreated_at: '2026-04-10T12:00:00+00:00'\n---\n\nBody text."""
+    meta, body, snippet = MetadataParser.parse(entry)
+    assert meta["source"] == "unknown"
+    assert meta["title"] == "my-note.md"
+    assert "Body text" in body
 
 
 # ── QueryClassifier ──────────────────────────────────────────────────────────
@@ -213,6 +222,17 @@ def test_group_by_source():
     keys = {g["key"] for g in groups}
     assert "chatgpt" in keys
     assert "codex" in keys
+
+
+def test_group_by_source_defaults_unknown():
+    results = [
+        _make_result(None),
+        _make_result("chatgpt"),
+    ]
+    groups = ResultGrouper.group(results, intent="factual")
+    keys = {g["key"] for g in groups}
+    assert "unknown" in keys
+    assert "chatgpt" in keys
 
 
 # ── RetrievalPipeline (mocked Khoj) ─────────────────────────────────────────

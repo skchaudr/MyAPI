@@ -69,9 +69,13 @@ class MetadataParser:
         """
         # Khoj prepends filename — skip to the first ---
         text = entry
+        prefix_title = None
         if not text.startswith("---"):
             idx = text.find("\n---\n")
             if idx != -1:
+                prefix = text[:idx].strip()
+                if prefix:
+                    prefix_title = prefix.splitlines()[0].strip() or None
                 text = text[idx + 1:]  # skip to the ---
 
         match = MetadataParser._FM_RE.match(text)
@@ -90,8 +94,8 @@ class MetadataParser:
         snippet = body[:500].strip()
 
         metadata = {
-            "title": fm.get("title"),
-            "source": fm.get("source"),
+            "title": fm.get("title") or prefix_title or "untitled",
+            "source": fm.get("source") or "unknown",
             "created_at": fm.get("created_at"),
             "author": fm.get("author"),
             "status": fm.get("status"),
@@ -325,7 +329,7 @@ class ResultGrouper:
             if field == "projects":
                 keys = r.get("metadata", {}).get("projects", []) or ["ungrouped"]
             else:
-                keys = [r.get("metadata", {}).get("source", "unknown")]
+                keys = [r.get("metadata", {}).get("source") or "unknown"]
 
             for key in keys:
                 if key not in groups:
