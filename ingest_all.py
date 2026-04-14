@@ -26,6 +26,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from context_refinery.adapters.chatgpt import parse_chatgpt_conversation
 from context_refinery.adapters.codex import scan_codex_sessions
 from context_refinery.adapters.claude_code import scan_claude_sessions
+from context_refinery.adapters.claude import load_claude_export
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -174,18 +175,61 @@ def ingest_claude_code(output_dir):
     return written
 
 
+def ingest_claude_web(zip_path, output_dir):
+    """Process Claude.ai conversation export zip and write .md files."""
+    logger.info(f"Loading Claude conversations from {zip_path}")
+
+    docs = load_claude_export(zip_path)
+    logger.info(f"Found {len(docs)} Claude conversations")
+
+    written = 0
+    failed = 0
+    seen_slugs = set()
+
+    for doc in docs:
+        try:
+            title = doc.get("title", "untitled")
+            slug = slugify(title)
+
+            base_slug = slug
+            counter = 1
+            while slug in seen_slugs:
+                slug = f"{base_slug}-{counter}"
+                counter += 1
+            seen_slugs.add(slug)
+
+            md_content = doc_to_markdown(doc)
+            filename = f"claude-web-{slug}.md"
+            filepath = os.path.join(output_dir, filename)
+
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(md_content)
+            written += 1
+        except Exception as e:
+            failed += 1
+            if failed <= 5:
+                logger.warning(f"Claude web parse error: {e}")
+
+    logger.info(f"Claude web: {written} written, {failed} failed")
+    return written
+
+
 def main():
     parser = argparse.ArgumentParser(description="Batch ingest all data sources to .md files for Khoj")
     parser.add_argument("--output-dir", default="./khoj-ready-bundle",
                         help="Output directory for .md files (default: ./khoj-ready-bundle)")
     parser.add_argument("--chatgpt", default=None,
                         help="Path to ChatGPT conversations.json")
+    parser.add_argument("--claude-web", default=None,
+                        help="Path to Claude.ai export zip")
     parser.add_argument("--skip-chatgpt", action="store_true",
                         help="Skip ChatGPT ingestion")
     parser.add_argument("--skip-codex", action="store_true",
                         help="Skip Codex session ingestion")
     parser.add_argument("--skip-claude", action="store_true",
                         help="Skip Claude Code session ingestion")
+    parser.add_argument("--skip-claude-web", action="store_true",
+                        help="Skip Claude.ai web conversation ingestion")
     args = parser.parse_args()
 
     output_dir = os.path.expanduser(args.output_dir)
@@ -220,9 +264,27 @@ def main():
     if not args.skip_codex:
         total += ingest_codex(output_dir)
 
-    # Claude Code
+    # Claude Code (CLI sessions)
     if not args.skip_claude:
         total += ingest_claude_code(output_dir)
+
+    # Claude.ai web conversations
+    if not args.skip_claude_web:
+        claude_zip = args.claude_web
+        if not claude_zip:
+            candidates = [
+                os.path.join(os.path.dirname(os.path.abspath(__file__)), "claude-ALL-conversation-history.zip"),
+                os.path.expanduser("~/Downloads/claude-ALL-conversation-history.zip"),
+            ]
+            for c in candidates:
+                if os.path.exists(c):
+                    claude_zip = c
+                    break
+
+        if claude_zip and os.path.exists(claude_zip):
+            total += ingest_claude_web(claude_zip, output_dir)
+        else:
+            logger.warning("Claude export zip not found. Use --claude-web to specify path, or --skip-claude-web.")
 
     elapsed = (datetime.now(timezone.utc) - start).total_seconds()
     logger.info("=" * 50)
