@@ -87,7 +87,18 @@ class CanonicalDocumentResponse(BaseModel):
 
 # ── Smart Retrieval Schemas ──────────────────────────────────────────────────
 
-QueryIntent = Literal["temporal", "factual", "project_overview", "cross_source", "pattern"]
+QueryIntent = Literal[
+    "temporal",
+    "factual",
+    "project_overview",
+    "operational",
+    "cross_source",
+    "source_specific",
+    "decision",
+    "meta",
+    "synthesis",
+    "pattern",
+]
 AnswerMode = Literal["lookup", "summary", "timeline", "dossier", "coach"]
 
 

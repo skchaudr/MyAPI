@@ -58,9 +58,16 @@ class MetadataParser:
     """Extracts YAML frontmatter from Khoj entry text."""
 
     _FM_RE = re.compile(r"^---\n(.*?)\n---\n?", re.DOTALL)
+    _SOURCE_PREFIXES = (
+        ("obsidian-", "obsidian"),
+        ("chatgpt-", "chatgpt"),
+        ("claude-web-", "claude"),
+        ("claude-", "claude-code"),
+        ("codex-", "codex"),
+    )
 
     @staticmethod
-    def parse(entry):
+    def parse(entry, filename=None):
         """Parse entry text into (metadata_dict, body, snippet).
 
         Returns ({}, entry, entry[:500]) if no frontmatter found.
@@ -81,9 +88,10 @@ class MetadataParser:
         match = MetadataParser._FM_RE.match(text)
         if not match:
             snippet = entry[:500].strip()
+            inferred_source = MetadataParser._infer_source_from_filename(filename)
             return {
                 "title": "untitled",
-                "source": "unknown",
+                "source": inferred_source,
                 "created_at": None,
                 "author": None,
                 "status": None,
@@ -101,10 +109,11 @@ class MetadataParser:
 
         body = text[match.end():].strip()
         snippet = body[:500].strip()
+        inferred_source = MetadataParser._infer_source_from_filename(filename)
 
         metadata = {
             "title": fm.get("title") or prefix_title or "untitled",
-            "source": fm.get("source") or "unknown",
+            "source": fm.get("source") or inferred_source,
             "created_at": fm.get("created_at"),
             "author": fm.get("author"),
             "status": fm.get("status"),
@@ -115,6 +124,95 @@ class MetadataParser:
 
         return metadata, body, snippet
 
+    @staticmethod
+    def _infer_source_from_filename(filename):
+        if not filename:
+            return "unknown"
+
+        name = os.path.basename(str(filename)).lower()
+        for prefix, source in MetadataParser._SOURCE_PREFIXES:
+            if name.startswith(prefix):
+                return source
+        return "unknown"
+
+
+# ── Keyword Searcher ─────────────────────────────────────────────────────────
+
+class KeywordSearcher:
+    """Searches a markdown corpus for exact keyword matches."""
+
+    def __init__(self, notes_dir=None):
+        self.notes_dir = notes_dir or os.environ.get(
+            "KHOJ_NOTES_DIR", "/home/sbkchaudry_gmail_com/khoj-data/notes"
+        )
+        self.parser = MetadataParser()
+
+    def search(self, query, n=10):
+        query = (query or "").strip()
+        if not query or not os.path.isdir(self.notes_dir):
+            return []
+
+        phrases, terms = self._parse_query(query)
+        if not phrases and not terms:
+            return []
+
+        results = []
+        for root, _, files in os.walk(self.notes_dir):
+            for name in files:
+                if not name.lower().endswith(".md"):
+                    continue
+
+                path = os.path.join(root, name)
+                try:
+                    with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                        entry = f.read()
+                except OSError:
+                    continue
+
+                body = entry.lower()
+                if phrases and any(phrase not in body for phrase in phrases):
+                    continue
+
+                if terms and not all(
+                    re.search(rf"\b{re.escape(term)}\b", body) for term in terms
+                ):
+                    continue
+
+                metadata, parsed_body, snippet = self.parser.parse(entry)
+                haystack = f"{metadata.get('title', '')} {parsed_body}".lower()
+                match_hits = sum(haystack.count(term) for term in terms)
+                phrase_hits = sum(haystack.count(phrase) for phrase in phrases)
+                total_words = max(len(haystack.split()), 1)
+                density = (match_hits + (2 * phrase_hits)) / total_words
+
+                results.append({
+                    "corpus_id": path,
+                    "khoj_score": max(0.0, 1.0 - min(1.0, density * 25)),
+                    "entry": entry,
+                    "body": parsed_body,
+                    "snippet": snippet,
+                    "metadata": metadata,
+                    "file": path,
+                    "keyword_match": True,
+                })
+
+        results.sort(
+            key=lambda r: (
+                r.get("khoj_score", 1.0),
+                len(r.get("snippet", "")),
+                r.get("file", ""),
+            )
+        )
+        return results[:n]
+
+    @staticmethod
+    def _parse_query(query):
+        phrases = re.findall(r'"([^"]+)"', query)
+        stripped = re.sub(r'"[^"]+"', " ", query)
+        terms = [t.lower() for t in re.findall(r"[A-Za-z0-9][A-Za-z0-9_-]*", stripped)]
+        phrases = [p.lower().strip() for p in phrases if p.strip()]
+        return phrases, terms
+
 
 # ── Query Classifier ─────────────────────────────────────────────────────────
 
@@ -123,6 +221,10 @@ class QueryClassifier:
 
     _TEMPORAL = [
         re.compile(r"\b(yesterday|today|last\s+week|this\s+week|last\s+month|this\s+month|recently|ago)\b", re.I),
+        re.compile(r"\baround\s+the\s+time\b", re.I),
+        re.compile(r"\bwhat\s+have\s+i\s+been\s+working\s+on\b", re.I),
+        re.compile(r"\bwhat\s+was\s+i\s+doing\b", re.I),
+        re.compile(r"\bwhat\s+did\s+i\s+do\b", re.I),
         re.compile(r"\b(before|after|since|during)\s+\w+", re.I),
         re.compile(r"\b\d{4}[-/]\d{2}", re.I),
         re.compile(r"\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b", re.I),
@@ -130,12 +232,38 @@ class QueryClassifier:
 
     _PROJECT = [
         re.compile(r"\b(summarize|overview|status\s+of|what\s+is|tell\s+me\s+about)\b.*\b(project|repo)\b", re.I),
-        re.compile(r"\b(bdr|context.refinery|socialxp|smb.ops|water.and.stone|cim)\b", re.I),
+        re.compile(r"\b(bdr|context.refinery|socialxp|smb.ops|water.and.stone|cim|my[_\s-]?devinfra)\b", re.I),
+    ]
+
+    _OPERATIONAL = [
+        re.compile(r"\bstatus\s+of\s+(the\s+)?api\s+deployment\b", re.I),
+        re.compile(r"\b(khoj\s+deployment|khoj\s+indexing|re-index(?:ing)?|health\s+endpoint)\b", re.I),
+    ]
+
+    _SYNTHESIS = [
+        re.compile(r"\bwhat\s+docs\s+should\s+i\s+use\b", re.I),
+        re.compile(r"\bwhat\s+was\s+i\s+learning\s+about\b", re.I),
+        re.compile(r"\bend\s+to\s+end\b", re.I),
+        re.compile(r"\bworking\s+together\b", re.I),
     ]
 
     _CROSS_SOURCE = [
-        re.compile(r"\b(chatgpt|claude|codex)\b.*\b(and|vs|versus|compared|or)\b", re.I),
         re.compile(r"\bacross\s+(sources|tools|sessions|platforms)\b", re.I),
+    ]
+
+    _DECISION = [
+        re.compile(r"\bwhat\s+did\s+i\s+decide\b", re.I),
+        re.compile(r"\bdecide(d)?\s+about\b", re.I),
+        re.compile(r"\bdecision\b", re.I),
+    ]
+
+    _META = [
+        re.compile(r"\b(prompt|prompts|schema|schemas|taxonomy|tagging\s+strategy|rubric|rubrics|evaluation|metadata|frontmatter)\b", re.I),
+        re.compile(r"\bwhat\s+did\s+i\s+write\s+about\b.*\b(notes?|passes?|cleanup|clean-up)\b", re.I),
+    ]
+
+    _SOURCE_SPECIFIC = [
+        re.compile(r"\b(find|show|where|session|export|note|notes|setup|document)\b", re.I),
     ]
 
     _PATTERN = [
@@ -146,9 +274,23 @@ class QueryClassifier:
         "temporal": "timeline",
         "factual": "lookup",
         "project_overview": "dossier",
+        "operational": "summary",
         "cross_source": "summary",
+        "source_specific": "lookup",
+        "decision": "summary",
+        "meta": "summary",
+        "synthesis": "summary",
         "pattern": "coach",
     }
+
+    _SOURCE_PATTERNS = [
+        ("claude-code", re.compile(r"\bclaude\s+code\b", re.I)),
+        ("chatgpt", re.compile(r"\bchatgpt\b", re.I)),
+        ("codex", re.compile(r"\bcodex\b", re.I)),
+        ("obsidian", re.compile(r"\bobsidian\b", re.I)),
+        ("claude", re.compile(r"\bclaude\b", re.I)),
+        ("jules", re.compile(r"\bjules\b", re.I)),
+    ]
 
     def classify(self, query):
         """Returns (intent, answer_mode, confidence, temporal_hint)."""
@@ -162,14 +304,38 @@ class QueryClassifier:
                 return "temporal", "timeline", 0.85, temporal_hint
 
         # Cross-source
-        for pat in self._CROSS_SOURCE:
-            if pat.search(query):
-                return "cross_source", "summary", 0.80, None
+        source_hits = self._matched_sources(query)
+        if len(source_hits) >= 2 and re.search(r"\b(and|vs|versus|compared|between|together|both|or)\b", query, re.I):
+            return "cross_source", "summary", 0.82, None
+
+        # Source-specific lookup
+        if len(source_hits) == 1 and any(pat.search(query) for pat in self._SOURCE_SPECIFIC):
+            return "source_specific", "lookup", 0.78, None
 
         # Project overview
         for pat in self._PROJECT:
             if pat.search(query):
                 return "project_overview", "dossier", 0.75, None
+
+        # Operational recall
+        for pat in self._OPERATIONAL:
+            if pat.search(query):
+                return "operational", "summary", 0.76, None
+
+        # Decision recall
+        for pat in self._DECISION:
+            if pat.search(query):
+                return "decision", "summary", 0.76, None
+
+        # Meta-work / schema / taxonomy
+        for pat in self._META:
+            if pat.search(query):
+                return "meta", "summary", 0.74, None
+
+        # Broad synthesis / overview
+        for pat in self._SYNTHESIS:
+            if pat.search(query):
+                return "synthesis", "summary", 0.73, None
 
         # Pattern/coach
         for pat in self._PATTERN:
@@ -178,6 +344,25 @@ class QueryClassifier:
 
         # Default: factual
         return "factual", "lookup", 0.50, None
+
+    def _matched_sources(self, query):
+        q = query.lower()
+        hits = []
+
+        if "claude code" in q:
+            hits.append("claude-code")
+        if "chatgpt" in q:
+            hits.append("chatgpt")
+        if "codex" in q:
+            hits.append("codex")
+        if "obsidian" in q:
+            hits.append("obsidian")
+        if "claude code" not in q and "claude" in q:
+            hits.append("claude")
+        if "jules" in q:
+            hits.append("jules")
+
+        return hits
 
 
 # ── Result Filter ────────────────────────────────────────────────────────────
@@ -234,10 +419,12 @@ class ResultReranker:
     """Composite scoring from semantic, recency, trust, and reinforcement."""
 
     # Default weights
-    W_SEMANTIC = 0.50
+    W_SEMANTIC = 0.42
     W_RECENCY = 0.20
-    W_TRUST = 0.15
-    W_REINFORCE = 0.15
+    W_TRUST = 0.13
+    W_REINFORCE = 0.10
+    W_KEYWORD = 0.15
+    W_SOURCE = 0.20
 
     # Intent-specific weight overrides
     _WEIGHT_OVERRIDES = {
@@ -253,13 +440,14 @@ class ResultReranker:
         "deprecated": 0.1,
     }
 
-    def rerank(self, results, intent="factual"):
+    def rerank(self, results, intent="factual", query=None):
         """Compute final_score and sort descending."""
         overrides = self._WEIGHT_OVERRIDES.get(intent, {})
         w_sem = overrides.get("W_SEMANTIC", self.W_SEMANTIC)
         w_rec = overrides.get("W_RECENCY", self.W_RECENCY)
         w_trust = overrides.get("W_TRUST", self.W_TRUST)
         w_reinf = overrides.get("W_REINFORCE", self.W_REINFORCE)
+        source_family = self._source_family_from_query(query)
 
         # Collect all tags/titles for reinforcement scoring
         all_tags = []
@@ -272,9 +460,13 @@ class ResultReranker:
             rec = self._recency_score(meta.get("created_at"), intent)
             trust = self._trust_score(meta.get("status", "scratchpad"))
             reinf = self._reinforcement_score(i, all_tags)
+            keyword = 1.0 if r.get("keyword_match") else 0.0
+            source_match = 1.0 if source_family and meta.get("source") == source_family else 0.0
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
-                                w_trust * trust + w_reinf * reinf)
+                                w_trust * trust + w_reinf * reinf +
+                                self.W_KEYWORD * keyword +
+                                self.W_SOURCE * source_match)
 
         results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
         return results
@@ -299,6 +491,25 @@ class ResultReranker:
 
     def _trust_score(self, status):
         return self._TRUST_MAP.get(status, 0.5)
+
+    def _source_family_from_query(self, query):
+        if not query:
+            return None
+
+        q = query.lower()
+        if "claude code" in q:
+            return "claude-code"
+        if "chatgpt" in q:
+            return "chatgpt"
+        if "codex" in q:
+            return "codex"
+        if "obsidian" in q:
+            return "obsidian"
+        if "claude" in q:
+            return "claude"
+        if "jules" in q:
+            return "claude"
+        return None
 
     def _reinforcement_score(self, index, all_tags):
         """Boost if this doc's tags overlap with tags from other docs."""
@@ -360,6 +571,7 @@ class RetrievalPipeline:
         self.khoj = khoj_client or KhojClient()
         self.classifier = QueryClassifier()
         self.parser = MetadataParser()
+        self.keyword_searcher = KeywordSearcher()
         self.filter = ResultFilter()
         self.reranker = ResultReranker()
         self.grouper = ResultGrouper()
@@ -382,11 +594,14 @@ class RetrievalPipeline:
         raw_results = self.khoj.search(q, n=fetch_n)
         total_from_khoj = len(raw_results)
 
+        keyword_results = self.keyword_searcher.search(q, n=fetch_n)
+
         # Step 3: Parse metadata from each result
         parsed = []
         for r in raw_results:
             entry = r.get("entry", "")
-            metadata, body, snippet = self.parser.parse(entry)
+            filename = r.get("additional", {}).get("file")
+            metadata, body, snippet = self.parser.parse(entry, filename=filename)
             parsed.append({
                 "corpus_id": r.get("corpus-id", ""),
                 "khoj_score": r.get("score", 1.0),
@@ -394,8 +609,24 @@ class RetrievalPipeline:
                 "body": body,
                 "snippet": snippet,
                 "metadata": metadata,
-                "file": r.get("additional", {}).get("file"),
+                "file": filename,
             })
+
+        seen = {self._dedupe_key(r) for r in parsed}
+        for r in keyword_results:
+            key = self._dedupe_key(r)
+            if key in seen:
+                for existing in parsed:
+                    if self._dedupe_key(existing) == key:
+                        existing["keyword_match"] = True
+                        existing["khoj_score"] = min(
+                            existing.get("khoj_score", 1.0),
+                            r.get("khoj_score", 1.0),
+                        )
+                        break
+                continue
+            parsed.append(r)
+            seen.add(key)
 
         # Step 4: Filter
         filtered = self.filter.apply(
@@ -409,7 +640,7 @@ class RetrievalPipeline:
         total_after_filter = len(filtered)
 
         # Step 5: Rerank
-        reranked = self.reranker.rerank(filtered, intent=intent)
+        reranked = self.reranker.rerank(filtered, intent=intent, query=q)
 
         # Step 6: Trim to requested count
         top_results = reranked[:n]
@@ -503,6 +734,11 @@ class RetrievalPipeline:
                 return (now - timedelta(days=amount * 30)).strftime("%Y-%m-%d")
 
         return None
+
+    @staticmethod
+    def _dedupe_key(result):
+        raw = result.get("file") or result.get("corpus_id") or result.get("metadata", {}).get("title") or ""
+        return os.path.basename(str(raw))
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────

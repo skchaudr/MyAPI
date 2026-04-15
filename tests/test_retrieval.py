@@ -2,6 +2,7 @@
 
 import pytest
 from context_refinery.retrieval import (
+    KeywordSearcher,
     MetadataParser,
     QueryClassifier,
     ResultFilter,
@@ -66,12 +67,91 @@ def test_parse_empty_entry():
     assert snippet == ""
 
 
+def test_parse_empty_entry_infers_source_from_filename():
+    meta, body, snippet = MetadataParser.parse("", filename="chatgpt-empty.md")
+    assert meta["title"] == "untitled"
+    assert meta["source"] == "chatgpt"
+    assert body == ""
+    assert snippet == ""
+
+
 def test_parse_defaults_unknown_source_and_filename_title():
     entry = """my-note.md\n---\ntitle:\nsource:\ncreated_at: '2026-04-10T12:00:00+00:00'\n---\n\nBody text."""
     meta, body, snippet = MetadataParser.parse(entry)
     assert meta["source"] == "unknown"
     assert meta["title"] == "my-note.md"
     assert "Body text" in body
+
+
+@pytest.mark.parametrize(
+    "filename,expected_source",
+    [
+        ("obsidian-note.md", "obsidian"),
+        ("chatgpt-note.md", "chatgpt"),
+        ("claude-web-note.md", "claude"),
+        ("claude-note.md", "claude-code"),
+        ("codex-note.md", "codex"),
+        ("other-note.md", "unknown"),
+    ],
+)
+def test_parse_infers_source_from_filename_prefix(filename, expected_source):
+    entry = """---\ntitle: Sample Note\ncreated_at: '2026-04-10T12:00:00+00:00'\n---\n\nBody text."""
+    meta, _, _ = MetadataParser.parse(entry, filename=filename)
+    assert meta["source"] == expected_source
+
+
+def test_parse_infers_source_when_frontmatter_missing_source():
+    entry = """---\ntitle: Sample Note\nsource:\ncreated_at: '2026-04-10T12:00:00+00:00'\n---\n\nBody text."""
+    meta, _, _ = MetadataParser.parse(entry, filename="claude-web-example.md")
+    assert meta["source"] == "claude"
+
+
+def _write_note(root, relpath, frontmatter, body):
+    path = root / relpath
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(f"---\n{frontmatter}\n---\n\n{body}\n", encoding="utf-8")
+    return path
+
+
+def test_keyword_exact_phrase(tmp_path):
+    notes_dir = tmp_path / "notes"
+    _write_note(
+        notes_dir,
+        "goldmine-note.md",
+        "title: Goldmine Note\nsource: obsidian",
+        "This note mentions goldmine exactly once.",
+    )
+    _write_note(
+        notes_dir,
+        "other-note.md",
+        "title: Other Note\nsource: obsidian",
+        "This note is about mining but not the keyword.",
+    )
+
+    results = KeywordSearcher(notes_dir=str(notes_dir)).search('"goldmine"', n=10)
+    assert len(results) == 1
+    assert results[0]["file"].endswith("goldmine-note.md")
+    assert results[0]["keyword_match"] is True
+
+
+def test_keyword_multi_term(tmp_path):
+    notes_dir = tmp_path / "notes"
+    _write_note(
+        notes_dir,
+        "match-note.md",
+        "title: Match Note\nsource: obsidian",
+        "openclaw harness leak happened here",
+    )
+    _write_note(
+        notes_dir,
+        "partial-note.md",
+        "title: Partial Note\nsource: obsidian",
+        "openclaw harness only",
+    )
+
+    results = KeywordSearcher(notes_dir=str(notes_dir)).search("openclaw harness leak", n=10)
+    assert len(results) == 1
+    assert results[0]["file"].endswith("match-note.md")
 
 
 # ── QueryClassifier ──────────────────────────────────────────────────────────
@@ -89,6 +169,14 @@ def test_classify_temporal_yesterday():
     assert "yesterday" in hint.lower()
 
 
+def test_classify_temporal_around_the_time():
+    intent, mode, _, _ = QueryClassifier().classify(
+        "What was I doing around the time I was debugging Tailscale?"
+    )
+    assert intent == "temporal"
+    assert mode == "timeline"
+
+
 def test_classify_factual():
     intent, mode, _, _ = QueryClassifier().classify("how does the auth flow work?")
     assert intent == "factual"
@@ -96,7 +184,7 @@ def test_classify_factual():
 
 
 def test_classify_project_overview():
-    intent, mode, _, _ = QueryClassifier().classify("give me an overview of the BDR project")
+    intent, mode, _, _ = QueryClassifier().classify("What is My_DevInfra?")
     assert intent == "project_overview"
     assert mode == "dossier"
 
@@ -104,6 +192,42 @@ def test_classify_project_overview():
 def test_classify_cross_source():
     intent, mode, _, _ = QueryClassifier().classify("what did chatgpt and claude say about deployment?")
     assert intent == "cross_source"
+    assert mode == "summary"
+
+
+def test_classify_source_specific():
+    intent, mode, _, _ = QueryClassifier().classify(
+        "Find the Claude Code session where I set up the web adapter."
+    )
+    assert intent == "source_specific"
+    assert mode == "lookup"
+
+
+def test_classify_operational():
+    intent, mode, _, _ = QueryClassifier().classify("What is the status of the API deployment?")
+    assert intent == "operational"
+    assert mode == "summary"
+
+
+def test_classify_decision():
+    intent, mode, _, _ = QueryClassifier().classify("What did I decide about the vault schema?")
+    assert intent == "decision"
+    assert mode == "summary"
+
+
+def test_classify_meta():
+    intent, mode, _, _ = QueryClassifier().classify(
+        "Which notes discuss tagging strategy and taxonomy?"
+    )
+    assert intent == "meta"
+    assert mode == "summary"
+
+
+def test_classify_synthesis():
+    intent, mode, _, _ = QueryClassifier().classify(
+        "What docs should I use to understand the current system end to end?"
+    )
+    assert intent == "synthesis"
     assert mode == "summary"
 
 
@@ -211,6 +335,33 @@ def test_rerank_trust_score():
     assert reranker._trust_score("unknown") == 0.5
 
 
+def test_rerank_keyword_boost_ranking():
+    reranker = ResultReranker()
+    keyword = _make_result(created_at="2026-04-10T00:00:00+00:00")
+    keyword["khoj_score"] = 0.0
+    keyword["keyword_match"] = True
+    semantic = _make_result(created_at="2026-04-10T00:00:00+00:00")
+    semantic["khoj_score"] = 0.45
+
+    reranked = reranker.rerank([semantic, keyword], intent="factual")
+    assert reranked[0].get("keyword_match") is True
+
+
+def test_rerank_source_family_boost_ranking():
+    reranker = ResultReranker()
+    general = _make_result(source="chatgpt")
+    general["khoj_score"] = 0.0
+    source_specific = _make_result(source="claude-code")
+    source_specific["khoj_score"] = 0.45
+
+    reranked = reranker.rerank(
+        [general, source_specific],
+        intent="source_specific",
+        query="Find the Claude Code session where I set up the web adapter.",
+    )
+    assert reranked[0]["metadata"]["source"] == "claude-code"
+
+
 # ── ResultGrouper ────────────────────────────────────────────────────────────
 
 def test_group_by_source():
@@ -257,6 +408,36 @@ class MockKhojClient:
         ]
 
 
+class HybridMockKhojClient:
+    def search(self, query, n=10, max_distance=None):
+        return [
+            {
+                "entry": """---\ntitle: Semantic Mining Note\nsource: obsidian\ncreated_at: '2026-04-09T10:00:00+00:00'\nstatus: scratchpad\ndoc_type: note\ntags: [bitcoin]\nprojects: []\n---\n\nThis is about bitcoin mining and related concepts.""",
+                "score": 0.05,
+                "additional": {"file": "semantic-mining.md", "source": "computer"},
+                "corpus-id": "mock-semantic",
+            },
+            {
+                "entry": """---\ntitle: Goldmine Note\nsource: obsidian\ncreated_at: '2026-04-09T10:00:00+00:00'\nstatus: scratchpad\ndoc_type: note\ntags: [goldmine]\nprojects: []\n---\n\nThis note contains the exact word goldmine.""",
+                "score": 0.45,
+                "additional": {"file": "goldmine-note.md", "source": "computer"},
+                "corpus-id": "mock-keyword",
+            },
+        ]
+
+
+class FilenameOnlyMockKhojClient:
+    def search(self, query, n=10, max_distance=None):
+        return [
+            {
+                "entry": """---\ntitle: Missing Source Note\ncreated_at: '2026-04-09T10:00:00+00:00'\nstatus: scratchpad\ndoc_type: note\ntags: [obsidian]\nprojects: []\n---\n\nThis note omits source frontmatter.""",
+                "score": 0.2,
+                "additional": {"file": "obsidian-missing-source-note.md", "source": "computer"},
+                "corpus-id": "mock-filename-only",
+            }
+        ]
+
+
 def test_pipeline_full_response():
     pipeline = RetrievalPipeline(khoj_client=MockKhojClient())
     result = pipeline.execute(q="test query", n=5)
@@ -289,3 +470,29 @@ def test_pipeline_with_source_filter():
     result = pipeline.execute(q="test", sources=["codex"])
     assert result["total_after_filter"] == 1
     assert result["results"][0]["source"] == "codex"
+
+
+def test_pipeline_infers_source_from_additional_file():
+    pipeline = RetrievalPipeline(khoj_client=FilenameOnlyMockKhojClient())
+    result = pipeline.execute(q="test")
+    assert result["results"][0]["source"] == "obsidian"
+    assert result["results"][0]["file"].endswith("obsidian-missing-source-note.md")
+
+
+def test_pipeline_hybrid_merge_and_keyword_boost(tmp_path):
+    notes_dir = tmp_path / "notes"
+    _write_note(
+        notes_dir,
+        "goldmine-note.md",
+        "title: Goldmine Note\nsource: obsidian\ncreated_at: '2026-04-09T10:00:00+00:00'\nstatus: scratchpad\ndoc_type: note\ntags: [goldmine]\nprojects: []",
+        "This note contains the exact word goldmine.",
+    )
+
+    pipeline = RetrievalPipeline(khoj_client=HybridMockKhojClient())
+    pipeline.keyword_searcher = KeywordSearcher(notes_dir=str(notes_dir))
+    result = pipeline.execute(q="goldmine", n=5)
+
+    assert result["total_from_khoj"] == 2
+    assert len(result["results"]) == 2
+    assert result["results"][0]["file"].endswith("goldmine-note.md")
+    assert result["results"][0]["final_score"] >= result["results"][1]["final_score"]
