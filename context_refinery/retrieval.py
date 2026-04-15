@@ -419,17 +419,24 @@ class ResultReranker:
     """Composite scoring from semantic, recency, trust, and reinforcement."""
 
     # Default weights
-    W_SEMANTIC = 0.42
-    W_RECENCY = 0.20
-    W_TRUST = 0.13
-    W_REINFORCE = 0.10
-    W_KEYWORD = 0.15
-    W_SOURCE = 0.20
+    W_SEMANTIC = 0.34
+    W_RECENCY = 0.16
+    W_TRUST = 0.10
+    W_REINFORCE = 0.08
+    W_KEYWORD = 0.12
+    W_SOURCE = 0.14
+    W_TITLE = 0.18
 
     # Intent-specific weight overrides
     _WEIGHT_OVERRIDES = {
-        "temporal": {"W_SEMANTIC": 0.30, "W_RECENCY": 0.40},
-        "pattern": {"W_REINFORCE": 0.30, "W_RECENCY": 0.10},
+        "temporal": {"W_SEMANTIC": 0.24, "W_RECENCY": 0.46},
+        "pattern": {"W_REINFORCE": 0.26, "W_RECENCY": 0.08},
+        "project_overview": {"W_TITLE": 0.28, "W_SOURCE": 0.10},
+        "source_specific": {"W_TITLE": 0.28, "W_SOURCE": 0.24, "W_KEYWORD": 0.18},
+        "operational": {"W_TITLE": 0.24, "W_SOURCE": 0.20},
+        "decision": {"W_TITLE": 0.22, "W_SOURCE": 0.14},
+        "meta": {"W_TITLE": 0.22, "W_SOURCE": 0.12},
+        "synthesis": {"W_TITLE": 0.18, "W_SOURCE": 0.12},
     }
 
     _TRUST_MAP = {
@@ -447,7 +454,11 @@ class ResultReranker:
         w_rec = overrides.get("W_RECENCY", self.W_RECENCY)
         w_trust = overrides.get("W_TRUST", self.W_TRUST)
         w_reinf = overrides.get("W_REINFORCE", self.W_REINFORCE)
+        w_title = overrides.get("W_TITLE", self.W_TITLE)
+        w_source = overrides.get("W_SOURCE", self.W_SOURCE)
+        w_keyword = overrides.get("W_KEYWORD", self.W_KEYWORD)
         source_family = self._source_family_from_query(query)
+        query_terms = self._query_terms(query)
 
         # Collect all tags/titles for reinforcement scoring
         all_tags = []
@@ -462,11 +473,13 @@ class ResultReranker:
             reinf = self._reinforcement_score(i, all_tags)
             keyword = 1.0 if r.get("keyword_match") else 0.0
             source_match = 1.0 if source_family and meta.get("source") == source_family else 0.0
+            title_boost = self._title_path_score(query_terms, meta.get("title"), r.get("file"))
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
                                 w_trust * trust + w_reinf * reinf +
-                                self.W_KEYWORD * keyword +
-                                self.W_SOURCE * source_match)
+                                w_keyword * keyword +
+                                w_source * source_match +
+                                w_title * title_boost)
 
         results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
         return results
@@ -510,6 +523,39 @@ class ResultReranker:
         if "jules" in q:
             return "claude"
         return None
+
+    def _query_terms(self, query):
+        if not query:
+            return []
+        terms = re.findall(r"[A-Za-z0-9][A-Za-z0-9_-]*", query.lower())
+        stopwords = {
+            "what", "is", "the", "a", "an", "of", "and", "or", "to", "i", "me",
+            "my", "was", "were", "did", "do", "does", "for", "in", "on", "about",
+            "show", "find", "where", "should", "use", "docs", "document", "notes",
+            "note", "session", "this", "that", "how", "have", "been", "around",
+        }
+        return [term for term in terms if term not in stopwords]
+
+    def _title_path_score(self, query_terms, title, file_path):
+        if not query_terms:
+            return 0.0
+        text = f"{title or ''} {os.path.basename(file_path or '')}".lower()
+        if not text.strip():
+            return 0.0
+
+        matches = 0
+        exact_phrase_hits = 0
+        for term in query_terms:
+            if term in text:
+                matches += 1
+        if len(query_terms) >= 2:
+            joined = " ".join(query_terms[:4])
+            if joined and joined in text:
+                exact_phrase_hits = 1
+
+        score = (matches / max(len(query_terms), 1)) * 0.7
+        score += 0.3 * exact_phrase_hits
+        return min(1.0, score)
 
     def _reinforcement_score(self, index, all_tags):
         """Boost if this doc's tags overlap with tags from other docs."""

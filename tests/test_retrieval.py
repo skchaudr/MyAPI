@@ -362,6 +362,26 @@ def test_rerank_source_family_boost_ranking():
     assert reranked[0]["metadata"]["source"] == "claude-code"
 
 
+def test_rerank_title_path_boost_ranking():
+    reranker = ResultReranker()
+    generic = _make_result(source="chatgpt")
+    generic["khoj_score"] = 0.0
+    generic["metadata"]["title"] = "Branch Clickbait Claim Analysis"
+    generic["file"] = "chatgpt-branch-clickbait-claim-analysis.md"
+
+    targeted = _make_result(source="chatgpt")
+    targeted["khoj_score"] = 0.45
+    targeted["metadata"]["title"] = "My_DevInfra Notes"
+    targeted["file"] = "chatgpt-my-devinfra-notes.md"
+
+    reranked = reranker.rerank(
+        [generic, targeted],
+        intent="project_overview",
+        query="What is My_DevInfra?",
+    )
+    assert reranked[0]["metadata"]["title"] == "My_DevInfra Notes"
+
+
 # ── ResultGrouper ────────────────────────────────────────────────────────────
 
 def test_group_by_source():
