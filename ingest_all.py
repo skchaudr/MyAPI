@@ -81,11 +81,19 @@ def doc_to_markdown(doc):
 
 
 def ingest_chatgpt(conversations_path, output_dir):
-    """Process ChatGPT conversations.json and write .md files."""
+    """Process ChatGPT conversations.json (or sharded zip) and write .md files."""
     logger.info(f"Loading ChatGPT conversations from {conversations_path}")
 
-    with open(conversations_path, "r", encoding="utf-8") as f:
-        conversations = json.load(f)
+    conversations = []
+    if conversations_path.endswith(".zip"):
+        import zipfile
+        with zipfile.ZipFile(conversations_path) as z:
+            shards = sorted([n for n in z.namelist() if n.startswith("conversations") and n.endswith(".json")])
+            for shard in shards:
+                conversations.extend(json.loads(z.read(shard)))
+    else:
+        with open(conversations_path, "r", encoding="utf-8") as f:
+            conversations = json.load(f)
 
     logger.info(f"Found {len(conversations)} ChatGPT conversations")
 
@@ -214,14 +222,48 @@ def ingest_claude_web(zip_path, output_dir):
     return written
 
 
+def ingest_obsidian(vault_dir, output_dir):
+    """Copy .md files from an Obsidian vault, preserving existing frontmatter."""
+    logger.info(f"Scanning Obsidian vault at {vault_dir}")
+
+    import shutil
+    written = 0
+    skipped_dirs = {"00 Inbox", "09 Utilities", "Templates", "__ Tasks __", "_tasks", "TaskNotes", ".git", ".obsidian", ".trash"}
+
+    for root, dirs, files in os.walk(vault_dir):
+        # Skip utility/system folders
+        rel = os.path.relpath(root, vault_dir)
+        top = rel.split(os.sep)[0] if rel != "." else ""
+        if top in skipped_dirs or top.startswith("."):
+            dirs[:] = []
+            continue
+
+        for fname in files:
+            if not fname.endswith(".md"):
+                continue
+            src = os.path.join(root, fname)
+            slug = slugify(os.path.splitext(fname)[0])
+            dest = os.path.join(output_dir, f"obsidian-{slug}.md")
+            try:
+                shutil.copy2(src, dest)
+                written += 1
+            except Exception as e:
+                logger.warning(f"Obsidian copy error: {e}")
+
+    logger.info(f"Obsidian: {written} files copied")
+    return written
+
+
 def main():
     parser = argparse.ArgumentParser(description="Batch ingest all data sources to .md files for Khoj")
     parser.add_argument("--output-dir", default="./khoj-ready-bundle",
                         help="Output directory for .md files (default: ./khoj-ready-bundle)")
     parser.add_argument("--chatgpt", default=None,
-                        help="Path to ChatGPT conversations.json")
+                        help="Path to ChatGPT conversations.json or export zip")
     parser.add_argument("--claude-web", default=None,
                         help="Path to Claude.ai export zip")
+    parser.add_argument("--obsidian", default=None,
+                        help="Path to Obsidian vault directory")
     parser.add_argument("--skip-chatgpt", action="store_true",
                         help="Skip ChatGPT ingestion")
     parser.add_argument("--skip-codex", action="store_true",
@@ -230,6 +272,8 @@ def main():
                         help="Skip Claude Code session ingestion")
     parser.add_argument("--skip-claude-web", action="store_true",
                         help="Skip Claude.ai web conversation ingestion")
+    parser.add_argument("--skip-obsidian", action="store_true",
+                        help="Skip Obsidian vault ingestion")
     args = parser.parse_args()
 
     output_dir = os.path.expanduser(args.output_dir)
@@ -245,12 +289,14 @@ def main():
     if not args.skip_chatgpt:
         chatgpt_path = args.chatgpt
         if not chatgpt_path:
-            # Auto-detect common locations
-            candidates = [
+            # Auto-detect: zip exports first, then raw json
+            import glob as globmod
+            zip_candidates = globmod.glob(os.path.expanduser("~/Downloads/*chatgpt*.zip")) + globmod.glob(os.path.expanduser("~/Downloads/56a8a2fc*.zip"))
+            json_candidates = [
                 os.path.expanduser("~/repos/chatgpt_ALL_CONVOS-2026-02-01/conversations.json"),
                 os.path.expanduser("~/Downloads/conversations.json"),
             ]
-            for c in candidates:
+            for c in zip_candidates + json_candidates:
                 if os.path.exists(c):
                     chatgpt_path = c
                     break
@@ -285,6 +331,19 @@ def main():
             total += ingest_claude_web(claude_zip, output_dir)
         else:
             logger.warning("Claude export zip not found. Use --claude-web to specify path, or --skip-claude-web.")
+
+    # Obsidian vault
+    if not args.skip_obsidian:
+        vault_dir = args.obsidian
+        if not vault_dir:
+            default_vault = os.path.expanduser("~/Obsidian/SoloDeveloper")
+            if os.path.isdir(default_vault):
+                vault_dir = default_vault
+
+        if vault_dir and os.path.isdir(vault_dir):
+            total += ingest_obsidian(vault_dir, output_dir)
+        else:
+            logger.warning("Obsidian vault not found. Use --obsidian to specify path, or --skip-obsidian.")
 
     elapsed = (datetime.now(timezone.utc) - start).total_seconds()
     logger.info("=" * 50)
