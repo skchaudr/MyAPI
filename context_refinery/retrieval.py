@@ -238,6 +238,7 @@ class QueryClassifier:
     _OPERATIONAL = [
         re.compile(r"\bstatus\s+of\s+(the\s+)?api\s+deployment\b", re.I),
         re.compile(r"\b(khoj\s+deployment|khoj\s+indexing|re-index(?:ing)?|health\s+endpoint)\b", re.I),
+        re.compile(r"\b(tailscale|ssh|vm\s+access|virtual\s+machine|vm)\b", re.I),
     ]
 
     _SYNTHESIS = [
@@ -431,9 +432,9 @@ class ResultReranker:
     _WEIGHT_OVERRIDES = {
         "temporal": {"W_SEMANTIC": 0.24, "W_RECENCY": 0.46},
         "pattern": {"W_REINFORCE": 0.26, "W_RECENCY": 0.08},
-        "project_overview": {"W_SEMANTIC": 0.18, "W_TITLE": 0.42, "W_SOURCE": 0.08},
-        "source_specific": {"W_SEMANTIC": 0.22, "W_TITLE": 0.30, "W_SOURCE": 0.24, "W_KEYWORD": 0.18},
-        "operational": {"W_TITLE": 0.24, "W_SOURCE": 0.20},
+        "project_overview": {"W_SEMANTIC": 0.16, "W_TITLE": 0.46, "W_SOURCE": 0.08},
+        "source_specific": {"W_SEMANTIC": 0.20, "W_TITLE": 0.34, "W_SOURCE": 0.28, "W_KEYWORD": 0.20},
+        "operational": {"W_TITLE": 0.30, "W_SOURCE": 0.24, "W_KEYWORD": 0.10},
         "decision": {"W_TITLE": 0.22, "W_SOURCE": 0.14},
         "meta": {"W_TITLE": 0.22, "W_SOURCE": 0.12},
         "synthesis": {"W_TITLE": 0.18, "W_SOURCE": 0.12},
@@ -551,20 +552,29 @@ class ResultReranker:
         compact = re.sub(r"[^a-z0-9]+", "", q)
         anchors = []
 
-        if "my_devinfra" in q or "mydevinfra" in compact:
-            anchors.extend(["my_devinfra", "mydevinfra"])
-        if "bdr" in q:
-            anchors.append("bdr")
-        if "cim" in q:
-            anchors.append("cim")
-        if "socialxp" in q:
-            anchors.append("socialxp")
-        if "khoj" in q:
-            anchors.append("khoj")
-        if "deployment" in q:
-            anchors.extend(["deployment", "deploy"])
-        if "index" in q:
-            anchors.extend(["index", "indexing"])
+        project_aliases = {
+            "my_devinfra": ["my_devinfra", "mydevinfra", "devinfra", "dev infra"],
+            "bdr": ["bdr"],
+            "cim": ["cim"],
+            "socialxp": ["socialxp"],
+            "openclaw": ["openclaw", "open claw"],
+        }
+        operational_aliases = {
+            "khoj": ["khoj"],
+            "deployment": ["deployment", "deploy", "deployed"],
+            "indexing": ["index", "indexing", "reindex", "re-index", "re-indexing"],
+            "access": ["tailscale", "ssh", "vm", "virtual machine", "remote access"],
+            "api": ["api", "endpoint", "health", "service"],
+        }
+
+        for canonical, variants in project_aliases.items():
+            if any(variant in q or re.sub(r"[^a-z0-9]+", "", variant) in compact for variant in variants):
+                anchors.extend(variants)
+
+        for canonical, variants in operational_aliases.items():
+            if any(variant in q or re.sub(r"[^a-z0-9]+", "", variant) in compact for variant in variants):
+                anchors.extend(variants)
+
         if "obsidian" in q:
             anchors.append("obsidian")
         if "schema" in q:
@@ -573,9 +583,22 @@ class ResultReranker:
             anchors.append("vault")
 
         if intent == "operational":
-            anchors.extend(["khoj", "deployment", "indexing", "health", "api"])
+            anchors.extend([
+                "khoj",
+                "deployment",
+                "deploy",
+                "indexing",
+                "reindex",
+                "health",
+                "api",
+                "tailscale",
+                "ssh",
+                "vm",
+                "virtual machine",
+                "remote access",
+            ])
         if intent == "project_overview":
-            anchors.extend(["my_devinfra", "bdr", "cim", "socialxp"])
+            anchors.extend(["my_devinfra", "mydevinfra", "devinfra", "bdr", "cim", "socialxp", "openclaw"])
 
         seen = set()
         deduped = []
@@ -588,7 +611,8 @@ class ResultReranker:
     def _title_body_path_score(self, query_terms, anchor_terms, title, file_path, body):
         if not query_terms:
             query_terms = []
-        text = f"{title or ''} {os.path.basename(file_path or '')}".lower()
+        file_name = os.path.basename(file_path or "")
+        text = f"{title or ''} {file_name}".lower()
         body_text = (body or "").lower()
         if not text.strip():
             return 0.0
@@ -612,15 +636,17 @@ class ResultReranker:
             anchor_hits = 0
             for anchor in anchor_terms:
                 normalized_anchor = re.sub(r"[^a-z0-9]+", "", anchor.lower())
-                if anchor and anchor.lower() in text:
+                in_title_or_path = bool(anchor and anchor.lower() in text)
+                in_body = bool(anchor and anchor.lower() in body_text)
+                in_compact_title = bool(normalized_anchor and normalized_anchor in compact_text)
+                in_compact_body = bool(normalized_anchor and normalized_anchor in compact_body)
+                if in_title_or_path or in_compact_title:
                     anchor_hits += 1
-                elif anchor and anchor.lower() in body_text:
+                    score += 0.32 if len(anchor) > 3 else 0.22
+                elif in_body or in_compact_body:
                     anchor_hits += 1
-                elif normalized_anchor and normalized_anchor in compact_text:
-                    anchor_hits += 1
-                elif normalized_anchor and normalized_anchor in compact_body:
-                    anchor_hits += 1
-            score += min(0.6, anchor_hits * 0.25)
+                    score += 0.18 if len(anchor) > 3 else 0.12
+            score += min(0.35, anchor_hits * 0.08)
 
         return min(1.0, score)
 

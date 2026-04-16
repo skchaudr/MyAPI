@@ -209,6 +209,12 @@ def test_classify_operational():
     assert mode == "summary"
 
 
+def test_classify_operational_infrastructure():
+    intent, mode, _, _ = QueryClassifier().classify("What notes are tied to Tailscale, SSH, or VM access?")
+    assert intent == "operational"
+    assert mode == "summary"
+
+
 def test_classify_decision():
     intent, mode, _, _ = QueryClassifier().classify("What did I decide about the vault schema?")
     assert intent == "decision"
@@ -420,6 +426,46 @@ def test_rerank_body_anchor_boost_ranking_project():
         query="What is My_DevInfra?",
     )
     assert reranked[0]["body"].startswith("My_DevInfra is my personal dev infrastructure")
+
+
+def test_rerank_project_alias_boost_ranking():
+    reranker = ResultReranker()
+    generic = _make_result(source="chatgpt")
+    generic["khoj_score"] = 0.0
+    generic["metadata"]["title"] = "Generic Infra Follow-up"
+    generic["file"] = "chatgpt-generic-infra-follow-up.md"
+
+    targeted = _make_result(source="chatgpt")
+    targeted["khoj_score"] = 0.45
+    targeted["metadata"]["title"] = "DevInfra Project Map"
+    targeted["file"] = "chatgpt-devinfra-project-map.md"
+
+    reranked = reranker.rerank(
+        [generic, targeted],
+        intent="project_overview",
+        query="What is My_DevInfra?",
+    )
+    assert reranked[0]["metadata"]["title"] == "DevInfra Project Map"
+
+
+def test_rerank_operational_infra_boost_ranking():
+    reranker = ResultReranker()
+    generic = _make_result(source="chatgpt")
+    generic["khoj_score"] = 0.0
+    generic["metadata"]["title"] = "Remote Work Notes"
+    generic["file"] = "chatgpt-remote-work-notes.md"
+
+    targeted = _make_result(source="chatgpt")
+    targeted["khoj_score"] = 0.45
+    targeted["metadata"]["title"] = "Tailscale SSH and VM Access"
+    targeted["file"] = "chatgpt-tailscale-ssh-vm-access.md"
+
+    reranked = reranker.rerank(
+        [generic, targeted],
+        intent="operational",
+        query="What notes are tied to Tailscale, SSH, or VM access?",
+    )
+    assert reranked[0]["metadata"]["title"] == "Tailscale SSH and VM Access"
 
 
 # ── ResultGrouper ────────────────────────────────────────────────────────────
