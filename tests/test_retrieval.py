@@ -75,6 +75,12 @@ def test_parse_empty_entry_infers_source_from_filename():
     assert snippet == ""
 
 
+def test_parse_captures_aliases():
+    entry = """---\ntitle: Personal Briefing & Capture System\naliases:\n- My_DevInfra\n- Personal Automation Hub\n---\n\nBody text."""
+    meta, body, snippet = MetadataParser.parse(entry, filename="obsidian-personal-briefing.md")
+    assert meta["aliases"] == ["My_DevInfra", "Personal Automation Hub"]
+
+
 def test_parse_defaults_unknown_source_and_filename_title():
     entry = """my-note.md\n---\ntitle:\nsource:\ncreated_at: '2026-04-10T12:00:00+00:00'\n---\n\nBody text."""
     meta, body, snippet = MetadataParser.parse(entry)
@@ -446,6 +452,27 @@ def test_rerank_project_alias_boost_ranking():
         query="What is My_DevInfra?",
     )
     assert reranked[0]["metadata"]["title"] == "DevInfra Project Map"
+
+
+def test_rerank_project_alias_frontmatter_boost_ranking():
+    reranker = ResultReranker()
+    generic = _make_result(source="obsidian")
+    generic["khoj_score"] = 0.0
+    generic["metadata"]["title"] = "Random Capture Note"
+    generic["file"] = "obsidian-random-capture-note.md"
+
+    targeted = _make_result(source="obsidian")
+    targeted["khoj_score"] = 0.45
+    targeted["metadata"]["title"] = "Personal Briefing & Capture System"
+    targeted["metadata"]["aliases"] = ["My_DevInfra", "Personal Automation Hub"]
+    targeted["file"] = "obsidian-personal-briefing-system.md"
+
+    reranked = reranker.rerank(
+        [generic, targeted],
+        intent="project_overview",
+        query="What is My_DevInfra?",
+    )
+    assert reranked[0]["metadata"]["title"] == "Personal Briefing & Capture System"
 
 
 def test_rerank_operational_infra_boost_ranking():

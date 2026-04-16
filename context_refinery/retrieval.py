@@ -98,6 +98,7 @@ class MetadataParser:
                 "doc_type": None,
                 "tags": [],
                 "projects": [],
+                "aliases": [],
             }, entry, snippet
 
         try:
@@ -120,6 +121,7 @@ class MetadataParser:
             "doc_type": fm.get("doc_type"),
             "tags": fm.get("tags") or [],
             "projects": fm.get("projects") or [],
+            "aliases": fm.get("aliases") or [],
         }
 
         return metadata, body, snippet
@@ -481,6 +483,7 @@ class ResultReranker:
                 meta.get("title"),
                 r.get("file"),
                 r.get("body"),
+                meta.get("aliases", []),
             )
             special_boost = self._specialized_anchor_bonus(
                 intent,
@@ -488,6 +491,7 @@ class ResultReranker:
                 meta.get("title"),
                 r.get("file"),
                 r.get("body"),
+                meta.get("aliases", []),
             )
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
@@ -616,12 +620,13 @@ class ResultReranker:
                 deduped.append(anchor)
         return deduped
 
-    def _title_body_path_score(self, query_terms, anchor_terms, title, file_path, body):
+    def _title_body_path_score(self, query_terms, anchor_terms, title, file_path, body, aliases=None):
         if not query_terms:
             query_terms = []
         file_name = os.path.basename(file_path or "")
         text = f"{title or ''} {file_name}".lower()
         body_text = (body or "").lower()
+        alias_text = " ".join(aliases or []).lower()
         if not text.strip():
             return 0.0
 
@@ -641,16 +646,19 @@ class ResultReranker:
         if anchor_terms:
             compact_text = re.sub(r"[^a-z0-9]+", "", text)
             compact_body = re.sub(r"[^a-z0-9]+", "", body_text)
+            compact_aliases = re.sub(r"[^a-z0-9]+", "", alias_text)
             anchor_hits = 0
             for anchor in anchor_terms:
                 normalized_anchor = re.sub(r"[^a-z0-9]+", "", anchor.lower())
                 in_title_or_path = bool(anchor and anchor.lower() in text)
                 in_body = bool(anchor and anchor.lower() in body_text)
+                in_aliases = bool(anchor and anchor.lower() in alias_text)
                 in_compact_title = bool(normalized_anchor and normalized_anchor in compact_text)
                 in_compact_body = bool(normalized_anchor and normalized_anchor in compact_body)
-                if in_title_or_path or in_compact_title:
+                in_compact_aliases = bool(normalized_anchor and normalized_anchor in compact_aliases)
+                if in_title_or_path or in_compact_title or in_aliases or in_compact_aliases:
                     anchor_hits += 1
-                    score += 0.32 if len(anchor) > 3 else 0.22
+                    score += 0.36 if len(anchor) > 3 else 0.24
                 elif in_body or in_compact_body:
                     anchor_hits += 1
                     score += 0.18 if len(anchor) > 3 else 0.12
@@ -658,7 +666,7 @@ class ResultReranker:
 
         return min(1.0, score)
 
-    def _specialized_anchor_bonus(self, intent, query, title, file_path, body):
+    def _specialized_anchor_bonus(self, intent, query, title, file_path, body, aliases=None):
         """Extra intent-specific bias for explicit project and operational anchors."""
         if not query:
             return 0.0
@@ -667,15 +675,21 @@ class ResultReranker:
         file_name = os.path.basename(file_path or "").lower()
         text = f"{title or ''} {file_name}".lower()
         body_text = (body or "").lower()
+        alias_text = " ".join(aliases or []).lower()
         compact_text = re.sub(r"[^a-z0-9]+", "", text)
         compact_body = re.sub(r"[^a-z0-9]+", "", body_text)
+        compact_aliases = re.sub(r"[^a-z0-9]+", "", alias_text)
 
         def exact_hit(variants):
             for variant in variants:
                 normalized = re.sub(r"[^a-z0-9]+", "", variant.lower())
                 if variant in text or variant in body_text:
                     return True
+                if variant in alias_text:
+                    return True
                 if normalized and (normalized in compact_text or normalized in compact_body):
+                    return True
+                if normalized and normalized in compact_aliases:
                     return True
             return False
 
