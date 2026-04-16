@@ -482,12 +482,20 @@ class ResultReranker:
                 r.get("file"),
                 r.get("body"),
             )
+            special_boost = self._specialized_anchor_bonus(
+                intent,
+                query,
+                meta.get("title"),
+                r.get("file"),
+                r.get("body"),
+            )
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
                                 w_trust * trust + w_reinf * reinf +
                                 w_keyword * keyword +
                                 w_source * source_match +
-                                w_title * title_boost)
+                                w_title * title_boost +
+                                special_boost)
 
         results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
         return results
@@ -649,6 +657,63 @@ class ResultReranker:
             score += min(0.35, anchor_hits * 0.08)
 
         return min(1.0, score)
+
+    def _specialized_anchor_bonus(self, intent, query, title, file_path, body):
+        """Extra intent-specific bias for explicit project and operational anchors."""
+        if not query:
+            return 0.0
+
+        q = query.lower()
+        file_name = os.path.basename(file_path or "").lower()
+        text = f"{title or ''} {file_name}".lower()
+        body_text = (body or "").lower()
+        compact_text = re.sub(r"[^a-z0-9]+", "", text)
+        compact_body = re.sub(r"[^a-z0-9]+", "", body_text)
+
+        def exact_hit(variants):
+            for variant in variants:
+                normalized = re.sub(r"[^a-z0-9]+", "", variant.lower())
+                if variant in text or variant in body_text:
+                    return True
+                if normalized and (normalized in compact_text or normalized in compact_body):
+                    return True
+            return False
+
+        score = 0.0
+        if intent == "project_overview":
+            if "my_devinfra" in q or "mydevinfra" in re.sub(r"[^a-z0-9]+", "", q):
+                if exact_hit(["my_devinfra", "mydevinfra", "devinfra", "dev infra"]):
+                    score += 0.30
+                if "my_devinfra" in compact_text or "mydevinfra" in compact_text:
+                    score += 0.18
+                if "my_devinfra" in body_text or "mydevinfra" in body_text:
+                    score += 0.10
+            for project in ("bdr", "cim", "socialxp", "openclaw"):
+                if project in q and exact_hit([project]):
+                    score += 0.22
+            if exact_hit(["project", "anchor", "identity", "map", "overview"]):
+                score += 0.06
+
+        elif intent == "operational":
+            operational_hits = 0
+            if exact_hit(["khoj"]):
+                operational_hits += 1
+            if exact_hit(["deployment", "deploy", "deployed"]):
+                operational_hits += 1
+            if exact_hit(["indexing", "index", "reindex", "re-index"]):
+                operational_hits += 1
+            if exact_hit(["tailscale", "ssh", "vm", "virtual machine", "remote access"]):
+                operational_hits += 1
+            if exact_hit(["systemd", "service", "health", "api", "server", "config"]):
+                operational_hits += 1
+
+            if operational_hits:
+                score += min(0.38, operational_hits * 0.12)
+            if any(token in q for token in ("deployment", "indexing", "tailscale", "ssh", "vm", "api")):
+                if not exact_hit(["deployment", "indexing", "tailscale", "ssh", "vm", "api", "systemd", "service", "health"]):
+                    score -= 0.08
+
+        return max(0.0, min(0.45, score))
 
     def _reinforcement_score(self, index, all_tags):
         """Boost if this doc's tags overlap with tags from other docs."""
