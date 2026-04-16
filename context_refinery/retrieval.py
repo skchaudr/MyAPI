@@ -793,12 +793,14 @@ class RetrievalPipeline:
         if intent == "temporal" and temporal_hint and not date_from:
             date_from = self._resolve_temporal_hint(temporal_hint)
 
+        retrieval_query = self._expand_query_for_retrieval(q, intent)
+
         # Step 2: Search Khoj (over-fetch to compensate for filtering)
         fetch_n = min(n * 3, 50)
-        raw_results = self.khoj.search(q, n=fetch_n)
+        raw_results = self.khoj.search(retrieval_query, n=fetch_n)
         total_from_khoj = len(raw_results)
 
-        keyword_results = self.keyword_searcher.search(q, n=fetch_n)
+        keyword_results = self.keyword_searcher.search(retrieval_query, n=fetch_n)
 
         # Step 3: Parse metadata from each result
         parsed = []
@@ -938,6 +940,49 @@ class RetrievalPipeline:
                 return (now - timedelta(days=amount * 30)).strftime("%Y-%m-%d")
 
         return None
+
+    def _expand_query_for_retrieval(self, query, intent):
+        """Expand narrow project and operational queries with alias terms."""
+        if not query:
+            return query
+
+        q = query.strip()
+        lower = q.lower()
+        compact = re.sub(r"[^a-z0-9]+", "", lower)
+        extras = []
+
+        if intent == "project_overview":
+            if "my_devinfra" in lower or "mydevinfra" in compact:
+                extras.extend(["my_devinfra", "mydevinfra", "devinfra"])
+            for token in ("bdr", "cim", "socialxp", "openclaw"):
+                if token in lower:
+                    extras.append(token)
+        elif intent == "operational":
+            extras.extend([
+                "khoj",
+                "deployment",
+                "indexing",
+                "tailscale",
+                "ssh",
+                "vm",
+                "systemd",
+                "service",
+                "api",
+                "health",
+            ])
+
+        deduped = []
+        seen = set()
+        for token in extras:
+            token = token.strip()
+            if token and token not in seen:
+                seen.add(token)
+                deduped.append(token)
+
+        if not deduped:
+            return q
+
+        return f"{q} {' '.join(deduped)}"
 
     @staticmethod
     def _dedupe_key(result):

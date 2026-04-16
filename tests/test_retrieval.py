@@ -544,6 +544,22 @@ class FilenameOnlyMockKhojClient:
         ]
 
 
+class RecordingKhojClient:
+    def __init__(self):
+        self.queries = []
+
+    def search(self, query, n=10, max_distance=None):
+        self.queries.append(query)
+        return [
+            {
+                "entry": SAMPLE_ENTRY,
+                "score": 0.25,
+                "additional": {"file": "chatgpt-test-doc.md", "source": "computer"},
+                "corpus-id": "mock-1",
+            }
+        ]
+
+
 def test_pipeline_full_response():
     pipeline = RetrievalPipeline(khoj_client=MockKhojClient())
     result = pipeline.execute(q="test query", n=5)
@@ -602,3 +618,24 @@ def test_pipeline_hybrid_merge_and_keyword_boost(tmp_path):
     assert len(result["results"]) == 2
     assert result["results"][0]["file"].endswith("goldmine-note.md")
     assert result["results"][0]["final_score"] >= result["results"][1]["final_score"]
+
+
+def test_pipeline_expands_project_overview_query_for_retrieval():
+    client = RecordingKhojClient()
+    pipeline = RetrievalPipeline(khoj_client=client)
+    pipeline.execute(q="What is My_DevInfra?", n=5)
+
+    assert client.queries
+    assert "my_devinfra" in client.queries[0]
+    assert "devinfra" in client.queries[0]
+
+
+def test_pipeline_expands_operational_query_for_retrieval():
+    client = RecordingKhojClient()
+    pipeline = RetrievalPipeline(khoj_client=client)
+    pipeline.execute(q="What notes are tied to Tailscale, SSH, or VM access?", n=5)
+
+    assert client.queries
+    assert "tailscale" in client.queries[0]
+    assert "systemd" in client.queries[0]
+    assert "health" in client.queries[0]
