@@ -382,6 +382,46 @@ def test_rerank_title_path_boost_ranking():
     assert reranked[0]["metadata"]["title"] == "My_DevInfra Notes"
 
 
+def test_rerank_anchor_boost_ranking_operational():
+    reranker = ResultReranker()
+    generic = _make_result(source="chatgpt")
+    generic["khoj_score"] = 0.0
+    generic["metadata"]["title"] = "Agentic AI Economics"
+    generic["file"] = "chatgpt-agentic-ai-economics.md"
+
+    targeted = _make_result(source="chatgpt")
+    targeted["khoj_score"] = 0.45
+    targeted["metadata"]["title"] = "Khoj Deployment and Indexing Notes"
+    targeted["file"] = "chatgpt-khoj-deployment-indexing.md"
+
+    reranked = reranker.rerank(
+        [generic, targeted],
+        intent="operational",
+        query="What notes mention Khoj deployment or indexing?",
+    )
+    assert reranked[0]["metadata"]["title"] == "Khoj Deployment and Indexing Notes"
+
+
+def test_rerank_body_anchor_boost_ranking_project():
+    reranker = ResultReranker()
+    generic = _make_result(source="claude")
+    generic["khoj_score"] = 0.0
+    generic["metadata"]["title"] = "Claude Session Notes"
+    generic["body"] = "This is about shell setup and routing, not the project."
+
+    targeted = _make_result(source="claude")
+    targeted["khoj_score"] = 0.45
+    targeted["metadata"]["title"] = "Some Generic Dev Note"
+    targeted["body"] = "My_DevInfra is my personal dev infrastructure and tooling project."
+
+    reranked = reranker.rerank(
+        [generic, targeted],
+        intent="project_overview",
+        query="What is My_DevInfra?",
+    )
+    assert reranked[0]["body"].startswith("My_DevInfra is my personal dev infrastructure")
+
+
 # ── ResultGrouper ────────────────────────────────────────────────────────────
 
 def test_group_by_source():

@@ -431,8 +431,8 @@ class ResultReranker:
     _WEIGHT_OVERRIDES = {
         "temporal": {"W_SEMANTIC": 0.24, "W_RECENCY": 0.46},
         "pattern": {"W_REINFORCE": 0.26, "W_RECENCY": 0.08},
-        "project_overview": {"W_TITLE": 0.28, "W_SOURCE": 0.10},
-        "source_specific": {"W_TITLE": 0.28, "W_SOURCE": 0.24, "W_KEYWORD": 0.18},
+        "project_overview": {"W_SEMANTIC": 0.18, "W_TITLE": 0.42, "W_SOURCE": 0.08},
+        "source_specific": {"W_SEMANTIC": 0.22, "W_TITLE": 0.30, "W_SOURCE": 0.24, "W_KEYWORD": 0.18},
         "operational": {"W_TITLE": 0.24, "W_SOURCE": 0.20},
         "decision": {"W_TITLE": 0.22, "W_SOURCE": 0.14},
         "meta": {"W_TITLE": 0.22, "W_SOURCE": 0.12},
@@ -459,6 +459,7 @@ class ResultReranker:
         w_keyword = overrides.get("W_KEYWORD", self.W_KEYWORD)
         source_family = self._source_family_from_query(query)
         query_terms = self._query_terms(query)
+        anchor_terms = self._anchor_terms_from_query(query, intent)
 
         # Collect all tags/titles for reinforcement scoring
         all_tags = []
@@ -473,7 +474,13 @@ class ResultReranker:
             reinf = self._reinforcement_score(i, all_tags)
             keyword = 1.0 if r.get("keyword_match") else 0.0
             source_match = 1.0 if source_family and meta.get("source") == source_family else 0.0
-            title_boost = self._title_path_score(query_terms, meta.get("title"), r.get("file"))
+            title_boost = self._title_body_path_score(
+                query_terms,
+                anchor_terms,
+                meta.get("title"),
+                r.get("file"),
+                r.get("body"),
+            )
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
                                 w_trust * trust + w_reinf * reinf +
@@ -536,10 +543,53 @@ class ResultReranker:
         }
         return [term for term in terms if term not in stopwords]
 
-    def _title_path_score(self, query_terms, title, file_path):
+    def _anchor_terms_from_query(self, query, intent):
+        if not query:
+            return []
+
+        q = query.lower()
+        compact = re.sub(r"[^a-z0-9]+", "", q)
+        anchors = []
+
+        if "my_devinfra" in q or "mydevinfra" in compact:
+            anchors.extend(["my_devinfra", "mydevinfra"])
+        if "bdr" in q:
+            anchors.append("bdr")
+        if "cim" in q:
+            anchors.append("cim")
+        if "socialxp" in q:
+            anchors.append("socialxp")
+        if "khoj" in q:
+            anchors.append("khoj")
+        if "deployment" in q:
+            anchors.extend(["deployment", "deploy"])
+        if "index" in q:
+            anchors.extend(["index", "indexing"])
+        if "obsidian" in q:
+            anchors.append("obsidian")
+        if "schema" in q:
+            anchors.append("schema")
+        if "vault" in q:
+            anchors.append("vault")
+
+        if intent == "operational":
+            anchors.extend(["khoj", "deployment", "indexing", "health", "api"])
+        if intent == "project_overview":
+            anchors.extend(["my_devinfra", "bdr", "cim", "socialxp"])
+
+        seen = set()
+        deduped = []
+        for anchor in anchors:
+            if anchor not in seen:
+                seen.add(anchor)
+                deduped.append(anchor)
+        return deduped
+
+    def _title_body_path_score(self, query_terms, anchor_terms, title, file_path, body):
         if not query_terms:
-            return 0.0
+            query_terms = []
         text = f"{title or ''} {os.path.basename(file_path or '')}".lower()
+        body_text = (body or "").lower()
         if not text.strip():
             return 0.0
 
@@ -555,6 +605,23 @@ class ResultReranker:
 
         score = (matches / max(len(query_terms), 1)) * 0.7
         score += 0.3 * exact_phrase_hits
+
+        if anchor_terms:
+            compact_text = re.sub(r"[^a-z0-9]+", "", text)
+            compact_body = re.sub(r"[^a-z0-9]+", "", body_text)
+            anchor_hits = 0
+            for anchor in anchor_terms:
+                normalized_anchor = re.sub(r"[^a-z0-9]+", "", anchor.lower())
+                if anchor and anchor.lower() in text:
+                    anchor_hits += 1
+                elif anchor and anchor.lower() in body_text:
+                    anchor_hits += 1
+                elif normalized_anchor and normalized_anchor in compact_text:
+                    anchor_hits += 1
+                elif normalized_anchor and normalized_anchor in compact_body:
+                    anchor_hits += 1
+            score += min(0.6, anchor_hits * 0.25)
+
         return min(1.0, score)
 
     def _reinforcement_score(self, index, all_tags):
