@@ -65,6 +65,17 @@ class MetadataParser:
         ("claude-", "claude-code"),
         ("codex-", "codex"),
     )
+    _SOURCE_ALIASES = {
+        "claude_code": "claude-code",
+        "claudecode": "claude-code",
+        "claude-code": "claude-code",
+        "claude code": "claude-code",
+        "claude": "claude",
+        "chatgpt": "chatgpt",
+        "codex": "codex",
+        "obsidian": "obsidian",
+        "jules": "jules",
+    }
 
     @staticmethod
     def parse(entry, filename=None):
@@ -88,14 +99,23 @@ class MetadataParser:
         match = MetadataParser._FM_RE.match(text)
         if not match:
             snippet = entry[:500].strip()
-            inferred_source = MetadataParser._infer_source_from_filename(filename)
+            source = MetadataParser._canonical_source(None, filename)
+            document_kind = MetadataParser._infer_document_kind(
+                source=source,
+                doc_type=None,
+                status=None,
+                title="untitled",
+                filename=filename,
+                body=entry,
+            )
             return {
                 "title": "untitled",
-                "source": inferred_source,
+                "source": source,
                 "created_at": None,
                 "author": None,
                 "status": None,
                 "doc_type": None,
+                "document_kind": document_kind,
                 "tags": [],
                 "projects": [],
                 "aliases": [],
@@ -110,15 +130,27 @@ class MetadataParser:
 
         body = text[match.end():].strip()
         snippet = body[:500].strip()
-        inferred_source = MetadataParser._infer_source_from_filename(filename)
+        source = MetadataParser._canonical_source(fm.get("source"), filename)
+        title = fm.get("title") or prefix_title or "untitled"
+        status = fm.get("status")
+        doc_type = fm.get("doc_type")
+        document_kind = MetadataParser._infer_document_kind(
+            source=source,
+            doc_type=doc_type,
+            status=status,
+            title=title,
+            filename=filename,
+            body=body,
+        )
 
         metadata = {
-            "title": fm.get("title") or prefix_title or "untitled",
-            "source": fm.get("source") or inferred_source,
+            "title": title,
+            "source": source,
             "created_at": fm.get("created_at"),
             "author": fm.get("author"),
-            "status": fm.get("status"),
-            "doc_type": fm.get("doc_type"),
+            "status": status,
+            "doc_type": doc_type,
+            "document_kind": document_kind,
             "tags": fm.get("tags") or [],
             "projects": fm.get("projects") or [],
             "aliases": fm.get("aliases") or [],
@@ -136,6 +168,61 @@ class MetadataParser:
             if name.startswith(prefix):
                 return source
         return "unknown"
+
+    @staticmethod
+    def _canonical_source(raw_source, filename=None):
+        inferred = MetadataParser._infer_source_from_filename(filename)
+        raw = str(raw_source or "").strip().lower()
+        source = MetadataParser._SOURCE_ALIASES.get(raw, raw or inferred)
+
+        # Filename prefixes can disambiguate generic frontmatter from exported logs.
+        if inferred in {"claude-code", "codex"}:
+            return inferred
+        if not source or source == "unknown":
+            return inferred
+        return MetadataParser._SOURCE_ALIASES.get(source, source)
+
+    @staticmethod
+    def _infer_document_kind(source, doc_type, status, title, filename, body):
+        name = os.path.basename(str(filename or "")).lower()
+        title_text = str(title or "").lower()
+        body_text = (body or "")[:4000].lower()
+        doc_type_text = str(doc_type or "").lower()
+        status_text = str(status or "").lower()
+        text = f"{title_text} {name}"
+
+        if re.fullmatch(r"obsidian-\d{8}\.md", name):
+            return "daily_note"
+
+        if re.search(r"\b(benchmark|eval|evaluation|harness|run-\d{4}|baseline)\b", text):
+            return "benchmark_artifact"
+
+        if (
+            source in {"claude-code", "codex"}
+            or name.startswith("claude-local-command")
+            or name.startswith("codex-")
+            or "command caveat" in title_text
+        ):
+            return "operational_dump"
+
+        if (
+            source == "obsidian"
+            or doc_type_text in {"note", "spec"}
+            or status_text in {"mature", "incubating"}
+            or re.search(r"\b(anchor|summary|overview|map|briefing|guide|system status|handoff)\b", text)
+        ):
+            return "synthesized_note"
+
+        if doc_type_text in {"article", "reference"} or re.search(r"\b(reference|docs?|documentation|guide)\b", text):
+            return "reference_doc"
+
+        if doc_type_text in {"conversation", "log"} or status_text == "scratchpad":
+            return "scratch_log"
+
+        if re.search(r"\b(user|assistant|tool):", body_text):
+            return "scratch_log"
+
+        return "reference_doc"
 
 
 # ── Keyword Searcher ─────────────────────────────────────────────────────────
@@ -180,7 +267,7 @@ class KeywordSearcher:
                 ):
                     continue
 
-                metadata, parsed_body, snippet = self.parser.parse(entry)
+                metadata, parsed_body, snippet = self.parser.parse(entry, filename=name)
                 haystack = f"{metadata.get('title', '')} {parsed_body}".lower()
                 match_hits = sum(haystack.count(term) for term in terms)
                 phrase_hits = sum(haystack.count(phrase) for phrase in phrases)
@@ -477,6 +564,13 @@ class ResultReranker:
             reinf = self._reinforcement_score(i, all_tags)
             keyword = 1.0 if r.get("keyword_match") else 0.0
             source_match = 1.0 if source_family and meta.get("source") == source_family else 0.0
+            doc_kind_prior = self._document_kind_prior(
+                meta.get("document_kind"),
+                intent,
+                query,
+                meta.get("title"),
+                r.get("file"),
+            )
             title_boost = self._title_body_path_score(
                 query_terms,
                 anchor_terms,
@@ -499,7 +593,8 @@ class ResultReranker:
                                 w_keyword * keyword +
                                 w_source * source_match +
                                 w_title * title_boost +
-                                special_boost)
+                                special_boost +
+                                doc_kind_prior)
 
         results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
         return results
@@ -543,6 +638,59 @@ class ResultReranker:
         if "jules" in q:
             return "claude"
         return None
+
+    def _document_kind_prior(self, document_kind, intent, query, title=None, file_path=None):
+        """Bias toward durable knowledge objects over raw logs unless requested."""
+        kind = document_kind or "reference_doc"
+        query_text = (query or "").lower()
+        title_text = f"{title or ''} {os.path.basename(file_path or '')}".lower()
+        procedural = bool(re.search(
+            r"\b(exact\s+command|command|commands|log|logs|transcript|session|raw|"
+            r"error|failed|failure|stack\s*trace|traceback|restart|systemctl|"
+            r"journalctl|tail|service|terminal|shell|run|benchmark)\b",
+            query_text,
+        ))
+
+        if kind == "benchmark_artifact":
+            if "benchmark" in query_text or "evaluation" in query_text or "rubric" in query_text:
+                return 0.08
+            return -0.10
+
+        if kind == "daily_note":
+            if intent == "temporal":
+                return 0.10
+            return -0.45
+
+        if kind == "operational_dump":
+            if procedural or intent == "source_specific":
+                return 0.04
+            if intent == "operational":
+                return -0.22
+            if intent in {"project_overview", "decision", "meta", "synthesis", "pattern"}:
+                return -0.18
+            return -0.10
+
+        if kind == "synthesized_note":
+            if intent in {"project_overview", "decision", "meta", "synthesis", "pattern"}:
+                return 0.14
+            if intent == "operational" and not procedural:
+                return 0.12
+            if intent == "factual" and re.search(r"\b(overview|summary|guide|map|anchor|status)\b", title_text):
+                return 0.08
+            return 0.04
+
+        if kind == "reference_doc":
+            if intent in {"factual", "source_specific"}:
+                return 0.06
+            return 0.02
+
+        if kind == "scratch_log":
+            if procedural:
+                return 0.02
+            if intent in {"project_overview", "decision", "meta", "synthesis", "operational"}:
+                return -0.08
+
+        return 0.0
 
     def _query_terms(self, query):
         if not query:
@@ -884,6 +1032,7 @@ class RetrievalPipeline:
                 "final_score": r.get("final_score", 0.0),
                 "title": meta.get("title"),
                 "source": meta.get("source"),
+                "document_kind": meta.get("document_kind"),
                 "created_at": meta.get("created_at"),
                 "tags": meta.get("tags", []),
                 "projects": meta.get("projects", []),
@@ -902,6 +1051,7 @@ class RetrievalPipeline:
                     "final_score": r.get("final_score", 0.0),
                     "title": meta.get("title"),
                     "source": meta.get("source"),
+                    "document_kind": meta.get("document_kind"),
                     "created_at": meta.get("created_at"),
                     "tags": meta.get("tags", []),
                     "projects": meta.get("projects", []),

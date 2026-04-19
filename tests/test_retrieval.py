@@ -106,6 +106,28 @@ def test_parse_infers_source_from_filename_prefix(filename, expected_source):
     assert meta["source"] == expected_source
 
 
+def test_parse_filename_canonicalizes_generic_claude_source():
+    entry = """---\ntitle: Claude Command Log\nsource: claude\ncreated_at: '2026-04-10T12:00:00+00:00'\ndoc_type: conversation\n---\n\nRaw command log."""
+    meta, _, _ = MetadataParser.parse(
+        entry,
+        filename="claude-local-command-caveatcaveat-example.md",
+    )
+    assert meta["source"] == "claude-code"
+    assert meta["document_kind"] == "operational_dump"
+
+
+def test_parse_infers_synthesized_note_kind():
+    entry = """---\ntitle: System Status Briefing\nsource: obsidian\ncreated_at: '2026-04-10T12:00:00+00:00'\ndoc_type: note\n---\n\nA synthesized status note."""
+    meta, _, _ = MetadataParser.parse(entry, filename="obsidian-system-status-briefing.md")
+    assert meta["document_kind"] == "synthesized_note"
+
+
+def test_parse_infers_daily_note_kind():
+    entry = """---\ntitle: 2026-04-12\nsource: obsidian\ncreated_at: '2026-04-12T12:00:00+00:00'\ndoc_type: note\n---\n\nDaily capture."""
+    meta, _, _ = MetadataParser.parse(entry, filename="obsidian-20260412.md")
+    assert meta["document_kind"] == "daily_note"
+
+
 def test_parse_infers_source_when_frontmatter_missing_source():
     entry = """---\ntitle: Sample Note\nsource:\ncreated_at: '2026-04-10T12:00:00+00:00'\n---\n\nBody text."""
     meta, _, _ = MetadataParser.parse(entry, filename="claude-web-example.md")
@@ -493,6 +515,84 @@ def test_rerank_operational_infra_boost_ranking():
         query="What notes are tied to Tailscale, SSH, or VM access?",
     )
     assert reranked[0]["metadata"]["title"] == "Tailscale SSH and VM Access"
+
+
+def test_rerank_penalizes_operational_dump_for_summary_queries():
+    reranker = ResultReranker()
+    dump = _make_result(source="claude-code")
+    dump["khoj_score"] = 0.0
+    dump["metadata"]["title"] = "Claude Command Session"
+    dump["metadata"]["document_kind"] = "operational_dump"
+    dump["file"] = "claude-local-command-caveatcaveat-example.md"
+    dump["body"] = "khoj deployment indexing api systemd service restart logs"
+
+    synthesized = _make_result(source="obsidian")
+    synthesized["khoj_score"] = 0.35
+    synthesized["metadata"]["title"] = "Khoj Deployment and Indexing Status"
+    synthesized["metadata"]["document_kind"] = "synthesized_note"
+    synthesized["file"] = "obsidian-khoj-deployment-indexing-status.md"
+    synthesized["body"] = "A concise synthesized status note about Khoj deployment and indexing."
+
+    reranked = reranker.rerank(
+        [dump, synthesized],
+        intent="operational",
+        query="What notes mention Khoj deployment or indexing?",
+    )
+    assert reranked[0]["metadata"]["document_kind"] == "synthesized_note"
+
+
+def test_rerank_allows_operational_dump_for_command_log_queries():
+    reranker = ResultReranker()
+    dump = _make_result(source="claude-code")
+    dump["khoj_score"] = 0.25
+    dump["metadata"]["title"] = "Claude Command Session"
+    dump["metadata"]["document_kind"] = "operational_dump"
+    dump["file"] = "claude-local-command-caveatcaveat-example.md"
+
+    prior = reranker._document_kind_prior(
+        dump["metadata"]["document_kind"],
+        "operational",
+        "Find the exact command log for the systemctl restart error",
+        dump["metadata"]["title"],
+        dump["file"],
+    )
+    assert prior > 0
+
+
+def test_rerank_penalizes_daily_note_for_operational_queries():
+    reranker = ResultReranker()
+    daily = _make_result(source="obsidian")
+    daily["khoj_score"] = 0.0
+    daily["metadata"]["title"] = "2026-04-12"
+    daily["metadata"]["document_kind"] = "daily_note"
+    daily["file"] = "obsidian-20260412.md"
+    daily["body"] = "khoj deployment indexing api systemd service"
+
+    status = _make_result(source="obsidian")
+    status["khoj_score"] = 0.25
+    status["metadata"]["title"] = "System Status Briefing"
+    status["metadata"]["document_kind"] = "synthesized_note"
+    status["file"] = "obsidian-system-status-briefing.md"
+    status["body"] = "A synthesized status note about API deployment."
+
+    reranked = reranker.rerank(
+        [daily, status],
+        intent="operational",
+        query="What is the status of the API deployment?",
+    )
+    assert reranked[0]["metadata"]["document_kind"] == "synthesized_note"
+
+
+def test_rerank_allows_daily_note_for_temporal_queries():
+    reranker = ResultReranker()
+    prior = reranker._document_kind_prior(
+        "daily_note",
+        "temporal",
+        "What have I been working on recently?",
+        "2026-04-12",
+        "obsidian-20260412.md",
+    )
+    assert prior > 0
 
 
 # ── ResultGrouper ────────────────────────────────────────────────────────────
