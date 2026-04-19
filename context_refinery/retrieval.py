@@ -194,7 +194,7 @@ class KeywordSearcher:
                     "body": parsed_body,
                     "snippet": snippet,
                     "metadata": metadata,
-                    "file": path,
+                    "file": os.path.basename(path),
                     "keyword_match": True,
                 })
 
@@ -817,21 +817,26 @@ class RetrievalPipeline:
         keyword_results = self.keyword_searcher.search(retrieval_query, n=fetch_n)
 
         # Step 3: Parse metadata from each result
-        parsed = []
+        parsed_by_key = {}
         for r in raw_results:
             entry = r.get("entry", "")
             filename = r.get("additional", {}).get("file")
             metadata, body, snippet = self.parser.parse(entry, filename=filename)
-            parsed.append({
+            parsed_result = {
                 "corpus_id": r.get("corpus-id", ""),
                 "khoj_score": r.get("score", 1.0),
                 "entry": entry,
                 "body": body,
                 "snippet": snippet,
                 "metadata": metadata,
-                "file": filename,
-            })
+                "file": self._normalize_file_name(filename),
+            }
+            key = self._dedupe_key(parsed_result)
+            existing = parsed_by_key.get(key)
+            if not existing or parsed_result.get("khoj_score", 1.0) < existing.get("khoj_score", 1.0):
+                parsed_by_key[key] = parsed_result
 
+        parsed = list(parsed_by_key.values())
         seen = {self._dedupe_key(r) for r in parsed}
         for r in keyword_results:
             key = self._dedupe_key(r)
@@ -882,7 +887,7 @@ class RetrievalPipeline:
                 "created_at": meta.get("created_at"),
                 "tags": meta.get("tags", []),
                 "projects": meta.get("projects", []),
-                "file": r.get("file"),
+                "file": self._normalize_file_name(r.get("file")),
             })
 
         group_docs = []
@@ -900,7 +905,7 @@ class RetrievalPipeline:
                     "created_at": meta.get("created_at"),
                     "tags": meta.get("tags", []),
                     "projects": meta.get("projects", []),
-                    "file": r.get("file"),
+                    "file": self._normalize_file_name(r.get("file")),
                 })
             group_docs.append({
                 "key": g["key"],
@@ -1001,6 +1006,12 @@ class RetrievalPipeline:
     @staticmethod
     def _dedupe_key(result):
         raw = result.get("file") or result.get("corpus_id") or result.get("metadata", {}).get("title") or ""
+        return RetrievalPipeline._normalize_file_name(raw).lower()
+
+    @staticmethod
+    def _normalize_file_name(raw):
+        if not raw:
+            return ""
         return os.path.basename(str(raw))
 
 

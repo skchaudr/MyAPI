@@ -57,6 +57,7 @@ class StatusPass(TriagePass):
         console.print(f"[dim][{index}/{total}][/dim]  [bold yellow]{name}[/bold yellow]  [dim]({current})[/dim]")
         if hint:
             console.print(f"         [dim]{hint}[/dim]")
+        self.print_legend()
 
         while True:
             ch = getch()

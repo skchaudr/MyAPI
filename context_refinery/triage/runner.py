@@ -19,6 +19,17 @@ except ImportError:
     exit(1)
 
 
+MENU_ITEMS = [
+    ("1", "Full pipeline (status → doc type → tags → projects → links)", [StatusPass, DocTypePass, TagsPass, ProjectsPass, LinksPass]),
+    ("2", "Status only", [StatusPass]),
+    ("3", "Doc type only", [DocTypePass]),
+    ("4", "Tags only", [TagsPass]),
+    ("5", "Projects only", [ProjectsPass]),
+    ("6", "Links only", [LinksPass]),
+    ("7", "Custom pipeline", None),
+]
+
+
 def show_menu():
     """Display the triage console menu. Returns list of pass classes to run.
 
@@ -32,15 +43,14 @@ def show_menu():
       [7] Custom (pick passes)
       [q] Quit
     """
+    selected = 0
+
     while True:
         console.print(Rule("[bold cyan]CONTEXT REFINERY — TRIAGE TOOL[/bold cyan]"))
-        console.print("  [bold][1][/bold] Full pipeline (status → doc type → tags → projects → links)")
-        console.print("  [bold][2][/bold] Status only")
-        console.print("  [bold][3][/bold] Doc type only")
-        console.print("  [bold][4][/bold] Tags only")
-        console.print("  [bold][5][/bold] Projects only")
-        console.print("  [bold][6][/bold] Links only")
-        console.print("  [bold][7][/bold] Custom pipeline")
+        console.print("[dim]Use arrow keys or 1-7, then Enter to choose.[/dim]\n")
+        for idx, (key, label, _) in enumerate(MENU_ITEMS):
+            prefix = "[bold green]>[/bold green] " if idx == selected else "  "
+            console.print(f"{prefix}[bold][{key}][/bold] {label}")
         console.print("  [bold][q][/bold] Quit\n")
 
         ch = getch()
@@ -48,18 +58,32 @@ def show_menu():
         if ch == "\x03" or ch.lower() == "q":
             return []
 
+        if ch in ("UP", "LEFT"):
+            selected = (selected - 1) % len(MENU_ITEMS)
+            continue
+        if ch in ("DOWN", "RIGHT"):
+            selected = (selected + 1) % len(MENU_ITEMS)
+            continue
+
+        if ch in ("\r", "\n", " "):
+            key, _, passes = MENU_ITEMS[selected]
+            if key == "7":
+                ch = "7"
+            elif passes is not None:
+                return passes
+
         if ch == "1":
-            return [StatusPass, DocTypePass, TagsPass, ProjectsPass, LinksPass]
+            return MENU_ITEMS[0][2]
         elif ch == "2":
-            return [StatusPass]
+            return MENU_ITEMS[1][2]
         elif ch == "3":
-            return [DocTypePass]
+            return MENU_ITEMS[2][2]
         elif ch == "4":
-            return [TagsPass]
+            return MENU_ITEMS[3][2]
         elif ch == "5":
-            return [ProjectsPass]
+            return MENU_ITEMS[4][2]
         elif ch == "6":
-            return [LinksPass]
+            return MENU_ITEMS[5][2]
         elif ch == "7":
             console.print("\n[yellow]Select passes to run (e.g., 134 for status, tags, projects):[/yellow]")
             console.print("  1=Status, 2=DocType, 3=Tags, 4=Projects, 5=Links")
@@ -134,6 +158,13 @@ def main():
 
     Same CLI interface as the original triage.py.
     """
+    if any(arg in ("-h", "--help") for arg in sys.argv[1:]):
+        console.print("[bold]Usage:[/bold]")
+        console.print("  python3 -m context_refinery.triage [directory]")
+        console.print("  python3 -m context_refinery.triage file1.md file2.md ...")
+        console.print("\n[dim]Pass a directory to triage every .md file under it recursively.[/dim]")
+        return
+
     # Accept file paths as args, or a directory as first arg
     if len(sys.argv) > 1:
         target = sys.argv[1]

@@ -56,6 +56,7 @@ class DocTypePass(TriagePass):
         current = record["doc_type"]
 
         console.print(f"[dim][{index}/{total}][/dim]  [bold yellow]{name}[/bold yellow]  [dim]({current})[/dim]")
+        self.print_legend()
 
         while True:
             ch = getch()

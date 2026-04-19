@@ -5,7 +5,8 @@ from context_refinery.triage.writers import write_related_section, parse_file, w
 from context_refinery.triage.terminal import KEYS
 from context_refinery.triage.passes.links import LinksPass
 from context_refinery.triage.passes.status import StatusPass
-from context_refinery.triage.passes.tags import TagsPass
+from context_refinery.triage.passes.tags import TagsPass, normalize_tags, page_items
+import context_refinery.triage.passes.projects as projects_mod
 from context_refinery.triage.review import review_phase
 
 def test_write_related_section_injects_new():
@@ -28,6 +29,23 @@ def test_keys_constraint():
     assert "9" in KEYS
     assert "a" in KEYS
     assert "z" in KEYS
+
+
+def test_tags_paging_helpers():
+    assert page_items(0) == ["ai", "web-dev", "devops", "python", "react", "typescript", "obsidian", "khoj", "infrastructure"]
+    assert page_items(1) == ["career", "learning", "neovim", "git", "api", "database", "design"]
+    assert normalize_tags(["design", "task", "ai", "custom"]) == ["ai", "design", "task", "custom"]
+
+
+def test_projects_paging_helpers(monkeypatch):
+    monkeypatch.setattr(
+        projects_mod,
+        "PRESET_PROJECTS",
+        ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"],
+    )
+    assert projects_mod.page_items(0) == ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9"]
+    assert projects_mod.page_items(1) == ["p10", "p11"]
+    assert projects_mod.normalize_projects(["p10", "custom", "p2"]) == ["p2", "p10", "custom"]
 
 def test_links_pass_init():
     records = [{"filepath": "file1.md", "related": []}, {"filepath": "file2.md", "related": []}]

@@ -33,6 +33,9 @@ def review_phase(records, active_passes: list[TriagePass]):
 
     Supports: y=write, n=cancel, r=re-edit a specific file.
     """
+    actions = ["y", "n", "r"]
+    selected = 0
+
     while True:
         console.print()
         console.print(Rule("[bold cyan]PHASE 5 — REVIEW[/bold cyan]"))
@@ -67,17 +70,34 @@ def review_phase(records, active_passes: list[TriagePass]):
 
         console.print(table)
         console.print()
+        console.print("[dim]Use arrows or y/n/r, then Enter to choose. r re-edits one file by number.[/dim]")
         console.print(
-            "  [bold green][y][/bold green] Write to files   "
-            "[bold red][n][/bold red] Cancel   "
-            "[bold yellow][r][/bold yellow] Re-edit a file"
+            "  [bold green]y[/bold green] Write to files   "
+            "[bold red]n[/bold red] Cancel   "
+            "[bold yellow]r[/bold yellow] Re-edit a file"
         )
-        console.print("[dim]Waiting for y, n, or r...[/dim]", end=" ")
+        for idx, label in enumerate(("Write", "Cancel", "Re-edit")):
+            prefix = "[bold green]>[/bold green] " if idx == selected else "  "
+            console.print(f"{prefix}{label}")
+        console.print("[dim]Waiting for y, n, r, arrows, or Enter...[/dim]", end=" ")
 
         ch = getch()
-        console.print(ch)
 
-        if ch == "\x03" or ch.lower() == "n":
+        if ch == "\x03":
+            console.print("\n[red]Cancelled — no files modified.[/red]")
+            return False
+
+        if ch in ("UP", "LEFT"):
+            selected = (selected - 1) % len(actions)
+            continue
+        if ch in ("DOWN", "RIGHT"):
+            selected = (selected + 1) % len(actions)
+            continue
+
+        if ch in ("\r", "\n", " "):
+            ch = actions[selected]
+
+        if ch.lower() == "n":
             console.print("\n[red]Cancelled — no files modified.[/red]")
             return False
 
@@ -85,6 +105,7 @@ def review_phase(records, active_passes: list[TriagePass]):
             return True
 
         if ch.lower() == "r":
+            console.print("[dim]Re-edit means: choose a file number, then run the active passes again on that file.[/dim]")
             num = getnum(f"Re-edit which file? (1–{len(records)})")
             if num is None or not (1 <= num <= len(records)):
                 console.print("[dim]Invalid number.[/dim]")

@@ -40,6 +40,18 @@ def getch():
     try:
         tty.setcbreak(fd)
         ch = stream.read(1)
+        if ch == "\x1b":
+            seq = ch + stream.read(1)
+            if seq[1] == "[":
+                seq += stream.read(1)
+                return {
+                    "A": "UP",
+                    "B": "DOWN",
+                    "C": "RIGHT",
+                    "D": "LEFT",
+                    "H": "HOME",
+                    "F": "END",
+                }.get(seq[2], ch)
     finally:
         try:
             termios.tcsetattr(fd, termios.TCSAFLUSH, old)

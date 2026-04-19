@@ -37,10 +37,11 @@ class LinksPass(TriagePass):
     def print_legend(self) -> None:
         """Print the links legend — number to toggle, enter/space to confirm."""
         console.print(
-            "  [bold][number/letter][/bold] toggle link  "
-            "[bold][enter/space][/bold] done  "
-            "[bold][q][/bold] quit  "
+            "  [bold][0-9/a-z][/bold] toggle link  "
             "[bold][/][/bold] filter\n"
+            "  [bold]s[/bold] skip  "
+            "[bold][enter/space][/bold] done  "
+            "[bold][q][/bold] quit\n"
         )
 
     def process_file(self, record: dict, index: int, total: int) -> bool:
@@ -80,6 +81,7 @@ class LinksPass(TriagePass):
 
         while True:
             console.print(f"[dim][{index}/{total}][/dim]  [bold yellow]{name}[/bold yellow]  [dim]related: {record['related']}[/dim]")
+            self.print_legend()
 
             for i, cand in enumerate(filtered_candidates):
                 cand_name = os.path.splitext(os.path.basename(cand["filepath"]))[0]
@@ -94,6 +96,10 @@ class LinksPass(TriagePass):
 
             if ch.lower() == "q":
                 return False
+
+            if ch.lower() == "s":
+                console.print(f"         [dim]→ skipped (keeping {record['related']})[/dim]")
+                return True
 
             if ch in ("\n", "\r", " "):
                 console.print(f"         [dim]→ related: {record['related']}[/dim]")
