@@ -1,6 +1,7 @@
-"""Doc type pass — classify document type via single keypress.
+"""Type pass — classify note type via single keypress (V3 schema).
 
-Extracted from context_refinery/triage.py lines 350-387 (doctype_phase).
+V3 types: project / area / resource / concept / log (+ rare: task, utility)
+Default: resource (the safe fallback per schema spec).
 """
 
 import sys
@@ -8,52 +9,54 @@ import os
 from context_refinery.triage.passes.base import TriagePass
 from context_refinery.triage.terminal import console, getch
 
-# Taxonomy from docs/01-taxonomy.md
-DOC_TYPES = {
-    "1": "note",
-    "2": "conversation",
-    "3": "spec",
-    "4": "log",
-    "5": "article",
-    "6": "other",
+TYPE_VALUES = {
+    "1": "project",
+    "2": "area",
+    "3": "resource",
+    "4": "concept",
+    "5": "event",
+    "6": "periodic",
 }
 
-DOC_TYPE_COLORS = {
+TYPE_COLORS = {
     "1": "green",
-    "2": "magenta",
-    "3": "cyan",
-    "4": "yellow",
-    "5": "blue",
+    "2": "cyan",
+    "3": "blue",
+    "4": "magenta",
+    "5": "yellow",
     "6": "dim",
 }
 
+# Backward-compat alias so old imports don't break
+DOC_TYPES = TYPE_VALUES
+DOC_TYPE_COLORS = TYPE_COLORS
 
-class DocTypePass(TriagePass):
+
+class TypePass(TriagePass):
 
     @property
     def name(self) -> str:
-        return "DOC TYPE"
+        return "TYPE"
 
     def print_legend(self) -> None:
-        """Print the doc type keypress legend."""
         console.print(
-            "  [bold][1][/bold] [green]note[/green]  "
-            "[bold][2][/bold] [magenta]conversation[/magenta]  "
-            "[bold][3][/bold] [cyan]spec[/cyan]  "
-            "[bold][4][/bold] [yellow]log[/yellow]  "
-            "[bold][5][/bold] [blue]article[/blue]  "
-            "[bold][6][/bold] [dim]other[/dim]  "
+            "  [bold][1][/bold] [green]project[/green]  "
+            "[bold][2][/bold] [cyan]area[/cyan]  "
+            "[bold][3][/bold] [blue]resource[/blue]  "
+            "[bold][4][/bold] [magenta]concept[/magenta]  "
+            "[bold][5][/bold] [yellow]event[/yellow]  "
+            "[bold][6][/bold] [dim]periodic[/dim]  "
             "[bold][s][/bold] skip  "
             "[bold][q][/bold] done\n"
         )
 
     def process_file(self, record: dict, index: int, total: int) -> bool:
-        """Assign doc_type to one file. s=skip, q=done, 1-6=set type.
+        """Assign type to one file. s=skip, q=done, 1-7=set type.
 
         Returns True to continue, False if user pressed q.
         """
         name = os.path.basename(record["filepath"])
-        current = record["doc_type"]
+        current = record["type"]
 
         console.print(f"[dim][{index}/{total}][/dim]  [bold yellow]{name}[/bold yellow]  [dim]({current})[/dim]")
         self.print_legend()
@@ -72,12 +75,16 @@ class DocTypePass(TriagePass):
                 console.print(f"         [dim]→ skipped (keeping {current})[/dim]")
                 return True
 
-            if ch in DOC_TYPES:
-                dtype = DOC_TYPES[ch]
-                color = DOC_TYPE_COLORS[ch]
-                record["doc_type"] = dtype
-                console.print(f"         → [{color}]{dtype}[/{color}]")
+            if ch in TYPE_VALUES:
+                t = TYPE_VALUES[ch]
+                color = TYPE_COLORS[ch]
+                record["type"] = t
+                console.print(f"         → [{color}]{t}[/{color}]")
                 return True
 
     def get_display_value(self, record: dict) -> str:
-        return record.get("doc_type", "note")
+        return record.get("type", "resource")
+
+
+# Keep old name as alias so runner/tests that still reference DocTypePass don't break
+DocTypePass = TypePass

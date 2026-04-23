@@ -59,11 +59,16 @@ def review_phase(records, active_passes: list[TriagePass]):
                     status_key = next((k for k, v in STATUSES.items() if v == rec.get("status")), None)
                     s_color = STATUS_COLORS.get(status_key, "white") if status_key else "white"
                     val = f"[{s_color}]{val}[/{s_color}]"
-                elif p.name == "DOC TYPE":
-                    from context_refinery.triage.passes.doctype import DOC_TYPES, DOC_TYPE_COLORS
-                    doctype_key = next((k for k, v in DOC_TYPES.items() if v == rec.get("doc_type")), None)
-                    d_color = DOC_TYPE_COLORS.get(doctype_key, "white") if doctype_key else "white"
-                    val = f"[{d_color}]{val}[/{d_color}]"
+                elif p.name == "TYPE":
+                    from context_refinery.triage.passes.doctype import TYPE_VALUES, TYPE_COLORS
+                    type_key = next((k for k, v in TYPE_VALUES.items() if v == rec.get("type")), None)
+                    t_color = TYPE_COLORS.get(type_key, "white") if type_key else "white"
+                    val = f"[{t_color}]{val}[/{t_color}]"
+                elif p.name == "FORMAT":
+                    from context_refinery.triage.passes.format import FORMAT_VALUES, FORMAT_COLORS
+                    fmt_key = next((k for k, v in FORMAT_VALUES.items() if v == rec.get("format")), None)
+                    f_color = FORMAT_COLORS.get(fmt_key, "white") if fmt_key else "white"
+                    val = f"[{f_color}]{val}[/{f_color}]"
                 row.append(val)
 
             table.add_row(*row)
@@ -125,42 +130,52 @@ def review_phase(records, active_passes: list[TriagePass]):
 
 
 def execute_writes(records):
-    """Write updated metadata back to each file's YAML frontmatter.
-
-    For each record:
-    1. Parse existing frontmatter + body
-    2. Update status, doc_type, tags, projects from record
-    3. If record has 'related', call write_related_section() on body
-    4. Ensure required fields (id, title, source, created_at, author) exist
-    5. Call write_frontmatter() with field ordering per taxonomy spec
-    """
+    """Write updated metadata back to each file's YAML frontmatter."""
     written = 0
     for rec in records:
         filepath = rec["filepath"]
         try:
             frontmatter, body = parse_file(filepath)
 
-            # Update fields
-            frontmatter["status"] = rec.get("status", "scratchpad")
-            frontmatter["doc_type"] = rec.get("doc_type", "note")
+            # V4 fields
+            frontmatter["type"] = rec.get("type", "resource")
+
+            # status only for project/event
+            if rec.get("type") in ("project", "event"):
+                frontmatter["status"] = rec.get("status", "active")
+            else:
+                frontmatter.pop("status", None)
+
+            # remove deprecated format field
+            frontmatter.pop("format", None)
+
+            if rec.get("area"):
+                frontmatter["area"] = rec["area"]
+            if rec.get("project"):
+                frontmatter["project"] = rec["project"]
+            elif "project" in frontmatter and not rec.get("project"):
+                pass  # preserve existing if not explicitly cleared
+            if rec.get("concepts"):
+                frontmatter["concepts"] = rec["concepts"]
+
             frontmatter["tags"] = rec.get("tags", [])
-            frontmatter["projects"] = rec.get("projects", [])
 
             if "related" in rec:
                 frontmatter["related"] = rec["related"]
                 body = write_related_section(body, rec["related"])
+
+            if rec.get("review_flags"):
+                frontmatter["review_flags"] = rec["review_flags"]
+            else:
+                frontmatter.pop("review_flags", None)
 
             # Ensure required fields exist
             if "id" not in frontmatter:
                 frontmatter["id"] = str(uuid.uuid4())
             if "title" not in frontmatter:
                 frontmatter["title"] = os.path.splitext(os.path.basename(filepath))[0]
-            if "source" not in frontmatter:
-                frontmatter["source"] = "obsidian"
             if "created_at" not in frontmatter:
                 frontmatter["created_at"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
-            if "author" not in frontmatter:
-                frontmatter["author"] = "Unknown"
 
             write_frontmatter(filepath, frontmatter, body)
             written += 1

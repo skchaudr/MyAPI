@@ -4,12 +4,16 @@ This is the main entry point. Presents a menu to select passes,
 runs them in order, then hands off to review.
 """
 
+import json
 import os
 import sys
+from pathlib import Path
 
 from context_refinery.triage.terminal import console, getch, getnum
 from context_refinery.triage.writers import parse_file, gather_files, make_record
-from context_refinery.triage.passes import StatusPass, DocTypePass, TagsPass, ProjectsPass, LinksPass
+from context_refinery.triage.passes import TypePass, StatusPass, ConceptsPass, TagsPass, LinksPass
+from context_refinery.triage.passes.project import ProjectPass
+from context_refinery.triage.passes.v4schema import V4SchemaPass
 from context_refinery.triage.review import review_phase, execute_writes
 
 try:
@@ -20,14 +24,92 @@ except ImportError:
 
 
 MENU_ITEMS = [
-    ("1", "Full pipeline (status → doc type → tags → projects → links)", [StatusPass, DocTypePass, TagsPass, ProjectsPass, LinksPass]),
-    ("2", "Status only", [StatusPass]),
-    ("3", "Doc type only", [DocTypePass]),
-    ("4", "Tags only", [TagsPass]),
-    ("5", "Projects only", [ProjectsPass]),
-    ("6", "Links only", [LinksPass]),
-    ("7", "Custom pipeline", None),
+    ("1", "V4 Owner Pass (type → project/status → area → concepts → tags → related)", [V4SchemaPass]),
+    ("2", "Type only", [TypePass]),
+    ("3", "Project only", [ProjectPass]),
+    ("4", "Status only", [StatusPass]),
+    ("5", "Concepts only", [ConceptsPass]),
+    ("6", "Tags only", [TagsPass]),
+    ("7", "Related only", [LinksPass]),
+    ("9", "Custom pipeline", None),
 ]
+
+PREFILL_FIELDS = {"type", "status", "area", "project", "tags"}
+
+
+def load_queue_files(queue_json: str, vault_root: str, confidences: set[str]) -> list[str]:
+    """Load file paths from a normalizer JSON report."""
+    root = Path(vault_root).expanduser()
+    data = json.loads(Path(queue_json).read_text(encoding="utf-8"))
+    files = []
+    for item in data:
+        if item.get("confidence") not in confidences:
+            continue
+        rel_path = item.get("path")
+        if not rel_path:
+            continue
+        path = root / rel_path
+        if path.exists() and path.suffix == ".md":
+            files.append(str(path))
+    return files
+
+
+def load_queue_suggestions(queue_json: str, vault_root: str, confidences: set[str]) -> dict[str, dict]:
+    """Load normalizer suggestions keyed by absolute file path."""
+    root = Path(vault_root).expanduser()
+    data = json.loads(Path(queue_json).read_text(encoding="utf-8"))
+    suggestions = {}
+    for item in data:
+        if item.get("confidence") not in confidences:
+            continue
+        rel_path = item.get("path")
+        if not rel_path:
+            continue
+        path = root / rel_path
+        if path.exists() and path.suffix == ".md":
+            suggestions[str(path)] = item.get("suggested") or {}
+    return suggestions
+
+
+def prefill_record_from_suggestion(record: dict, suggestion: dict) -> list[str]:
+    """Apply safe normalizer suggestions to the in-memory review record."""
+    changed = []
+    for field in PREFILL_FIELDS:
+        if field not in suggestion:
+            continue
+        value = suggestion[field]
+        if value in (None, "", []):
+            continue
+        if record.get(field) != value:
+            record[field] = value
+            changed.append(field)
+    return sorted(changed)
+
+
+def parse_args(argv: list[str]) -> tuple[list[str], str | None, str | None, set[str]]:
+    """Parse the small CLI surface while preserving positional file support."""
+    positional = []
+    queue_json = None
+    vault_root = None
+    confidences = {"medium", "review"}
+
+    i = 0
+    while i < len(argv):
+        arg = argv[i]
+        if arg == "--queue-json" and i + 1 < len(argv):
+            queue_json = argv[i + 1]
+            i += 2
+        elif arg == "--vault-root" and i + 1 < len(argv):
+            vault_root = argv[i + 1]
+            i += 2
+        elif arg == "--confidence" and i + 1 < len(argv):
+            confidences = {part.strip() for part in argv[i + 1].split(",") if part.strip()}
+            i += 2
+        else:
+            positional.append(arg)
+            i += 1
+
+    return positional, queue_json, vault_root, confidences
 
 
 def show_menu():
@@ -47,7 +129,7 @@ def show_menu():
 
     while True:
         console.print(Rule("[bold cyan]CONTEXT REFINERY — TRIAGE TOOL[/bold cyan]"))
-        console.print("[dim]Use arrow keys or 1-7, then Enter to choose.[/dim]\n")
+        console.print("[dim]Use arrow keys or 1-8, then Enter to choose.[/dim]\n")
         for idx, (key, label, _) in enumerate(MENU_ITEMS):
             prefix = "[bold green]>[/bold green] " if idx == selected else "  "
             console.print(f"{prefix}[bold][{key}][/bold] {label}")
@@ -67,8 +149,8 @@ def show_menu():
 
         if ch in ("\r", "\n", " "):
             key, _, passes = MENU_ITEMS[selected]
-            if key == "7":
-                ch = "7"
+            if key == "9":
+                ch = "9"
             elif passes is not None:
                 return passes
 
@@ -85,40 +167,50 @@ def show_menu():
         elif ch == "6":
             return MENU_ITEMS[5][2]
         elif ch == "7":
-            console.print("\n[yellow]Select passes to run (e.g., 134 for status, tags, projects):[/yellow]")
-            console.print("  1=Status, 2=DocType, 3=Tags, 4=Projects, 5=Links")
+            return MENU_ITEMS[6][2]
+        elif ch == "8":
+            return MENU_ITEMS[7][2]
+        elif ch == "9":
+            console.print("\n[yellow]Select passes (e.g., 246 for type+concepts+tags):[/yellow]")
+            console.print("  1=V4OwnerPass  2=Type  3=Project  4=Status  5=Concepts  6=Tags  7=Related")
 
             custom_passes = []
             while True:
                 c = getch()
                 if c == "\r" or c == "\n":
                     break
-                if c == "1" and StatusPass not in custom_passes:
-                    custom_passes.append(StatusPass)
+                if c == "1" and V4SchemaPass not in custom_passes:
+                    custom_passes.append(V4SchemaPass)
                     console.print("1", end="", style="bold green")
-                elif c == "2" and DocTypePass not in custom_passes:
-                    custom_passes.append(DocTypePass)
+                elif c == "2" and TypePass not in custom_passes:
+                    custom_passes.append(TypePass)
                     console.print("2", end="", style="bold green")
-                elif c == "3" and TagsPass not in custom_passes:
-                    custom_passes.append(TagsPass)
+                elif c == "3" and ProjectPass not in custom_passes:
+                    custom_passes.append(ProjectPass)
                     console.print("3", end="", style="bold green")
-                elif c == "4" and ProjectsPass not in custom_passes:
-                    custom_passes.append(ProjectsPass)
+                elif c == "4" and StatusPass not in custom_passes:
+                    custom_passes.append(StatusPass)
                     console.print("4", end="", style="bold green")
-                elif c == "5" and LinksPass not in custom_passes:
-                    custom_passes.append(LinksPass)
+                elif c == "5" and ConceptsPass not in custom_passes:
+                    custom_passes.append(ConceptsPass)
                     console.print("5", end="", style="bold green")
+                elif c == "6" and TagsPass not in custom_passes:
+                    custom_passes.append(TagsPass)
+                    console.print("6", end="", style="bold green")
+                elif c == "7" and LinksPass not in custom_passes:
+                    custom_passes.append(LinksPass)
+                    console.print("7", end="", style="bold green")
 
             console.print("\n")
             if custom_passes:
                 return custom_passes
 
 
-def run_passes(records, pass_classes):
+def run_passes(records, pass_classes, vault_root=None):
     """Instantiate and run each pass over the records.
 
     For each pass class:
-    1. Instantiate it (LinksPass needs all_records kwarg)
+    1. Instantiate it (LinksPass needs all_records kwarg; V3SchemaPass needs vault_root)
     2. Print a Rich Rule with the pass name
     3. Call pass.print_legend()
     4. For each record, call pass.process_file(record, index, total)
@@ -131,6 +223,8 @@ def run_passes(records, pass_classes):
     for cls in pass_classes:
         if cls == LinksPass:
             instance = cls(records)
+        elif cls == V4SchemaPass:
+            instance = cls(vault_root)
         else:
             instance = cls()
 
@@ -162,20 +256,31 @@ def main():
         console.print("[bold]Usage:[/bold]")
         console.print("  python3 -m context_refinery.triage [directory]")
         console.print("  python3 -m context_refinery.triage file1.md file2.md ...")
+        console.print("  python3 -m context_refinery.triage --queue-json report.json --vault-root /path/to/vault --confidence medium,review")
         console.print("\n[dim]Pass a directory to triage every .md file under it recursively.[/dim]")
         return
 
+    positional, queue_json, vault_root_arg, confidences = parse_args(sys.argv[1:])
+
     # Accept file paths as args, or a directory as first arg
-    if len(sys.argv) > 1:
-        target = sys.argv[1]
+    if queue_json:
+        vault_root = vault_root_arg or os.getcwd()
+        files = load_queue_files(queue_json, vault_root, confidences)
+        queue_suggestions = load_queue_suggestions(queue_json, vault_root, confidences)
+        target = vault_root
+    elif positional:
+        queue_suggestions = {}
+        target = positional[0]
         if os.path.isdir(target):
             files = gather_files(target)
         else:
-            files = [f for f in sys.argv[1:] if f.endswith(".md") and os.path.exists(f)]
+            files = [f for f in positional if f.endswith(".md") and os.path.exists(f)]
     else:
+        queue_suggestions = {}
         console.print("[bold]Usage:[/bold]")
         console.print("  python3 -m context_refinery.triage [directory]")
         console.print("  python3 -m context_refinery.triage file1.md file2.md ...")
+        console.print("  python3 -m context_refinery.triage --queue-json report.json --vault-root /path/to/vault --confidence medium,review")
         return
 
     if not files:
@@ -187,10 +292,16 @@ def main():
 
     # Build records from existing frontmatter
     records = []
+    prefilled_count = 0
     for f in files:
         try:
             fm, _ = parse_file(f)
-            records.append(make_record(f, fm))
+            record = make_record(f, fm)
+            changed = prefill_record_from_suggestion(record, queue_suggestions.get(f, {}))
+            if changed:
+                record["_prefilled_fields"] = changed
+                prefilled_count += 1
+            records.append(record)
         except Exception as e:
             console.print(f"[red]Skipping {os.path.basename(f)}: {e}[/red]")
 
@@ -198,12 +309,16 @@ def main():
         console.print("[dim]No valid files to triage.[/dim]")
         return
 
+    if prefilled_count:
+        console.print(f"[dim]Prefilled normalizer suggestions for {prefilled_count} file(s).[/dim]\n")
+
     pass_classes = show_menu()
     if not pass_classes:
         console.print("\n[dim]Exiting.[/dim]")
         return
 
-    active_instances = run_passes(records, pass_classes)
+    vault_root = target if os.path.isdir(target) else os.path.dirname(os.path.abspath(files[0]))
+    active_instances = run_passes(records, pass_classes, vault_root=vault_root)
 
     confirmed = review_phase(records, active_instances)
     if not confirmed:

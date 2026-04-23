@@ -20,3 +20,16 @@ khoj-ready-bundle.*/
 AGENTS.md
 jules-vault-triage-dispatch.md
 khoj.dump
+
+# Generated V4 vault-normalization artifacts
+project-docs/backups/
+project-docs/*-apply-manifest.json
+project-docs/*owner-pass*.json
+project-docs/*owner-pass*.md
+project-docs/pilot-*.json
+project-docs/pilot-*.md
+project-docs/vault-schema-v4-normalization-*.json
+project-docs/vault-schema-v4-normalization-*.md
+
+# Local screenshots
+/*.png

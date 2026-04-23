@@ -9,10 +9,21 @@ from context_refinery.triage.passes.base import TriagePass
 from context_refinery.triage.terminal import console, getch, getline, KEYS
 
 PRESET_TAGS = [
-    "ai", "web-dev", "devops", "python", "react", "typescript",
-    "obsidian", "khoj", "infrastructure", "career", "learning",
-    "neovim", "git", "api", "database", "design",
+    # topic/ — subject matter
+    "topic/ai", "topic/web-dev", "topic/devops", "topic/infrastructure",
+    "topic/retrieval", "topic/note-taking", "topic/career", "topic/learning",
+    "topic/neovim", "topic/log", "topic/howto",
+    # tool/ — specific software
+    "tool/obsidian", "tool/neovim", "tool/claude", "tool/khoj", "tool/git",
+    "tool/github",
+    # lang/ — programming language
+    "lang/python", "lang/typescript", "lang/javascript",
+    # scope/ — life domain
+    "scope/personal", "scope/career", "scope/work",
 ]
+
+MAX_TAGS = 8
+TAG_PREFIXES = ("topic/", "tool/", "lang/", "scope/")
 
 PAGE_SIZE = 9
 
@@ -113,9 +124,14 @@ class TagsPass(TriagePass):
                 custom = getline("  Tag:")
                 if custom:
                     tag = custom.lower().strip()
-                    if tag and tag not in record["tags"]:
-                        record["tags"].append(tag)
-                        console.print(f"         [green]+ {tag}[/green]")
+                    if tag:
+                        if not tag.startswith(TAG_PREFIXES):
+                            console.print(f"         [red]✗ must start with topic/ tool/ lang/ scope/[/red]")
+                        elif len(record["tags"]) >= MAX_TAGS:
+                            console.print(f"         [red]✗ max {MAX_TAGS} tags — remove one first[/red]")
+                        elif tag not in record["tags"]:
+                            record["tags"].append(tag)
+                            console.print(f"         [green]+ {tag}[/green]")
                 continue
 
             # Preset tag toggle
@@ -126,6 +142,8 @@ class TagsPass(TriagePass):
                 if tag in record["tags"]:
                     record["tags"].remove(tag)
                     console.print(f"         [red]- {tag}[/red]")
+                elif len(record["tags"]) >= MAX_TAGS:
+                    console.print(f"         [red]✗ max {MAX_TAGS} tags[/red]")
                 else:
                     record["tags"].append(tag)
                     console.print(f"         [green]+ {tag}[/green]")

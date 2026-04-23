@@ -9,21 +9,19 @@ from context_refinery.triage.passes.base import TriagePass
 from context_refinery.triage.terminal import console, getch
 from context_refinery.triage.writers import preview
 
-# Taxonomy from docs/01-taxonomy.md
+# V3 schema statuses
 STATUSES = {
-    "1": "mature",
-    "2": "incubating",
-    "3": "scratchpad",
-    "4": "deprecated",
-    "5": "reference",
+    "1": "active",
+    "2": "backlog",
+    "3": "blocked",
+    "4": "done",
 }
 
 STATUS_COLORS = {
     "1": "green",
     "2": "cyan",
-    "3": "yellow",
-    "4": "red",
-    "5": "blue",
+    "3": "red",
+    "4": "dim",
 }
 
 
@@ -34,13 +32,11 @@ class StatusPass(TriagePass):
         return "MATURITY STATUS"
 
     def print_legend(self) -> None:
-        """Print the status keypress legend."""
         console.print(
-            "  [bold][1][/bold] [green]mature[/green]  "
-            "[bold][2][/bold] [cyan]incubating[/cyan]  "
-            "[bold][3][/bold] [yellow]scratchpad[/yellow]  "
-            "[bold][4][/bold] [red]deprecated[/red]  "
-            "[bold][5][/bold] [blue]reference[/blue]  "
+            "  [bold][1][/bold] [green]active[/green]  "
+            "[bold][2][/bold] [cyan]backlog[/cyan]  "
+            "[bold][3][/bold] [red]blocked[/red]  "
+            "[bold][4][/bold] [dim]done[/dim]  "
             "[bold][s][/bold] skip  "
             "[bold][q][/bold] done\n"
         )
@@ -81,4 +77,4 @@ class StatusPass(TriagePass):
                 return True
 
     def get_display_value(self, record: dict) -> str:
-        return record.get("status", "scratchpad")
+        return record.get("status", "active")

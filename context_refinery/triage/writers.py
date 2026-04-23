@@ -68,14 +68,18 @@ def preview(filepath):
 def write_frontmatter(filepath, frontmatter, body):
     """Write updated YAML frontmatter + body back to file.
 
-    Field order per docs/02-target-output.md:
-    id, title, source, created_at, author, status, doc_type, tags, projects, related
+    Field order: V3 schema fields first, then legacy fields, then any extras.
     """
-    # Field order per docs/02-target-output.md
     ordered = {}
     field_order = [
-        "id", "title", "source", "created_at", "author",
-        "status", "doc_type", "tags", "projects", "related"
+        "title", "aliases",
+        "type", "status",
+        "area", "project",
+        "concepts", "tags",
+        "related", "review_flags",
+        "folder_origin", "migration_status",
+        # legacy/extra fields preserved if present
+        "source", "created", "modified", "id", "created_at", "author", "doc_type",
     ]
     for key in field_order:
         if key in frontmatter:
@@ -152,13 +156,19 @@ def gather_files(directory):
 def make_record(filepath, frontmatter):
     """Create a triage record dict for a file with current metadata.
 
-    Returns dict with keys: filepath, status, doc_type, tags, projects, related.
+    Reads V3 fields (type, format, status, concepts, area) plus legacy fields.
     """
     return {
         "filepath": filepath,
-        "status": frontmatter.get("status", "scratchpad"),
-        "doc_type": frontmatter.get("doc_type", "note"),
+        "title": frontmatter.get("title", os.path.splitext(os.path.basename(filepath))[0]),
+        "aliases": frontmatter.get("aliases", []),
+        # V4 fields
+        "type": frontmatter.get("type", "resource"),
+        "status": frontmatter.get("status", ""),
+        "area": frontmatter.get("area", ""),
+        "project": frontmatter.get("project", ""),
+        "concepts": [str(c) for c in (frontmatter.get("concepts") or [])],
         "tags": [str(t) for t in (frontmatter.get("tags") or [])],
-        "projects": [str(p) for p in (frontmatter.get("projects") or [])],
-        "related": [str(r) for r in (frontmatter.get("related") or [])]
+        "related": [str(r) for r in (frontmatter.get("related") or [])],
+        "review_flags": [str(r) for r in (frontmatter.get("review_flags") or [])],
     }
