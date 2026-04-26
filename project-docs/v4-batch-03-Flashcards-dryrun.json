@@ -1,0 +1,21 @@
+[
+  {
+    "path": "Flashcards/GDDP_Protocol.md",
+    "destination_folder": "resources",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Flashcards` maps to `resources/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "Flashcards",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

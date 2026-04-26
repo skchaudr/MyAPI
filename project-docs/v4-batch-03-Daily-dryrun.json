@@ -1,0 +1,23 @@
+[
+  {
+    "path": "Daily/2026.04.26.md",
+    "destination_folder": "resources",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Daily` maps to `resources/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "daily"
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "Daily",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

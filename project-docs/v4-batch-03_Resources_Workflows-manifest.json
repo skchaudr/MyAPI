@@ -1,0 +1,6559 @@
+{
+  "run_at": "2026-04-26T11:38:49.661285+00:00",
+  "subdir": "03 Resources/Workflows",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 168,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "03 Resources/Workflows/2026 Workflows based around Obsidian and build from there.md",
+      "confidence": "high",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "gittest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/Ghostty + Obsidian CLI Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "workflow",
+            "terminal",
+            "productivity",
+            "obsidian",
+            "ghostty"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/00 - Skill Tree System (README).md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "system",
+            "skilltree"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "system",
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/10 - Branch Nodes (All Branches).md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "branches"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/99 - Skill Tree Dashboard.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "dashboard"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/SkillTree-test.md",
+      "confidence": "high",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/10 Motions That Feel Natural.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/10 Pipe Chains That Solve Problems.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/10 Sparring Sessions Logged.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Antigravity Deep Dive Session.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Architecture Discussion.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Ask Why Five Times.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Autocommands Basics.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Ad Campaign Ready.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Admin Dashboard MVP.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Analytics Setup.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Architecture Doc.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Booking Calendar Integration.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Booking Calendar Working.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Booking Form Submission.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Codebase Orientation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Deployed to Production.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Email Notifications.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Local Dev Environment.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Local SEO.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Mobile Responsive.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Payment Integration.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Performance Audit.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Performance Fixes.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Photo Gallery Polished.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Pricing Logic.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Project Architecture Doc.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR README Accurate.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Reviews Integration.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR SEO Basics.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR SEO Foundation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/BDR Supabase Schema Solid.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Break the AI Solution.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Burn 50 Credits Strategically.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Claude Auditor Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Colorscheme Thats Yours.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Cron Job on Pi.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Custom Function in Lua.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/DAP Debug Adapter Setup.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/DSA Problem Category Deep Dive.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Daily Driver Note Template.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Debug a Plugin Issue.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Dotfiles v1.md",
+      "confidence": "high",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Explain It Back.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/File Navigation with Telescope.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/First AI Sparring Session.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/First Recruiter Outreach.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/First Shell Script That Saves Time.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/First Technical Interview.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Git Integration.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Git from CLI Only.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Gym Hour Automation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Install and Configure 3 Plugins.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Jules Async Delegation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Jules Audit Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Jump List Navigation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/LSP Setup.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/LeetCode Pattern Recognition.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Macros for Repetitive Edits.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Marks Local and Global.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Mock Interview with AI.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Model Comparison Sparring.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Model Strengths Map.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Monitoring and Logging on Pi.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Multi-Agent Pipeline.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/NeoVim tmux Seamless Navigation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Network Debugging Toolkit.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Options You Actually Set.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Pair with Antigravity on Config.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Pi Cluster Distributed Task.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Pi Runs Real Service.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Pi Serves HTTP Locally.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Pi in SSH Config.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Portfolio Site Live.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Process Management.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Profile and Optimize Startup.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Project Command Center.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Prompt Engineering Experiment.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Question the Big-O.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Quickfix List Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Real Bug AI Fix Your Verification.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Refactor with AI Critique.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Registers Beyond Basics.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Remote tmux from iPad.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Resume 2.0 with Real Projects.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Rewrite Without Looking.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SSH Key Auth to Pi.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Scripted Deployment to Pi.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Search Until Muscle Memory.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Second Pi Online.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Shell Script with Args and Conditionals.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Snippets Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Authentication.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Core Feature Prototype.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Database Schema.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Deployment.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Dissertation Context.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Documentation.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Mobile Responsive.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Privacy Ethics.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Repo Setup.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Research Landscape.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Second Feature.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Tech Stack Decision.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP UI Components.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP User Flow Wireframes.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP User Testing.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/SocialXP Vision Alignment.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Solve It First Then Compare.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Solve Something with awk.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Solve Something with sed.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Spar on a Real Bug.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Splits and Buffers Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Spot the Code Smell.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Spot the Hallucination.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Statusline Configured.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Substitute Mastery.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Survive a Full Day in NeoVim.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/System Design Sparring.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/System Design with AI Debate.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Systemd Service.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Teach AI Sparring to Someone.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Teach AI Your Codebase.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Teach Someone One NeoVim Trick.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Terminal Prompt Customized.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Text Objects Deep Dive.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/The Dot Command.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/The Socratic Prompt.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/The g Commands.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Time Complexity Analysis.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Trace the Logic Line by Line.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Trace the Logic Step by Step.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Treesitter for Syntax.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Two Pis Talking.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Understand Your Config Structure.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Undo Tree.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - AI Fluent.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - AI Multiplied.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - AI Strategist.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - AI Whisperer.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - BDR Business Ready.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - BDR MVP Live.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - Editor Wizard.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - NeoVim as IDE.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - Remote Ops.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - SocialXP Dissertation Ready.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - SocialXP Foundation Solid.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - SocialXP Prototype Complete.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - Sparring Partner.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - Terminal Wizard.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - Your Config Your Editor.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Unlock - Your Toolbox.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest",
+            "unlock"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "locked",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Visual Mode Variants.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Weekly Review Dashboard.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Write Your Own Plugin.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Write the Test Cases First.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/Your First Custom Keybind.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/jq Script Pipeline.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/jq Transform on AI Exports.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/ripgrep fd Power Moves.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/tmux Session Workflow.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Skills/xargs for Batch Operations.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "skilltree",
+            "quest"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Skills"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "03 Resources/Workflows/SkillTree/Templates/TEMPLATE - Quest.md",
+      "confidence": "medium",
+      "changes": {
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "tags": {
+          "before": [
+            "template",
+            "skilltree"
+          ],
+          "after": [
+            "topic/workflow"
+          ]
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "03 Resources/Workflows/SkillTree/Templates"
+        },
+        "area": {
+          "before": null,
+          "after": "[[My_DevInfra]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "template",
+          "after": "resource"
+        }
+      }
+    }
+  ]
+}

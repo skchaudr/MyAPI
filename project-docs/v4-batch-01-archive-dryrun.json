@@ -1,0 +1,569 @@
+[
+  {
+    "path": "05 Archive/Archive/Cleanup Log 2026-02-28.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/Example-Note-Wiz-2.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "note",
+      "status": "done",
+      "tags": [
+        "scope/learning"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/learning"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/Example-Note-Wiz.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "tags": [
+        "scope/learning"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/learning"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/Russian dude speaking to English audience trying to get them to probably sign up for a course but truth in what he says.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/The Engineer's 5 W's of CIM and NUI Anchor.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/career",
+        "tool/git",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/career",
+        "tool/git",
+        "topic/web-dev"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/Ty Conversation Call 4.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/communication",
+        "scope/finance"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/communication",
+        "scope/finance"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/Ty First Official Meeting After 7 Days of Processing.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/communication"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/communication"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/Ty Zoom Meeting Day One.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/mindset"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/mindset"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/CIM-Ty-and-the-ownership-conversation.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/End-of-Month Assessment.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `interview/sprint`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done",
+      "tags": [
+        "interview/sprint"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Hand Therapy Appt 1 Complete.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Ideal Typing Position Form.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `learning`",
+      "unprefixed tag `ergonomics`",
+      "unprefixed tag `workplace`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "project": null,
+      "tags": [
+        "learning",
+        "ergonomics",
+        "workplace"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Important Ergonomics Tests .md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `None`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "project": null,
+      "tags": [
+        null
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/MUST USE health and nerve decompression protocols.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `personal`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "active",
+      "tags": [
+        "personal"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Mastering `make` is a hallmark of the advanced power user who values efficiency and reproducibility over manual execution..md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "type conflict: current `area`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "area",
+      "status": "deferred",
+      "tags": [
+        "topic/compilation",
+        "topic/build",
+        "tool/makefile"
+      ]
+    },
+    "suggested": {
+      "type": "area",
+      "tags": [
+        "topic/compilation",
+        "topic/build",
+        "tool/makefile"
+      ],
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Nerve Pain Log 2026.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Useful Git Commands.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/VISION_B_PLAN.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Vincent Social Interactivity Meeting 3.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Vincent SocialXP Base44 with Co-Design 2 One Week Out.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/Workplace Recovery Steps.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `ergonomics`",
+      "unprefixed tag `workplace`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": [
+        "ergonomics",
+        "workplace"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "05 Archive/_to-delete-after-30d/zsh plugins.md",
+    "destination_folder": "archive",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `05 Archive` maps to `archive/`",
+      "archive folder preserves inactive destination"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "05 Archive/_to-delete-after-30d",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

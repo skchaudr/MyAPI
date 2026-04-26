@@ -1,0 +1,719 @@
+{
+  "run_at": "2026-04-26T11:40:04.578860+00:00",
+  "subdir": "Templates",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 32,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "Templates/10-weekly-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "format": {
+          "before": "weekly",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/20-monthly-note-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/21-monthly.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/30-quarterly.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": "periodic/quarterly",
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/31-quartely-note-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/40-yearly-note-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/41-yearly.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": "periodic/yearly",
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/Daily Mobility Routine.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/Not So Roundtable {{date}}.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/Timestamp-Callout-Template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        }
+      }
+    },
+    {
+      "file": "Templates/_code-problem-templater.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/_dataview-recent-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/callout-wrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/daily-note.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/date-callout-datestamp-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/deep-work.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/default-note.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/docs-reading-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/merge-periodic.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        }
+      }
+    },
+    {
+      "file": "Templates/miq-brainstorm.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/miq-callout.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/personal-note.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/primary-project-anchor-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        }
+      }
+    },
+    {
+      "file": "Templates/project-note.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/research-note.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/task-note.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        }
+      }
+    },
+    {
+      "file": "Templates/time_and_datestamp-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/transcripts-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "Templates/utility-note.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/weekly-note-template.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        }
+      }
+    },
+    {
+      "file": "Templates/weekly-project-anchors-templates.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        }
+      }
+    },
+    {
+      "file": "Templates/workout-session.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "Templates"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": "workout_session",
+          "after": "utility"
+        }
+      }
+    }
+  ]
+}

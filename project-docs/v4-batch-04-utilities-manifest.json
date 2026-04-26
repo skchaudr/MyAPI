@@ -1,0 +1,3014 @@
+{
+  "run_at": "2026-04-26T11:37:47.293957+00:00",
+  "subdir": "09 Utilities",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 100,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "09 Utilities/AI-Handoff-TaskSystem-Integration.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-AI-vs-ML-Engineer.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Attachments/_from_coding-tech/media-lib"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-Prime-one-year-unemployed.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Attachments/_from_coding-tech/media-lib"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-how-git-works.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Attachments/_from_coding-tech/media-lib"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-no-vibes-allowed.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Attachments/_from_coding-tech/media-lib"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-ypzlg8q9.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Attachments/_from_coding-tech/media-lib"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Custom Callouts Reference.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Home Hub 2026.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "dashboard",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Hybrid-Task-System-Architecture.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Obsidian-Neovim-Setup/01-Neovim-Workflows.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Obsidian-Neovim-Setup"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Obsidian-Neovim-Setup/02-Obsidian-CLI-Capture.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Obsidian-Neovim-Setup"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Obsidian-Neovim-Setup/03-Apple-Shortcuts-Setup.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Obsidian-Neovim-Setup"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Obsidian-Neovim-Setup/README.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Obsidian-Neovim-Setup"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reminders-CLI.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/Hardened_Configuration_Vision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/OpenClaw_Known_Good_State.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_add-jules-mcp-case-study-2336253627227224160_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_dispatch-queue_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-add-cn-utility-tests-12605712029049757920_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-add-jules-case-study-12239587449017906312_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-add-pathfinder-case-study-4226522165892727140_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-expand-agentic-workflow-post-17722960923824425775_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-expand-agentic-workflow-post-6509006787236807011_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-markdown-pipeline-1094435478313569748_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-pathfinder-case-study-17358931347304674095_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-portfolio-content-update_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-projects-definition-of-done-8072404381463155084_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-resilient-architect-copy_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feat-rewrite-openclaw-md-721425389482289999_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_feature-astro-version_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_fix-dead-subscription-form-11146584180811433169_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_fix-font-family_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_fix-merge-conflict-and-email-obfuscation-1741595167-10136734606162562078_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_fix-merge-conflicts-blog-projects-17123638390372322339_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_fix-optimize-navigation-rendering-4508866026702962936_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_fix-projects-merge-conflict-13269831740869035011_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_jules-11570014157736730045-f4906c1d_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_jules-5358149949114829266-f19ce31f_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_jules-rewrite-santa-cruz-automations-5578262483978790649_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_perf-fix-blog-post-key-6294485228969439525_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_perf-fix-react-keys-projects-page-16679005189783209206_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_perf-optimize-get-post-by-slug-14243126727577805702_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_perf-stable-react-keys-14940850307799154199_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_perf-stable-react-keys-projects-14335487169626350116_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_perf-unique-keys-15434530512014776475_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/PR_security-obfuscate-email-1254930352502245485_Decision.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/Phase_3_Bootstrap.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Reports/VM_Headless_Obsidian_Sync_Setup.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Reports"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Scripts/triage-inbox-fzf-runner.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/Scripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/Sweep.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "dashboard",
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "generated",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/AGENTS.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Broken-aspects-of-properties-wiz.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "w",
+          "after": "utility"
+        },
+        "tags": {
+          "before": [
+            "topic/quickadd",
+            "topic/automation",
+            "vault"
+          ],
+          "after": [
+            "topic/quickadd",
+            "topic/automation",
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "log",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Creating strong visual feedback and metadeta driven vault.md",
+      "confidence": "review",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Daily Note Template Tags.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [
+            "sleep/good",
+            "signal/loop",
+            "signal/insight",
+            "mood/ok",
+            "mood/low",
+            "mood/high",
+            "focus/deep",
+            "energy/low",
+            "ego/high",
+            "ego/low",
+            "ego/3D",
+            "ego/balanced"
+          ],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/How to filter notes through the vault System Inbox.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [
+            "vault/migration",
+            "vault/howto"
+          ],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/JULES-INBOX-TRIAGE-BRIEF.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "tool/jules",
+            "topic/ops"
+          ],
+          "after": [
+            "tool/jules",
+            "topic/ops",
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/JULES_HANDOFF_Vault_Normalization.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/New Home.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "vault",
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "dashboard",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Obsidian_Vault_Situation_Report.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [
+            4,
+            3,
+            2
+          ],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Periodic Notes Migration Rules.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/RegEx for excluding old vault folders.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Review current callouts and custom callouts.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "task",
+          "after": "utility"
+        },
+        "tags": {
+          "before": [
+            "task"
+          ],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Use Colored Tags to enforce 3-tier tag schema for SSD Vault.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Using external references in code blocks moving forward.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": null,
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/VLT_ LLM Wiki Relationship.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "topic/knowledge-management"
+          ],
+          "after": [
+            "topic/knowledge-management",
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/VLT_ Vault Schema V2.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [
+            "active",
+            "tags"
+          ],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Vault Schema V4 Reference.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/Vault keeping automations and hotkeys.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/_V4_Vault_Schema_ .md",
+      "confidence": "high",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/obsidian-duplicates-cleanup-plan-solodeveloper.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": [],
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/obsidian-duplicates-solodeveloper.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": null,
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/_Vault System/obsidian-frontmatter-taxonomy-solodeveloper.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/_Vault System"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "tags": {
+          "before": null,
+          "after": [
+            "topic/reference"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/appearances/Custom CSS Snippets Theme System.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/appearances"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/appearances/minimal-theme-variations.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/appearances"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/appearances/notebook-navigator-icons.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/appearances"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Clip Web Page.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Clip YouTube Transcript.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Emojify.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Explain like I am 5.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Fix grammar and spelling.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Format structure and clean text.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Generate glossary.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Generate table of contents.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Make longer.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Make shorter.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Remove URLs.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Rewrite as tweet thread.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Rewrite as tweet.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Simplify.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Summarize.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/copilot-custom-prompts/Translate to Chinese.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/copilot-custom-prompts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Apple M1 Macs were revolutionary according to one guy online.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Can we test it? Yes we can!.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Coding lessons from Google developer.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/IOB - AI coming for your mind, not your life .md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Ralph Wiggum Video on Streamlining Agentic Coding.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Transcript for The One Habit of Productivity Huberman Video.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Untitled.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/Zed as an IDE Killer.md",
+      "confidence": "high",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": null,
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "09 Utilities/transcripts/transcript-Danger-Illusion-of-AI-Code.md",
+      "confidence": "medium",
+      "changes": {
+        "area": {
+          "before": null,
+          "after": "[[Vault]]"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "09 Utilities/transcripts"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "task",
+          "after": "utility"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": "in-progress",
+          "after": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5370 @@
+[
+  {
+    "path": "01 Projects/01 Projects.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `01 Projects.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--01 Projects.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/2026 ~ dotfiles repo must be made.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `2026 ~ dotfiles repo must be made.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "tool/git",
+        "tool/terminal"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--2026 ~ dotfiles repo must be made.md]]",
+      "tags": [
+        "tool/git",
+        "tool/terminal"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/2026-W06 Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `2026-W06 Anchor.md`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/career",
+        "scope/mindset",
+        "scope/ops",
+        "scope/writing",
+        "tool/neovim",
+        "tool/terminal",
+        "topic/ai"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--2026-W06 Anchor.md]]",
+      "status": "active",
+      "tags": [
+        "scope/career",
+        "scope/mindset",
+        "scope/ops",
+        "scope/writing",
+        "tool/neovim",
+        "tool/terminal",
+        "topic/ai"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/BDR Kanban.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `medium`",
+      "unprefixed tag `high`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "medium",
+        "high"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--BDR]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/BDR Project Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `project`",
+      "unprefixed tag `development`",
+      "unprefixed tag `bdr`",
+      "unprefixed tag `anchor`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "in-progress",
+      "project": "BDR",
+      "tags": [
+        "project",
+        "development",
+        "bdr",
+        "anchor"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "BDR",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/BDR Project Brief.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `project`",
+      "unprefixed tag `development`",
+      "unprefixed tag `context-management`",
+      "unprefixed tag `context-engineering`",
+      "unprefixed tag `code-agent`",
+      "unprefixed tag `bdr`",
+      "unprefixed tag `AI-code`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "done",
+      "project": "BDR",
+      "tags": [
+        "project",
+        "development",
+        "context-management",
+        "context-engineering",
+        "code-agent",
+        "bdr",
+        "AI-code"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "BDR",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/BDR Q4 Action Plan v1.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `project`",
+      "unprefixed tag `development`",
+      "unprefixed tag `bdr`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "in-progress",
+      "project": "BDR",
+      "tags": [
+        "project",
+        "development",
+        "bdr"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "BDR",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/BDR-anchor-v2.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--BDR]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/Create an AGENTS.md for BDR.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `project`",
+      "unprefixed tag `bdr`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "project": "BDR",
+      "tags": [
+        "project",
+        "bdr"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "BDR",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/Understand how BDR works front to back.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `bdr`",
+      "unprefixed tag `interview-prep`",
+      "unprefixed tag `projects`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": [
+        "bdr",
+        "interview-prep",
+        "projects"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--BDR]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/BDR/Water Stone Sprint.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `BDR`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/finance",
+        "scope/health",
+        "scope/mindset",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "topic/ops",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--BDR]]",
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/finance",
+        "scope/health",
+        "scope/mindset",
+        "scope/ops",
+        "scope/writing",
+        "tool/git"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/BDR",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Codex 5.4 CLI Thread Summary 3.7.26.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Codex 5.4 CLI Thread Summary 3.7.26.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/writing",
+        "tool/git",
+        "tool/obsidian",
+        "tool/terminal",
+        "tool/tmux",
+        "topic/ai",
+        "topic/ops"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Codex 5.4 CLI Thread Summary 3.7.26.md]]",
+      "tags": [
+        "scope/writing",
+        "tool/git",
+        "tool/obsidian",
+        "tool/terminal",
+        "tool/tmux",
+        "topic/ai",
+        "topic/ops"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Daily Loop Solves One Problem.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Daily Loop Solves One Problem.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/learning"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Daily Loop Solves One Problem.md]]",
+      "tags": [
+        "scope/learning"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/ChatGPT 5.4 thinking played a significant role in crafting the GDAD Pipeline system.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "tool/obsidian"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "tool/obsidian"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - Definition of a good project graph of nodes for GDD.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - GDDP commitment to understanding the system I am creating.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - OpenClaw v1 begins.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - Point of manual runs is to answer these questions.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--GDDP]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - Return router implementation since forward lane already proven.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "scope/learning"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "scope/learning"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - Toy operator loop run with baby task, simple project,.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - agentic or autonomous dispatch pipeline anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - freezing system state for manual operator node runs.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - just start and FAFO.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD - pivot return route and directory map.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `task`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "task",
+      "status": "done",
+      "project": "[[GDDP]]",
+      "tags": [
+        "task"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[GDDP]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD Main Thread Summary.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "scope/career",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "tool/obsidian",
+        "topic/ai"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "scope/career",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "tool/obsidian",
+        "topic/ai"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD Tour by Claude Haiku and next steps forward.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD pivot - return loop fixed to prevent modification of project graph truth.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD",
+        "tool/GDDP"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD",
+        "tool/GDDP"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD step back, scale back, simplify 3..28.26.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context/Detailed-Big-Picture.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context/GDD-Naming-and-Glossary.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/architecture.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/capability-matrix.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/execution_model.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/safety_model.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/system_roles.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/missions/mission_001_control_plane_bootstrap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/missions",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/AGENTS.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/HEARTBEAT.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/MEMORY.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/POLICIES.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/TOOLS.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts/claude_bootstrap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts/codex_bootstrap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/architecture.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/capability-matrix.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/execution_model.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/roadmap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/safety_model.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/system_roles.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/three-layer-model.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/00-pipeline-overview.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/01-event-schema.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/02-job-schema.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/03-queue-design.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/04-classifier.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/05-scope-check.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/06-executor-routing.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/07-jules-dispatch.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/08-result-schema.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/09-artifact-contract.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/10-project-graph.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/11-schema-versioning.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/12-transcript-event-type.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/13-artifact-verification.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/docs/v1/README.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/docs/v1",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/missions/mission_001_control_plane_bootstrap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/missions",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/openclaw/AGENTS.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/openclaw/HEARTBEAT.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/openclaw/MEMORY.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/openclaw/POLICIES.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/openclaw/TOOLS.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/openclaw",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/prompts/claude_bootstrap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/prompts/codex_bootstrap.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-Control-Center/prompts/openclaw-hardening-handoff.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "topic/GDD"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP/GDD-Control-Center/prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDD-ran-my-first-supervised-rep-and-succeded-to-dispatch.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `task`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "task",
+      "status": "done",
+      "project": "[[GDDP]]",
+      "tags": [
+        "task"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[GDDP]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/GDDO - operator practice manual run checklist.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--GDDP]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/GDDP/Phase 4 Complete.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `GDDP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "unprefixed tag `11`",
+      "unprefixed tag `12`",
+      "unprefixed tag `13`",
+      "unprefixed tag `2`",
+      "unprefixed tag `5`",
+      "unprefixed tag `6`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[GDDP]]",
+      "tags": [
+        "11",
+        "12",
+        "13",
+        "2",
+        "5",
+        "6"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[GDDP]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/GDDP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Jules Prompts for SC Automation.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Jules Prompts for SC Automation.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Jules Prompts for SC Automation.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/MyAPI Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "topic/GDD",
+        "tool/GDDP"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "tags": [
+        "topic/GDD",
+        "tool/GDDP"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/MyAPI-UI-Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/README.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/context-refinery anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/myapi - first pass normalization of obsidian vault .md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/refinement-queue-2026-04-20.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/rubric.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-15-anchor-pass-2.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-15-anchor-tuned.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-15-post-anchor-rerun.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-15-tuned.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-15.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-16-canonical-anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-16-narrow-anchors.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-18-new-vm-baseline.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-clean-index-dedup-normalized.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-clean-index-no-clickbait-after-khoj-restart.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-clean-index-no-clickbait-after-refinery-restart.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-clean-index-no-clickbait.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-clean-index.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-daily-note-penalty.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-19-source-aware-priors.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-23-post-anchor-v2.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--MyAPI]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/MyAPI/run-2026-04-25-blocker-pass.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `MyAPI`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--MyAPI]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/MyAPI",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Phase 0 -- CIM & NUI Domain Selection and NotebookLM Workflow.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Phase 0 -- CIM & NUI Domain Selection and NotebookLM Workflow.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Phase 0 -- CIM & NUI Domain Selection and NotebookLM Workflow.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Portfolio/LinkedIn Sprint V2 for 2026 is arc-defining.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Portfolio`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Portfolio]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/Portfolio",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Portfolio/Portfolio website planning and design.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Portfolio`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "lang/js",
+        "scope/career",
+        "scope/health",
+        "scope/writing",
+        "tool/obsidian",
+        "tool/terminal",
+        "topic/ai",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Portfolio]]",
+      "tags": [
+        "lang/js",
+        "scope/career",
+        "scope/health",
+        "scope/writing",
+        "tool/obsidian",
+        "tool/terminal",
+        "topic/ai",
+        "topic/web-dev"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/Portfolio",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Portfolio/skc-2-anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Portfolio`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--Portfolio]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/Portfolio",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Portfolio/skc-anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Portfolio`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--Portfolio]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/Portfolio",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Santa Cruz Smart Automations.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Santa Cruz Smart Automations.md`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "unprefixed tag `next-js`",
+      "unprefixed tag `lead-gen`",
+      "unprefixed tag `client-work`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "area": "freelance",
+      "tags": [
+        "next-js",
+        "lead-gen",
+        "client-work"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "area": "freelance",
+      "project": "[[--Santa Cruz Smart Automations.md]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Semantic complexity around \"already existing user profile\" is why Zapier stays deliberately dumb.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Semantic complexity around \"already existing user profile\" is why Zapier stays deliberately dumb.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Semantic complexity around \"already existing user profile\" is why Zapier stays deliberately dumb.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Co-Design Group 1.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "done",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Co-Design Group Prep.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "done",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Co-Design-Group-2.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "area": null,
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[SocialXP Anchor]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Notion Collaborating Tips, Guidelines, etc.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/SocialXP Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `socialXP`",
+      "unprefixed tag `project`",
+      "unprefixed tag `anchor`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP",
+        "project",
+        "anchor"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[SocialXP Anchor]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/SocialXP Pre-Codesign Group 2026-01-21.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "done",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/UX Reusable Automation Workflows.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `UI-UX`",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "area": null,
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "UI-UX",
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Vincent Social Interactivity App Meeting 1.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `social`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "done",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "social"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Vincent Social Interactivity Meeting 2.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `social`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "done",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "social"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Vincent Social Interactivity Meeting 3.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `social`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "done",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "social"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Vincent\u2019s Week 1 Suggested Work.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--SocialXP]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP/Wireframes Day 1.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `socialXP`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[SocialXP Anchor]]",
+      "tags": [
+        "socialXP"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[SocialXP Anchor]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/SocialXP",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/SocialXP Part 2.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `SocialXP Part 2.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "topic/ai"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--SocialXP Part 2.md]]",
+      "tags": [
+        "topic/ai"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Solve-Bench/AI Sparring Loop.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Solve-Bench`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "topic/ai"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Solve Bench]]",
+      "tags": [
+        "topic/ai"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/Solve-Bench",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Solve-Bench/Solve-Bench-Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Solve-Bench`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--Solve Bench]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/Solve-Bench",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Universal Router/USR-Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Universal Router`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--Universal Router]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/Universal Router",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Vault Doctor practice opening soon.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Vault Doctor practice opening soon.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "lang/py",
+        "scope/ops",
+        "tool/obsidian",
+        "tool/terminal",
+        "topic/ai",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Vault Doctor practice opening soon.md]]",
+      "tags": [
+        "lang/py",
+        "scope/ops",
+        "tool/obsidian",
+        "tool/terminal",
+        "topic/ai",
+        "topic/web-dev"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Vault Keeper TIME.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Vault Keeper TIME.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "lang/py",
+        "scope/communication",
+        "tool/git",
+        "tool/obsidian",
+        "tool/terminal",
+        "topic/ops"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Vault Keeper TIME.md]]",
+      "tags": [
+        "lang/py",
+        "scope/communication",
+        "tool/git",
+        "tool/obsidian",
+        "tool/terminal",
+        "topic/ops"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/VaultDr/VaultDr-Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `VaultDr`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--Vault Doctor]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/VaultDr",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Vertex AI finally used day 1.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Vertex AI finally used day 1.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Vertex AI finally used day 1.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/Beiley QuickBooks - cleaning books, re-categorizing transactions.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": []
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--Water and Stone]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/Beiley-Meeting-Prep-3.19.26.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/Beiley-Water-and-Stone-Landscaper-Part-Time-Job-Meeting.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/Creating a new website for Beiley using React and Vite.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": [
+        "topic/web-dev",
+        "tool/lovable",
+        "topic/react",
+        "topic/vite",
+        "topic/frontend"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--Water and Stone]]",
+      "status": "active",
+      "tags": [
+        "topic/web-dev",
+        "tool/lovable",
+        "topic/react",
+        "topic/vite",
+        "topic/frontend"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/LMN-QBO field discovery checklist.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/LMN-QBO first-flow discovery.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/WAS - Claude LMN QBO Manual Pre-Automation Sync.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `OFFICE`",
+      "unprefixed tag `SHOP`",
+      "unprefixed tag `1`",
+      "unprefixed tag `2`",
+      "unprefixed tag `3`",
+      "unprefixed tag `4`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "OFFICE",
+        "SHOP",
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone]]",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/WAS - The core Zapier automations for Water and Stone.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "unprefixed tag `project`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "area": null,
+      "tags": [
+        "project"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--Water and Stone]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/WAS-website-anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--Water and Stone]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/WAS/Water Stone Ops Infra Kickoff Plan.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `WAS`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/finance",
+        "scope/ops",
+        "tool/git",
+        "topic/ops",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone]]",
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/finance",
+        "scope/ops",
+        "tool/git",
+        "topic/ops",
+        "topic/web-dev"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/WAS",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Water and Stone Ride Along.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Water and Stone Ride Along.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Water and Stone Ride Along.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/Zapier's Zaps are background listeners waiting to take action on a specified a trigger event.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `Zapier's Zaps are background listeners waiting to take action on a specified a trigger event.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "project": "[[--Zapier's Zaps are background listeners waiting to take action on a specified a trigger event.md]]",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/-- The Engineer's 5 W's of CIM and NUI - CRITICAL Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/mindset",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "topic/ops",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "tags": [
+        "scope/career",
+        "scope/communication",
+        "scope/mindset",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "topic/ops",
+        "topic/web-dev"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/Asking Ty for a deposit or a retainer.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": [
+        "scope/learning"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "tags": [
+        "scope/learning"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-about-dependency-graph.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-change-used-by-data.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-dependency-graph.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-get-repository.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-issues.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-pulls.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-traffic.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/github-webhooks-repositories.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/API Evidence/hackernews-api.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM/API Evidence",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/CIM - Begin Ingestion, spin up the pipeline.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/CIM - Google Vertex AI and Phase 0.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `log`, inferred `resource`",
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `workout`",
+      "unprefixed tag `training`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "log",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "workout",
+        "training",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "log",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/CIM Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/CIM-Ty-and-the-ownership-conversation.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/Cultural Intel Monitor & NUI Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/Deploy Phase 0 on GCP VM.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `gcp`",
+      "unprefixed tag `vm`",
+      "unprefixed tag `phase-0`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "gcp",
+        "vm",
+        "phase-0",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/LETTER OF UNDERSTANDING.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/Phase 0 -- NotebookLM Domain & Data Feasibility Research.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "unprefixed tag `phase-0`",
+      "unprefixed tag `data-strategy`",
+      "unprefixed tag `domain-selection`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "phase-0",
+        "data-strategy",
+        "domain-selection",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/Phase 0 API Evidence Pack.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `phase-0`",
+      "unprefixed tag `api`",
+      "unprefixed tag `evidence`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "phase-0",
+        "api",
+        "evidence",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/Phase-0-Domain-Selection.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `research`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "research",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/Zed + Pi Phase 0 Workflow.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "status": "active",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/hypotheses.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/let's build the GCP VM and ingestion scripts.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "done",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/phase 0 validation session explained, contested H4.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `project`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "project",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/phase-0-domain-candidates.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `phase-0`",
+      "unprefixed tag `domain-candidates`",
+      "unprefixed tag `data-feasibility`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "phase-0",
+        "domain-candidates",
+        "data-feasibility",
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/CIM/signal_dictionary.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[Cultural Intel Monitor & NUI Anchor]]",
+      "tags": [
+        "topic/cim"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/CIM",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/Cultulral Intel/Phase 0 -- NotebookLM Domain & Data Feasibility Research.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "unprefixed tag `phase-0`",
+      "unprefixed tag `data-strategy`",
+      "unprefixed tag `domain-selection`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": [
+        "phase-0",
+        "data-strategy",
+        "domain-selection"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/Cultulral Intel",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/First VM SSH CIMToken.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "topic/dsa",
+        "topic/ops"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--_Projects Archive]]",
+      "tags": [
+        "topic/dsa",
+        "topic/ops"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/Market-Sentinel/market-sentinel-anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/Market-Sentinel",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/_Projects Archive/SC Automations/SC Automations Update after AGY foundation with OpenClaw critique.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `_Projects Archive`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `resource`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "tags": [
+        "topic/"
+      ]
+    },
+    "suggested": {
+      "type": "project",
+      "project": "[[--_Projects Archive]]",
+      "status": "active",
+      "tags": [
+        "topic/"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects/_Projects Archive/SC Automations",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/agy> SocialXP Browser Demo looks clean 2.22.26.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `agy> SocialXP Browser Demo looks clean 2.22.26.md`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/learning"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "project": "[[--agy> SocialXP Browser Demo looks clean 2.22.26.md]]",
+      "tags": [
+        "scope/learning"
+      ],
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "01 Projects/smb-ops-hub-anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `01 Projects` maps to `projects/`",
+      "project inferred from folder `smb-ops-hub-anchor.md`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "project",
+      "project": "[[--smb-ops-hub-anchor.md]]",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "01 Projects",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

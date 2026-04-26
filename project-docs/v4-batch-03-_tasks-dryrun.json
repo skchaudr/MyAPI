@@ -1,0 +1,479 @@
+[
+  {
+    "path": "_tasks/2026-W03 Project Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": []
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/2026-W04 Anchor.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": []
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Cal benefits call for 1 hour.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Create task plans task workflows by having a LINK to the BLOCKING-TASK.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Dentist Appointment.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Do a proper dive into using Lynx and Links.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/End-of-Month Assessment.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `interview/sprint`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done",
+      "tags": [
+        "interview/sprint"
+      ]
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Finish-GDDP-and-Khoj-project-audit.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `task`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "task",
+      "status": "done",
+      "project": "GDDP",
+      "tags": [
+        "task"
+      ]
+    },
+    "suggested": {
+      "type": "event",
+      "project": "GDDP",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Learn TaskForge today the purposes of the vault system.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "done",
+      "tags": []
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Operator Runs in Neovim.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "open",
+      "tags": null
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Portfolio website careful vetting and copywriting, do of work before.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done",
+      "tags": [
+        "topic/portfolio",
+        "scope/career"
+      ]
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "tags": [
+        "topic/portfolio",
+        "scope/career"
+      ],
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Re-consider LibreWolf strategy after new Brave PWA strategy.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "in-progress"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/SSD-BIG Remote Dev + Obsidian Sync Workspace.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Scope out NLM aliases and --ai (powerful!!!).md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "open",
+      "tags": null
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Select the 3 easy problem to solve.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `interview/prep`",
+      "unprefixed tag `interview/sprint`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done",
+      "tags": [
+        "interview/prep",
+        "interview/sprint"
+      ]
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/SocialXP Meeting.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Spend on GitLens GitKraken.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "open"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/Useful Tasks queries.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/VM Migration handled.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "done"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "done",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_tasks/install and set up full calendar plug-in in Obsidian and integrate your AI assistance deeply.md",
+    "destination_folder": "projects",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_tasks` maps to `projects/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "status": "open"
+    },
+    "suggested": {
+      "type": "event",
+      "status": "active",
+      "source": "imported",
+      "folder_origin": "_tasks",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

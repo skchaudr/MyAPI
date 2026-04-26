@@ -1,0 +1,4679 @@
+{
+  "run_at": "2026-04-26T11:38:36.779802+00:00",
+  "subdir": "01 Projects",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 174,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "01 Projects/01 Projects.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--01 Projects.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/2026 ~ dotfiles repo must be made.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--2026 ~ dotfiles repo must be made.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/2026-W06 Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--2026-W06 Anchor.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/BDR Kanban.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--BDR]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/BDR Project Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": "in-progress",
+          "after": "active"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/BDR Project Brief.md",
+      "confidence": "review",
+      "changes": {
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/BDR Q4 Action Plan v1.md",
+      "confidence": "review",
+      "changes": {
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        },
+        "status": {
+          "before": "in-progress",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/BDR-anchor-v2.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--BDR]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/Create an AGENTS.md for BDR.md",
+      "confidence": "review",
+      "changes": {
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/Understand how BDR works front to back.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--BDR]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/BDR/Water Stone Sprint.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--BDR]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "scope/career",
+            "scope/communication",
+            "scope/finance",
+            "scope/health",
+            "scope/mindset",
+            "scope/ops",
+            "scope/writing",
+            "tool/git",
+            "topic/ops",
+            "topic/web-dev"
+          ],
+          "after": [
+            "scope/career",
+            "scope/communication",
+            "scope/finance",
+            "scope/health",
+            "scope/mindset",
+            "scope/ops",
+            "scope/writing",
+            "tool/git"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/BDR"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Codex 5.4 CLI Thread Summary 3.7.26.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Codex 5.4 CLI Thread Summary 3.7.26.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Daily Loop Solves One Problem.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Daily Loop Solves One Problem.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/ChatGPT 5.4 thinking played a significant role in crafting the GDAD Pipeline system.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - Definition of a good project graph of nodes for GDD.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - GDDP commitment to understanding the system I am creating.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - OpenClaw v1 begins.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - Point of manual runs is to answer these questions.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--GDDP]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - Return router implementation since forward lane already proven.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - Toy operator loop run with baby task, simple project,.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - agentic or autonomous dispatch pipeline anchor.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - freezing system state for manual operator node runs.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - just start and FAFO.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD - pivot return route and directory map.md",
+      "confidence": "review",
+      "changes": {
+        "type": {
+          "before": "task",
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD Main Thread Summary.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD Tour by Claude Haiku and next steps forward.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD pivot - return loop fixed to prevent modification of project graph truth.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD step back, scale back, simplify 3..28.26.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context/Detailed-Big-Picture.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context/GDD-Naming-and-Glossary.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/Foundational-Context"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/architecture.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/capability-matrix.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/execution_model.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/safety_model.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs/system_roles.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/missions/mission_001_control_plane_bootstrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/missions"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/AGENTS.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/HEARTBEAT.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/MEMORY.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/POLICIES.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw/TOOLS.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts/claude_bootstrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts/codex_bootstrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/GDAD-Control-Plane/prompts"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/architecture.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/capability-matrix.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/execution_model.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/roadmap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/safety_model.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/system_roles.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/three-layer-model.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/00-pipeline-overview.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/01-event-schema.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/02-job-schema.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/03-queue-design.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/04-classifier.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/05-scope-check.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/06-executor-routing.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/07-jules-dispatch.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/08-result-schema.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/09-artifact-contract.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/10-project-graph.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/11-schema-versioning.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/12-transcript-event-type.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/13-artifact-verification.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/docs/v1/README.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/docs/v1"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/missions/mission_001_control_plane_bootstrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/missions"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/openclaw/AGENTS.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/openclaw/HEARTBEAT.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/openclaw/MEMORY.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/openclaw/POLICIES.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/openclaw/TOOLS.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/openclaw"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/prompts/claude_bootstrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/prompts"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/prompts/codex_bootstrap.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/prompts"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-Control-Center/prompts/openclaw-hardening-handoff.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP/GDD-Control-Center/prompts"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDD-ran-my-first-supervised-rep-and-succeded-to-dispatch.md",
+      "confidence": "review",
+      "changes": {
+        "type": {
+          "before": "task",
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/GDDO - operator practice manual run checklist.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--GDDP]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/GDDP/Phase 4 Complete.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/GDDP"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Jules Prompts for SC Automation.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Jules Prompts for SC Automation.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/MyAPI Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/MyAPI-UI-Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/README.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/context-refinery anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/myapi - first pass normalization of obsidian vault .md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/refinement-queue-2026-04-20.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/rubric.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-15-anchor-pass-2.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-15-anchor-tuned.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-15-post-anchor-rerun.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-15-tuned.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-15.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-16-canonical-anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-16-narrow-anchors.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-18-new-vm-baseline.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-clean-index-dedup-normalized.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-clean-index-no-clickbait-after-khoj-restart.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-clean-index-no-clickbait-after-refinery-restart.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-clean-index-no-clickbait.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-clean-index.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-daily-note-penalty.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-19-source-aware-priors.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-23-post-anchor-v2.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/MyAPI/run-2026-04-25-blocker-pass.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--MyAPI]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/MyAPI"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Phase 0 -- CIM & NUI Domain Selection and NotebookLM Workflow.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Phase 0 -- CIM & NUI Domain Selection and NotebookLM Workflow.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Portfolio/LinkedIn Sprint V2 for 2026 is arc-defining.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Portfolio]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Portfolio"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Portfolio/Portfolio website planning and design.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Portfolio]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Portfolio"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Portfolio/skc-2-anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--Portfolio]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Portfolio"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Portfolio/skc-anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--Portfolio]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Portfolio"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Santa Cruz Smart Automations.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Santa Cruz Smart Automations.md]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Semantic complexity around \"already existing user profile\" is why Zapier stays deliberately dumb.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Semantic complexity around \"already existing user profile\" is why Zapier stays deliberately dumb.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Co-Design Group 1.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Co-Design Group Prep.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Co-Design-Group-2.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "atomic",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Notion Collaborating Tips, Guidelines, etc.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/SocialXP Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/SocialXP Pre-Codesign Group 2026-01-21.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/UX Reusable Automation Workflows.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Vincent Social Interactivity App Meeting 1.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Vincent Social Interactivity Meeting 2.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Vincent Social Interactivity Meeting 3.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Vincent\u2019s Week 1 Suggested Work.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--SocialXP]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP/Wireframes Day 1.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/SocialXP"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/SocialXP Part 2.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--SocialXP Part 2.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Solve-Bench/AI Sparring Loop.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Solve Bench]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Solve-Bench"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Solve-Bench/Solve-Bench-Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--Solve Bench]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Solve-Bench"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Universal Router/USR-Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--Universal Router]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/Universal Router"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Vault Doctor practice opening soon.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Vault Doctor practice opening soon.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Vault Keeper TIME.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Vault Keeper TIME.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/VaultDr/VaultDr-Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--Vault Doctor]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/VaultDr"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Vertex AI finally used day 1.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Vertex AI finally used day 1.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/Beiley QuickBooks - cleaning books, re-categorizing transactions.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": "meeting",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/Beiley-Meeting-Prep-3.19.26.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/Beiley-Water-and-Stone-Landscaper-Part-Time-Job-Meeting.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/Creating a new website for Beiley using React and Vite.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": "task",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/LMN-QBO field discovery checklist.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/LMN-QBO first-flow discovery.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/WAS - Claude LMN QBO Manual Pre-Automation Sync.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/WAS - The core Zapier automations for Water and Stone.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/WAS-website-anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/WAS/Water Stone Ops Infra Kickoff Plan.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/WAS"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Water and Stone Ride Along.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Water and Stone Ride Along.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/Zapier's Zaps are background listeners waiting to take action on a specified a trigger event.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--Zapier's Zaps are background listeners waiting to take action on a specified a trigger event.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/-- The Engineer's 5 W's of CIM and NUI - CRITICAL Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/Asking Ty for a deposit or a retainer.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive"
+        },
+        "format": {
+          "before": "atomic",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-about-dependency-graph.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-change-used-by-data.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-dependency-graph.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-get-repository.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-issues.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-pulls.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-rest-traffic.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/github-webhooks-repositories.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/API Evidence/hackernews-api.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM/API Evidence"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/CIM - Begin Ingestion, spin up the pipeline.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/CIM - Google Vertex AI and Phase 0.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "workout",
+            "training",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/CIM Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/CIM-Ty-and-the-ownership-conversation.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/Cultural Intel Monitor & NUI Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/Deploy Phase 0 on GCP VM.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "gcp",
+            "vm",
+            "phase-0",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/LETTER OF UNDERSTANDING.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/Phase 0 -- NotebookLM Domain & Data Feasibility Research.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "phase-0",
+            "data-strategy",
+            "domain-selection",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/Phase 0 API Evidence Pack.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "phase-0",
+            "api",
+            "evidence",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "note",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/Phase-0-Domain-Selection.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "research",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/Zed + Pi Phase 0 Workflow.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "howto",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/hypotheses.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/let's build the GCP VM and ingestion scripts.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "howto",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/phase 0 validation session explained, contested H4.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "project",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/phase-0-domain-candidates.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "tags": {
+          "before": [
+            "phase-0",
+            "domain-candidates",
+            "data-feasibility",
+            "topic/cim"
+          ],
+          "after": [
+            "topic/cim"
+          ]
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/CIM/signal_dictionary.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/CIM"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/Cultulral Intel/Phase 0 -- NotebookLM Domain & Data Feasibility Research.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/Cultulral Intel"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/First VM SSH CIMToken.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/Market-Sentinel/market-sentinel-anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/Market-Sentinel"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/_Projects Archive/SC Automations/SC Automations Update after AGY foundation with OpenClaw critique.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--_Projects Archive]]"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects/_Projects Archive/SC Automations"
+        }
+      }
+    },
+    {
+      "file": "01 Projects/agy> SocialXP Browser Demo looks clean 2.22.26.md",
+      "confidence": "review",
+      "changes": {
+        "project": {
+          "before": null,
+          "after": "[[--agy> SocialXP Browser Demo looks clean 2.22.26.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "01 Projects/smb-ops-hub-anchor.md",
+      "confidence": "review",
+      "changes": {
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "project": {
+          "before": null,
+          "after": "[[--smb-ops-hub-anchor.md]]"
+        },
+        "type": {
+          "before": null,
+          "after": "project"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "01 Projects"
+        }
+      }
+    }
+  ]
+}

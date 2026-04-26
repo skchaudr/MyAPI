@@ -1,0 +1,511 @@
+{
+  "run_at": "2026-04-26T11:37:34.403046+00:00",
+  "subdir": "_tasks",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 20,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "_tasks/2026-W03 Project Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": null,
+          "after": "active"
+        }
+      }
+    },
+    {
+      "file": "_tasks/2026-W04 Anchor.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": null,
+          "after": "active"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Cal benefits call for 1 hour.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Create task plans task workflows by having a LINK to the BLOCKING-TASK.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Dentist Appointment.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Do a proper dive into using Lynx and Links.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/End-of-Month Assessment.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Finish-GDDP-and-Khoj-project-audit.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": "task",
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_tasks/Learn TaskForge today the purposes of the vault system.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_tasks/Operator Runs in Neovim.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": "open",
+          "after": "active"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_tasks/Portfolio website careful vetting and copywriting, do of work before.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Re-consider LibreWolf strategy after new Brave PWA strategy.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": "in-progress",
+          "after": "active"
+        }
+      }
+    },
+    {
+      "file": "_tasks/SSD-BIG Remote Dev + Obsidian Sync Workspace.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_tasks/Scope out NLM aliases and --ai (powerful!!!).md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": "open",
+          "after": "active"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_tasks/Select the 3 easy problem to solve.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/SocialXP Meeting.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Spend on GitLens GitKraken.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": "open",
+          "after": "active"
+        }
+      }
+    },
+    {
+      "file": "_tasks/Useful Tasks queries.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": null,
+          "after": "active"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_tasks/VM Migration handled.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        }
+      }
+    },
+    {
+      "file": "_tasks/install and set up full calendar plug-in in Obsidian and integrate your AI assistance deeply.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_tasks"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "type": {
+          "before": null,
+          "after": "event"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "status": {
+          "before": "open",
+          "after": "active"
+        }
+      }
+    }
+  ]
+}

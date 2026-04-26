@@ -1,0 +1,33 @@
+{
+  "run_at": "2026-04-26T11:37:34.501213+00:00",
+  "subdir": "_inbox",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 1,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "_inbox/friction-log.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "_inbox"
+        },
+        "type": {
+          "before": "friction-log",
+          "after": "resource"
+        }
+      }
+    }
+  ]
+}

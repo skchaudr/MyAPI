@@ -1,0 +1,63 @@
+{
+  "run_at": "2026-04-26T11:37:34.453389+00:00",
+  "subdir": "_routines",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 2,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "_routines/jobs-seen.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_routines"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "ledger",
+          "after": "resource"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "YYYY-MM-DD | <company> | <role> | <url>",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "_routines/lessons-covered.md",
+      "confidence": "review",
+      "changes": {
+        "folder_origin": {
+          "before": null,
+          "after": "_routines"
+        },
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "type": {
+          "before": "ledger",
+          "after": "resource"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "format": {
+          "before": "YYYY-MM-DD HH:MM | <repo> | <topic-slug> | <one-line summary>",
+          "after": null
+        }
+      }
+    }
+  ]
+}

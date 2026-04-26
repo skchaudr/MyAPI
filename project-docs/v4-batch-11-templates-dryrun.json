@@ -1,0 +1,780 @@
+[
+  {
+    "path": "Templates/10-weekly-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/20-monthly-note-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `periodic`, inferred `utility`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "concepts": [],
+      "tags": [
+        "topic/log"
+      ]
+    },
+    "suggested": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "tags": [
+        "topic/log"
+      ],
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/21-monthly.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/30-quarterly.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic/quarterly",
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/31-quartely-note-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `periodic`, inferred `utility`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "concepts": [],
+      "tags": [
+        "topic/log"
+      ]
+    },
+    "suggested": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "tags": [
+        "topic/log"
+      ],
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/40-yearly-note-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `periodic`, inferred `utility`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "concepts": [],
+      "tags": [
+        "topic/log"
+      ]
+    },
+    "suggested": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "tags": [
+        "topic/log"
+      ],
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/41-yearly.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic/yearly",
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/Daily Mobility Routine.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `personal`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "active",
+      "tags": [
+        "personal"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/Not So Roundtable {{date}}.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/Timestamp-Callout-Template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/_code-problem-templater.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/_dataview-recent-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/callout-wrap.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/daily-note.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `periodic`, inferred `utility`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "concepts": [],
+      "tags": [
+        "topic/log"
+      ]
+    },
+    "suggested": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "tags": [
+        "topic/log"
+      ],
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/date-callout-datestamp-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/deep-work.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/default-note.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `resource`, inferred `utility`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "area": null,
+      "concepts": [],
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/docs-reading-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `learning`",
+      "unprefixed tag `docs/reading`",
+      "unprefixed tag `docs`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "learning",
+        "docs/reading",
+        "docs"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/merge-periodic.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/miq-brainstorm.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/miq-callout.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/personal-note.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "status exists on non-project/event type",
+      "unprefixed tag `personal`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": "active",
+      "tags": [
+        "personal"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/primary-project-anchor-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/project-note.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `project`, inferred `utility`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "project",
+      "status": "active",
+      "area": null,
+      "project": null,
+      "concepts": [],
+      "tags": []
+    },
+    "suggested": {
+      "type": "project",
+      "status": "active",
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/research-note.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `resource`, inferred `utility`",
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "area": null,
+      "concepts": [],
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "article",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/task-note.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/time_and_datestamp-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/transcripts-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `transcript`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "transcript"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/utility-note.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "concepts": [],
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/weekly-note-template.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "type conflict: current `periodic`, inferred `utility`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "concepts": [],
+      "tags": [
+        "topic/log"
+      ]
+    },
+    "suggested": {
+      "type": "periodic",
+      "area": "[[Life]]",
+      "tags": [
+        "topic/log"
+      ],
+      "source": "original",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/weekly-project-anchors-templates.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "Templates/workout-session.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `Templates` maps to `system/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `workout`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "workout_session",
+      "tags": [
+        "workout"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "source": "imported",
+      "folder_origin": "Templates",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

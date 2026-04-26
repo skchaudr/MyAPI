@@ -1,0 +1,851 @@
+{
+  "run_at": "2026-04-26T11:37:23.176185+00:00",
+  "subdir": "00 Inbox",
+  "confidence": "review",
+  "strip_format": true,
+  "write_source_default": true,
+  "applied": 29,
+  "skipped": 0,
+  "changes": [
+    {
+      "file": "00 Inbox/Instagram-Triage/Brain chooses cheap dopamine to cover for stress, pain, rather than running this neurologically-sound process.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox/Instagram-Triage"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/LLM Payload Mailbox/LLM Payload Workflow.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox/LLM Payload Mailbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/Quick reference of prefixes in my vault ecosystem for fast retrieval.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/Review the Med students wildly impresive. valuabe Obsidian setup.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "in-progress",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/Untitled V4 Test Note.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/keyboard idea.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/landing pages and AB testing shows simple text message wins.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/lc_1004 \u2014 Max Consecutive Ones III.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/nlm - Mobile SSH and Remote Dev Guide for iOS.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/nlm - powerful CLI for full use of NotebookLM.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/nvim - Quick calls to some agent CLI using terminal commands.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/nvim - q enters macro recording mode and only q exits.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/nvimt - di\" is goto deleting within surrounding quotes.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/obsidian.neovim comprehensive command list and breakdown.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/quickbooks.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/skc -- steps towards building my portfolio website with insightful posting from recent experiences.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "tags": {
+          "before": [
+            "lang/js",
+            "lang/py",
+            "scope/career",
+            "scope/communication",
+            "scope/ergonomics",
+            "scope/finance",
+            "scope/learning",
+            "scope/ops",
+            "scope/writing",
+            "tool/git",
+            "tool/neovim",
+            "tool/obsidian",
+            "tool/terminal",
+            "tool/tmux",
+            "topic/ai",
+            "topic/ops",
+            "topic/web-dev",
+            "use/howto",
+            "use/reference"
+          ],
+          "after": [
+            "lang/js",
+            "lang/py",
+            "scope/career",
+            "scope/communication",
+            "scope/ergonomics",
+            "scope/finance",
+            "scope/learning",
+            "scope/ops"
+          ]
+        },
+        "format": {
+          "before": "howto",
+          "after": null
+        },
+        "status": {
+          "before": "active",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/skc__ How PWAs liberated me and taught me about available software.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/skc__ Portfolio Website Ready to be Deployed.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/solve-bench index.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/solve-bench is coding problem solving and AI sparring partner.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/terminal keys like ctrl d and ctrl c.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "tags": {
+          "before": [
+            "gittest",
+            "tool/terminal"
+          ],
+          "after": [
+            "tool/terminal"
+          ]
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/tmux - get comfy on mac.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/tmux -- normal session commands and their shorter versions.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/vi~ use F f T t at least 10 times per session.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/vlt_ Vault Schema V3 -- introduces Concepts.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "format": {
+          "before": "reference",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/vlt_ Vault Schema V3 with concept fix.md",
+      "confidence": "review",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "format": {
+          "before": "howto",
+          "after": null
+        },
+        "status": {
+          "before": "done",
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/xAI Exact Agent Config Commands.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        },
+        "format": {
+          "before": null,
+          "after": null
+        },
+        "status": {
+          "before": null,
+          "after": null
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/xAI prompt book and cli guide.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    },
+    {
+      "file": "00 Inbox/\ud83e\udded LMN Field Discovery \u2014 Complete Report.md",
+      "confidence": "high",
+      "changes": {
+        "migration_status": {
+          "before": null,
+          "after": "v4-applied"
+        },
+        "source": {
+          "before": null,
+          "after": "imported"
+        },
+        "folder_origin": {
+          "before": null,
+          "after": "00 Inbox"
+        },
+        "type": {
+          "before": null,
+          "after": "resource"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "path": "_inbox/friction-log.md",
+    "destination_folder": "resources",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_inbox` maps to `resources/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `neovim`",
+      "unprefixed tag `friction`",
+      "unprefixed tag `sprint`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "friction-log",
+      "tags": [
+        "neovim",
+        "friction",
+        "sprint"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "_inbox",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

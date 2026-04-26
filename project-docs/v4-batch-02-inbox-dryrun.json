@@ -1,0 +1,785 @@
+[
+  {
+    "path": "00 Inbox/Instagram-Triage/Brain chooses cheap dopamine to cover for stress, pain, rather than running this neurologically-sound process.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox/Instagram-Triage",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/LLM Payload Mailbox/LLM Payload Workflow.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox/LLM Payload Mailbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/Quick reference of prefixes in my vault ecosystem for fast retrieval.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "tool/obsidian"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "tool/obsidian"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/Review the Med students wildly impresive. valuabe Obsidian setup.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "in-progress",
+      "tags": [
+        "scope/vault",
+        "tool/schema",
+        "topic/obsidian"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/vault",
+        "tool/schema",
+        "topic/obsidian"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/Untitled V4 Test Note.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "area": null
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/keyboard idea.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/communication",
+        "scope/ergonomics",
+        "tool/neovim",
+        "tool/terminal"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/communication",
+        "scope/ergonomics",
+        "tool/neovim",
+        "tool/terminal"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/landing pages and AB testing shows simple text message wins.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/lc_1004 \u2014 Max Consecutive Ones III.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/nlm - Mobile SSH and Remote Dev Guide for iOS.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "lang/js",
+        "lang/py",
+        "scope/communication",
+        "scope/ergonomics",
+        "scope/ops",
+        "tool/neovim",
+        "tool/terminal",
+        "topic/ops"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "lang/js",
+        "lang/py",
+        "scope/communication",
+        "scope/ergonomics",
+        "scope/ops",
+        "tool/neovim",
+        "tool/terminal",
+        "topic/ops"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/nlm - powerful CLI for full use of NotebookLM.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/nvim - Quick calls to some agent CLI using terminal commands.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/communication",
+        "scope/ergonomics",
+        "tool/neovim",
+        "tool/terminal",
+        "topic/ai"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/communication",
+        "scope/ergonomics",
+        "tool/neovim",
+        "tool/terminal",
+        "topic/ai"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/nvim - q enters macro recording mode and only q exits.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/ergonomics",
+        "tool/neovim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/ergonomics",
+        "tool/neovim"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/nvimt - di\" is goto deleting within surrounding quotes.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/mindset",
+        "tool/neovim"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/mindset",
+        "tool/neovim"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/obsidian.neovim comprehensive command list and breakdown.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/quickbooks.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "scope/finance",
+        "scope/ops"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "scope/finance",
+        "scope/ops"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/skc -- steps towards building my portfolio website with insightful posting from recent experiences.md",
+    "destination_folder": "inbox",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "type conflict: current `area`, inferred `resource`",
+      "status exists on non-project/event type",
+      "unprefixed tag `use/howto`",
+      "unprefixed tag `use/reference`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "area",
+      "status": "active",
+      "tags": [
+        "lang/js",
+        "lang/py",
+        "scope/career",
+        "scope/communication",
+        "scope/ergonomics",
+        "scope/finance",
+        "scope/learning",
+        "scope/ops",
+        "scope/writing",
+        "tool/git",
+        "tool/neovim",
+        "tool/obsidian",
+        "tool/terminal",
+        "tool/tmux",
+        "topic/ai",
+        "topic/ops",
+        "topic/web-dev",
+        "use/howto",
+        "use/reference"
+      ]
+    },
+    "suggested": {
+      "type": "area",
+      "tags": [
+        "lang/js",
+        "lang/py",
+        "scope/career",
+        "scope/communication",
+        "scope/ergonomics",
+        "scope/finance",
+        "scope/learning",
+        "scope/ops"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/skc__ How PWAs liberated me and taught me about available software.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/skc__ Portfolio Website Ready to be Deployed.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "lang/js",
+        "scope/career",
+        "scope/communication",
+        "scope/ops",
+        "tool/git",
+        "topic/web-dev"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "lang/js",
+        "scope/career",
+        "scope/communication",
+        "scope/ops",
+        "tool/git",
+        "topic/web-dev"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/solve-bench index.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/solve-bench is coding problem solving and AI sparring partner.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/terminal keys like ctrl d and ctrl c.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "unprefixed tag `gittest`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "gittest",
+        "tool/terminal"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "tool/terminal"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/tmux - get comfy on mac.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "tool/tmux"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "tool/tmux"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/tmux -- normal session commands and their shorter versions.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "tool/terminal",
+        "tool/tmux"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "tags": [
+        "tool/terminal",
+        "tool/tmux"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/vi~ use F f T t at least 10 times per session.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/vlt_ Vault Schema V3 -- introduces Concepts.md",
+    "destination_folder": "inbox",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "type conflict: current `utility`, inferred `resource`",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "done",
+      "tags": [
+        "scope/obsidian",
+        "tool/schema",
+        "topic/normalization"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "tags": [
+        "scope/obsidian",
+        "tool/schema",
+        "topic/normalization"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/vlt_ Vault Schema V3 with concept fix.md",
+    "destination_folder": "inbox",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "type conflict: current `utility`, inferred `resource`",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "done",
+      "tags": [
+        "scope/obsidian",
+        "topic/normalization",
+        "tool/schema"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "tags": [
+        "scope/obsidian",
+        "topic/normalization",
+        "tool/schema"
+      ],
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/xAI Exact Agent Config Commands.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/xAI prompt book and cli guide.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "00 Inbox/\ud83e\udded LMN Field Discovery \u2014 Complete Report.md",
+    "destination_folder": "inbox",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `00 Inbox` maps to `inbox/`"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "00 Inbox",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

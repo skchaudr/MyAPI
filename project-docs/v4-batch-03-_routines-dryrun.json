@@ -1,0 +1,60 @@
+[
+  {
+    "path": "_routines/jobs-seen.md",
+    "destination_folder": "resources",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_routines` maps to `resources/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `routine`",
+      "unprefixed tag `jobs-scout`",
+      "unprefixed tag `ledger`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "ledger",
+      "tags": [
+        "routine",
+        "jobs-scout",
+        "ledger"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "_routines",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "_routines/lessons-covered.md",
+    "destination_folder": "resources",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `_routines` maps to `resources/`"
+    ],
+    "review_needed": [
+      "missing area/project/concept connection",
+      "unprefixed tag `routine`",
+      "unprefixed tag `codebase-lesson`",
+      "unprefixed tag `ledger`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "ledger",
+      "tags": [
+        "routine",
+        "codebase-lesson",
+        "ledger"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "source": "imported",
+      "folder_origin": "_routines",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]

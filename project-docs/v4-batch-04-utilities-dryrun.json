@@ -1,0 +1,2404 @@
+[
+  {
+    "path": "09 Utilities/AI-Handoff-TaskSystem-Integration.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `handoff`",
+      "unprefixed tag `task-system`",
+      "unprefixed tag `obsidian`",
+      "unprefixed tag `PARA`",
+      "unprefixed tag `agent-context`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "active",
+      "tags": [
+        "handoff",
+        "task-system",
+        "obsidian",
+        "PARA",
+        "agent-context"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-AI-vs-ML-Engineer.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Attachments/_from_coding-tech/media-lib",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-Prime-one-year-unemployed.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Attachments/_from_coding-tech/media-lib",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-how-git-works.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Attachments/_from_coding-tech/media-lib",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-no-vibes-allowed.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Attachments/_from_coding-tech/media-lib",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Attachments/_from_coding-tech/media-lib/url-ypzlg8q9.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Attachments/_from_coding-tech/media-lib",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Custom Callouts Reference.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Home Hub 2026.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `dashboard`",
+      "unprefixed tag `homepage`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "active",
+      "tags": [
+        "dashboard",
+        "homepage"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Hybrid-Task-System-Architecture.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `task-system`",
+      "unprefixed tag `architecture`",
+      "unprefixed tag `hybrid`",
+      "unprefixed tag `taskforge`",
+      "unprefixed tag `tasknotes`",
+      "unprefixed tag `obsidian-tasks`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "active",
+      "tags": [
+        "task-system",
+        "architecture",
+        "hybrid",
+        "taskforge",
+        "tasknotes",
+        "obsidian-tasks"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Obsidian-Neovim-Setup/01-Neovim-Workflows.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Obsidian-Neovim-Setup",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Obsidian-Neovim-Setup/02-Obsidian-CLI-Capture.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Obsidian-Neovim-Setup",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Obsidian-Neovim-Setup/03-Apple-Shortcuts-Setup.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Obsidian-Neovim-Setup",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Obsidian-Neovim-Setup/README.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Obsidian-Neovim-Setup",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reminders-CLI.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/Hardened_Configuration_Vision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/OpenClaw_Known_Good_State.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_add-jules-mcp-case-study-2336253627227224160_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_dispatch-queue_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-add-cn-utility-tests-12605712029049757920_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-add-jules-case-study-12239587449017906312_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-add-pathfinder-case-study-4226522165892727140_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-expand-agentic-workflow-post-17722960923824425775_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-expand-agentic-workflow-post-6509006787236807011_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-markdown-pipeline-1094435478313569748_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-pathfinder-case-study-17358931347304674095_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-portfolio-content-update_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-projects-definition-of-done-8072404381463155084_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-resilient-architect-copy_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feat-rewrite-openclaw-md-721425389482289999_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_feature-astro-version_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_fix-dead-subscription-form-11146584180811433169_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_fix-font-family_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_fix-merge-conflict-and-email-obfuscation-1741595167-10136734606162562078_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_fix-merge-conflicts-blog-projects-17123638390372322339_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_fix-optimize-navigation-rendering-4508866026702962936_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_fix-projects-merge-conflict-13269831740869035011_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_jules-11570014157736730045-f4906c1d_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_jules-5358149949114829266-f19ce31f_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_jules-rewrite-santa-cruz-automations-5578262483978790649_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_perf-fix-blog-post-key-6294485228969439525_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_perf-fix-react-keys-projects-page-16679005189783209206_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_perf-optimize-get-post-by-slug-14243126727577805702_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_perf-stable-react-keys-14940850307799154199_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_perf-stable-react-keys-projects-14335487169626350116_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_perf-unique-keys-15434530512014776475_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/PR_security-obfuscate-email-1254930352502245485_Decision.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/Phase_3_Bootstrap.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Reports/VM_Headless_Obsidian_Sync_Setup.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Reports",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Scripts/triage-inbox-fzf-runner.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/Scripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/Sweep.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `workflow`",
+      "unprefixed tag `sweep`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "dashboard",
+      "status": "active",
+      "tags": [
+        "workflow",
+        "sweep"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/AGENTS.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Broken-aspects-of-properties-wiz.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `vault`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "w",
+      "status": "active",
+      "tags": [
+        "topic/quickadd",
+        "topic/automation",
+        "vault"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/quickadd",
+        "topic/automation",
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Creating strong visual feedback and metadeta driven vault.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "type conflict: current `resource`, inferred `utility`",
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "resource",
+      "status": "active",
+      "tags": []
+    },
+    "suggested": {
+      "type": "resource",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Daily Note Template Tags.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "unprefixed tag `sleep/good`",
+      "unprefixed tag `signal/loop`",
+      "unprefixed tag `signal/insight`",
+      "unprefixed tag `mood/ok`",
+      "unprefixed tag `mood/low`",
+      "unprefixed tag `mood/high`",
+      "unprefixed tag `focus/deep`",
+      "unprefixed tag `energy/low`",
+      "unprefixed tag `ego/high`",
+      "unprefixed tag `ego/low`",
+      "unprefixed tag `ego/3D`",
+      "unprefixed tag `ego/balanced`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "sleep/good",
+        "signal/loop",
+        "signal/insight",
+        "mood/ok",
+        "mood/low",
+        "mood/high",
+        "focus/deep",
+        "energy/low",
+        "ego/high",
+        "ego/low",
+        "ego/3D",
+        "ego/balanced"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/How to filter notes through the vault System Inbox.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "unprefixed tag `vault/migration`",
+      "unprefixed tag `vault/howto`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "vault/migration",
+        "vault/howto"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/JULES-INBOX-TRIAGE-BRIEF.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "active",
+      "tags": [
+        "tool/jules",
+        "topic/ops"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "tool/jules",
+        "topic/ops",
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/JULES_HANDOFF_Vault_Normalization.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/New Home.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag",
+      "anchor-like filename adjusted structural type"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "vault",
+      "status": "active",
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Obsidian_Vault_Situation_Report.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "unprefixed tag `4`",
+      "unprefixed tag `3`",
+      "unprefixed tag `2`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        4,
+        3,
+        2
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Periodic Notes Migration Rules.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/RegEx for excluding old vault folders.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Review current callouts and custom callouts.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `task`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "task",
+      "status": "active",
+      "tags": [
+        "task"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Use Colored Tags to enforce 3-tier tag schema for SSD Vault.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Using external references in code blocks moving forward.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/VLT_ LLM Wiki Relationship.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "active",
+      "tags": [
+        "topic/knowledge-management"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/knowledge-management",
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/VLT_ Vault Schema V2.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "unprefixed tag `active`",
+      "unprefixed tag `tags`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "active",
+        "tags"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Vault Schema V4 Reference.md",
+    "destination_folder": "system",
+    "confidence": "review",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "type conflict: current `resource`, inferred `utility`"
+    ],
+    "current": {
+      "type": "resource",
+      "area": [
+        [
+          "Vault"
+        ]
+      ],
+      "concepts": [
+        [
+          "Knowledge Management"
+        ]
+      ],
+      "tags": [
+        "topic/reference"
+      ]
+    },
+    "suggested": {
+      "type": "resource",
+      "area": [
+        [
+          "Vault"
+        ]
+      ],
+      "tags": [
+        "topic/reference"
+      ],
+      "concepts": [
+        [
+          "Knowledge Management"
+        ]
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/Vault keeping automations and hotkeys.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/_V4_Vault_Schema_ .md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type"
+    ],
+    "current": {
+      "type": "utility",
+      "status": "active",
+      "area": "[[Vault]]",
+      "concepts": [
+        "[[Knowledge Management]]"
+      ],
+      "tags": [
+        "topic/reference"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "concepts": [
+        "[[Knowledge Management]]"
+      ],
+      "source": "original",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/obsidian-duplicates-cleanup-plan-solodeveloper.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/obsidian-duplicates-solodeveloper.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/_Vault System/obsidian-frontmatter-taxonomy-solodeveloper.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "vault-system utility gets reference tag"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": null
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "tags": [
+        "topic/reference"
+      ],
+      "source": "imported",
+      "folder_origin": "09 Utilities/_Vault System",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/appearances/Custom CSS Snippets Theme System.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/appearances",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/appearances/minimal-theme-variations.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/appearances",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/appearances/notebook-navigator-icons.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/appearances",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Clip Web Page.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Emojify.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Explain like I am 5.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Fix grammar and spelling.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Format structure and clean text.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Generate glossary.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Generate table of contents.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Make longer.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Make shorter.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Remove URLs.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Rewrite as tweet.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Simplify.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Summarize.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/copilot-custom-prompts/Translate to Chinese.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {},
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/copilot-custom-prompts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Apple M1 Macs were revolutionary according to one guy online.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "unprefixed tag `apple`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "project": "apple",
+      "tags": [
+        "apple"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "project": "apple",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Can we test it? Yes we can!.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "unprefixed tag `transcript`",
+      "unprefixed tag `testing`",
+      "unprefixed tag `testability`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "transcript",
+        "testing",
+        "testability"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Coding lessons from Google developer.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/IOB - AI coming for your mind, not your life .md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "unprefixed tag `internet-of-bugs`",
+      "unprefixed tag `content/video`",
+      "unprefixed tag `AI`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "project": "AI",
+      "tags": [
+        "internet-of-bugs",
+        "content/video",
+        "AI"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "project": "AI",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Ralph Wiggum Video on Streamlining Agentic Coding.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Transcript for The One Habit of Productivity Huberman Video.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "unprefixed tag `transcript`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "transcript"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Untitled.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "unprefixed tag `transcript`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": [
+        "transcript"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/Zed as an IDE Killer.md",
+    "destination_folder": "system",
+    "confidence": "high",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": null,
+      "status": null,
+      "tags": []
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  },
+  {
+    "path": "09 Utilities/transcripts/transcript-Danger-Illusion-of-AI-Code.md",
+    "destination_folder": "system",
+    "confidence": "medium",
+    "reasons": [
+      "top-level folder `09 Utilities` maps to `system/`",
+      "utilities note gets vault area"
+    ],
+    "review_needed": [
+      "status exists on non-project/event type",
+      "unprefixed tag `task`",
+      "concepts need owner assignment"
+    ],
+    "current": {
+      "type": "task",
+      "status": "in-progress",
+      "project": null,
+      "tags": [
+        "task"
+      ]
+    },
+    "suggested": {
+      "type": "utility",
+      "area": "[[Vault]]",
+      "source": "imported",
+      "folder_origin": "09 Utilities/transcripts",
+      "migration_status": "v4-dry-run"
+    }
+  }
+]
