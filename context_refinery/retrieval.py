@@ -205,11 +205,15 @@ class MetadataParser:
         ):
             return "operational_dump"
 
+        chat_dump_sources = {"chatgpt", "claude", "claude-code", "codex"}
         if (
             source == "obsidian"
             or doc_type_text in {"note", "spec"}
             or status_text in {"mature", "incubating"}
-            or re.search(r"\b(anchor|summary|overview|map|briefing|guide|system status|handoff)\b", text)
+            or (
+                source not in chat_dump_sources
+                and re.search(r"\b(anchor|summary|overview|map|briefing|guide|system status|handoff)\b", text)
+            )
         ):
             return "synthesized_note"
 
@@ -321,19 +325,21 @@ class QueryClassifier:
 
     _PROJECT = [
         re.compile(r"\b(summarize|overview|status\s+of|what\s+is|tell\s+me\s+about)\b.*\b(project|repo)\b", re.I),
-        re.compile(r"\b(bdr|context.refinery|socialxp|smb.ops|water.and.stone|cim|my[_\s-]?devinfra)\b", re.I),
+        re.compile(r"\b(bdr|context.refinery|socialxp|smb.ops|water.and.stone|cim|my[_\s-]?devinfra|myapi|my[_\s-]api)\b", re.I),
     ]
 
     _OPERATIONAL = [
         re.compile(r"\bstatus\s+of\s+(the\s+)?api\s+deployment\b", re.I),
         re.compile(r"\b(khoj\s+deployment|khoj\s+indexing|re-index(?:ing)?|health\s+endpoint)\b", re.I),
         re.compile(r"\b(tailscale|ssh|vm\s+access|virtual\s+machine|vm)\b", re.I),
+        re.compile(r"\b(broken|blocked|blocker|stuck|failing|issue|problem)\b.*\b(myapi|my[_\s-]?api|my[_\s-]?devinfra|context.refinery|pipeline|deployment|service|endpoint|khoj)\b", re.I),
+        re.compile(r"\b(myapi|my[_\s-]?api|my[_\s-]?devinfra|context.refinery|pipeline|khoj)\b.*\b(broken|blocked|blocker|stuck|failing|issue|problem)\b", re.I),
     ]
 
     _SYNTHESIS = [
         re.compile(r"\bwhat\s+docs\s+should\s+i\s+use\b", re.I),
         re.compile(r"\bwhat\s+was\s+i\s+learning\s+about\b", re.I),
-        re.compile(r"\bend\s+to\s+end\b", re.I),
+        re.compile(r"\bend[\s-]+to[\s-]+end\b", re.I),
         re.compile(r"\bworking\s+together\b", re.I),
     ]
 
@@ -402,15 +408,16 @@ class QueryClassifier:
         if len(source_hits) == 1 and any(pat.search(query) for pat in self._SOURCE_SPECIFIC):
             return "source_specific", "lookup", 0.78, None
 
+        # Operational recall — checked before project so "broken in MyAPI"
+        # routes to operational rather than project_overview
+        for pat in self._OPERATIONAL:
+            if pat.search(query):
+                return "operational", "summary", 0.76, None
+
         # Project overview
         for pat in self._PROJECT:
             if pat.search(query):
                 return "project_overview", "dossier", 0.75, None
-
-        # Operational recall
-        for pat in self._OPERATIONAL:
-            if pat.search(query):
-                return "operational", "summary", 0.76, None
 
         # Decision recall
         for pat in self._DECISION:
@@ -517,6 +524,10 @@ class ResultReranker:
     W_SOURCE = 0.14
     W_TITLE = 0.18
 
+    # Exact-phrase boost is added directly to final_score (no weight),
+    # capped by the method itself. Magnitude tuned to overcome semantic
+    # noise when the literal query phrase appears verbatim.
+
     # Intent-specific weight overrides
     _WEIGHT_OVERRIDES = {
         "temporal": {"W_SEMANTIC": 0.24, "W_RECENCY": 0.46},
@@ -587,6 +598,13 @@ class ResultReranker:
                 r.get("body"),
                 meta.get("aliases", []),
             )
+            exact_phrase_boost = self._exact_phrase_boost(
+                query,
+                meta.get("title"),
+                r.get("file"),
+                r.get("body"),
+                meta.get("aliases", []),
+            )
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
                                 w_trust * trust + w_reinf * reinf +
@@ -594,6 +612,7 @@ class ResultReranker:
                                 w_source * source_match +
                                 w_title * title_boost +
                                 special_boost +
+                                exact_phrase_boost +
                                 doc_kind_prior)
 
         results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
@@ -714,6 +733,7 @@ class ResultReranker:
 
         project_aliases = {
             "my_devinfra": ["my_devinfra", "mydevinfra", "devinfra", "dev infra"],
+            "myapi": ["myapi", "my_api", "my-api", "my api"],
             "bdr": ["bdr"],
             "cim": ["cim"],
             "socialxp": ["socialxp"],
@@ -758,7 +778,7 @@ class ResultReranker:
                 "remote access",
             ])
         if intent == "project_overview":
-            anchors.extend(["my_devinfra", "mydevinfra", "devinfra", "bdr", "cim", "socialxp", "openclaw"])
+            anchors.extend(["my_devinfra", "mydevinfra", "devinfra", "myapi", "my_api", "my-api", "bdr", "cim", "socialxp", "openclaw"])
 
         seen = set()
         deduped = []
@@ -843,12 +863,20 @@ class ResultReranker:
 
         score = 0.0
         if intent == "project_overview":
-            if "my_devinfra" in q or "mydevinfra" in re.sub(r"[^a-z0-9]+", "", q):
+            compact_q = re.sub(r"[^a-z0-9]+", "", q)
+            if "my_devinfra" in q or "mydevinfra" in compact_q:
                 if exact_hit(["my_devinfra", "mydevinfra", "devinfra", "dev infra"]):
                     score += 0.30
                 if "my_devinfra" in compact_text or "mydevinfra" in compact_text:
                     score += 0.18
                 if "my_devinfra" in body_text or "mydevinfra" in body_text:
+                    score += 0.10
+            if "myapi" in compact_q:
+                if exact_hit(["myapi", "my_api", "my-api", "my api"]):
+                    score += 0.30
+                if "myapi" in compact_text:
+                    score += 0.18
+                if "myapi" in body_text:
                     score += 0.10
             for project in ("bdr", "cim", "socialxp", "openclaw"):
                 if project in q and exact_hit([project]):
@@ -876,6 +904,108 @@ class ResultReranker:
                     score -= 0.08
 
         return max(0.0, min(0.45, score))
+
+    def _exact_phrase_boost(self, query, title, file_path, body, aliases=None):
+        """Strong boost when the literal query phrase (or hyphen/space-normalized
+        variants) appears verbatim in title/file/aliases or body.
+
+        Why: Khoj's vector similarity favors topical overlap, so a generic doc that
+        mentions "gold" and "mining" separately can outrank the canonical note that
+        contains the exact phrase "gold mine". This boost surfaces verbatim matches
+        regardless of semantic noise. Hyphen/space variants ("gold mine" /
+        "gold-mine" / "goldmine") are all matched.
+        """
+        if not query:
+            return 0.0
+
+        phrases = self._query_phrases(query)
+        if not phrases:
+            return 0.0
+
+        variants = set()
+        for p in phrases:
+            variants.update(self._phrase_variants(p))
+        if not variants:
+            return 0.0
+
+        file_name = os.path.basename(file_path or "").lower()
+        title_text = (title or "").lower()
+        body_text = (body or "").lower()
+        alias_text = " ".join(aliases or []).lower()
+        title_file_text = f"{title_text} {file_name}"
+
+        # Tier 1: title / file / aliases — strongest signal
+        if any(v in title_file_text for v in variants):
+            return 0.40
+        if any(v in alias_text for v in variants):
+            return 0.35
+
+        # Tier 2: body — count distinct hits across variants (avoid double-counting
+        # the same span when "gold mine" and "gold-mine" both match the same text)
+        max_hits = max((body_text.count(v) for v in variants), default=0)
+        if max_hits >= 3:
+            return 0.30
+        if max_hits >= 1:
+            return 0.22
+
+        return 0.0
+
+    @staticmethod
+    def _query_phrases(query):
+        """Extract candidate phrases (multi-token, length >= 4) for exact-match boosting."""
+        if not query:
+            return set()
+        phrases = set()
+
+        # Quoted phrases — explicit user intent
+        for q in re.findall(r'"([^"]+)"', query.lower()):
+            q = q.strip()
+            if q:
+                phrases.add(q)
+
+        # Stopword-stripped tokens
+        raw_terms = re.findall(r"[A-Za-z0-9][A-Za-z0-9_-]*", query.lower())
+        stopwords = {
+            "what", "is", "the", "a", "an", "of", "and", "or", "to", "i", "me",
+            "my", "was", "were", "did", "do", "does", "for", "in", "on", "about",
+            "show", "find", "where", "should", "use", "docs", "document", "notes",
+            "note", "session", "this", "that", "how", "have", "been", "around",
+        }
+        terms = [t for t in raw_terms if t not in stopwords and len(t) >= 2]
+
+        # Full joined phrase (2+ terms)
+        if len(terms) >= 2:
+            phrases.add(" ".join(terms))
+
+        # Adjacent bigrams from filtered terms
+        for i in range(len(terms) - 1):
+            phrases.add(f"{terms[i]} {terms[i+1]}")
+
+        # Hyphenated single tokens — also generate the space-separated form
+        for term in terms:
+            if "-" in term and len(term) >= 5:
+                parts = [p for p in term.split("-") if p]
+                if len(parts) >= 2:
+                    phrases.add(" ".join(parts))
+
+        return phrases
+
+    @staticmethod
+    def _phrase_variants(phrase):
+        """Generate hyphen/space/joined variants of a phrase. Skip very short results."""
+        if not phrase:
+            return set()
+        p = phrase.strip().lower()
+        if len(p) < 4:
+            return set()
+        variants = {
+            p,
+            p.replace(" ", "-"),
+            p.replace(" ", ""),
+            p.replace("-", " "),
+            p.replace("-", ""),
+        }
+        return {v for v in variants if v and len(v) >= 4}
 
     def _reinforcement_score(self, index, all_tags):
         """Boost if this doc's tags overlap with tags from other docs."""
@@ -1123,6 +1253,8 @@ class RetrievalPipeline:
         if intent == "project_overview":
             if "my_devinfra" in lower or "mydevinfra" in compact:
                 extras.extend(["my_devinfra", "mydevinfra", "devinfra"])
+            if "myapi" in compact:
+                extras.extend(["myapi", "my_api", "my-api"])
             for token in ("bdr", "cim", "socialxp", "openclaw"):
                 if token in lower:
                     extras.append(token)
