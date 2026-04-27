@@ -362,6 +362,20 @@ class QueryClassifier:
         re.compile(r"\b(find|show|where|session|export|note|notes|setup|document)\b", re.I),
     ]
 
+    # Human-retrieval phrases — "find the thread where I X", "session where I X".
+    # Distinct from _SOURCE_SPECIFIC because it does not require an explicit
+    # source name in the query (claude-code/chatgpt/codex/etc.). Routed to
+    # source_specific intent to avoid operational expansion that would bias
+    # retrieval toward anchors (e.g. _OPERATIONAL matching `\bvm\b` in
+    # "Khoj VM migration" and expanding with deployment/indexing terms).
+    _HUMAN_RETRIEVAL = [
+        re.compile(r"\bfind\s+(me\s+)?(the\s+)?(thread|session|conversation|chat)\b", re.I),
+        re.compile(r"\b(thread|session|conversation|chat)\s+where\s+i\b", re.I),
+        re.compile(r"\bwhere\s+did\s+i\s+(write|talk|discuss|set\s+up|set\s+the|set|do|say|decide|note)\b", re.I),
+        re.compile(r"\bfind\s+(me\s+)?(notes?|sessions?)\s+about\b", re.I),
+        re.compile(r"\bwhich\s+(thread|session|conversation|note)\b", re.I),
+    ]
+
     _PATTERN = [
         re.compile(r"\b(pattern|recurring|habit|trend|advice|coach|improve|theme|keep\s+doing)\b", re.I),
     ]
@@ -407,6 +421,14 @@ class QueryClassifier:
         # Source-specific lookup
         if len(source_hits) == 1 and any(pat.search(query) for pat in self._SOURCE_SPECIFIC):
             return "source_specific", "lookup", 0.78, None
+
+        # Human retrieval — checked before operational so "find the thread
+        # where I set up the Khoj VM migration" routes to source_specific
+        # (lookup mode, no operational expansion) rather than getting caught
+        # by the `\bvm\b` operational pattern.
+        for pat in self._HUMAN_RETRIEVAL:
+            if pat.search(query):
+                return "source_specific", "lookup", 0.78, None
 
         # Operational recall — checked before project so "broken in MyAPI"
         # routes to operational rather than project_overview
