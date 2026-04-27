@@ -21,7 +21,10 @@ import re
 from pathlib import Path
 
 DEFAULT_VAULT = Path("/Users/saboor/Obsidian/SoloDeveloper")
-DEFAULT_REPORTS_DIR = Path("project-docs")
+# Triage artifacts live outside both repos. MyAPI is a project repo, not a
+# workspace; the vault is for notes, not sync-bloating JSON. Machine-local.
+VAULT_TRIAGE_DIR = Path.home() / ".vault-triage-runs"
+DEFAULT_REPORTS_DIR = VAULT_TRIAGE_DIR
 DEFAULT_BATCH_GLOB = "v4-batch-*-dryrun.json"
 
 # Each concept maps to keyword patterns that suggest the body talks about it.

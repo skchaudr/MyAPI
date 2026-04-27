@@ -17,7 +17,10 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 DEFAULT_VAULT = Path("/Users/saboor/Obsidian/SoloDeveloper")
-DEFAULT_REPORT = Path("project-docs/v4-concept-harvest.md")
+# Triage artifacts live outside both repos. MyAPI is a project repo, not a
+# workspace; the vault is for notes, not sync-bloating JSON. Machine-local.
+VAULT_TRIAGE_DIR = Path.home() / ".vault-triage-runs"
+DEFAULT_REPORT = VAULT_TRIAGE_DIR / "v4-concept-harvest.md"
 
 # Match [[anything]] but not embeds ![[...]] and not internal anchors with |alias —
 # we keep the raw link text before any pipe.

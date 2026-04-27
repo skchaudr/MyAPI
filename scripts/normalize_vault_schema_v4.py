@@ -27,6 +27,11 @@ from typing import Any
 
 import yaml
 
+# Triage artifacts (manifests, dry-runs, ledger, backups) live outside both
+# repos — MyAPI is a project repo, not a workspace; the vault is for notes,
+# not for sync-bloating JSON artifacts. Each machine creates its own.
+VAULT_TRIAGE_DIR = Path.home() / ".vault-triage-runs"
+
 # Fields the script is allowed to write automatically.
 # Meaning-heavy fields (concepts, related, summary) are left for the owner pass.
 APPLY_FIELDS = {"type", "status", "area", "project", "tags", "source", "folder_origin", "migration_status"}
@@ -514,7 +519,7 @@ def append_coverage_ledger(
     """Append a run entry to the coverage ledger.
 
     Solves the "no central ledger" gap from prior batches. Each --apply run
-    appends a single entry; the ledger lives at project-docs/coverage-ledger.json
+    appends a single entry; the ledger lives at ~/.vault-triage-runs/coverage-ledger.json
     by default and is the single source of truth for what's been normalized.
     """
     entry = {
@@ -549,8 +554,8 @@ def main() -> int:
     parser.add_argument("--root", type=Path, default=DEFAULT_VAULT)
     parser.add_argument("--subdir", default="", help="Path inside the vault to scan (required for --apply)")
     parser.add_argument("--limit", type=int, default=0)
-    parser.add_argument("--report", type=Path, default=Path("project-docs/vault-schema-v4-normalization-dry-run.md"))
-    parser.add_argument("--json", type=Path, default=Path("project-docs/vault-schema-v4-normalization-dry-run.json"))
+    parser.add_argument("--report", type=Path, default=VAULT_TRIAGE_DIR / "vault-schema-v4-normalization-dry-run.md")
+    parser.add_argument("--json", type=Path, default=VAULT_TRIAGE_DIR / "vault-schema-v4-normalization-dry-run.json")
     parser.add_argument("--apply", action="store_true", help="Write frontmatter changes to vault files")
     parser.add_argument("--confidence", choices=["high", "medium", "review"], default="high",
                         help="Minimum confidence level to apply (default: high)")
@@ -564,7 +569,7 @@ def main() -> int:
                         help="Backfill `source` (`original` for periodics, `imported` elsewhere) when missing. Default: on.")
     parser.add_argument("--batch", default=None,
                         help="Batch name for the coverage ledger entry (default: derived from --subdir).")
-    parser.add_argument("--ledger", type=Path, default=Path("project-docs/coverage-ledger.json"),
+    parser.add_argument("--ledger", type=Path, default=VAULT_TRIAGE_DIR / "coverage-ledger.json",
                         help="Coverage ledger file path; appended on --apply.")
     args = parser.parse_args()
 

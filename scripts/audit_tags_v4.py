@@ -23,7 +23,10 @@ from pathlib import Path
 import yaml
 
 DEFAULT_VAULT = Path("/Users/saboor/Obsidian/SoloDeveloper")
-DEFAULT_REPORT = Path("project-docs/v4-tag-prefix-audit.md")
+# Triage artifacts live outside both repos. MyAPI is a project repo, not a
+# workspace; the vault is for notes, not sync-bloating JSON. Machine-local.
+VAULT_TRIAGE_DIR = Path.home() / ".vault-triage-runs"
+DEFAULT_REPORT = VAULT_TRIAGE_DIR / "v4-tag-prefix-audit.md"
 
 PREFIXES = ("topic/", "tool/", "lang/", "scope/")
 
