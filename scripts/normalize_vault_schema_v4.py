@@ -27,13 +27,19 @@ from typing import Any
 
 import yaml
 
+# Triage artifacts (manifests, dry-runs, ledger, backups) live outside both
+# repos — MyAPI is a project repo, not a workspace; the vault is for notes,
+# not for sync-bloating JSON artifacts. Each machine creates its own.
+VAULT_TRIAGE_DIR = Path.home() / ".vault-triage-runs"
+
 # Fields the script is allowed to write automatically.
 # Meaning-heavy fields (concepts, related, summary) are left for the owner pass.
-APPLY_FIELDS = {"type", "status", "area", "project", "tags", "folder_origin", "migration_status"}
+APPLY_FIELDS = {"type", "status", "area", "project", "tags", "source", "folder_origin", "migration_status"}
 
 
-VALID_TYPES = {"project", "area", "resource", "concept", "event", "periodic"}
-PROJECT_EVENT_STATUSES = {"active", "backlog", "blocked", "done"}
+VALID_TYPES = {"project", "area", "resource", "concept", "event", "periodic", "log", "utility"}
+PROJECT_EVENT_STATUSES = {"active", "incubating", "backlog", "blocked", "done"}
+VALID_SOURCES = {"original", "article", "meeting", "transcript", "ai-assisted", "imported"}
 TAG_PREFIXES = ("topic/", "tool/", "lang/", "scope/")
 MAX_TAGS = 8
 
@@ -47,8 +53,8 @@ TOP_LEVEL_MAP = {
     "03 Resources": ("resources", "resource"),
     "04 Periodic": ("periodics", "periodic"),
     "05 Archive": ("archive", "resource"),
-    "09 Utilities": ("system", "resource"),
-    "Templates": ("system", "resource"),
+    "09 Utilities": ("system", "utility"),
+    "Templates": ("system", "utility"),
     "TaskNotes": ("projects", "resource"),
     "__ Tasks __": ("projects", "event"),
     "__Tasks__": ("projects", "event"),
@@ -60,11 +66,13 @@ PRIVATE_PATH_PARTS = {"Confidential", "_private", "Relationships", "SMW"}
 AREA_BY_PATH = {
     "Career": "Career",
     "Code Problem Solving": "Code Problem Solving",
-    "Confidential": "Private",
+    "Relationships": "Private",
+    "SMW": "Mens Work",
+    "Personal": "Personal Growth",
     "Finances": "Finances",
     "Health": "Health",
     "Learning": "Learning",
-    "My_DevInfra": "My_DevInfra",
+    "Developer Infrastructure": "Developer Infrastructure",
 }
 
 RESOURCE_TOPIC_TAGS = {
@@ -79,14 +87,14 @@ RESOURCE_TOPIC_TAGS = {
 }
 
 RESOURCE_AREA_MAP = {
-    "AI": "My_DevInfra",
-    "API Keys": "My_DevInfra",
-    "Google": "My_DevInfra",
-    "MacOS": "My_DevInfra",
+    "AI": "Developer Infrastructure",
+    "API Keys": "Developer Infrastructure",
+    "Google": "Developer Infrastructure",
+    "MacOS": "Developer Infrastructure",
     "Mindfulness": "Health",
-    "NeoVim": "My_DevInfra",
-    "Programming": "My_DevInfra",
-    "Workflows": "My_DevInfra",
+    "NeoVim": "Developer Infrastructure",
+    "Programming": "Developer Infrastructure",
+    "Workflows": "Developer Infrastructure",
 }
 
 PROJECT_NAME_ALIASES = {
@@ -210,18 +218,20 @@ def infer_from_path(path: Path, vault_root: Path) -> tuple[str, str, list[str], 
             reasons.append(f"area inferred from resource folder `{parts[1]}`")
 
     if top == "04 Periodic":
-        inferred["area"] = wiki("System")
+        inferred["area"] = wiki("Life")
         inferred["tags"] = ["topic/log"]
-        reasons.append("periodic note gets system area and log tag")
+        reasons.append("periodic note gets life area and log tag")
 
     if top == "05 Archive":
         reasons.append("archive folder preserves inactive destination")
 
     if top == "09 Utilities":
-        inferred["area"] = wiki("System")
+        inferred["area"] = wiki("Vault")
         if "_Vault System" in parts:
             inferred["tags"] = ["topic/reference"]
             reasons.append("vault-system utility gets reference tag")
+        else:
+            reasons.append("utilities note gets vault area")
 
     name = path.stem.lower()
     if re.search(r"\b(anchor|index|home|homepage)\b", name):
@@ -282,6 +292,18 @@ def suggest_for_file(path: Path, vault_root: Path) -> Suggestion:
         review_needed.append("concepts need owner assignment")
     else:
         suggested["concepts"] = fm["concepts"]
+
+    # Source field (V4 provenance). Preserve existing valid value or infer a default;
+    # apply_suggestion gates whether the inferred default actually gets written.
+    current_source = fm.get("source")
+    if current_source and str(current_source).strip().lower() in VALID_SOURCES:
+        suggested["source"] = str(current_source).strip().lower()
+    elif current_source:
+        review_needed.append(f"unknown source value `{current_source}`")
+        suggested["source"] = current_source
+    else:
+        rel_top = path.relative_to(vault_root).parts[:1]
+        suggested["source"] = "original" if rel_top == ("04 Periodic",) else "imported"
 
     suggested["folder_origin"] = str(path.relative_to(vault_root).parent)
     suggested["migration_status"] = "v4-dry-run"
@@ -375,7 +397,7 @@ def render_markdown(suggestions: list[Suggestion], vault_root: Path) -> str:
 
 FIELD_ORDER = [
     "type", "status", "area", "project",
-    "concepts", "tags",
+    "concepts", "tags", "source",
     "folder_origin", "migration_status",
 ]
 
@@ -396,11 +418,20 @@ def apply_suggestion(
     suggestion: Suggestion,
     vault_root: Path,
     backup_dir: Path | None,
+    *,
+    strip_format: bool = True,
+    write_source_default: bool = True,
 ) -> dict[str, Any] | None:
     """Write suggested APPLY_FIELDS into a file's frontmatter.
 
     Returns a change record dict, or None if nothing changed or an error occurred.
     Writes a .bak file (or backup_dir copy) before touching the original.
+
+    V4 enforcement applied during the apply phase (not just suggested):
+      - migration_status flips from `v4-dry-run` to `v4-applied`.
+      - `format:` is stripped if strip_format is True.
+      - `status:` is removed from non-project/event types (unconditional V4 rule).
+      - `source:` default is gated by write_source_default unless file already has source.
     """
     path = vault_root / suggestion.path
     try:
@@ -411,15 +442,36 @@ def apply_suggestion(
 
     fm, body = split_frontmatter(original_text)
 
-    # Compute what will actually change
+    # Build effective suggestion gated by flags
+    effective = dict(suggestion.suggested)
+
+    # Source default is gated by --write-source-default unless file already has source
+    if "source" in effective and "source" not in fm and not write_source_default:
+        effective.pop("source")
+
+    # In apply mode, migration_status flips to v4-applied
+    effective["migration_status"] = "v4-applied"
+
+    # Compute what will actually change from APPLY_FIELDS writes
     changes: dict[str, Any] = {}
     for key in APPLY_FIELDS:
-        if key not in suggestion.suggested:
+        if key not in effective:
             continue
-        new_val = suggestion.suggested[key]
+        new_val = effective[key]
         old_val = fm.get(key)
         if new_val != old_val:
             changes[key] = {"before": old_val, "after": new_val}
+
+    # Format stripping (a removal, not a write — tracked separately)
+    will_strip_format = strip_format and "format" in fm
+    if will_strip_format:
+        changes["format"] = {"before": fm["format"], "after": None}
+
+    # V4 rule: status only on project/event. Strip from others if present.
+    final_type = effective.get("type", fm.get("type"))
+    will_strip_status = final_type not in {"project", "event"} and "status" in fm
+    if will_strip_status:
+        changes["status"] = {"before": fm["status"], "after": None}
 
     if not changes:
         return None
@@ -435,8 +487,13 @@ def apply_suggestion(
     # Apply changes to frontmatter
     updated_fm = dict(fm)
     for key in APPLY_FIELDS:
-        if key in suggestion.suggested:
-            updated_fm[key] = suggestion.suggested[key]
+        if key in effective:
+            updated_fm[key] = effective[key]
+
+    if will_strip_format:
+        updated_fm.pop("format", None)
+    if will_strip_status:
+        updated_fm.pop("status", None)
 
     new_text = f"---\n{build_frontmatter(updated_fm)}---\n\n{body}"
     path.write_text(new_text, encoding="utf-8")
@@ -448,13 +505,57 @@ def apply_suggestion(
     }
 
 
+def append_coverage_ledger(
+    ledger_path: Path,
+    *,
+    batch_name: str,
+    subdir: str,
+    applied: int,
+    skipped: int,
+    manifest_path: str,
+    strip_format: bool,
+    write_source_default: bool,
+) -> None:
+    """Append a run entry to the coverage ledger.
+
+    Solves the "no central ledger" gap from prior batches. Each --apply run
+    appends a single entry; the ledger lives at ~/.vault-triage-runs/coverage-ledger.json
+    by default and is the single source of truth for what's been normalized.
+    """
+    entry = {
+        "run_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "batch": batch_name,
+        "subdir": subdir,
+        "applied": applied,
+        "skipped": skipped,
+        "manifest": manifest_path,
+        "strip_format": strip_format,
+        "write_source_default": write_source_default,
+    }
+
+    if ledger_path.exists():
+        try:
+            ledger = json.loads(ledger_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            ledger = {"runs": []}
+    else:
+        ledger = {"runs": []}
+
+    if not isinstance(ledger, dict) or "runs" not in ledger:
+        ledger = {"runs": []}
+
+    ledger["runs"].append(entry)
+    ledger_path.parent.mkdir(parents=True, exist_ok=True)
+    ledger_path.write_text(json.dumps(ledger, indent=2), encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=DEFAULT_VAULT)
     parser.add_argument("--subdir", default="", help="Path inside the vault to scan (required for --apply)")
     parser.add_argument("--limit", type=int, default=0)
-    parser.add_argument("--report", type=Path, default=Path("project-docs/vault-schema-v4-normalization-dry-run.md"))
-    parser.add_argument("--json", type=Path, default=Path("project-docs/vault-schema-v4-normalization-dry-run.json"))
+    parser.add_argument("--report", type=Path, default=VAULT_TRIAGE_DIR / "vault-schema-v4-normalization-dry-run.md")
+    parser.add_argument("--json", type=Path, default=VAULT_TRIAGE_DIR / "vault-schema-v4-normalization-dry-run.json")
     parser.add_argument("--apply", action="store_true", help="Write frontmatter changes to vault files")
     parser.add_argument("--confidence", choices=["high", "medium", "review"], default="high",
                         help="Minimum confidence level to apply (default: high)")
@@ -462,6 +563,14 @@ def main() -> int:
                         help="Directory for backups before edits (default: .bak alongside each file)")
     parser.add_argument("--manifest", type=Path, default=None,
                         help="Path for JSON change manifest (default: <report>.manifest.json)")
+    parser.add_argument("--strip-format", action=argparse.BooleanOptionalAction, default=True,
+                        help="Strip the deprecated `format:` field from frontmatter (V4 cleanup). Default: on.")
+    parser.add_argument("--write-source-default", action=argparse.BooleanOptionalAction, default=True,
+                        help="Backfill `source` (`original` for periodics, `imported` elsewhere) when missing. Default: on.")
+    parser.add_argument("--batch", default=None,
+                        help="Batch name for the coverage ledger entry (default: derived from --subdir).")
+    parser.add_argument("--ledger", type=Path, default=VAULT_TRIAGE_DIR / "coverage-ledger.json",
+                        help="Coverage ledger file path; appended on --apply.")
     args = parser.parse_args()
 
     if args.apply and not args.subdir:
@@ -505,7 +614,13 @@ def main() -> int:
     applied = skipped = errors = 0
 
     for suggestion in candidates:
-        record = apply_suggestion(suggestion, args.root, args.backup_dir)
+        record = apply_suggestion(
+            suggestion,
+            args.root,
+            args.backup_dir,
+            strip_format=args.strip_format,
+            write_source_default=args.write_source_default,
+        )
         if record is None:
             skipped += 1
         else:
@@ -518,6 +633,8 @@ def main() -> int:
             "run_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
             "subdir": args.subdir,
             "confidence": args.confidence,
+            "strip_format": args.strip_format,
+            "write_source_default": args.write_source_default,
             "applied": applied,
             "skipped": skipped,
             "changes": change_records,
@@ -526,6 +643,21 @@ def main() -> int:
     )
     print(f"\napplied={applied}  skipped={skipped}  errors={errors}")
     print(f"MANIFEST {manifest_path}")
+
+    # Append to the coverage ledger so we have a single source of truth
+    # for which batches have been normalized.
+    batch_name = args.batch or (args.subdir.replace("/", "-") if args.subdir else "all")
+    append_coverage_ledger(
+        args.ledger,
+        batch_name=batch_name,
+        subdir=args.subdir,
+        applied=applied,
+        skipped=skipped,
+        manifest_path=str(manifest_path),
+        strip_format=args.strip_format,
+        write_source_default=args.write_source_default,
+    )
+    print(f"LEDGER  {args.ledger}  (batch={batch_name})")
     return 0
 
 

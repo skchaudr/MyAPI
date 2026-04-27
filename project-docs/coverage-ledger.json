@@ -1,0 +1,154 @@
+{
+  "runs": [
+    {
+      "run_at": "2026-04-26T11:37:02.251603+00:00",
+      "batch": "v4-batch-01-archive",
+      "subdir": "05 Archive",
+      "applied": 22,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-01-archive-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:23.176879+00:00",
+      "batch": "v4-batch-02-inbox",
+      "subdir": "00 Inbox",
+      "applied": 29,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-02-inbox-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:34.403694+00:00",
+      "batch": "v4-batch-03-_tasks",
+      "subdir": "_tasks",
+      "applied": 20,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03-_tasks-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:34.453686+00:00",
+      "batch": "v4-batch-03-_routines",
+      "subdir": "_routines",
+      "applied": 2,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03-_routines-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:34.501565+00:00",
+      "batch": "v4-batch-03-_inbox",
+      "subdir": "_inbox",
+      "applied": 1,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03-_inbox-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:34.549610+00:00",
+      "batch": "v4-batch-03-Daily",
+      "subdir": "Daily",
+      "applied": 1,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03-Daily-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:34.596891+00:00",
+      "batch": "v4-batch-03-Flashcards",
+      "subdir": "Flashcards",
+      "applied": 1,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03-Flashcards-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:37:47.296002+00:00",
+      "batch": "v4-batch-04-utilities",
+      "subdir": "09 Utilities",
+      "applied": 100,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-04-utilities-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:38:22.749288+00:00",
+      "batch": "v4-batch-05-periodic",
+      "subdir": "04 Periodic",
+      "applied": 109,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-05-periodic-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:38:36.782588+00:00",
+      "batch": "v4-batch-06-projects",
+      "subdir": "01 Projects",
+      "applied": 174,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-06-projects-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:38:49.323212+00:00",
+      "batch": "v4-batch-03_Resources_Programming",
+      "subdir": "03 Resources/Programming",
+      "applied": 17,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03_Resources_Programming-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:38:49.665108+00:00",
+      "batch": "v4-batch-03_Resources_Workflows",
+      "subdir": "03 Resources/Workflows",
+      "applied": 168,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-03_Resources_Workflows-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:39:01.281580+00:00",
+      "batch": "v4-batch-09-areas",
+      "subdir": "02 Areas",
+      "applied": 782,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-09-areas-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:39:52.638915+00:00",
+      "batch": "v4-batch-10-resources-rest",
+      "subdir": "03 Resources",
+      "applied": 237,
+      "skipped": 185,
+      "manifest": "project-docs/v4-batch-10-resources-rest-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    },
+    {
+      "run_at": "2026-04-26T11:40:04.579611+00:00",
+      "batch": "v4-batch-11-templates",
+      "subdir": "Templates",
+      "applied": 32,
+      "skipped": 0,
+      "manifest": "project-docs/v4-batch-11-templates-manifest.json",
+      "strip_format": true,
+      "write_source_default": true
+    }
+  ]
+}

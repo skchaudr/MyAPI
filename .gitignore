@@ -33,3 +33,7 @@ project-docs/vault-schema-v4-normalization-*.md
 
 # Local screenshots
 /*.png
+
+# Sandbox/test outputs from normalize_vault_schema_v4.py
+tmp/
+*.bak
