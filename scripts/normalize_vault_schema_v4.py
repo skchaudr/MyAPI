@@ -61,11 +61,13 @@ PRIVATE_PATH_PARTS = {"Confidential", "_private", "Relationships", "SMW"}
 AREA_BY_PATH = {
     "Career": "Career",
     "Code Problem Solving": "Code Problem Solving",
-    "Confidential": "Private",
+    "Relationships": "Private",
+    "SMW": "Mens Work",
+    "Personal": "Personal Growth",
     "Finances": "Finances",
     "Health": "Health",
     "Learning": "Learning",
-    "My_DevInfra": "My_DevInfra",
+    "Developer Infrastructure": "Developer Infrastructure",
 }
 
 RESOURCE_TOPIC_TAGS = {
@@ -80,14 +82,14 @@ RESOURCE_TOPIC_TAGS = {
 }
 
 RESOURCE_AREA_MAP = {
-    "AI": "My_DevInfra",
-    "API Keys": "My_DevInfra",
-    "Google": "My_DevInfra",
-    "MacOS": "My_DevInfra",
+    "AI": "Developer Infrastructure",
+    "API Keys": "Developer Infrastructure",
+    "Google": "Developer Infrastructure",
+    "MacOS": "Developer Infrastructure",
     "Mindfulness": "Health",
-    "NeoVim": "My_DevInfra",
-    "Programming": "My_DevInfra",
-    "Workflows": "My_DevInfra",
+    "NeoVim": "Developer Infrastructure",
+    "Programming": "Developer Infrastructure",
+    "Workflows": "Developer Infrastructure",
 }
 
 PROJECT_NAME_ALIASES = {
