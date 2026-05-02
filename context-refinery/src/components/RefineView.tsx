@@ -8,7 +8,25 @@ import { Badge } from './ui/badge';
 import { Switch } from './ui/switch';
 import { ScrollArea } from './ui/scroll-area';
 import { distillContent } from '../services/apiService';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown, { Components } from 'react-markdown';
+
+
+const markdownComponents: Components = {
+  h3: ({node, ...props}) => <h3 className="text-xl font-bold text-on-surface mt-10 mb-4" {...props} />,
+  ul: ({node, ...props}) => <ul className="space-y-4 list-none pl-0" {...props} />,
+  li: ({node, ...props}) => (
+    <li className="flex gap-3">
+      <Circle className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
+      <span>{props.children}</span>
+    </li>
+  ),
+  blockquote: ({node, ...props}) => (
+    <div className="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary my-8 italic text-slate-600">
+      {props.children}
+    </div>
+  ),
+  strong: ({node, ...props}) => <strong className="font-bold text-on-surface" {...props} />,
+};
 
 export default function RefineView() {
   const [docs, setDocs] = useState<CanonicalDocument[]>([]);
@@ -168,22 +186,7 @@ export default function RefineView() {
             
             <div className="prose prose-slate max-w-none text-on-surface-variant leading-relaxed space-y-6">
               <ReactMarkdown
-                components={{
-                  h3: ({node, ...props}) => <h3 className="text-xl font-bold text-on-surface mt-10 mb-4" {...props} />,
-                  ul: ({node, ...props}) => <ul className="space-y-4 list-none pl-0" {...props} />,
-                  li: ({node, ...props}) => (
-                    <li className="flex gap-3">
-                      <Circle className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0" />
-                      <span>{props.children}</span>
-                    </li>
-                  ),
-                  blockquote: ({node, ...props}) => (
-                    <div className="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary my-8 italic text-slate-600">
-                      {props.children}
-                    </div>
-                  ),
-                  strong: ({node, ...props}) => <strong className="font-bold text-on-surface" {...props} />,
-                }}
+                components={markdownComponents}
               >
                 {selectedDoc.content.cleaned_markdown || selectedDoc.content.raw_text}
               </ReactMarkdown>
