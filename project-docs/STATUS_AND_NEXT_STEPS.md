@@ -1,252 +1,69 @@
-# Status And Next Steps
+# Status & Next Steps
 
-## Current Situation
+**Last updated:** 2026-05-02
 
-This repo contains two relevant tracks:
+## TL;DR
 
-- `context-refinery`, a prototype web UI intended to prepare data for Khoj
-- a live Khoj instance on the GCP VM `khoj-headless-engine`
+MyAPI's pipeline is live and serving queries. Phase 1 (build the pipe) is closed; Phase 2 (trust calibration via a categorized query bank) is the current work. As of 2026-04-25, the trust-bank blocker set passes (F5/H4/A1/A2/A3/A7). Next session picks up the deferred queue.
 
-As of April 9, 2026, the Khoj VM is healthy again. The service had been failing due to an inconsistent Python package install inside the virtualenv. The installed `khoj==1.42.10` runtime code and shipped migrations did not match, which caused runtime queries against a missing `database_chatmodeloptions` table. I connected to the VM, verified the DB/service config, force-reinstalled `khoj==1.42.10` in the existing venv, restarted the service, and confirmed the health endpoint returns `200 OK`.
+## Strategic frame
 
-The remaining warnings on the VM are about optional authentication/email configuration, not service availability.
+MyAPI is a context retrieval layer over Saboor's personal corpus (Obsidian notes, exported LLM conversations, CLI agent session logs). It serves two audiences from the same substrate:
 
-## VM Environment
+- **Human retrieval (Saboor):** "find me that thread," "what did I decide about X," "when was I last working on Y." Personal episodic memory — wants source links and narrative.
+- **Agent retrieval (Claude Code, Codex, etc.):** structured context at the start of a session so agents stop grep'ing around to figure out what's going on. Wants assertions and shape.
 
-- VM: `khoj-headless-engine`
-- Zone: `us-central1-a`
-- OS: Ubuntu 22.04
-- Khoj service: `khoj.service`
-- Khoj working directory: `/home/sbkchaudry_gmail_com/khoj-engine`
-- Virtualenv: `/home/sbkchaudry_gmail_com/khoj-engine/venv`
-- Health endpoint: `http://localhost:42110/api/health`
-- PostgreSQL host: `localhost`
-- PostgreSQL port: `5432`
-- PostgreSQL DB: `khoj`
-- PostgreSQL user: `khoj`
+Same corpus, same Khoj + Context Refinery pipeline, different response shapes. The trust-threshold plan (`My-API-Trust-Threshold-Plan.md`) frames the agent angle as the sharper positioning story for an outside audience, but both audiences are first-class — the query bank's H and A categories prove it.
 
-Service status verified on April 9, 2026:
+Trust is built per query class via a benchmarked query bank (`retrieval-benchmark-v0/Query/query-bank-trust-categorized-v1.md`). Each query is diagnosed with one of seven buckets — `win`, `weak win`, `corpus gap`, `retrieval gap`, `metadata gap`, `intent gap`, `answer-shape gap` — and fixes target the lowest-leverage layer first.
 
-- `systemctl status khoj` showed `active (running)`
-- `curl http://localhost:42110/api/health` returned `200 OK`
+## Current deployment
 
-## What Context Refinery Is Right Now
+- **VM:** `instance-20260418-024637`, zone `us-central1-a`, project `project-ab32182e-5782-4a9c-939`
+- **Auto-shutdown:** 3 hours. The VM is typically off between sessions — start it before any retrieval test.
+- **SSH (gcloud IAP):** `gcloud compute ssh --zone us-central1-a --project project-ab32182e-5782-4a9c-939 instance-20260418-024637`
+- **Tailscale IP:** `100.85.100.52` (alias `khoj-vm-new`)
+- **Khoj:** port `42110`, systemd `khoj.service`
+- **Context Refinery (MyAPI):** port `8000`, systemd `context-refinery.service`
+- **Corpus:** `~/khoj-data/notes/`, ~3,201 non-empty `.md` files
 
-The `context-refinery` app is a UI foundation, not yet a complete ingestion and normalization system.
+## Phase 2 — what's closed (2026-04-25)
 
-What is real:
+The trust-bank "blocking-tonight" set passes. Three retrieval.py patches deployed and committed (`5d713ab`):
 
-- React/Vite frontend scaffold
-- review-oriented UI for import, refine, and export flows
-- Gemini summarization hook in `src/services/geminiService.ts`
+1. **Exact-phrase boost** with hyphen/space/no-space normalization — closes the F5/H4 exact-term regression sentinel pair.
+2. **Classifier + alias patch** — MyAPI is now a first-class project name (added to `_PROJECT` regex, specialized anchor bonus, anchor-terms expansion, query expansion); operational verbs (`broken|blocked|failing|...`) added; classifier reordered so OPERATIONAL fires before PROJECT.
+3. **Synthesized_note guard** — chat-dump sources (chatgpt/claude/claude-code/codex) excluded from the loose `\b(anchor|summary|overview|...)\b` regex that grants the +0.14 synthesized_note prior.
 
-What is still mostly conceptual or mocked:
+Result detail and margins in `retrieval-benchmark-v0/Harness evaluation/run-2026-04-25-blocker-pass.md`.
 
-- actual file/folder ingestion
-- source-specific parsing
-- canonical schema generation
-- sanitization and normalization pipeline
-- deduplication
-- structured validation
-- actual Khoj-ready export logic
+## Pending queue
 
-Important current files:
+Ordered by leverage — small + high-info first:
 
-- `context-refinery/src/components/ImportView.tsx`
-- `context-refinery/src/components/RefineView.tsx`
-- `context-refinery/src/components/ExportView.tsx`
-- `context-refinery/src/services/geminiService.ts`
-- `context-refinery/src/mockData.ts`
-- `context-refinery-foundation.md`
+1. **A4** — corpus-vs-metadata gap test on `CLAUDE.md`. ~10 min. If retrieval finds it but mislabels → metadata gap; if it can't find it → corpus gap.
+2. **A7 terminology bridge** — query expansion: `broken|blocked → known issues|fail|gap|weak`. Closes the partial result on A7.
+3. **H1–H3, H5** — human-lane regression check after the classifier patches.
+4. **A5, A6** — meta-corpus + collaborator topology. Likely answer-shape gaps; produces build tasks, not fixes.
+5. **F1–F4** — failure probes (time-scoped, negation, cross-entity, decision-recovery). Maps trust boundary; expect failures.
+6. **Q18 dedicated end-to-end anchor** — `current-system-end-to-end-anchor.md`. A2 wins now via the my-devinfra anchor, but a dedicated one is cleaner.
+7. **~27 obsidian files still missing from index** — per delta-patch report.
+8. **`source: "unknown"` on anchors** — filenames lack the `obsidian-` prefix that `MetadataParser` uses for source inference. Anchors win without source/title boosts; fixing the prefix or parser would widen margins.
+9. **F5 thin-margin (0.006) hardening** — paypal-recruiter note got an incidental "gold mine" token match. Not blocking, but flag if it inverts on future index churn.
 
-## Architectural Reality
+## Live source documents
 
-Khoj should not be expected to do the bulk of upstream data cleanup.
+| File | What it has |
+|---|---|
+| `project-docs/My-API-Trust-Threshold-Plan.md` | Strategic frame: agent-cold-start product, three-category test |
+| `project-docs/retrieval-benchmark-v0/Query/query-bank-trust-categorized-v1.md` | 17-query bank, diagnosis rubric, run protocol |
+| `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-04-25-blocker-pass.md` | Latest run results, what landed, open items |
+| `project-docs/source-of-truth-anchors/` | Anchor docs the bank queries are tuned against |
 
-Khoj is good at:
+## Where to start next session
 
-- indexing
-- embeddings
-- chunking/retrieval
-- using metadata when metadata exists
-- serving search/chat over prepared content
+Recommended scope: **A4 + A7 bridge + H1–H3** (~1 hour, regression check on classifier patches). After completion, update this file's "Pending queue" and add a new dated run note.
 
-Khoj is not the right place to rely on for:
+## A note on stale docs
 
-- source normalization
-- heavy sanitization
-- deduplication
-- metadata repair
-- provenance reconstruction
-- canonical content modeling
-
-The highest-value move is to make Context Refinery produce a canonical intermediate format before handing documents to Khoj.
-
-## Recommended Canonical Model
-
-Statuses already under discussion should become first-class schema fields:
-
-- `mature`
-- `scratchpad`
-- `deprecated`
-- `reference`
-
-Suggested canonical document shape:
-
-```ts
-type CanonicalDocument = {
-  id: string
-  title: string
-  source: {
-    system: string
-    type: string
-    path?: string
-    url?: string
-    conversation_id?: string
-    external_id?: string
-  }
-  timestamps: {
-    created_at?: string
-    updated_at?: string
-    ingested_at: string
-  }
-  author?: string
-  status: "mature" | "scratchpad" | "deprecated" | "reference"
-  doc_type: "note" | "conversation" | "spec" | "article" | "dataset" | "log" | "other"
-  tags: string[]
-  summary?: string
-  relationships: Array<{
-    type: string
-    target_id: string
-    label?: string
-  }>
-  content: {
-    raw_text?: string
-    cleaned_markdown: string
-  }
-  quality: {
-    noisy: boolean
-    duplicate_of?: string
-    warnings: string[]
-  }
-}
-```
-
-Recommended primary export format for Khoj:
-
-- one Markdown file per canonical document
-- YAML frontmatter containing metadata
-- cleaned body content below the frontmatter
-- export manifest summarizing counts, warnings, failures, and source lineage
-
-## Why This Matters
-
-The better the upstream structure, the more useful Khoj becomes.
-
-Better input should mean:
-
-- better retrieval precision
-- less token waste from boilerplate/noise
-- stronger provenance and trust
-- clearer filtering by status/type/tag
-- easier dedupe and lifecycle management
-- cleaner future automation
-
-If the refinery outputs raw or weakly structured exports, Khoj can still index them, but the quality ceiling will be lower.
-
-## Recommended Pipeline To Build
-
-Build the system in these stages:
-
-1. Ingest
-   - file/folder upload
-   - ZIP extraction
-   - manifest generation
-
-2. Detect
-   - identify source type
-   - route to the correct parser
-
-3. Parse
-   - source adapters for Obsidian, ChatGPT, Claude, Markdown/text, CSV
-
-4. Sanitize
-   - strip wrappers, nav junk, legal/footer noise, duplicated boilerplate
-   - normalize markdown/text
-
-5. Canonicalize
-   - convert every parsed item into the canonical document schema
-
-6. Enrich
-   - summaries
-   - tag suggestions
-   - doc type classification
-   - relationship extraction
-   - maturity/status assignment where appropriate
-
-7. Validate
-   - schema validation
-   - missing metadata checks
-   - duplicate detection
-   - quality warnings
-
-8. Export
-   - Markdown + YAML frontmatter
-   - JSONL if useful for downstream tooling
-   - ZIP package or directory layout for Khoj ingestion
-   - output manifest
-
-## What Can Be Parallelized
-
-Once the canonical schema and normalization rules are defined, much of the implementation can be delegated to an async agent.
-
-Good parallel work streams:
-
-- schema/types/validation
-- source adapters
-- sanitizers
-- enrichment modules
-- export packager
-- UI wiring for review/edit/approve/export
-- fixture generation and tests
-
-What should stay human-directed first:
-
-- canonical schema design
-- required vs optional metadata fields
-- exact meaning of statuses
-- chunking policy
-- sanitization and dropping rules
-- acceptance criteria for output quality
-
-## Immediate Next Steps
-
-Recommended order of operations:
-
-1. Write a formal schema spec for canonical documents and manifests.
-2. Define lifecycle/status semantics for `mature`, `scratchpad`, `deprecated`, and `reference`.
-3. Choose the first source adapters to support.
-4. Implement canonicalization and validation before expanding the UI.
-5. Add real export logic for Khoj-ready Markdown with YAML frontmatter.
-6. Only then wire the current UI prototype to live processing jobs.
-
-## Handoff Prompt For The Next VM Session
-
-Use the following prompt with the next Codex instance on the VM:
-
-```text
-Context:
-- Khoj on this VM is healthy. `khoj.service` is running and `/api/health` returns 200.
-- The local project includes a `context-refinery` prototype UI, but it is still mostly mock-driven and does not yet implement the real ingestion/normalization/export pipeline.
-- The architectural priority is to build a canonical intermediate format for knowledge documents before expanding UI behavior.
-- Status fields like `mature`, `scratchpad`, `deprecated`, and `reference` should be first-class schema fields.
-- The goal is for Context Refinery to output Khoj-ready normalized documents, not raw source exports.
-
-Task:
-1. Inspect the current `context-refinery` codebase in this workspace.
-2. Draft and implement a canonical document schema and validation layer.
-3. Build the first pass of the ingestion pipeline to normalize source inputs into that schema.
-4. Prefer Markdown + YAML frontmatter as the primary Khoj export format.
-5. Keep provenance, tags, relationships, timestamps, and status fields explicit.
-6. Verify what is mock-only in the existing UI and wire live processing incrementally.
-```
+Older `HANDOFF-*.md`, `VM-MIGRATION-*.md`, and `4.18.26.daily.project.md` files reflect Phase 1 (April 9–19) — VM migration, hybrid search, modular triage. Keep them for history; do not read them as current state.
