@@ -34,7 +34,7 @@ VAULT_TRIAGE_DIR = Path.home() / ".vault-triage-runs"
 
 # Fields the script is allowed to write automatically.
 # Meaning-heavy fields (concepts, related, summary) are left for the owner pass.
-APPLY_FIELDS = {"type", "status", "area", "project", "tags", "source", "folder_origin", "migration_status"}
+APPLY_FIELDS = {"type", "status", "area", "project", "tags", "source"}
 
 
 VALID_TYPES = {"project", "area", "resource", "concept", "event", "periodic", "log", "utility"}
@@ -305,9 +305,6 @@ def suggest_for_file(path: Path, vault_root: Path) -> Suggestion:
         rel_top = path.relative_to(vault_root).parts[:1]
         suggested["source"] = "original" if rel_top == ("04 Periodic",) else "imported"
 
-    suggested["folder_origin"] = str(path.relative_to(vault_root).parent)
-    suggested["migration_status"] = "v4-dry-run"
-
     confidence = "high"
     if not review_needed or review_needed == ["concepts need owner assignment"]:
         confidence = "high"
@@ -398,7 +395,6 @@ def render_markdown(suggestions: list[Suggestion], vault_root: Path) -> str:
 FIELD_ORDER = [
     "type", "status", "area", "project",
     "concepts", "tags", "source",
-    "folder_origin", "migration_status",
 ]
 
 
@@ -428,8 +424,9 @@ def apply_suggestion(
     Writes a .bak file (or backup_dir copy) before touching the original.
 
     V4 enforcement applied during the apply phase (not just suggested):
-      - migration_status flips from `v4-dry-run` to `v4-applied`.
       - `format:` is stripped if strip_format is True.
+      - `folder_origin:` and `migration_status:` are stripped (legacy migration audit fields,
+        no longer part of the V4 schema; tracking lives in the external coverage ledger).
       - `status:` is removed from non-project/event types (unconditional V4 rule).
       - `source:` default is gated by write_source_default unless file already has source.
     """
@@ -448,9 +445,6 @@ def apply_suggestion(
     # Source default is gated by --write-source-default unless file already has source
     if "source" in effective and "source" not in fm and not write_source_default:
         effective.pop("source")
-
-    # In apply mode, migration_status flips to v4-applied
-    effective["migration_status"] = "v4-applied"
 
     # Compute what will actually change from APPLY_FIELDS writes
     changes: dict[str, Any] = {}
@@ -473,6 +467,11 @@ def apply_suggestion(
     if will_strip_status:
         changes["status"] = {"before": fm["status"], "after": None}
 
+    # Legacy migration audit fields — no longer in V4 schema. Strip on contact.
+    legacy_strip_keys = [k for k in ("folder_origin", "migration_status") if k in fm]
+    for k in legacy_strip_keys:
+        changes[k] = {"before": fm[k], "after": None}
+
     if not changes:
         return None
 
@@ -494,6 +493,8 @@ def apply_suggestion(
         updated_fm.pop("format", None)
     if will_strip_status:
         updated_fm.pop("status", None)
+    for k in legacy_strip_keys:
+        updated_fm.pop(k, None)
 
     new_text = f"---\n{build_frontmatter(updated_fm)}---\n\n{body}"
     path.write_text(new_text, encoding="utf-8")
