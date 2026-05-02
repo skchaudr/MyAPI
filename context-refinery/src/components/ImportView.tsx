@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Upload, Book, MessageSquare, Bot, Briefcase, Folder, FileText, Database, History, Filter, Search, Loader2 } from 'lucide-react';
-import { MOCK_SOURCES, MOCK_DOCUMENTS } from '../mockData';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
@@ -84,7 +83,40 @@ export default function ImportView() {
     handleFileUpload(e.dataTransfer.files);
   };
 
+
   const displayDocs = importedDocs;
+
+  // Compute dynamic sources based on importedDocs
+  const dynamicSources = React.useMemo(() => {
+    const sourcesMap = new Map<string, { id: string; name: string; count: number; icon: string; system: string }>();
+    displayDocs.forEach((doc) => {
+      const system = doc.source?.system || 'unknown';
+      if (!sourcesMap.has(system)) {
+        let icon = 'book';
+        let name = system;
+        if (system === 'obsidian') {
+          icon = 'book';
+          name = 'Obsidian Vault';
+        } else if (system === 'chatgpt') {
+          icon = 'chat';
+          name = 'ChatGPT History';
+        } else if (system === 'claude') {
+          icon = 'smart_toy';
+          name = 'Claude Conversations';
+        } else if (system === 'linkedin') {
+          icon = 'work';
+          name = 'LinkedIn Data';
+        } else {
+          icon = 'file';
+          name = system.charAt(0).toUpperCase() + system.slice(1) + ' Data';
+        }
+        sourcesMap.set(system, { id: system, name, count: 0, icon, system });
+      }
+      sourcesMap.get(system)!.count += 1;
+    });
+    return Array.from(sourcesMap.values());
+  }, [displayDocs]);
+
 
   return (
     <div className="px-8 py-12">
@@ -149,7 +181,9 @@ export default function ImportView() {
               <Badge className="bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-md border-none">AUTO-SCAN ON</Badge>
             </div>
             <div className="flex flex-col gap-3">
-              {MOCK_SOURCES.map((source) => (
+              {dynamicSources.length === 0 ? (
+                <div className="text-sm text-slate-400 text-center py-4 italic">No sources detected yet.</div>
+              ) : dynamicSources.map((source) => (
                 <div key={source.id} className="bg-white p-4 rounded-2xl flex items-center justify-between shadow-sm border border-outline-variant/10">
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center text-slate-600">
@@ -157,14 +191,12 @@ export default function ImportView() {
                       {source.icon === 'chat' && <MessageSquare className="w-5 h-5" />}
                       {source.icon === 'smart_toy' && <Bot className="w-5 h-5" />}
                       {source.icon === 'work' && <Briefcase className="w-5 h-5" />}
+                      {source.icon === 'file' && <FileText className="w-5 h-5" />}
                     </div>
                     <div>
                       <div className="text-sm font-bold">{source.name}</div>
-                      <div className={cn(
-                        "text-[10px] font-bold uppercase tracking-wider",
-                        source.confidence === 'high' ? "text-secondary" : "text-amber-600"
-                      )}>
-                        {source.confidence} Confidence
+                      <div className="text-[10px] font-bold uppercase tracking-wider text-secondary">
+                        {source.count} Document{source.count !== 1 ? 's' : ''}
                       </div>
                     </div>
                   </div>
@@ -225,10 +257,10 @@ export default function ImportView() {
           <Table>
             <TableHeader className="bg-surface-container-low/50">
               <TableRow>
-                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Source Name</TableHead>
-                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Type</TableHead>
-                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Size</TableHead>
-                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Date</TableHead>
+                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Title</TableHead>
+                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Source</TableHead>
+                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Status</TableHead>
+                <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest">Imported Date</TableHead>
                 <TableHead className="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-widest text-right">Action</TableHead>
               </TableRow>
             </TableHeader>
@@ -240,22 +272,39 @@ export default function ImportView() {
                   </TableCell>
                 </TableRow>
               ) : displayDocs.map((doc: any, index: number) => {
-                const name = doc.title;
-                const type = doc.source?.system;
-                const size = (doc.content?.cleaned_markdown?.length ?? 0) + " chars";
-                const date = doc.timestamps?.ingested_at || "just now";
+                const name = doc.title || "Untitled";
+                const source = doc.source?.system || "unknown";
+                const status = doc.status || "imported";
+
+                let dateStr = "just now";
+                if (doc.timestamps?.ingested_at) {
+                  try {
+                    dateStr = new Date(doc.timestamps.ingested_at).toLocaleString();
+                  } catch (e) {
+                    dateStr = doc.timestamps.ingested_at;
+                  }
+                }
 
                 return (
-                  <TableRow key={doc.id + index} className="hover:bg-surface-container-low/20 transition-colors group">
+                  <TableRow key={doc.id || index} className="hover:bg-surface-container-low/20 transition-colors group">
                     <TableCell className="px-6 py-5">
                       <div className="flex items-center gap-3">
-                        {String(type).toLowerCase().includes('obsidian') ? <Folder className="w-5 h-5 text-primary" /> : <FileText className="w-5 h-5 text-secondary" />}
-                        <span className="font-semibold text-on-surface">{name}</span>
+                        {String(source).toLowerCase().includes('obsidian') ? <Folder className="w-5 h-5 text-primary" /> : <FileText className="w-5 h-5 text-secondary" />}
+                        <span className="font-semibold text-on-surface truncate max-w-[200px]" title={name}>{name}</span>
                       </div>
                     </TableCell>
-                    <TableCell className="px-6 py-5 text-sm text-slate-600">{type}</TableCell>
-                    <TableCell className="px-6 py-5 text-sm text-slate-600">{size}</TableCell>
-                    <TableCell className="px-6 py-5 text-sm text-slate-600">{date}</TableCell>
+                    <TableCell className="px-6 py-5 text-sm text-slate-600 capitalize">{source}</TableCell>
+                    <TableCell className="px-6 py-5">
+                      <Badge variant="outline" className={cn(
+                        "capitalize text-xs font-bold border",
+                        status === 'mature' ? "bg-secondary/10 text-secondary border-secondary/20" :
+                        status === 'error' ? "bg-red-50 text-red-600 border-red-200" :
+                        "bg-slate-100 text-slate-600 border-slate-200"
+                      )}>
+                        {status}
+                      </Badge>
+                    </TableCell>
+                    <TableCell className="px-6 py-5 text-sm text-slate-600 whitespace-nowrap">{dateStr}</TableCell>
                     <TableCell className="px-6 py-5 text-right">
                       <Button variant="link" className="text-primary font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity p-0 h-auto">
                         View Details
