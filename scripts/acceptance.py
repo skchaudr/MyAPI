@@ -80,8 +80,9 @@ QUERIES = [
         "id": "A7",
         "query": "What's broken or blocked in MyAPI right now?",
         "criterion": {
-            "kind": "skip",
-            "reason": "myapi-status-anchor.md not built yet — A7 fails by design",
+            "kind": "file_in_top_k",
+            "files": ["myapi-status-anchor.md"],
+            "k": 1,
         },
     },
 ]
