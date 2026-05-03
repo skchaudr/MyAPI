@@ -263,7 +263,10 @@ class KeywordSearcher:
                     continue
 
                 body = entry.lower()
-                if phrases and any(phrase not in body for phrase in phrases):
+                if phrases and not all(
+                    any(v in body for v in self._phrase_variants(phrase))
+                    for phrase in phrases
+                ):
                     continue
 
                 if not phrases and terms and not all(
@@ -274,7 +277,10 @@ class KeywordSearcher:
                 metadata, parsed_body, snippet = self.parser.parse(entry, filename=name)
                 haystack = f"{metadata.get('title', '')} {parsed_body}".lower()
                 match_hits = sum(haystack.count(term) for term in terms)
-                phrase_hits = sum(haystack.count(phrase) for phrase in phrases)
+                phrase_hits = sum(
+                    sum(haystack.count(v) for v in self._phrase_variants(phrase))
+                    for phrase in phrases
+                )
                 total_words = max(len(haystack.split()), 1)
                 density = (match_hits + (2 * phrase_hits)) / total_words
 
@@ -305,6 +311,28 @@ class KeywordSearcher:
         terms = [t.lower() for t in re.findall(r"[A-Za-z0-9][A-Za-z0-9_-]*", stripped)]
         phrases = [p.lower().strip() for p in phrases if p.strip()]
         return phrases, terms
+
+    @staticmethod
+    def _phrase_variants(phrase):
+        """Hyphen/space/joined variants of a phrase — always includes original.
+
+        Mirrors ResultReranker._phrase_variants but never returns empty so that
+        eligibility checks against short phrases still match.
+        """
+        if not phrase:
+            return set()
+        p = phrase.strip().lower()
+        if not p:
+            return set()
+        if len(p) < 4:
+            return {p}
+        return {
+            p,
+            p.replace(" ", "-"),
+            p.replace(" ", ""),
+            p.replace("-", " "),
+            p.replace("-", ""),
+        }
 
 
 # ── Query Classifier ─────────────────────────────────────────────────────────
