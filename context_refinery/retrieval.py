@@ -1293,6 +1293,25 @@ class RetrievalPipeline:
                 "api",
                 "health",
             ])
+            # Bridge "broken|blocked|stuck|..." query verbs to the terminology
+            # the corpus actually uses for known gaps (eval notes, refinement
+            # queue notes). Only fires when the query includes a problem verb,
+            # so neutral status queries don't get pulled toward problem notes.
+            if re.search(
+                r"\b(broken|blocked|blocker|stuck|failing|fail|issue|issues|problem|gap|gaps)\b",
+                lower,
+            ):
+                extras.extend([
+                    "known issues",
+                    "issues",
+                    "fragile",
+                    "thin",
+                    "gap",
+                    "weak",
+                    "unimproved",
+                    "queue",
+                    "refinement queue",
+                ])
 
         deduped = []
         seen = set()
