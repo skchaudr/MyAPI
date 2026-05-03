@@ -266,7 +266,7 @@ class KeywordSearcher:
                 if phrases and any(phrase not in body for phrase in phrases):
                     continue
 
-                if terms and not all(
+                if not phrases and terms and not all(
                     re.search(rf"\b{re.escape(term)}\b", body) for term in terms
                 ):
                     continue
