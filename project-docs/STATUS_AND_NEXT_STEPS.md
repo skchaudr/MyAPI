@@ -1,10 +1,10 @@
 # Status & Next Steps
 
-**Last updated:** 2026-05-02
+**Last updated:** 2026-05-02 (post tighten-pass)
 
 ## TL;DR
 
-MyAPI's pipeline is live and serving queries. Phase 1 (build the pipe) is closed; Phase 2 (trust calibration via a categorized query bank) is the current work. As of 2026-04-25, the trust-bank blocker set passes (F5/H4/A1/A2/A3/A7). Next session picks up the deferred queue.
+MyAPI's pipeline is live and serving queries. Phase 1 (build the pipe) is closed; Phase 2 (trust calibration via a categorized query bank) is the current work. The 2026-05-02 tighten pass surfaced two real findings: A7 is a **subject-scope gap** (not a terminology gap, as initially thought), and F5 **regressed at the candidate-set layer**. H4 sentinel held with a wider margin; H-lane regression check completed without new code-layer issues.
 
 ## Strategic frame
 
@@ -37,19 +37,29 @@ The trust-bank "blocking-tonight" set passes. Three retrieval.py patches deploye
 
 Result detail and margins in `retrieval-benchmark-v0/Harness evaluation/run-2026-04-25-blocker-pass.md`.
 
+## Tighten pass (2026-05-02)
+
+H-lane regression check + A7 re-diagnosis. Full results in `retrieval-benchmark-v0/Harness evaluation/run-2026-05-02-tighten-pass.md`.
+
+- **H4 sentinel held**, margin widened (fs=0.838, +0.371 over #2 — much wider than 04-25's +0.068).
+- **A7 vocab-bridge patch deployed but no-op** — eval notes are subject-scoped to "retrieval benchmark," not "MyAPI"; vocab expansion can't pull them into the candidate set when the query subject is MyAPI. Patch kept deployed (small surface, no negative effect on H4).
+- **F5 regressed**: Trust-Threshold plan absent from top 20 for the full-sentence query; bare `"gold mine"` still surfaces it at #1 (ks=0.87). Candidate-set/Khoj-layer issue, not reranker.
+- **H1/H2/H3 failures are pre-existing** and acceptable severity per the bank — no new code-layer regressions from the 04-25 classifier patches.
+
 ## Pending queue
 
 Ordered by leverage — small + high-info first:
 
-1. **A4** — corpus-vs-metadata gap test on `CLAUDE.md`. ~10 min. If retrieval finds it but mislabels → metadata gap; if it can't find it → corpus gap.
-2. **A7 terminology bridge** — query expansion: `broken|blocked → known issues|fail|gap|weak`. Closes the partial result on A7.
-3. **H1–H3, H5** — human-lane regression check after the classifier patches.
-4. **A5, A6** — meta-corpus + collaborator topology. Likely answer-shape gaps; produces build tasks, not fixes.
-5. **F1–F4** — failure probes (time-scoped, negation, cross-entity, decision-recovery). Maps trust boundary; expect failures.
-6. **Q18 dedicated end-to-end anchor** — `current-system-end-to-end-anchor.md`. A2 wins now via the my-devinfra anchor, but a dedicated one is cleaner.
-7. **~27 obsidian files still missing from index** — per delta-patch report.
-8. **`source: "unknown"` on anchors** — filenames lack the `obsidian-` prefix that `MetadataParser` uses for source inference. Anchors win without source/title boosts; fixing the prefix or parser would widen margins.
-9. **F5 thin-margin (0.006) hardening** — paypal-recruiter note got an incidental "gold mine" token match. Not blocking, but flag if it inverts on future index churn.
+1. **A7 real fix — `myapi-status-anchor.md`** — build a status anchor enumerating current open items. Closes A7 via subject-scope alignment (the path the no-op vocab patch couldn't take). Aligns with agent-cold-start framing.
+2. **F5 candidate-set fix** — Khoj-layer regression. Either expand retrieval `n` before reranking, or add a phrase-aware retrieval lane that bypasses semantic similarity for exact-phrase matches. Bigger lift than vocab.
+3. **A4** — corpus-vs-metadata gap test on `CLAUDE.md`. ~10 min. If retrieval finds it but mislabels → metadata gap; if it can't find it → corpus gap.
+4. **H1 intent re-routing** — bank says human-find-thread should route to lookup, not operational. Currently OPERATIONAL fires first and grabs queries like "find the thread where I set up the Khoj VM migration." Small classifier tweak.
+5. **H2 corpus check** — does a `source-aware-priors` design note exist? If yes → retrieval gap; if no → corpus gap. Decides next move.
+6. **A5, A6** — meta-corpus + collaborator topology. Likely answer-shape gaps; produces build tasks, not fixes.
+7. **F1–F4** — failure probes (time-scoped, negation, cross-entity, decision-recovery). Maps trust boundary; expect failures.
+8. **Q18 dedicated end-to-end anchor** — `current-system-end-to-end-anchor.md`. A2 wins now via the my-devinfra anchor, but a dedicated one is cleaner.
+9. **~27 obsidian files still missing from index** — per delta-patch report.
+10. **`source: "unknown"` on anchors** — filenames lack the `obsidian-` prefix that `MetadataParser` uses for source inference. Anchors win without source/title boosts; fixing the prefix or parser would widen margins.
 
 ## Live source documents
 
@@ -57,12 +67,13 @@ Ordered by leverage — small + high-info first:
 |---|---|
 | `project-docs/My-API-Trust-Threshold-Plan.md` | Strategic frame: agent-cold-start product, three-category test |
 | `project-docs/retrieval-benchmark-v0/Query/query-bank-trust-categorized-v1.md` | 17-query bank, diagnosis rubric, run protocol |
-| `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-04-25-blocker-pass.md` | Latest run results, what landed, open items |
+| `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-05-02-tighten-pass.md` | Latest run — H-lane + A7 re-diagnosis + F5 regression |
+| `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-04-25-blocker-pass.md` | Previous run — blocker set close + 3 retrieval.py patches |
 | `project-docs/source-of-truth-anchors/` | Anchor docs the bank queries are tuned against |
 
 ## Where to start next session
 
-Recommended scope: **A4 + A7 bridge + H1–H3** (~1 hour, regression check on classifier patches). After completion, update this file's "Pending queue" and add a new dated run note.
+Recommended scope: **build `myapi-status-anchor.md` + re-run A7** to verify subject-scope fix, then take one of (F5 candidate-set fix, H1 intent re-route, A4 corpus test) as a second task. After completion, update this file's "Pending queue" and add a new dated run note.
 
 ## A note on stale docs
 
