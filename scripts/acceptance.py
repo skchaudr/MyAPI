@@ -24,6 +24,9 @@ TIMEOUT = 30
 #       → pass if any result in results[:k] has `source` in the list
 #   {"kind": "skip", "reason": "..."}
 #       → not asserted; prints top result for human review, doesn't count toward score
+#
+# Optional per-entry "request_filters" dict is merged into the POST body, so an
+# entry can exercise the API's filter contract (e.g. {"sources": ["claude-code"]}).
 QUERIES = [
     {
         "id": "A1",
@@ -85,11 +88,24 @@ QUERIES = [
             "k": 1,
         },
     },
+    {
+        "id": "S1",
+        "query": "claude code session",
+        "request_filters": {"sources": ["claude-code"]},
+        "criterion": {
+            "kind": "source_in_top_k",
+            "sources": ["claude-code"],
+            "k": 10,
+        },
+    },
 ]
 
 
-def post_query(query: str, n: int = 10) -> dict:
-    body = json.dumps({"q": query, "n": n}).encode("utf-8")
+def post_query(query: str, n: int = 10, filters: dict | None = None) -> dict:
+    body_dict: dict = {"q": query, "n": n}
+    if filters:
+        body_dict.update(filters)
+    body = json.dumps(body_dict).encode("utf-8")
     req = urllib.request.Request(
         f"{BASE_URL}/query",
         data=body,
@@ -154,7 +170,7 @@ def main() -> int:
 
     for q in QUERIES:
         try:
-            response = post_query(q["query"], n=10)
+            response = post_query(q["query"], n=10, filters=q.get("request_filters"))
         except urllib.error.URLError as e:
             print(f"{q['id']}: ERROR  ({type(e).__name__}: {e})")
             failed += 1
