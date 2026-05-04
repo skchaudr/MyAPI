@@ -63,7 +63,7 @@ QUERIES = [
         "query": 'Find the note where I used the term "gold mine"',
         "criterion": {
             "kind": "file_in_top_k",
-            "files": ["My-API-Trust-Threshold-Plan.md"],
+            "files": ["claude-web-converting-opclaw-to-final-system-repo.md"],
             "k": 5,
         },
     },
