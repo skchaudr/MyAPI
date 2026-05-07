@@ -17,9 +17,11 @@ coverage/
 khoj-ready-bundle/
 khoj-ready-bundle.*/
 *.zip
-AGENTS.md
 jules-vault-triage-dispatch.md
-khoj.dump
+*.dump
+
+# Local archive — out-of-repo holding pen for legacy/scratch
+_archive/
 
 # Generated V4 vault-normalization artifacts
 project-docs/backups/
