@@ -318,6 +318,10 @@ MIT — see LICENSE file.
 
 ## Author
 
-Built by Saboor Chaudry (recent CS graduate, working at the technical frontier of multi-agent orchestration, auditable agent dispatch, and context retrieval systems). This project demonstrates benchmark-driven refinement, heterogeneous corpus normalization, and trust calibration as a first-class engineering concern.
+Built by Saboor Chaudry.
+
+This project began with a simple realization: years of notes in Obsidian, exported conversations from ChatGPT, Anthropic's Claude, and Google's Gemini already contained the context needed for long-term memory, agent handoffs, and personal retrieval — but there was no reliable system for taking it from raw corpus to actionable, structured, and trusted recall.
+
+MyAPI is my response to that problem. It reflects an ongoing push toward the technical frontier of multi-agent orchestration, auditable agent dispatch, and context retrieval systems. The scope and growing relevance of this problem demanded that benchmark-driven refinement, heterogeneous corpus normalization, and trust calibration be treated as first-class engineering concerns.
 
 For questions, reach out via GitHub or sbkchaudry@gmail.com.
