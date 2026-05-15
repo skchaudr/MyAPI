@@ -1,43 +1,46 @@
 import re
 import string
 
+# ⚡ Bolt: Pre-compile regexes for significant performance boost during batch operations
+_BOILERPLATE_RE = re.compile(
+    r'^(?:copyright\s+\(c\)|copyright\s+\d{4}|all rights reserved|this page intentionally left blank|unsubscribe$)',
+    re.IGNORECASE
+)
+_HEADING_RE = re.compile(r'^(#{1,6})([^\s#].*)$', flags=re.MULTILINE)
+_INTERNAL_WS_RE = re.compile(r'[ \t]+')
+_NEWLINE_RE = re.compile(r'\n{3,}')
+
 def normalize_whitespace(text: str) -> str:
     """Normalize whitespace and newlines."""
     if not text:
         return ""
     # Replace 3 or more newlines with 2 newlines
-    text = re.sub(r'\n{3,}', '\n\n', text)
+    text = _NEWLINE_RE.sub('\n\n', text)
     lines = []
     for line in text.split('\n'):
-        # match leading whitespace to keep it
-        match = re.match(r'^(\s*)', line)
-        leading = match.group(1) if match else ""
+        # preserve leading whitespace without re.match inside loop
+        stripped = line.lstrip()
+        if not stripped:
+            lines.append("")
+            continue
+
+        leading_len = len(line) - len(stripped)
+        leading = line[:leading_len]
 
         # replace internal multiple spaces/tabs with single space
-        content = line[len(leading):]
-        content = re.sub(r'[ \t]+', ' ', content)
-
-        # combine and right strip
+        content = _INTERNAL_WS_RE.sub(' ', stripped)
         lines.append((leading + content).rstrip())
 
     # join with newlines, but remove more than 2 consecutive newlines again
     joined = '\n'.join(lines).strip()
-    joined = re.sub(r'\n{3,}', '\n\n', joined)
-    return joined
+    return _NEWLINE_RE.sub('\n\n', joined)
 
 def normalize_headings(text: str) -> str:
     """Ensure proper markdown heading formatting (e.g. #Heading to # Heading)."""
     if not text:
         return ""
-
-    def add_space(match):
-        hashes = match.group(1)
-        content = match.group(2)
-        return f"{hashes} {content}"
-
-    # Matches ^#{1,6}[^\s#]
-    text = re.sub(r'^(#{1,6})([^\s#].*)$', add_space, text, flags=re.MULTILINE)
-    return text
+    # ⚡ Bolt: Fast backreference substitution instead of a Python callback
+    return _HEADING_RE.sub(r'\1 \2', text)
 
 def strip_boilerplate(text: str) -> str:
     """Strip boilerplate/repeated footers/headers where identifiable."""
@@ -45,22 +48,10 @@ def strip_boilerplate(text: str) -> str:
         return ""
     lines = text.split('\n')
 
-    # Common boilerplate patterns
-    boilerplate_patterns = [
-        r'^copyright\s+\(c\)',
-        r'^copyright\s+\d{4}',
-        r'^all rights reserved',
-        r'^this page intentionally left blank',
-        r'^unsubscribe$'
-    ]
-
-    compiled_patterns = [re.compile(p, re.IGNORECASE) for p in boilerplate_patterns]
-
     cleaned_lines = []
     for line in lines:
-        stripped_line = line.strip()
-        is_boilerplate = any(p.match(stripped_line) for p in compiled_patterns)
-        if not is_boilerplate:
+        # ⚡ Bolt: Use a single compiled regex instead of compiling multiple in a loop
+        if not _BOILERPLATE_RE.match(line.strip()):
             cleaned_lines.append(line)
 
     return '\n'.join(cleaned_lines).strip()
