@@ -1,0 +1,4 @@
+
+## 2026-05-15 - Fast regex text sanitization
+**Learning:** In python's `re` module, moving repeated regex compilation out of loops to module-level constants `re.compile()` provides a significant performance boost. Replacing multiple different regex match tests within a loop with a single grouped regex `(?:a|b|c)` allows the underlying C-based regex engine to execute what used to be a Python `any()` loop, gaining almost a 2x speedup in batch operations. `str.lstrip()` is also much faster for identifying leading whitespace than using a per-line `re.match()`.
+**Action:** Always pre-compile regexes at the module level when performing batch text processing. Prefer built-in string methods over regex for simple string inspections. Use non-capturing groups `(?:...)` to combine simple matching loops.
