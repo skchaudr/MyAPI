@@ -1,0 +1,3 @@
+## 2024-05-16 - Precomputing Regexes and Variants for Keyword Searches
+**Learning:** In Python, performing string manipulation (like creating phrase variants) and dynamically compiling regular expressions (e.g., `re.search(rf"\b{re.escape(term)}\b", body)`) inside tight inner loops—such as traversing files in an `os.walk` block—leads to significant performance overhead. Although Python caches some regex compilations, string formatting and the function calls still impose a large penalty over thousands of iterations.
+**Action:** When filtering across a corpus dynamically based on search terms, always pre-compile the required regex patterns and compute permutations/variants *outside* the file traversal loop and iterate over the pre-computed objects within the loop.
