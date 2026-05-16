@@ -249,6 +249,10 @@ class KeywordSearcher:
         if not phrases and not terms:
             return []
 
+        # Precompute variants and compile regexes outside the loop
+        precomputed_variants = [self._phrase_variants(p) for p in (phrases or [])]
+        term_patterns = [re.compile(rf"\b{re.escape(t)}\b") for t in (terms or [])]
+
         results = []
         for root, _, files in os.walk(self.notes_dir):
             for name in files:
@@ -264,13 +268,13 @@ class KeywordSearcher:
 
                 body = entry.lower()
                 if phrases and not all(
-                    any(v in body for v in self._phrase_variants(phrase))
-                    for phrase in phrases
+                    any(v in body for v in variants)
+                    for variants in precomputed_variants
                 ):
                     continue
 
                 if not phrases and terms and not all(
-                    re.search(rf"\b{re.escape(term)}\b", body) for term in terms
+                    pat.search(body) for pat in term_patterns
                 ):
                     continue
 
