@@ -249,6 +249,8 @@ class KeywordSearcher:
         if not phrases and not terms:
             return []
 
+        term_regexes = [re.compile(rf"\b{re.escape(term)}\b") for term in terms] if not phrases and terms else []
+
         results = []
         for root, _, files in os.walk(self.notes_dir):
             for name in files:
@@ -270,7 +272,7 @@ class KeywordSearcher:
                     continue
 
                 if not phrases and terms and not all(
-                    re.search(rf"\b{re.escape(term)}\b", body) for term in terms
+                    r.search(body) for r in term_regexes
                 ):
                     continue
 
@@ -614,15 +616,21 @@ class ResultReranker:
 
         # Collect all tags/titles for reinforcement scoring
         all_tags = []
-        for r in results:
-            all_tags.append(set(r.get("metadata", {}).get("tags", [])))
+        tag_to_docs = {}
+        for i, r in enumerate(results):
+            tags = set(r.get("metadata", {}).get("tags", []))
+            all_tags.append(tags)
+            for tag in tags:
+                if tag not in tag_to_docs:
+                    tag_to_docs[tag] = set()
+                tag_to_docs[tag].add(i)
 
         for i, r in enumerate(results):
             meta = r.get("metadata", {})
             sem = self._semantic_score(r.get("khoj_score", 1.0))
             rec = self._recency_score(meta.get("created_at"), intent)
             trust = self._trust_score(meta.get("status", "scratchpad"))
-            reinf = self._reinforcement_score(i, all_tags)
+            reinf = self._reinforcement_score(i, all_tags, tag_to_docs)
             keyword = 1.0 if r.get("keyword_match") else 0.0
             source_match = 1.0 if source_family and meta.get("source") == source_family else 0.0
             doc_kind_prior = self._document_kind_prior(
@@ -862,24 +870,46 @@ class ResultReranker:
         score += 0.3 * exact_phrase_hits
 
         if anchor_terms:
-            compact_text = re.sub(r"[^a-z0-9]+", "", text)
-            compact_body = re.sub(r"[^a-z0-9]+", "", body_text)
-            compact_aliases = re.sub(r"[^a-z0-9]+", "", alias_text)
+            compact_text = None
+            compact_body = None
+            compact_aliases = None
+
             anchor_hits = 0
             for anchor in anchor_terms:
-                normalized_anchor = re.sub(r"[^a-z0-9]+", "", anchor.lower())
-                in_title_or_path = bool(anchor and anchor.lower() in text)
-                in_body = bool(anchor and anchor.lower() in body_text)
-                in_aliases = bool(anchor and anchor.lower() in alias_text)
-                in_compact_title = bool(normalized_anchor and normalized_anchor in compact_text)
-                in_compact_body = bool(normalized_anchor and normalized_anchor in compact_body)
-                in_compact_aliases = bool(normalized_anchor and normalized_anchor in compact_aliases)
-                if in_title_or_path or in_compact_title or in_aliases or in_compact_aliases:
+                if not anchor:
+                    continue
+
+                anchor_lower = anchor.lower()
+
+                # Fast paths
+                if anchor_lower in text or anchor_lower in alias_text:
                     anchor_hits += 1
                     score += 0.36 if len(anchor) > 3 else 0.24
-                elif in_body or in_compact_body:
+                    continue
+
+                if anchor_lower in body_text:
                     anchor_hits += 1
                     score += 0.18 if len(anchor) > 3 else 0.12
+                    continue
+
+                # Slow paths (lazy initialized)
+                if compact_text is None:
+                    compact_text = re.sub(r"[^a-z0-9]+", "", text)
+                    compact_body = re.sub(r"[^a-z0-9]+", "", body_text)
+                    compact_aliases = re.sub(r"[^a-z0-9]+", "", alias_text)
+
+                normalized_anchor = re.sub(r"[^a-z0-9]+", "", anchor_lower)
+
+                if not normalized_anchor:
+                    continue
+
+                if normalized_anchor in compact_text or normalized_anchor in compact_aliases:
+                    anchor_hits += 1
+                    score += 0.36 if len(anchor) > 3 else 0.24
+                elif normalized_anchor in compact_body:
+                    anchor_hits += 1
+                    score += 0.18 if len(anchor) > 3 else 0.12
+
             score += min(0.35, anchor_hits * 0.08)
 
         return min(1.0, score)
@@ -1057,7 +1087,7 @@ class ResultReranker:
         }
         return {v for v in variants if v and len(v) >= 4}
 
-    def _reinforcement_score(self, index, all_tags):
+    def _reinforcement_score(self, index, all_tags, tag_to_docs):
         """Boost if this doc's tags overlap with tags from other docs."""
         if not all_tags or index >= len(all_tags):
             return 0.0
@@ -1065,12 +1095,13 @@ class ResultReranker:
         if not my_tags:
             return 0.0
 
-        overlap_count = 0
-        for j, other_tags in enumerate(all_tags):
-            if j == index:
-                continue
-            if my_tags & other_tags:
-                overlap_count += 1
+        overlapping_docs = set()
+        for tag in my_tags:
+            overlapping_docs.update(tag_to_docs.get(tag, set()))
+
+        overlap_count = len(overlapping_docs)
+        if index in overlapping_docs:
+            overlap_count -= 1
 
         # Normalize: more overlapping docs = higher score, capped at 1.0
         return min(1.0, overlap_count / max(len(all_tags) - 1, 1))
