@@ -83,7 +83,7 @@ def test_batch_enrich_partial_failure(mocker):
     assert data["succeeded"] == 2
     assert data["failed"] == 1
     assert data["results"][1]["status"] == "error"
-    assert "Simulated API error" in data["results"][1]["error"]
+    assert data["results"][1]["error"] == "An internal server error occurred"
 
 
 def test_batch_enrich_empty_list():
