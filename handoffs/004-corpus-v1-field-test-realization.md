@@ -101,3 +101,16 @@ Tension: All of that being said, there is going to be benefit from canonical doc
 
 Momentum: I'm unsure where we're going. It might be the right move to do this corpus normalization so that we can all just have a cleaner baseline and keep moving closer towards reliability 
 
+### Per Sab Instructions: Codex Sitrep Post README And Repo Going Live
+
+The question captured here was not "what should the public onboarding eventually become?" It was: what is actually true in the repo right now if someone grabs it and tries to use their own exported ChatGPT or Claude conversation data?
+
+Current reality: extraction is mostly programmatic. `ingest_all.py` can take a ChatGPT export zip or `conversations.json` and a Claude.ai conversation export zip, run source adapters, reconstruct readable conversations, stamp basic YAML metadata, default imported chats to `scratchpad` / `conversation`, and write one markdown file per thread into a Khoj-ready bundle. That gets a user from raw export to searchable scratchpad corpus without hand-extracting messages.
+
+Current limitations: the hand/judgment layer is still significant. The repo does not yet automatically decide which threads are important, assign meaningful project taxonomy for generic ChatGPT or Claude web exports, create artifact summaries, filter sensitive/private material, dedupe repeated exports robustly, split long threads into smaller topic docs, promote raw chats into trusted memory, or add the corpus-v1 routing fields. The honest split is: searchability is automated; authority and curation are mostly manual.
+
+What should exists as direction, not current state. Public users should eventually upload an export, get immediate low-trust search, then curate high-signal threads incrementally through a review queue: exclude/private, summarize, assign project, mark outcome, promote, and choose whether the raw thread ranks normally, is downweighted, or is retained mainly for provenance.
+
+First corpus-v1 normalization steps from here: define shared metadata fields (`source_type`, `work_type`, `temporal_mode`, plus conversation fields like `thread_type`, `primary_project`, `outcome`, `signal_strength`, `artifact_summary`, `raw_thread_weight`, and `review_status`); build a dry-run scanner/manifest for ChatGPT, Claude, Claude Code, Codex, and Obsidian inputs; add an inspect/review command for one conversation at a time; generate artifact-summary templates for high-signal threads; and only after that wire retrieval weights so canonical docs win for source-of-truth questions while conversations still win for history/thought-process questions.
+
+Recent Git history is intentionally not part of the technical evidence for this assessment. The analysis is based on repo behavior and code paths, not portfolio cleanup or public-release hygiene.

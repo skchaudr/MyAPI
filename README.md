@@ -1,10 +1,10 @@
-# MyAPI — Context Retrieval for AI Agents and Personal RAG
+# MyAPI: Context Retrieval for AI Agents and Personal RAG
 
-MyAPI is a context retrieval layer for AI agents and human operators. Instead of having Claude Code, Codex, or Cursor scan a project's files on every cold start, agents query MyAPI for the relevant context — decisions, prior work, architectural constraints, recent changes — and get back structured answers with reranked evidence in under 3 seconds.
+MyAPI is a context retrieval layer for AI agents and human operators. Instead of having Claude Code, Codex, or Cursor scan a project's files on every cold start, agents query MyAPI for the relevant context. That context includes decisions, prior work, architectural constraints, and recent changes. They get back structured answers with reranked evidence in under 3 seconds.
 
 Underneath, MyAPI indexes 3+ years of personal knowledge: Obsidian notes (~3,200 markdown files), exported ChatGPT and Claude conversations, and CLI agent session logs (Codex, Claude Code). A Python pipeline (`context_refinery/`) normalizes heterogeneous sources into canonical knowledge objects. Khoj provides semantic vector search; Context Refinery sits on top to handle query classification, multi-lane retrieval (semantic + keyword + synthesized-note boosting), metadata-aware filtering, and reranking.
 
-The system is benchmarked, not vibes-tested. Retrieval quality is measured against a categorized query bank with seven diagnostic buckets (win, weak win, corpus gap, retrieval gap, metadata gap, intent gap, answer-shape gap). Corpus shaping and intent classification are the primary levers for improving results — not model swaps or hyperparameter tuning.
+The system is benchmarked, not vibes-tested. Retrieval quality is measured against a categorized query bank with seven diagnostic buckets (win, weak win, corpus gap, retrieval gap, metadata gap, intent gap, answer-shape gap). Corpus shaping and intent classification are the primary levers for improving results. Model swaps or hyperparameter tuning are not.
 
 **Status:** Phase 1 (build the pipeline) is closed and deployed. Phase 2 (trust calibration via benchmark-driven refinement) is the active work.
 
@@ -74,20 +74,20 @@ Same corpus, same retrieval pipeline, different response shapes.
 
 ### Core Components
 
-**`context_refinery/` — The Python package this repo is built around**
+**`context_refinery/`**: The Python package this repo is built around
 
-- **`retrieval.py`** (1,383 lines) — multi-lane retrieval + reranking + intent classification. Three retrieval lanes:
+- **`retrieval.py`** (1,383 lines): multi-lane retrieval + reranking + intent classification. Three retrieval lanes:
   - Semantic (Khoj vector search)
   - Keyword (exact phrase + term matching with hyphen/space/no-space normalization)
   - Synthesized-note boost (prior for canonical anchors, guarded against chat-dump sources)
-- **`adapters/`** — five source adapters (`chatgpt.py`, `claude.py`, `claude_code.py`, `codex.py`, `obsidian.py`) that parse heterogeneous exports into normalized documents with YAML frontmatter.
-- **`enrichment.py`** — Gemini-1.5-Flash-backed batch enrichment (max 50 docs/request). Extracts tags, projects, key assertions, and summaries from raw conversation logs.
-- **`sanitization.py`, `exporter.py`, `models.py`, `services.py`, `triage/`** — supporting modules for normalization, metadata validation, and diagnostic triage.
+- **`adapters/`**: five source adapters (`chatgpt.py`, `claude.py`, `claude_code.py`, `codex.py`, `obsidian.py`) parse heterogeneous exports into normalized documents with YAML frontmatter.
+- **`enrichment.py`**: Gemini-1.5-Flash-backed batch enrichment (max 50 docs/request). Extracts tags, projects, key assertions, and summaries from raw conversation logs.
+- **`sanitization.py`, `exporter.py`, `models.py`, `services.py`, `triage/`**: supporting modules for normalization, metadata validation, and diagnostic triage.
 
-**`api/` — FastAPI service**
+**`api/`**: FastAPI service
 
-- **`main.py`** — three routers: `/enrich`, `/import`, `/query`, plus `/health`.
-- **`routers/query.py`** — the agent-facing endpoint. Accepts `{"query": "...", "source_filter": [...], "n": 10}`, returns structured JSON with reranked results, metadata, and retrieval diagnostics.
+- **`main.py`**: three routers: `/enrich`, `/import`, `/query`, plus `/health`.
+- **`routers/query.py`**: agent-facing endpoint. It accepts `{"query": "...", "source_filter": [...], "n": 10}` and returns structured JSON with reranked results, metadata, and retrieval diagnostics.
 
 **Deployment**
 
@@ -104,28 +104,28 @@ Same corpus, same retrieval pipeline, different response shapes.
 
 The benchmark (`project-docs/retrieval-benchmark-v0/Query/benchmark-v0.md`) contains 18 queries across multiple intent classes:
 
-- **Project identity** — "What is MyAPI and what is its current goal?"
-- **Temporal recall** — "What was I working on around the time I was debugging Tailscale?"
-- **Source-specific recall** — "Find the Claude Code session where I set up the web adapter."
-- **Decision recall** — "What did I decide about the vault schema?"
-- **Operational recall** — "What's broken or blocked in MyAPI right now?"
-- **Synthesis** — "What docs should I use to understand the current system end to end?"
+- **Project identity**: "What is MyAPI and what is its current goal?"
+- **Temporal recall**: "What was I working on around the time I was debugging Tailscale?"
+- **Source-specific recall**: "Find the Claude Code session where I set up the web adapter."
+- **Decision recall**: "What did I decide about the vault schema?"
+- **Operational recall**: "What's broken or blocked in MyAPI right now?"
+- **Synthesis**: "What docs should I use to understand the current system end to end?"
 
 Each query is diagnosed with one of **seven failure buckets:**
 
-1. **Win** — correct answer at #1-3, high confidence
-2. **Weak win** — correct answer present but low margin or buried below noise
-3. **Corpus gap** — documented evidence doesn't exist
-4. **Retrieval gap** — evidence exists but candidate-set selection or ranking missed it
-5. **Metadata gap** — evidence exists but source/title/tag metadata is insufficient to route correctly
-6. **Intent gap** — query classifier misrouted (e.g., operational query routed to project-overview intent)
-7. **Answer-shape gap** — retrieval succeeds but response format doesn't match the question's implicit contract
+1. **Win**: correct answer at #1-3, high confidence
+2. **Weak win**: correct answer present but low margin or buried below noise
+3. **Corpus gap**: documented evidence doesn't exist
+4. **Retrieval gap**: evidence exists but candidate-set selection or ranking missed it
+5. **Metadata gap**: evidence exists but source/title/tag metadata is insufficient to route correctly
+6. **Intent gap**: query classifier misrouted (e.g., operational query routed to project-overview intent)
+7. **Answer-shape gap**: retrieval succeeds but response format doesn't match the question's implicit contract
 
 **The rubric forces diagnosis at the lowest-leverage layer first.** Don't patch the reranker when the real issue is a missing anchor doc. Don't add vocabulary synonyms when the query intent is being misclassified. Don't expand candidate sets when the answer is a corpus gap.
 
 Fixes are tracked in numbered session handoffs (`handoffs/000-004`) and acceptance runs (`scripts/acceptance.py`). The acceptance harness is a mechanical test against the live `/query` endpoint with gold-document assertions per query.
 
-Current acceptance state: **6/7 mechanical. A1 is a known bank-evolution question** — the status anchor currently wins the project-overview query, and whether that's correct depends on Corpus v1 normalization (active Phase 2 work). **A7** is the active retrieval-quality investigation (subject-scope gap diagnosed; fix is anchor authoring, not retrieval changes). The remaining five queries pass.
+Current acceptance state: **6/7 mechanical. A1 is a known bank-evolution question**. The status anchor currently wins the project-overview query, and whether that's correct depends on Corpus v1 normalization (active Phase 2 work). **A7** is the active retrieval-quality investigation (subject-scope gap diagnosed; fix is anchor authoring, not retrieval changes). The remaining five queries pass.
 
 The acceptance harness lives in `scripts/acceptance.py`; per-run details and current state are in `handoffs/` (most recent: `003-final-v0-benchmark-run.md`).
 
@@ -151,7 +151,7 @@ The keyword lane was requiring every bare term in a query to appear in the docum
 
 **5. No idempotency, by design**
 
-`/enrich` and `/query` are stateless. Clients dedupe themselves if needed. MyAPI doesn't track "have I seen this query before" — caching is upstream (agent harness layer) or downstream (Khoj's internal cache), not here.
+`/enrich` and `/query` are stateless. Clients dedupe themselves if needed. MyAPI doesn't track "have I seen this query before." Caching is upstream (agent harness layer) or downstream (Khoj's internal cache), not here.
 
 **6. Append-only logs with `AUTOINCREMENT` ids throughout**
 
@@ -176,9 +176,9 @@ The benchmark wants stable references to specific runs and specific anchor docs.
 - **Acceptance harness has one bank-evolution question (A1) and one active retrieval investigation (A7).** See *The Trust Calibration Model* for the canonical state and rationale; per-run detail in `handoffs/`.
 - **No auth on MyAPI.** It's a Tailscale-only service; trust boundary is the network.
 
-**Active work (Phase 2 — trust calibration):**
+**Active work (Phase 2: trust calibration):**
 
-- Corpus v1 normalization — `source_type` taxonomy, folder-derived metadata, temporal routing
+- Corpus v1 normalization. This includes `source_type` taxonomy, folder-derived metadata, and temporal routing
 - Extend the query bank to ~30 queries covering agent-cold-start and episodic-recall axes
 - Field-test retrieval quality with fresh cold-start agents (no memory/handoff beyond "use MyAPI first")
 - Build a "best practices, not perfect practices" polish pass
@@ -189,19 +189,19 @@ The benchmark wants stable references to specific runs and specific anchor docs.
 
 **Every session leaves a numbered handoff** in `handoffs/000-*.md`, `handoffs/001-*.md`, etc. Each handoff contains:
 
-- **Empirical Reality** — what scope was touched, what commits landed, what the acceptance set state is, what verifications ran
-- **Resume Point** — next session's entry point with explicit load-bearing context
-- **Narrative / Trajectory** — intent, interpretation, tension, momentum (operator's reflection)
+- **Empirical Reality**: what scope was touched, what commits landed, what the acceptance set state is, what verifications ran
+- **Resume Point**: next session's entry point with explicit load-bearing context
+- **Narrative / Trajectory**: intent, interpretation, tension, momentum (operator's reflection)
 
-The handoff system is load-bearing. It's the cleanest signal of "what's actually true *right now*" — more reliable than `STATUS_AND_NEXT_STEPS.md` if the two ever diverge (status doc updates intermittently; handoffs are written every session).
+The handoff system is load-bearing. It's the cleanest signal of "what's actually true *right now*." It is more reliable than `STATUS_AND_NEXT_STEPS.md` if the two ever diverge (status doc updates intermittently; handoffs are written every session).
 
 Read them in order:
 
-- **000** — F5 phrase-lane fix, A7 initial diagnosis, acceptance harness creation
-- **001** — A7 anchor variant fix (hyphen/space/no-space normalization), episodic-vs-meta axis design realization
-- **002** — F5 episodic gold-doc swap, S1 schema filter test, `source_type` taxonomy plan alignment
-- **003** — Final v0 benchmark run prep (bank refinement, not sweep architecture)
-- **004** — Corpus v1 field-test realization, two-audience endpoint framing, "do not normalize toward anchors always win"
+- **000**: F5 phrase-lane fix, A7 initial diagnosis, acceptance harness creation
+- **001**: A7 anchor variant fix (hyphen/space/no-space normalization), episodic-vs-meta axis design realization
+- **002**: F5 episodic gold-doc swap, S1 schema filter test, `source_type` taxonomy plan alignment
+- **003**: Final v0 benchmark run prep (bank refinement, not sweep architecture)
+- **004**: Corpus v1 field-test realization, two-audience endpoint framing, "do not normalize toward anchors always win"
 
 If this README ever conflicts with a handoff numbered higher than 004, trust the handoff.
 
@@ -211,10 +211,10 @@ If this README ever conflicts with a handoff numbered higher than 004, trust the
 
 Four canonical anchor docs in `project-docs/source-of-truth-anchors/`:
 
-- **`khoj-deployment-indexing-anchor.md`** — Khoj backend deployment, corpus size, indexing mechanics
-- **`my-devinfra-system-anchor.md`** — dev infrastructure topology (Mac, VM, Tailscale, GCP, systemd services)
-- **`myapi-status-anchor.md`** — current open issues, recently closed issues, failure modes (targets benchmark query A7)
-- **`vm-tailscale-ssh-access-anchor.md`** — VM SSH mechanics, gcloud IAP, Tailscale IP, auto-shutdown behavior
+- **`khoj-deployment-indexing-anchor.md`**: Khoj backend deployment, corpus size, indexing mechanics
+- **`my-devinfra-system-anchor.md`**: dev infrastructure topology (Mac, VM, Tailscale, GCP, systemd services)
+- **`myapi-status-anchor.md`**: current open issues, recently closed issues, failure modes (targets benchmark query A7)
+- **`vm-tailscale-ssh-access-anchor.md`**: VM SSH mechanics, gcloud IAP, Tailscale IP, auto-shutdown behavior
 
 These are the canonical context the benchmark queries are tuned against. Agents should query MyAPI for these before grep'ing.
 
@@ -254,9 +254,9 @@ See *The Trust Calibration Model* above for the canonical acceptance state and t
 
 **Key test files:**
 
-- `tests/test_retrieval.py` (27 KB, 13 test methods) — multi-lane retrieval, reranking, intent classification
-- `tests/test_triage_modular.py` (14 KB) — diagnostic triage and metadata validation
-- `tests/test_chatgpt.py`, `test_claude_code.py`, `test_codex.py`, `test_obsidian.py` — per-adapter normalization tests
+- `tests/test_retrieval.py` (27 KB, 13 test methods): multi-lane retrieval, reranking, intent classification
+- `tests/test_triage_modular.py` (14 KB): diagnostic triage and metadata validation
+- `tests/test_chatgpt.py`, `test_claude_code.py`, `test_codex.py`, `test_obsidian.py`: per-adapter normalization tests
 
 ---
 
@@ -285,8 +285,8 @@ python3 ingest_all.py --output-dir ./khoj-ready-bundle
 
 **Systemd services on the VM:**
 
-- `khoj.service` — Khoj backend on port `42110`
-- `context-refinery.service` — MyAPI FastAPI app on port `8000`
+- `khoj.service`: Khoj backend on port `42110`
+- `context-refinery.service`: MyAPI FastAPI app on port `8000`
 
 ---
 
@@ -294,25 +294,25 @@ python3 ingest_all.py --output-dir ./khoj-ready-bundle
 
 **Core documentation:**
 
-- `project-docs/STATUS_AND_NEXT_STEPS.md` — canonical "where are we" doc (last updated 2026-05-02)
-- `project-docs/My-API-Trust-Threshold-Plan.md` — strategic / product frame (agent-facing vs human-facing two-audience model)
-- `project-docs/retrieval-benchmark-v0/Query/benchmark-v0.md` — 18-query bank with intent classes
-- `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-05-02-tighten-pass.md` — most recent full run with margins
-- `handoffs/000-004` — session handoffs (sequential reality, 2026-05-03 through 2026-05-05)
+- `project-docs/STATUS_AND_NEXT_STEPS.md`: canonical "where are we" doc (last updated 2026-05-02)
+- `project-docs/My-API-Trust-Threshold-Plan.md`: strategic / product frame (agent-facing vs human-facing two-audience model)
+- `project-docs/retrieval-benchmark-v0/Query/benchmark-v0.md`: 18-query bank with intent classes
+- `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-05-02-tighten-pass.md`: most recent full run with margins
+- `handoffs/000-004`: session handoffs (sequential reality, 2026-05-03 through 2026-05-05)
 
 **Code entry points:**
 
-- `api/main.py` — FastAPI app (~30 LOC)
-- `context_refinery/retrieval.py` — multi-lane retrieval + reranker + intent classifier (1,383 lines)
-- `ingest_all.py` — batch ingestion entry point
-- `scripts/acceptance.py` — mechanical acceptance harness
-- `tests/` — 13 test files
+- `api/main.py`: FastAPI app (~30 LOC)
+- `context_refinery/retrieval.py`: multi-lane retrieval + reranker + intent classifier (1,383 lines)
+- `ingest_all.py`: batch ingestion entry point
+- `scripts/acceptance.py`: mechanical acceptance harness
+- `tests/`: 13 test files
 
 ---
 
 ## License
 
-MIT — see LICENSE file.
+MIT: see LICENSE file.
 
 ---
 
@@ -320,7 +320,7 @@ MIT — see LICENSE file.
 
 Built by Saboor Chaudry.
 
-This project began with a simple realization: years of notes in Obsidian, exported conversations from ChatGPT, Anthropic's Claude, and Google's Gemini already contained the context needed for long-term memory, agent handoffs, and personal retrieval — but there was no reliable system for taking it from raw corpus to actionable, structured, and trusted recall.
+This project began with a simple realization: years of notes in Obsidian, exported conversations from ChatGPT, Anthropic's Claude, and Google's Gemini already contained the context needed for long-term memory, agent handoffs, and personal retrieval. But there was no reliable system for taking it from raw corpus to actionable, structured, and trusted recall.
 
 MyAPI is my response to that problem. It reflects an ongoing push toward the technical frontier of multi-agent orchestration, auditable agent dispatch, and context retrieval systems. The scope and growing relevance of this problem demanded that benchmark-driven refinement, heterogeneous corpus normalization, and trust calibration be treated as first-class engineering concerns.
 
