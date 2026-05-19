@@ -1,0 +1,25 @@
+{
+  "terminal.integrated.scrollback": 1000,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.value": 8,
+  "workbench.editor.limit.perEditorGroup": true,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": false,
+  "workbench.list.smoothScrolling": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.next/**": true,
+    "**/.venv/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true,
+    "**/build": true
+  }
+}
