@@ -14,6 +14,11 @@ import urllib.parse
 import urllib.error
 import yaml
 from datetime import datetime, timezone, timedelta
+from context_refinery.normalization_schema import (
+    infer_source_type,
+    infer_temporal_mode,
+    infer_primary_project,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -108,6 +113,12 @@ class MetadataParser:
                 filename=filename,
                 body=entry,
             )
+            # V1 Inferences for missing frontmatter
+            inferred_source_type = infer_source_type(filename or "", adapter=source)
+            source_type = inferred_source_type
+            temporal_mode = infer_temporal_mode(source_type)
+            primary_project = infer_primary_project(filename or "", title="untitled")
+
             return {
                 "title": "untitled",
                 "source": source,
@@ -119,6 +130,17 @@ class MetadataParser:
                 "tags": [],
                 "projects": [],
                 "aliases": [],
+                # New V1 Normalization Fields
+                "source_type": source_type,
+                "work_type": [],
+                "temporal_mode": temporal_mode,
+                "primary_project": primary_project,
+                "review_status": "inferred",
+                "thread_type": None,
+                "outcome": None,
+                "signal_strength": None,
+                "raw_thread_weight": None,
+                "artifact_summary": None,
             }, entry, snippet
 
         try:
@@ -143,6 +165,12 @@ class MetadataParser:
             body=body,
         )
 
+        # V1 Inferences (if not explicitly declared in frontmatter)
+        inferred_source_type = infer_source_type(filename or "", adapter=source)
+        source_type = fm.get("source_type") or inferred_source_type
+        temporal_mode = fm.get("temporal_mode") or infer_temporal_mode(source_type)
+        primary_project = fm.get("primary_project") or infer_primary_project(filename or "", title=str(title))
+
         metadata = {
             "title": title,
             "source": source,
@@ -154,6 +182,17 @@ class MetadataParser:
             "tags": fm.get("tags") or [],
             "projects": fm.get("projects") or [],
             "aliases": fm.get("aliases") or [],
+            # New V1 Normalization Fields
+            "source_type": source_type,
+            "work_type": fm.get("work_type") or [],
+            "temporal_mode": temporal_mode,
+            "primary_project": primary_project,
+            "review_status": fm.get("review_status") or "inferred",
+            "thread_type": fm.get("thread_type"),
+            "outcome": fm.get("outcome"),
+            "signal_strength": fm.get("signal_strength"),
+            "raw_thread_weight": fm.get("raw_thread_weight"),
+            "artifact_summary": fm.get("artifact_summary"),
         }
 
         return metadata, body, snippet
@@ -655,6 +694,11 @@ class ResultReranker:
                 r.get("body"),
                 meta.get("aliases", []),
             )
+            v1_prior = self._v1_taxonomy_prior(
+                meta,
+                intent,
+                query,
+            )
 
             r["final_score"] = (w_sem * sem + w_rec * rec +
                                 w_trust * trust + w_reinf * reinf +
@@ -663,7 +707,8 @@ class ResultReranker:
                                 w_title * title_boost +
                                 special_boost +
                                 exact_phrase_boost +
-                                doc_kind_prior)
+                                doc_kind_prior +
+                                v1_prior)
 
         results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
         return results
@@ -1075,6 +1120,59 @@ class ResultReranker:
         # Normalize: more overlapping docs = higher score, capped at 1.0
         return min(1.0, overlap_count / max(len(all_tags) - 1, 1))
 
+    def _v1_taxonomy_prior(self, meta, intent, query):
+        """Calibrate reranking final scores based on the V1 normalization taxonomy."""
+        source_type = meta.get("source_type", "note")
+        temporal_mode = meta.get("temporal_mode", "meta")
+        raw_thread_weight = meta.get("raw_thread_weight")
+        signal_strength = meta.get("signal_strength")
+        review_status = meta.get("review_status", "inferred")
+
+        query_text = (query or "").lower()
+
+        # Check for explicit indicators that the user wants a chat/conversation/session
+        is_episodic_query = bool(re.search(
+            r"\b(thread|session|conversation|chat|convo|log|logs|transcript|meeting|call|slack)\b",
+            query_text
+        ))
+
+        score = 0.0
+
+        # --- Rule 1: Boost Anchors and Project Docs for non-episodic lookups ---
+        if intent in {"factual", "project_overview", "operational", "decision", "meta", "synthesis"}:
+            if source_type == "anchor":
+                score += 0.25
+            elif source_type == "project_doc":
+                score += 0.18
+            elif source_type == "handoff":
+                score += 0.12
+
+        # --- Rule 2: Suppress raw transcripts/conversations unless asked or episodic intent ---
+        if source_type in {"conversation", "cli_session"}:
+            if is_episodic_query or intent in {"source_specific", "temporal"}:
+                # The user is looking for a conversation/session! Reward high-signal/curated transcripts.
+                if signal_strength == "high":
+                    score += 0.20
+                elif signal_strength == "medium":
+                    score += 0.08
+                elif signal_strength == "low":
+                    score -= 0.10
+            else:
+                # The user is looking for facts/contracts. Suppress messy raw transcripts.
+                score -= 0.30
+
+        # --- Rule 3: Apply Raw Thread Weight boundaries ---
+        if raw_thread_weight == "downweighted":
+            score -= 0.25
+        elif raw_thread_weight == "excluded":
+            score -= 0.80
+
+        # --- Rule 4: Reward manual curation/approval ---
+        if review_status == "approved":
+            score += 0.10
+
+        return score
+
 
 # ── Result Grouper ───────────────────────────────────────────────────────────
 
@@ -1217,6 +1315,17 @@ class RetrievalPipeline:
                 "tags": meta.get("tags", []),
                 "projects": meta.get("projects", []),
                 "file": self._normalize_file_name(r.get("file")),
+                # New V1 Normalization Fields
+                "source_type": meta.get("source_type"),
+                "work_type": meta.get("work_type", []),
+                "temporal_mode": meta.get("temporal_mode"),
+                "primary_project": meta.get("primary_project"),
+                "review_status": meta.get("review_status"),
+                "thread_type": meta.get("thread_type"),
+                "outcome": meta.get("outcome"),
+                "signal_strength": meta.get("signal_strength"),
+                "raw_thread_weight": meta.get("raw_thread_weight"),
+                "artifact_summary": meta.get("artifact_summary"),
             })
 
         group_docs = []
@@ -1236,6 +1345,17 @@ class RetrievalPipeline:
                     "tags": meta.get("tags", []),
                     "projects": meta.get("projects", []),
                     "file": self._normalize_file_name(r.get("file")),
+                    # New V1 Normalization Fields
+                    "source_type": meta.get("source_type"),
+                    "work_type": meta.get("work_type", []),
+                    "temporal_mode": meta.get("temporal_mode"),
+                    "primary_project": meta.get("primary_project"),
+                    "review_status": meta.get("review_status"),
+                    "thread_type": meta.get("thread_type"),
+                    "outcome": meta.get("outcome"),
+                    "signal_strength": meta.get("signal_strength"),
+                    "raw_thread_weight": meta.get("raw_thread_weight"),
+                    "artifact_summary": meta.get("artifact_summary"),
                 })
             group_docs.append({
                 "key": g["key"],

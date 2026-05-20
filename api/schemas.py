@@ -124,6 +124,16 @@ class RetrievedDocument(BaseModel):
     tags: list[str] = []
     projects: list[str] = []
     file: Optional[str] = None
+    source_type: Optional[str] = None
+    work_type: list[str] = []
+    temporal_mode: Optional[str] = None
+    primary_project: Optional[str] = None
+    review_status: Optional[str] = None
+    thread_type: Optional[str] = None
+    outcome: Optional[str] = None
+    signal_strength: Optional[str] = None
+    raw_thread_weight: Optional[str] = None
+    artifact_summary: Optional[str] = None
 
 
 class ResultGroup(BaseModel):
