@@ -1,0 +1,3 @@
+## 2026-05-21 - Optimize O(N^2) _reinforcement_score logic in RetrievalPipeline
+**Learning:** `ResultReranker` dynamically calculates `_reinforcement_score` per document by looping through all tags of all other documents `(O(N^2))`. This blocks the main CPU thread significantly for large queries when iterating across results to find tag intersections.
+**Action:** Always precompute an inverted index (`tag_to_docs`) mapping tags to sets of document indices before mapping the iteration, reducing complexity to `O(N)`. This mirrors the guidelines outlined in the codebase memory notes for performance.

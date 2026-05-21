@@ -617,12 +617,21 @@ class ResultReranker:
         for r in results:
             all_tags.append(set(r.get("metadata", {}).get("tags", [])))
 
+
+        # Precompute an inverted index of tag -> set of document indices for O(N) reinforcement scoring
+        tag_to_docs = {}
+        for idx, tags in enumerate(all_tags):
+            for tag in tags:
+                if tag not in tag_to_docs:
+                    tag_to_docs[tag] = set()
+                tag_to_docs[tag].add(idx)
+
         for i, r in enumerate(results):
             meta = r.get("metadata", {})
             sem = self._semantic_score(r.get("khoj_score", 1.0))
             rec = self._recency_score(meta.get("created_at"), intent)
             trust = self._trust_score(meta.get("status", "scratchpad"))
-            reinf = self._reinforcement_score(i, all_tags)
+            reinf = self._reinforcement_score(i, all_tags, tag_to_docs)
             keyword = 1.0 if r.get("keyword_match") else 0.0
             source_match = 1.0 if source_family and meta.get("source") == source_family else 0.0
             doc_kind_prior = self._document_kind_prior(
@@ -1057,7 +1066,7 @@ class ResultReranker:
         }
         return {v for v in variants if v and len(v) >= 4}
 
-    def _reinforcement_score(self, index, all_tags):
+    def _reinforcement_score(self, index, all_tags, tag_to_docs):
         """Boost if this doc's tags overlap with tags from other docs."""
         if not all_tags or index >= len(all_tags):
             return 0.0
@@ -1065,15 +1074,16 @@ class ResultReranker:
         if not my_tags:
             return 0.0
 
-        overlap_count = 0
-        for j, other_tags in enumerate(all_tags):
-            if j == index:
-                continue
-            if my_tags & other_tags:
-                overlap_count += 1
+        overlapping_docs = set()
+        for tag in my_tags:
+            if tag in tag_to_docs:
+                overlapping_docs.update(tag_to_docs[tag])
+
+        # Remove self
+        overlapping_docs.discard(index)
 
         # Normalize: more overlapping docs = higher score, capped at 1.0
-        return min(1.0, overlap_count / max(len(all_tags) - 1, 1))
+        return min(1.0, len(overlapping_docs) / max(len(all_tags) - 1, 1))
 
 
 # ── Result Grouper ───────────────────────────────────────────────────────────
