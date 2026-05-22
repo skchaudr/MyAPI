@@ -30,5 +30,6 @@ async def query(request: QueryRequest):
     except KhojUnavailableError:
         raise HTTPException(status_code=502, detail="Khoj search backend is unavailable")
     except Exception as e:
-        logger.error(f"Query pipeline error: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Query pipeline error: {e}", exc_info=True)
+        # SECURITY: Do not expose raw exception details to the client
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
