@@ -15,7 +15,9 @@ async def enrich_content(request: EnrichRequest):
     except Exception as e:
         if "GEMINI_API_KEY" in str(e):
             raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured on this server")
-        raise HTTPException(status_code=500, detail=str(e))
+        import logging
+        logging.getLogger(__name__).error("An internal server error occurred", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
 
 
 @router.post("/enrich/batch", response_model=BatchEnrichResponse)
