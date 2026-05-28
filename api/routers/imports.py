@@ -20,6 +20,13 @@ class CodexImportRequest(BaseModel):
 class ClaudeCodeImportRequest(BaseModel):
     root: str = "~/.claude/projects"
 
+def _validate_and_resolve_path(user_path: str, base_path: str) -> str:
+    expanded_target = os.path.abspath(os.path.expanduser(user_path))
+    expanded_base = os.path.abspath(os.path.expanduser(base_path))
+    if os.path.commonpath([expanded_base, expanded_target]) != expanded_base:
+        raise ValueError("Invalid path provided.")
+    return expanded_target
+
 @router.post("/obsidian", response_model=CanonicalDocumentResponse)
 async def import_obsidian(file: UploadFile = File(...)):
     if not file.filename.endswith(".md"):
@@ -72,7 +79,12 @@ async def import_chatgpt(file: UploadFile = File(...)):
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
     try:
-        results = scan_codex_sessions(root=request.root)
+        safe_root = _validate_and_resolve_path(request.root, "~/.codex/command-logs")
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid path provided.")
+
+    try:
+        results = scan_codex_sessions(root=safe_root)
 
         parsed_results = []
         for doc in results:
@@ -86,7 +98,12 @@ async def import_codex(request: CodexImportRequest = CodexImportRequest()):
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
     try:
-        docs = scan_claude_sessions(root=request.root)
+        safe_root = _validate_and_resolve_path(request.root, "~/.claude/projects")
+    except ValueError:
+        raise HTTPException(status_code=400, detail="Invalid path provided.")
+
+    try:
+        docs = scan_claude_sessions(root=safe_root)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
     except Exception as e:
         logger.error(f"Error importing claude code sessions: {e}")
