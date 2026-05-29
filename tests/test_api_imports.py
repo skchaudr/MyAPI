@@ -65,3 +65,13 @@ def test_import_chatgpt_invalid_json():
     files = {"file": ("chat.json", content, "application/json")}
     response = client.post("/import/chatgpt", files=files)
     assert response.status_code == 422
+
+def test_import_codex_path_traversal():
+    response = client.post("/import/codex", json={"root": "~/.codex/command-logs/../sessions"})
+    assert response.status_code == 403
+    assert "Invalid root path specified" in response.json()["detail"]
+
+def test_import_claude_code_path_traversal():
+    response = client.post("/import/claude-code", json={"root": "/etc"})
+    assert response.status_code == 403
+    assert "Invalid root path specified" in response.json()["detail"]
