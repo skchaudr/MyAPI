@@ -9,6 +9,7 @@ Outputs a comprehensive, beautiful markdown evaluation report in the brain direc
 """
 
 import os
+import ssl
 import sys
 import json
 import time
@@ -16,6 +17,9 @@ import urllib.request
 import urllib.error
 import subprocess
 from pathlib import Path
+
+import certifi
+SSL_CTX = ssl.create_default_context(cafile=certifi.where())
 
 # Configuration
 PROJECT_ID = "sb-genai-2026"
@@ -83,7 +87,7 @@ def query_vertex(query: str, token: str) -> dict:
         method="POST"
     )
     try:
-        with urllib.request.urlopen(req, timeout=30) as response:
+        with urllib.request.urlopen(req, timeout=30, context=SSL_CTX) as response:
             return json.loads(response.read().decode("utf-8"))
     except urllib.error.URLError as e:
         if isinstance(e, urllib.error.HTTPError):
