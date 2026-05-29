@@ -6,7 +6,7 @@ Underneath, MyAPI indexes 3+ years of personal knowledge: Obsidian notes (~3,200
 
 The system is benchmarked, not vibes-tested. Retrieval quality is measured against a categorized query bank with seven diagnostic buckets (win, weak win, corpus gap, retrieval gap, metadata gap, intent gap, answer-shape gap). Corpus shaping and intent classification are the primary levers for improving results. Model swaps or hyperparameter tuning are not.
 
-**Status:** Phase 1 (build the pipeline) is closed and deployed. Phase 2 (trust calibration via benchmark-driven refinement) is the active work.
+**Status:** Phase 1 (build the pipeline) is closed and deployed. Phase 2 (trust calibration via benchmark-driven refinement) exposed the core Phase 3 problem: corpus quality is source-of-truth quality. The active v1 direction is an Obsidian-shaped memory substrate: normalized markdown, meaningful folders, frontmatter provenance, stable headers, and explicit trust/canonicality fields. See `project-docs/corpus-v1-obsidian-substrate-architecture.md`.
 
 ---
 
@@ -46,6 +46,7 @@ pytest tests/
 
 - [Architecture](#architecture)
 - [The Trust Calibration Model](#the-trust-calibration-model)
+- [Corpus v1 Architecture](#corpus-v1-architecture)
 - [Notable Technical Decisions](#notable-technical-decisions)
 - [Current Gaps and Roadmap](#current-gaps-and-roadmap)
 - [The Handoff System](#the-handoff-system)
@@ -131,6 +132,26 @@ The acceptance harness lives in `scripts/acceptance.py`; per-run details and cur
 
 ---
 
+## Corpus v1 Architecture
+
+Corpus v1 is not a tiny perfect archive and not a bulk raw export dump.
+
+The active architecture is an **Obsidian-style working memory substrate**: normalized markdown, meaningful folders, descriptive filenames, frontmatter provenance, stable headers for block retrieval, and explicit trust/canonicality fields.
+
+Raw exports can live on Big Pi, but availability is not admission. Admitted v1 artifacts should be structured enough that agents can use them and humans can audit them. Conversations, agent sessions, handoffs, source-of-truth notes, and project docs should each win the queries they are actually suited to answer.
+
+Canonical notes should win source-of-truth and operational-contract questions. Conversations should win history, thought process, comparison, and idea-development questions. Agent sessions should win terminal-trace and "what happened" questions. Handoffs should win current-state and resume-point questions.
+
+Stable architecture note:
+
+- `project-docs/corpus-v1-obsidian-substrate-architecture.md`
+
+Decision handoff:
+
+- `handoffs/011-corpus-v1-obsidian-substrate-architecture.md`
+
+---
+
 ## Notable Technical Decisions
 
 **1. Three retrieval lanes, OR'd, with a synthesized-note prior** (commit `5d713ab`)
@@ -176,9 +197,9 @@ The benchmark wants stable references to specific runs and specific anchor docs.
 - **Acceptance harness has one bank-evolution question (A1) and one active retrieval investigation (A7).** See *The Trust Calibration Model* for the canonical state and rationale; per-run detail in `handoffs/`.
 - **No auth on MyAPI.** It's a Tailscale-only service; trust boundary is the network.
 
-**Active work (Phase 2: trust calibration):**
+**Active work (Phase 3: corpus v1 substrate):**
 
-- Corpus v1 normalization. This includes `source_type` taxonomy, folder-derived metadata, and temporal routing
+- Corpus v1 substrate shaping on Big Pi. This includes Obsidian-style folder meaning, frontmatter provenance, stable headers, source-type taxonomy, and reviewable trust/canonicality fields.
 - Extend the query bank to ~30 queries covering agent-cold-start and episodic-recall axes
 - Field-test retrieval quality with fresh cold-start agents (no memory/handoff beyond "use MyAPI first")
 - Build a "best practices, not perfect practices" polish pass
@@ -202,8 +223,9 @@ Read them in order:
 - **002**: F5 episodic gold-doc swap, S1 schema filter test, `source_type` taxonomy plan alignment
 - **003**: Final v0 benchmark run prep (bank refinement, not sweep architecture)
 - **004**: Corpus v1 field-test realization, two-audience endpoint framing, "do not normalize toward anchors always win"
+- **011**: Corpus v1 Obsidian substrate architecture; v1 as structured memory environment rather than tiny seed or raw bulk dump
 
-If this README ever conflicts with a handoff numbered higher than 004, trust the handoff.
+If this README ever conflicts with a handoff numbered higher than 011, trust the handoff.
 
 ---
 
