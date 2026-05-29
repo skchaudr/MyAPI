@@ -1,3 +1,3 @@
-## 2024-05-29 - Pre-compile Regex and Map Built-ins for Text Processing
+## 2026-05-29 - Pre-compile Regex and Map Built-ins for Text Processing
 **Learning:** In highly called text sanitization routines (`strip_boilerplate`, `detect_noise`), line-by-line iterative matching with repeatedly compiled regex patterns and generator expressions can create significant CPU bottlenecks for large documents. Using Python's `re.MULTILINE` to globally replace patterns via `re.sub` and using `map(str.isalnum, string)` over generator expressions provided a ~5x speedup.
 **Action:** For text processing pipelines, always prefer module-level pre-compiled regex objects with global/multi-line flags (`re.MULTILINE`, `re.IGNORECASE`) for bulk replacements instead of iterating over `text.split('\n')`. For counting characters over long strings, favor `sum(map(function, text))` over generator expressions for C-level speed.

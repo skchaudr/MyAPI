@@ -41,8 +41,9 @@ def normalize_headings(text: str) -> str:
 
 # We split exact matches from prefix matches to preserve original behavior.
 # 'unsubscribe' must be the only text on the line.
+# We also handle optional \r for CRLF sequences.
 BOILERPLATE_RE = re.compile(
-    r'^[ \t]*(?:copyright\s+\(c\).*|copyright\s+\d{4}.*|all rights reserved.*|this page intentionally left blank.*|unsubscribe)[ \t]*$\n?',
+    r'^[ \t]*(?:copyright\s+\(c\).*|copyright\s+\d{4}.*|all rights reserved.*|this page intentionally left blank.*|unsubscribe)[ \t]*\r?$\n?',
     re.IGNORECASE | re.MULTILINE
 )
 
