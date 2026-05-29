@@ -43,6 +43,9 @@ tmp/
 # Corpus v1 normalization staging area (data, not code)
 corpus_v1/
 
+# Local Claude settings (machine-specific hooks/permissions)
+.claude/settings.local.json
+
 # Scratch dir is local-only by default. Use `!` to track specific tools.
 scratch/
 !scratch/vertex_client.py

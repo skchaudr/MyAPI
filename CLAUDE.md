@@ -1,5 +1,21 @@
 # CLAUDE.md — MyAPI
 
+## On Code Generation 
+
+  ▎ Before writing any code or creating any files: run git fetch --all and check git
+  ▎ branch -r to see what branches exist on origin. If the user mentions another machine
+  ▎  or calls something a "source of truth," stop and explicitly ask what's on it before
+  ▎  touching anything.
+
+
+## Operating in multi-machine environments 
+
+Always double check work being done is not being repeated. 
+
+## When in automode 
+
+The default is to avoid babysitting, NOT do whatever sounds right. Before writing or modifying a single file confirm with me. 
+
 ## Shell Commands: Don't Make Me Fix Your Work
 
 **Never give multi-line `-c` python commands.** They break in zsh because of indentation and quote handling. The user has to fix them and it's exhausting.

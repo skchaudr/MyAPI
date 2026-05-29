@@ -1,0 +1,1934 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyAPI — Project Reference</title>
+<style>
+  /* =========================================================
+     Palette & tokens
+     ========================================================= */
+  :root {
+    /* Surfaces */
+    --bg:           #F7F3EA;   /* warm off-white page */
+    --bg-elev:      #FCFAF4;   /* secondary surface */
+    --bg-sunken:    #F1ECDF;   /* sunken / inset surfaces */
+    --card:         #FFFFFF;   /* true white card */
+    --card-2:       #FCFBF7;
+    --hero-grad-a:  #FBF8F0;
+    --hero-grad-b:  #F2ECDB;
+
+    /* Section tints (very subtle) */
+    --tint-indigo:  #F4F5FC;
+    --tint-amber:   #FBF6E7;
+    --tint-emerald: #EFF5ED;
+    --tint-slate:   #F2F1EE;
+
+    /* Text */
+    --text:         #18181B;
+    --text-2:       #3F3F46;
+    --text-3:       #57534E;
+    --text-4:       #78716C;
+    --text-mute:    #A8A29E;
+
+    /* Borders */
+    --border:       #E7E0CE;     /* warm border on tinted bg */
+    --border-cool:  #E5E7EB;     /* cool border on white cards */
+    --border-strong:#C9C2AD;
+    --hairline:     rgba(24, 24, 27, 0.07);
+
+    /* Accents */
+    --indigo:       #3730A3;
+    --indigo-2:     #4F46E5;
+    --indigo-bg:    #EEF2FF;
+    --indigo-line:  #C7D2FE;
+
+    --emerald:      #047857;
+    --emerald-bg:   #ECFDF5;
+    --emerald-line: #A7F3D0;
+
+    --amber:        #B45309;
+    --amber-bg:     #FEF3C7;
+    --amber-line:   #FCD34D;
+
+    --rose:         #BE123C;
+    --rose-bg:      #FFE4E6;
+    --rose-line:    #FECDD3;
+
+    --slate:        #475569;
+    --slate-bg:     #F1F5F9;
+    --slate-line:   #CBD5E1;
+
+    /* Code */
+    --code-bg:      #1A1B23;
+    --code-text:    #E4E4E7;
+    --code-mute:    #A1A1AA;
+    --code-border:  #2A2B33;
+    --inline-bg:    #F4F0E2;
+    --inline-bd:    #E7E0CE;
+
+    /* Shadows */
+    --shadow-xs:    0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow-sm:    0 2px 8px rgba(15, 23, 42, 0.04);
+    --shadow:       0 8px 24px rgba(15, 23, 42, 0.06);
+    --shadow-lift:  0 14px 36px rgba(15, 23, 42, 0.09);
+
+    /* Geometry */
+    --r-lg:         16px;
+    --r-md:         12px;
+    --r-sm:         8px;
+    --r-xs:         6px;
+    --sidebar-w:    284px;
+    --max-w:        940px;
+
+    /* Type stacks */
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  }
+
+  html[data-theme="dark"] {
+    --bg:           #0E1014;
+    --bg-elev:      #14171D;
+    --bg-sunken:    #0B0D11;
+    --card:         #161A21;
+    --card-2:       #181C24;
+    --hero-grad-a:  #14171D;
+    --hero-grad-b:  #1A1E27;
+
+    --tint-indigo:  #161A2A;
+    --tint-amber:   #221C0F;
+    --tint-emerald: #11201A;
+    --tint-slate:   #181B22;
+
+    --text:         #ECECEE;
+    --text-2:       #B7B7BD;
+    --text-3:       #8E8E96;
+    --text-4:       #6B6B73;
+    --text-mute:    #565660;
+
+    --border:       #262A34;
+    --border-cool:  #2B2F3A;
+    --border-strong:#3A3F4C;
+    --hairline:     rgba(255,255,255,0.06);
+
+    --indigo:       #A5B4FC;
+    --indigo-2:     #C7D2FE;
+    --indigo-bg:    #1F2440;
+    --indigo-line:  #3B4280;
+
+    --emerald:      #6EE7B7;
+    --emerald-bg:   #102A20;
+    --emerald-line: #1F5240;
+
+    --amber:        #FCD34D;
+    --amber-bg:     #2A220C;
+    --amber-line:   #6B5610;
+
+    --rose:         #FDA4AF;
+    --rose-bg:      #2A1014;
+    --rose-line:    #6B1A24;
+
+    --slate:        #94A3B8;
+    --slate-bg:     #1A1E27;
+    --slate-line:   #3A4150;
+
+    --code-bg:      #0A0C10;
+    --code-text:    #E4E4E7;
+    --code-border:  #1F232C;
+    --inline-bg:    #1B1F28;
+    --inline-bd:    #2A2F3A;
+
+    --shadow-xs:    0 1px 2px rgba(0,0,0,0.4);
+    --shadow-sm:    0 2px 8px rgba(0,0,0,0.4);
+    --shadow:       0 8px 24px rgba(0,0,0,0.4);
+    --shadow-lift:  0 14px 36px rgba(0,0,0,0.55);
+  }
+
+  /* =========================================================
+     Base
+     ========================================================= */
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  html { background: var(--bg); }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 15.5px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11", "kern";
+  }
+  ::selection { background: var(--indigo-bg); color: var(--indigo); }
+
+  code, pre, kbd, .mono { font-family: var(--font-mono); }
+  a { color: var(--indigo); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 120ms ease, color 120ms ease; }
+  a:hover { color: var(--indigo-2); border-bottom-color: currentColor; }
+
+  /* =========================================================
+     Layout
+     ========================================================= */
+  .layout {
+    display: grid;
+    grid-template-columns: var(--sidebar-w) 1fr;
+    min-height: 100vh;
+  }
+  .sidebar {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #FBF9F1 0%, #F5EFDF 100%);
+    border-right: 1px solid var(--border);
+    padding: 22px 18px 28px;
+    backdrop-filter: saturate(120%);
+  }
+  html[data-theme="dark"] .sidebar {
+    background: linear-gradient(180deg, #13161C 0%, #0D0F14 100%);
+  }
+  .main {
+    padding: 36px 56px 96px;
+    max-width: calc(var(--max-w) + 112px);
+    width: 100%;
+  }
+  @media (max-width: 980px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); }
+    .main { padding: 28px 22px 80px; }
+  }
+
+  /* =========================================================
+     Sidebar
+     ========================================================= */
+  .brand {
+    display: flex; align-items: center; gap: 10px;
+    padding: 2px 4px 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .brand-mark {
+    width: 30px; height: 30px;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #3730A3 0%, #4F46E5 60%, #6366F1 100%);
+    box-shadow: 0 4px 10px rgba(55, 48, 163, 0.25), inset 0 1px 0 rgba(255,255,255,0.18);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-family: var(--font-mono); font-weight: 700;
+    font-size: 12px; letter-spacing: -0.05em;
+  }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+  .brand-name { font-weight: 650; font-size: 14.5px; color: var(--text); letter-spacing: -0.005em; }
+  .brand-tag {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--text-3);
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+
+  .sidebar-controls { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .search { position: relative; }
+  .search input {
+    width: 100%;
+    padding: 8px 10px 8px 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    background: rgba(255,255,255,0.65);
+    color: var(--text);
+    font-size: 13px;
+    font-family: var(--font-sans);
+    outline: none;
+    transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  }
+  html[data-theme="dark"] .search input { background: rgba(0,0,0,0.25); }
+  .search input::placeholder { color: var(--text-4); }
+  .search input:focus {
+    border-color: var(--indigo);
+    box-shadow: 0 0 0 3px var(--indigo-bg);
+    background: var(--card);
+  }
+  .search::before {
+    content: "⌕";
+    position: absolute; left: 10px; top: 50%;
+    transform: translateY(-52%);
+    font-size: 14px; color: var(--text-4);
+    pointer-events: none;
+  }
+
+  .ctrl-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .toggle-btn {
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.55);
+    color: var(--text-2);
+    border-radius: var(--r-sm);
+    padding: 6px 9px;
+    font-size: 11.5px;
+    font-family: var(--font-mono);
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    text-align: center;
+    transition: all 120ms ease;
+  }
+  html[data-theme="dark"] .toggle-btn { background: rgba(255,255,255,0.04); }
+  .toggle-btn:hover { color: var(--text); border-color: var(--border-strong); background: var(--card); }
+  .toggle-btn.full { grid-column: 1 / -1; }
+
+  .nav-group { margin-top: 18px; }
+  .nav-group-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-4);
+    padding: 0 8px 6px;
+  }
+  .nav { display: flex; flex-direction: column; gap: 1px; }
+  .nav a {
+    position: relative;
+    display: flex; align-items: center; gap: 8px;
+    color: var(--text-2);
+    padding: 6px 10px 6px 16px;
+    border-radius: var(--r-sm);
+    font-size: 13.5px;
+    border-bottom: none;
+    transition: background 120ms ease, color 120ms ease;
+  }
+  .nav a::before {
+    content: "";
+    position: absolute; left: 6px; top: 50%;
+    transform: translateY(-50%);
+    width: 2px; height: 14px; border-radius: 2px;
+    background: transparent;
+    transition: background 140ms ease;
+  }
+  .nav a .nav-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--text-mute);
+    flex: 0 0 auto;
+  }
+  .nav a:hover { background: rgba(24,24,27,0.05); color: var(--text); }
+  html[data-theme="dark"] .nav a:hover { background: rgba(255,255,255,0.05); }
+  .nav a.active {
+    background: var(--indigo-bg);
+    color: var(--indigo);
+    font-weight: 550;
+  }
+  .nav a.active::before { background: var(--indigo); }
+  .nav a.active .nav-dot { background: var(--indigo); }
+  .nav a.cat-amber .nav-dot   { background: var(--amber); }
+  .nav a.cat-emerald .nav-dot { background: var(--emerald); }
+  .nav a.cat-slate .nav-dot   { background: var(--slate); }
+  .nav a.cat-indigo .nav-dot  { background: var(--indigo-2); }
+
+  .kv-card {
+    margin-top: 22px;
+    border: 1px solid var(--hairline);
+    background: rgba(255,255,255,0.55);
+    border-radius: var(--r-md);
+    padding: 12px 12px 8px;
+  }
+  html[data-theme="dark"] .kv-card { background: rgba(255,255,255,0.03); }
+  .kv-card .kv-title {
+    font-family: var(--font-mono);
+    font-size: 10px; text-transform: uppercase;
+    letter-spacing: 0.12em; color: var(--text-4);
+    margin-bottom: 8px;
+  }
+  .kv-row {
+    display: flex; justify-content: space-between; gap: 10px;
+    padding: 4px 0; font-size: 12.5px;
+    border-top: 1px dashed var(--hairline);
+  }
+  .kv-row:first-of-type { border-top: 0; }
+  .kv-row b { font-weight: 600; color: var(--text-2); font-size: 11.5px; font-family: var(--font-mono); letter-spacing: 0.02em; text-transform: uppercase; }
+  .kv-row span { color: var(--text); text-align: right; }
+
+  /* =========================================================
+     Hero
+     ========================================================= */
+  .hero {
+    position: relative;
+    border: 1px solid var(--border);
+    background:
+      radial-gradient(900px 240px at 92% -10%, rgba(79, 70, 229, 0.08), transparent 60%),
+      linear-gradient(180deg, var(--hero-grad-a) 0%, var(--hero-grad-b) 100%);
+    border-radius: var(--r-lg);
+    padding: 30px 34px 28px;
+    margin-bottom: 36px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .hero::before {
+    /* indigo accent rail */
+    content: "";
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #3730A3, #6366F1);
+  }
+  .hero::after {
+    /* subtle dot grid in top-right */
+    content: "";
+    position: absolute; top: 0; right: 0;
+    width: 220px; height: 140px;
+    background-image: radial-gradient(circle, rgba(55, 48, 163, 0.10) 1px, transparent 1px);
+    background-size: 10px 10px;
+    opacity: 0.55;
+    mask-image: linear-gradient(225deg, #000 5%, transparent 70%);
+    -webkit-mask-image: linear-gradient(225deg, #000 5%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--indigo);
+    margin-bottom: 12px;
+  }
+  .hero-eyebrow .eye-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--indigo-2);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.14);
+  }
+  .hero h1 {
+    margin: 0 0 14px;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    color: var(--text);
+  }
+  @media (max-width: 720px) { .hero h1 { font-size: 28px; } }
+  .hero .lead {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    margin: 10px 0 0;
+    max-width: 64ch;
+  }
+  .hero .tech {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--text-2);
+    margin: 12px 0 0;
+    max-width: 70ch;
+  }
+  .hero .lead b, .hero .tech b { color: var(--text); font-weight: 650; }
+
+  .status-row {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--border);
+  }
+
+  /* =========================================================
+     Pills
+     ========================================================= */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 11px 5px 9px;
+    border-radius: 999px;
+    border: 1px solid var(--border-cool);
+    background: var(--card);
+    color: var(--text-2);
+    font-weight: 500;
+    letter-spacing: 0.005em;
+  }
+  .pill::before {
+    content: "";
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--text-mute);
+  }
+  .pill.ok { color: var(--emerald); background: var(--emerald-bg); border-color: var(--emerald-line); }
+  .pill.ok::before { background: var(--emerald); }
+  .pill.warn { color: var(--amber); background: var(--amber-bg); border-color: var(--amber-line); }
+  .pill.warn::before { background: var(--amber); }
+  .pill.err { color: var(--rose); background: var(--rose-bg); border-color: var(--rose-line); }
+  .pill.err::before { background: var(--rose); }
+  .pill.accent { color: var(--indigo); background: var(--indigo-bg); border-color: var(--indigo-line); }
+  .pill.accent::before { background: var(--indigo); }
+
+  /* =========================================================
+     Sections & cards
+     ========================================================= */
+  section {
+    scroll-margin-top: 24px;
+    margin-bottom: 40px;
+    padding: 24px 24px 26px;
+    border-radius: var(--r-lg);
+    border: 1px solid var(--hairline);
+    background: var(--bg-elev);
+  }
+  section.s-indigo  { background: var(--tint-indigo);  --section-accent: var(--indigo-2); }
+  section.s-amber   { background: var(--tint-amber);   --section-accent: var(--amber); }
+  section.s-emerald { background: var(--tint-emerald); --section-accent: var(--emerald); }
+  section.s-slate   { background: var(--tint-slate);   --section-accent: var(--slate); }
+  section { --section-accent: var(--slate); }
+
+  .section-head {
+    display: flex; flex-direction: column;
+    margin: -2px 0 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .section-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    color: var(--text-3);
+    margin-bottom: 6px;
+  }
+  .section-eyebrow .eye-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--section-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--section-accent) 18%, transparent);
+  }
+  h2.section-h {
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+    font-weight: 650;
+    margin: 0;
+    color: var(--text);
+  }
+  .section-sub {
+    font-size: 13.5px;
+    color: var(--text-3);
+    margin: 6px 0 0;
+  }
+
+  .cards { display: flex; flex-direction: column; gap: 14px; }
+
+  .card {
+    position: relative;
+    border: 1px solid var(--hairline);
+    background: var(--card);
+    border-radius: var(--r-md);
+    padding: 18px 20px;
+    box-shadow: var(--shadow);
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  }
+  .card:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lift);
+    border-color: rgba(24, 24, 27, 0.10);
+  }
+  html[data-theme="dark"] .card:hover { border-color: var(--border-strong); }
+  .card.accent {
+    padding-left: 22px;
+  }
+  .card.accent::before {
+    content: "";
+    position: absolute; left: 0; top: 14px; bottom: 14px;
+    width: 3px; border-radius: 0 3px 3px 0;
+    background: var(--section-accent);
+  }
+  .card h3 {
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 650;
+    margin: 0 0 4px;
+    letter-spacing: -0.005em;
+    color: var(--text);
+    display: flex; align-items: center; gap: 8px;
+    cursor: pointer;
+  }
+  .card h3 .caret {
+    color: var(--text-4);
+    font-size: 11px;
+    margin-left: auto;
+    transition: transform 180ms ease;
+    user-select: none;
+  }
+  .card.collapsed .body { display: none; }
+  .card.collapsed h3 .caret { transform: rotate(-90deg); }
+  .card .body { margin-top: 8px; }
+  .card p { margin: 6px 0; color: var(--text); }
+  .card p:first-child { margin-top: 0; }
+  .card ul, .card ol { padding-left: 22px; margin: 8px 0; }
+  .card li { margin: 4px 0; line-height: 1.55; }
+  .card li b, .card p b { font-weight: 650; color: var(--text); }
+  .card .meta {
+    font-size: 12.5px;
+    color: var(--text-3);
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--hairline);
+  }
+
+  /* =========================================================
+     Code blocks
+     ========================================================= */
+  pre.code {
+    background: var(--code-bg);
+    border: 1px solid var(--code-border);
+    border-radius: var(--r-md);
+    padding: 14px 16px;
+    overflow-x: auto;
+    margin: 8px 0 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--code-text);
+    font-family: var(--font-mono);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset, var(--shadow-xs);
+  }
+  pre.code::-webkit-scrollbar { height: 8px; }
+  pre.code::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 99px; }
+  code.inline {
+    background: var(--inline-bg);
+    border: 1px solid var(--inline-bd);
+    padding: 1px 6px;
+    border-radius: var(--r-xs);
+    font-size: 0.88em;
+    color: var(--text);
+    font-family: var(--font-mono);
+  }
+  .copy-wrap { position: relative; }
+  .copy-wrap::before {
+    /* code language/role badge */
+    content: "shell";
+    position: absolute;
+    top: -10px; left: 14px;
+    background: var(--bg-elev);
+    border: 1px solid var(--hairline);
+    padding: 1px 8px;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-3);
+    font-weight: 600;
+  }
+  .copy-wrap[data-lang]::before { content: attr(data-lang); }
+  .copy-btn {
+    position: absolute;
+    top: 10px; right: 10px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 9px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.06);
+    color: var(--code-mute);
+    border-radius: var(--r-xs);
+    cursor: pointer;
+    transition: all 120ms ease;
+  }
+  .copy-btn:hover { color: #FFFFFF; background: rgba(255,255,255,0.12); }
+  .copy-btn.copied { color: #6EE7B7; border-color: rgba(110, 231, 183, 0.4); }
+
+  /* =========================================================
+     File map
+     ========================================================= */
+  .filemap {
+    display: grid;
+    gap: 6px;
+  }
+  .filemap .row {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 16px;
+    align-items: start;
+    padding: 10px 12px 10px 14px;
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-sm);
+    font-size: 13.5px;
+    cursor: pointer;
+    transition: all 130ms ease;
+    position: relative;
+  }
+  .filemap .row::before {
+    content: "›";
+    position: absolute;
+    right: 12px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-mute);
+    font-size: 14px;
+    transition: color 130ms ease, transform 130ms ease;
+  }
+  .filemap .row:hover {
+    border-color: var(--indigo-line);
+    background: var(--card-2);
+    box-shadow: var(--shadow-sm);
+  }
+  .filemap .row:hover::before { color: var(--indigo); transform: translate(2px, -50%); }
+  .filemap .row .path {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--text);
+    word-break: break-all;
+  }
+  .filemap .row .desc { color: var(--text-2); line-height: 1.55; }
+  @media (max-width: 780px) {
+    .filemap .row { grid-template-columns: 1fr; }
+    .filemap .row::before { display: none; }
+  }
+
+  /* =========================================================
+     Inline tags
+     ========================================================= */
+  .tag {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    padding: 1px 7px;
+    border-radius: 999px;
+    background: var(--slate-bg);
+    color: var(--slate);
+    border: 1px solid var(--slate-line);
+    margin-left: 6px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .tag.verify { background: var(--amber-bg); color: var(--amber); border-color: var(--amber-line); }
+  .tag.open   { background: var(--rose-bg);  color: var(--rose);  border-color: var(--rose-line); }
+  .tag.done   { background: var(--emerald-bg); color: var(--emerald); border-color: var(--emerald-line); }
+
+  /* =========================================================
+     Diagram
+     ========================================================= */
+  .diagram {
+    background:
+      linear-gradient(180deg, var(--card) 0%, var(--card-2) 100%);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-md);
+    padding: 16px;
+    overflow-x: auto;
+    box-shadow: var(--shadow-xs);
+  }
+  .diagram svg { display: block; max-width: 100%; height: auto; }
+  .diagram text   { font-family: var(--font-mono); font-size: 11px; fill: var(--text); }
+  .diagram .label { font-family: var(--font-sans); font-size: 12px; fill: var(--text); font-weight: 550; }
+  .diagram .label-sub { font-family: var(--font-sans); font-size: 10.5px; fill: var(--text-2); }
+  .diagram .box-fill   { fill: var(--card); }
+  .diagram .box-accent { fill: var(--indigo-bg); }
+  .diagram .stroke     { stroke: var(--border-strong); stroke-width: 1; fill: none; }
+  .diagram .arrow      { stroke: var(--text-4); stroke-width: 1.2; fill: none; marker-end: url(#arrowhead); }
+
+  /* =========================================================
+     Grid utilities + misc
+     ========================================================= */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 760px) { .grid-2 { grid-template-columns: 1fr; } }
+  details > summary { cursor: pointer; color: var(--text); font-weight: 550; padding: 4px 0; }
+  hr.soft { border: 0; border-top: 1px dashed var(--hairline); margin: 14px 0; }
+
+  .hide-by-search { display: none !important; }
+  .empty-note {
+    color: var(--text-3); font-size: 13px;
+    text-align: center; padding: 24px;
+    border: 1px dashed var(--border);
+    border-radius: var(--r-md);
+    background: var(--bg-elev);
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding: 18px 22px;
+    border-top: 1px solid var(--hairline);
+    font-size: 12.5px;
+    color: var(--text-3);
+    line-height: 1.65;
+  }
+  .footer .footer-row {
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  }
+  .footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--indigo-2); }
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">M.</div>
+      <div class="brand-text">
+        <span class="brand-name">MyAPI</span>
+        <span class="brand-tag">project · reference</span>
+      </div>
+    </div>
+
+    <div class="sidebar-controls">
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="Filter sections & cards…" autocomplete="off" />
+      </div>
+      <button class="toggle-btn full" id="themeToggle" type="button">Toggle theme</button>
+      <div class="ctrl-row">
+        <button class="toggle-btn" id="expandAll" type="button">Expand</button>
+        <button class="toggle-btn" id="collapseAll" type="button">Collapse</button>
+      </div>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">Reference</div>
+      <nav class="nav" id="sideNavRef">
+        <a href="#overview" class="cat-indigo"><span class="nav-dot"></span>Overview</a>
+        <a href="#architecture" class="cat-indigo"><span class="nav-dot"></span>Architecture</a>
+        <a href="#keyfiles" class="cat-slate"><span class="nav-dot"></span>Key files</a>
+        <a href="#flow" class="cat-indigo"><span class="nav-dot"></span>Data / control flow</a>
+      </nav>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">Operations</div>
+      <nav class="nav" id="sideNavOps">
+        <a href="#setup" class="cat-emerald"><span class="nav-dot"></span>Setup &amp; run</a>
+        <a href="#themes" class="cat-indigo"><span class="nav-dot"></span>Themes &amp; decisions</a>
+      </nav>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">Drafting</div>
+      <nav class="nav" id="sideNavDraft">
+        <a href="#readme-aid" class="cat-indigo"><span class="nav-dot"></span>README drafting aid</a>
+      </nav>
+    </div>
+
+    <div class="nav-group">
+      <div class="nav-group-label">Awareness</div>
+      <nav class="nav" id="sideNavAware">
+        <a href="#risks" class="cat-amber"><span class="nav-dot"></span>Risks / open</a>
+        <a href="#status" class="cat-emerald"><span class="nav-dot"></span>Current status</a>
+        <a href="#audit" class="cat-slate"><span class="nav-dot"></span>Self-audit notes</a>
+      </nav>
+    </div>
+
+    <div class="kv-card">
+      <div class="kv-title">Quick facts</div>
+      <div class="kv-row"><b>Stack</b><span>FastAPI · Khoj · Gemini</span></div>
+      <div class="kv-row"><b>Lang</b><span>Python 3</span></div>
+      <div class="kv-row"><b>Host</b><span>GCP VM · Tailscale</span></div>
+      <div class="kv-row"><b>Auth</b><span>None (network bound)</span></div>
+      <div class="kv-row"><b>Phase</b><span>2 · Trust calibration</span></div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-eyebrow"><span class="eye-dot"></span>Project Reference · Living Draft</div>
+      <h1>MyAPI — Context Retrieval for Agents &amp; the Human Operator</h1>
+      <p class="lead">
+        <b>Plain English.</b> A personal search and retrieval service over years of notes, exported chatbot
+        conversations, and CLI agent session logs. AI agents — and Saboor — query it before doing work, and get
+        ranked, evidence-tagged answers back in under a few seconds.
+      </p>
+      <p class="tech">
+        <b>Technical.</b> FastAPI app sitting on top of Khoj semantic search, with a custom three-lane retrieval
+        + reranker (semantic + keyword + synthesized-note prior), source adapters for Obsidian / ChatGPT /
+        Claude / Claude Code / Codex, Gemini-1.5-Flash batch enrichment, and a mechanical acceptance harness
+        that asserts gold-document hits per benchmark query.
+      </p>
+      <div class="status-row">
+        <span class="pill ok">Phase 1 deployed</span>
+        <span class="pill accent">Phase 2 active · corpus v1</span>
+        <span class="pill">Acceptance · 6/7 mechanical</span>
+        <span class="pill warn">A1 known bank-evolution fail</span>
+        <span class="pill">Tailscale-only</span>
+        <span class="pill">No auth</span>
+      </div>
+    </div>
+
+    <!-- Overview -->
+    <section id="overview" class="s-indigo">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Overview</span>
+        <h2 class="section-h">What this is, and who it is for</h2>
+        <p class="section-sub">The product framing in plain English, then in developer terms, then in the load-bearing two-audience model.</p>
+      </header>
+      <div class="cards">
+
+        <div class="card accent" data-tags="overview problem two-audience plain explanation">
+          <h3>What this is, in one paragraph <span class="tag">plain English</span></h3>
+          <div class="body">
+            <p>
+              MyAPI is one HTTP endpoint Saboor can point any agent at. Instead of every new Claude / Codex / Cursor
+              session re-scanning the repo and re-greping for context, the agent posts a question to
+              <code class="inline">/query</code> and gets back the documents, decisions, and recent state that
+              matter. The same endpoint also serves the human use case: "find that thread where I figured out X,"
+              "what did I decide about the vault schema," "what's actually broken right now."
+            </p>
+            <p>
+              Underneath the endpoint sits a normalized corpus built from Obsidian markdown, ChatGPT/Claude web
+              exports, and CLI agent (Claude Code, Codex) session logs. The retrieval logic blends semantic vector
+              search with exact-phrase keyword search and a small prior that boosts canonical anchor docs over
+              chat noise.
+            </p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="overview developer technical two-audience problem">
+          <h3>Developer-level explanation</h3>
+          <div class="body">
+            <ul>
+              <li><b>Service layer</b> — a thin FastAPI app (<code class="inline">api/main.py</code>, 26 lines) with
+                three routers: <code class="inline">/enrich</code>, <code class="inline">/import</code>,
+                <code class="inline">/query</code>, plus a <code class="inline">/health</code> probe.</li>
+              <li><b>Brain</b> — <code class="inline">context_refinery/retrieval.py</code> (1,383 lines) implements
+                intent classification, three retrieval lanes, a reranker with phrase/variant normalization, and a
+                guarded synthesized-note prior.</li>
+              <li><b>Corpus pipeline</b> — five source adapters parse heterogeneous exports into a uniform
+                "markdown + YAML frontmatter" doc shape; <code class="inline">enrichment.py</code> calls
+                Gemini-1.5-Flash in batches of up to 50 docs to extract tags, projects, key assertions, and
+                summaries.</li>
+              <li><b>Search backend</b> — Khoj runs on the same VM (<code class="inline">khoj.service</code>, port
+                <code class="inline">42110</code>) and owns embeddings + the vector store. MyAPI shells out to Khoj
+                over HTTP, then layers its own ranking on top.</li>
+              <li><b>Trust calibration</b> — a small benchmark bank of representative queries is run via
+                <code class="inline">scripts/acceptance.py</code>; each query has a gold-document expectation;
+                regressions surface as numbered <code class="inline">handoffs/000…004</code> sessions, not just
+                CI red.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="overview audiences agent human two">
+          <h3>The two-audience framing <span class="tag">load-bearing</span></h3>
+          <div class="body">
+            <p>
+              This framing emerged explicitly in <span class="mono">handoffs/004</span>: the endpoint serves
+              <b>agents</b> and <b>the human operator</b>. <i>Sources are not audiences.</i> Obsidian, ChatGPT,
+              Claude, Codex, Claude Code are input corpora — not user types.
+            </p>
+            <ul>
+              <li><b>Agent-facing</b> — cold-start context for Claude Code / Codex / Jules / Pi workers / OpenClaw
+                executors. Agent posts a task or question, gets project truth, constraints, prior work, and current
+                status back, then acts.</li>
+              <li><b>Human-facing</b> — recall, inspection, synthesis. "What did I decide about X?", "Show me the
+                thread where I figured this out", "Have I documented any friction with Neovim?" (null is a valid
+                pass).</li>
+            </ul>
+            <p class="meta">Same corpus, same pipeline, different response shapes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="s-indigo">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Architecture</span>
+        <h2 class="section-h">Components, lanes, and the system diagram</h2>
+        <p class="section-sub">How the service is laid out and how the three retrieval lanes combine.</p>
+      </header>
+      <div class="cards">
+
+        <div class="card" data-tags="architecture components fastapi khoj gemini">
+          <h3>Components at a glance</h3>
+          <div class="body">
+            <div class="grid-2">
+              <div>
+                <p><b>Service</b> — FastAPI app</p>
+                <ul>
+                  <li><code class="inline">api/main.py</code> — app bootstrap, CORS, router wiring</li>
+                  <li><code class="inline">api/routers/enrich.py</code></li>
+                  <li><code class="inline">api/routers/imports.py</code></li>
+                  <li><code class="inline">api/routers/query.py</code></li>
+                  <li><code class="inline">api/routers/export.py</code> <span class="tag">retired, see main.py</span></li>
+                  <li><code class="inline">api/schemas.py</code> — Pydantic models, source enum</li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Brain</b> — <code class="inline">context_refinery/</code></p>
+                <ul>
+                  <li><code class="inline">retrieval.py</code> (1,383 LOC) — lanes, reranker, intent</li>
+                  <li><code class="inline">enrichment.py</code> — Gemini batch enrichment</li>
+                  <li><code class="inline">adapters/</code> — chatgpt, claude, claude_code, codex, obsidian</li>
+                  <li><code class="inline">triage/</code> — modular triage runner + passes</li>
+                  <li><code class="inline">sanitization.py · exporter.py · models.py · services.py</code></li>
+                </ul>
+              </div>
+            </div>
+            <hr class="soft" />
+            <div class="grid-2">
+              <div>
+                <p><b>Tooling &amp; scripts</b> — <code class="inline">scripts/</code></p>
+                <ul>
+                  <li><code class="inline">acceptance.py</code> — mechanical gold-doc harness</li>
+                  <li><code class="inline">run_query_benchmark.py</code></li>
+                  <li><code class="inline">audit_tags_v4.py · normalize_vault_schema_v4.py</code></li>
+                  <li><code class="inline">harvest_concepts_v4.py · suggest_concepts_per_batch.py</code></li>
+                  <li><code class="inline">khoj_index_diff.py · khoj_repair_index_delta.py</code></li>
+                  <li><code class="inline">reindex_khoj_safe.py · khoj_reindex_resume_index.py</code></li>
+                  <li><code class="inline">benchmark_to_refinement_queue.py · build_v4_owner_queue.py</code></li>
+                  <li><code class="inline">remove_chatgpt_branch_variants.py</code></li>
+                </ul>
+              </div>
+              <div>
+                <p><b>Deployment + ingestion</b></p>
+                <ul>
+                  <li><code class="inline">ingest_all.py</code> — batch corpus build (355 LOC)</li>
+                  <li><code class="inline">deploy_to_khoj.sh</code> — scp + service restart + health check</li>
+                  <li><code class="inline">deploy_to_brain.sh</code> <span class="tag verify">Needs verification: distinction from deploy_to_khoj</span></li>
+                  <li><code class="inline">run_dev.sh</code> — local uvicorn launcher</li>
+                  <li>VM systemd: <code class="inline">khoj.service</code> :42110, <code class="inline">context-refinery.service</code> :8000</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="architecture lanes retrieval reranker">
+          <h3>The three retrieval lanes</h3>
+          <div class="body">
+            <ol>
+              <li><b>Semantic lane</b> — Khoj vector search returns the top-N most embedding-similar docs.</li>
+              <li><b>Keyword lane</b> — exact phrase + term matching with hyphen / space / no-space normalization
+                (so <code class="inline">gold mine</code> ≡ <code class="inline">gold-mine</code> ≡
+                <code class="inline">goldmine</code>). Skips its bare-term filter when phrases are present.</li>
+              <li><b>Synthesized-note prior</b> — <code class="inline">+0.14</code> boost for docs with frontmatter
+                <code class="inline">document_kind: synthesized_note</code> or titles containing
+                <i>anchor / summary / overview</i>. <b>Guarded</b> so it doesn't fire on chat-dump sources
+                (chatgpt / claude / claude-code / codex) — keeps anchors from drowning real episodic threads.</li>
+            </ol>
+            <p>Lanes are OR'd; the reranker then scores the combined candidate set with phrase boosts
+              (<code class="inline">+0.45</code> per phrase match) and intent-aware weights. Intent classifier
+              evaluates OPERATIONAL before PROJECT so "MyAPI is broken" doesn't get routed as a project explainer.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="architecture diagram svg flow">
+          <h3>System diagram</h3>
+          <div class="body">
+            <div class="diagram">
+              <svg viewBox="0 0 820 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MyAPI system diagram">
+                <defs>
+                  <marker id="arrowhead" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L8,3 z" fill="currentColor" style="color: var(--text-4);"/>
+                  </marker>
+                </defs>
+                <g>
+                  <text x="20" y="22" class="label-sub">INPUT CORPORA</text>
+                  <rect x="20" y="35" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="54" class="label">Obsidian vault (.md)</text>
+                  <rect x="20" y="75" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="94" class="label">ChatGPT export</text>
+                  <rect x="20" y="115" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="134" class="label">Claude.ai export</text>
+                  <rect x="20" y="155" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="174" class="label">Claude Code logs</text>
+                  <rect x="20" y="195" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="214" class="label">Codex logs</text>
+                </g>
+                <g>
+                  <text x="220" y="22" class="label-sub">ADAPTERS</text>
+                  <rect x="220" y="35" width="160" height="190" rx="6" class="box-fill stroke"/>
+                  <text x="232" y="58" class="label">context_refinery/</text>
+                  <text x="232" y="76" class="label">adapters/</text>
+                  <text x="232" y="104" class="label-sub">→ chatgpt.py</text>
+                  <text x="232" y="120" class="label-sub">→ claude.py</text>
+                  <text x="232" y="136" class="label-sub">→ claude_code.py</text>
+                  <text x="232" y="152" class="label-sub">→ codex.py</text>
+                  <text x="232" y="168" class="label-sub">→ obsidian.py</text>
+                  <text x="232" y="200" class="label-sub">Normalize → MD+YAML</text>
+                </g>
+                <g>
+                  <text x="410" y="22" class="label-sub">PIPELINE</text>
+                  <rect x="410" y="35" width="190" height="65" rx="6" class="box-fill stroke"/>
+                  <text x="420" y="58" class="label">ingest_all.py</text>
+                  <text x="420" y="76" class="label-sub">sanitize · enrich · export</text>
+                  <text x="420" y="92" class="label-sub">→ khoj-ready bundle</text>
+                  <rect x="410" y="115" width="190" height="55" rx="6" class="box-fill stroke"/>
+                  <text x="420" y="138" class="label">Gemini 1.5 Flash</text>
+                  <text x="420" y="156" class="label-sub">batch enrichment (≤50/req)</text>
+                  <rect x="410" y="185" width="190" height="55" rx="6" class="box-accent stroke"/>
+                  <text x="420" y="208" class="label">Khoj backend</text>
+                  <text x="420" y="226" class="label-sub">port 42110 (systemd)</text>
+                </g>
+                <g>
+                  <text x="620" y="22" class="label-sub">SERVICE</text>
+                  <rect x="620" y="35" width="180" height="80" rx="6" class="box-fill stroke"/>
+                  <text x="630" y="58" class="label">FastAPI · api/main.py</text>
+                  <text x="630" y="76" class="label-sub">/enrich · /import · /query</text>
+                  <text x="630" y="94" class="label-sub">/health</text>
+                  <text x="630" y="110" class="label-sub">port 8000 (systemd)</text>
+                  <rect x="620" y="130" width="180" height="110" rx="6" class="box-accent stroke"/>
+                  <text x="630" y="152" class="label">retrieval.py (1,383 LOC)</text>
+                  <text x="630" y="172" class="label-sub">intent classifier</text>
+                  <text x="630" y="188" class="label-sub">3 lanes: semantic / kw / prior</text>
+                  <text x="630" y="204" class="label-sub">phrase normalize · reranker</text>
+                  <text x="630" y="222" class="label-sub">→ structured JSON response</text>
+                </g>
+                <g>
+                  <text x="20" y="262" class="label-sub">CLIENTS (over Tailscale)</text>
+                  <rect x="20" y="275" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="294" class="label">Agents: Claude Code, Codex, Jules</text>
+                  <rect x="20" y="315" width="170" height="30" rx="6" class="box-fill stroke"/>
+                  <text x="30" y="334" class="label">Human: Saboor (curl / scripts)</text>
+                </g>
+                <g>
+                  <rect x="410" y="275" width="190" height="70" rx="6" class="box-fill stroke"/>
+                  <text x="420" y="297" class="label">scripts/acceptance.py</text>
+                  <text x="420" y="315" class="label-sub">gold-doc assertions</text>
+                  <text x="420" y="333" class="label-sub">6/7 mechanical · A1 known-fail</text>
+                </g>
+                <path class="arrow" d="M190,50 L220,55"/>
+                <path class="arrow" d="M190,90 L220,90"/>
+                <path class="arrow" d="M190,130 L220,125"/>
+                <path class="arrow" d="M190,170 L220,160"/>
+                <path class="arrow" d="M190,210 L220,195"/>
+                <path class="arrow" d="M380,130 L410,68"/>
+                <path class="arrow" d="M505,100 L505,115"/>
+                <path class="arrow" d="M505,170 L505,185"/>
+                <path class="arrow" d="M600,210 L620,180"/>
+                <path class="arrow" d="M190,290 L620,80"/>
+                <path class="arrow" d="M190,330 L620,90"/>
+                <path class="arrow" d="M600,310 L620,200"/>
+              </svg>
+            </div>
+            <p class="meta">Solid arrows are HTTP / file flow. Khoj owns embeddings; MyAPI does the layered ranking.
+              Acceptance harness hits the live <code class="inline">/query</code> endpoint.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key files -->
+    <section id="keyfiles" class="s-slate">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Repository map</span>
+        <h2 class="section-h">Key files</h2>
+        <p class="section-sub">Click any row to copy its path. Sizes are confirmed where listed; comments describe role, not LOC.</p>
+      </header>
+      <div class="cards">
+        <div class="card" data-tags="files map keyfiles repo">
+          <h3>Clickable file map</h3>
+          <div class="body">
+            <div class="filemap" id="fileMap">
+              <div class="row" data-path="api/main.py">
+                <div class="path">api/main.py</div>
+                <div class="desc">FastAPI bootstrap. 26 LOC. CORS + 3 routers + /health. Pins <code class="inline">model: gemini-1.5-flash</code>.</div>
+              </div>
+              <div class="row" data-path="api/routers/query.py">
+                <div class="path">api/routers/query.py</div>
+                <div class="desc">Agent-facing <code class="inline">/query</code> endpoint. Accepts <code class="inline">{query, source_filter, n}</code>.</div>
+              </div>
+              <div class="row" data-path="api/routers/enrich.py">
+                <div class="path">api/routers/enrich.py</div>
+                <div class="desc">Triggers Gemini batch enrichment over docs.</div>
+              </div>
+              <div class="row" data-path="api/routers/imports.py">
+                <div class="path">api/routers/imports.py</div>
+                <div class="desc">Mounted at <code class="inline">/import</code>. Ingestion endpoints.</div>
+              </div>
+              <div class="row" data-path="api/routers/export.py">
+                <div class="path">api/routers/export.py</div>
+                <div class="desc">Retired per <code class="inline">api/main.py</code> comment — export is now client-side via exportService.ts.</div>
+              </div>
+              <div class="row" data-path="api/schemas.py">
+                <div class="path">api/schemas.py</div>
+                <div class="desc">Pydantic shapes. <code class="inline">SourceSystem</code> Literal includes <code class="inline">claude-code</code> after the 002 fix.</div>
+              </div>
+              <div class="row" data-path="context_refinery/retrieval.py">
+                <div class="path">context_refinery/retrieval.py</div>
+                <div class="desc">1,383 LOC. The whole retrieval pipeline: intent, 3 lanes, reranker, phrase variants, synthesized-note prior.</div>
+              </div>
+              <div class="row" data-path="context_refinery/enrichment.py">
+                <div class="path">context_refinery/enrichment.py</div>
+                <div class="desc">Gemini-1.5-Flash batch enrichment (≤50 docs/request). Extracts tags, projects, summaries, key assertions.</div>
+              </div>
+              <div class="row" data-path="context_refinery/adapters/">
+                <div class="path">context_refinery/adapters/</div>
+                <div class="desc">5 adapters: chatgpt.py, claude.py, claude_code.py, codex.py, obsidian.py — normalize heterogeneous exports to MD+YAML.</div>
+              </div>
+              <div class="row" data-path="context_refinery/sanitization.py">
+                <div class="path">context_refinery/sanitization.py</div>
+                <div class="desc">Cleanup pass before export — frontmatter validation, content stripping.</div>
+              </div>
+              <div class="row" data-path="context_refinery/exporter.py">
+                <div class="path">context_refinery/exporter.py</div>
+                <div class="desc">Writes normalized docs into the khoj-ready bundle.</div>
+              </div>
+              <div class="row" data-path="context_refinery/triage/">
+                <div class="path">context_refinery/triage/</div>
+                <div class="desc">Modular triage subpackage: runner.py, review.py, terminal.py, writers.py, passes/.</div>
+              </div>
+              <div class="row" data-path="context_refinery/models.py">
+                <div class="path">context_refinery/models.py</div>
+                <div class="desc">Internal data models for normalized docs and pipeline state.</div>
+              </div>
+              <div class="row" data-path="context_refinery/services.py">
+                <div class="path">context_refinery/services.py</div>
+                <div class="desc">Service-layer glue between routers and the brain.</div>
+              </div>
+              <div class="row" data-path="ingest_all.py">
+                <div class="path">ingest_all.py</div>
+                <div class="desc">355 LOC. Batch ingestion entry point. <code class="inline">--output-dir ./khoj-ready-bundle</code>.</div>
+              </div>
+              <div class="row" data-path="scripts/acceptance.py">
+                <div class="path">scripts/acceptance.py</div>
+                <div class="desc">Mechanical acceptance harness. Hits live <code class="inline">/query</code>. Asserts gold-doc IDs per query.</div>
+              </div>
+              <div class="row" data-path="scripts/run_query_benchmark.py">
+                <div class="path">scripts/run_query_benchmark.py</div>
+                <div class="desc">Runs the full benchmark bank with margins / diagnostics.</div>
+              </div>
+              <div class="row" data-path="scripts/normalize_vault_schema_v4.py">
+                <div class="path">scripts/normalize_vault_schema_v4.py</div>
+                <div class="desc">Vault schema normalization (v4 series). Tag/frontmatter conformance.</div>
+              </div>
+              <div class="row" data-path="scripts/audit_tags_v4.py">
+                <div class="path">scripts/audit_tags_v4.py</div>
+                <div class="desc">Tag audit pass. Surfaces inconsistent or missing tags.</div>
+              </div>
+              <div class="row" data-path="scripts/khoj_index_diff.py">
+                <div class="path">scripts/khoj_index_diff.py</div>
+                <div class="desc">Diffs what's on disk vs. what's actually in the Khoj index. Surfaces missing files.</div>
+              </div>
+              <div class="row" data-path="scripts/khoj_repair_index_delta.py">
+                <div class="path">scripts/khoj_repair_index_delta.py</div>
+                <div class="desc">Patches the index for the diff above. Used for the ~27-file delta.</div>
+              </div>
+              <div class="row" data-path="scripts/reindex_khoj_safe.py">
+                <div class="path">scripts/reindex_khoj_safe.py</div>
+                <div class="desc">Resumable / non-destructive full reindex.</div>
+              </div>
+              <div class="row" data-path="scripts/harvest_concepts_v4.py">
+                <div class="path">scripts/harvest_concepts_v4.py</div>
+                <div class="desc">Pulls concept/tag candidates from the corpus for review.</div>
+              </div>
+              <div class="row" data-path="scripts/benchmark_to_refinement_queue.py">
+                <div class="path">scripts/benchmark_to_refinement_queue.py</div>
+                <div class="desc">Converts benchmark misses into a refinement queue.</div>
+              </div>
+              <div class="row" data-path="scripts/remove_chatgpt_branch_variants.py">
+                <div class="path">scripts/remove_chatgpt_branch_variants.py</div>
+                <div class="desc">Dedupes ChatGPT export branch/alternate variants of the same thread.</div>
+              </div>
+              <div class="row" data-path="project-docs/source-of-truth-anchors/">
+                <div class="path">project-docs/source-of-truth-anchors/</div>
+                <div class="desc">4 canonical anchors: khoj-deployment, my-devinfra-system, myapi-status, vm-tailscale-ssh-access.</div>
+              </div>
+              <div class="row" data-path="project-docs/retrieval-benchmark-v0/">
+                <div class="path">project-docs/retrieval-benchmark-v0/</div>
+                <div class="desc">Benchmark bank, harness evaluation runs, rubric.</div>
+              </div>
+              <div class="row" data-path="project-docs/corpus-v1-normalization-readiness.md">
+                <div class="path">project-docs/corpus-v1-normalization-readiness.md</div>
+                <div class="desc">Live Phase 2 strategy doc. Corpus architecture, not retrieval-weight tweaking.</div>
+              </div>
+              <div class="row" data-path="project-docs/corpus-v1-baseline-candidate-queries.md">
+                <div class="path">project-docs/corpus-v1-baseline-candidate-queries.md</div>
+                <div class="desc">10 v1 candidate queries grounded in the Solo Developer Vault with <code class="inline">fair_after</code> metadata.</div>
+              </div>
+              <div class="row" data-path="project-docs/source-type-taxonomy-plan.md">
+                <div class="path">project-docs/source-type-taxonomy-plan.md</div>
+                <div class="desc">Lane-3 design artifact: folder-derived <code class="inline">source_type</code> at ingestion.</div>
+              </div>
+              <div class="row" data-path="project-docs/STATUS_AND_NEXT_STEPS.md">
+                <div class="path">project-docs/STATUS_AND_NEXT_STEPS.md</div>
+                <div class="desc">"Where are we" doc. Updates intermittently. Trust handoffs when they diverge.</div>
+              </div>
+              <div class="row" data-path="handoffs/">
+                <div class="path">handoffs/</div>
+                <div class="desc">5 sessions, 000→004. Empirical reality + resume point + Sab narrative. Source of truth for current state.</div>
+              </div>
+              <div class="row" data-path="tests/">
+                <div class="path">tests/</div>
+                <div class="desc">11 <code class="inline">test_*.py</code> files <span class="tag verify">README says 13 — needs verification</span>: retrieval, enrichment, sanitization, exporter, triage, per-adapter, api/enrich, api/imports.</div>
+              </div>
+              <div class="row" data-path="HANDOFF-PI-README.md">
+                <div class="path">HANDOFF-PI-README.md</div>
+                <div class="desc">Cold-start onboarding doc for an agent running on the Raspberry Pi node.</div>
+              </div>
+              <div class="row" data-path="deploy_to_khoj.sh">
+                <div class="path">deploy_to_khoj.sh</div>
+                <div class="desc">scp <code class="inline">context_refinery/</code> + <code class="inline">api/</code> to VM, restart service, verify <code class="inline">/health</code>.</div>
+              </div>
+              <div class="row" data-path="deploy_to_brain.sh">
+                <div class="path">deploy_to_brain.sh</div>
+                <div class="desc">Secondary deploy script. <span class="tag verify">Needs verification: relationship to deploy_to_khoj.sh</span></div>
+              </div>
+              <div class="row" data-path=".jules/">
+                <div class="path">.jules/</div>
+                <div class="desc">Jules agent config / specs (Jules is the multi-agent delegation target).</div>
+              </div>
+              <div class="row" data-path=".claude/">
+                <div class="path">.claude/</div>
+                <div class="desc">Claude Code project settings (permissions, hooks).</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow -->
+    <section id="flow" class="s-indigo">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Runtime</span>
+        <h2 class="section-h">Data &amp; control flow</h2>
+        <p class="section-sub">What happens when the corpus is built and when a query runs.</p>
+      </header>
+      <div class="cards">
+        <div class="card" data-tags="flow ingestion pipeline corpus">
+          <h3>Ingestion path (offline)</h3>
+          <div class="body">
+            <ol>
+              <li>Source exports land on disk: Obsidian vault, ChatGPT zip, Claude.ai zip, Claude Code session logs, Codex logs.</li>
+              <li><code class="inline">ingest_all.py</code> dispatches to the matching adapter in
+                <code class="inline">context_refinery/adapters/</code>.</li>
+              <li>Each adapter emits a <i>normalized doc</i>: markdown body + YAML frontmatter
+                (source, title, timestamps, tags).</li>
+              <li><code class="inline">enrichment.py</code> optionally calls Gemini-1.5-Flash in batches (≤50 docs)
+                to extract tags, projects, key assertions, summaries.</li>
+              <li><code class="inline">sanitization.py</code> validates frontmatter; <code class="inline">exporter.py</code>
+                writes the final <code class="inline">.md</code> files into a "khoj-ready bundle."</li>
+              <li>Bundle is synced to the VM (<code class="inline">~/khoj-data/notes/</code>); Khoj reindexes.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card" data-tags="flow query runtime retrieval">
+          <h3>Query path (runtime)</h3>
+          <div class="body">
+            <ol>
+              <li>Client (agent or human) POSTs JSON to <code class="inline">/query</code>:
+                <code class="inline">{"query": "...", "source_filter": [...], "n": 10}</code>.</li>
+              <li>Intent classifier in <code class="inline">retrieval.py</code> labels the query —
+                OPERATIONAL is checked <b>before</b> PROJECT to keep "MyAPI is broken" from being routed as a
+                project explainer.</li>
+              <li>Three retrieval lanes fire in parallel:
+                <ul>
+                  <li>Semantic — Khoj vector search.</li>
+                  <li>Keyword — exact phrase + term match with hyphen/space/no-space normalization.</li>
+                  <li>Synthesized-note prior — <code class="inline">+0.14</code> on canonical anchors, guarded
+                    against chat-dump sources.</li>
+                </ul>
+              </li>
+              <li>Reranker unions candidates, applies phrase boost (<code class="inline">+0.45</code>) and
+                intent-aware weights, then returns top <i>n</i> with score + source + metadata.</li>
+              <li>Response is structured JSON. Stateless: no idempotency, no cache (clients dedupe themselves).</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card" data-tags="flow deploy services systemd">
+          <h3>Deploy + runtime control plane</h3>
+          <div class="body">
+            <ul>
+              <li><code class="inline">deploy_to_khoj.sh</code> on Mac → <code class="inline">gcloud compute scp</code>
+                → VM filesystem → <code class="inline">sudo systemctl restart context-refinery.service</code> →
+                curl <code class="inline">/health</code>.</li>
+              <li>VM auto-shuts down after a few hours of inactivity (cost control). Operator restarts via
+                <code class="inline">gcloud compute instances start</code> before benchmarking.</li>
+              <li>Access is Tailscale-only. No public IP. No auth on the app itself; the network is the trust
+                boundary.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Setup -->
+    <section id="setup" class="s-emerald">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Operations</span>
+        <h2 class="section-h">Setup &amp; run commands</h2>
+        <p class="section-sub">Copy-paste blocks for local dev, hitting the live endpoint, tests, and deploy.</p>
+      </header>
+      <div class="cards">
+        <div class="card" data-tags="setup local dev install">
+          <h3>Local dev (run on Mac / Pi / dev box)</h3>
+          <div class="body">
+            <p>Bootstrap a venv, install deps, run uvicorn locally:</p>
+            <div class="copy-wrap" data-lang="shell">
+<pre class="code">python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+GEMINI_API_KEY=your_key_here PYTHONPATH=/path/to/MyAPI uvicorn api.main:app --reload --port 8000</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+            <p>Or use the shipped launcher:</p>
+            <div class="copy-wrap" data-lang="shell">
+<pre class="code">./run_dev.sh</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tags="setup query curl example">
+          <h3>Hit the live endpoint</h3>
+          <div class="body">
+            <p>Tailscale must be up and the VM started:</p>
+            <div class="copy-wrap" data-lang="curl">
+<pre class="code">curl -X POST http://[TAILSCALE_HOST]:8000/query \
+  -H "Content-Type: application/json" \
+  -d '{"query": "What is MyAPI and what is its current goal?"}'</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+            <p class="meta">Tailscale IP per memory: <code class="inline">100.85.100.52:8000</code>. <span class="tag verify">Confirm still valid before sharing publicly.</span></p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="setup tests acceptance pytest">
+          <h3>Tests &amp; acceptance</h3>
+          <div class="body">
+            <div class="copy-wrap" data-lang="shell">
+<pre class="code">pytest tests/</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+            <p>Mechanical acceptance harness against the live VM:</p>
+            <div class="copy-wrap" data-lang="shell">
+<pre class="code">python3 scripts/acceptance.py</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-tags="setup deploy scp gcloud vm">
+          <h3>Deploy to the VM</h3>
+          <div class="body">
+            <div class="copy-wrap" data-lang="shell">
+<pre class="code">./deploy_to_khoj.sh</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+            <p>Re-ingest the corpus + sync:</p>
+            <div class="copy-wrap" data-lang="shell">
+<pre class="code">python3 ingest_all.py --output-dir ./khoj-ready-bundle
+# then sync bundle to VM and reindex (see deploy_to_khoj.sh)</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Themes -->
+    <section id="themes" class="s-indigo">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Decisions</span>
+        <h2 class="section-h">Distilled themes &amp; decisions</h2>
+        <p class="section-sub">The seven framings that survived sessions 000–004 and now anchor the work.</p>
+      </header>
+      <div class="cards">
+        <div class="card accent" data-tags="themes trust calibration benchmark vibes">
+          <h3>Trust calibration over vibes</h3>
+          <div class="body">
+            <p>The "quality" claim is grounded in a categorized query bank, not feel. Each query is graded with one
+              of seven diagnostic buckets: <i>win, weak win, corpus gap, retrieval gap, metadata gap, intent gap,
+              answer-shape gap</i>. The rubric forces diagnosis at the lowest-leverage layer first — don't tune
+              the reranker if the real issue is a missing anchor doc.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="themes corpus v1 normalization source_type">
+          <h3>Phase 2 = corpus v1, not weight tuning</h3>
+          <div class="body">
+            <p>Per handoff 004: the v1 push is an <b>architecture</b> pass on the corpus, not a retrieval-weight
+              pass. Planned ingestion-side fields: <code class="inline">source_type</code>, <code class="inline">work_type</code>,
+              <code class="inline">temporal_mode</code>, plus conversation fields <code class="inline">thread_type</code>,
+              <code class="inline">primary_project</code>, <code class="inline">outcome</code>, <code class="inline">signal_strength</code>,
+              <code class="inline">artifact_summary</code>, <code class="inline">raw_thread_weight</code>,
+              <code class="inline">review_status</code>.</p>
+            <p>This subsumes the earlier "recall_type" framing — folder taxonomy is the cleaner carrier than new
+              frontmatter alone.</p>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="themes episodic meta axis honest routing">
+          <h3>Episodic vs. meta: don't let meta eclipse the source</h3>
+          <div class="body">
+            <p>A meta-doc (anchor / summary / overview) <i>commentates</i> on an event. A source thread (ChatGPT /
+              Claude / Claude Code) <i>is</i> the event. When the user asks "find the thread where I figured this
+              out," the source should win — not the polished summary written after.</p>
+            <p>Anti-pattern called out in 004: <b>don't normalize toward "anchors always win."</b> Healthy routing
+              lets canonical docs win for source-of-truth questions <i>and</i> conversations win for thought-process
+              / development-history questions.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="themes null answers unfair question">
+          <h3>Null answers count as passes</h3>
+          <div class="body">
+            <p>Surfaced in 003. A query like "What friction am I facing in Neovim?" silently assumes documented
+              Neovim friction. Reframed: "Have I documented any friction in Neovim?" — and <i>null</i> becomes a
+              valid pass. Grading scheme now includes <code class="inline">unfair_question</code> and
+              <code class="inline">needs_more_context</code> alongside pass/partial/fail.</p>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="themes two-audience cold-start agent human">
+          <h3>One endpoint, two audiences</h3>
+          <div class="body">
+            <p>Sharpened in 004. Agents need cold-start context; the human needs episodic recall + judgment. Same
+              corpus, same pipeline, different response shapes. <i>Sources are not audiences</i> — that confusion
+              led to earlier architectural drift.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="themes handoffs load bearing system">
+          <h3>Handoffs are the load-bearing log</h3>
+          <div class="body">
+            <p>Every session leaves a numbered handoff: <b>Empirical Reality</b>, <b>Resume Point</b>,
+              <b>Narrative / Trajectory</b>. The system is more reliable than
+              <code class="inline">STATUS_AND_NEXT_STEPS.md</code> when the two diverge — status doc updates
+              intermittently, handoffs are written every session.</p>
+            <p class="meta">Read order: 000 (bare retrieval baseline) → 001 (A7 anchor + variant fix) → 002 (F5
+              episodic gold + S1 schema fix + source_type plan) → 003 (final v0 bank refinement) → 004 (corpus v1
+              field-test realization, two-audience framing).</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="themes stateless idempotency design">
+          <h3>Stateless by design</h3>
+          <div class="body">
+            <p><code class="inline">/enrich</code> and <code class="inline">/query</code> don't track repeat
+              requests. Caching lives upstream (agent harness) or downstream (Khoj's own cache). MyAPI is the
+              stateless ranking layer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- README aid -->
+    <section id="readme-aid" class="s-indigo">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Drafting aid</span>
+        <h2 class="section-h">README drafting aid</h2>
+        <p class="section-sub">Positioning sentence options, outline, bullets — copy and remix from here.</p>
+      </header>
+      <div class="cards">
+        <div class="card accent" data-tags="readme positioning sentence">
+          <h3>Strong positioning sentence (pick one or remix)</h3>
+          <div class="body">
+            <div class="copy-wrap" data-lang="positioning">
+<pre class="code">MyAPI is a personal context retrieval layer over years of notes,
+chatbot exports, and CLI agent sessions — built so AI agents and
+the operator can ask one endpoint instead of cold-grepping a vault.</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+            <div class="copy-wrap" data-lang="positioning">
+<pre class="code">A FastAPI + Khoj retrieval service that turns a heterogeneous personal
+corpus (Obsidian + ChatGPT + Claude + CLI agent logs) into ranked,
+evidence-tagged answers in under a few seconds — graded against a
+gold-document benchmark, not vibes.</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+            <div class="copy-wrap" data-lang="positioning">
+<pre class="code">One endpoint, two audiences: agents asking for cold-start project
+context, and the operator asking what they decided, what's broken,
+and which thread an idea actually came from.</pre>
+              <button class="copy-btn" data-copy-target="prev">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="readme outline structure">
+          <h3>Suggested README outline</h3>
+          <div class="body">
+            <ol>
+              <li><b>One-line pitch</b> + status pills (Phase 2, acceptance 6/7, Tailscale-only).</li>
+              <li><b>What this is, in plain English</b> (the agent-and-human framing in 2 sentences).</li>
+              <li><b>Quick start</b> — local dev, hit live endpoint, run tests. Three blocks, copy-paste ready.</li>
+              <li><b>Architecture</b> — components paragraph + the system diagram (or an ASCII version).</li>
+              <li><b>The three retrieval lanes</b> — bullet list, link to <code class="inline">retrieval.py</code>.</li>
+              <li><b>Trust calibration</b> — the benchmark bank, seven failure buckets, current acceptance state.</li>
+              <li><b>Notable technical decisions</b> — 4–6 bullets with commit refs (variant normalization, OP-before-PROJ classifier, synthesized-note prior guard, no idempotency).</li>
+              <li><b>What's intentionally incomplete</b> — call out the curation/authority gap honestly.</li>
+              <li><b>Current phase: corpus v1</b> — 2-paragraph framing of the source_type pivot.</li>
+              <li><b>The handoff system</b> — explain the discipline, link 000→004.</li>
+              <li><b>Source-of-truth anchors</b> — 4 anchors listed.</li>
+              <li><b>Command discipline</b> — location labels (Mac / VM / Cloud Shell), the shell rules from CLAUDE.md.</li>
+              <li><b>Testing &amp; deployment</b>.</li>
+              <li><b>License + author note</b>.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card" data-tags="readme highlight bullets product">
+          <h3>5 product / story bullets worth highlighting</h3>
+          <div class="body">
+            <ol>
+              <li><b>"Cold-start context, not cold-grep."</b> The original problem was agents burning 30–90s scanning files at every session boot. MyAPI replaces that with one <code class="inline">/query</code> call.</li>
+              <li><b>Two audiences, one corpus.</b> Agents and operator share the same pipeline; only the response shape differs.</li>
+              <li><b>Benchmarked, not vibes-tested.</b> Gold-document assertions per query, seven diagnostic buckets, lowest-leverage-layer-first rubric.</li>
+              <li><b>Handoff discipline as system memory.</b> Numbered session handoffs are the load-bearing log — more reliable than ad-hoc status docs.</li>
+              <li><b>Multi-source corpus, real.</b> Obsidian + ChatGPT + Claude + Claude Code + Codex, parsed by five adapters into one normalized shape.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card" data-tags="readme technical bullets details">
+          <h3>5 technical details worth mentioning</h3>
+          <div class="body">
+            <ol>
+              <li><b>Three retrieval lanes</b> (semantic via Khoj + keyword with variant normalization + guarded synthesized-note prior) OR'd into a reranker with phrase boost <code class="inline">+0.45</code> and prior boost <code class="inline">+0.14</code>.</li>
+              <li><b>Intent classifier orders OPERATIONAL before PROJECT</b> so "MyAPI is broken" doesn't fall into the project-explainer bucket (commit <code class="inline">5d713ab</code>).</li>
+              <li><b>Hyphen / space / no-space phrase normalization</b> in the keyword lane (commits <code class="inline">28a22b0</code>, <code class="inline">497afc4</code>).</li>
+              <li><b>Gemini-1.5-Flash batch enrichment</b>, max 50 docs/request, pinned in <code class="inline">/health</code>.</li>
+              <li><b>Mechanical acceptance harness</b> in <code class="inline">scripts/acceptance.py</code> hits the live endpoint with gold-doc IDs per query — fail = score regression, not test framework error.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="readme clarification unknown needs verification">
+          <h3>5 things still need clarification (before going public) <span class="tag verify">verify</span></h3>
+          <div class="body">
+            <ol>
+              <li><b>Corpus size.</b> README says ~3,201 non-empty .md; memory says 1,791 docs. Pick the current number and document the asof-date.</li>
+              <li><b>Two deploy scripts.</b> What does <code class="inline">deploy_to_brain.sh</code> do that <code class="inline">deploy_to_khoj.sh</code> doesn't? Is one deprecated?</li>
+              <li><b>Test count.</b> README says 13 test files; <code class="inline">ls tests/</code> shows 11 <code class="inline">test_*.py</code>. Recount or update the README.</li>
+              <li><b>Pushed-or-not state of recent work.</b> Handoffs 002–003 noted 8 commits unpushed; current branch state and remote sync should be confirmed before any public demo.</li>
+              <li><b>"Indexed Obsidian delta."</b> Handoffs reference ~27 missing files. Is the patch-index script (<code class="inline">khoj_repair_index_delta.py</code>) the canonical fix, and has it been re-run after the latest vault state?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="card" data-tags="readme tone honest authentic non-marketing">
+          <h3>Tone guardrails (for the README writer)</h3>
+          <div class="body">
+            <ul>
+              <li><b>Don't invent authority.</b> If a thing isn't done — say so. The 004 codex sitrep gives the right honest split: <i>"searchability is automated; authority and curation are mostly manual."</i></li>
+              <li><b>Lead with what shipped.</b> Per memory: open with product wins, frame collateral as a bank-update question, not as a regression.</li>
+              <li><b>Distinguish episodic from meta</b> in the writing itself — call out which sentences are summary and which are direct ground-truth from handoffs.</li>
+              <li><b>Don't push the marketing register.</b> "Trust calibration via a gold-document benchmark" is true; "production-grade RAG" would be reach.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risks -->
+    <section id="risks" class="s-amber">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Risks</span>
+        <h2 class="section-h">Risks &amp; open questions</h2>
+        <p class="section-sub">The honest gaps. Some accepted, some open, some pending verification.</p>
+      </header>
+      <div class="cards">
+        <div class="card" data-tags="risk auth security tailscale">
+          <h3>No auth on the service <span class="tag">accepted</span></h3>
+          <div class="body">
+            <p>The trust boundary is Tailscale. If Tailscale is wide-open on any peer, the endpoint is too. Acceptable
+              today for a personal tool; would need auth before any non-Tailscale exposure.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="risk corpus normalization v1 pending">
+          <h3>Corpus v1 normalization fields not yet implemented <span class="tag open">open</span></h3>
+          <div class="body">
+            <p>Planned fields (<code class="inline">source_type</code>, <code class="inline">work_type</code>,
+            <code class="inline">temporal_mode</code>, and the conversation set) are designed in
+            <code class="inline">project-docs/source-type-taxonomy-plan.md</code> but not stamped on the
+            corpus yet. Most Phase 2 expectations are gated on this work.</p>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="risk a1 bank-evolution regression">
+          <h3>A1 acceptance regression <span class="tag">known bank-evolution fail</span></h3>
+          <div class="body">
+            <p>"What is MyAPI and what is its current goal?" — <code class="inline">myapi-status-anchor.md</code>
+            wins by 0.002 over <code class="inline">obsidian-myapi-anchor.md</code>. Per 002 diagnosis, the
+            devinfra anchor is indexed but has low semantic similarity to the goal query and Khoj only returns
+            8 candidates total for the A1 query. <b>Real fix is bank update + source_type weights</b>, not
+            retrieval tuning. Deferred until Lane 3 lands.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="risk obsidian index delta 27 files">
+          <h3>~27 Obsidian files missing from the index <span class="tag">tracked, not blocking</span></h3>
+          <div class="body">
+            <p>Per the delta-patch report. Patchable via
+            <code class="inline">scripts/khoj_repair_index_delta.py</code>. Re-confirm the count against current
+            vault state before claiming a fix.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="risk curation manual export public users">
+          <h3>Curation gap for public use <span class="tag open">open / scope question</span></h3>
+          <div class="body">
+            <p>Codex sitrep at the bottom of 004: a stranger with their own ChatGPT/Claude export can run
+            <code class="inline">ingest_all.py</code> and get a searchable low-trust scratchpad. They do <b>not</b>
+            get: automatic thread importance scoring, project taxonomy assignment, artifact summaries, sensitive
+            content filtering, long-thread topic splitting, robust dedupe of repeated exports, promotion to
+            trusted memory, or any corpus-v1 routing fields.</p>
+            <p>Direction (not current state): an interactive review queue — exclude / private / summarize / assign
+            project / mark outcome / promote, with a <code class="inline">raw_thread_weight</code> dial per thread.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="risk vm shutdown availability cost">
+          <h3>VM auto-shutdown coupling <span class="tag">accepted</span></h3>
+          <div class="body">
+            <p>VM idles down after a few hours. Acceptance / live queries require an explicit
+            <code class="inline">gcloud compute instances start</code> first. Acceptable for personal use; would
+            break any always-on agent integration.</p>
+          </div>
+        </div>
+
+        <div class="card" data-tags="risk field test cold-start lab vs real">
+          <h3>Field test not yet run <span class="tag open">open</span></h3>
+          <div class="body">
+            <p>The 10-query batch in 004 is a <i>lab test</i>. Real proof — fresh cold-start agents with no
+            memory beyond "use MyAPI first" running real tasks against real projects — has not happened yet.
+            Phase 2 success criterion lives here.</p>
+          </div>
+        </div>
+
+        <div class="card accent" data-tags="risk verification claims discrepancy">
+          <h3>Claims to verify before publishing <span class="tag verify">needs verification</span></h3>
+          <div class="body">
+            <ul>
+              <li>Indexed doc count: README says ~3,201; memory says 1,791. <i>Which is current?</i></li>
+              <li>Test count: README says 13; <code class="inline">tests/</code> has 11 <code class="inline">test_*.py</code> files.</li>
+              <li>Push state of handoff 002–003 commits to <code class="inline">main</code>.</li>
+              <li>Role of <code class="inline">deploy_to_brain.sh</code> vs <code class="inline">deploy_to_khoj.sh</code>.</li>
+              <li>Validity of <code class="inline">100.85.100.52:8000</code> as the live Tailscale endpoint.</li>
+              <li>Whether Khoj/Gemini API key flow described matches the current code in <code class="inline">enrichment.py</code>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Status -->
+    <section id="status" class="s-emerald">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Status</span>
+        <h2 class="section-h">Current status snapshot</h2>
+        <p class="section-sub">Where Phase 2 sits today and the immediate next steps from the handoff queue.</p>
+      </header>
+      <div class="cards">
+        <div class="card accent" data-tags="status phase 2 acceptance">
+          <h3>Where things stand</h3>
+          <div class="body">
+            <ul>
+              <li><b>Phase 1</b> (build the pipeline) — closed and deployed.</li>
+              <li><b>Phase 2</b> (trust calibration → corpus v1 normalization) — active.</li>
+              <li><b>Acceptance harness</b> — 6/7 mechanical pass. A1 is a known bank-evolution question, deferred until <code class="inline">source_type</code> weights land.</li>
+              <li><b>Live VM</b> — GCP <code class="inline">us-central1-a</code>, instance <code class="inline">instance-20260418-024637</code>, Tailscale IP <code class="inline">100.85.100.52</code> per memory.</li>
+              <li><b>Corpus</b> — confirmed live with documents indexed; <i>exact count needs verification</i> (1,791 vs 3,201 disagreement).</li>
+              <li><b>Last handoff</b> — 004 (2026-05-05), corpus-v1 field-test realization.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-tags="status next steps roadmap">
+          <h3>Immediate next steps (from handoffs 003 / 004)</h3>
+          <div class="body">
+            <ol>
+              <li>Walk <code class="inline">benchmark-v1.md</code> top-down (18 → ~30 queries), classify keep / rewrite / delete / unsure per query with Sab's per-query approval.</li>
+              <li>Apply taxonomy column: <i>known-answer retrieval / existence check / synthesis / operational recall / pattern extraction</i>.</li>
+              <li>Classify the 10 live batch results in <code class="inline">corpus-v1-live-categorization-2026-05-05.md</code> by content quality, not source type.</li>
+              <li>Implement <code class="inline">source_type</code> + sibling routing fields at ingestion (folder-derived where possible).</li>
+              <li>Run the v1 bank against the normalized corpus → that data is the blueprint for the final v0 retrieval-quality verdict.</li>
+              <li>Push the open commits when the bank work is committed (carry from 002 / 003).</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Self-audit -->
+    <section id="audit" class="s-slate">
+      <header class="section-head">
+        <span class="section-eyebrow"><span class="eye-dot"></span>Private notes</span>
+        <h2 class="section-h">Self-audit notes</h2>
+        <p class="section-sub">For your eyes — what the project is and isn't, terminology drift, voice cues.</p>
+      </header>
+      <div class="cards">
+        <div class="card" data-tags="audit honest gap project">
+          <h3>What the system genuinely is, vs what it could sound like</h3>
+          <div class="body">
+            <ul>
+              <li><b>Genuinely is</b>: a working personal RAG with a thoughtfully designed reranker, a benchmark
+                discipline, and a session-log practice that's better than most personal projects of this size.</li>
+              <li><b>Could sound like (don't lean here)</b>: a general-purpose enterprise memory product, a
+                production trust-graded retrieval platform, a multi-tenant tool. None of those are accurate today.</li>
+              <li><b>Stretch claims to drop</b>: any "under 3 seconds" guarantee unless measured fresh; any
+                "auto-curates your knowledge" framing — curation is the explicit unfinished part.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-tags="audit terminology naming consistency">
+          <h3>Terminology drift to clean up before README</h3>
+          <div class="body">
+            <ul>
+              <li><b>MyAPI</b> vs <b>Context Refinery</b> vs <b>Brain</b> — these names overlap. The repo is
+                "MyAPI"; the Python package is <code class="inline">context_refinery/</code>; the FastAPI service
+                title is "Context Refinery API"; the deploy script is <code class="inline">deploy_to_brain.sh</code>.
+                Pick one canonical name for the README, footnote the others.</li>
+              <li><b>"Trust calibration"</b> is great internal language. Public README readers may parse it as
+                jargon — define it inline the first time.</li>
+              <li><b>"Phase 1 / Phase 2"</b> only makes sense if the reader knows what Phase 0 was. Briefly anchor
+                both, or drop the phase numbering and describe the current focus directly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" data-tags="audit narrative voice author">
+          <h3>Author-voice notes</h3>
+          <div class="body">
+            <ul>
+              <li>The 004 narrative ("we shouldn't invent authority, we shouldn't reinvent history, we shouldn't
+                recreate or fabricate episodic history") is one of the strongest sentences in the whole repo.
+                Worth quoting verbatim in the README's "what this isn't" section.</li>
+              <li>Handoff narratives use <i>Intent / Interpretation / Tension / Momentum</i> — that frame is
+                unusual and good. Consider adopting it for any longer "Author" section.</li>
+              <li>The phrase "honest routing" (from 004's normalization realization) deserves a line in the README.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p id="emptyState" class="empty-note" style="display:none;">No cards match that filter.</p>
+
+    <div class="footer">
+      <div class="footer-row">
+        <span class="footer-dot" aria-hidden="true"></span>
+        <span>Generated <span id="genDate"></span></span>
+        <span>·</span>
+        <span>Private reference · single file · no CDN</span>
+        <span>·</span>
+        <span>Sources: repo state, <code class="inline">handoffs/000–004</code>, <code class="inline">project-docs/</code>, <code class="inline">MEMORY.md</code></span>
+      </div>
+      <p style="margin: 8px 0 0;">Verify <span class="tag verify">needs verification</span> tags before quoting publicly.</p>
+    </div>
+
+  </main>
+</div>
+
+<script>
+(() => {
+  document.getElementById('genDate').textContent = new Date().toISOString().slice(0,10);
+
+  // Theme
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeToggle');
+  let savedTheme = null;
+  try { savedTheme = localStorage.getItem('myapi-ref-theme'); } catch(e){}
+  if (savedTheme === 'dark') root.setAttribute('data-theme', 'dark');
+  themeBtn.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    if (isDark) root.removeAttribute('data-theme'); else root.setAttribute('data-theme', 'dark');
+    try { localStorage.setItem('myapi-ref-theme', isDark ? 'light' : 'dark'); } catch(e){}
+  });
+
+  // Collapsible cards
+  document.querySelectorAll('.card h3').forEach(h => {
+    const card = h.closest('.card');
+    const caret = document.createElement('span');
+    caret.className = 'caret';
+    caret.textContent = '▾';
+    h.appendChild(caret);
+    h.addEventListener('click', () => card.classList.toggle('collapsed'));
+  });
+
+  document.getElementById('expandAll').addEventListener('click', () => {
+    document.querySelectorAll('.card.collapsed').forEach(c => c.classList.remove('collapsed'));
+  });
+  document.getElementById('collapseAll').addEventListener('click', () => {
+    document.querySelectorAll('.card').forEach(c => c.classList.add('collapsed'));
+  });
+
+  // Copy buttons
+  function flashCopied(btn) {
+    const prev = btn.textContent;
+    btn.textContent = 'Copied';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = prev; btn.classList.remove('copied'); }, 1100);
+  }
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const pre = btn.parentElement.querySelector('pre.code');
+      if (!pre) return;
+      const text = pre.innerText;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => flashCopied(btn)).catch(() => flashCopied(btn));
+      } else {
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch(e){}
+        document.body.removeChild(ta);
+        flashCopied(btn);
+      }
+    });
+  });
+
+  // File map — click row to copy path
+  document.querySelectorAll('#fileMap .row').forEach(row => {
+    row.addEventListener('click', () => {
+      const p = row.getAttribute('data-path') || '';
+      if (!p) return;
+      if (navigator.clipboard) navigator.clipboard.writeText(p).catch(()=>{});
+      row.animate(
+        [
+          { backgroundColor: 'var(--indigo-bg)' },
+          { backgroundColor: 'var(--card)' }
+        ],
+        { duration: 600, easing: 'ease-out' }
+      );
+    });
+  });
+
+  // Search / filter
+  const input = document.getElementById('searchInput');
+  const cards = Array.from(document.querySelectorAll('.card'));
+  const sections = Array.from(document.querySelectorAll('section'));
+  const empty = document.getElementById('emptyState');
+  function applyFilter() {
+    const q = input.value.trim().toLowerCase();
+    if (!q) {
+      cards.forEach(c => c.classList.remove('hide-by-search'));
+      sections.forEach(s => s.classList.remove('hide-by-search'));
+      empty.style.display = 'none';
+      return;
+    }
+    let anyMatch = false;
+    cards.forEach(c => {
+      const tags = (c.getAttribute('data-tags') || '').toLowerCase();
+      const text = c.innerText.toLowerCase();
+      const match = tags.includes(q) || text.includes(q);
+      c.classList.toggle('hide-by-search', !match);
+      if (match) anyMatch = true;
+    });
+    sections.forEach(s => {
+      const visible = s.querySelectorAll('.card:not(.hide-by-search)').length;
+      s.classList.toggle('hide-by-search', visible === 0);
+    });
+    empty.style.display = anyMatch ? 'none' : 'block';
+  }
+  input.addEventListener('input', applyFilter);
+
+  // Sidebar nav active state via IntersectionObserver
+  const navLinks = Array.from(document.querySelectorAll('.nav a'));
+  const byId = id => navLinks.find(a => a.getAttribute('href') === '#' + id);
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const a = byId(e.target.id);
+          if (a) a.classList.add('active');
+        }
+      });
+    }, { rootMargin: '0px 0px -75% 0px', threshold: 0.01 });
+    sections.forEach(s => io.observe(s));
+  }
+})();
+</script>
+</body>
+</html>
