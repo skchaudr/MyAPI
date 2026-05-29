@@ -41,7 +41,8 @@ async def import_obsidian(file: UploadFile = File(...)):
             result["source"]["original_file_name"] = file.filename
         return CanonicalDocumentResponse(**result)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error importing obsidian file: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
     finally:
         os.remove(tmp_path)
 
@@ -72,22 +73,40 @@ async def import_chatgpt(file: UploadFile = File(...)):
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
     try:
-        results = scan_codex_sessions(root=request.root)
+        root_path = request.root or "~/.codex/command-logs"
+        base_dir = os.path.abspath(os.path.expanduser("~/.codex/command-logs"))
+        target_path = os.path.abspath(os.path.expanduser(root_path))
+        if os.path.commonpath([base_dir, target_path]) != base_dir:
+            logger.error("Security: Path traversal attempt blocked", extra={"target_path": root_path})
+            raise HTTPException(status_code=403, detail="Invalid root path specified.")
+
+        results = scan_codex_sessions(root=root_path)
 
         parsed_results = []
         for doc in results:
             parsed_results.append(CanonicalDocumentResponse(**doc))
 
         return parsed_results
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error(f"Error scanning codex sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error scanning codex sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
 
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
     try:
-        docs = scan_claude_sessions(root=request.root)
+        root_path = request.root or "~/.claude/projects"
+        base_dir = os.path.abspath(os.path.expanduser("~/.claude/projects"))
+        target_path = os.path.abspath(os.path.expanduser(root_path))
+        if os.path.commonpath([base_dir, target_path]) != base_dir:
+            logger.error("Security: Path traversal attempt blocked", extra={"target_path": root_path})
+            raise HTTPException(status_code=403, detail="Invalid root path specified.")
+
+        docs = scan_claude_sessions(root=root_path)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error(f"Error importing claude code sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error importing claude code sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
