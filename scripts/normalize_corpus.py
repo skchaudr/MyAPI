@@ -16,6 +16,7 @@ Design notes — see project-docs/corpus-v1-normalization-readiness.md.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import logging
 import os
@@ -235,19 +236,7 @@ def scan_chatgpt(zip_or_json: Optional[str]) -> Iterable[ManifestEntry]:
         logger.warning(f"ChatGPT export not found at {zip_or_json}; skipping.")
         return
 
-    conversations = []
-    if zip_or_json.endswith(".zip"):
-        import zipfile
-        with zipfile.ZipFile(zip_or_json) as z:
-            shards = sorted(
-                n for n in z.namelist()
-                if n.startswith("conversations") and n.endswith(".json")
-            )
-            for shard in shards:
-                conversations.extend(json.loads(z.read(shard)))
-    else:
-        with open(zip_or_json, "r", encoding="utf-8") as f:
-            conversations = json.load(f)
+    conversations = _load_chatgpt_blob(str(path)) or []
 
     for conv in conversations:
         title = conv.get("title") or "untitled"
@@ -361,6 +350,15 @@ def slugify(text: str, max_len: int = 60) -> str:
     return text[:max_len] or "untitled"
 
 
+def entry_fingerprint(entry: dict) -> str:
+    """Stable short suffix for avoiding filename collisions."""
+    basis = "|".join(
+        str(entry.get(key, ""))
+        for key in ("source", "rel_path", "src_path")
+    )
+    return hashlib.sha1(basis.encode("utf-8")).hexdigest()[:8]
+
+
 def read_frontmatter_and_body(content: str) -> tuple[dict, str]:
     """Parse YAML frontmatter from markdown content. Returns ({}, content) if absent."""
     if not content.startswith("---"):
@@ -451,7 +449,7 @@ def copy_conversation_entry(
 
     title = doc.get("title", entry["title"])
     slug = slugify(title)
-    filename = f"{source}-{slug}-{conv_id[:8]}.md"
+    filename = f"{source}-{slug}-{conv_id[:8]}-{entry_fingerprint(entry)}.md"
     out_path = out_root / "conversations" / source / filename
 
     fm = {
@@ -501,7 +499,7 @@ def copy_cli_session_entry(entry: dict, out_root: Path) -> Optional[Path]:
     title = doc.get("title", entry["title"])
     slug = slugify(title)
     sid = doc.get("id", "")[:8] or "unknown"
-    filename = f"{source}-{slug}-{sid}.md"
+    filename = f"{source}-{slug}-{sid}-{entry_fingerprint(entry)}.md"
     out_path = out_root / "conversations" / source / filename
 
     fm = {
@@ -596,8 +594,13 @@ def run_copy(args: argparse.Namespace) -> int:
 def _load_chatgpt_blob(path: Optional[str]) -> Optional[list]:
     if not path or not os.path.exists(path):
         return None
+    path_obj = Path(path)
     out: list = []
-    if path.endswith(".zip"):
+    if path_obj.is_dir():
+        shards = sorted(path_obj.glob("conversations*.json"))
+        for shard in shards:
+            out.extend(json.loads(shard.read_text(encoding="utf-8")))
+    elif path.endswith(".zip"):
         import zipfile
         with zipfile.ZipFile(path) as z:
             shards = sorted(
@@ -714,7 +717,7 @@ def build_parser() -> argparse.ArgumentParser:
     ps.add_argument("--claude-code", default=DEFAULT_CLAUDE_PROJECTS)
     ps.add_argument("--codex", default=DEFAULT_CODEX_LOGS)
     ps.add_argument("--chatgpt", default=None,
-                    help="Path to ChatGPT conversations.json or export zip")
+                    help="Path to ChatGPT conversations.json, export zip, or shard directory")
     ps.add_argument("--claude-web", default=None,
                     help="Path to Claude.ai export zip")
     ps.add_argument("--skip-obsidian", action="store_true")
