@@ -1,69 +1,40 @@
 import re
 import string
 
+_WS_TRAILING_RE = re.compile(r'[ \t]+\r?$', flags=re.MULTILINE)
+_WS_INTERNAL_RE = re.compile(r'(?<=\S)[ \t]+')
+_WS_NEWLINES_RE = re.compile(r'\n{3,}')
+
 def normalize_whitespace(text: str) -> str:
     """Normalize whitespace and newlines."""
     if not text:
         return ""
-    # Replace 3 or more newlines with 2 newlines
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    lines = []
-    for line in text.split('\n'):
-        # match leading whitespace to keep it
-        match = re.match(r'^(\s*)', line)
-        leading = match.group(1) if match else ""
+    # remove trailing whitespace
+    text = _WS_TRAILING_RE.sub('', text)
+    # collapse multiple spaces/tabs internally (not leading)
+    text = _WS_INTERNAL_RE.sub(' ', text)
+    # replace 3 or more newlines with 2 newlines
+    text = _WS_NEWLINES_RE.sub('\n\n', text)
+    return text.strip()
 
-        # replace internal multiple spaces/tabs with single space
-        content = line[len(leading):]
-        content = re.sub(r'[ \t]+', ' ', content)
-
-        # combine and right strip
-        lines.append((leading + content).rstrip())
-
-    # join with newlines, but remove more than 2 consecutive newlines again
-    joined = '\n'.join(lines).strip()
-    joined = re.sub(r'\n{3,}', '\n\n', joined)
-    return joined
+_HEADING_RE = re.compile(r'^(#{1,6})([^\s#].*)$', flags=re.MULTILINE)
 
 def normalize_headings(text: str) -> str:
     """Ensure proper markdown heading formatting (e.g. #Heading to # Heading)."""
     if not text:
         return ""
+    return _HEADING_RE.sub(r'\1 \2', text)
 
-    def add_space(match):
-        hashes = match.group(1)
-        content = match.group(2)
-        return f"{hashes} {content}"
-
-    # Matches ^#{1,6}[^\s#]
-    text = re.sub(r'^(#{1,6})([^\s#].*)$', add_space, text, flags=re.MULTILINE)
-    return text
+_BOILERPLATE_RE = re.compile(
+    r'^[ \t]*(?:(?:copyright\s+\(c\)|copyright\s+\d{4}|all rights reserved|this page intentionally left blank)[^\r\n]*|unsubscribe[ \t]*)(?=\r?\n|$)\r?\n?',
+    flags=re.IGNORECASE | re.MULTILINE
+)
 
 def strip_boilerplate(text: str) -> str:
     """Strip boilerplate/repeated footers/headers where identifiable."""
     if not text:
         return ""
-    lines = text.split('\n')
-
-    # Common boilerplate patterns
-    boilerplate_patterns = [
-        r'^copyright\s+\(c\)',
-        r'^copyright\s+\d{4}',
-        r'^all rights reserved',
-        r'^this page intentionally left blank',
-        r'^unsubscribe$'
-    ]
-
-    compiled_patterns = [re.compile(p, re.IGNORECASE) for p in boilerplate_patterns]
-
-    cleaned_lines = []
-    for line in lines:
-        stripped_line = line.strip()
-        is_boilerplate = any(p.match(stripped_line) for p in compiled_patterns)
-        if not is_boilerplate:
-            cleaned_lines.append(line)
-
-    return '\n'.join(cleaned_lines).strip()
+    return _BOILERPLATE_RE.sub('', text).strip()
 
 def detect_noise(text: str) -> list[str]:
     """Detect noisy/very-short/near-empty content and populate quality warnings."""
@@ -76,7 +47,7 @@ def detect_noise(text: str) -> list[str]:
     if len(stripped_text) < 50:
         warnings.append("Document is very short (under 50 characters).")
 
-    alnum_count = sum(c.isalnum() for c in stripped_text)
+    alnum_count = sum(map(str.isalnum, stripped_text))
     if len(stripped_text) > 0 and alnum_count / len(stripped_text) < 0.5:
         warnings.append("Document contains excessive non-alphanumeric characters (noisy content).")
 

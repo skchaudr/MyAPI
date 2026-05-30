@@ -1,0 +1,3 @@
+## 2025-02-23 - Optimize Sanitization Regexes
+**Learning:** Moving from line-by-line string iteration with inline regex compiling to module-level pre-compiled multi-line regexes (`re.sub` with `re.MULTILINE`) significantly speeds up text processing routines like whitespace and boilerplate removal. Additionally, `sum(map(str.isalnum, string))` is meaningfully faster than a generator comprehension `sum(c.isalnum() for c in string)` for validation loops.
+**Action:** Always pre-compile regexes at the module level for frequently called functions, use global regex operations over line-by-line loops, and prefer mapping built-in string methods over generator expressions for performance-critical text validations.
