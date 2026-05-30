@@ -41,7 +41,8 @@ async def import_obsidian(file: UploadFile = File(...)):
             result["source"]["original_file_name"] = file.filename
         return CanonicalDocumentResponse(**result)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error importing obsidian file: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
     finally:
         os.remove(tmp_path)
 
@@ -53,8 +54,12 @@ async def import_chatgpt(file: UploadFile = File(...)):
     content = await file.read()
     try:
         data = json.loads(content)
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON file provided for ChatGPT import: {e}", exc_info=True)
         raise HTTPException(status_code=422, detail="Invalid JSON file.")
+    except Exception as e:
+        logger.error(f"Error reading ChatGPT import file: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
 
     if isinstance(data, dict):
         data = [data]
@@ -65,29 +70,50 @@ async def import_chatgpt(file: UploadFile = File(...)):
             doc = parse_chatgpt_conversation(item)
             results.append(CanonicalDocumentResponse(**doc))
         except Exception as e:
-            logger.error(f"Skipping a conversation due to parsing error: {e}")
+            logger.error(f"Skipping a conversation due to parsing error: {e}", exc_info=True)
 
     return results
+
+def _validate_safe_path(user_path: str, expected_base: str) -> str:
+    base_dir = os.path.abspath(os.path.expanduser(expected_base))
+    # Avoid type error if user_path is None, though pydantic schemas handle defaults,
+    # it's safe to check.
+    if not user_path:
+        user_path = expected_base
+    target_path = os.path.abspath(os.path.expanduser(user_path))
+    if os.path.commonpath([base_dir, target_path]) != base_dir:
+        raise ValueError("Invalid path provided.")
+    return target_path
 
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
     try:
-        results = scan_codex_sessions(root=request.root)
+        safe_root = _validate_safe_path(request.root, "~/.codex/command-logs")
+        results = scan_codex_sessions(root=safe_root)
 
         parsed_results = []
         for doc in results:
             parsed_results.append(CanonicalDocumentResponse(**doc))
 
         return parsed_results
+    except ValueError as ve:
+        # Security exception
+        logger.warning(f"Path validation failed in import_codex: {ve}")
+        raise HTTPException(status_code=400, detail="Invalid path provided.")
     except Exception as e:
-        logger.error(f"Error scanning codex sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error scanning codex sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
 
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
     try:
-        docs = scan_claude_sessions(root=request.root)
+        safe_root = _validate_safe_path(request.root, "~/.claude/projects")
+        docs = scan_claude_sessions(root=safe_root)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
+    except ValueError as ve:
+        # Security exception
+        logger.warning(f"Path validation failed in import_claude_code: {ve}")
+        raise HTTPException(status_code=400, detail="Invalid path provided.")
     except Exception as e:
-        logger.error(f"Error importing claude code sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error importing claude code sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred.")
