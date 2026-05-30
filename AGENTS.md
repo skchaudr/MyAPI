@@ -61,3 +61,58 @@ That can turn one intended shell command into several separate lines, which may:
 Single-line commands are easier to copy, paste, and visually verify across
 multiple machines. They also make it obvious whether a command is meant for the
 Mac, the VM, VM shell, or Cloud Shell.
+
+## Operator relay
+
+This task may have a live operator on the other end of an HTTPS relay
+(see https://github.com/skchaudr/jules-relay).
+
+Env vars (set per-session):
+- `RELAY_URL` — base URL of the relay
+- `RELAY_TOKEN` — bearer token
+
+On session start, open an SSE subscription:
+
+```bash
+curl -N "$RELAY_URL/events" -H "Authorization: Bearer $RELAY_TOKEN" &
+```
+
+Behavior rules:
+- Post `STATE:` before any high-risk or irreversible step (deploy, migration,
+  destructive file ops, network calls with side effects).
+- If a message arrives with `from=m1` and `kind=ASK`, **pause the specific
+  gated decision it refers to** until an `ACK` arrives from `m1`, or until
+  the relay becomes unreachable. Continue everything else.
+- If the relay is unreachable (connection refused, 5xx, timeout): proceed
+  per the original task brief, EXCEPT for actions explicitly marked
+  "operator-gated" in the task.
+- NEVER place secrets, credentials, private URLs, tokens, SSH details, or
+  sensitive repo contents in relay messages. Coordination text only.
+
+### Message envelope
+
+`POST $RELAY_URL/msg` with `Authorization: Bearer $RELAY_TOKEN`:
+
+```json
+{ "from": "jules", "kind": "STATE" | "ASK" | "ACK", "text": "..." }
+```
+
+`text` must be ≤ 4096 chars, non-empty.
+
+## Environment
+
+| Var | Purpose | Set by |
+|---|---|---|
+| `RELAY_URL` | Relay endpoint | Jules session env |
+| `RELAY_TOKEN` | Relay auth | Jules session env |
+| `KHOJ_URL` | Khoj API base URL (e.g. `http://100.107.147.16:42110`) | Operator |
+| `GEMINI_API_KEY` | Google GenAI key (for reranker / embeddings) | Operator |
+
+## Project snapshot
+
+- **Language:** Python 3.11+
+- **Install:** `pip install -r requirements.txt`
+- **Test:** `pytest -q` (from project root, no PYTHONPATH needed inside repo)
+- **Lint:** none configured
+- **Heavy dirs excluded from git:** `corpus_v1/`, `_archive/`, `khoj-ready-bundle/`, `scratch/`
+- **Key modules:** `context_refinery/` (triage pipeline), `api/`, `scripts/`, `tests/`
