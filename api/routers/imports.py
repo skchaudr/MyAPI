@@ -14,6 +14,13 @@ from typing import Optional
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
+def validate_import_path(user_path: Optional[str], default_path: str) -> str:
+    base_dir = os.path.abspath(os.path.expanduser(default_path))
+    target_path = os.path.abspath(os.path.expanduser(user_path or default_path))
+    if os.path.commonpath([base_dir, target_path]) != base_dir:
+        raise ValueError("Invalid path: path traversal detected.")
+    return target_path
+
 class CodexImportRequest(BaseModel):
     root: Optional[str] = "~/.codex/command-logs"
 
@@ -72,7 +79,12 @@ async def import_chatgpt(file: UploadFile = File(...)):
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
     try:
-        results = scan_codex_sessions(root=request.root)
+        safe_root = validate_import_path(request.root, "~/.codex/command-logs")
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+
+    try:
+        results = scan_codex_sessions(root=safe_root)
 
         parsed_results = []
         for doc in results:
@@ -86,7 +98,12 @@ async def import_codex(request: CodexImportRequest = CodexImportRequest()):
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
     try:
-        docs = scan_claude_sessions(root=request.root)
+        safe_root = validate_import_path(request.root, "~/.claude/projects")
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
+
+    try:
+        docs = scan_claude_sessions(root=safe_root)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
     except Exception as e:
         logger.error(f"Error importing claude code sessions: {e}")
