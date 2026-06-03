@@ -41,7 +41,8 @@ async def import_obsidian(file: UploadFile = File(...)):
             result["source"]["original_file_name"] = file.filename
         return CanonicalDocumentResponse(**result)
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error("Error importing obsidian file", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
     finally:
         os.remove(tmp_path)
 
@@ -65,14 +66,20 @@ async def import_chatgpt(file: UploadFile = File(...)):
             doc = parse_chatgpt_conversation(item)
             results.append(CanonicalDocumentResponse(**doc))
         except Exception as e:
-            logger.error(f"Skipping a conversation due to parsing error: {e}")
+            logger.error("Skipping a conversation due to parsing error", exc_info=True)
 
     return results
 
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
+    base_dir = os.path.abspath(os.path.expanduser("~/.codex/command-logs"))
+    target_path = os.path.abspath(os.path.expanduser(request.root or "~/.codex/command-logs"))
+
+    if os.path.commonpath([base_dir, target_path]) != base_dir:
+        raise HTTPException(status_code=400, detail="Invalid root path.")
+
     try:
-        results = scan_codex_sessions(root=request.root)
+        results = scan_codex_sessions(root=target_path)
 
         parsed_results = []
         for doc in results:
@@ -80,14 +87,20 @@ async def import_codex(request: CodexImportRequest = CodexImportRequest()):
 
         return parsed_results
     except Exception as e:
-        logger.error(f"Error scanning codex sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error("Error scanning codex sessions", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
 
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
+    base_dir = os.path.abspath(os.path.expanduser("~/.claude/projects"))
+    target_path = os.path.abspath(os.path.expanduser(request.root or "~/.claude/projects"))
+
+    if os.path.commonpath([base_dir, target_path]) != base_dir:
+        raise HTTPException(status_code=400, detail="Invalid root path.")
+
     try:
-        docs = scan_claude_sessions(root=request.root)
+        docs = scan_claude_sessions(root=target_path)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
     except Exception as e:
-        logger.error(f"Error importing claude code sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error("Error importing claude code sessions", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
