@@ -51,3 +51,4 @@ scratch/
 !scratch/vertex_client.py
 !scratch/run_comparative_benchmark.py
 !scratch/mock_interview_prep.md
+.aider*
