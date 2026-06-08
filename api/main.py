@@ -1,6 +1,11 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from api.observability import init_sentry
 from api.routers import enrich, imports, query
+
+init_sentry()
 
 app = FastAPI(title="Context Refinery API", version="1.0.0")
 
@@ -24,3 +29,9 @@ app.include_router(query.router)
 @app.get("/health")
 def health():
     return {"status": "ok", "model": "gemini-1.5-flash"}
+
+
+if os.getenv("ENABLE_SENTRY_TEST_ENDPOINT") == "1":
+    @app.get("/debug/sentry-test")
+    def sentry_test():
+        raise RuntimeError("MyAPI Sentry smoke test")

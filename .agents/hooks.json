@@ -4,7 +4,7 @@
     "PreInvocation": [
       {
         "type": "command",
-        "command": "python3 ./.agents/hooks/ag_natural_guard.py pre-invocation",
+        "command": "python3 ./hooks/ag_natural_guard.py pre-invocation",
         "timeout": 5
       }
     ],
@@ -14,7 +14,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ./.agents/hooks/ag_natural_guard.py pre-tool-use",
+            "command": "python3 ./hooks/ag_natural_guard.py pre-tool-use",
             "timeout": 10
           }
         ]
@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 ./.agents/hooks/ag_natural_guard.py post-tool-use",
+            "command": "python3 ./hooks/ag_natural_guard.py post-tool-use",
             "timeout": 5
           }
         ]
@@ -35,7 +35,7 @@
     "Stop": [
       {
         "type": "command",
-        "command": "python3 ./.agents/hooks/ag_natural_guard.py stop",
+        "command": "python3 ./hooks/ag_natural_guard.py stop",
         "timeout": 5
       }
     ]
