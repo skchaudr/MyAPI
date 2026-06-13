@@ -71,8 +71,13 @@ async def import_chatgpt(file: UploadFile = File(...)):
 
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
+    base_dir = os.path.abspath(os.path.expanduser("~/.codex/command-logs"))
+    target_path = os.path.abspath(os.path.expanduser(request.root or "~/.codex/command-logs"))
+    if os.path.commonpath([base_dir, target_path]) != base_dir:
+        raise HTTPException(status_code=400, detail="Invalid path")
+
     try:
-        results = scan_codex_sessions(root=request.root)
+        results = scan_codex_sessions(root=target_path)
 
         parsed_results = []
         for doc in results:
@@ -80,14 +85,19 @@ async def import_codex(request: CodexImportRequest = CodexImportRequest()):
 
         return parsed_results
     except Exception as e:
-        logger.error(f"Error scanning codex sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error scanning codex sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
 
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
+    base_dir = os.path.abspath(os.path.expanduser("~/.claude/projects"))
+    target_path = os.path.abspath(os.path.expanduser(request.root or "~/.claude/projects"))
+    if os.path.commonpath([base_dir, target_path]) != base_dir:
+        raise HTTPException(status_code=400, detail="Invalid path")
+
     try:
-        docs = scan_claude_sessions(root=request.root)
+        docs = scan_claude_sessions(root=target_path)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
     except Exception as e:
-        logger.error(f"Error importing claude code sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error importing claude code sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
