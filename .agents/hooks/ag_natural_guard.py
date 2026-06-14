@@ -16,6 +16,7 @@ import json
 import os
 import re
 import shlex
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -369,6 +370,88 @@ def _in_workspace_or_artifact(path: str, payload: dict[str, Any]) -> bool:
     return any(_path_under(path, root) for root in roots)
 
 
+def _git_repo_root(path: str) -> str | None:
+    """Return the git toplevel for path's directory, or None if not in a repo."""
+    try:
+        resolved = Path(path).expanduser().resolve(strict=False)
+        directory = resolved if resolved.is_dir() else resolved.parent
+    except OSError:
+        return None
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(directory), "rev-parse", "--show-toplevel"],
+            capture_output=True, text=True, timeout=5,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if result.returncode != 0:
+        return None
+    return result.stdout.strip()
+
+
+def _git_is_dirty(repo_root: str) -> bool:
+    try:
+        result = subprocess.run(
+            ["git", "-C", repo_root, "status", "--porcelain"],
+            capture_output=True, text=True, timeout=5,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
+    return result.returncode == 0 and bool(result.stdout.strip())
+
+
+def _checkpoint_marker(payload: dict[str, Any], repo_root: str) -> Path | None:
+    artifact = payload.get("artifactDirectoryPath")
+    if not isinstance(artifact, str) or not artifact:
+        return None
+    conversation = str(payload.get("conversationId") or "default")
+    safe_root = re.sub(r"[^A-Za-z0-9]+", "_", repo_root).strip("_")
+    return Path(artifact, f".natural-guard-checkpoint-{conversation}-{safe_root}")
+
+
+def _ensure_git_safety(write_path: str, payload: dict[str, Any]) -> dict[str, Any] | None:
+    """Return a short-circuit decision if the write is unsafe, else None to proceed.
+
+    Every mutation must land inside a git repo, and the repo must have a
+    committed baseline (auto-checkpointed once per conversation) so any
+    agent write is reversible via git.
+    """
+    repo_root = _git_repo_root(write_path)
+    if repo_root is None:
+        return _decision(
+            "deny",
+            f"natural-guard: {write_path} is not inside a git repository; "
+            f"run `git init` and commit a baseline before I write here",
+        )
+
+    marker = _checkpoint_marker(payload, repo_root)
+    if marker is not None and marker.exists():
+        return None
+
+    if _git_is_dirty(repo_root):
+        try:
+            subprocess.run(["git", "-C", repo_root, "add", "-A"], check=True, capture_output=True, timeout=10)
+            subprocess.run(
+                ["git", "-C", repo_root, "commit", "-m", "checkpoint: pre-agent snapshot"],
+                check=True, capture_output=True, timeout=10,
+            )
+        except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
+            return _decision(
+                "ask",
+                f"natural-guard: {repo_root} has uncommitted changes and the auto-checkpoint "
+                f"commit failed ({exc}); commit or stash manually before I write",
+            )
+
+    if marker is not None:
+        try:
+            marker.parent.mkdir(parents=True, exist_ok=True)
+            marker.touch()
+        except OSError:
+            pass
+
+    return None
+
+
 def _decision(decision: str, reason: str | None = None) -> dict[str, Any]:
     out: dict[str, Any] = {"decision": decision}
     if reason:
@@ -429,6 +512,11 @@ def evaluate_pre_tool_use(payload: dict[str, Any]) -> dict[str, Any]:
             "force_ask",
             f"natural-guard: blocked {reason}; latest operator-written user text lacks required authorization signal for {mutation_class}. Expected one of: {required}",
         )
+
+    write_path = target if target else _tool_cwd(args, payload)
+    safety = _ensure_git_safety(write_path, payload)
+    if safety is not None:
+        return safety
 
     return _decision("allow")
 

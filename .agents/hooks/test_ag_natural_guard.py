@@ -1,8 +1,20 @@
 import os
+import subprocess
 import tempfile
 import unittest
 
 import ag_natural_guard as guard
+
+
+def _init_repo(workspace: str) -> None:
+    run = lambda *args: subprocess.run(args, cwd=workspace, check=True, capture_output=True)
+    run("git", "init", "-q")
+    run("git", "config", "user.email", "test@example.com")
+    run("git", "config", "user.name", "Test")
+    with open(os.path.join(workspace, ".gitkeep"), "w") as handle:
+        handle.write("")
+    run("git", "add", "-A")
+    run("git", "commit", "-q", "-m", "initial commit")
 
 
 class PasteMarkerTests(unittest.TestCase):
@@ -78,6 +90,7 @@ Is this worth doing?""",
 
     def test_allows_naturally_authorized_in_scope_write(self):
         with tempfile.TemporaryDirectory() as workspace:
+            _init_repo(workspace)
             target = os.path.join(workspace, "notes.md")
             payload = self.payload(
                 "Update notes.md with the bounded harness notes.",
@@ -89,6 +102,48 @@ Is this worth doing?""",
             decision = guard.evaluate_pre_tool_use(payload)
 
             self.assertEqual(decision["decision"], "allow")
+
+    def test_denies_authorized_write_outside_git_repo(self):
+        with tempfile.TemporaryDirectory() as workspace:
+            target = os.path.join(workspace, "notes.md")
+            payload = self.payload(
+                "Update notes.md with the bounded harness notes.",
+                "write_to_file",
+                {"TargetFile": target, "CodeContent": "x"},
+                workspace,
+            )
+
+            decision = guard.evaluate_pre_tool_use(payload)
+
+            self.assertEqual(decision["decision"], "deny")
+            self.assertIn("not inside a git repository", decision["reason"])
+
+    def test_auto_checkpoints_dirty_repo_before_authorized_write(self):
+        with tempfile.TemporaryDirectory() as workspace:
+            _init_repo(workspace)
+            # Simulate an uncommitted change that predates this session.
+            with open(os.path.join(workspace, "uncommitted.txt"), "w") as handle:
+                handle.write("dirty")
+
+            target = os.path.join(workspace, "notes.md")
+            payload = self.payload(
+                "Update notes.md with the bounded harness notes.",
+                "write_to_file",
+                {"TargetFile": target, "CodeContent": "x"},
+                workspace,
+            )
+
+            decision = guard.evaluate_pre_tool_use(payload)
+
+            self.assertEqual(decision["decision"], "allow")
+            status = subprocess.run(
+                ["git", "status", "--porcelain"], cwd=workspace, capture_output=True, text=True, check=True,
+            )
+            self.assertNotIn("uncommitted.txt", status.stdout, "expected auto-checkpoint commit to capture the dirty file")
+            log = subprocess.run(
+                ["git", "log", "-1", "--format=%s"], cwd=workspace, capture_output=True, text=True, check=True,
+            )
+            self.assertIn("checkpoint", log.stdout)
 
     def test_denies_out_of_scope_write_even_when_action_is_authorized(self):
         with tempfile.TemporaryDirectory() as workspace:
