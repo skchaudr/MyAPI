@@ -2,3 +2,8 @@
 **Vulnerability:** The deployment script `deploy_to_brain.sh` contained an unsafe `eval` statement designed to expand the tilde (`~`) character when evaluating user input for a directory path: `eval LOCAL_DIR="$LOCAL_DIR"`. This introduced a critical command injection vulnerability. A malicious actor could provide input like `"; ls -al; echo "` to execute arbitrary commands with the privileges of the script user.
 **Learning:** Shell scripts processing user input should avoid the `eval` builtin wherever possible as it evaluates arbitrary code. While `eval` is often tempting for tasks like tilde expansion, safer alternatives exist in bash.
 **Prevention:** Rather than utilizing `eval`, use safe bash parameter expansion constructs. In this case, `LOCAL_DIR="${LOCAL_DIR/#\~/$HOME}"` performs a simple pattern substitution, replacing a leading tilde with the user's home directory path without executing the input as a command.
+
+## 2024-05-18 - Prevent Path Traversal and Information Leakage in API Endpoints
+**Vulnerability:** Path Traversal via unfiltered directory references (`root` inputs) during Claude Code and Codex imports, along with stack traces potentially exposed to clients via 500 error messages containing raw exception details.
+**Learning:** Returning `detail=str(e)` blindly and allowing users to dictate arbitrary paths without confirming they exist securely within a required base directory opens vulnerabilities. FastAPI endpoint exceptions need robust, generic responses.
+**Prevention:** Always restrict paths to acceptable origins combining `os.path.abspath`, `os.path.expanduser`, and `os.path.commonpath`. Catch broad exceptions properly with `logger.error(..., exc_info=True)` and return non-revealing generic messages directly to clients.
