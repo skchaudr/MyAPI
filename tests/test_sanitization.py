@@ -31,6 +31,11 @@ def test_strip_boilerplate():
 
     assert strip_boilerplate("") == ""
 
+def test_strip_boilerplate_crlf():
+    # Test CRLF handling with surrounding whitespace as requested by user
+    text = "Content before\r\n  unsubscribe  \r\nContent after"
+    assert strip_boilerplate(text) == "Content before\r\nContent after"
+
 def test_detect_noise():
     assert "Document is empty." in detect_noise("")
     assert "Document is empty." in detect_noise("   ")

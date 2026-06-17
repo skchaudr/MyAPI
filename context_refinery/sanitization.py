@@ -39,31 +39,22 @@ def normalize_headings(text: str) -> str:
     text = re.sub(r'^(#{1,6})([^\s#].*)$', add_space, text, flags=re.MULTILINE)
     return text
 
+# We split exact matches from prefix matches to preserve original behavior.
+# 'unsubscribe' must be the only text on the line.
+# We also handle optional \r for CRLF sequences.
+BOILERPLATE_RE = re.compile(
+    r'^[ \t]*(?:copyright\s+\(c\).*|copyright\s+\d{4}.*|all rights reserved.*|this page intentionally left blank.*|unsubscribe)[ \t]*\r?$\n?',
+    re.IGNORECASE | re.MULTILINE
+)
+
 def strip_boilerplate(text: str) -> str:
     """Strip boilerplate/repeated footers/headers where identifiable."""
     if not text:
         return ""
-    lines = text.split('\n')
 
-    # Common boilerplate patterns
-    boilerplate_patterns = [
-        r'^copyright\s+\(c\)',
-        r'^copyright\s+\d{4}',
-        r'^all rights reserved',
-        r'^this page intentionally left blank',
-        r'^unsubscribe$'
-    ]
-
-    compiled_patterns = [re.compile(p, re.IGNORECASE) for p in boilerplate_patterns]
-
-    cleaned_lines = []
-    for line in lines:
-        stripped_line = line.strip()
-        is_boilerplate = any(p.match(stripped_line) for p in compiled_patterns)
-        if not is_boilerplate:
-            cleaned_lines.append(line)
-
-    return '\n'.join(cleaned_lines).strip()
+    # Pre-compiled module-level regex for faster matching and replacement,
+    # avoiding string splitting and line-by-line checks.
+    return BOILERPLATE_RE.sub('', text).strip()
 
 def detect_noise(text: str) -> list[str]:
     """Detect noisy/very-short/near-empty content and populate quality warnings."""
@@ -76,7 +67,7 @@ def detect_noise(text: str) -> list[str]:
     if len(stripped_text) < 50:
         warnings.append("Document is very short (under 50 characters).")
 
-    alnum_count = sum(c.isalnum() for c in stripped_text)
+    alnum_count = sum(map(str.isalnum, stripped_text))
     if len(stripped_text) > 0 and alnum_count / len(stripped_text) < 0.5:
         warnings.append("Document contains excessive non-alphanumeric characters (noisy content).")
 
