@@ -1,8 +1,10 @@
 import asyncio
+import logging
 from fastapi import APIRouter, HTTPException
 from api.schemas import EnrichRequest, EnrichResponse, BatchEnrichRequest, BatchEnrichResponse, EnrichResult
 from context_refinery.services import GeminiService
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 
 @router.post("/enrich", response_model=EnrichResponse)
@@ -13,9 +15,10 @@ async def enrich_content(request: EnrichRequest):
         result = await loop.run_in_executor(None, service.enrich, request.content)
         return EnrichResponse(**result)
     except Exception as e:
+        logger.error(f"Enrichment pipeline error: {e}", exc_info=True)
         if "GEMINI_API_KEY" in str(e):
             raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured on this server")
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
 
 
 @router.post("/enrich/batch", response_model=BatchEnrichResponse)
@@ -34,9 +37,10 @@ async def enrich_batch(request: BatchEnrichRequest):
             results.append(EnrichResult(index=i, status="success", data=enrich_response))
             succeeded += 1
         except Exception as e:
+            logger.error(f"Batch enrichment error on document index {i}: {e}", exc_info=True)
             if "GEMINI_API_KEY" in str(e):
                 raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured on this server")
-            results.append(EnrichResult(index=i, status="error", error=str(e)))
+            results.append(EnrichResult(index=i, status="error", error="An internal server error occurred"))
             failed += 1
 
         if i < len(request.documents) - 1:
