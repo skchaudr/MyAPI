@@ -1,0 +1,3 @@
+
+# Graphify: track portable graph artifacts, ignore machine-local cache
+graphify-out/cache/
