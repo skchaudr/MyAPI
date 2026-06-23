@@ -1,0 +1,162 @@
+{
+  "communities": {
+    "0": [
+      "agends_md",
+      "ascend_theme",
+      "code_understanding_workspace",
+      "durable_handoffs",
+      "evals_agends_md",
+      "handoffs_001_rebuild_narrative_recapture_md",
+      "ingest_agends_md",
+      "myapi_rebuild",
+      "rag_pipeline_agends_md",
+      "rag_pipeline_retrieval_agends_md"
+    ],
+    "1": [
+      "context_refinery",
+      "event_trace",
+      "friend_refinery",
+      "graphify",
+      "handoff_vault",
+      "handoffs_000_handoff_template_md",
+      "project_documents_rebuild_context_anchor_md",
+      "repo_docs_graphify_hooks_and_handoff_hooks_md",
+      "sab"
+    ],
+    "2": [
+      "context_brief",
+      "corpus",
+      "graph_json",
+      "project_documents_architecture_md",
+      "study_export_layer",
+      "unified_graph_model"
+    ],
+    "3": [
+      "mcp_tools",
+      "tool_get_context_brief",
+      "tool_get_evidence_for_claim",
+      "tool_get_person_context",
+      "tool_get_project_context",
+      "tool_get_review_queue"
+    ]
+  },
+  "cohesion": {
+    "0": 0.3111111111111111,
+    "1": 0.25,
+    "2": 0.3333333333333333,
+    "3": 0.3333333333333333
+  },
+  "gods": [
+    {
+      "id": "project_documents_rebuild_context_anchor_md",
+      "label": "project-documents/REBUILD-CONTEXT-ANCHOR.md",
+      "degree": 17
+    },
+    {
+      "id": "project_documents_architecture_md",
+      "label": "project-documents/ARCHITECTURE.md",
+      "degree": 15
+    },
+    {
+      "id": "handoffs_001_rebuild_narrative_recapture_md",
+      "label": "handoffs/001-rebuild-narrative-recapture.md",
+      "degree": 7
+    },
+    {
+      "id": "agends_md",
+      "label": "AGENTS.md (root)",
+      "degree": 6
+    },
+    {
+      "id": "mcp_tools",
+      "label": "MCP Tools",
+      "degree": 6
+    },
+    {
+      "id": "tool_get_project_context",
+      "label": "get_project_context",
+      "degree": 4
+    },
+    {
+      "id": "handoffs_000_handoff_template_md",
+      "label": "handoffs/000-handoff-template.md",
+      "degree": 3
+    },
+    {
+      "id": "rag_pipeline_agends_md",
+      "label": "rag-pipeline/AGENTS.md",
+      "degree": 3
+    },
+    {
+      "id": "durable_handoffs",
+      "label": "Durable Handoffs",
+      "degree": 3
+    },
+    {
+      "id": "ascend_theme",
+      "label": "Ascend Theme",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "evals/AGENTS.md",
+      "target": "AGENTS.md (root)",
+      "source_files": [
+        "evals/AGENTS.md",
+        "AGENTS.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `evals/AGENTS.md` unexpectedly reaches hub `AGENTS.md (root)`"
+    },
+    {
+      "source": "ingest/AGENTS.md",
+      "target": "AGENTS.md (root)",
+      "source_files": [
+        "ingest/AGENTS.md",
+        "AGENTS.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `ingest/AGENTS.md` unexpectedly reaches hub `AGENTS.md (root)`"
+    },
+    {
+      "source": "project-documents/ARCHITECTURE.md",
+      "target": "AGENTS.md (root)",
+      "source_files": [
+        "project-documents/ARCHITECTURE.md",
+        "AGENTS.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "project-documents/REBUILD-CONTEXT-ANCHOR.md",
+      "target": "AGENTS.md (root)",
+      "source_files": [
+        "project-documents/REBUILD-CONTEXT-ANCHOR.md",
+        "AGENTS.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "handoffs/000-handoff-template.md",
+      "target": "Handoff Vault",
+      "source_files": [
+        "handoffs/000-handoff-template.md",
+        "project-documents/REBUILD-CONTEXT-ANCHOR.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 9327,
+    "output": 14097
+  }
+}

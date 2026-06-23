@@ -39,3 +39,6 @@ project-docs/vault-schema-v4-normalization-*.md
 # Sandbox/test outputs from normalize_vault_schema_v4.py
 tmp/
 *.bak
+
+# Graphify: track portable graph artifacts, ignore machine-local cache
+graphify-out/cache/
