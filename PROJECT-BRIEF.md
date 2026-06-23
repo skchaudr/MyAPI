@@ -8,11 +8,15 @@ MyAPI-rebuild is the second attempt at a personal context engine, rebuilt
 around one hard-won lesson: v0 dumped Obsidian, chat exports, and CLI
 sessions into one retrieval pool and hoped ranking would sort it out. It
 didn't — ChatGPT exports dominated by volume, ~579 CLI sessions were
-ingested but never surfaced, and there were no presentable narratives, only
-raw dumps. The rebuild inverts the premise: the product is not bigger
-ingestion, it is **durable handoffs** — event traces and decisions boxed so
-any agent can continue without re-litigating origin or direction. The
-working theme is *Ascend* — if the product is "capture context in a box and
+ingested but never surfaced, and there were no presentable narratives, just a blended mess of meta-narratives beating out actual sources of turth. 
+
+The rebuild inverts the premise: the product is not bigger ingestion; it's not giant hybrid retrieval systems and hoping cleverer RAG optimizations will prevail. It is not even "bulk personal data" going into to creatingg the corpus. The shift is from cold storage and cold context to a hot, active system that is centered around preserving the type context that after 100's of thousands of tokenss is so easily lost in the world of fast-paced agentic workflows. 
+
+The Who-What-When-Where-Why of a project; it's narrative and the intent that brought it to be. Equally as importantt is the 5 W's of the *user* and how a project and an individual came to be. Both of those aren't static, unchanging, or written in stone, they change and grow and and that *itself* is important and needs to preserved, and searchable: events and decisions through the human operator/developer/builder/vibe-coder scope and through a project actualizing and growingg scope.   
+
+
+My northstar for this project is a corpus of **durable handoffs** — event traces and decisions boxed so
+any agent can continue without re-litigating origin or direction. If the product is "capture context in a box and
 move it across sessions," the handoff is the tool. Two MCP tools
 (`get_project_context`, `get_person_context`) return **context briefs**:
 what matters, why, what the evidence is, what to think next. It is one of
