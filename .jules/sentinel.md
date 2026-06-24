@@ -2,3 +2,8 @@
 **Vulnerability:** The deployment script `deploy_to_brain.sh` contained an unsafe `eval` statement designed to expand the tilde (`~`) character when evaluating user input for a directory path: `eval LOCAL_DIR="$LOCAL_DIR"`. This introduced a critical command injection vulnerability. A malicious actor could provide input like `"; ls -al; echo "` to execute arbitrary commands with the privileges of the script user.
 **Learning:** Shell scripts processing user input should avoid the `eval` builtin wherever possible as it evaluates arbitrary code. While `eval` is often tempting for tasks like tilde expansion, safer alternatives exist in bash.
 **Prevention:** Rather than utilizing `eval`, use safe bash parameter expansion constructs. In this case, `LOCAL_DIR="${LOCAL_DIR/#\~/$HOME}"` performs a simple pattern substitution, replacing a leading tilde with the user's home directory path without executing the input as a command.
+
+## 2025-06-24 - Information Leakage via FastAPI HTTPException
+**Vulnerability:** Found multiple instances where internal server errors were directly casting unhandled Exceptions to strings and returning them to the client via `HTTPException(status_code=500, detail=str(e))`.
+**Learning:** Returning `str(e)` on unhandled Exceptions exposes sensitive internal implementation details, stack traces, pathings, and logic configurations that can be weaponized by an attacker to map out the application's surface area.
+**Prevention:** In FastAPI endpoints, always handle generic exceptions by logging the error server-side with `exc_info=True` to retain debugging context, and returning a generic error string to the user (e.g. `raise HTTPException(status_code=500, detail="An internal server error occurred")`).
