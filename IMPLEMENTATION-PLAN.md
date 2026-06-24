@@ -1,7 +1,8 @@
 # MyAPI-rebuild — Implementation Plan
 
 Sequel to [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md). Direction + ground state live
-there; this plan sequences the work into phases a lesser model can decompose into
+there. This is an implementation scaffold, not a complete execution plan: it
+sequences the work into phases a lesser model can decompose into
 native units — **Python module** (context_refinery / ingest / MCP) · **eval suite**
 (golden briefs + benchmarks) · **docs commit** (handoffs + traces). **Link, don't
 restate:** the architecture (4 layers L0–L4, 10-step build order), context anchor
@@ -117,9 +118,14 @@ competence demonstration).
 
 ## Execution + commit policy
 - Order: 1 → 2 → 3 → 4 → 5 → 6. Bottom-up (L0 → L1 → L2 → L3). Phase 6 is the continual audit loop — it can run in parallel with earlier phases' later work (e.g., normalizing more corpus while testing MCP tools).
-- Branch: `rebuild`. This plan and all phase work land on `rebuild`; **no push** until Sab signs off.
+- Branch: this scaffold is now on `main`; `rebuild` is historical. New phase
+  work should branch from `main` unless Sab chooses otherwise. **No push** until
+  Sab signs off.
 - Audit is a continual process — every phase builds test infrastructure, every phase runs it. The eval suite grows with each phase.
 - Two MCP tools: `get_project_context` + `get_person_context`. The anchor locks these names. Do not fork.
+- Before each phase, classify inherited local state. Preserve unknown edits as
+  context evidence unless they are proven generated noise; do not normalize a
+  clean worktree by discarding unclassified work.
 
 ## Open (Sab decides)
 - **Corpus v2.0 scope:** what exactly goes in? All 22 v1.0 buckets, or a subset? Which projects, which decisions, which sessions are the priority?

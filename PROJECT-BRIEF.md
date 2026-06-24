@@ -27,8 +27,9 @@ verify / control / continue in agent-era infrastructure.
 
 Pulled from `graphify-out/.graphify_analysis.json` (2026-06-21).
 
-- **Phase:** planning / docs only — 0 implementation code, branch `rebuild`
-  (no commits yet). The graph reflects the *plan*, not the system.
+- **Phase:** planning / docs only — 0 implementation code. The planning work
+  has landed on `main`; `rebuild` remains a historical/local branch name. The
+  graph reflects the *plan*, not the system.
 - **Graph:** 31 nodes · 57 edges · 4 communities · 10 docs · cohesion 0.25–0.33
 - **Target stack:** Python (`context_refinery/` — adapters, triage CLI,
   FastAPI `/query`), Markdown/Obsidian (corpus + brief output, FSRS-migratable
@@ -55,8 +56,6 @@ a cold agent continuing without re-litigation.
 
 ## Known gaps / risks
 
-- Root `AGENTS.md` is broken (voice-to-text derail mid-file) — needs full
-  rewrite before any agent reads it cold
 - Zero implementation code — README must not oversell; portfolio value is
   paradigm + architecture, with the build as stated next work
 - "Context Refinery" naming collision: archived friend-refinery React UI vs
@@ -66,6 +65,9 @@ a cold agent continuing without re-litigation.
 - Friend-refinery origin (friends reclaiming ChatGPT/WhatsApp/LinkedIn
   dumps) must not be conflated with the person-context MCP tool — different
   threads
+- Inherited uncommitted work is part of the evidence trail. The rebuild is about
+  durable context, so unknown local edits, traces, or generated artifacts must be
+  classified before any cleanup or readiness claim.
 
 ## Deeper docs
 
