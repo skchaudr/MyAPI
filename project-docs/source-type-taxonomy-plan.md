@@ -5,8 +5,8 @@ projects: [myapi, context-refinery]
 tags: [design, retrieval, taxonomy, ingestion, source_type]
 recall_type: meta
 references_events:
-  - handoffs/001-a7-anchor-variant-fix-episodic-axis.md
-  - handoffs/002-f5-episodic-s1-schema-source-type-design.md
+  - .handoffs/011-a7-anchor-variant-fix-episodic-axis.md
+  - .handoffs/013-f5-episodic-s1-schema-source-type-design.md
 date: 2026-05-04
 ---
 

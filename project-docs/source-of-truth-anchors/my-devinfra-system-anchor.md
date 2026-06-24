@@ -97,5 +97,5 @@ This note targets **Q1: "What is My_DevInfra?"** in the 18-query retrieval bench
 
 - `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-04-19-source-aware-priors.md` — latest benchmark run
 - `project-docs/retrieval-benchmark-v0/refinement-queue-2026-04-20.md` — active refinement queue
-- `project-docs/VM-MIGRATION-HANDOFF.md` — VM migration context
+- `.handoffs/023-vm-migration.md` — VM migration context
 - `project-docs/V4-TRIAGE-CLI-BRIEF.md` — V4 CLI spec

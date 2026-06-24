@@ -7,7 +7,7 @@ Branch: rebuild (no commits yet)
 
 Scope touched:
 - `REBUILD-CONTEXT-ANCHOR.md` (new)
-- `handoffs/000-handoff-template.md`, `handoffs/001-rebuild-narrative-recapture.md`
+- `.handoffs/009-legacy-handoff-template.md`, `.handoffs/012-rebuild-narrative-recapture.md`
 
 Current state:
 - Paradigm locked: vault of durable handoffs (Ascend theme), not export-dump RAG.

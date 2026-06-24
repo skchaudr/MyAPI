@@ -138,7 +138,7 @@ VM paths:
 
 ## Source Evidence
 
-- `project-docs/VM-MIGRATION-HANDOFF.md`
+- `.handoffs/023-vm-migration.md`
 - `project-docs/VM-MIGRATION-SPRINT.md`
 - `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-04-19-source-aware-priors.md`
 - `project-docs/retrieval-benchmark-v0/refinement-queue-2026-04-20.md`

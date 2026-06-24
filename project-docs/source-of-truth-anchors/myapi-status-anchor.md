@@ -89,4 +89,4 @@ Fixes that landed; sentinels watching for regressions.
 - `project-docs/retrieval-benchmark-v0/Harness evaluation/run-2026-04-25-blocker-pass.md` — 04-25 classifier and phrase-boost patches
 - `project-docs/retrieval-benchmark-v0/refinement-queue-2026-04-20.md` — older refinement queue
 - `scripts/acceptance.py` — six-query mechanical acceptance harness
-- `handoffs/000-cleared-context-bare-retrieval.md` — 2026-05-03 session handoff (F5 fix)
+- `.handoffs/010-cleared-context-bare-retrieval.md` — 2026-05-03 session handoff (F5 fix)

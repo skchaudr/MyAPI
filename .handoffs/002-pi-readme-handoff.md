@@ -92,14 +92,14 @@ Run on Mac: GEMINI_API_KEY=... venv/bin/uvicorn api.main:app --reload --port 800
 ### Files to SKIP — stale Phase 1 (April 9–19) artifacts
 Reading these will burn tokens on world-state that no longer applies. They're kept for history; do not use as current state.
 
-- `project-docs/HANDOFF-hybrid-search.md`
-- `project-docs/HANDOFF-modular-triage.md`
-- `project-docs/HANDOFF-situational-summary.md`
-- `project-docs/VM-MIGRATION-HANDOFF.md`
+- `.handoffs/020-hybrid-search.md`
+- `.handoffs/021-modular-triage.md`
+- `.handoffs/022-situational-summary.md`
+- `.handoffs/023-vm-migration.md`
 - `project-docs/VM-MIGRATION-SPRINT.md`
 - `project-docs/4.18.26.daily.project.md`
-- `project-docs/handoff-for-khoj-vm.md`
-- `project-docs/web-ui-agent-handoff-pt-2.md` (refers to the archived Vite frontend)
+- `.handoffs/024-khoj-vm.md`
+- `.handoffs/025-web-ui-agent-pt-2.md` (refers to the archived Vite frontend)
 - `project-docs/jules-spec-*.md` (Jules dispatch one-offs; not orientation material)
 - `project-docs/sitrep_khoj_deployment.md` (April infra story; relocated here in this hygiene pass, kept for history)
 - Anything under `_archive/`

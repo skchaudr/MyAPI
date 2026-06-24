@@ -71,5 +71,5 @@ a cold agent continuing without re-litigation.
 
 - Context anchor (read first): [`project-documents/REBUILD-CONTEXT-ANCHOR.md`](project-documents/REBUILD-CONTEXT-ANCHOR.md)
 - Architecture (build plan): [`project-documents/ARCHITECTURE.md`](project-documents/ARCHITECTURE.md)
-- Handoffs: [`handoffs/001-rebuild-narrative-recapture.md`](handoffs/001-rebuild-narrative-recapture.md)
+- Handoffs: [`.handoffs/012-rebuild-narrative-recapture.md`](.handoffs/012-rebuild-narrative-recapture.md)
 - Old MyAPI + corpus: [`../MyAPI/`](../MyAPI/), `../MyAPI/Corpus v1.0/`

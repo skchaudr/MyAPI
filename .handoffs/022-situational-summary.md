@@ -63,6 +63,6 @@ Two merge conflicts resolved conservatively (kept Jules frontmatter + main body 
 
 - **Remaining vault normalization** — `03 Resources/Workflows` (168 files), `03 Resources/AI` (60), `03 Resources/NeoVim` (28), `03 Resources/Programming` (17) still need Jules passes
 - **Classifier tuning** — 14/18 benchmark queries classify as `factual`; temporal, pattern, and cross-source intents need broader regex triggers
-- **Modular triage CLI** — scaffolded with stubs, handoff doc at `project-docs/HANDOFF-modular-triage.md`
+- **Modular triage CLI** — scaffolded with stubs, handoff doc at `.handoffs/021-modular-triage.md`
 - **Older vaults** — coding-tech and personal vaults (2023–2024) not yet ingested; lower priority until current corpus quality stabilizes
 - **PR cleanup** — `feat/claude-web-adapter` should be merged to main when ready; several stale Jules branches can be deleted

@@ -5,10 +5,10 @@ projects: [myapi, gddp, context-refinery]
 tags: [corpus, normalization, retrieval, benchmark, ingestion]
 date: 2026-05-05
 references_events:
-  - handoffs/000-cleared-context-bare-retrieval.md
-  - handoffs/001-a7-anchor-variant-fix-episodic-axis.md
-  - handoffs/002-f5-episodic-s1-schema-source-type-design.md
-  - handoffs/003-final-v0-benchmark-run.md
+  - .handoffs/010-cleared-context-bare-retrieval.md
+  - .handoffs/011-a7-anchor-variant-fix-episodic-axis.md
+  - .handoffs/013-f5-episodic-s1-schema-source-type-design.md
+  - .handoffs/014-final-v0-benchmark-run.md
   - project-docs/source-type-taxonomy-plan.md
 ---
 

@@ -41,7 +41,7 @@ phases with build/audit/understand dimensions.
 - Direction + paradigm: [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md)
 - Context anchor (read first in cold session): [`project-documents/REBUILD-CONTEXT-ANCHOR.md`](project-documents/REBUILD-CONTEXT-ANCHOR.md)
 - Architecture (4 layers, 10-step build, graph model, MCP tools, brief contract): [`project-documents/ARCHITECTURE.md`](project-documents/ARCHITECTURE.md)
-- Handoffs: [`handoffs/001-rebuild-narrative-recapture.md`](handoffs/001-rebuild-narrative-recapture.md)
+- Handoffs: [`.handoffs/012-rebuild-narrative-recapture.md`](.handoffs/012-rebuild-narrative-recapture.md)
 - Old substrate: [`../MyAPI/Corpus v1.0/`](../MyAPI/) (22 PARA buckets), `../MyAPI/graphify-out/graph.json` (862 nodes, 2186 links)
 
 ## Phase summary

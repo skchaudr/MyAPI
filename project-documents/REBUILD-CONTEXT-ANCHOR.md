@@ -145,7 +145,7 @@ v0 put Obsidian + chat exports + CLI sessions into **one retrieval pool** and ho
 | Old MyAPI + corpus | `~/repos/MyAPI/`, `~/repos/MyAPI/Corpus v1.0/` |
 | Graph | `~/repos/MyAPI/graphify-out/graph.json` (862 nodes, 2186 links) |
 | Codex sessions | `~/.codex/sessions/2026/06/` |
-| Friend-refinery handoff | `~/repos/MyAPI/project-docs/web-ui-agent-handoff-pt-2.md` |
+| Friend-refinery handoff | `~/repos/MyAPI/.handoffs/025-web-ui-agent-pt-2.md` |
 | MyAPI README origin line | `~/repos/MyAPI/project-docs/README.md` ("context database of who I am") |
 
 ---
