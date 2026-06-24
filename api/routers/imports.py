@@ -11,6 +11,14 @@ from context_refinery.adapters.claude_code import scan_claude_sessions
 from pydantic import BaseModel
 from typing import Optional
 
+
+def validate_import_path(base_dir: str, target_path: str) -> None:
+    """Validates that target_path is within base_dir to prevent path traversal."""
+    expanded_base = os.path.abspath(os.path.expanduser(base_dir))
+    expanded_target = os.path.abspath(os.path.expanduser(target_path))
+    if os.path.commonpath([expanded_base, expanded_target]) != expanded_base:
+        raise HTTPException(status_code=403, detail="Invalid path: Path traversal detected")
+
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
@@ -72,6 +80,7 @@ async def import_chatgpt(file: UploadFile = File(...)):
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
     try:
+        validate_import_path("~/.codex/command-logs", request.root)
         results = scan_codex_sessions(root=request.root)
 
         parsed_results = []
@@ -79,15 +88,20 @@ async def import_codex(request: CodexImportRequest = CodexImportRequest()):
             parsed_results.append(CanonicalDocumentResponse(**doc))
 
         return parsed_results
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error(f"Error scanning codex sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error scanning codex sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
 
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
     try:
+        validate_import_path("~/.claude/projects", request.root)
         docs = scan_claude_sessions(root=request.root)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
+    except HTTPException:
+        raise
     except Exception as e:
-        logger.error(f"Error importing claude code sessions: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error importing claude code sessions: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
