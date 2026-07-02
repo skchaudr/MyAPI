@@ -1,12 +1,18 @@
 from datetime import datetime, timezone
+from pathlib import Path
+import json
 import os
+import subprocess
+import sys
 
 from scripts.source_manifest import (
     Source,
     build_corpus_manifest,
     build_manifest,
     classify_corpus_tier,
+    emit_json,
     manifest_row_for_file,
+    sources_from_roots,
     summarize_source,
 )
 
@@ -156,4 +162,62 @@ def test_build_corpus_manifest_can_emit_active_bundle_only(tmp_path):
     assert manifest["active_only"] is True
     assert manifest["summary"]["file_count"] == 1
     assert manifest["summary"]["tier_counts"] == {"hot": 1, "durable": 0, "cold": 0}
+    assert manifest["items"][0]["path"] == str(hot)
+
+
+def test_sources_from_roots_builds_local_override_sources(tmp_path):
+    first = tmp_path / "first"
+    second = tmp_path / "second"
+
+    sources = sources_from_roots((first, second))
+
+    assert [source.source_family for source in sources] == [
+        "local_override_1",
+        "local_override_2",
+    ]
+    assert [source.path for source in sources] == [first, second]
+    assert all(source.parser_available for source in sources)
+    assert all(source.suffixes == (".md", ".jsonl") for source in sources)
+
+
+def test_emit_json_writes_parent_directories(tmp_path):
+    output = tmp_path / "nested" / "manifest.json"
+
+    emit_json({"ok": True}, output)
+
+    assert json.loads(output.read_text(encoding="utf-8")) == {"ok": True}
+
+
+def test_cli_writes_active_manifest_for_source_root(tmp_path):
+    source_root = tmp_path / "source"
+    output = tmp_path / "out" / "active-manifest.json"
+    source_root.mkdir()
+    hot = source_root / "hot.md"
+    ignored = source_root / "ignored.txt"
+    hot.write_text("hot", encoding="utf-8")
+    ignored.write_text("ignored", encoding="utf-8")
+    os.utime(hot, (1_783_000_000, 1_783_000_000))
+
+    result = subprocess.run(
+        [
+            sys.executable,
+            "scripts/source_manifest.py",
+            "--corpus-manifest-json",
+            "--active-only",
+            "--source-root",
+            str(source_root),
+            "--output",
+            str(output),
+        ],
+        check=True,
+        cwd=Path(__file__).resolve().parents[1],
+        capture_output=True,
+        text=True,
+    )
+
+    assert result.stdout == ""
+    manifest = json.loads(output.read_text(encoding="utf-8"))
+    assert manifest["active_only"] is True
+    assert manifest["summary"]["file_count"] == 1
+    assert manifest["summary"]["source_counts"] == {"local_override_1": 1}
     assert manifest["items"][0]["path"] == str(hot)

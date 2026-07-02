@@ -56,6 +56,7 @@ DURABLE_PATH_PARTS = (
 )
 COLD_SOURCE_FAMILIES = frozenset({"corpus_v1_baseline"})
 DEFAULT_HOT_DAYS = 30
+DEFAULT_SOURCE_ROOT_SUFFIXES = (".md", ".jsonl")
 
 
 @dataclass(frozen=True)
@@ -236,6 +237,28 @@ def _adapter_for_source(source_family: str) -> str | None:
     return None
 
 
+def sources_from_roots(roots: Iterable[Path]) -> tuple[Source, ...]:
+    return tuple(
+        Source(
+            f"local_override_{index}",
+            Path(root).expanduser(),
+            True,
+            DEFAULT_SOURCE_ROOT_SUFFIXES,
+        )
+        for index, root in enumerate(roots, start=1)
+    )
+
+
+def emit_json(payload: object, output: Path | None = None) -> None:
+    rendered = json.dumps(payload, indent=2, sort_keys=True)
+    if output is None:
+        print(rendered)
+        return
+    target = output.expanduser()
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(rendered + "\n", encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--json", action="store_true", help="Print source-root JSON summary rows")
@@ -255,25 +278,44 @@ def main() -> int:
         default=DEFAULT_HOT_DAYS,
         help="Recency window for hot tier classification",
     )
+    parser.add_argument(
+        "--source-root",
+        action="append",
+        type=Path,
+        default=[],
+        help=(
+            "With --corpus-manifest-json, replace default roots with this local source root. "
+            "May be repeated."
+        ),
+    )
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Write JSON to this path instead of stdout.",
+    )
     args = parser.parse_args()
 
     if args.json and args.corpus_manifest_json:
         parser.error("Choose either --json or --corpus-manifest-json.")
     if args.active_only and not args.corpus_manifest_json:
         parser.error("--active-only requires --corpus-manifest-json.")
+    if args.source_root and not args.corpus_manifest_json:
+        parser.error("--source-root requires --corpus-manifest-json.")
     if args.hot_days < 1:
         parser.error("--hot-days must be >= 1.")
 
     if args.json:
-        print(json.dumps(build_manifest(), indent=2, sort_keys=True))
+        emit_json(build_manifest(), args.output)
         return 0
     if args.corpus_manifest_json:
-        print(
-            json.dumps(
-                build_corpus_manifest(hot_days=args.hot_days, active_only=args.active_only),
-                indent=2,
-                sort_keys=True,
-            )
+        sources = sources_from_roots(args.source_root) if args.source_root else DEFAULT_SOURCES
+        emit_json(
+            build_corpus_manifest(
+                sources=sources,
+                hot_days=args.hot_days,
+                active_only=args.active_only,
+            ),
+            args.output,
         )
         return 0
 
