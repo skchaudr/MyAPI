@@ -31,6 +31,12 @@ def test_infer_source_type_for_rebuild_project_docs_and_handoffs():
         == "project_doc"
     )
     assert (
+        infer_source_type(
+            "/Users/sab-mini/repos/MyAPI-rebuild/project-documents/ARCHITECTURE.md"
+        )
+        == "project_doc"
+    )
+    assert (
         infer_source_type("/Users/sab-mini/repos/MyAPI-rebuild/.handoffs/001-port.md")
         == "handoff"
     )

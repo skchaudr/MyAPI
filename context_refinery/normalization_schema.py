@@ -54,6 +54,7 @@ OUTCOMES = frozenset({
 SIGNAL_STRENGTHS = frozenset({"high", "medium", "low"})
 RAW_THREAD_WEIGHTS = frozenset({"normal", "downweighted", "excluded"})
 REVIEW_STATUSES = frozenset({"inferred", "needs_review", "approved"})
+CORPUS_TIERS = frozenset({"hot", "durable", "cold"})
 
 
 # --- Path-based inference ---------------------------------------------------
@@ -69,6 +70,7 @@ _PATH_TO_SOURCE_TYPE: tuple[tuple[str, str], ...] = (
     ("/Daily/", "daily_note"),
     ("04 Periodic/", "daily_note"),
     ("project-docs/", "project_doc"),
+    ("project-documents/", "project_doc"),
     ("docs/", "project_doc"),
     ("01 Projects/", "project_doc"),
     ("02 Areas/", "project_doc"),
@@ -158,6 +160,8 @@ V1_FIELDS: tuple[str, ...] = (
     "work_type",
     "temporal_mode",
     "primary_project",
+    "corpus_tier",
+    "tier_reason",
     "review_status",
     "thread_type",
     "outcome",
@@ -175,6 +179,8 @@ class V1Stamp:
     temporal_mode: str
     primary_project: str = "unknown"
     work_type: list[str] = field(default_factory=list)
+    corpus_tier: Optional[str] = None
+    tier_reason: Optional[str] = None
     review_status: str = "inferred"
 
     # Conversation-only fields; left None for non-conversation items.
@@ -193,6 +199,10 @@ class V1Stamp:
         }
         if self.work_type:
             out["work_type"] = list(self.work_type)
+        if self.corpus_tier is not None:
+            out["corpus_tier"] = self.corpus_tier
+        if self.tier_reason is not None:
+            out["tier_reason"] = self.tier_reason
         for key in (
             "thread_type",
             "outcome",
