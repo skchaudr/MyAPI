@@ -17,11 +17,42 @@ Everything below is plumbing to produce that shape reliably.
 
 ---
 
+## 0.1 Cost posture
+
+MyMCP is the paid doorway into MyAPI, so the public MCP surface stays tiny and
+budget-aware. Tool schemas are standing prompt overhead; a large roster of tools
+charges every conversation before the first useful retrieval happens. The design
+therefore keeps the exposed surface to two tools and moves routing into compact
+arguments.
+
+Public tools:
+
+- `get_project_context`
+- `get_person_context`
+
+Those tools accept structured arguments instead of spawning more public tools:
+
+```json
+{
+  "subject": "MyAPI-rebuild",
+  "intent": "next_action",
+  "budget": "tiny",
+  "max_tokens": 1200,
+  "include_evidence": false
+}
+```
+
+The default answer returns a small brief with evidence paths. Excerpts and full
+packets are opt-in. Every response reports the requested budget, returned size,
+estimated tokens, and freshness metadata.
+
+---
+
 ## 1. What already exists (do not rebuild from zero)
 
 | Asset | Location | Status | Reuse decision |
 |---|---|---|---|
-| PARA corpus | `~/repos/MyAPI/Corpus v1.0/` | 22 buckets, rich frontmatter | **Primary source.** Structure becomes the schema. |
+| PARA corpus | `~/repos/MyAPI/Corpus v1.0/` | 22 buckets, rich frontmatter | **Baseline/reference.** Keep its schema lessons and durable anchors; avoid treating stale volume as current truth. |
 | Graphify graph | `graphify-out/graph.json` | 862 nodes, 2186 links, mostly code/rationale | Reuse existing graph; add note/project relationships. |
 | Old schemas | `api/schemas.py` | `QueryIntent`, `AnswerMode`, `CanonicalDocument` | **Carry the taxonomy forward.** It is battle-tested. |
 | Retrieval pipeline | `context_refinery/retrieval.py` | Khoj client + metadata inference | Concept survives; rewrite thinner. |
@@ -48,7 +79,7 @@ Everything below is plumbing to produce that shape reliably.
 │       FSRS-migratable frontmatter (see AGENTS.md)            │
 ├─────────────────────────────────────────────────────────────┤
 │  L3  MCP LAYER               (interface)                     │
-│       4 tools · returns ContextBrief (markdown + metadata)    │
+│       2 tools · budgeted ContextBrief envelopes               │
 ├─────────────────────────────────────────────────────────────┤
 │  L2  CONTEXT-PACK LAYER      (synthesis)                     │
 │       graph traversal + retrieval → brief assembly           │
@@ -59,12 +90,25 @@ Everything below is plumbing to produce that shape reliably.
 │       code (AST) + prose (LLM) → unified graph               │
 ├─────────────────────────────────────────────────────────────┤
 │  L0  CORPUS                  (source of truth)               │
-│       Obsidian vault, PARA-structured, frontmatter-typed     │
+│       fresh window + durable/canonical promoted anchors       │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 The rebuild moves **bottom-up**: you cannot pack context (L2) without a graph (L1),
 and you cannot expose MCP (L3) without packs (L2). L4 falls out of the brief shape.
+
+### 2.1 MyAPI vs MyMCP
+
+| Layer | Responsibility | Cost rule |
+|---|---|---|
+| MyAPI | Corpus refresh, source manifests, retrieval, freshness checks, cached briefs, evidence policy. | Spend work here because it is offline, cacheable, testable, and inspectable. |
+| MyMCP | Two public tool schemas, compact arguments, budgeted return envelopes. | Keep the standing prompt cost tiny; return references first and content only on request. |
+
+MyAPI can keep using the existing Khoj RAG engine on the Google Cloud VM as a
+retrieval backend while the rebuild experiments with a radically fresher corpus.
+MyMCP should not know whether the answer came from Khoj, local search, cached
+briefs, or a future graph traversal. It asks MyAPI for a bounded brief and receives
+the smallest useful envelope.
 
 ---
 
@@ -190,44 +234,79 @@ Carry the old taxonomy forward (it is proven):
 | `temporal` | How did this evolve | Evidence (time-ordered) |
 ---
 
-## 5. The four MCP tools (L3)
+## 5. The two MCP tools (L3)
 
-Codex posed the key question: *narrow (`get_project_context`) or general
-(`get_context_brief` with `context_type`)?*
-
-**Answer: general entry, narrow specials.** One general tool for power users and
-future context types; three narrow tools that bake in the right intent and template,
-so the common cases are one-call and self-documenting. This keeps the surface to **4
-tools** (portfolio-scoped) while leaving the door open for LinkedIn/WhatsApp corpora
-later via the general tool.
+The MCP surface is intentionally smaller than the internal capability set. Public
+tool count is a cost decision, not just an API-design decision.
 
 ### 5.1 Tool roster
 
-| # | Tool | Inputs | Returns | Why it exists |
-|---|---|---|---|---|
-| 1 | `get_context_brief` | `subject`, `intent?`, `depth?` | `ContextBrief` | The general entry. `context_type` is inferred from subject. Future corpora land here. |
-| 2 | `get_project_context` | `project` | `ContextBrief` (project_overview) | The first vertical slice. Concrete, testable. |
-| 3 | `get_evidence_for_claim` | `claim` | `ContextBrief` (decision) | Forces evidence + provenance discipline. |
-| 4 | `get_review_queue` | `mode?` (god_node \| due) | `ContextBrief[]` | The bridge to L4. Powers "God Node Review mode." |
+| # | Tool | Required inputs | Optional inputs | Returns | Why it exists |
+|---|---|---|---|---|---|
+| 1 | `get_project_context` | `project` | `intent`, `budget`, `max_tokens`, `include_evidence` | Budgeted `ContextBrief` envelope | The first vertical slice and default project-continuity call. |
+| 2 | `get_person_context` | `subject` | `intent`, `budget`, `max_tokens`, `include_evidence` | Budgeted `ContextBrief` envelope | The user/operator continuity call. Name stays `person`, not a second `user`/`operator` fork. |
 
-### 5.2 Why these four and not more
+### 5.2 Argument-driven routing
 
-- **`get_context_brief`** is the escape hatch and the future-proofing. If a LinkedIn
-  corpus arrives, you do not add a 5th tool — you add a `context_type: person` branch.
-- **`get_project_context`** is the demoable slice. It is the one you show in a
-  portfolio. It exercises the full L1→L2→L3→L4 stack end to end.
-- **`get_evidence_for_claim`** is the *integrity* tool. It is what stops the engine
-  from hallucinating — every brief must trace to evidence, and this tool makes that
-  the explicit product.
-- **`get_review_queue`** is the *feedback loop*. It turns the engine from read-only
-  retrieval into a study system. It is also where the FSRS-migratable state lives.
+Fine-grained behavior belongs in arguments, not a large public tool roster.
 
-### 5.3 Why NOT `get_person_context` / `get_thread_context` yet
+| Argument | Values | Effect |
+|---|---|---|
+| `intent` | `status`, `next_action`, `handoff`, `architecture`, `verification`, `history` | Selects the internal route and brief template. |
+| `budget` | `tiny`, `normal`, `deep` | Chooses evidence depth, excerpt policy, and compression target. |
+| `max_tokens` | integer | Hard cap for returned content. The response may stop early with a partial-but-valid envelope. |
+| `include_evidence` | boolean | `false` returns evidence paths; `true` includes bounded excerpts. |
 
-Codex listed them. They are correct future tools, but they require corpora you have
-not normalized (LinkedIn, raw chat threads). Shipping them now means faking edges.
-**Defer until the corpus supports them.** The general `get_context_brief` already
-handles "person" if the vault has person nodes — just without a tuned template.
+Internal routes can still exist for claim evidence, review queues, source freshness,
+or study cards. They live behind MyAPI where they can be versioned, tested, cached,
+and called by scripts without increasing MCP prompt overhead.
+
+### 5.3 Budgeted return envelope
+
+```json
+{
+  "answer": "...",
+  "evidence_paths": ["..."],
+  "freshness": {
+    "generated_at": "2026-07-02T00:00:00Z",
+    "source_manifest_hash": "..."
+  },
+  "budget": {
+    "requested": "tiny",
+    "returned_chars": 3200,
+    "estimated_tokens": 800,
+    "max_tokens": 1200
+  },
+  "expand_with": {
+    "same_tool_args": {
+      "budget": "deep",
+      "include_evidence": true
+    }
+  }
+}
+```
+
+The default path is references-first: short answer, state, next action, evidence
+paths, and freshness. Full packets are for handoff, planning, evals, and agent
+bootstrapping.
+
+---
+
+## 5.4 Fresh corpus policy
+
+MyAPI v0 proved that a large cold corpus can drown the active truth. The rebuild
+uses a fresh active window by default:
+
+- Include current live sources and daily refreshes from the active vault, agent
+  sessions, repo docs, `.pi` traces, and handoffs.
+- Prefer a 15–30 day active window for ordinary retrieval.
+- Promote durable/canonical items out of the expiry window with an explicit stamp.
+- Treat Corpus v1.0 as baseline, evaluation substrate, and cold reference material.
+- Cache compiled briefs and invalidate them when the source manifest changes.
+
+Khoj on the Google Cloud VM can remain a retrievable backend with embeddings. The
+new corpus policy changes what MyAPI feeds and trusts by default: fresh, lean,
+promoted when durable, and visibly stale when old.
 
 ---
 
@@ -246,7 +325,7 @@ A review card = a graph node rendered through the AGENTS.md template. Specifical
 - `graphify.degree` ← edge count
 - `graphify.community` ← cluster id
 - `graphify.confidence` ← code-backed edge ratio
-- `review.state` ← from `get_review_queue` scheduling (simple-v1)
+- `review.state` ← from the internal study/review scheduler (simple-v1)
 - Body `## Incoming Links` / `## Outgoing Links` ← the node's edges (finally useful
   now that edges exist)
 
@@ -267,9 +346,9 @@ constraint is explicit and correct.
 
 ### 6.3 God Node Review mode
 
-`get_review_queue(mode=god_node)` returns high-degree + low-confidence nodes.
-This is the batch queue. Single-card review is `get_context_brief` on one node.
-Both are already covered by the 4 tools — no extra surface needed.
+The internal review route returns high-degree + low-confidence nodes. This is the
+batch queue. Single-card review can use either public context tool with
+`intent: "verification"` or `intent: "next_action"` depending on the subject.
 
 ---
 
@@ -297,13 +376,11 @@ MyAPI-rebuild/
 │   └── packs/                 # L2b: brief assembly
 │       ├── brief.py           #   ContextBrief model + dual repr
 │       └── templates.py       #   intent → section mapping (§4.3)
-├── mcp/                       # L3: the 4 tools
+├── mcp/                       # L3: the 2 public tools
 │   ├── server.py              #   MCP server entry
 │   └── tools/
-│       ├── get_context_brief.py
 │       ├── get_project_context.py
-│       ├── get_evidence_for_claim.py
-│       └── get_review_queue.py
+│       └── get_person_context.py
 ├── export/                    # L4: Obsidian rendering + scheduler
 │   ├── obsidian_card.py       #   node → AGENTS.md template
 │   └── scheduler.py           #   simple-v1, FSRS-migratable
@@ -332,8 +409,8 @@ Step 6  L2     traverse.py + rank.py: graph walk fuses with vector search
         └─ hybrid retrieval lives; briefs stop being empty
 Step 7  L3     get_project_context FIRST (the vertical slice)
         └─ demoable, testable, exercises the whole stack
-Step 8  L3     get_context_brief, get_evidence_for_claim, get_review_queue
-        └─ the remaining 3 tools; portfolio-complete
+Step 8  L3     get_person_context with the same budgeted envelope
+        └─ user/operator continuity without a second public naming fork
 Step 9  L4     obsidian_card + scheduler (simple-v1)
         └─ the study loop closes; AGENTS.md spec satisfied
 Step 10 evals  golden briefs + a quality gate
@@ -348,10 +425,9 @@ deferred per the constraints.
 
 ## 9. Decisions to confirm before coding
 
-1. **Vector store:** Keep the Khoj dependency (already running on the VM), or
-   replace with a local in-process store (e.g. sqlite-vss / lancedb) to kill the
-   infra dependency? *Lean: local, to keep the rebuild self-contained and demoable
-   without a running VM.*
+1. **Vector store:** Use Khoj on the Google Cloud VM as the established retrieval
+   backend, with a local fallback later if demo independence becomes important.
+   *Lean: reuse Khoj while making the corpus fresher and smaller.*
 2. **Prose graphifier model:** Gemini (you have a key) vs local. *Lean: Gemini for
    extraction quality, cache aggressively, mark all such edges `inferred`.*
 3. **Graph store format:** Single `graph.json` (current) vs sqlite. *Lean: sqlite
@@ -365,7 +441,7 @@ deferred per the constraints.
 
 - Not a generic flashcard app. Cards come from graph nodes only.
 - Not full spaced repetition. simple-v1 only; FSRS-shaped but unimplemented.
-- Not universal ingestion. LinkedIn/WhatsApp are future `context_type`s,
-  not day-one scope.
+- Not universal ingestion. The active corpus is fresh by default; older material
+  earns durable/canonical status before it shapes ordinary answers.
 - Not agent-plumbing-only. Every tool returns a human-legible brief.
 - Not metadata inspection. Clicking a node invites active recall, not a properties panel.

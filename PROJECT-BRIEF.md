@@ -23,6 +23,19 @@ what matters, why, what the evidence is, what to think next. It is one of
 three portfolio pieces (with .pi and GDDP) — together a triptych for
 verify / control / continue in agent-era infrastructure.
 
+The newer architecture split is simple: **MyAPI is the context engine; MyMCP is
+the lean paid doorway into it.** MyAPI can use the existing Khoj RAG engine on the
+Google Cloud VM, source manifests, local readers, caches, and daily corpus refresh.
+MyMCP should stay at two public tools with compact arguments for `intent`, `budget`,
+`max_tokens`, and evidence inclusion. The default answer is small and fresh; deeper
+packets are requested deliberately.
+
+The corpus direction is also sharper now: rebuild around a recent active window,
+roughly 15–30 days, refreshed daily. Older material remains useful when it is
+explicitly stamped durable/canonical or used as baseline/reference. This keeps
+the engine from becoming another cold storage pile while preserving the old MyAPI
+work as evaluation substrate and retrieval precedent.
+
 ## Ground state
 
 Pulled from `graphify-out/.graphify_analysis.json` (2026-06-21).
@@ -41,9 +54,10 @@ Pulled from `graphify-out/.graphify_analysis.json` (2026-06-21).
   rag-pipeline sub-agents); context-refinery core (event_trace, handoff
   vault, context_refinery, graphify); corpus + architecture (context brief,
   unified graph model, study/export layer); MCP surface
-  (get_project/person_context, get_evidence_for_claim, get_review_queue)
+  (`get_project_context`, `get_person_context`)
 - **Old MyAPI substrate:** `../MyAPI/Corpus v1.0/` (22 PARA buckets) +
-  `../MyAPI/graphify-out/graph.json` (862 nodes, 2186 links) — the rebuild's L0/L1
+  `../MyAPI/graphify-out/graph.json` (862 nodes, 2186 links) — baseline/reference,
+  with live daily sources becoming the default active corpus
 
 ## Current direction
 
@@ -68,6 +82,8 @@ a cold agent continuing without re-litigation.
 - Inherited uncommitted work is part of the evidence trail. The rebuild is about
   durable context, so unknown local edits, traces, or generated artifacts must be
   classified before any cleanup or readiness claim.
+- MCP token cost is a design constraint. Keep public tools few, route through
+  arguments, and make returned budget/freshness visible in every envelope.
 
 ## Deeper docs
 
