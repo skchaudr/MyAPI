@@ -1,5 +1,8 @@
 # 026 — Cost-Aware MyMCP / Corpus Tiers
 
+
+NONE OF THIS IS CANONICAL UNTIL VERIFIED DIRECTLY BY SAB 
+
 ------------------------------------------------ Agent Section START
 
 Date: 2026-07-02

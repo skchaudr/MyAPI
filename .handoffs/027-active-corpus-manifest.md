@@ -1,5 +1,6 @@
 # 027 — Active Corpus Manifest
 
+NONE OF THIS IS CANONICAL UNTIL VERIFIED DIRECTLY BY SAB 
 ------------------------------------------------ Agent Section START
 
 Date: 2026-07-02
