@@ -22,8 +22,13 @@ Work order is traces → golden briefs → reader → MCP, in that sequence.
   FSRS-migratable frontmatter), JSON/YAML (graph + schemas)
 - **Existing tooling:** `graphify extract .` refreshes
   `graphify-out/.graphify_analysis.json` (no LLM cold-start needed)
-- **Substrates:** [`../MyAPI/Corpus v1.0/`](../MyAPI/) (22 PARA buckets),
-  `../MyAPI/graphify-out/graph.json` (862 nodes, 2186 links)
+- **Substrates** (layout-dependent — use the row for your machine):
+  - **Mac dual worktree** (`MyAPI-rebuild` + `MyAPI`): vault at
+    `../MyAPI/Corpus v1.0/` (22 PARA buckets); graph at `graphify-out/graph.json`
+  - **VM sab-dev** (`myapi` + `myapi-corpus`): vault at
+    `../myapi-corpus/Corpus v1.0/` when synced; graph at `graphify-out/graph.json`
+  - **Single checkout:** use sibling corpus worktree path if present, else note
+    vault is Mac-local until synced
 - **MCP surface (target):** `get_project_context`, `get_person_context` —
   the anchor locks these two names; do not fork into `get_user_context` /
   "operator context"

@@ -1,5 +1,7 @@
 """Tests for the smart retrieval pipeline."""
 
+from datetime import datetime, timedelta, timezone
+
 import pytest
 from context_refinery.retrieval import (
     KeywordSearcher,
@@ -352,14 +354,17 @@ def test_rerank_preserves_all_results():
 
 
 def test_rerank_temporal_boosts_recent():
-    recent = _make_result(created_at="2026-04-12T00:00:00+00:00")
+    now = datetime.now(timezone.utc)
+    recent_at = (now - timedelta(days=7)).replace(microsecond=0).isoformat()
+    old_at = (now - timedelta(days=400)).replace(microsecond=0).isoformat()
+    recent = _make_result(created_at=recent_at)
     recent["khoj_score"] = 0.5
-    old = _make_result(created_at="2025-01-01T00:00:00+00:00")
+    old = _make_result(created_at=old_at)
     old["khoj_score"] = 0.3  # old has better semantic score
 
     reranked = ResultReranker().rerank([old, recent], intent="temporal")
     # Recent should rank higher despite worse semantic score
-    assert reranked[0]["metadata"]["created_at"] == "2026-04-12T00:00:00+00:00"
+    assert reranked[0]["metadata"]["created_at"] == recent_at
 
 
 def test_rerank_trust_score():
