@@ -48,5 +48,5 @@ status: "{doc.status}"
             "export_path": EXPORT_DIR
         }
     except Exception as e:
-        logger.error(f"Failed to generate export bundle: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error("Failed to generate export bundle: %s", e, exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
