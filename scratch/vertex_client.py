@@ -11,7 +11,7 @@ import certifi
 SSL_CTX = ssl.create_default_context(cafile=certifi.where())
 
 PROJECT_ID = "sb-info-notes-2026"
-AGENT_ID = "b4ae994b-3e33-405f-843d-ad47fbab6981"
+AGENT_ID = "e348ef80-e5b0-4b25-aafd-b9e7074d68ff"
 DATA_STORES = {
     "portfolio": "portfolio-200_1782634877044",
     "code": "code-corpus_1782634759080",
@@ -19,7 +19,7 @@ DATA_STORES = {
 }
 
 DISCO_BASE = f"https://us-discoveryengine.googleapis.com/v1/projects/{PROJECT_ID}/locations/us/collections/default_collection"
-DF_BASE = f"https://us-west1-dialogflow.googleapis.com/v3beta1/projects/{PROJECT_ID}/locations/us-west1/agents/{AGENT_ID}"
+DF_BASE = f"https://us-central1-dialogflow.googleapis.com/v3beta1/projects/{PROJECT_ID}/locations/us-central1/agents/{AGENT_ID}"
 SESSION_FILE = pathlib.Path.home() / ".cache" / "vertex_session_id"
 
 def get_access_token():
