@@ -1,0 +1,44 @@
+schema_version: "1.0"
+schema_type: project_graph
+
+project_id: myapi
+project_name: MyAPI Personal Context Engine
+description: >-
+  Rebuild MyAPI around durable handoffs and compact context briefs so a cold agent
+  can continue current work without re-litigating intent or searching raw dumps.
+repo: skchaudr/MyAPI
+
+blueprint:
+  vision: >-
+    Return small, fresh, evidence-backed project and person context briefs from a
+    vault of durable handoffs.
+  architecture_notes: >-
+    Preserve event traces and decisions as privileged retrieval units. Follow the
+    locked order: traces, golden briefs, reader, then the two-tool MCP surface.
+    Default to a recent active corpus window; older material participates only when
+    explicitly durable, canonical, baseline, or reference. Keep MyAPI as the context
+    engine and MyMCP as the lean paid doorway.
+  major_capabilities:
+    - source-verified event traces as durable handoffs
+    - budgeted project and person context briefs with freshness and evidence
+    - cold-agent continuation evaluation before service expansion
+    - two-tool MCP surface for project and person context
+
+graph_version: "1.0"
+created_at: 2026-07-17
+last_updated: 2026-07-17
+
+nodes_dir: nodes/
+
+nodes:
+  - id: prove-first-durable-handoff
+    title: Prove the first MyAPI durable handoff and golden project brief
+    status: ready
+    type: capability
+
+execution_policy:
+  default_executor: vm_worker
+  max_concurrent_jobs: 1
+  retry_budget: 2
+  require_human_review_before_overnight: true
+  artifact_gate_enforced: true

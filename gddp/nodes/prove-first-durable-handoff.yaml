@@ -1,0 +1,68 @@
+schema_version: "1.0"
+schema_type: node
+
+node_id: prove-first-durable-handoff
+title: Prove the first MyAPI durable handoff and golden project brief
+type: capability
+why: >-
+  MyAPI earns trust when verified event history becomes a compact brief that lets a
+  cold agent continue correctly; more ingestion or retrieval machinery before that
+  proof risks rebuilding the same noisy pool that failed in v0.
+
+depends_on: []
+
+acceptance_criteria:
+  - id: myapi-v0-trace-authored
+    criterion: >-
+      A human-legible event trace records when MyAPI v0 diverged, the friend-refinery
+      origin, what was built, what failed, the decisions made, why it matters now,
+      and exact evidence references.
+  - id: rebuild-night-trace-authored
+    criterion: >-
+      A second event trace records the June 19-21 rebuild derail, involved agent
+      sessions, decisions, damage or rework, recovery, lessons, and exact evidence
+      references without turning the trace into a raw transcript dump.
+  - id: traces-source-verified
+    criterion: >-
+      Every factual claim designated as important in both traces is checked against
+      repository files, handoffs, corpus anchors, or session records and is marked
+      verified, contradicted, or unresolved with a source path.
+  - id: golden-project-brief-produced
+    criterion: >-
+      A versioned golden get_project_context brief for MyAPI-rebuild states current
+      intent, history that matters, locked decisions, evidence, open risks, and the
+      next bounded action within an explicit context budget.
+  - id: cold-agent-continuation-passes
+    criterion: >-
+      A cold agent given only the golden brief identifies the correct project thesis,
+      avoids the documented naming and ingestion traps, and proposes the correct next
+      step without scanning the repository; its answer is scored against a committed
+      expected-answer rubric.
+  - id: next-node-boundary-recorded
+    criterion: >-
+      The result receipt records whether the next node is the vault reader or a smaller
+      prerequisite and explicitly defers MCP implementation until the traces and golden
+      brief are accepted by a human.
+
+constraints:
+  - follow the locked order of traces then golden briefs then reader then MCP
+  - do not start bulk corpus ingestion, graph expansion, or retrieval tuning in this node
+  - do not conflate the friend-refinery export product with the get_person_context tool
+  - keep the public MCP names fixed as get_project_context and get_person_context
+  - do not commit raw private corpus or session content; commit only bounded excerpts or source references approved for the repo
+  - human review owns acceptance and any change to graph truth
+
+allowed_execution_modes:
+  - vm_worker
+  - human
+
+required_artifacts:
+  - handoffs/event-trace-myapi-v0.md
+  - handoffs/event-trace-rebuild-night.md
+  - evals/golden_briefs/myapi-project-context.md
+  - result-summary.md
+  - graph-update.yaml
+
+status: ready
+priority: critical
+unlocks: []
