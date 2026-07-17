@@ -57,10 +57,9 @@ allowed_execution_modes:
   - human
 
 required_artifacts:
-  - handoffs/event-trace-myapi-v0.md
-  - handoffs/event-trace-rebuild-night.md
-  - evals/golden_briefs/myapi-project-context.md
+  - decision.md
   - result-summary.md
+  - patch.diff
   - graph-update.yaml
 
 status: ready
