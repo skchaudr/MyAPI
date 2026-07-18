@@ -10,6 +10,7 @@ __pycache__/
 !.env.example
 .DS_Store
 .tmp/
+graphify-out/
 node_modules/
 dist/
 build/

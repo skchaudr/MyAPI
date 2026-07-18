@@ -22,7 +22,7 @@ import certifi
 SSL_CTX = ssl.create_default_context(cafile=certifi.where())
 
 # Configuration
-PROJECT_ID = "sb-genai-2026"
+PROJECT_ID = "sb-info-notes-2026"
 MYAPI_BASE_URL = "http://100.85.100.52:8000"
 BRAIN_DIR = Path("/Users/saboor/.gemini/antigravity/brain/70616246-4bf1-4f9f-b4aa-18d17be8ff18")
 REPORT_PATH = BRAIN_DIR / "comparative_retrieval_benchmark.md"
@@ -44,13 +44,13 @@ BENCHMARK_QUERIES = [
 def get_access_token():
     try:
         result = subprocess.run(
-            ["gcloud", "auth", "print-access-token", "--account=sbkchaudry@gmail.com"],
+            ["gcloud", "auth", "print-access-token", "--account=sb.info.you@gmail.com"],
             capture_output=True, text=True, check=True
         )
         return result.stdout.strip()
     except subprocess.CalledProcessError as e:
         print(f"❌ Error getting gcloud access token: {e.stderr}", file=sys.stderr)
-        print("Please run: gcloud auth login sbkchaudry@gmail.com", file=sys.stderr)
+        print("Please run: gcloud auth login sb.info.you@gmail.com", file=sys.stderr)
         sys.exit(1)
 
 def query_myapi(query: str) -> dict:
