@@ -49,3 +49,8 @@ graphify-out/cache/
 
 # daily hot corpus bundles (local)
 scratch/corpus-daily/
+
+# Agent-query bank: full question text lives only on local disk. The tracked
+# manifest ships aggregates and fingerprints; raw questions stay gitignored.
+evals/question-bank/questions.jsonl
+evals/question-bank/_scratch/
