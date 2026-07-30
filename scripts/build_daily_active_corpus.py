@@ -24,7 +24,12 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from scripts.source_manifest import DEFAULT_HOT_DAYS, build_corpus_manifest
+from scripts.daily_corpus_allowlist import (
+    AllowlistEntry,
+    iter_entry_files,
+    load_allowlist,
+)
+from scripts.source_manifest import DEFAULT_HOT_DAYS, Source, manifest_row_for_file
 
 DEFAULT_OUT_ROOT = REPO_ROOT / "scratch" / "corpus-daily"
 SKIP_NAME_PARTS = (
@@ -117,7 +122,8 @@ def write_summary(receipt: dict, path: Path) -> None:
         f"- bundle_dir: `{receipt['bundle_dir']}`",
         "",
         "Khoj delivery is separate (`scripts/deliver_daily_active_corpus.py`).",
-        "Cold Corpus v1.0 is excluded from active walks.",
+        "Default sources: config/daily_corpus_allowlist.yaml (not whole SSD).",
+        "Legacy wide walk only with --legacy-wide.",
         "",
     ]
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -131,26 +137,40 @@ def main() -> int:
         default=DEFAULT_OUT_ROOT,
         help="Parent directory for dated bundles",
     )
-    parser.add_argument("--hot-days", type=int, default=DEFAULT_HOT_DAYS)
+    parser.add_argument(
+        "--hot-days",
+        type=int,
+        default=None,
+        help="Override allowlist defaults.hot_days",
+    )
     parser.add_argument(
         "--max-md-files",
         type=int,
-        default=800,
-        help="Cap markdown files materialized into the bundle",
+        default=None,
+        help="Cap markdown files (default from allowlist, ~150)",
     )
     parser.add_argument(
         "--max-file-bytes",
         type=int,
-        default=1_500_000,
-        help="Skip individual files larger than this",
+        default=None,
+        help="Skip files larger than this (default from allowlist)",
     )
     parser.add_argument(
         "--date",
         help="Bundle date stamp YYYY-MM-DD (default: UTC today)",
     )
+    parser.add_argument(
+        "--allowlist",
+        type=Path,
+        default=None,
+        help="Path to daily_corpus_allowlist.yaml (default: config/)",
+    )
+    parser.add_argument(
+        "--legacy-wide",
+        action="store_true",
+        help="DANGEROUS: old whole-SSD/session walk via source_manifest DEFAULT_SOURCES",
+    )
     args = parser.parse_args()
-    if args.hot_days < 1:
-        parser.error("--hot-days must be >= 1")
 
     now = datetime.now(timezone.utc)
     date_stamp = args.date or now.strftime("%Y-%m-%d")
@@ -158,18 +178,103 @@ def main() -> int:
     md_dir = bundle_dir / "md"
     bundle_dir.mkdir(parents=True, exist_ok=True)
 
-    manifest = build_corpus_manifest(hot_days=args.hot_days, active_only=True)
-    items = list(manifest["items"])
+    if args.legacy_wide:
+        from scripts.source_manifest import build_corpus_manifest
+
+        hot_days = args.hot_days if args.hot_days is not None else DEFAULT_HOT_DAYS
+        if hot_days < 1:
+            parser.error("--hot-days must be >= 1")
+        max_md = args.max_md_files if args.max_md_files is not None else 800
+        max_bytes = args.max_file_bytes if args.max_file_bytes is not None else 1_500_000
+        manifest = build_corpus_manifest(hot_days=hot_days, active_only=True)
+        items = list(manifest["items"])
+        allowlist_meta = {"mode": "legacy_wide", "warning": "full family walk"}
+    else:
+        cfg = load_allowlist(args.allowlist)
+        hot_days = args.hot_days if args.hot_days is not None else cfg.hot_days
+        if hot_days < 1:
+            parser.error("--hot-days must be >= 1")
+        max_md = args.max_md_files if args.max_md_files is not None else cfg.max_md_files
+        max_bytes = (
+            args.max_file_bytes if args.max_file_bytes is not None else cfg.max_file_bytes
+        )
+        items = []
+        missing_required: list[str] = []
+        for entry in cfg.entries:
+            if entry.required and not entry.path.exists():
+                missing_required.append(f"{entry.id}:{entry.path}")
+                continue
+            if not entry.path.exists():
+                continue
+            source = Source(
+                source_family=entry.family,
+                path=entry.path,
+                parser_available=True,
+                suffixes=entry.suffixes,
+            )
+            for file_path in iter_entry_files(entry, cfg.deny_substrings):
+                try:
+                    if file_path.stat().st_size > max_bytes:
+                        continue
+                except OSError:
+                    continue
+                row = manifest_row_for_file(
+                    source, file_path, now=now, hot_days=hot_days
+                )
+                if not row["include_in_active_bundle"]:
+                    continue
+                items.append(row)
+        if missing_required:
+            raise SystemExit(
+                "required allowlist paths missing:\n  " + "\n  ".join(missing_required)
+            )
+        # recompute summary like build_corpus_manifest
+        tier_counts = {"hot": 0, "durable": 0, "cold": 0}
+        source_counts: dict[str, int] = {}
+        for row in items:
+            tier_counts[str(row["corpus_tier"])] += 1
+            fam = str(row["source_family"])
+            source_counts[fam] = source_counts.get(fam, 0) + 1
+        manifest = {
+            "generated_at": now.replace(microsecond=0).isoformat(),
+            "hot_days": hot_days,
+            "active_only": True,
+            "allowlist": str(cfg.path),
+            "summary": {
+                "file_count": len(items),
+                "tier_counts": tier_counts,
+                "source_counts": source_counts,
+            },
+            "items": items,
+        }
+        allowlist_meta = {
+            "mode": "allowlist",
+            "path": str(cfg.path),
+            "entry_count": len(cfg.entries),
+        }
+
     manifest_path = bundle_dir / "active-manifest.json"
     manifest_path.write_text(
         json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
     )
 
+    # Prefer product/handoffs over bulk vault when max_md caps apply.
+    def _mat_priority(row: dict) -> tuple[int, str]:
+        fam = str(row.get("source_family") or "")
+        if fam.startswith("myapi") or fam.startswith("gddp") or fam.startswith("pi"):
+            return (0, fam)
+        if fam.startswith("vault"):
+            return (2, fam)
+        if fam.startswith("agent"):
+            return (3, fam)
+        return (1, fam)
+
+    items_sorted = sorted(items, key=_mat_priority)
     materialized = materialize_markdown(
-        items,
+        items_sorted,
         md_dir,
-        max_files=args.max_md_files,
-        max_bytes=args.max_file_bytes,
+        max_files=max_md,
+        max_bytes=max_bytes,
     )
     mat_path = bundle_dir / "materialized.json"
     mat_path.write_text(
@@ -184,19 +289,20 @@ def main() -> int:
     receipt = {
         "date": date_stamp,
         "generated_at": now.replace(microsecond=0).isoformat(),
-        "hot_days": args.hot_days,
+        "hot_days": hot_days,
         "bundle_dir": str(bundle_dir),
         "manifest_path": str(manifest_path),
         "materialized_path": str(mat_path),
         "md_dir": str(md_dir),
+        "allowlist": allowlist_meta,
         "summary": {
             "active_item_count": len(items),
             "materialized_md_count": len(materialized),
             "tier_counts": manifest["summary"]["tier_counts"],
             "source_counts": manifest["summary"]["source_counts"],
             "md_by_family": md_by_family,
-            "max_md_files": args.max_md_files,
-            "max_file_bytes": args.max_file_bytes,
+            "max_md_files": max_md,
+            "max_file_bytes": max_bytes,
         },
         "latest_pointer": str(args.out_root.expanduser() / "latest"),
     }

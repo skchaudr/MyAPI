@@ -1,0 +1,199 @@
+# Daily hot corpus — single allowlist for air + mini.
+# Both hosts: scripts load THIS file. No whole-SSD / whole-~/.pi walks.
+#
+# Intent: handful of paths after heavy lifting is done.
+#   - 3 Obsidian folders (Projects, Inbox, Dailies)
+#   - 3 project surfaces (MyAPI, GDDP, Pi/Needle docs+handoffs)
+#   - handful of agent session roots (capped; hot window still applies)
+#
+# Paths are relative to $HOME unless absolute.
+# Edit here → both build_daily_active_corpus and daily_corpus_to_khoj obey.
+
+version: 1
+description: "Bounded daily hot → Khoj allowlist (canon)"
+
+defaults:
+  hot_days: 30
+  max_file_bytes: 512000
+  # Hard ceiling for materialized .md per run (safety; product-first order)
+  max_md_files: 200
+
+# Skip path substrings (never ingest)
+deny_substrings:
+  - "/.env"
+  - "auth.json"
+  - "credentials"
+  - "id_rsa"
+  - "id_ed25519"
+  - ".pem"
+  - "/weights/"
+  - "/blobs/"
+  - "token.json"
+  - "application_default"
+
+entries:
+  # ── Obsidian: three folders only ─────────────────────────────────────
+  - id: vault_projects
+    family: vault_projects
+    path: "Obsidian/SSD/01 Projects"
+    suffixes: [".md"]
+    recursive: true
+    max_files: 40
+    required: false
+
+  - id: vault_inbox
+    family: vault_inbox
+    path: "Obsidian/SSD/00 Inbox"
+    suffixes: [".md"]
+    recursive: true
+    max_files: 25
+    required: false
+
+  - id: vault_dailies
+    family: vault_dailies
+    path: "Obsidian/SSD/04 Periodic/00 Dailys"
+    suffixes: [".md"]
+    recursive: true
+    max_files: 25
+    required: false
+
+  # ── MyAPI product surface ────────────────────────────────────────────
+  - id: myapi_handoffs
+    family: myapi_handoffs
+    # Prefer rebuild worktree tip if present; loader also tries repos/MyAPI
+    path: "repos/MyAPI-rebuild/.handoffs"
+    alt_paths:
+      - "repos/MyAPI/.handoffs"
+      - "repos/MyAPI/handoffs"
+    suffixes: [".md"]
+    recursive: true
+    max_files: 40
+    required: true
+
+  - id: myapi_project_docs
+    family: myapi_project_docs
+    path: "repos/MyAPI-rebuild/project-docs"
+    alt_paths:
+      - "repos/MyAPI/project-docs"
+    suffixes: [".md"]
+    recursive: true
+    max_files: 30
+    required: false
+
+  - id: myapi_root_docs
+    family: myapi_root_docs
+    path: "repos/MyAPI-rebuild"
+    alt_paths:
+      - "repos/MyAPI"
+    suffixes: [".md"]
+    recursive: false   # top-level only
+    max_files: 20
+    required: false
+
+  # ── GDDP (briefs + recent handoffs, not full graphify) ───────────────
+  - id: gddp_runtime_brief
+    family: gddp_runtime
+    path: "repos/gddp-runtime/PROJECT-BRIEF.md"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 1
+    required: false
+
+  - id: gddp_runtime_topology
+    family: gddp_runtime
+    path: "repos/gddp-runtime/TOPOLOGY.md"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 1
+    required: false
+
+  - id: gddp_runtime_handoffs
+    family: gddp_runtime_handoffs
+    path: "repos/gddp-runtime/.handoffs"
+    suffixes: [".md"]
+    recursive: false   # top-level numbered handoffs only
+    max_files: 10
+    required: false
+
+  - id: gddp_config_readme
+    family: gddp_config
+    path: "repos/gddp-config/README.md"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 1
+    required: false
+
+  - id: gddp_config_handoffs
+    family: gddp_config_handoffs
+    path: "repos/gddp-config/.handoffs"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 10
+    required: false
+
+  # ── Pi / Needle (docs + handoffs only — not training/weights) ────────
+  - id: pi_brief
+    family: pi
+    path: ".pi/PROJECT-BRIEF.md"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 1
+    required: false
+
+  - id: pi_handoffs
+    family: pi_handoffs
+    path: ".pi/.handoffs"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 20
+    required: false
+
+  - id: pi_needle_readme
+    family: pi_needle
+    path: ".pi/needle/README.md"
+    suffixes: [".md"]
+    recursive: false
+    max_files: 1
+    required: false
+
+  - id: pi_needle_docs
+    family: pi_needle
+    path: ".pi/needle/docs"
+    suffixes: [".md"]
+    recursive: true
+    max_files: 15
+    required: false
+
+  # ── Agent sessions: handful of roots, hard caps (md/jsonl inventory) ─
+  # Materialize step only ships .md; caps keep the walk cheap.
+  - id: sessions_claude_myapi
+    family: agent_sessions
+    path: ".claude/projects/-Users-sab-mini-repos-MyAPI-rebuild"
+    alt_paths:
+      - ".claude/projects/-Users-sab-mini-repos-MyAPI"
+      - ".claude/projects/-Users-saboor-repos-MyAPI"
+    suffixes: [".jsonl", ".md"]
+    recursive: true
+    max_files: 15
+    required: false
+
+  - id: sessions_claude_gddp
+    family: agent_sessions
+    path: ".claude/projects/-Users-sab-mini-repos-gddp-runtime"
+    alt_paths:
+      - ".claude/projects/-Users-sab-mini-repos-gddp-config"
+    suffixes: [".jsonl", ".md"]
+    recursive: true
+    max_files: 10
+    required: false
+
+  - id: sessions_grok_myapi
+    family: agent_sessions
+    path: ".grok/sessions/%2FUsers%2Fsab-mini%2Frepos%2FMyAPI-rebuild"
+    alt_paths:
+      - ".grok/sessions/%2FUsers%2Fsab-mini%2Frepos%2FMyAPI"
+      - ".grok/sessions/%2FUsers%2Fsab-mini%2Frepos%2FMyAPI%2Fscratch%2Fcorpus-hot"
+    suffixes: [".jsonl", ".md"]
+    recursive: true
+    max_files: 10
+    required: false

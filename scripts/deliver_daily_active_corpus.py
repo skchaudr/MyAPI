@@ -81,8 +81,13 @@ def main() -> int:
         help="Bundle dir or latest symlink",
     )
     parser.add_argument("--khoj-url", default=DEFAULT_KHOJ_URL)
-    parser.add_argument("--batch-size", type=int, default=15)
-    parser.add_argument("--max-files", type=int, default=800)
+    parser.add_argument("--batch-size", type=int, default=25)
+    parser.add_argument(
+        "--max-files",
+        type=int,
+        default=150,
+        help="Safety cap (matches allowlist max_md_files)",
+    )
     parser.add_argument("--start-index", type=int, default=0)
     parser.add_argument("--timeout", type=int, default=180)
     parser.add_argument(
