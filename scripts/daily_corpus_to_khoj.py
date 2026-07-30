@@ -282,9 +282,17 @@ def stage_name(spec: SourceSpec, src: Path) -> str:
     return f"{spec.prefix}--{base}"
 
 
-def wrap_markdown(src: Path, body: str, staged_name: str) -> str:
-    """Add provenance frontmatter if missing."""
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+def content_key(origin: str, body: str) -> str:
+    """Stable hash of origin+body (not wall-clock) for incremental skip."""
+    h = hashlib.sha256()
+    h.update(origin.encode("utf-8", errors="replace"))
+    h.update(b"\0")
+    h.update(body.encode("utf-8", errors="replace"))
+    return h.hexdigest()
+
+
+def wrap_markdown(src: Path, body: str, staged_name: str, body_key: str) -> str:
+    """Add provenance frontmatter if missing. body_key keeps wrap stable across runs."""
     header = (
         f"---\n"
         f"title: {src.name}\n"
@@ -292,35 +300,34 @@ def wrap_markdown(src: Path, body: str, staged_name: str) -> str:
         f"host: {HOST_TAG}\n"
         f"origin_path: {src}\n"
         f"staged_as: {staged_name}\n"
-        f"ingested_at: {now}\n"
+        f"content_key: {body_key}\n"
         f"status: incubating\n"
         f"doc_type: daily_corpus\n"
         f"---\n\n"
     )
     if body.lstrip().startswith("---"):
-        # keep original FM; append provenance trailer at top as HTML comment-ish block
         return (
             f"<!-- myapi-daily-corpus host={HOST_TAG} origin={src} "
-            f"staged={staged_name} at={now} -->\n\n{body}"
+            f"staged={staged_name} key={body_key} -->\n\n{body}"
         )
     return header + body
 
 
-def stage_all() -> tuple[list[Path], list[str]]:
+def stage_all() -> tuple[list[tuple[Path, str]], list[str]]:
+    """Return list of (staged_path, content_key), warnings."""
     STAGE_DIR.mkdir(parents=True, exist_ok=True)
-    # clean stage
     for old in STAGE_DIR.iterdir():
         if old.is_file():
             old.unlink()
 
-    staged: list[Path] = []
+    staged: list[tuple[Path, str]] = []
     warnings: list[str] = []
     for spec in allowlist():
         try:
             files = collect_from_spec(spec)
-        except FileNotFoundError as exc:
+        except FileNotFoundError:
             raise
-        if not files and spec.path.exists() is False:
+        if not files and not spec.path.exists():
             warnings.append(f"missing optional: {spec.path}")
             continue
         for src in files:
@@ -335,9 +342,10 @@ def stage_all() -> tuple[list[Path], list[str]]:
             name = stage_name(spec, src)
             if not name.endswith(".md"):
                 name = name + ".md"
+            key = content_key(str(src), raw)
             dest = STAGE_DIR / name
-            dest.write_text(wrap_markdown(src, raw, name), encoding="utf-8")
-            staged.append(dest)
+            dest.write_text(wrap_markdown(src, raw, name, key), encoding="utf-8")
+            staged.append((dest, key))
     return staged, warnings
 
 
@@ -428,7 +436,7 @@ def write_receipt(ok: bool, payload: dict) -> Path:
     return path
 
 
-def git_export_main_tips(staged: list[Path]) -> list[str]:
+def git_export_main_tips(staged: list[tuple[Path, str]]) -> list[str]:
     """If working tree lacks main tip docs, export via git show into stage."""
     tips = [
         ("PROJECT-BRIEF.md", "myapi-main--PROJECT-BRIEF.md"),
@@ -445,7 +453,6 @@ def git_export_main_tips(staged: list[Path]) -> list[str]:
     notes: list[str] = []
     for rel, out_name in tips:
         dest = STAGE_DIR / out_name
-        # skip if already staged from working tree under similar name
         proc = subprocess.run(
             ["git", "-C", str(REPO), "show", f"main:{rel}"],
             capture_output=True,
@@ -458,11 +465,13 @@ def git_export_main_tips(staged: list[Path]) -> list[str]:
         if len(body.encode("utf-8")) > MAX_FILE_BYTES:
             notes.append(f"skip large main:{rel}")
             continue
+        origin = f"git:main:{rel}"
+        key = content_key(origin, body)
         dest.write_text(
-            wrap_markdown(Path(f"git:main:{rel}"), body, out_name),
+            wrap_markdown(Path(origin), body, out_name, key),
             encoding="utf-8",
         )
-        staged.append(dest)
+        staged.append((dest, key))
         notes.append(f"staged main:{rel}")
     return notes
 
@@ -485,18 +494,17 @@ def run(dry_run: bool = False) -> int:
             raise RuntimeError(f"too few staged files ({len(staged)}); allowlist empty or broken")
 
         manifest = load_manifest()
-        to_upload: list[Path] = []
+        to_upload: list[tuple[Path, str]] = []
         skipped = 0
-        for path in staged:
-            digest = sha256_file(path)
-            if manifest.get(path.name) == digest:
+        for path, key in staged:
+            if manifest.get(path.name) == key:
                 skipped += 1
                 continue
-            to_upload.append(path)
+            to_upload.append((path, key))
 
         payload["skipped_unchanged"] = skipped
         payload["to_upload"] = len(to_upload)
-        payload["files"] = [p.name for p in staged]
+        payload["files"] = [p.name for p, _ in staged]
 
         if dry_run:
             payload["ok"] = True
@@ -510,7 +518,7 @@ def run(dry_run: bool = False) -> int:
 
         indexed = 0
         failed: list[str] = []
-        for path in to_upload:
+        for path, key in to_upload:
             code = 0
             for attempt in range(1, 4):
                 try:
@@ -527,7 +535,7 @@ def run(dry_run: bool = False) -> int:
                     continue
                 break
             if code in (200, 201, 204):
-                manifest[path.name] = sha256_file(path)
+                manifest[path.name] = key
                 indexed += 1
                 log(f"  OK {path.name} http={code}")
             else:
