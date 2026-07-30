@@ -34,6 +34,9 @@ DEFAULT_SOURCES = (
     Source("pi_needle", Path("/Users/sab-mini/.pi/needle"), False, (".jsonl", ".md")),
     Source("pi_handoffs", Path("/Users/sab-mini/.pi/.handoffs"), False, (".md",)),
     Source("pi_agent_handoffs", Path("/Users/sab-mini/.pi/agent/handoffs"), False, (".md",)),
+    Source("myapi_handoffs", Path("/Users/sab-mini/repos/MyAPI/.handoffs"), True, (".md",)),
+    Source("myapi_project_docs", Path("/Users/sab-mini/repos/MyAPI/project-docs"), True, (".md",)),
+    Source("myapi_root_docs", Path("/Users/sab-mini/repos/MyAPI"), True, (".md",)),
     Source(
         "corpus_v1_baseline",
         Path("/Users/sab-mini/repos/MyAPI/Corpus v1.0"),
@@ -41,6 +44,8 @@ DEFAULT_SOURCES = (
         (".md",),
     ),
 )
+
+# myapi_root_docs only walks top-level *.md (not recursive tree); see _iter_files special-case below.
 
 DURABLE_BASENAMES = frozenset({
     "AGENTS.md",
@@ -66,7 +71,18 @@ class TierDecision:
     include_in_active_bundle: bool
 
 
-def _iter_files(root: Path, suffixes: tuple[str, ...]) -> Iterable[Path]:
+def _iter_files(
+    root: Path,
+    suffixes: tuple[str, ...],
+    *,
+    source_family: str | None = None,
+) -> Iterable[Path]:
+    # Root MyAPI docs only: avoid walking Corpus v1.0 / .git / graphify via this root.
+    if source_family == "myapi_root_docs" and root.is_dir():
+        for path in root.iterdir():
+            if path.is_file() and (not suffixes or path.suffix in suffixes):
+                yield path
+        return
     for path in root.rglob("*"):
         if path.is_file() and (not suffixes or path.suffix in suffixes):
             yield path
@@ -101,7 +117,7 @@ def summarize_source(source: Source) -> dict[str, object]:
     newest_mtime = -1.0
     file_count = 0
 
-    for file_path in _iter_files(root, source.suffixes):
+    for file_path in _iter_files(root, source.suffixes, source_family=source.source_family):
         file_count += 1
         mtime = file_path.stat().st_mtime
         if mtime > newest_mtime:
@@ -195,13 +211,18 @@ def build_corpus_manifest(
 ) -> dict[str, object]:
     rows: list[dict[str, object]] = []
     for source in sources:
+        # Active daily bundle never needs cold baseline walk.
+        if active_only and source.source_family in COLD_SOURCE_FAMILIES:
+            continue
         root = source.path.expanduser()
         if not root.exists():
             continue
         if root.is_file():
             candidates = (root,)
         else:
-            candidates = _iter_files(root, source.suffixes)
+            candidates = _iter_files(
+                root, source.suffixes, source_family=source.source_family
+            )
         for file_path in candidates:
             row = manifest_row_for_file(source, file_path, now=now, hot_days=hot_days)
             if active_only and not row["include_in_active_bundle"]:
