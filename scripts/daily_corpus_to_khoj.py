@@ -511,7 +511,21 @@ def run(dry_run: bool = False) -> int:
         indexed = 0
         failed: list[str] = []
         for path in to_upload:
-            code = put_file(base, path)
+            code = 0
+            for attempt in range(1, 4):
+                try:
+                    code = put_file(base, path)
+                except RuntimeError as exc:
+                    log(f"  retry {attempt}/3 {path.name}: {exc}")
+                    time.sleep(2 * attempt)
+                    continue
+                if code in (200, 201, 204):
+                    break
+                if code >= 500 and attempt < 3:
+                    log(f"  retry {attempt}/3 {path.name} http={code}")
+                    time.sleep(2 * attempt)
+                    continue
+                break
             if code in (200, 201, 204):
                 manifest[path.name] = sha256_file(path)
                 indexed += 1
@@ -522,10 +536,11 @@ def run(dry_run: bool = False) -> int:
 
         payload["indexed"] = indexed
         payload["failed"] = failed
+        # Always persist successful hashes so retries are incremental.
+        save_manifest(manifest)
         if failed:
             raise RuntimeError(f"{len(failed)} file(s) failed to index: {failed[:5]}")
 
-        save_manifest(manifest)
         payload["ok"] = True
         payload["elapsed_s"] = round(time.time() - started, 2)
         payload["finished_at"] = datetime.now(timezone.utc).isoformat()
