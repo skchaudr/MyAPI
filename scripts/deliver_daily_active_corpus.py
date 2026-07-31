@@ -4,7 +4,7 @@
 - Health-checks Khoj first; if down, exits 0 with receipt status=skipped_unreachable
   so launchd does not thrash (bundle still built locally).
 - Incremental PUT batches of .md only. No full-corpus reindex.
-- Env override: MYAPI_KHOJ_URL (default http://100.88.54.98:42110 — khoj-vm-restore).
+- Env override: MYAPI_KHOJ_URL (default http://khoj-38:42110 — sab-mini@khoj-38).
 """
 
 from __future__ import annotations
@@ -21,7 +21,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_LATEST = REPO_ROOT / "scratch" / "corpus-daily" / "latest"
-DEFAULT_KHOJ_URL = os.environ.get("MYAPI_KHOJ_URL", "http://100.88.54.98:42110")
+DEFAULT_KHOJ_URL = os.environ.get("MYAPI_KHOJ_URL", "http://khoj-38:42110")
 
 
 def _http_json(method: str, url: str, *, timeout: int = 10, data: bytes | None = None, headers: dict | None = None) -> tuple[int, bytes]:

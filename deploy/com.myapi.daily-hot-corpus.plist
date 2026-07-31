@@ -7,7 +7,7 @@
     launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.myapi.daily-hot-corpus.plist
   Manual:
     bash scripts/run_daily_hot_corpus.sh
-  Env: MYAPI_KHOJ_URL (default khoj-vm-restore Tailscale)
+  Env: MYAPI_KHOJ_URL (default khoj-38 Tailscale)
 -->
 <plist version="1.0">
 <dict>
@@ -29,7 +29,7 @@
     <key>MYAPI_REPO</key>
     <string>/Users/sab-mini/repos/MyAPI</string>
     <key>MYAPI_KHOJ_URL</key>
-    <string>http://100.88.54.98:42110</string>
+    <string>http://khoj-38:42110</string>
   </dict>
   <key>StartCalendarInterval</key>
   <dict>
