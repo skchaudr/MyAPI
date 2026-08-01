@@ -49,3 +49,6 @@ graphify-out/cache/
 
 # daily hot corpus bundles (local)
 scratch/corpus-daily/
+
+# DigitalOcean sprint secrets (never commit)
+ops/do-sprint/secrets/
