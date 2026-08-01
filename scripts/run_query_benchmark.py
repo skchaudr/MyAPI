@@ -2,6 +2,7 @@
 """Run the retrieval benchmark against the Context Refinery /query endpoint."""
 
 import json
+import os
 import time
 import urllib.error
 import urllib.request
