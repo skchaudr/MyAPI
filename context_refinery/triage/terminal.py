@@ -11,9 +11,8 @@ import string
 
 try:
     from rich.console import Console
-except ImportError:
-    print("Please run: pip install rich")
-    exit(1)
+except ImportError as exc:
+    raise ImportError("Please install rich (`pip install rich`) to use terminal triage tools.") from exc
 
 console = Console()
 
