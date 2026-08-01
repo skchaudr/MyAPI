@@ -58,7 +58,7 @@ def result_summary(result: dict) -> tuple[str, str, int, int]:
 
 
 def main() -> int:
-    base_url = "http://localhost:8000"
+    base_url = os.getenv("MYAPI_BASE_URL", "http://localhost:8000")
     out = Path("/tmp/retrieval-benchmark-new-vm.md")
     lines = [
         "# Retrieval Benchmark - New VM Baseline",
