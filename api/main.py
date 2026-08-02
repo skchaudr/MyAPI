@@ -28,7 +28,19 @@ app.include_router(query.router)
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "model": "gemini-1.5-flash"}
+    import os
+    from context_refinery.services import GeminiService
+
+    svc = GeminiService()
+    return {
+        "status": "ok",
+        "model": svc.model_name,
+        "auth_mode": svc.auth_mode,
+        "project": None if svc.auth_mode == "api_key" else svc.project,
+        "location": None if svc.auth_mode == "api_key" else svc.location,
+        "gemini_configured": svc.is_configured,
+        "khoj_url": os.environ.get("KHOJ_URL"),
+    }
 
 
 if os.getenv("ENABLE_SENTRY_TEST_ENDPOINT") == "1":

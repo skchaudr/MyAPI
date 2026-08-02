@@ -13,9 +13,13 @@ async def enrich_content(request: EnrichRequest):
         result = await loop.run_in_executor(None, service.enrich, request.content)
         return EnrichResponse(**result)
     except Exception as e:
-        if "GEMINI_API_KEY" in str(e):
-            raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured on this server")
-        raise HTTPException(status_code=500, detail=str(e))
+        msg = str(e)
+        if "not configured" in msg.lower() or "GEMINI_API_KEY" in msg:
+            raise HTTPException(
+                status_code=503,
+                detail="Gemini not configured (set GEMINI_API_KEY or Vertex ADC)",
+            )
+        raise HTTPException(status_code=500, detail=msg)
 
 
 @router.post("/enrich/batch", response_model=BatchEnrichResponse)
@@ -34,9 +38,13 @@ async def enrich_batch(request: BatchEnrichRequest):
             results.append(EnrichResult(index=i, status="success", data=enrich_response))
             succeeded += 1
         except Exception as e:
-            if "GEMINI_API_KEY" in str(e):
-                raise HTTPException(status_code=503, detail="GEMINI_API_KEY not configured on this server")
-            results.append(EnrichResult(index=i, status="error", error=str(e)))
+            msg = str(e)
+            if "not configured" in msg.lower() or "GEMINI_API_KEY" in msg:
+                raise HTTPException(
+                    status_code=503,
+                    detail="Gemini not configured (set GEMINI_API_KEY or Vertex ADC)",
+                )
+            results.append(EnrichResult(index=i, status="error", error=msg))
             failed += 1
 
         if i < len(request.documents) - 1:

@@ -13,7 +13,7 @@ import sys
 import urllib.error
 import urllib.request
 
-BASE_URL = "http://localhost:8080"
+BASE_URL = "http://localhost:8000"
 TIMEOUT = 30
 
 # Each entry: id, query, and a pass criterion.
