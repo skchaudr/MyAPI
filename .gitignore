@@ -22,7 +22,6 @@ jules-vault-triage-dispatch.md
 
 # Local archive — out-of-repo holding pen for legacy/scratch
 _archive/
-
 # Generated V4 vault-normalization artifacts
 project-docs/backups/
 project-docs/*-apply-manifest.json
@@ -32,23 +31,20 @@ project-docs/pilot-*.json
 project-docs/pilot-*.md
 project-docs/vault-schema-v4-normalization-*.json
 project-docs/vault-schema-v4-normalization-*.md
-
 # Local screenshots
 /*.png
-
 # Sandbox/test outputs from normalize_vault_schema_v4.py
 tmp/
 *.bak
-
 # Graphify: track portable graph artifacts, ignore machine-local cache
 graphify-out/cache/
-
 # ByteRover — .brv/context-tree/ contains a nested .git managed by brv vc.
 # Without these entries, `git add .` fails with "does not have a commit checked out".
 .brv/
-
 # daily hot corpus bundles (local)
 scratch/corpus-daily/
-
 # DigitalOcean sprint secrets (never commit)
 ops/do-sprint/secrets/
+||||||| parent of 194217a (docs(evals): add draft eval-bank-v0 for wave1 scoring)
+# local remember runtime
+.remember/
