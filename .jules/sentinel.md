@@ -2,3 +2,7 @@
 **Vulnerability:** The deployment script `deploy_to_brain.sh` contained an unsafe `eval` statement designed to expand the tilde (`~`) character when evaluating user input for a directory path: `eval LOCAL_DIR="$LOCAL_DIR"`. This introduced a critical command injection vulnerability. A malicious actor could provide input like `"; ls -al; echo "` to execute arbitrary commands with the privileges of the script user.
 **Learning:** Shell scripts processing user input should avoid the `eval` builtin wherever possible as it evaluates arbitrary code. While `eval` is often tempting for tasks like tilde expansion, safer alternatives exist in bash.
 **Prevention:** Rather than utilizing `eval`, use safe bash parameter expansion constructs. In this case, `LOCAL_DIR="${LOCAL_DIR/#\~/$HOME}"` performs a simple pattern substitution, replacing a leading tilde with the user's home directory path without executing the input as a command.
+## 2026-07-11 - Secure API Error Handling
+**Vulnerability:** Fast API routes were leaking internal state and stack traces by returning the raw exception string `str(e)` in HTTP 500 error details.
+**Learning:** Returning raw exception details directly to the client can expose sensitive infrastructure, database schemas, or logic details that aid attackers.
+**Prevention:** Always fail securely. Return a generic, sanitized error message (e.g., 'An internal server error occurred') to the client and use `logger.error('...', exc_info=True)` to securely record the full stack trace on the backend for debugging.
