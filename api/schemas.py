@@ -12,7 +12,7 @@ SourceType = Literal["json", "html", "md", "csv"]
 
 
 class EnrichRequest(BaseModel):
-    content: str
+    content: str = Field(..., max_length=50000)
 
 
 class EnrichResponse(BaseModel):
