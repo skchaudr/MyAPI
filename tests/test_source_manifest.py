@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import sys
+import time
 
 from scripts.source_manifest import (
     Source,
@@ -149,9 +150,13 @@ def test_build_corpus_manifest_can_emit_active_bundle_only(tmp_path):
     cold = tmp_path / "cold.md"
     hot.write_text("hot", encoding="utf-8")
     cold.write_text("cold", encoding="utf-8")
-    os.utime(hot, (1_783_000_000, 1_783_000_000))
-    os.utime(cold, (1_700_000_000, 1_700_000_000))
-    now = datetime.fromtimestamp(1_783_100_000, timezone.utc)
+    # Keep inside DEFAULT_HOT_DAYS (30) with a relative mtime — absolute
+    # timestamps rot as wall-clock advances (same class of flake as temporal rerank).
+    recent = time.time() - (7 * 86400)
+    os.utime(hot, (recent, recent))
+    cold_mtime = time.time() - (400 * 86400)
+    os.utime(cold, (cold_mtime, cold_mtime))
+    now = datetime.now(timezone.utc)
 
     manifest = build_corpus_manifest(
         (Source("obsidian", tmp_path, True, (".md",)),),
@@ -196,7 +201,8 @@ def test_cli_writes_active_manifest_for_source_root(tmp_path):
     ignored = source_root / "ignored.txt"
     hot.write_text("hot", encoding="utf-8")
     ignored.write_text("ignored", encoding="utf-8")
-    os.utime(hot, (1_783_000_000, 1_783_000_000))
+    recent = time.time() - (7 * 86400)
+    os.utime(hot, (recent, recent))
 
     result = subprocess.run(
         [

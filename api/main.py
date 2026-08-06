@@ -1,7 +1,12 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from api.observability import init_sentry
 from api.routers import enrich, imports, query, meta
 from api import db
+
+init_sentry()
 
 app = FastAPI(title="Context Refinery API", version="1.0.0")
 
@@ -23,8 +28,26 @@ app.include_router(query.router)
 app.include_router(meta.router)
 # export.py is retired — export is now client-side via exportService.ts
 
+
 @app.get("/health")
 def health():
-    payload = {"status": "ok", "model": "gemini-1.5-flash"}
+    from context_refinery.services import GeminiService
+
+    svc = GeminiService()
+    payload = {
+        "status": "ok",
+        "model": svc.model_name,
+        "auth_mode": svc.auth_mode,
+        "project": None if svc.auth_mode == "api_key" else svc.project,
+        "location": None if svc.auth_mode == "api_key" else svc.location,
+        "gemini_configured": svc.is_configured,
+        "khoj_url": os.environ.get("KHOJ_URL"),
+    }
     payload.update(db.health())
     return payload
+
+
+if os.getenv("ENABLE_SENTRY_TEST_ENDPOINT") == "1":
+    @app.get("/debug/sentry-test")
+    def sentry_test():
+        raise RuntimeError("MyAPI Sentry smoke test")
