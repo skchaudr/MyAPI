@@ -12,11 +12,10 @@ app = FastAPI(title="Context Refinery API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",   # Vite dev
-        "http://localhost:4173",   # Vite preview
-        "http://0.0.0.0:3000",
-    ],
+    allow_origins=os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:3000,http://localhost:4173"
+    ).split(","), # Security: restrict CORS origins and avoid 0.0.0.0
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
