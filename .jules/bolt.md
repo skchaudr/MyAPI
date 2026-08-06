@@ -1,0 +1,3 @@
+## 2024-05-18 - Tuple Literal Loop Iteration
+**Learning:** Replacing a list literal with a tuple literal in a `for` loop (e.g., `for x in [1, 2, 3]:` vs `for x in (1, 2, 3):`) is a good coding standard for immutable sequences, but results in zero performance improvement in modern Python. The CPython bytecode compiler automatically compiles list literals used directly in `for` loop iterators as tuple constants (verified via `dis.dis` showing `LOAD_CONST` with a tuple in both cases).
+**Action:** Default to using tuple literals in `for` loops for readability and intent, but don't expect it to fix performance bottlenecks.
