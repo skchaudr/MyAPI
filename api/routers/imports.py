@@ -26,7 +26,8 @@ async def import_obsidian(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="Only .md files are supported for Obsidian import.")
 
     with tempfile.NamedTemporaryFile(suffix=".md", delete=False) as tmp:
-        tmp.write(await file.read())
+        while chunk := await file.read(1024 * 1024):
+            tmp.write(chunk)
         tmp_path = tmp.name
 
     try:
