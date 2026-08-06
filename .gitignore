@@ -45,6 +45,5 @@ graphify-out/cache/
 scratch/corpus-daily/
 # DigitalOcean sprint secrets (never commit)
 ops/do-sprint/secrets/
-||||||| parent of 194217a (docs(evals): add draft eval-bank-v0 for wave1 scoring)
 # local remember runtime
 .remember/
