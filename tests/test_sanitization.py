@@ -18,7 +18,7 @@ def test_normalize_headings():
     assert normalize_headings("#Heading") == "# Heading"
     assert normalize_headings("##Subheading") == "## Subheading"
     assert normalize_headings("### Deep heading") == "### Deep heading" # Already correct
-    assert normalize_headings("#1 is a number, not heading") == "# 1 is a number, not heading" # It fixes this based on our simple regex, which is fine for markdown headings normally. Wait, standard markdown wouldn't render `#1`, but `# 1` it would.
+    assert normalize_headings("#1 is a number, not heading") == "#1 is a number, not heading" # Should not normalize if it's a number
     assert normalize_headings("No heading here") == "No heading here"
     assert normalize_headings("") == ""
 
