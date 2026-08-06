@@ -2,3 +2,8 @@
 **Vulnerability:** The deployment script `deploy_to_brain.sh` contained an unsafe `eval` statement designed to expand the tilde (`~`) character when evaluating user input for a directory path: `eval LOCAL_DIR="$LOCAL_DIR"`. This introduced a critical command injection vulnerability. A malicious actor could provide input like `"; ls -al; echo "` to execute arbitrary commands with the privileges of the script user.
 **Learning:** Shell scripts processing user input should avoid the `eval` builtin wherever possible as it evaluates arbitrary code. While `eval` is often tempting for tasks like tilde expansion, safer alternatives exist in bash.
 **Prevention:** Rather than utilizing `eval`, use safe bash parameter expansion constructs. In this case, `LOCAL_DIR="${LOCAL_DIR/#\~/$HOME}"` performs a simple pattern substitution, replacing a leading tilde with the user's home directory path without executing the input as a command.
+
+## $(date +%Y-%m-%d) - Unbounded File Uploads into Memory
+**Vulnerability:** The route `import_obsidian` in `api/routers/imports.py` was reading the entire uploaded file directly into memory using `tmp.write(await file.read())`, which could cause excessive memory consumption and lead to a Denial of Service (DoS) for large files.
+**Learning:** Uploaded files should not be read entirely into memory at once, especially in asynchronous web frameworks, to prevent resource exhaustion.
+**Prevention:** Use chunked reads (e.g., `await file.read(chunk_size)`) to stream file data securely to disk or process it in pieces.
