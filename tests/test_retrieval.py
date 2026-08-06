@@ -61,6 +61,17 @@ def test_parse_malformed_yaml():
     assert "Body here" in body
 
 
+
+def test_parse_invalid_yaml_syntax():
+    entry = "---\nkey: [\n---\nBody here."
+    meta, body, snippet = MetadataParser.parse(entry)
+    # ParserError is raised and caught, returning empty metadata
+    assert meta.get("title") == "untitled"
+    assert meta.get("source") == "unknown"
+    assert "Body here" in body
+
+
+
 def test_parse_empty_entry():
     meta, body, snippet = MetadataParser.parse("")
     assert meta["title"] == "untitled"
