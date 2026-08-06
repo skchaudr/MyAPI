@@ -1,6 +1,34 @@
 import re
 import string
 
+BOILERPLATE_PATTERNS = [
+    re.compile(r'^copyright\s+\(c\)', re.IGNORECASE),
+    re.compile(r'^copyright\s+\d{4}', re.IGNORECASE),
+    re.compile(r'^all rights reserved', re.IGNORECASE),
+    re.compile(r'^this page intentionally left blank', re.IGNORECASE),
+    re.compile(r'^unsubscribe$', re.IGNORECASE)
+]
+
+# Common boilerplate patterns
+BOILERPLATE_PATTERNS = [
+    re.compile(r'^copyright\s+\(c\)', re.IGNORECASE),
+    re.compile(r'^copyright\s+\d{4}', re.IGNORECASE),
+    re.compile(r'^all rights reserved', re.IGNORECASE),
+    re.compile(r'^this page intentionally left blank', re.IGNORECASE),
+    re.compile(r'^unsubscribe$', re.IGNORECASE)
+]
+
+BOILERPLATE_PATTERN = re.compile(
+    r'^[ \t]*(?:'
+    r'copyright\s+\(c\)|'
+    r'copyright\s+\d{4}|'
+    r'all rights reserved|'
+    r'this page intentionally left blank|'
+    r'unsubscribe'
+    r').*\r?\n?',
+    re.IGNORECASE | re.MULTILINE
+)
+
 def normalize_whitespace(text: str) -> str:
     """Normalize whitespace and newlines."""
     if not text:
@@ -43,27 +71,7 @@ def strip_boilerplate(text: str) -> str:
     """Strip boilerplate/repeated footers/headers where identifiable."""
     if not text:
         return ""
-    lines = text.split('\n')
-
-    # Common boilerplate patterns
-    boilerplate_patterns = [
-        r'^copyright\s+\(c\)',
-        r'^copyright\s+\d{4}',
-        r'^all rights reserved',
-        r'^this page intentionally left blank',
-        r'^unsubscribe$'
-    ]
-
-    compiled_patterns = [re.compile(p, re.IGNORECASE) for p in boilerplate_patterns]
-
-    cleaned_lines = []
-    for line in lines:
-        stripped_line = line.strip()
-        is_boilerplate = any(p.match(stripped_line) for p in compiled_patterns)
-        if not is_boilerplate:
-            cleaned_lines.append(line)
-
-    return '\n'.join(cleaned_lines).strip()
+    return BOILERPLATE_PATTERN.sub('', text).strip()
 
 def detect_noise(text: str) -> list[str]:
     """Detect noisy/very-short/near-empty content and populate quality warnings."""
