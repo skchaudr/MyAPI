@@ -41,6 +41,37 @@ def test_enrich_no_api_key(mocker):
     assert response.status_code == 503
     assert "GEMINI_API_KEY" in response.json()["detail"]
 
+def test_enrich_secret_exception_is_generic(mocker):
+    secret = "sk-live-SHOULD-NOT-LEAK-9f3a"
+    mocker.patch(
+        "context_refinery.services.GeminiService.enrich",
+        side_effect=RuntimeError(f"upstream failed token={secret} path=/var/secrets/gemini"),
+    )
+    response = client.post("/enrich", json={"content": "hello"})
+    assert response.status_code == 500
+    body = response.text
+    assert response.json()["detail"] == "An internal server error occurred"
+    assert secret not in body
+    assert "/var/secrets" not in body
+
+
+def test_batch_enrich_secret_exception_is_generic(mocker):
+    secret = "sk-batch-SHOULD-NOT-LEAK-c0ffee"
+    mocker.patch(
+        "context_refinery.services.GeminiService.enrich",
+        side_effect=RuntimeError(f"provider blew up api_key={secret}"),
+    )
+    response = client.post(
+        "/enrich/batch",
+        json={"documents": [{"content": "hello"}]},
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["failed"] == 1
+    err = data["results"][0]["error"]
+    assert err == "An internal server error occurred"
+    assert secret not in response.text
+
 def mock_enrich_side_effect(content):
     if "error" in content.lower():
         raise Exception("Simulated API error")

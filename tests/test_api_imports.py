@@ -65,3 +65,41 @@ def test_import_chatgpt_invalid_json():
     files = {"file": ("chat.json", content, "application/json")}
     response = client.post("/import/chatgpt", files=files)
     assert response.status_code == 422
+
+def test_import_obsidian_secret_exception_is_generic(mocker):
+    secret = "obsidian-token-SHOULD-NOT-LEAK"
+    mocker.patch(
+        "api.routers.imports.parse_obsidian_file",
+        side_effect=RuntimeError(f"parse failed secret={secret} file=/Users/sab/.ssh/id_rsa"),
+    )
+    files = {"file": ("test.md", b"# hi", "text/markdown")}
+    response = client.post("/import/obsidian", files=files)
+    assert response.status_code == 500
+    assert response.json()["detail"] == "An internal server error occurred"
+    assert secret not in response.text
+    assert ".ssh" not in response.text
+
+
+def test_import_codex_secret_exception_is_generic(mocker):
+    secret = "codex-db-pass-SHOULD-NOT-LEAK"
+    mocker.patch(
+        "api.routers.imports.scan_codex_sessions",
+        side_effect=RuntimeError(f"scan failed dsn=postgres://u:{secret}@localhost/db"),
+    )
+    response = client.post("/import/codex", json={})
+    assert response.status_code == 500
+    assert response.json()["detail"] == "An internal server error occurred"
+    assert secret not in response.text
+    assert "postgres://" not in response.text
+
+
+def test_query_secret_exception_is_generic(mocker):
+    secret = "khoj-admin-SHOULD-NOT-LEAK"
+    mocker.patch(
+        "api.routers.query.RetrievalPipeline.execute",
+        side_effect=RuntimeError(f"pipeline crashed bearer={secret}"),
+    )
+    response = client.post("/query", json={"q": "what broke"})
+    assert response.status_code == 500
+    assert response.json()["detail"] == "An internal server error occurred"
+    assert secret not in response.text
