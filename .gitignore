@@ -47,3 +47,5 @@ scratch/corpus-daily/
 ops/do-sprint/secrets/
 # local remember runtime
 .remember/
+
+.venv/

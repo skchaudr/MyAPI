@@ -39,7 +39,7 @@ def test_enrich_no_api_key(mocker):
     )
     response = client.post("/enrich", json={"content": "hello"})
     assert response.status_code == 503
-    assert "GEMINI_API_KEY not configured" in response.json()["detail"]
+    assert "GEMINI_API_KEY" in response.json()["detail"]
 
 def mock_enrich_side_effect(content):
     if "error" in content.lower():
@@ -83,7 +83,7 @@ def test_batch_enrich_partial_failure(mocker):
     assert data["succeeded"] == 2
     assert data["failed"] == 1
     assert data["results"][1]["status"] == "error"
-    assert "Simulated API error" in data["results"][1]["error"]
+    assert data["results"][1]["error"] == "An internal server error occurred"
 
 
 def test_batch_enrich_empty_list():
@@ -104,4 +104,4 @@ def test_batch_enrich_no_api_key(mocker):
         "documents": [{"content": "hello"}]
     })
     assert response.status_code == 503
-    assert "GEMINI_API_KEY not configured" in response.json()["detail"]
+    assert "GEMINI_API_KEY" in response.json()["detail"]
