@@ -1,29 +1,33 @@
 import re
 import string
 
+MULTIPLE_NEWLINES_PATTERN = re.compile(r'\n{3,}')
+INTERNAL_SPACES_PATTERN = re.compile(r'(?<=\S)[ \t]+')
+TRAILING_SPACES_PATTERN = re.compile(r'[ \t]+\r?$', flags=re.MULTILINE)
+HEADING_NORMALIZATION_PATTERN = re.compile(r'^(#{1,6})([^\s\d#].*)$', flags=re.MULTILINE)
+STABLE_TEXT_WHITESPACE_PATTERN = re.compile(r'\s+')
+
+BOILERPLATE_PATTERNS = [
+    re.compile(p, re.IGNORECASE) for p in [
+        r'^copyright\s+\(c\)',
+        r'^copyright\s+\d{4}',
+        r'^all rights reserved',
+        r'^this page intentionally left blank',
+        r'^unsubscribe$'
+    ]
+]
+
 def normalize_whitespace(text: str) -> str:
     """Normalize whitespace and newlines."""
     if not text:
         return ""
+    # replace internal multiple spaces/tabs with single space, preserving leading whitespace
+    text = INTERNAL_SPACES_PATTERN.sub(' ', text)
+    # right strip lines
+    text = TRAILING_SPACES_PATTERN.sub('', text)
     # Replace 3 or more newlines with 2 newlines
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    lines = []
-    for line in text.split('\n'):
-        # match leading whitespace to keep it
-        match = re.match(r'^(\s*)', line)
-        leading = match.group(1) if match else ""
-
-        # replace internal multiple spaces/tabs with single space
-        content = line[len(leading):]
-        content = re.sub(r'[ \t]+', ' ', content)
-
-        # combine and right strip
-        lines.append((leading + content).rstrip())
-
-    # join with newlines, but remove more than 2 consecutive newlines again
-    joined = '\n'.join(lines).strip()
-    joined = re.sub(r'\n{3,}', '\n\n', joined)
-    return joined
+    text = MULTIPLE_NEWLINES_PATTERN.sub('\n\n', text)
+    return text.strip()
 
 def normalize_headings(text: str) -> str:
     """Ensure proper markdown heading formatting (e.g. #Heading to # Heading)."""
@@ -35,8 +39,7 @@ def normalize_headings(text: str) -> str:
         content = match.group(2)
         return f"{hashes} {content}"
 
-    # Matches ^#{1,6}[^\s#]
-    text = re.sub(r'^(#{1,6})([^\s#].*)$', add_space, text, flags=re.MULTILINE)
+    text = HEADING_NORMALIZATION_PATTERN.sub(add_space, text)
     return text
 
 def strip_boilerplate(text: str) -> str:
@@ -45,21 +48,10 @@ def strip_boilerplate(text: str) -> str:
         return ""
     lines = text.split('\n')
 
-    # Common boilerplate patterns
-    boilerplate_patterns = [
-        r'^copyright\s+\(c\)',
-        r'^copyright\s+\d{4}',
-        r'^all rights reserved',
-        r'^this page intentionally left blank',
-        r'^unsubscribe$'
-    ]
-
-    compiled_patterns = [re.compile(p, re.IGNORECASE) for p in boilerplate_patterns]
-
     cleaned_lines = []
     for line in lines:
         stripped_line = line.strip()
-        is_boilerplate = any(p.match(stripped_line) for p in compiled_patterns)
+        is_boilerplate = any(p.match(stripped_line) for p in BOILERPLATE_PATTERNS)
         if not is_boilerplate:
             cleaned_lines.append(line)
 
@@ -76,7 +68,7 @@ def detect_noise(text: str) -> list[str]:
     if len(stripped_text) < 50:
         warnings.append("Document is very short (under 50 characters).")
 
-    alnum_count = sum(c.isalnum() for c in stripped_text)
+    alnum_count = sum(map(str.isalnum, stripped_text))
     if len(stripped_text) > 0 and alnum_count / len(stripped_text) < 0.5:
         warnings.append("Document contains excessive non-alphanumeric characters (noisy content).")
 
@@ -89,7 +81,7 @@ def normalize_stable_text(text: str) -> str:
     # Lowercase, remove punctuation, collapse whitespace
     text = text.lower()
     text = text.translate(str.maketrans('', '', string.punctuation))
-    return re.sub(r'\s+', ' ', text).strip()
+    return STABLE_TEXT_WHITESPACE_PATTERN.sub(' ', text).strip()
 
 def normalize_stable_title(title: str) -> str:
     """Stable title normalization for deduplication."""
