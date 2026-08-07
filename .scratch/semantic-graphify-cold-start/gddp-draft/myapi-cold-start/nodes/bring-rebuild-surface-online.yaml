@@ -1,0 +1,37 @@
+schema_version: "1.0"
+schema_type: node
+node_id: bring-rebuild-surface-online
+title: Bring rebuild surface online on the build tip
+type: capability
+why: >
+  Executors cannot build MCP/briefs if mcp/, golden briefs, and product docs
+  only exist on GitHub main while the working tree is feat-only. One tip must
+  expose live engine + doorway assets.
+depends_on: []
+acceptance_criteria:
+  - id: tip-documented
+    criterion: >
+      result-summary.md states the branch/SHA used for build and that /query
+      engine code is present (api/, context_refinery/).
+  - id: mcp-and-briefs-present
+    criterion: >
+      mcp/ package and evals/golden_briefs/ (or equivalent paths from main)
+      are present on the build tip or explicitly vendored with paths listed.
+  - id: no-host-guessing
+    criterion: >
+      Receipt lists where to run (Mac/VM) for Khoj/MyAPI if required; no
+      silent assumption that services are local.
+constraints:
+  - Prefer git fetch/merge or cherry-pick from main over rewriting MCP from scratch.
+  - Do not reindex full corpus or redesign product under this node.
+  - Private secrets stay out of the repo.
+allowed_execution_modes:
+  - local_subprocess
+required_artifacts:
+  - result-summary.md
+  - decision.md
+status: ready
+priority: critical
+unlocks:
+  - agent-query-contract
+  - project-context-brief

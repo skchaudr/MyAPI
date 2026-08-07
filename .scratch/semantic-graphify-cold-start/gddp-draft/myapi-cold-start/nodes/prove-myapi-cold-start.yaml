@@ -1,0 +1,36 @@
+schema_version: "1.0"
+schema_type: node
+node_id: prove-myapi-cold-start
+title: Prove MyAPI cold-start on eight must questions
+type: capability
+why: >
+  Ship bar is not vibes: eight mined cold-start questions for MyAPI must get
+  grounded answers or honest weak/empty via MCP and/or /query.
+depends_on:
+  - mcp-two-tools-live
+acceptance_criteria:
+  - id: eight-run
+    criterion: >
+      All eight must questions from NODE-MAP / research/02 are run against the
+      live cold-start path and listed in the receipt.
+  - id: outcomes-recorded
+    criterion: >
+      Each question records pass | weak | empty | fail plus evidence paths or
+      explicit gap reason.
+  - id: diagnosis-on-fail
+    criterion: >
+      Any fail includes a one-line diagnosis (corpus vs retrieval vs brief vs
+      infra) — not silent failure.
+constraints:
+  - Do not expand the gate to the full historical trust-bank suite.
+  - Prefer MCP brief for orientation questions and /query for digs when needed.
+  - Private transcripts stay out of tracked receipts; paths and aggregates only.
+allowed_execution_modes:
+  - local_subprocess
+required_artifacts:
+  - result-summary.md
+  - decision.md
+  - cold-start-eval-receipt.md
+status: pending
+priority: critical
+unlocks: []

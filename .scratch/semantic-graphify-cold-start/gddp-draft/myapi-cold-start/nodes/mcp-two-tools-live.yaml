@@ -1,0 +1,42 @@
+schema_version: "1.0"
+schema_type: node
+node_id: mcp-two-tools-live
+title: Live MCP get_project_context and get_person_context
+type: capability
+why: >
+  Agents already hammer Graphify-class tools; cold-start must be two MCP tools
+  on the live MyAPI path, with /query remaining the documented dig tool.
+depends_on:
+  - agent-query-contract
+  - project-context-brief
+  - person-context-brief
+acceptance_criteria:
+  - id: two-tools-only
+    criterion: >
+      MCP exposes exactly get_project_context and get_person_context (no large
+      tool roster).
+  - id: live-backend
+    criterion: >
+      Tools call live brief/MyAPI path when services are up; fixture-only is
+      not the final state of this node.
+  - id: backend-down-honest
+    criterion: >
+      If API/Khoj is down, tools fail clearly or return explicit unavailable —
+      not a fabricated full brief.
+  - id: agent-install-docs
+    criterion: >
+      README documents how to attach the MCP server for at least one agent host
+      (Claude Code, Codex, Cursor, or Grok CLI).
+constraints:
+  - No workflow engine or mandatory graph traversal API.
+  - Tool names stay fixed unless human renames in a follow-on node.
+allowed_execution_modes:
+  - local_subprocess
+required_artifacts:
+  - result-summary.md
+  - decision.md
+  - mcp-test-receipt.md
+status: pending
+priority: critical
+unlocks:
+  - prove-myapi-cold-start

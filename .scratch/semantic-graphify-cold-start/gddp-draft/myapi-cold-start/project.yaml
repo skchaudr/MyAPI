@@ -1,0 +1,60 @@
+schema_version: "1.0"
+schema_type: project_graph
+project_id: myapi-cold-start
+project_name: MyAPI Semantic Graphify Cold-Start
+description: >
+  Thin path to agent cold-start: Khoj-backed MyAPI with two MCP tools
+  (get_project_context, get_person_context) plus first-class /query with
+  agent-facing args/examples. Prove on MyAPI. Meaning over AST. Reuse existing
+  engine. New graph — not the old six-node myapi scaffold.
+repo: skchaudr/MyAPI
+blueprint:
+  vision: >
+    In 30–90s agents hit MCP/API like Graphify and get where we are, what’s true,
+    what’s open, what’s dangerous — grounded or explicitly weak/empty.
+  architecture_notes: >
+    Khoj = search backend. Context Refinery + /query = engine. MCP = thin doorway
+    (two tools). Briefs prefer status/decisions/open risks with evidence paths.
+    Structure questions stay with Graphify/repo. Draft lives in MyAPI
+    .scratch/semantic-graphify-cold-start/ until copied into gddp-config.
+  major_capabilities:
+    - rebuild surface on build tip
+    - agent /query contract
+    - project context brief
+    - person context brief
+    - live two-tool MCP
+    - eight-question MyAPI cold-start proof
+graph_version: "1.0"
+created_at: "2026-08-04"
+last_updated: "2026-08-04"
+nodes_dir: nodes/
+nodes:
+  - id: bring-rebuild-surface-online
+    title: Bring rebuild surface online on the build tip
+    status: ready
+    type: capability
+  - id: agent-query-contract
+    title: Document and harden /query for agent use
+    status: pending
+    type: capability
+  - id: project-context-brief
+    title: Project cold-start brief composer
+    status: pending
+    type: capability
+  - id: person-context-brief
+    title: Person cold-start brief composer
+    status: pending
+    type: capability
+  - id: mcp-two-tools-live
+    title: Live MCP get_project_context and get_person_context
+    status: pending
+    type: capability
+  - id: prove-myapi-cold-start
+    title: Prove MyAPI cold-start on eight must questions
+    status: pending
+    type: capability
+execution_policy:
+  default_executor: local_subprocess
+  max_concurrent_jobs: 2
+  require_human_review_before_overnight: true
+  artifact_gate_enforced: true

@@ -1,0 +1,34 @@
+schema_version: "1.0"
+schema_type: node
+node_id: person-context-brief
+title: Person cold-start brief composer
+type: capability
+why: >
+  Second MCP tool needs a person-scoped brief using the same envelope patterns
+  as project context; thin is fine if corpus support is limited.
+depends_on:
+  - project-context-brief
+acceptance_criteria:
+  - id: callable-person-brief
+    criterion: >
+      Callable path returns a person brief (e.g. operator/sab) with the same
+      general envelope conventions as project brief.
+  - id: honest-empty-ok
+    criterion: >
+      If corpus cannot support a strong person brief, response is explicitly
+      weak/empty with reason — not a fabricated biography.
+  - id: sample-output
+    criterion: sample-brief-person.json (or equivalent) is attached to the receipt.
+constraints:
+  - Reuse project brief composer patterns; no separate platform.
+  - No private secret material committed to the repo.
+allowed_execution_modes:
+  - local_subprocess
+required_artifacts:
+  - result-summary.md
+  - decision.md
+  - sample-brief-person.json
+status: pending
+priority: medium
+unlocks:
+  - mcp-two-tools-live

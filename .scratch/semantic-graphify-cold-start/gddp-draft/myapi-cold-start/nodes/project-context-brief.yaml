@@ -1,0 +1,43 @@
+schema_version: "1.0"
+schema_type: node
+node_id: project-context-brief
+title: Project cold-start brief composer
+type: capability
+why: >
+  Cold-start needs a structured brief (where we are / true / open / dangerous /
+  decisions / evidence), not only ranked hits. This is the backend for
+  get_project_context, proved on MyAPI first.
+depends_on:
+  - bring-rebuild-surface-online
+acceptance_criteria:
+  - id: callable-composer
+    criterion: >
+      A callable path (Python function and/or HTTP) returns a stable project
+      brief for project_id myapi (or equivalent).
+  - id: orientation-fields
+    criterion: >
+      Brief includes orientation content: current goal/status, open/blocked,
+      useful entry paths, and evidence paths when claims are made.
+  - id: no-invention
+    criterion: >
+      When evidence is thin, brief marks weak/missing rather than inventing
+      project truth; sample output demonstrates this if forced.
+  - id: uses-existing-retrieval
+    criterion: >
+      Composer uses existing /query or RetrievalPipeline + high-signal
+      anchors/handoffs; does not invent a parallel search stack.
+constraints:
+  - MyAPI-first prove path; multi-project polish is out of scope for this node.
+  - Not an AST/Graphify clone.
+  - Prefer status/decisions in the brief; raw sources as links.
+allowed_execution_modes:
+  - local_subprocess
+required_artifacts:
+  - result-summary.md
+  - decision.md
+  - sample-brief-myapi.json
+status: pending
+priority: critical
+unlocks:
+  - person-context-brief
+  - mcp-two-tools-live
