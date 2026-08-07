@@ -1,5 +1,57 @@
 # AGENTS.md
 
+## Durable work — version control (READ FIRST)
+
+This host (VM / multi-machine) can go offline for long stretches. **Work that
+lives only on disk here is not safe.** Agents must treat “important and not
+backed up” as a first-class problem, not a footnote.
+
+### Default assumption
+
+Unless Sab has **explicitly** said a path is throwaway, treat new or modified
+project work as **keep**: intent docs, handoffs, `.scratch/` planning packs,
+scripts, API/code changes, node maps, research notes, GDDP drafts.
+
+### Required agent behavior
+
+1. **Do not leave keep-worthy work untracked.** As soon as a pack or change is
+   real (not a 30-second temp probe), `git add` and **commit** on a named branch.
+   Prefer a small dedicated branch over “I’ll commit later.”
+2. **Do not consider a commit done until it can leave this host.** After commit,
+   **push** the branch to `origin` (or state clearly that push failed and offer
+   SCP). Local-only commits are only a half-step on a VM that sleeps.
+3. **Session-end / planning-pack inventory.** Before ending a planning or
+   multi-file session, list **every** keep-worthy path that is still dirty or
+   unpushed. Lead with that list — not with “not in this inventory” digressions.
+4. **Never bury the backup status.** If work is uncommitted or unpushed, say
+   that in plain language first: path, branch, commit vs not, on origin or not.
+5. **Trash only (safe to skip):** `venv/`, `__pycache__/`, `.env` / secrets,
+   large corpus dumps, `node_modules/`, regenerateable caches. If unsure whether
+   something is trash, **ask once** — do not silently leave it untracked.
+6. **Secrets never commit:** `.env`, API keys, tokens, ADC files, private
+   transcripts with credentials.
+
+### Co-author trailer (required on agent commits)
+
+```
+Co-authored-by: grok-cli <grok-cli@x.ai>
+```
+
+(Other tools: use their trailer from home CLAUDE/AGENTS rules.)
+
+### Quick check agents should run
+
+```bash
+# Run on VM (or wherever the clone is):
+git status -sb
+git log --oneline @{u}..HEAD 2>/dev/null || git log --oneline -3
+```
+
+If `status` shows keep-worthy `??` or `M`, or commits exist only locally — fix
+that before more product work, or get an explicit “discard / leave local.”
+
+---
+
 This repository uses multiple machines. When giving a command, always state
 where it should be run.
 

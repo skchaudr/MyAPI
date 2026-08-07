@@ -1,5 +1,13 @@
 # CLAUDE.md — MyAPI
 
+## Durable work (VM / multi-machine)
+
+This host can be down for a long time. **Do not leave keep-worthy work
+untracked or unpushed.** Planning packs under `.scratch/`, scripts, code, and
+intent docs must be committed on a branch and pushed to origin (or SCP’d with
+operator confirmation). See `AGENTS.md` section **Durable work — version
+control**. Agent commits need a Co-authored-by trailer.
+
 ## On Code Generation 
 
   ▎ Before writing any code or creating any files: run git fetch --all and check git
