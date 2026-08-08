@@ -535,3 +535,5 @@ When either Grok session changes ground truth:
 
 - **2026-08-08** — Initial situated handoff: live services, corpus counts, dual-clone footgun, containerize + Mac Mini plans, session split for two Grok agents.
 - **2026-08-08 (later)** — Explicit dual-lane claim: Lane A project/corpus vs Lane B engine. VM root `00-READ-ME-FIRST.md` / `00-PROJECT-LANE.md` / `00-ENGINE-LANE.md`. Git: `013-project-lane-claim.md`. Semantic pack on branch.
+
+- **2026-08-08 (session 2)** — Mini portable pack at `deploy/khoj-engine/` (compose + export + README). VM use path: systemd Context Refinery now uses `/home/sab-mini/MyAPI/.venv-py313` (no dual-venv). Lean index: corpus-hot `v1-notes` (58 docs) reindexed; A1/A7-class `/query` returns status/trust anchors. Mini move is **ready when you choose**; primary use remains VM `:8000` + `:42110`.

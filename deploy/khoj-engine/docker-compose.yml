@@ -1,0 +1,80 @@
+# Khoj ENGINE only — portable unit for Mac Mini (or any Docker host).
+# Not the full official stack (no SearxNG / Terrarium / Computer).
+# Pin image tags when you need bit-for-bit parity with khoj-38 bare metal (1.42.10).
+#
+# Usage (Mini or VM dry-run):
+#   cp .env.example .env   # edit secrets
+#   mkdir -p notes models
+#   docker compose up -d
+#   curl -sS http://127.0.0.1:42110/api/health
+
+services:
+  database:
+    image: docker.io/pgvector/pgvector:pg17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-khoj}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB: ${POSTGRES_DB:-khoj}
+    volumes:
+      - khoj_db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-khoj} -d ${POSTGRES_DB:-khoj}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    # Do not publish 5432 to the LAN by default
+    networks: [khoj_net]
+
+  server:
+    # Prefer pin after first successful pull, e.g. ghcr.io/khoj-ai/khoj:1.42.10 if available.
+    # Fallback: latest engine image with anonymous-mode command matching khoj-38.
+    image: ${KHOJ_IMAGE:-ghcr.io/khoj-ai/khoj:latest}
+    restart: unless-stopped
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - "${KHOJ_HOST_PORT:-42110}:42110"
+    environment:
+      POSTGRES_HOST: database
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-khoj}
+      POSTGRES_USER: ${POSTGRES_USER:-khoj}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      KHOJ_ADMIN_EMAIL: ${KHOJ_ADMIN_EMAIL:-admin@local}
+      KHOJ_ADMIN_PASSWORD: ${KHOJ_ADMIN_PASSWORD:?set KHOJ_ADMIN_PASSWORD in .env}
+      KHOJ_DJANGO_SECRET_KEY: ${KHOJ_DJANGO_SECRET_KEY:-change-me-in-prod}
+      KHOJ_DEBUG: "False"
+      KHOJ_TELEMETRY_DISABLE: "True"
+      # Optional chat providers — not required for search-as-backend use by MyAPI
+      # OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      # GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+    volumes:
+      # Persistent Khoj config/state inside container home
+      - khoj_config:/root/.khoj
+      # Embedding/rerank model cache (portable; do not bake into image)
+      - ${KHOJ_MODELS_HOST_PATH:-./models}:/root/.cache/huggingface
+      - ${KHOJ_MODELS_HOST_PATH:-./models}:/root/.cache/torch/sentence_transformers
+      # Notes corpus mount — host path you rsync from the VM
+      - ${KHOJ_NOTES_HOST_PATH:-./notes}:/data/notes:ro
+    command:
+      - --host=0.0.0.0
+      - --port=42110
+      - --no-gui
+      - --anonymous-mode
+      - --non-interactive
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:42110/api/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    networks: [khoj_net]
+
+networks:
+  khoj_net:
+
+volumes:
+  khoj_db:
+  khoj_config:
