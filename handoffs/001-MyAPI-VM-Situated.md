@@ -210,8 +210,8 @@ Remote: `https://github.com/skchaudr/MyAPI.git` (gh auth as `skchaudr` on this h
 2. **Hot / lean slice:** `/data/corpus-hot/` — curated v1 structure + v1-notes (handoffs, anchors, GDDP drafts, status docs). What MyAPI *thinks* it is pointed at.
 3. **Indexed subset in Khoj:** only **273** `database_entry` rows. Fileobjects higher — indexing incomplete, stale, or partially wiped relative to restore.
 4. **Snapshots:** PG dump under `/data/corpus-gens/snapshots/LATEST` for disaster recovery, not live query.
-5. **Semantic Graphify pack (untracked in git until committed elsewhere):**  
-   `/home/sab-mini/MyAPI/.scratch/semantic-graphify-cold-start/` — map, 8 issues, research, NODE-MAP, WAYFINDER-TO-GDDP, draft GDDP YAML N1–N6.
+5. **Semantic Graphify pack (in git on `feat/corpus-v1-normalization`):**  
+   `/home/sab-mini/MyAPI/.scratch/semantic-graphify-cold-start/` — map, 8 issues, research, NODE-MAP, WAYFINDER-TO-GDDP, draft GDDP YAML N1–N6. (Also mirrored on docs branch history under other clones.)
 
 ### 4.2 Quality reality
 
@@ -470,12 +470,21 @@ DB options:
 
 ## 9. Session split guidance (two Grok agents on VM)
 
+**Live assignment (2026-08-08):**
+
+| Lane | Role | Root claim | Git claim |
+|------|------|------------|-----------|
+| **A** | Project / corpus / goldens / retrieval quality / cold-start prove | `/home/sab-mini/00-PROJECT-LANE.md` | `handoffs/013-project-lane-claim.md` |
+| **B** | Khoj engine upkeep + Mini portability | `/home/sab-mini/00-ENGINE-LANE.md` | `deploy/khoj-engine/` + this file §§7–8 |
+
+Machine face (read before either repo): `/home/sab-mini/00-READ-ME-FIRST.md`
+
 | Session | Focus | Success |
 |---|---|---|
-| **Grok A** | MyAPI quality: clone consolidate, index truth, A1/A7, query contract | `/query` returns high-signal MyAPI answers with evidence paths |
-| **Grok B** | Khoj engine portable: compose file, dump/restore dry-run, Mini runbook | `docker compose` Khoj health green on VM first; Mini steps documented & tried if time |
+| **Grok A (project)** | Corpus truth, reindex *content*, anchors, goldens, `/query` quality, briefs, eight must-questions | High-signal answers with evidence; packs on `origin` so Mini can continue |
+| **Grok B (engine)** | Khoj portable: compose, dump/restore, Mini runbook, process health | Engine green on VM; documented Mini path; no product re-grilling |
 
-Both sessions: **read this file first**; machine-label every command (`Run in VM shell:` / `Run on Mac:`); **commit keep-worthy work** to MyAPI so a VM sleep does not strand state.
+Both sessions: **read `/home/sab-mini/00-READ-ME-FIRST.md` first**, then this file; machine-label every command (`Run in VM shell:` / `Run on Mac:`); **commit keep-worthy work** to MyAPI so a VM sleep does not strand state.
 
 Do not both rewrite systemd blindly — serialize unit file edits.
 
@@ -525,3 +534,4 @@ When either Grok session changes ground truth:
 ### Changelog
 
 - **2026-08-08** — Initial situated handoff: live services, corpus counts, dual-clone footgun, containerize + Mac Mini plans, session split for two Grok agents.
+- **2026-08-08 (later)** — Explicit dual-lane claim: Lane A project/corpus vs Lane B engine. VM root `00-READ-ME-FIRST.md` / `00-PROJECT-LANE.md` / `00-ENGINE-LANE.md`. Git: `013-project-lane-claim.md`. Semantic pack on branch.
