@@ -1,4 +1,5 @@
 # Python
+venv
 venv/
 .pytest_cache/
 __pycache__/
@@ -53,4 +54,6 @@ scratch/
 !scratch/vertex_client.py
 !scratch/run_comparative_benchmark.py
 !scratch/mock_interview_prep.md
+# Machine-local agent logs (not product)
+.remember/
 .aider*

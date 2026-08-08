@@ -1,0 +1,36 @@
+schema_version: "1.0"
+schema_type: node
+node_id: agent-query-contract
+title: Document and harden /query for agent use
+type: capability
+why: >
+  Agents need /query as a first-class dig tool with args and examples so they
+  use Khoj-backed retrieval reasonably instead of freestyling the pipe.
+depends_on:
+  - bring-rebuild-surface-online
+acceptance_criteria:
+  - id: docs-with-examples
+    criterion: >
+      Agent-facing doc exists (docs/query-for-agents.md and/or MCP README section)
+      with copy-paste examples covering project filter, n, and at least one
+      cold-start-style dig query for MyAPI.
+  - id: schema-accurate
+    criterion: >
+      Documented request/response fields match live api/schemas.py and
+      api/routers/query.py (no stale invented fields).
+  - id: smoke-path
+    criterion: >
+      Receipt records one successful smoke call or a clear blocked reason
+      (VM down / Khoj unreachable) without faking success.
+constraints:
+  - Reuse RetrievalPipeline; no Khoj replacement.
+  - Prefer small doc/schema fixes over retrieval algorithm rewrites.
+allowed_execution_modes:
+  - local_subprocess
+required_artifacts:
+  - result-summary.md
+  - decision.md
+status: pending
+priority: high
+unlocks:
+  - mcp-two-tools-live
