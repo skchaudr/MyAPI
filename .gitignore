@@ -49,3 +49,8 @@ graphify-out/cache/
 
 # daily hot corpus bundles (local)
 scratch/corpus-daily/
+
+# Local corpus vault dump + agent run noise (lean copies live under project-docs/)
+Corpus v1.0/
+.pi-subagents/
+.obsidian/

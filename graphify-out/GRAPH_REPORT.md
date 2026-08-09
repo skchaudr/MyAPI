@@ -1,0 +1,13976 @@
+# Graph Report - MyAPI  (2026-08-08)
+
+## Corpus Check
+- 3299 files · ~6,420,074 words
+- Verdict: corpus is large enough that graph structure adds value.
+
+## Summary
+- 53573 nodes · 73117 edges · 3733 communities (3306 shown, 427 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 4389 edges (avg confidence: 0.55)
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `d82a5eae`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
+## Community Hubs (Navigation)
+- MyAPI-Rebuild
+- Sab
+- graph.json
+- 3. Native Ingestion Trigger
+- 3. Native Ingestion Trigger
+- 3. Native Ingestion Trigger
+- Session Text
+- Hook Output Format
+- notebook-navigator/main.js
+- smart-connections/main.js
+- View logs for a deployment
+- smart-context/main.js
+- smart-graph/main.js
+- smart-dedupe/main.js
+- Session Text
+- [Feature Name] Implementation Plan
+- Session Text
+- get
+- on the Pi
+- smart-templates/main.js
+- smart-lookup/main.js
+- Visual Indicators
+- Session Text
+- Session Text
+- No api_key= argument. google-genai picks up ADC from the VM metadata server.
+- My request for Codex:
+- 2026-05-18 - environment-context - 019e3af5-5bc7bc5e49.md
+- Session Text
+- 2026-04-15 - environment-context - 019d9045-23e8318f1e.md
+- 2026-04-15 - environment-context - 019d9045-7340a5e921.md
+- 2026-04-15 - environment-context - 019d9045-893ce91e49.md
+- Assumptions
+- ssd-big — Sole Gateway
+- GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓
+- GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓
+- GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓
+- Session Text
+- Check block devices
+- Session Text
+- No api_key= argument. google-genai picks up ADC from the VM metadata server.
+- saveSettingsAndUpdate
+- 2026-05-18 - environment-context - 019e3af5-720a46e2a8.md
+- addEventListener
+- Session Text
+- onOpen
+- Qt
+- Session Text
+- ie
+- addEventListener
+- addEventListener
+- addEventListener
+- Session Text
+- Nt
+- My request for Codex:
+- get
+- Session Text
+- Session Text
+- Session Text
+- emit
+- error
+- on the Pi
+- emit_event
+- Session Text
+- error
+- on the Pi
+- on the Pi
+- at
+- on the Pi
+- on the Pi
+- on the Pi
+- error
+- delete
+- get
+- 🚀 3. Handoff Action Items (The Final Steps)
+- 🚀 3. Handoff Action Items (The Final Steps)
+- 🚀 3. Handoff Action Items (The Final Steps)
+- exists
+- test_retrieval.py
+- Pi-7-extensions-state-hardening-thread.md
+- get
+- create_doc_fragment
+- Session Text
+- load
+- yR
+- get
+- create_doc_fragment
+- create_doc_fragment
+- Workflow 2: GDDP Node Planning
+- empty
+- use_adapter
+- My request for Codex:
+- error
+- error
+- Session Text
+- emit
+- create poster frame
+- installProvider
+- dO
+- Raw Conversation
+- Acknowledging Correct Feedback
+- bZ
+- Dt
+- hO
+- emit_event
+- Session Text
+- ft
+- create_doc_fragment
+- setInstructions
+- post_process6
+- emit_event
+- constructor
+- Verdict: NO-GO
+- empty
+- key
+- vo
+- init
+- load
+- Stop node if misbehaving
+- mt
+- create
+- emit
+- vM
+- to_openai
+- OpenClaw CLI Power User Guide
+- on the Pi
+- renderIcon
+- dz
+- $e
+- emit_event
+- test_triage_modular.py
+- 2026-04-03 - environment-context - 019d52e7-bfc88df032.md
+- Step 4: Start the development server with auto-reloading and an instant preview.
+- Session Text
+- process_save_queue
+- [Feature Name] Implementation Plan
+- TriagePass
+- Session Text
+- on
+- emit
+- Session Text
+- process_embed_queue
+- init
+- Session Text
+- process_embed_queue
+- Acknowledging Correct Feedback
+- Acknowledging Correct Feedback
+- createTabContext
+- 2026-05-12 - in-nlm-cli-how-do-i-create-flashcards-for-a-specific-notebook-i-e-for - d9aea2a6-9558a3eb1c.md
+- create
+- load
+- emit_event
+- ie
+- create_doc_fragment
+- ResultReranker
+- create
+- emit
+- initialize
+- #n
+- 2026-03-21 - environment-context - 019d0f7a-ab408ef33b.md
+- Neovim
+- nearest
+- load_templates
+- Stale Training Data Revelation for Pi Orchestration Across Machines
+- getFolderDisplayData
+- unload
+- create_doc_fragment
+- v4schema.py
+- Longer Version
+- Mission 3 — Mac Portfolio + Networking Sprint
+- p4
+- Universal Agent Taskbook
+- Skill Tree: Code Problem Solving
+- V4 Next Session Handoff
+- OpenClaw CLI Power User Guide
+- OpenClaw CLI Power User Guide
+- Brainstorming Ideas Into Designs
+- Session Text
+- Pi-5.6.26.Self-Audit-Strengths_Weaknesses.md
+- Build This Shit
+- ye
+- context_suggest_templates
+- 2-Week Documentation Review: All Guides & Docs Created for Saboor
+- Tech Stack Decision
+- Neovim
+- h_
+- new_context
+- create
+- post_process6
+- key
+- datetime
+- MyAPI Portfolio Case Study - Smart Connections Harvest
+- 2026-05-06 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - 3c5ba2d7-560acb4dfa.md
+- Integrated Plain-English Summary of the Thread
+- create
+- constructor
+- 2026-05-04 - kernel-panic-analysis - 69f85547-f212ad591f.md
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Open Questions Before Designing Graphs
+- Open Questions Before Designing Graphs
+- Open Questions Before Designing Graphs
+- water-and-stone-hours-tracking
+- [Feature Name] Implementation Plan
+- Neovim essential shortcuts and navigation guide.md
+- ge
+- get_event_level
+- murmur_hash_32_alphanumeric
+- Where you are vs. where the path leads
+- Claude coroutines implementation plan
+- [[Vault Schema V4 Reference]]d
+- **Structured Summary: How Bailey's Business Works and Where Developer Help Creates the Most Value**
+- remove
+- murmur_hash_32_alphanumeric
+- Skill Creator
+- Systematic Debugging
+- OpenClaw Multi-Device System - Status Briefing
+- Hand Therapy Tools Integration Add-On
+- copy_to_clipboard
+- Writing Plans
+- dx
+- create
+- DevInfra Current State
+- Bailey's Business Operations
+- 2026-05-03 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - c7053568-fddb158bbc.md
+- everyday I have 5 lovable credits to burn, and they do not rollover, often I mes
+- Obsidian vs GitHub Issues vs n8n vs systemd.path for Small Pi Control Plane
+- process_embed_queue
+- nearest
+- pO
+- ingest_all.py
+- 2026-04-27 - environment-context - 019dce12-77d799a380.md
+- Custom Function in Lua
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Session Text
+- Tmux Essential Shortcuts and Navigation.md
+- Karaoke for a Cause — Project Plan
+- get_env_activity_state
+- MyAPI Anchor
+- Vault Normalization Anchor
+- Session Text
+- Step 6: Test Chatbot (~5 min)
+- Step 6: Test Chatbot (~5 min)
+- obsidian.neovim comprehensive command list and breakdown.md
+- Terminal Neovim is Your Baseline
+- Gemini — Agentic Workflow for AI Developer Roles
+- N9
+- use_adapter
+- CanonicalDoc
+- GDDP Anchor
+- Session Text
+- 🧭 LMN Field Discovery — Complete Report
+- $s
+- _send_message
+- constructor
+- 📊 Summary Metrics
+- Improving Prompt Book Structure
+- Session Text
+- Beiley-Water-and-Stone-Landscaper-Part-Time-Job-Meeting.md
+- Networking Pitch Cards — Project Set
+- unload
+- get_track_plugin
+- context_packets.py
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓
+- Command length preference
+- Agent Events
+- Branch Descriptions
+- Custom CSS Snippets Theme System.md
+- VLT_ Vault Schema V2.md
+- ensure_vec_index_runtime_state
+- Branch · Migration Walkthrough Errors
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- add node files to graphs/<project-id>/nodes/
+- GDDP Sitrep and Future Plan
+- Espanso terminal file overwhelm - NeoVim way, Obsidian way, and hybrid pathway.md
+- OpenClaw broke again, exhaustion from running the same loop trying to fix it.md
+- BDR Admin Dashboard MVP
+- Claude Auditor Workflow
+- _send_message
+- copy_to_clipboard
+- schemas.py
+- imports.py
+- Quick Dev Tasks (codebot → saboors-macbook-air)
+- Copy ALL your skills and extensions (this is the valuable stuff)
+- Quick Dev Tasks (codebot → saboors-macbook-air)
+- Copy ALL your skills and extensions (this is the valuable stuff)
+- Copy ALL your skills and extensions (this is the valuable stuff)
+- So I turned this into a repository on Git because there is a specific script tha
+- You are summarizing a Claude Code session for a daily memory log.
+- Obsidian Sync vs Git for task dispatch workflow
+- Writer Changes
+- 2026-05-21 - environment-context - 019e488f-1be6ecf640.md
+- 2026-05-21 - environment-context - 019e488f-3af6823c39.md
+- Obsidian Vault Situation Report
+- render2
+- AGENTS.md - Operating Contract (Headless Raspberry Pi)
+- 2026-04-29 - branch-migration-walkthrough-errors - 69f19c67-3bda9bc3a8.md
+- AGENTS.md - Operating Contract (Headless Raspberry Pi)
+- AGENTS.md - Operating Contract (Headless Raspberry Pi)
+- Branch · AI Strategy Audit Consulting
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- gddp-runtime
+- Verify
+- Verify
+- Verify
+- gddp-runtime
+- add node files to graphs/<project-id>/nodes/
+- 📓 Cookbook
+- MyAPI-Rebuild — Architecture
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- State of Things — 2026-05-01
+- 2026-03-19 - environment-context - 019d03bb-e1f87c2f1f.md
+- Advanced Hook Use Cases
+- Session Text
+- Google Business Profile Recovery — Water & Stone Landscapes LLC
+- Dating Apps Push.md
+- Ivycore.md
+- Pi ~ Raspberry Pi Headless Setup 4GB and 8GB 2026.md
+- _send_message
+- AGENT TASK BOOK v1
+- Pi Harness — Claude Code Handoff
+- Smart Context Builder
+- You are summarizing a Claude Code session for a daily memory log.
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Organizing Obsidian vault structure and graph view
+- on the Pi
+- Pi Extension Pattern Library
+- 2) LMN Discovery
+- Claude.md V1 - for General Work, Tailored to User
+- Comprehensive Ergonomic and Technical Analysis: Migrating the Dygma Raise from Bazecor to Native Kaleidoscope Firmware
+- 🖥️ PART 2: iTerm2-Specific Shortcuts
+- 🖥️ PART 2: iTerm2-Specific Shortcuts
+- MyAPI-rebuild — Implementation Plan
+- v3schema.py
+- Heavy Compute / VM (vm-lab / biz → first-vm)
+- Monitoring / Ops (ops → ssd-small)
+- Pilot Program Strategy
+- Obsidian Flavored Markdown Skill
+- You are summarizing a Claude Code session for a daily memory log.
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Subagent-Driven Development
+- Raw Conversation
+- Session Text
+- Session Text
+- Session Text
+- --Water and Stone.md
+- OpenClaw Raspberry Pi Setup Finally.md
+- Concepts/Developer Infrastructure.md
+- Key CS Knowledge of the Books DDIA, SICP, and CSAPP.md
+- Obsidian Frontmatter Taxonomy Audit (SoloDeveloper)
+- zL
+- context_suggest_blocks
+- use_adapter
+- build_daily_active_corpus.py
+- test_normalization_schema.py
+- 2026-04-25 - pi-harness-handoff - 69ed4f2c-fb34798786.md
+- 2026-04-29 - migration-walkthrough-errors - 69f1888e-a186e8f69e.md
+- <command-message>schedule</command-message>
+- Jules Batch Task Management
+- Jules Batch Task Management
+- Systematic Debugging
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are summarizing a Claude Code session for a daily memory log.
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Extracting Instagram video transcripts to Obsidian
+- 2026-05-13 - ssd-nvme-boot-failure-troubleshooting - 373b4728-b61ed124d0.md
+- 2026-03-19 - environment-context - 019d03bb-df2f01ad32.md
+- Session Text
+- Proposed plan
+- 2026 Launchpad: Comprehensive AI-Assisted Action Plan
+- yt
+- process_embed_queue
+- post_process20
+- VM Migration Sprint
+- test_sanitization.py
+- MyAPI — Context Retrieval for AI Agents and Personal RAG
+- "
+- 2026-04-26 - check-out-my-users-saboor-obsidian-solodeveloper-09-utilities-vault-sy - 407a23da-8d3b798cef.md
+- You are summarizing a Claude Code session for a daily memory log.
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Finding before and after images for slider
+- Session Text
+- Session Text
+- Saboor's Obsidian + Neovim Workflow
+- xAI Exact Agent Config Commands.md
+- WAS - Claude LMN QBO Manual Pre-Automation Sync.md
+- Terminal Browsing - Lynx Links and NotebookLM CLI
+- Agent Bus Rollout & Operations
+- Session Log — Neovim + Obsidian Environment Setup *4*
+- 2026.04.27.md
+- Vault DAG Analysis
+- ensure_vec_index_runtime_state
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Or start normally
+- Or start normally
+- Or start normally
+- [Feature Name] Implementation Plan
+- [Feature Name] Implementation Plan
+- --Portfolio.md
+- --MyAPI.md
+- Understanding OpenClaw's cron, node loop and then a router and grep for Jules.md
+- Fallback Playbook - OpenClaw Reliability
+- Power User Sab Era Begins
+- FREE API KEYS YOU CAN GET RIGHT NOW.md
+- Modular CSS Snippets for Obsidian
+- 🔧 Bonus Coding-Specific Callouts
+- Vault DAG Analysis
+- render_excluded_list
+- after_load
+- normalize_vault_schema_v4.py
+- test_api_enrich.py
+- Exploring the Connections view
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Systematic Debugging
+- Systematic Debugging
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are summarizing a Claude Code session for a daily memory log.
+- Raw Conversation
+- push, pull_request, issues, star, fork
+- push, pull_request, issues, star, fork
+- push, pull_request, issues, star, fork
+- GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓
+- GDDP Operator Practice Checklist
+- Extensions
+- ExtensionAPI Methods
+- Networking Sprint Plan (Now -> Wednesday 6:00 PM)
+- Level 1: Navigation & Quick Actions
+- Ghostty + Obsidian CLI Workflow
+- processNextBatch
+- Ne
+- build_v4_owner_queue.py
+- Swish Configuration and Usage
+- Smart Chat API integration
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Brainstorming Ideas Into Designs
+- STATE: MyAPI cleanup proposal (proposal only — no changes yet)
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Espanso malfunctioning despite minimal use
+- 2026-04-26 - setting-up-direct-agent-communication-with-cmux - cddd6f19-a208914ec2.md
+- V4 Schema Rules
+- V4 Schema Rules
+- V4 Schema Rules
+- GDDP Operator Practice Checklist
+- Session Text
+- Context Checkpoint Ritual.md
+- Master List — 30-Day Sprint
+- Objective
+- AI Command-Driven Operations
+- My Topology
+- updateMetadataInfo
+- callback
+- render2
+- File-by-file Instructions
+- LLM Control Flow Insights
+- Smart Context Clipboard
+- STATE: MyAPI cleanup proposal (proposal only — no changes yet)
+- You are summarizing a Claude Code session for a daily memory log.
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are summarizing a Claude Code session for a daily memory log.
+- "Yeah, that tracks with what the Reddit post warns about. Here's what's likely h
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- Jules Batch Task Management
+- MISSION: Fish Shell Migration Audit
+- Why This Matters
+- Check what tools/capabilities are available on each node
+- khoj-headless-engine
+- NanoClaw Recon
+- 2026-05-05 - environment-context - 019df81e-48f6e5ed3b.md
+- Session Text
+- Pi Extensions — LLM Master Reference
+- LMN-QBO Field Discovery Checklist
+- AI code problem solving pipeline.md
+- **WEEK 4 — Stress Test & Decide**
+- Snapshot
+- SECTION 2 — Script 1: "Create Local Repo only" (no GitHub yet)
+- Agent Bus Smoke Test Plan
+- Modular CSS Snippets for Obsidian
+- Warp AI: Reimagining the Terminal for the Agentic Era
+- 2026.04.28.md
+- Engineer-Focused Plain-English Summary
+- Agent Handoff: Task + Project Management Integration for SoloDeveloper Vault
+- _send_message
+- Vr
+- Gotchas — paths, env, files to skip
+- MyAPI — Context Retrieval for AI Agents and Personal RAG
+- Inline connections
+- STATE: MyAPI cleanup proposal (proposal only — no changes yet)
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- 2026-03-19 - environment-context - 019d03bb-2ff14ddfad.md
+- Verification Before Completion
+- Session Text
+- Session Text
+- BigPi: Sync + Cron + Retry Rollout
+- MyAPI Senior Engineering Mock Interview Prep Guide
+- PP Guest Event.md
+- Jules Task: Expand OpenClaw PROMPT_BOOK.md
+- Useful Git Commands
+- Dispatch Queue (all 29 subtasks)
+- openclaw-cli-power-user-guide.md
+- Vision B Plan (Mac-Primary + Pi Remote Hands)
+- Vision B Plan (Mac-Primary + Pi Remote Hands)
+- Commands
+- Overview
+- Useful Git Commands
+- Vision B Plan (Mac-Primary + Pi Remote Hands)
+- Jules Inbox Triage Brief
+- V4 Vault Triage Handoff
+- updateSettingsAfterRename
+- use_adapter
+- context_to_md_tree
+- context_to_md_tree
+- parse_claude_session
+- Jules Task: Expand OpenClaw PROMPT_BOOK.md
+- 3. Task Categories (Mapped to Your Repos)
+- EPOMAKER EK21 — SABOOR iPad+Code Layout Cheat Sheet
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- You are a memory consolidation agent. Your job is mechanical compression — no cr
+- 2026-05-09 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - 860b9ada-3024400132.md
+- You are summarizing a Claude Code session for a daily memory log.
+- 2026-05-09 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - a30f5349-9f15cbcb22.md
+- 2026-05-09 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - ed8ef3e2-69298e1e1d.md
+- "# Pi 4 NVMe USB Boot Troubleshooting — Handoff
+- "# Pi 4 NVMe USB Boot Troubleshooting — Handoff
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Workflow
+- OpenClaw vision-assisted browsing agent architecture
+- Session Text
+- Practice Log Template
+- MyAPI Smart Retrieval: Architectural Audit & Developer's Debugging Guide
+- --SocialXP.md
+- 02 Areas/Zed Day 1 basic keyboard workflows picking up quick.md
+- Mission — BigPi + SmallPi Stabilization (No Messaging Beyond Telegram on BigPi)
+- Mission — BigPi + SmallPi Stabilization (No Messaging Beyond Telegram on BigPi)
+- Execution Topology V1
+- AGENTS.md - Your Workspace
+- Obsidian Git (Mac) + Headless Pi Mirror Plan
+- 2026 Launchpad: Phased Action Plan
+- Untitled 4.md
+- AGENTS.md - Your Workspace
+- render_excluded_list
+- callback
+- Jules Task: Add Batch Gemini Enrichment Endpoint
+- MyAPI Smart Retrieval: Architectural Audit & Developer's Debugging Guide
+- 1. Quick Dev Tasks
+- MagSafe Stand Solutions
+- Raspberry Pi SSD Setup
+- App Ownership and Export
+- 2026-05-11 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - e4c498ac-be95f2a399.md
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- MISSION: Fish Shell Migration Audit
+- You are summarizing a Claude Code session for a daily memory log.
+- You are implementing Tasks 1-5 of a plan for adding a `dev-journal note` subcomm
+- 2026-05-07 - claude-web-versus-desktop-performance-and-optimization - 1f75e006-cac53525ab.md
+- add node files to graphs/<project-id>/nodes/
+- add node files to graphs/<project-id>/nodes/
+- add node files to graphs/<project-id>/nodes/
+- on the Pi
+- Core Rules
+- Antigravity Workflows
+- Saboor Neovim Field Guide
+- -Users-saboor-repos-MyAPI/memory/MEMORY.md
+- Pi Extension Architecture (LLM Reference)
+- Pi Extension Anti-Patterns
+- Water & Stone: Game Plan & Next Steps
+- Fallback Playbook - OpenClaw Reliability
+- Santa Cruz Smart Automations — Build Plan V2
+- Prompting as Route Selection, Not Magic
+- Vault.md
+- Searching Basics / Re-uses
+- Files Kept for Review
+- zn
+- Batch run snapshot
+- Benchmark readiness plan
+- Data Source
+- 2026-04-23 - swish-configuration-and-usage - 69e9930d-9438e519b1.md
+- Quick Dev Tasks (codebot → saboors-macbook-air)
+- Quick Dev Tasks (codebot → saboors-macbook-air)
+- Bird Feeder Repair Solutions
+- LazyVim Explorer Behavior Fixes
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- Can you help me implement this? ---------> What you’re seeing is mostly **expect
+- You are summarizing a Claude Code session for a daily memory log.
+- You are reviewing whether a Python implementation matches its specification. Rea
+- Building a personal AI coding agent from leaked harness techniques
+- Photo inventory curation for Bailey demo
+- VM fine-tuning vs deterministic routing tradeoffs
+- 2026-05-05 - environment-context - 019df7d9-b70d164407.md
+- Failure-Mode Audit v1: Enforcement Map (Steps 1-2 only)
+- Jules Prompts for SC Automation.md
+- BDSM Dom Behaviors and Phrases.md
+- I am an dependent addict with arrested development, she is a transgender slut with obsession of validation.md
+- Trans corn content curation.md
+- Token Reconciliation Checklist
+- Codex and Claude Log History + Hooks
+- Hand Therapy Master Plan
+- The 8 Biggest Things That Changed (Tailored to You)
+- The 8 Biggest Things That Changed (Tailored to You)
+- Quick Dev Tasks (codebot → mac-hands)
+- EPOMAKER K21 Macro Numpad Power Key.md
+- Mac Memory Control Playbook (8GB)
+- Apple Shortcuts — Capture from iPad/iPhone via SSH
+- GDDP — BRIEF-DRAFT (air)
+- GDDP — QUERIES (mini pass-1)
+- MyAPI — BRIEF-DRAFT (air)
+- MyAPI — QUERIES (mini pass-1)
+- Pi / Needle / Gemma — BRIEF-DRAFT (air)
+- Pi / Needle / Gemma — QUERIES (mini pass-1)
+- AGENTS.md - Operating Contract
+- Branch · Claude Coroutine Optimization
+- AGENTS.md - Operating Contract
+- AGENTS.md - Operating Contract
+- 2026-05-03 - branch-cache-misses-and-strategy - 69f70fd3-4332928a0a.md
+- 2026-05-03 - cache-misses-and-strategy - 69f6aeaf-cf97fa0b78.md
+- Lovable Prompt Refinement
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- # MISSION: Fish Shell Migration Audit
+- You are summarizing a Claude Code session for a daily memory log.
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- 2) LMN Discovery
+- Session Text
+- GDDP Operator Practice Checklist
+- Session Text
+- Session Text
+- System State After the Freeze
+- 🤝 Handoff: NCCT Recertification for Farhana Chaudury (NCPT, exp. 7/30/2026)
+- Vincent Social Interactivity Meeting 2.md
+- Core Team Call 1.md
+- [[02 Areas/Learning/Closing out the end of Jan 2026 with powerfully tooled workflow]]
+- How My OpenClaw Agent, Larry, Got Millions of TikTok Views in One Week. (Full Step-by-step guide)
+- Agent Bus API Spec
+- How My OpenClaw Agent, Larry, Got Millions of TikTok Views in One Week. (Full Step-by-step guide)
+- Vision B — Transfer File Map (Pi ➜ Mac)
+- Headless Obsidian Sync Commands
+- Obsidian Headless Sync on Raspberry Pi Runbook
+- 2026.05.02.md
+- Proposed Strategy: The "Red Zone" Prevention (V2)
+- Quota Survival & Synchronization Strategy: The "Mastermind" Protocol
+- Output: [[VS Code Tunnel Service Installed on Big Pi]]
+- renderGalleryView
+- Pt
+- upload_file_to_xai
+- upload_file_to_xai
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- Jules Task: Claude Code Session Adapter
+- MyAPI-Rebuild — Context Anchor
+- Pi / Needle / Gemma — GAPS (mini pass-1)
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Brainstorming Ideas Into Designs
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Systematic Debugging
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Handoff 006 — Checkpoint: SDK upgrade + Task 3 in flight
+- You are summarizing a Claude Code session for a daily memory log.
+- Pi Orchestrator: 5-Package Research
+- Development checkpoint: intake capability and next steps
+- Using Google credits with different account for VM
+- Next Steps In Order
+- Next Steps In Order
+- Next Steps In Order
+- return loop so merged PRs automatically advance graph state.
+- 2026-03-21 - environment-context - 019d100f-370f25d8eb.md
+- Review Queue
+- VM Migration Handoff
+- VM Migration Handoff
+- Review Queue
+- VM Migration Handoff
+- VM Migration Handoff
+- Review Queue
+- VM Migration Handoff
+- VM Migration Handoff
+- LMN-QBO Field Discovery Checklist
+- 2026-05-04 - environment-context - 019df32c-0b31ab6d66.md
+- Run 5: Human Reject Or Defer Drill
+- add node files to graphs/<project-id>/nodes/
+- 2026-05-07 - environment-context - 019e0097-44a9491d7f.md
+- GDDP Operator Practice Checklist
+- Verification Before Completion
+- Verification Before Completion
+- Writing Plans
+- Writing Plans
+- GDDP-15 Corrected Audit
+- Approach to Medical Learning with *Three Key Principles*
+- --GDDP.md
+- 2026-04-29 — Raycast Advanced URI plugin error: diagnosis
+- Main remaining gaps
+- Main remaining gaps
+- Post Ivy Sab Fight.md
+- Egoless Thought-Provoking Answer
+- Meeting 2 Timeline
+- Someone Else's Keymaps
+- LinkedIn Payload.md
+- Folder-Specific Task Presets
+- `agy` / `antigravity` CLI — What It Actually Does
+- PR Review: Documentation Update
+- ChatGPT
+- The Danger Illusion of AI Code
+- Editor Workflow.md
+- jq + Script Pipeline
+- 🔓 Remote Ops
+- Pi Cluster Runs Distributed Task
+- Pi Runs Real Service
+- 🔓 Prototype Complete
+- Scratchpad
+- 2026.05.17.md
+- Folder-Specific Task Presets
+- Lt
+- Empirical Reality (2-3 sentences max, anything more must be critically justifiable)
+- VM Migration Handoff
+- Empirical Reality
+- Corpus v1 baseline candidate queries
+- 2026-07-29 — wave1 land + first smoke
+- Corpus v1.0 Vault Build Summary
+- AI Tutoring Business Plan
+- Claude Coroutine Optimization
+- Smart Lookup: semantic search in Obsidian
+- Proposed plan
+- Proposed plan
+- Proposed plan
+- Proposed plan
+- Proposed plan
+- Proposed plan
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- <command-message>frontend-design:frontend-design</command-message>
+- Where we are right now
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Pipeline Mapping: Owner-Pass / Concept-Writing Pipeline
+- You are doing a code quality review on uncommitted changes for a Python CLI feat
+- Headless iPad dev machine via Blink callbacks
+- API projects discussion
+- Project Graph Quality
+- on the Pi
+- Changelog
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- Human Retrieval (H)
+- VM Migration Handoff
+- VM Migration Handoff
+- VM Migration Handoff
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- Human Retrieval (H)
+- VM Migration Handoff
+- VM Migration Handoff
+- VM Migration Handoff
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- Human Retrieval (H)
+- VM Migration Handoff
+- VM Migration Handoff
+- VM Migration Handoff
+- Session Text
+- Session Text
+- Session Text
+- <environment_context>
+- bpuymxix4.txt.md
+- -Users-saboor-repos-socialxp/memory/MEMORY.md
+- lc_1004 — Max Consecutive Ones III
+- Session Log — 2026-04-27
+- Anchor Targets
+- Pi Harness
+- Custom Tools
+- TASK PACKET
+- ExtensionContext
+- Proposed plan
+- Co-Design Group 1.md
+- **Discussion 2: Gaming as a Connector**
+- SocialXP/Vincent Social Interactivity Meeting 3.md
+- Architecture Active Recall Cards
+- Agent Autonomy Contract V1.1
+- Agent Autonomy Contract V1.1
+- Neovim Workflows — Non-Intimidating Guide
+- Obsidian CLI — Quick Capture from Terminal
+- Get into the Right Directory
+- STAR Summary: Claude Code + Obsidian Vault Integration
+- -skills-list-from-the-antigravity-repo-is-the-curated-top-50-skills-list.md
+- Hand therapy exercises packet 2026.md
+- Indexed Searches Accomplish Near-Zero Latency, Richer Matching Behavior, and Interactive Navigation Speed.md
+- Terminal and Git and Dev Macros.md
+- Raspberry Pi Remote Dev Setup
+- BDR Ad Campaign Ready
+- BDR Local SEO
+- BDR Performance Audit
+- Break the AI Solution
+- Cron Job on Pi
+- Install and Configure 3 Plugins
+- LeetCode Pattern Recognition
+- Model Comparison Sparring
+- Monitoring and Logging on Pi
+- NeoVim + tmux Seamless Navigation
+- Pi in SSH Config
+- Remote tmux from iPad
+- Scripted Deployment to Pi
+- _to-delete-after-30d/Vincent Social Interactivity Meeting 3.md
+- Neovim Workflows — Non-Intimidating Guide
+- VM Headless Obsidian Sync Setup Summary
+- Empirical Reality (2-3 sentences max, anything more must be critically justifiable)
+- Empirical Reality (2-3 sentences max, anything more must be critically justifiable)
+- Empirical Reality (2-3 sentences max, anything more must be critically justifiable)
+- Jules Task: Fix Export Tab Buttons
+- Anchor Targets
+- eval-bank-v0 (DRAFT — Sab edits before freeze)
+- GDDP — GAPS (mini pass-1)
+- MyAPI — GAPS (mini pass-1)
+- Pi / Needle / Gemma — SOURCES (mini pass-1)
+- 2026-07-29 — What we did
+- .process_file
+- TagsPass
+- Monitoring / Ops (ops → ssd-small)
+- 2. Monitoring / Ops
+- 3. Task Categories (Mapped to Repos)
+- 3. Personal / Calendar / Life
+- Heavy Compute / VM (vm-lab / biz → first-vm)
+- Monitoring / Ops (ops → ssd-small)
+- Operations Layer
+- Monitoring / Ops (ops → ssd-small)
+- Heavy Compute / VM (vm-lab / biz → first-vm)
+- Operations Layer
+- Heavy Compute / VM (vm-lab / biz → first-vm)
+- Operations Layer
+- Brief
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Main remaining gaps
+- Main remaining gaps
+- Main remaining gaps
+- You are summarizing a Claude Code session for a daily memory log.
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Obsidian Bases Skill
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- V4 Schema Compliance Audit Report
+- Normalization Status Report: Floor-Pass Coverage
+- Viewing HTML files without specific browsers
+- Google representation for Bailey's Water and Stone
+- Raw Conversation
+- Decision
+- OpenClaw Systems Architect
+- 2026-04-05 - environment-context - 019d5ca4-e9fe8430fc.md
+- Review Queue
+- Review Queue
+- Review Queue
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- VM Migration Sprint
+- Authentication Flow Brainstorm
+- Review Queue
+- Review Queue
+- Review Queue
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- VM Migration Sprint
+- Authentication Flow Brainstorm
+- Review Queue
+- Review Queue
+- Review Queue
+- Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline
+- VM Migration Sprint
+- Authentication Flow Brainstorm
+- <environment_context>
+- Host Roles — OpenClaw Topology
+- Next Needle Boundary Decision
+- Code Review Reception
+- Code Review Reception
+- Verification Before Completion
+- Code Review Reception
+- solutions for whichkey in neovim in terminal due to jarring editing experience.md
+- GDAD System Roadmap
+- System State After the Freeze
+- Guide: Building a Unified Vertex AI Chatbot over Multiple Obsidian Vaults
+- Run — Blocker Pass (Trust-Categorized v1)
+- Custom UI
+- Become the quiet, avoidant, spiteful, resentful man with a long game for revenge.md
+- Core Team Call 2.md
+- Apple Shortcuts — Capture from iPad/iPhone via SSH
+- Talon Voice Control for Coding Neovim
+- Answer: Aliasing a Folder
+- [[CLI OAuth vs Traditional API Keys ]]
+- Monitoring / Ops (ops → small-pi)
+- Evening Prep — 2026.04.23
+- 2026.05.16.md
+- 2. Strict Constraints for All Future Responses
+- Duplicate Cleanup Log — 2026-02-28
+- 2. The Core Engine (The "Bridge")
+- The Hardened Configuration Vision (10,000-foot view)
+- Run — Blocker Pass (Trust-Categorized v1)
+- Run — Tighten Pass (Trust-Categorized v1)
+- Khoj Deployment and Indexing Anchor
+- My_DevInfra System Anchor
+- VM Tailscale SSH Access Anchor
+- The proposal
+- Status & Next Steps
+- GDDP — SOURCES (mini pass-1)
+- Guide: Building a Unified Vertex AI Chatbot over Multiple Obsidian Vaults
+- Personal / Calendar / Life (main → ssd-big)
+- Section 3: Sub-Agent Execution Briefs
+- Graph Tool Feedback
+- Project Review Feedback
+- Master List Population
+- Personal / Calendar / Life (main → ssd-big)
+- Section 3: Sub-Agent Execution Briefs
+- Personal / Calendar / Life (main → ssd-big)
+- Section 3: Sub-Agent Execution Briefs
+- Personal / Calendar / Life (main → ssd-big)
+- Section 3: Sub-Agent Execution Briefs
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- I am trying to come up with a "simple" Multi-machine API key  system that allows
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- 2026-05-14 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - 5d9cc963-117ddb4008.md
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- 2026-05-17 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - b9b1113a-79f7c500f9.md
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- Building an orchestration system from scratch
+- on the Pi
+- on the Pi
+- on the Pi
+- on the Pi
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- 2026-05-08 - agents-md-instructions-for-users-saboor-repos-myapi - 019e076b-3121ac58f6.md
+- Pi Harness
+- Executing Plans
+- Executing Plans
+- Test-Driven Development (TDD)
+- Pi Harness
+- Executing Plans
+- Test-Driven Development (TDD)
+- Runtime Decision Loop v0 Spec
+- Runtime Decision Loop v0 Spec
+- 🛠️ Summary of Accomplishments
+- Evidence Upload Checklist — Use During Appeal Submission
+- CIM - Phase 0 Mistake Was Hypothesis and Marketing Friendly Not Reality of API Docs Friendluy
+- Core Team Call 11.md
+- MW Anger Journal.md
+- VimR Config Setup
+- Clipboard Sandbox and Gemini on Mac
+- Mental Model
+- Google Antigravity — Beginner to Power User Guide
+- OpenClaw CLI Power User Guide
+- Personal / Calendar / Life (main → big-pi)
+- 5. The Core Lifts: Squat, Press, and Deadlift
+- ⌨️ Vim Core: The Bread & Butter
+- a-Shell Vs Blink Shell: Crisp Distinction
+- Blink Code is Desktop Grade Blink Shell
+- Git Gets way less Mysterious once These Three Click together
+- Vi - Jumplist Vs Marks Delinieation Clarifies so Much
+- 2026.02.17.md
+- 00 Dailys/2026.02.26.md
+- 2026.04.26_2.md
+- 2026.05.09.md
+- 2026-W05 Anchor.md
+- OpenClaw Known-Good State — debian-vm Node
+- SAFE Manual Cleanup Plan — SoloDeveloper Duplicate Notes
+- Daily Dashboard Query
+- _code-problem-templater.md
+- notebook-navigator/manifest.json
+- Situational Summary — Context Refinery — 2026-04-15
+- MyAPI — SOURCES (mini pass-1)
+- 🛠️ Summary of Accomplishments
+- remove_chatgpt_branch_variants.py
+- LinksPass
+- Task Categories
+- Task Categories
+- 6. The CLI Surface Area — Everything You Can Do Without Chat
+- 6. The CLI Surface Area — Everything You Can Do Without Chat
+- 6. The CLI Surface Area — Everything You Can Do Without Chat
+- Interactive HTML Reference Guide
+- Branch · Markdown as Source Code
+- Raw Conversation
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- 2026-05-14 - the-current-dir-matters-less-than-the-current-reality-i-am-trying-to-a - dc6819d4-57c4ecba35.md
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Preparing Bailey's website presentation
+- Raw Conversation
+- Raw Conversation
+- Claude and Codex command logging analysis
+- Session Text
+- Session Text
+- 2026-03-19 - environment-context - 019d0435-9c08d2f67e.md
+- Stop node if misbehaving
+- Changelog
+- Result Summary
+- add node files to graphs/<project-id>/nodes/
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- VM Tailscale SSH Access Anchor
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- VM Tailscale SSH Access Anchor
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- Situational Summary — Context Refinery — 2026-04-15
+- VM Tailscale SSH Access Anchor
+- <environment_context>
+- OpenClaw powers — each module exposes a run() function
+- 2026-05-07 - environment-context - 019e0097-e206101d23.md
+- Pi-Coding-Agent
+- Task Group: Needle routing eval harness, commit workflow, and daemon identification/cleanup
+- Pi-Coding-Agent
+- 🛠️ Summary of Accomplishments
+- Handoff 007: Vertex AI Infrastructure & OCR Pipeline Established
+- GDDP Sitrep and Future Plan
+- 🛠️ Summary of Accomplishments
+- Handoff 007: Vertex AI Infrastructure & OCR Pipeline Established
+- GDDP Sitrep and Future Plan
+- Handoff 008 — Needle Router v1: Finetune to Crush It
+- MyAPI Retrieval Pipeline — Architecture & Debugging Guide
+- Search & Chat Vertex AI — Commands and Aliases
+- ChatGPT 5.4 thinking played a significant role in crafting the GDAD Pipeline system.md
+- System Roles
+- v1/README.md
+- Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault
+- Analysis
+- Phone Call
+- LMN-QBO First-Flow Discovery
+- STAR Overview
+- Easy Problems Anchor.md
+- Why I have been fumbling so hard on dating apps.md
+- Anger Journal.md
+- March Element 2025 Addictions, Consequences, and Formula.md
+- Links
+- Fallback Playbook if OpenClaw Is Unreliable
+- Log
+- 2026's Dygma raise keyboard new layers will drive my progress.md
+- One NotebookLM Notebook per Theme or Subject that You Add Sources to
+- Power User Workflow Primer
+- The Big Picture → Battle Plan and Tips
+- Morgan NA Training.md
+- Gateway Troubleshoot
+- Odin Note-taking Process
+- Session Card — Saboor KC
+- How a Personal AI Agent Will Change Your Entire Life in 1 Day.
+- How a Personal AI Agent Will Change Your Entire Life in 1 Day.
+- 6. The CLI Surface Area — Everything You Can Do Without Chat
+- LLM Wiki
+- 1.1 The Failure of the "Ergonomic Arms Race"
+- {{title}}
+- 2026.03.04 Active Workstreams *1*
+- 2026.05.10.md
+- Jules Task Brief: Lead Detective Implementation (v1)
+- Jules Task Brief: Review Engine Implementation (v1)
+- Odin Note-taking Process
+- YOU ARE THE OBSIDIAN VAULT NORMALIZATION AGENT
+- New Home
+- Obsidian Duplicate Scan Report — SoloDeveloper
+- smart-connections/manifest.json
+- smart-context/manifest.json
+- smart-dedupe/manifest.json
+- smart-graph/manifest.json
+- smart-lookup/manifest.json
+- smart-templates/manifest.json
+- Task: Implement Modular Triage Package (Fill-in-the-Blanks)
+- Context Refinery — Handoff Summary
+- Code Context
+- Code Context
+- Analysis
+- MyAPI Status Anchor
+- Source-of-Truth Anchor
+- Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault
+- benchmark_to_refinement_queue.py
+- render_batch_report
+- 5. Mission Packets
+- 6. Jules Handoff Briefs
+- Exact Transformation
+- 2026-04-23 - claude-max-task-planning - 69ea040b-07c6966890.md
+- 2026-04-23 - dag-generator-critique - 69e9dfe5-616ffde0bd.md
+- Response Discipline
+- Roles
+- Roles
+- Roles
+- Response Discipline
+- Roles
+- Cross-cutting findings
+- Roles
+- Hardware store recommendations
+- Response Discipline
+- Roles
+- Roles
+- Cross-cutting findings
+- Roles
+- Track 1: Services & Certifications Update
+- Branch · Interactive HTML Reference Guide
+- Palette UX Improvements
+- Main remaining gaps
+- Recommended build order
+- Main remaining gaps
+- Recommended build order
+- Main remaining gaps
+- Recommended build order
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- I have a fun new task for us, which, you will probably play for now, but, the ul
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- NotebookLM CLI & MCP Expert
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Okay. So look at the following image.[Image #2] Basically I want you to decide w
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- AI-driven animations for mobile app development
+- 2026-04-24 - debugging-pi-packet-smoke-test-verification-failure - 6b4522ec-8899372f16.md
+- Raw Conversation
+- AGENTS.md - Your Workspace
+- Big Pi Runbook
+- Security Patterns
+- Source-of-Truth Anchor
+- Source-of-Truth Anchor
+- My_DevInfra System Anchor
+- Khoj Deployment and Indexing Anchor
+- Python
+- Source-of-Truth Anchor
+- Source-of-Truth Anchor
+- My_DevInfra System Anchor
+- Khoj Deployment and Indexing Anchor
+- Python
+- Source-of-Truth Anchor
+- Source-of-Truth Anchor
+- My_DevInfra System Anchor
+- Khoj Deployment and Indexing Anchor
+- Python
+- <environment_context>
+- Run 2: Forward Dispatch On A Tiny Real Repo
+- Run 2: Forward Dispatch On A Tiny Real Repo
+- Needle Router Architecture Assessment
+- <environment_context>
+- Handoff 009: Migrate MyAPI + Vertex AI Workspace to khoj-vm-new
+- Handoff 009: Migrate MyAPI + Vertex AI Workspace to khoj-vm-new
+- Handoff 011 — Corpus v1 Obsidian Substrate Architecture
+- The Three (really four) Tools
+- 3. Hosting a Local Web Server on Your Raspberry Pi
+- Vim Marks Cheatseet.md
+- GDD - agentic or autonomous dispatch pipeline anchor.md
+- 10 — Project Graph Contract
+- Analysis: Robust Verification for Semi-Autonomy
+- Active Sessions for 2026 April Career Sprint
+- Purpose
+- 3. Website Audit + Migration
+- Lock 2–3 Resume-worthy Projects
+- LinkedIn Comprehensive Action Plan — Saboor Chaudry
+- Portfolio Websites of Peer or Near Peer Developers
+- Count Vowels in String.md
+- Find Max Element in Array.md
+- Reverse a String.md
+- Thu Jan 30th, 2025
+- But You Won't Forget that I Was the only One Who Listened to You and Knew the Real You
+- Wilburn Clearing Call.md
+- Terminal Bash Scripts for Views
+- C. The "learn faster" System inside Neovim (LazyVim-specific)
+- C. The "learn faster" System inside Neovim (LazyVim-specific)
+- Starter Checklist — Distributed Ops (Mac + Big Pi + Small Pi)
+- Final Pro-tip
+- Rehab Buckets
+- Example Weekly Flow
+- Master Exercise Bank
+- Weekly Bucket Tracker
+- Day1-2026-03-14
+- YS7 Upper 2.md
+- Evaluating the  Johnny Decimal project management system.md
+- Problematic Typing Postures
+- To Run a Script (macOS zsh) Reliably
+- The 4-Week Layer Approach
+- Claude_Code_pipe-stdin-usage-command-examples.md
+- PROMPT_BOOK.md — OpenClaw Prompt Templates
+- Jules Handoff Briefs
+- Vision B — Operating Rules (One-Screen)
+- Finger Placement on Home Row Keys.md
+- LLM Payload Idea between Mac and iPad.md
+- 3 Ways to Add a Note from Terminal
+- :edit, nvim filepath+name, picker f + c + filename
+- Lazyvim - Getting Started Docs.md
+- [[Vim workflows helps me understand code better]]
+- Getting Comfortable with NeoVim as Your Daily Driver
+- Portfolio Site Live
+- 🔓 Terminal Wizard
+- 2026.03.01.md
+- 2026.03.03.md
+- Active Workstreams and Workflows *1*
+- Scratchpad
+- 2026.04.10.md
+- Problematic Typing Postures
+- 🌅 Morning Hub
+- Morning Sweep
+- Expected Fixture: get_person_context("Sab")
+- Expected Fixture: get_project_context("MyAPI-rebuild")
+- Expected Fixture: get_project_context("Pi / Needle")
+- MyAPI-Rebuild Corpus Freshness Audit - 2026-07-01
+- Corpus Tier Policy - 2026-07-02
+- Parallel Work Board — 2026-04-21
+- 🚀 3. Handoff Action Items (The Final Steps)
+- GDDP — BRIEF-DRAFT (air)
+- MyAPI — BRIEF-DRAFT (air)
+- Pi / Needle / Gemma — BRIEF-DRAFT (air)
+- Pi / Needle / Gemma — SOURCES (mini pass-1)
+- GDDP — BRIEF-DRAFT (air)
+- MyAPI — BRIEF-DRAFT (air)
+- Pi / Needle / Gemma — BRIEF-DRAFT (air)
+- Pi / Needle / Gemma — SOURCES (mini pass-1)
+- deliver_daily_active_corpus.py
+- MyAPI: Agent-API Framing Realized + Trust Threshold Crossed
+- One clean setup to run
+- Git Fetch and Mirror Explained
+- Cron Job Configs (Monitoring & Automation)
+- 4. Business / Client
+- 7. Scheduled / Cron Tasks
+- Section 2: Natural-Language Briefing Book
+- Interactive Graph Builder
+- 13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests
+- Mission Packets (Structured Async)
+- Section 2: Natural-Language Briefing Book
+- Where you are vs. where the path leads
+- 13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests
+- Mission Packets (Structured Async)
+- Section 2: Natural-Language Briefing Book
+- 13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests
+- Mission Packets (Structured Async)
+- Section 2: Natural-Language Briefing Book
+- Pick a problem and save a bundle
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- 2026-05-04 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - 3833fa8b-d6722452fe.md
+- 2026-05-04 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - ecf82a2a-43c1826091.md
+- 2026-05-04 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - f4631c6e-2be7aa9bb2.md
+- You are summarizing a Claude Code session for a daily memory log.
+- File outline for /home/sab-ssd/.pi/Pi-5.6.26.Self-Audit-Strengths_Weaknesses.md
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- https://gemini.google.com/share/53b46ba9151b - i am curious if you or me can fin
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- I need to get into a VM right now, read  /Users/saboor/repos/vm-instructions.txt
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- python3 scratch/vertex_client.py chat "What is MyAPI?"
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Task-bound book for agent design
+- Impact on Your Sprint
+- 💬 explain and expand the followi…
+- Needle: lightweight tool routing model
+- Combining and testing Codex tools
+- Graph driven development project audit
+- Runner.py Fixes
+- gddp-config
+- GDD Boot
+- gddp-config
+- gddp-config
+- gddp-config
+- Detect project type
+- Anchor Targets
+- Parallel Work Board — 2026-04-21
+- Anchor Targets
+- Parallel Work Board — 2026-04-21
+- Anchor Targets
+- Parallel Work Board — 2026-04-21
+- Your 3 Core Outcomes (keep these)
+- Your 3 Core Outcomes (keep these)
+- Phone Call
+- 2026-05-07 - environment-context - 019e0087-a168f6f399.md
+- 003 — Final v0 benchmark run
+- Khoj Deployment and Indexing Anchor
+- Needle Router Hardening Summary
+- Needle Router Assessment
+- Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault
+- Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault
+- -Users-saboor-repos/memory/MEMORY.md
+- Handoff 010 — Corpus v1 Mac Readiness: Shard Export Wired and Scanned
+- Handoff 012 — MacBook ACP Claude Setup: Vault Run
+- GDDP Project Anchor — Normalized
+- GDDP Runtime Audit — Normalized
+- Overview of Frameworks Thus Far
+- Merge-Conflict Fix Audit — 2026-05-07
+- 2026-W06 Anchor.md
+- 11 — Schema Versioning
+- 12 — Transcript Event Type
+- GDD - just start and FAFO.md
+- Session Log — 2026-04-27 — Vault V4: Private Split + DevInfra Rename
+- Harness Evaluation Rubric
+- Retrieval Benchmark v0 Run — 2026-04-15
+- Retrieval Benchmark v0 Run After Tuning — 2026-04-15
+- USER.md - Sab Context
+- USER.md - Sab Context
+- Pi-Orchestration-Scoped-Work.md
+- Hey Jason — Quick on the Google Business Profile situation
+- Project Polish for Presenting a Senior Engineer Narrative
+- Fuck and forget Ivy Jan 30 2025.md
+- I am proud of how I handled that.md
+- Post Breakup Processing and Decision Making.md
+- Tyler Overnight 2.md
+- Core Team Call 3.md
+- Core Team Call 4.md
+- Core Team Call 5.md
+- Core Team Call 6.md
+- Oct Wildmen Leadership Call 2.md
+- The 6 Tasks for a LCR.md
+- OpenClaw Decision Note — Feat-markdown-pipeline-1094435478313569748
+- OpenClaw Decision Note — Feat-resilient-architect-copy
+- OpenClaw Decision Note — feature/astro-version
+- OpenClaw Decision Note — Fix-dead-subscription-form-11146584180811433169
+- OpenClaw Decision Note — Fix-optimize-navigation-rendering-4508866026702962936
+- OpenClaw Decision Note — perf/fix-blog-post-key-6294485228969439525
+- OpenClaw Decision Note — perf/fix-react-keys-projects-page-16679005189783209206
+- OpenClaw Decision Note — perf/stable-react-keys-14940850307799154199
+- OpenClaw Decision Note — perf/stable-react-keys-projects-14335487169626350116
+- OpenClaw Decision Note — Perf-unique-keys-15434530512014776475
+- OpenClaw Decision Note — Security-obfuscate-email-1254930352502245485
+- **Deep Planning Questions for The Vault Keeper:**
+- wfl-Neovim-key-commnands-only-5-workflows
+- wfl-Neovim-key-commnands-only-5-workflows
+- 🦞 OpenClaw SSH Tunneling Guide
+- Log
+- Day2 - 2026-03-15
+- Day3 - 2026-03-15
+- **How To Apply This to Your Life**
+- March 2026 Element on Ego and Context
+- Claude
+- Run Loop once per Day per Project
+- BlueBubbles Setup (Saved for Later)
+- Mission Packets (Structured Async)
+- Cron Job Configs
+- Career.md
+- 03 Resources/Ergonomics - Nerve Safe Left Hand Typing Protocol.md
+- GDDP Protocol & Operator Mastery
+- 2.1 Parallel vs. Serial Processing in Fitness
+- 3.1 Applying Software Engineering to Biology
+- 4.1 The Myth of the "Accidental Bodybuilder"
+- 6. Training vs. Exercise
+- 🔑 The Core Shortcuts You Need Right Now
+- Example
+- OpenClaw Gateway Restart SOP
+- Fzf - Newly Discovered Functionality Make Fzf a Game Changer
+- Helix Flirting Begins - Tutor, Projects, Minimal Config, Batteries Included
+- Pi Terminal Color and Visual Feedback
+- The 2026 CLI Agent Sprawl Compared and Contrasted
+- BDR Booking Calendar Integration
+- Dotfiles V1
+- First Recruiter Outreach
+- First Technical Interview
+- Resume 2.0 with Real Projects
+- 🔓 AI Fluent
+- 🔓 AI Multiplied
+- 🔓 AI Strategist
+- 🔓 AI Whisperer
+- 🔓 Business Ready
+- 🔓 MVP Live
+- 🔓 Editor Wizard
+- 🔓 NeoVim as IDE
+- 🔓 Dissertation Ready
+- 🔓 Foundation Solid
+- 🔓 Sparring Partner
+- 🔓 Your Config, Your Editor
+- 🔓 Your Toolbox
+- 2026.01.29.md
+- 2026.02.18 Active Workstreams *1*
+- 2026.02.24.md
+- Fri Feb 27th, 2026 - Plan/Reflect *2*
+- Sat Feb 28th, 2026 - Plan/Reflect *2*
+- 2026.04.02.md
+- 2026.04.29.md
+- 🎯 🏆 ☑️ 2026-W06 Intentions
+- inbox-canonical-dupes-2026-05-08/Ergonomics - Nerve Safe Left Hand Typing Protocol.md
+- Obsidian CLI — Quick Capture from Terminal
+- Reminders-CLI Workflow
+- OpenClaw Decision Note — add-jules-mcp-case-study-2336253627227224160
+- OpenClaw Decision Note — dispatch-queue
+- OpenClaw Decision Note — feat/add-cn-utility-tests-12605712029049757920
+- OpenClaw Decision Note — feat-add-jules-case-study-12239587449017906312
+- OpenClaw Decision Note — feat-add-pathfinder-case-study-4226522165892727140
+- OpenClaw Decision Note — feat-expand-agentic-workflow-post-17722960923824425775
+- OpenClaw Decision Note — feat-expand-agentic-workflow-post-6509006787236807011
+- OpenClaw Decision Note — feat-markdown-pipeline-1094435478313569748
+- OpenClaw Decision Note — feat-pathfinder-case-study-17358931347304674095
+- OpenClaw Decision Note — feat/portfolio-content-update
+- OpenClaw Decision Note — feat-projects-definition-of-done-8072404381463155084
+- OpenClaw Decision Note — feat-resilient-architect-copy
+- OpenClaw Decision Note — feat-rewrite-openclaw-md-721425389482289999
+- OpenClaw Decision Note — feature/astro-version
+- OpenClaw Decision Note — fix-dead-subscription-form-11146584180811433169
+- OpenClaw Decision Note — fix/merge-conflict-and-email-obfuscation-1741595167-10136734606162562078
+- OpenClaw Decision Note — fix-merge-conflicts-blog-projects-17123638390372322339
+- OpenClaw Decision Note — fix-optimize-navigation-rendering-4508866026702962936
+- OpenClaw Decision Note — fix/projects-merge-conflict-13269831740869035011
+- OpenClaw Decision Note — jules-11570014157736730045-f4906c1d
+- OpenClaw Decision Note — jules-5358149949114829266-f19ce31f
+- OpenClaw Decision Note — jules-rewrite-santa-cruz-automations-5578262483978790649
+- OpenClaw Decision Note — perf/fix-blog-post-key-6294485228969439525
+- OpenClaw Decision Note — perf/fix-react-keys-projects-page-16679005189783209206
+- OpenClaw Decision Note — perf-optimize-get-post-by-slug-14243126727577805702
+- OpenClaw Decision Note — perf/stable-react-keys-14940850307799154199
+- OpenClaw Decision Note — perf/stable-react-keys-projects-14335487169626350116
+- OpenClaw Decision Note — perf-unique-keys-15434530512014776475
+- OpenClaw Decision Note — security-obfuscate-email-1254930352502245485
+- SoloDeveloper ↔ LLM Wiki — Vault Relationship
+- 🎯 🏆 ☑️ {{date}} Intentions
+- Midday Progress Update
+- Harness Evaluation Rubric
+- Retrieval Benchmark v0 Run — 2026-04-15
+- Retrieval Benchmark v0 Run After Tuning — 2026-04-15
+- Query Typing, Post-Retrieval Grouping and Expansion
+- Pass-1 corpus-hot (sab-mini)
+- Pass-1 corpus-hot (sab-air)
+- GDDP — QUERIES (mini pass-1)
+- GDDP — SOURCES (mini pass-1)
+- MyAPI — QUERIES (mini pass-1)
+- Pi / Needle / Gemma — QUERIES (mini pass-1)
+- Pass-1 corpus-hot (sab-air)
+- Pass-1 corpus-hot (sab-mini)
+- GDDP — QUERIES (mini pass-1)
+- GDDP — SOURCES (mini pass-1)
+- MyAPI — QUERIES (mini pass-1)
+- Pi / Needle / Gemma — QUERIES (mini pass-1)
+- audit_tags_v4.py
+- is_concept_note
+- khoj_repair_index_delta.py
+- TypePass
+- 10) Minimal working set (use this repeatedly)
+- Section 4: Design Rules
+- 4. Your Three-Device Architecture — How to Use It
+- Section 4: Design Rules
+- 4. Your Three-Device Architecture — How to Use It
+- Section 4: Design Rules
+- 4. Your Three-Device Architecture — How to Use It
+- Keycap Comparison OEM vs PBT
+- ./02 Areas/My_DevInfra/Zed/Zed Search All Files and ripgrep Query Syntax.md
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- oh lord, help me figure out this dev-journal situation, there is absolutely good
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- Apply maximum non-destructive compression. Rules:
+- What is the status on Jules published branches?
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- You are summarizing a Claude Code session for a daily memory log.
+- Apply maximum non-destructive compression. Rules:
+- You are summarizing a Claude Code session for a daily memory log.
+- Read-only exploration. I need to understand what forward-looking planning docs e
+- I'm planning to author an "agent-bus" system: a SQLite-backed FastAPI message bu
+- GDD Boot
+- gddp-runtime
+- Status And Next Steps
+- Status And Next Steps
+- Status And Next Steps
+- Status And Next Steps
+- Harness Evaluation Rubric
+- Status And Next Steps
+- Status And Next Steps
+- Status And Next Steps
+- Status And Next Steps
+- Harness Evaluation Rubric
+- Status And Next Steps
+- Status And Next Steps
+- Status And Next Steps
+- Status And Next Steps
+- Harness Evaluation Rubric
+- 3. Website Audit + Migration
+- 7. LMN + QuickBooks Integration
+- # AGENTS.md instructions for /Users/saboor/repos/MyAPI
+- Cactus Migration — JAX → C/C++ inference
+- TPU Setup & Workflow
+- Needle Routing Eval Constitution
+- Cactus Migration — JAX → C/C++ inference
+- TPU Setup & Workflow
+- Needle Routing Eval Constitution
+- Analysis: Robust Verification for Semi-Autonomy
+- GDDP Sitrep and Future Plan
+- Analysis: Robust Verification for Semi-Autonomy
+- GDDP Sitrep and Future Plan
+- GDDP Sitrep and Future Plan
+- Memory Index
+- -Users-saboor-repos-gddp-runtime/memory/MEMORY.md
+- -Volumes-sab-ssd--openclaw-workspace/memory/MEMORY.md
+- Handoff 007 — Vertex AI Infrastructure Established
+- Handoff 009 — Migrate MyAPI + Vertex AI Workspace to khoj-vm-new
+- The stalled workflows despite progress being made in 2026 Sprint.md
+- 07 — Jules Dispatch
+- 13 — Artifact Verification
+- Session Log — 2026-04-23 — Bailey Contact Form
+- Context Refinery: Personal Data Export Tool
+- Context Refinery
+- Context Refinery: Personal Data Export Tool
+- SocialXP Pre-Codesign Group 2026-01-21.md
+- Wireframes Day 1.md
+- Vault Doctor
+- 7. LMN + QuickBooks Integration
+- Water & Stone Landscapes - README Anchor
+- Project-note
+- Blink-Build-SSH-Pathway-to-GitHub
+- Categories
+- Ivycore ll.md
+- Next2025 S3X Encounter.md
+- element.md
+- Feb Element 2025 on Tragic Cosmic Joke and Addictions and Commitments.md
+- Core Team Call 10.md
+- Core Team Call 7.md
+- MWC 3.md
+- Oct Wildmen Leadership Call 1.md
+- PP Completion Event.md
+- Obsidian X Article Import
+- **Status:** Ready for Live Deployment
+- OpenClaw Decision Note — Fix-font-family
+- IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-
+- Mobile-SSH-antigravity-development-workflow-examples-using-piping
+- Common Workflows
+- Obsidian + Neovim Setup
+- MEMORY.md - Long-Term Memory
+- SOUL.md - Who You Are
+- TOOLS.md - Local Notes
+- Great Set of Commands. Here's what Each One Does
+- Mnemonic Ladder
+- Zed Search All Files and ripgrep Query Syntax.md
+- Barbell Good Mornings
+- Calf Press
+- DB Bench Press
+- Dips
+- Hack Squat Reverse Banded
+- Incline DB Row
+- Incline Press
+- Leg Extension
+- Quad Leg Press
+- Seated Leg Curl
+- Seated Neutral Grip Chest Press
+- Supinated Grip Cable Rows
+- Supinated Grip Chin Ups
+- Trap Bar RDL
+- 🏋️ Workout Hub
+- YS7 Upper 1.md
+- Learning/2026 Overview for Ergonomic, Mutli-Layered Dygma Raise Keyboard Layers and Mappings.md
+- JULES — Useful Commands & Flags
+- The Ralph Method: Streamlining AI Coding Agents with Simple Loops
+- My Tmux config.md
+- New Tech SC Event Questions for Presenters.md
+- Quotes on resilience and withstand adversity and winning.md
+- Part 12 — Power User Playbook
+- Part 3 — Core Concepts (The Building Blocks)
+- 4. Your Node Architecture — How to Use It
+- Assistant Behavior Contract (Saboor)
+- SOUL.md - Who You Are
+- Business / Client (biz → big-pi)
+- Topic: `<Research>` : Exploring Tmux Scripting and Automation
+- Output Contract (paste exactly)
+- eg - Ek21 Numpad Hybrid Mac iPad Layout.md
+- Git remote history core workflow
+- Lean Mode Toggle Commands
+- Neovim Cheat Sheet v2 Idea
+- Popular-readline-Keyboard-Shortcuts-for-the-GNU-Bash-Shell
+- 03 Resources/Raycast quick reference keyboard shortcuts.md
+- Tables for Worldview Harness Creation.md
+- 10 Motions That Feel Natural
+- 10 Pipe Chains That Solve Problems
+- 10 Sparring Sessions Logged
+- Antigravity Deep Dive Session
+- Architecture Discussion
+- Ask Why Five Times
+- Autocommands Basics
+- BDR Architecture Doc
+- BDR Codebase Orientation
+- BDR Deployed to Production
+- BDR Email Notifications
+- BDR Local Dev Environment
+- BDR Mobile Responsive
+- BDR Photo Gallery Polished
+- BDR Project Architecture Doc
+- BDR README Accurate
+- BDR Reviews Integration
+- BDR SEO Foundation
+- BDR Supabase Schema Solid
+- Burn $50 of Google Credits Strategically
+- Colorscheme That's Yours
+- Daily Driver Note Template
+- Debug a Plugin Issue
+- DSA Problem Category Deep Dive
+- Explain It Back
+- File Navigation with Telescope
+- First AI Sparring Session
+- Git from CLI Only
+- Git Integration
+- Jump List Navigation
+- Macros for Repetitive Edits
+- Marks Local and Global
+- Mock Interview with AI
+- Options You Actually Set
+- Pair with Antigravity on Config Deep Dive
+- Process Management
+- Profile and Optimize Startup
+- Project Command Centers
+- Prompt Engineering Experiment
+- Question the Big-O
+- Quickfix List Workflow
+- Real Bug, AI Fix, Your Verification
+- Refactor with AI Critique
+- Registers Beyond Basics
+- Rewrite Without Looking
+- ripgrep + fd Power Moves
+- Search Until Muscle Memory
+- Deployment Pipeline
+- Understand Vincent's Dissertation Context
+- Documentation for Vincent
+- Mobile Responsive Design
+- Privacy and Ethics Considerations
+- Project Repo Setup
+- Research Therapeutic App Landscape
+- UI Component Library
+- Solve It First, Then Compare
+- Solve Something with awk
+- Solve Something with sed
+- Spar on a Real Bug
+- Spot the Code Smell
+- Spot the Hallucination
+- Statusline Configured
+- Substitute Mastery
+- Survive a Full Day in NeoVim
+- System Design Sparring
+- Teach AI Sparring to Someone
+- Teach AI Your Codebase
+- Teach Someone One NeoVim Trick
+- Terminal Prompt Customized
+- Text Objects Deep Dive
+- The Dot Command
+- The g Commands
+- The Socratic Prompt
+- Time Complexity Analysis
+- Trace the Logic Line by Line
+- Trace the Logic Step by Step
+- Undo Tree
+- Visual Mode Variants
+- Weekly Review Dashboard
+- xargs for Batch Operations
+- Your First Custom Keybind
+- 🫶 Nerve-Calming & Circulation (Today)
+- Sun Feb 22nd, 2026 - Plan/Reflect *2, 3*
+- 2026.03.02.md
+- 2026.03.05.md
+- 2026.03.07.md
+- Active Workstreams and Workflows _1_
+- Active Workstreams and Workflows _1_
+- 2026.05.04.md
+- 📅 9th Week of 2026
+- Tech News Sneak Peak — 2026-05-09
+- Path A Test — Gemini CLI Output, 2026-05-11
+- Common Workflows
+- Obsidian + Neovim Setup
+- **Status:** Ready for Live Deployment
+- OpenClaw Decision Note — fix-font-family
+- transcript-Danger-Illusion-of-AI-Code
+- Originial Intent 2026/22/01
+- Recommended RegEx
+- 2026-W03 Project Anchor.md
+- 2026-W04 Anchor.md
+- {{date:YYYY}} — Yearly Note
+- project-note
+- Corpus v1.0 Vault Build Summary
+- Context Refinery: RAG Taxonomy & Rules
+- Target Output Format for Khoj Ingestion
+- My-API-Trust-Threshold-Plan.md
+- MyAPI Reuse Map - 2026-07-01
+- GDDP — QUERIES (air)
+- MyAPI — QUERIES (air)
+- Pi / Needle / Gemma — GAPS (air)
+- Pi / Needle / Gemma — QUERIES (air)
+- corpus-hot pass-1 (sab-air)
+- MyAPI — SOURCES (mini pass-1)
+- Pi / Needle / Gemma — GAPS (mini pass-1)
+- GDDP — QUERIES (air)
+- MyAPI — QUERIES (air)
+- Pi / Needle / Gemma — GAPS (air)
+- Pi / Needle / Gemma — QUERIES (air)
+- corpus-hot pass-1 (sab-air)
+- MyAPI — SOURCES (mini pass-1)
+- Pi / Needle / Gemma — GAPS (mini pass-1)
+- FormatPass
+- Needle Router Baseline Committed
+- GDDP Runtime Audit — Semi-Autonomous Checkpoint Reached
+- Shell Variables Explanation
+- GLM 5.1 and ZAI
+- AI Roleplaying and Prompting
+- AI Model Stack Strategy
+- Agent Setup Configuration
+- CLI AI Automation Setup
+- Git Shell Command Aliases
+- Keycap Profiles Comparison
+- Productivity Loop Framework
+- 1) Snapping (layout control system)
+- Terminal Search Replication
+- Agentic Harness and Permissions
+- AI Gadgets and OpenClaw
+- Anthropic Refund Policy
+- Claude Max Plan Benefits
+- Cmux Commands Explanation
+- Neovim and Claude Code
+- Zed Command Palette Customization
+- Desk Setup Advice
+- OKTA 2FA Help
+- 3. Node CLI Commands — Full Reference
+- Vault4 Schema Insights
+- Branch · NanoClaw vs OpenClaw
+- CMUX and TMUX Integration
+- Git Repo Root Issue
+- Hermes Self-Learning vs Claws
+- Hermes vs OpenClaw Comparison
+- LazyVim Visual Feedback
+- LuaRocks in LazyVim
+- NanoClaw vs OpenClaw
+- OP Post Analysis
+- Syspeek Process Fix
+- Embracing AI Friction
+- Desk Setup Feedback
+- Keyboard Ergonomics & Nerve Health
+- MagSafe Ring Placement Guide
+- 3. Node CLI Commands — Full Reference
+- Haircut Feedback and Advice
+- MagSafe Ring Experimentation
+- 3. Node CLI Commands — Full Reference
+- Non-lethal Rat Repellents
+- Branch · Branch · Business Model Clarity
+- Branch · Business Model Clarity
+- Business Model Clarity
+- Extracting Heroic Routine Data
+- Non-lethal Rat Control
+- About Us Page Redesign
+- OpenClaw Security Risks
+- UI/UX Polish Strategy
+- Forearm Roller Technique
+- Google Listing Recovery Path
+- HUANUO Desk Assembly Help
+- Reading X Post
+- Session Planning Overview
+- Zed LazyVim Cheatsheet
+- 53-Hour Project Reality
+- About Us Page Strategy
+- Keyboard cleaning solution
+- Keyboard Cleaning Tips
+- Layer Toggle Customization
+- Orchestration System Design
+- Roller Ergonomics and Biomechanics
+- Trackpad Pressure Solution
+- Zed Session Handoffs
+- Codex vs Claude Speed
+- Defective Keycap Issue
+- JSON envelope hardening
+- LinkedIn Project Strategy
+- Project 2 Deployment Summary
+- Website Redesign Strategy
+- Zed Developer Culture
+- Cognitive Outsourcing and AI
+- Device Not Registering Issue
+- Keycap Stem Adapters
+- Link shared without response
+- Siri Contact Resolution
+- AI in Systems Programming
+- Lead Management Architecture
+- LLC and Laptop Upgrade
+- LLC Setup with Tailor Brands
+- MacBook Air Options
+- MacBook Air vs Framework
+- Neovim Tutor Prompts
+- Squarespace Integration Advice
+- AI Momentum vs Adversarial Instincts
+- Arctic Monkeys Riff Comparison
+- Calendly Autofill Issue
+- Google Business Profile Issues
+- Industry Rockstars Research
+- LinkedIn Algorithm Shift
+- Little Bird AI vs Granola AI
+- Website and Google Strategy
+- AI Memory and Workflows
+- AI Strategy Audit Consulting
+- Ben Affleck on AI
+- Branch · PR Process and Licensing
+- Data Processing API Idea
+- Keycap Smoothing Tips
+- About Page
+- Phase 2: Find & Claim "Water and Stone"
+- Tea Caps Shipping CA
+- Trackpad Handedness Strategy
+- Agent Command Binds
+- Benchmark vs Automated Testing
+- Closet Sleepers for AI
+- Desk Disassembly Tips
+- Hermes Pi Backend Setup
+- Keychain Password Sync Issue
+- Markdown as Source Code
+- MyAPI and GDDP Integration
+- Raspberry Pi Storage Upgrade
+- Complementary System Layers
+- Raspberry Pi Shutdown Steps
+- Branch · Neo4j LangGraph GDD Integration
+- Neo4j LangGraph GDD Integration
+- 1) Create links (fastest path from "relevant" to "connected")
+- Malware Attack Hardening Insights
+- Custom Keybinding Support F23
+- GDDP vs LangGraph
+- LazyVim Key Mapping
+- PyCodingAgent Overview
+- Slayer and Aryan Allegations
+- Wi-Fi Mesh Experimentation
+- Laundry Time Pricing
+- Adhesive Cable Clip Tips
+- AI Engineering Shift
+- Hermes Setup and Roles
+- Raspberry Pi UASP Testing
+- Tauri vs Electron Debate
+- AI Career Insights
+- ChatGPT connectors explanation
+- Git push error fix
+- Neovim Translation Review
+- Text Expansion Tool Comments
+- ChatGPT and Siri integration
+- Siri's Limitations Explained
+- Branch · Training Hermes Agent
+- Graph-Driven Development Insights
+- Training Hermes Agent
+- plan: continue GDDP and move towards openclaw, last time I believe CIM or cultur
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Hey so I have five notes titled TBI 1 through 5, or just TBI and then TBI 2 thro
+- how to use rg or any search tool to find a script or alias that was for the prog
+- "Error: The requested module '../models.js' does not provide an export named 'cl
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- I'm curious if you can check into the functionality of this program and whether
+- there is a note with the tbi prefixx, I'm curious if we got this protocol so tha
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- The following is an update that i just asked to give us some grounding um i'm go
+- View Types
+- The Four Phases
+- can you help me configure and setup the git diff and git difftool so my editor e
+- With MyAPI and GDDP-runtime and GDDP-config becoming public, its time to get my
+- I have  sources for you!
+- Look over my current obsidian theme which is a CSS file and that CSS file is spe
+- So I was kind of riffing with Gemini AI and this was after a video of how the bi
+- ssp minimal, Help me add spacing right now I'm I just ran the following command
+- /Users/saboor/Obsidian/SoloDeveloper/01 Projects/GDDP
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Apply maximum non-destructive compression. Rules:
+- Create a single file interactive html document that is stylized for after and mo
+- So I don't understand what this change is to this file and I'm trying to clean i
+- So in a recent session we extracted from the virtual machine a number of claude
+- There was a tremendous branch cleanup endeavor I partook in with a claude cloud
+- 2 things: 1. add commit push the untracked dir? 2. we need to go chrome mode, I
+- Can you do a history search or get history search to find out where did the fold
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- The current theme is the midnight blue with pros headers, although I would like
+- Alright, I'm genuinely lost. I don't know how to fix this main branch
+- the current header css theme is pro modern; unfortunately it appends a side bar
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- On this machine there's a Python process running I think its related to Needle a
+- sb.info.you@gmail.com, Man, I need help. I am trying to accomplish something. I
+- "dev-journal: Vault path is not configured. Set DEVJOURNAL_VAULT, create ~/.conf
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Okay. So look at the following image.[Image #2] Basically I want you to decide w
+- Ok so instead of starting a long running conversation which needs to be compacte
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Quick factual question about Claude Code (the CLI tool).
+- Obsidian schema audit for flat knowledge structure
+- Optimizing LMN configuration and automation for Beiley
+- Building independence while using Claude Max
+- Base44 app export capabilities
+- Codex vs Claude Max comparison
+- Installing Claude Code CLI on Raspberry Pi
+- Modifying MagSafe rings for keyboard attachment
+- Trello board setup for SocialXP project
+- Using Zed and Tmux simultaneously
+- Watching AI agents work in cmux
+- Language servers on remote backend for Neovim
+- Managing Claude desktop memory usage on limited RAM
+- Optimizing data organization with Claude code
+- Digma keyboard command key stuck issue
+- Training Pi Coding Agent with OpenClaw automation
+- Admitting failure and uncertainty in AI systems
+- Automating email triage with AI briefings
+- Categorizing LLM control-flow decisions for determinism
+- Claude Code concurrent capacity across devices
+- Demo packet formatting for Bailey
+- Integrating Apple and Google calendars with AI agents
+- Multi-agent orchestration with Claude and Jules
+- OpenClaw markdown files and runtime architecture
+- Lovable AI integration for keyboard shortcuts project
+- Using Claude in Chrome for productivity
+- Vim vs Helix performance comparison
+- Implementing skill tree system with Obsidian
+- SAB upgrade
+- Dygma key tap hold configurations  for accidental triggers
+- Dynamic pricing and market manipulation concerns
+- Filtering meta-commentary in RAG retrieval
+- Finding a CPA for Bailey's business taxes
+- Karabiner and Thor for hyper key app launching
+- LinkedIn presence and incomplete projects
+- Rebuilding search indexes from normalized corpus versions
+- Weak ties and networking value
+- Character revealed through behavior toward others
+- LibreWolf vs Brave memory efficiency
+- Meeting transcription and action item extraction
+- Website refresh and review strategy for landscaping business
+- Building a personal RAG system from years of notes
+- Missing downloaded Google Drive file
+- Understanding Claude skills and GSD superpowers
+- AI consulting vs implementation services
+- Magnetic AI voice recorder and MagSafe iPhone case
+- Coordinating synchronous and asynchronous coding agents
+- Gemini's pattern recognition vs ChatGPT's web search limitations
+- Upgrading index.html with NeoVim use cases and interactive elements
+- Balancing caution with action in agent development
+- Social XP market positioning strategy
+- Immediate steps to secure against NPM and PyPI malware
+- Missed meeting and calendar communication expectations
+- Using $1000 in Google Vertex AI credits
+- Appeal silence and starting fresh on Yelp
+- Extracting development links from Discord messages
+- Website cost for a haircut business in 2026
+- Claude Code's permission harness behavior
+- Fixing Universal Control between iPad and Mac
+- Hermes agent harness and model compliance failures
+- Delegator shutdown semantics gap
+- Harness routing beyond tool selection
+- Raspberry Pi SSD upgrade performance boost
+- Resuming previous work on version update
+- Google Antigravity agent manager memory optimization
+- Testing Pi with LLM prose architecture extensions
+- Comparing Lovable vs HTML/Claude outputs
+- Context handoff design system
+- 💬 So if you... you've been aroun…
+- Two extremes of video game mechanics
+- BOOTSTRAP.md - Hello, World
+- OpenClaw Operations — Post-Recovery Baseline
+- ANTIGRAVITY
+- ANTIGRAVITY
+- Workflow 1: Task Intake
+- <environment_context>
+- My_DevInfra - Project Anchor
+- My_DevInfra - Project Anchor
+- My_DevInfra - Project Anchor
+- 10. First 2–4 Week Execution Plan
+- 8. Role Definition + Boundaries
+- Project-note
+- Water & Stone: Game Plan & Next Steps
+- Trigger Model
+- Context Refinery: RAG Taxonomy & Rules
+- AGENTS.md
+- Target Output Format for Khoj Ingestion
+- Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026)
+- Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026)
+- "I cried tears of joy the night I fiinally figured out multi-agent orchestration" article.md
+- Level A, B, and C of Sab Solo.md
+- LLM Payload Workflow.md
+- Mission 001: Control Plane Bootstrap
+- Three-Layer Project Model
+- 03 — Queue Design
+- 04 — Classifier Stage
+- 05 — Scope Check
+- 06 — Executor Routing
+- 09 — Artifact Contract
+- GDD Naming and Glossary
+- Minimum Contract for a Good GDD Project Graph
+- MyAPI rebuild anchor note.md
+- Retrieval Benchmark v0 Run After Second Anchor Pass — 2026-04-15
+- Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15
+- Benchmark Run — 2026-04-15 Post Anchor Rerun
+- Benchmark Run — 2026-04-16 Canonical Anchor
+- Benchmark Run — 2026-04-16 Narrow Anchors
+- Known Issues in v0.2 (updated in the local working copy)
+- Self-audit summary
+- Proposed plan
+- Weaknesses
+- MEMORY.md - Curated Durable Memory
+- Pi Anchor.md
+- Co-Design Group Prep.md
+- 4. Email + Domain Cleanup
+- 5. Operations Systems Assessment
+- 2026-the-emergeing-paradigm-the-next-2-years-of-software-development
+- MIke - Resilience and an Engineered Approach
+- Big vs little asses.md
+- How do I approach Ivy over the same poly-open BS.md
+- In the name of variety pure cute and petiteness.md
+- Managing self-disclosure means knowing your motives, audience, and timing when self-disclosing.md
+- post breakup being cheated on and rejected.md
+- post breakup being cheated on and rejected and lied to about sexual health.md
+- Thoughts with, for, and about Jess.md
+- Feb Roundtable Element 2025 on Tragic Cosmic Joke and Addictions and Commitments.md
+- Wildmen March 2025 In-Person Meeting.md
+- Accountability and Community Service
+- Tuesday Elements Clearing Call.md
+- Wildmen 2024 Nov In-Person Meeting.md
+- Pre-Meeting Preparation
+- Night Shift -Autonomous Safe Plan
+- AI/OpenClaw-skills-info-research-and-preparation.md
+- My Obsidian Tasks Full Calendar synchronized with Apple apps setup.md
+- My-own-custom-Jules-because-fuck-Google
+- Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM
+- Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM
+- Navigating the File Explorer (Neo-tree)
+- Navigating the File Explorer (Neo-tree)
+- nvim - No more lazyvim logo if you want it.md
+- nvim - No more lazyvim logo if you want it 1.md
+- Night Shift -Autonomous Safe Plan
+- Quick Reference
+- Job Class Matrix (v1)
+- Developer Infrastructure/OpenClaw-skills-info-research-and-preparation.md
+- To Be Done (Worthy)
+- Configure Swish's modifier keys.md
+- Mouse keycodes
+- Barbell Curl
+- Banded 45s
+- Bayesian Curls
+- Cable Crossovers
+- Cable-tate-press
+- Clavicular-cable-flye
+- Cross Body Tricep Extension Back Braced
+- Hip Brace Cable Lat Rows
+- Hip Thrust
+- Leg Extension Unilateral
+- Machine Laterals
+- Machine Rows
+- Smith Machine Kelso Shrugs
+- Smith-press-behind-neck
+- Supinated Grip Lat Pulldowns
+- Upper Back Dumbbell Row
+- Hermes install day 0 config.md
+- Learn Neovim Configuration via Plugins and their Docs.md
+- Claude Skills are reusable components for specific tasks and specialized functions.md
+- Learn by doing AND by Reviewing.md
+- Using the Filesystem MCP Server
+- Styx-and-NeoOrg-as-Per-Document-Language-Exploration
+- **The Workplace Cue Hierarchy**
+- --- STEP 2: Install Node.js 22 (Required for OpenClaw) ---
+- Shortcuts Anchor for smart, evidence-driven, useful shortcuts and automations.md
+- 17 Claude Code SubAgents examples with templates.md
+- AGY-models
+- AI Code Reviews are CRUCIAL as an aspiring developer.md
+- Combing-through-SmallPi-WhatsApp-thread-for-useful-BDR,-SCA,-Obsidian,-OC-config,-and-more,-info
+- Part 2 — Getting Started (First 30 Minutes)
+- Part 4 — Persistent Context: GEMINI.md, Rules & Workflows
+- Part 6 — Beyond Code: Non-Developer Use Cases
+- Part 8 — Your First Real Workflows (Hands-On)
+- NotebookLM Artifact User Guide (CLI)
+- 3. Node CLI Commands — Full Reference
+- TOOLS.md - Local Notes
+- Vision B First Task Report
+- Vision B First Task Report
+- Antigravity login to VM was failing because 10GB folder filled up.md
+- CLI Workflow.md
+- Health.md
+- Espanso How-to Guide for Adding Matches
+- Create `vault_doctor/` Directory.
+- Creating Flashcards for a Notebook
+- Shell Vocabulary Map for Vars, Prompt, Env, Path, RC Files, Completion, Etc
+- Terminal command use upgrade with less, reactive output search, and recent command search.md
+- tmux Fallback Workflow
+- First Shell Script That Saves Time
+- 2026.01.26.md
+- 2026.02.06 Active Workstreams
+- Tue Feb 10th, 2026 - Plan/Reflect
+- Wed Feb 11th, 2026 - Plan/Reflect
+- Fri Feb 13th, 2026 - Plan/Reflect
+- Sat Feb 14th, 2026 - Plan/Reflect
+- Sun Feb 15th, 2026 - Plan/Reflect
+- Mon Feb 16th, 2026 - Plan/Reflect
+- Thu Feb 19th, 2026 - Plan/Reflect *2, 3*
+- Fri Feb 20th, 2026 - Plan/Reflect *2, 3*
+- 2026.02.25.md
+- Fri Mar 6th, 2026 - Plan/Reflect *2*
+- Sun Mar 8th, 2026 - Plan/Reflect *2*
+- Mon Mar 9th, 2026 - Plan/Reflect _2_
+- Tue Mar 10th, 2026 - Plan/Reflect _2_
+- Active Workstreams and Workflows *1*
+- Active Workstreams and Workflows _1_
+- 2026.04.17.md
+- 2026.05.01.md
+- 2026.05.03.md
+- 2026.05.05.md
+- 2026.05.06.md
+- 2026.05.07.md
+- 2026.05.08.md
+- 2026.05.11.md
+- 2026.05.13.md
+- 2026.05.14.md
+- 2026.05.15.md
+- 2026.05.18.md
+- 2026.05.21.md
+- 📅 12th Week of 2026
+- 📅 14th Week of 2026
+- 2026-W15.md
+- Q1 / Q4 2026 — Quarterly Note
+- Mission: Lead Detective (Direct Strike)
+- JULES — Useful Commands & Flags
+- Vision B First Task Report
+- The Two Tiers
+- Syntax Reference
+- Quick Reference
+- Review current callouts and custom callouts.md
+- Finish-GDDP-and-Khoj-project-audit
+- docs-reading-template.md
+- primary-project-anchor-template.md
+- research-note
+- workout-session.md
+- Retrieval Benchmark v0 Run After Second Anchor Pass — 2026-04-15
+- Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15
+- Benchmark Run — 2026-04-15 Post Anchor Rerun
+- Benchmark Run — 2026-04-16 Canonical Anchor
+- Benchmark Run — 2026-04-16 Narrow Anchors
+- GDDP — GAPS (air)
+- MyAPI — GAPS (air)
+- GDDP — BRIEF-DRAFT (mini pass-1)
+- GDDP — GAPS (mini pass-1)
+- MyAPI — BRIEF-DRAFT (mini pass-1)
+- MyAPI — GAPS (mini pass-1)
+- Pi / Needle / Gemma — BRIEF-DRAFT (mini pass-1)
+- GDDP — GAPS (air)
+- MyAPI — GAPS (air)
+- GDDP — BRIEF-DRAFT (mini pass-1)
+- GDDP — GAPS (mini pass-1)
+- MyAPI — BRIEF-DRAFT (mini pass-1)
+- MyAPI — GAPS (mini pass-1)
+- Pi / Needle / Gemma — BRIEF-DRAFT (mini pass-1)
+- corpus-hot v1 (merged)
+- acceptance.py
+- CLAUDE.md — MyAPI
+- Vertex AI Infrastructure Established
+- VM Migration: khoj-vm-new Becomes Primary Workspace
+- Corpus v1 Pass A Complete
+- How to test this (do this once, you’ll know forever)
+- Your clean tier structure (this is strong)
+- Resulting control model
+- 2. Nodes — What They Are and How They Work
+- 5. Mission Packets — Coordinating Work Across Nodes
+- 2. Nodes — What They Are and How They Work
+- 5. Mission Packets — Coordinating Work Across Nodes
+- 2. Nodes — What They Are and How They Work
+- 5. Mission Packets — Coordinating Work Across Nodes
+- 8. Command-Driven Workflow Patterns
+- Services Page
+- Phase 5: The Review Tool (Website Side)
+- Phase 4: Generate the Review Link
+- Understanding the Connections list (mental model + UI cues)
+- Managing noise: Hide and Pin
+- <local-command-caveat>Caveat: The messages below were generated by the user whil
+- Pi Harness [L741-912]
+- Complete Examples
+- Properties
+- Proposed cleanup plan (no destructive action without your sign-off)
+- In nlm cli, how do I create flashcards for a specific notebook i.e. for my GDD n
+- Compiled threads, revised
+- Debugging pi-packet smoke test verification failure
+- 📡 SITREP: Context Refinery -> Khoj Deployment
+- ── projects pass (legacy, if still present) ──────────────────────────────────
+- Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15
+- 📡 SITREP: Context Refinery -> Khoj Deployment
+- ── projects pass (legacy, if still present) ──────────────────────────────────
+- Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15
+- 📡 SITREP: Context Refinery -> Khoj Deployment
+- ── projects pass (legacy, if still present) ──────────────────────────────────
+- Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15
+- 1. Immediate Priorities
+- 2. Access + Security
+- 9. Specialist / Outside Support
+- Remote Session Baseline Plan
+- Phone Call
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- needle/
+- Simple Attention Networks
+- needle/
+- Simple Attention Networks
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- <environment_context>
+- Using Skills
+- Using Skills
+- <environment_context>
+- bflr3k99g
+- bl180pkgy
+- .session-aliases
+- agent-a0db78fbc5a4703dd.meta
+- agent-a704fdc99daf331ad.meta
+- agent-ac77a8fac914c07ed.meta
+- bu9aoclam
+- toolu_01MidS2zTNficrKaeiVE3CvL
+- bq5alzu14
+- bupcq9wlz
+- agent-a42c6649db0b87614.meta
+- agent-a966d48987867e5b3.meta
+- agent-ae45d61d3b72307c9.meta
+- b5z37yebi
+- bkea1mn6m
+- bprqfd061
+- bntfmj4k8
+- bcasa86w4
+- bojlon3cj
+- agent-ada0f660ed65cf160.meta
+- b3ftbwb1e
+- bovu37aiy
+- agent-a01f1ddd7bec64118.meta
+- agent-a1e4f3243c0040c03.meta
+- agent-a334914306f7cee33.meta
+- .session-aliases
+- bpncynkld
+- bscdq0bu8
+- toolu_016QNAwYsYXz6cw4F8Ukht54
+- .session-aliases
+- The App Landscape: Blink 🏆, A-Shell 🐚, Termius ⚔
+- nvim - q enters macro recording mode and only q exits.md
+- 01 — Event Schema
+- 08 — Result Schema
+- v1 Design — Index
+- Phase 4 Complete
+- claude-expediting-proposal.md
+- Claude Code Leaked Prompt → Pi Extension Map
+- Threads
+- 01 Projects/Semantic complexity around "already existing user profile" is why Zapier stays deliberately dumb.md
+- Breakups and Goodbyes.md
+- Cool Position and Transitions 2025.md
+- Goldmine of RJ and RIM content.md
+- Hot but simple position but what if it wasn’t Rebel.md
+- I actually found her non-twin version of her.md
+- Ivy and Choosing How To Say Things.md
+- Jess OF Collab Proposal and Plan.md
+- MJI Casting Content GOATs.md
+- Two ways to respond to sexual contact and stimulation, present and reactive or third person and observational.md
+- Use gray rock method to become disinterested and disengaged with abusive or manipulative behavior.md
+- I Found out why it Bothers Me
+- Delivering my first element.md
+- General MW Element Delivery for Meetings Overview and Notes.md
+- Core Team Call 12.md
+- Core Team Call 8.md
+- Wildmen Zoom Meeting March 2025.md
+- PP Community Service Event.md
+- Core Team Call 2026-W12.md
+- Feedback before Expansion
+- Plan
+- Feedback before Expansion
+- Neovim Day 2 Getting the hang of it 1.md
+- Troubleshooting
+- OpenClaw/HEARTBEAT.md
+- Shortcuts Implemenation with Ghostty ones now
+- The command
+- Super Short Decision Rules
+- Learning/Important Ergonomics Tests .md
+- Learning connections are living documents.md
+- Examples
+- OpenCode CLI commands and options.md
+- Lessons from the SC Works.md
+- 02 Areas/New Dygma Raise Keyboard layout.md
+- Daily Ops (5 commands)
+- Tone Example
+- Part 10 — 8GB M1 Optimization
+- Part 11 — Security Deep Dive
+- Part 1 — The Mindset Shift: From Typist to Architect
+- Part 5 — Skills: Teaching the Agent Your Standards
+- Part 7 — Keyboard Shortcuts & Interface Reference
+- 5. Mission Packets — Coordinating Work Across Nodes
+- 8. Command-Driven Workflow Patterns
+- openclaw-workspace/HEARTBEAT.md
+- 03 Resources/Ghostty Final Switch Plus Copilot for Terminal help and Aider to be dev-ready.md
+- Summary and a Message Body
+- How to Do both without Self-sabotage
+- 03 Resources/Journaling to build keyboard inuition to complete the final layers.md
+- nvim -- Obsidian, fast text copilot, voice, Neovim, all have in common this.md
+- =fzf= Example Commands for Its Dope Features
+- 03 Resources/Semantic complexity around "already existing user profile" is why Zapier stays deliberately dumb.md
+- 03 Resources/Using trackpad gestures app Swish.md
+- vi~ replacing $ with shift-6 or A or Ff or Tt or %.md
+- 7:30 PM • D23 • W4
+- Fri Jan 30th, 2026 - Plan/Reflect
+- Housecleaning
+- 2026.03.11.md
+- 2026.03.12.md
+- Active Workstreams and Workflows *1*
+- Active Workstreams and Workflows *1*
+- Active Workstreams and Workflows _1_
+- Active Workstreams and Workflows _1_
+- Active Workstreams and Workflows _1_
+- Active Workstreams and Workflows *1*
+- Active Workstreams and Workflows *1*
+- 2026.04.08.md
+- 2026.04.11.md
+- 2026.04.13.md
+- 2026.04.14.md
+- 2026.04.15.md
+- 2026.04.16.md
+- 2026.04.18.md
+- 2026.04.19.md
+- 2026.04.20.md
+- 2026.04.21.md
+- 2026.04.22.md
+- 2026.04.24.md
+- 2026.04.25.md
+- 2026.04.26.md
+- 2026.04.30.md
+- 2026-W16.md
+- 2026-W17.md
+- 2026-W20.md
+- 2026-W21.md
+- Q2 / Q4 2026 — Quarterly Note
+- Mission: Review Engine (Intent Preservation)
+- Ergonomics Checklist and Why
+- inbox-canonical-dupes-2026-05-08/Ghostty Final Switch Plus Copilot for Terminal help and Aider to be dev-ready.md
+- inbox-canonical-dupes-2026-05-08/Journaling to build keyboard inuition to complete the final layers.md
+- inbox-canonical-dupes-2026-05-08/New Dygma Raise Keyboard layout.md
+- inbox-canonical-dupes-2026-05-08/Using trackpad gestures app Swish.md
+- inbox-canonical-dupes-2026-05-08/Water and Stone Ride Along.md
+- minimal-theme-variations.md
+- Notebook Navigator Icon Reference
+- Portfolio website careful vetting and copywriting, do of work before.md
+- 21-monthly.md
+- Q{{date:Q}} / Q4 {{date:YYYY}} — Quarterly Note
+- daily-note.md
+- miq-brainstorm.md
+- Session — {{title}}
+- task-note.md
+- utility-note
+- weekly-note-template.md
+- 000 — Cleared context, bare retrieval
+- 001 — A7 anchor + variant fix + episodic vs meta axis
+- 002 — F5 episodic + S1 schema + source_type design alignment
+- 003 — Final v0 benchmark run
+- 004 — Corpus v1 field-test realization
+- CLI-agent-sessions-data-PLAN.md
+- Context Packet Contract - 2026-07-01
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- reindex_khoj_safe.py
+- run_daily_hot_corpus.sh
+- run_query_benchmark.py
+- Codex Communication Preferences
+- 2) Apps (dock + app-level control)
+- 7. Multi-Agent Architecture
+- Homepage
+- Contact Page
+- Track 2: Review Redirect Tool
+- Troubleshooting
+- Key Functions
+- Filter Syntax
+- Readiness Report: `skchaudr/cultural-intel`
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+- ── validation ────────────────────────────────────────────────────────────────
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+- ── validation ────────────────────────────────────────────────────────────────
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- Benchmark v0 Queries
+- ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+- ── validation ────────────────────────────────────────────────────────────────
+- <environment_context>
+- <environment_context>
+- 002 — *Needle migrated to Mac, HTTP daemon shipped*
+- Use numpy at module level to avoid initializing JAX backend before jax.distributed.initialize
+- 002 — *Needle migrated to Mac, HTTP daemon shipped*
+- Use numpy at module level to avoid initializing JAX backend before jax.distributed.initialize
+- Using Skills
+- Using Skills
+- Keyboard Idea
+- Terms are not aspirational, they are who you are now.md
+- Pi can be done mobile too with Telegram gateway.md
+- Having Your Z-config Nuked Wakes You up
+- 02 — Job Schema
+- GDDP
+- Recommended build order
+- 2026-Deep-dive-into-Modern-System-Programming.md
+- Career/Frictionless LinkedIn 2026 Update.md
+- Project Polish for Presenting a Senior Engineer Narrative
+- 1. How the "Split" Works
+- Apology for self-accountability.md
+- Being Man I Want To Be Attracting Who I Want.md
+- End of 2025 Feeld takeaways, insights, and assessment.md
+- Grieving the loss of someone with poor memory.md
+- I think I could bag and make happy a cutie freak like Jamie Marleigh.md
+- Involuntary self-disclosure is very common.md
+- Learning Female Anatomy aka P4SSY.md
+- Letting myself vent 9-8-24.md
+- My final act of love is staying away from you for the rest of my life.md
+- On bottoming.md
+- Overcommunicating interest to women is Bilzerian’s biggest lesson from thousands of experiences on what not to do.md
+- Piecing it all together and getting the aha moment.md
+- Poly and ENM.md
+- Relationship Conflict.md
+- Relationship Language.md
+- Tyler Eye Contact Thoughts.md
+- Vanessa Hastings goes stupidly hard and hot.md
+- Beiley New Leadership.md
+- March '25 Element Final.md
+- Spring 2025 Wildmen Leadership Notes.md
+- Meeting 7 Debrief.md
+- Terms
+- Not So Roundtable 2026-W13
+- Point Program Meeting 1.md
+- Standards I Have Set for Myself.md
+- Leadership
+- actual mcp and skills directly related to you this year.md
+- Developer Infrastructure/AGY-Running-on-port-22-and-opening-apps-in-browser.md
+- AI/AGY-Running-on-port-22-and-opening-apps-in-browser.md
+- GDD - OpenClaw observed errors and operator lessons.md
+- Start Mode as Default
+- agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md
+- Inline, Noninteractive, Alias Commands for Quick Questions
+- Lazyvim menus and command prompts and which-key exploration.md
+- Lazyvim menus and command prompts and which-key exploration 1.md
+- Neovim Day 2 Getting the hang of it.md
+- USER.md - About Your Human
+- Ergonomic & Nerve  Incident log.md
+- bench-press.md
+- bicep-curl.md
+- calf-raises.md
+- lat-pulldown.md
+- leg-press.md
+- lunges.md
+- rowing.md
+- <% tp.file.title %>
+- <% tp.file.title %>
+- How to Use Dev Journal CLI.md
+- Learning - handling and mitigating errors in AI generated code.md
+- QuickAdd Learning Connections.md
+- Reactive or no light modes are taking the training wheels off my Dygma Split Keyboard.md
+- Transcript scraping using the YTT extension .md
+- Learning/Workplace Recovery Steps.md
+- OpenClaw on browser could be better for me long term?.md
+- Picking and choosing and pruning plugins to keep Obsidian lean and performant.md
+- iFrame Code and Example   <iframe src="https://calendar.google.com/calendar/embed?src=sbkchaudry%40gmail.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+- Truly Big Brain
+- Takeaway: Learn the Shell Commands
+- Four node openclaw recovery plan, if I want it.md
+- 7. Multi-Agent Architecture
+- OpenClaw Decision Note
+- USER.md - About Your Human
+- PicoClaw-OpenClaw-for-Android-and-encouragement-to-make-it.md
+- Asking deeply intelligent technical questions while remaining calm and non-emotional.md
+- Finances.md
+- Mens Work.md
+- grep - double grep piped for clean retrieval of searched info.md
+- Hack Your Brain with Powerlifting.md
+- Hook automation for shell command log for Claude Code configured.md
+- iTerm2 Setup.md
+- Josh and Seed Tracer - do I have enough time to do this or should he move forward.md
+- Fast, Repeatable Git Loop
+- What is OpenRouter?.md
+- Gemini CLI Cheat Sheet.md
+- TMUX muscle memory starter confidence pack.md
+- Run clear over compaction more, overcome the 5MIN TTL Cache miss in Claude Code.md
+- Example after [[zshrc ghostty & iterm2 failure incident reflections|ghostty/zshrc Incident]]
+- Terminal substring or prefix command history depends on arrow keybindings.md
+- The superpowers skills set for CLI agents.md
+- Directory Listing
+- 2026.01.25.md
+- 2026.02.04.md
+- 2026.02.05.md
+- 2026.02.07.md
+- 2026.02.09.md
+- 2026.02.12.md
+- 2026.03.19
+- 2026.03.29 What I'm Doing *1*
+- 2026.03.30 What I'm Doing *1*
+- 2026.03.31 What I'm Doing *1*
+- 2026.04.01 What I'm Doing *1*
+- 2026.04.04.md
+- 2026.04.05.md
+- 2026.04.06.md
+- 2026.04.07.md
+- 📅 11th Week of 2026
+- 📅 13th Week of 2026
+- 2026-01.md
+- 2026-03.md
+- 2026-04.md
+- inbox-canonical-dupes-2026-05-08/Frictionless LinkedIn 2026 Update.md
+- _to-delete-after-30d/Workplace Recovery Steps.md
+- Recall: gemini cli reactive recall smoke test v2
+- Apple M1 Macs were revolutionary according to one guy online.md
+- Coding lessons from Google developer.md
+- Ralph Wiggum Video on Streamlining Agentic Coding.md
+- Transcript for The One Habit of Productivity Huberman Video.md
+- transcripts/Untitled.md
+- Creating Strong Visual Feedback and Metadeta Driven Vault
+- Daily Note Template Tags.md
+- Pi Dispatch Queue (vault edition)
+- 10-weekly-template.md
+- Month Start
+- Daily Mobility Routine.md
+- transcripts-template.md
+- 009-legacy-handoff-template.md
+- MyMCP Foundation
+- Task for scout
+- Task for scout
+- Task for reviewer
+- Task for scout
+- Task for scout
+- Task for reviewer
+- Task for scout
+- Task for scout
+- test_answer.py
+- 3) Menubar (global control layer)
+- Phase 1: Create Your Agency Organization
+- ── ResultFilter ─────────────────────────────────────────────────────────────
+- ── MetadataParser ───────────────────────────────────────────────────────────
+- ── MetadataParser ───────────────────────────────────────────────────────────
+- keybind = global:ctrl+grave_accent=toggle_quick_terminal
+- Terminal web search in a split without replacing the history search binding.
+- Obsidian
+- Run and deploy your AI Studio app
+- VM Migration Sprint
+- ── ResultFilter ─────────────────────────────────────────────────────────────
+- ── MetadataParser ───────────────────────────────────────────────────────────
+- ── MetadataParser ───────────────────────────────────────────────────────────
+- keybind = global:ctrl+grave_accent=toggle_quick_terminal
+- Terminal web search in a split without replacing the history search binding.
+- Obsidian
+- Run and deploy your AI Studio app
+- VM Migration Sprint
+- ── ResultFilter ─────────────────────────────────────────────────────────────
+- ── MetadataParser ───────────────────────────────────────────────────────────
+- ── MetadataParser ───────────────────────────────────────────────────────────
+- keybind = global:ctrl+grave_accent=toggle_quick_terminal
+- Terminal web search in a split without replacing the history search binding.
+- Obsidian
+- Run and deploy your AI Studio app
+- VM Migration Sprint
+- Files mentioned by the user:
+- converts no_tools/null into delegate(claude_code)
+- curl -w appends http_code at end of stdout; split it off
+- State populated by main() before the server starts taking traffic.
+- converts no_tools/null into delegate(claude_code)
+- curl -w appends http_code at end of stdout; split it off
+- 45 Days of Tool Logs from Claude Code and Codex.md
+- ff vs fg - file path search versus file content search using grep or ripgrep.md
+- git - difftool configured and merge conflict handled.md
+- How needle plays into GDD.md
+- nvim - Quick calls to some agent CLI using terminal commands.md
+- cs-classics-lessons.md
+- jobs-seen.md
+- lessons-covered.md
+- skc__ How PWAs liberated me and taught me about available software.md
+- skc__ Portfolio Website Ready to be Deployed.md
+- terminal keys like ctrl d and ctrl c.md
+- tmux -- normal session commands and their shorter versions.md
+- vlt_ Vault Schema V3 with concept fix.md
+- 01 Projects.md
+- Codex 5.4 CLI Thread Summary 3.7.26.md
+- Daily Loop Solves One Problem.md
+- architecture.md
+- openclaw-hardening-handoff.md
+- Create an AGENTS.md for BDR.md
+- First VM SSH CIMToken.md
+- Pi-7-extension-self-audit.md
+- Vault Doctor practice opening soon.md
+- Water and Stone list.md
+- Awareness of and attentiveness to time passing increases chances of productivity.md
+- Email Rules to Live By.md
+- SC-New-Works-Tech-Event-Sprint.md
+- Daily Coding Workout Sparring Partners are DS&A & AI.md
+- It's not enough to finally make if my parents aren't there to witness it.md
+- Actual Fisting Must Knows.md
+- August Relationship Journal.md
+- Awkward ST.md
+- Bending over and sticking her ass out like a SLDL.md
+- Dating Avoidant Women.md
+- FUCK IVY JAN 29 2025.md
+- Get better at sex by starving her what?.md
+- Getting Rimmed.md
+- Handling FOMO, concern, jealousy.md
+- How to handle Irene when Sabrina, Juniper, River, and MedB all exist.md
+- How to preserve cordiality while ending things.md
+- I gave a relatively honest effort and have not received it in kind so I-m done.md
+- I punish people by withdrawing myself.md
+- Ivy Phone Call on Not Passive Aggressive.md
+- Ivycore lll.md
+- Jealous, shock, or disgust as a reaction to finding out she's having sex again.md
+- Labrisa.md
+- Meet the new Ivy.md
+- Questions around bdsm, care.md
+- Recent Examples of Hotties.md
+- Remember and reminder that the current Ivy situation is CLOSE or getting CLOSE to what you wanted but you are unable to live up your end of the desire.md
+- Rough or Dominant Sex Ideas and Thoughts.md
+- Sex is a great substitute for SUCCESS.md
+- Sex is the least important aspect of LTR compatibility.md
+- Sex is the most important aspect of STRR compatibility.md
+- Sex Tips for Men Pt. 1.md
+- She is no longer emotionally motivated for relationship because I would lust after outcomes while being routinely needy and affected.md
+- Sierra is thoughtful and empathetic and she also is giving 🪵 👏.md
+- Stretching and opening her up.md
+- The different ways people express interest or care for others.md
+- Twinks weird her out but they remind me of her.md
+- Week 2 and I have an exciting amount of improvement to be had.md
+- Who do I find hot?.md
+- Why I should not leave dating apps.md
+- Women with critical parents.md
+- Working on your bullshit 2025.md
+- RIP to a real one, but I lowkey did it myself and was high the entire time ontop of it all.md
+- Being real - Mara is fun and witty but is also a degen-gamer with extreme nonchalance and indifference and always pulls back.md
+- Clearing men to Deliver Elements.md
+- Guest Event Call Friday March 22.md
+- Meeting 3 Debrief.md
+- Meeting 4 Debrief.md
+- Meeting 5 Preparation.md
+- Meeting 7 and 8 venue securing.md
+- Meeting 8 Debrief.md
+- Men's Weekend Courses March 7th.md
+- Point Program Meeting 0.md
+- PP Meeting 4.md
+- PP Week 3 Scheduling.md
+- Purpose of the Sterling Men's Weekend.md
+- Against careless deletion of immediately recognizably useful data.md
+- AI usage reminder - Even Frontier Models hallucinate, but on reflection can notice it.md
+- Antigravity-working-on-headless-Obsidian-wrecked-my-vaults-recovered.md
+- April 16 is VM_Migration.md
+- Bat and Grc - colored text and output for terminal.md
+- EPOMAKER21-Numpad-4-Layers-support-for-the-Magic-Keyboard.md
+- Google Vertex API Key created, key-API_KEY paramter now fillable.md
+- iPad Blink Shell connecting to VM for BLink Code troubleshooting.md
+- neo-vim-shortcuts-On-coding-terminal-keyboard-layer.md
+- nvim - ;e - An Espanso match for a new Neovim plugin ObsidianNew note.md
+- nvim - ;e - An Espanso match for a new Neovim plugin ObsidianNew note 1.md
+- OpenClaw/IDENTITY.md
+- Owner review of Obsidian notes, normalized V4 schema, then back to ingestion.md
+- setting up Blink Shell to be a local and portable desktop dev environment.md
+- The generalized core pipeline for agentic workflow dispatching.md
+- Exports/LLMs don't write code, compilers do (they fill structure).md
+- 1099 Contractor.md
+- Do a serious financial audit of all your subscriptions, AI included, while you have cash to work with.md
+- Keystone Notes.md
+- Maximize Google AI Pro credits and finish them by.md
+- GDD - No Mention of OpenClaw until it Was Forced
+- ✦ Workflow `gcloud` Aliases
+- Health/2026 Overview for Ergonomic, Mutli-Layered Dygma Raise Keyboard Layers and Mappings.md
+- Ergonomic Breakthrough finding the nerve pain-free setup for sustained period of time.md
+- Finger abductions and nerve glides are non-negotiables.md
+- MagSafe-Magnetic-Tenting-Kit-Hinges-and-Setup.md
+- Touch-Typing-WASD-feels-better-than-KNM-since-my-two-outer-fingers-are-supporting-during-WASD.md
+- Cognitive Benefits of Weightlifting for reminding me why I do it.md
+- bench-press-2023-03-05-15.15.md
+- bicep-curl-2023-03-05-15.16.md
+- calf-raises-2023-03-05-15.08.md
+- lat-pulldown-2023-03-05-15.16.md
+- leg-press-2023-03-05-15.09.md
+- lunges-2023-03-05-15.09.md
+- rowing-2023-03-05-15.09.md
+- rowing-2023-03-05-15.16.md
+- create-exercise-record.md
+- YB1 Day 1.md
+- YB1 Day 2.md
+- YB1 Day 3.md
+- Just 2 sets - why perspective on home workouts should no longer be skewed.md
+- A new AI&Code Muscle has emerged and it's time to lift.md
+- A powered up Second Brain style Obsidian fueled by NotebookLM.md
+- Any system for personal use can be simplified .md
+- Claude Code Filesystem MCP Tools.md
+- Learning/Codex Creating Agents MD.md
+- Finger-Movements-in-Various-Typing-Approaches-on-Split-Tented-Keyboard.md
+- Keyboard positioned split sides below my chair.md
+- Obsidian Shortcuts for Quality of Life Workflows.md
+- Learning Pi's Linux file system.md
+- Quick vim survival guided commands .md
+- Terminal scripts for dashboard style views.md
+- The-Tech-Literacy-Gap-revealed-by-OpenClaw.md
+- Video - Big Tech Engineers are Idiots? Not actually but....md
+- Lovable trial.md
+- M1 Macs are GOAT.md
+- New-Note-Wiz-3.md
+- 02 Areas/New-Note-Wiz-Test-1.md
+- New Note Wiz v3.md
+- Not So Roundtable Week 6 Call 1.md
+- Not So Week 11.md
+- OpenClaw and Antigravity Fusion Powerful.md
+- Openclaw Pairing Struggle Session with Commands and Explanation.md
+- OpenClaw session lost and return.md
+- Plan Today.md
+- 02 Areas/Raycast quick reference keyboard shortcuts.md
+- RGB lighting evolution indicating whether  a key ought to be pressed by the same side hand or not.md
+- TRAE OpenClaw Architect Custom Agent
+- Understanding OpenClaw's Cron, Node Loop and then a Router and Grep for Jules
+- Use Zed Search Files Once per Type.md
+- Wenzels deal with Mark Stein.md
+- Zed installed to MacOS, remote connection to SSD-BIG, new era begins.md
+- 10 open source tools that feel illegal.md
+- A-shell turbo charges Apple Shortcuts.md
+- Agents-Top-Agent-Ideas-for-Claude-or-OpenClaw.md
+- -cli-Claude-Code-and-the-Skills-known-as-Superpowers-~-engineering-methodology.md
+- Jules-CLI-Completion-Commands-with-Examples-and-Explanations.md
+- openclaw-workspace/IDENTITY.md
+- 2026-02-11.md
+- 2026-02-12.md
+- 2026-02-13.md
+- starting to get real tired of CHATTING with AGENTS.md
+- Antigravity Agent Manager as all-purpose agent.md
+- Antigravity-Usage-Approach.md
+- Vowen-2-Groq-API-Key.md
+- BPI - Claude answering 2024, how AI mistakes are subtle but consequential.md
+- Cmux is workspaces Ghostty but with first-class agentic workflow support.md
+- Code Problem Solving.md
+- Home Workouts.md
+- IDE.md
+- Keyboard.md
+- Numpad.md
+- Pi Agent.md
+- Programming.md
+- UI UX Design.md
+- Vim Motions.md
+- Weightlifting.md
+- CPU & RAM Reductions and Optimizations on 8GB RAM Mac-M1 Machine.md
+- Daily Tmux Cheatsheet of Commands.md
+- Docker — first steps on your machine.md
+- Don't do X - requires both models and humans alike to recall X in order to not do it.md
+- dRs~ Base44 and the AI building landscape.md
+- Dygma Refurbished are cheaper and are the 30-day-refund boards.md
+- getting a CI-CD pipeline set up will transform your workflow from manual "patching" to a professional "review-and-merge" system.md
+- Git conflicts - rebasing when both sides must stay.md
+- Git — fetch vs checkout.md
+- Google AI Pro Recovery 2026-W12.md
+- 03 Resources/Idea for Dygma raise keyboard - each thumb cluster is 7 distinct keys.md
+- 03 Resources/Identify the smallest consistent action that moves your key project forward each day.md
+- IG reel - MIQ brain dump in morning + what you want done aat beginning, middle, and end of day.md
+- Lovable-s plethora of integrations from Feb-April 2026.md
+- du with -sh flag is the only MacOS storage-concerned command you need.md
+- NEOVIM PRACTICE IPAD?!.md
+- vi~ think in objects instead of beginnings or ends.md
+- Prediction market trading bot or skill?.md
+- Blink Shell for VS Code Tunneling on iPad or iPhone.md
+- bsb - Blink Shell Build Up Commands.md
+- For the incoming future plan on iPad A-Shell or Blink Shell to up my game.md
+- Ultimate GitHub Repo Skills Usages and Downloads.md
+- Tasknotes Pomodoro Timer + any other timer are underexplored.md
+- 03 Resources/Untitled.md
+- Workflow portability via codifying your dev environment in dotfiles is a sign of advanced power user.md
+- SkillTree-test.md
+- 2026.01.28.md
+- 2026.02.02.md
+- 2026.02.03.md
+- 2026.05.22.md
+- 2026-W05 1.md
+- 2026-W07.md
+- 2026-W10.md
+- GCP Final Run and a Personal RAG.md
+- Example-Note-Wiz.md
+- Example-Note-Wiz-2.md
+- 05 Archive/New-Note-Wiz-Test-1.md
+- 05 Archive/Power Pattern of OpenCode for active coding, Jules for background work, Gemini for thinking and routing..md
+- _to-delete-after-30d/Codex Creating Agents MD.md
+- inbox-canonical-dupes-2026-05-08/Identify the smallest consistent action that moves your key project forward each day.md
+- inbox-canonical-dupes-2026-05-08/LLMs don't write code, compilers do (they fill structure).md
+- Mastering `make` is a hallmark of the advanced power user who values efficiency and reproducibility over manual execution..md
+- Can we test it? Yes we can!.md
+- IOB - AI coming for your mind, not your life .md
+- Zed as an IDE Killer.md
+- Broken-aspects-of-properties-wiz.md
+- Duplicate Report 2026-05-09.md
+- Introducing DAG analyzer script into Vault V4 Schema so Obsidian is a workspace that reflects who I intellectualy aspire to be.md
+- Periodic Notes Migration Rules.md
+- merge-periodic.md
+- personal-note.md
+- deploy_to_brain.sh
+- deploy_to_khoj.sh
+- sentinel.md
+- myapi-db-plan.md
+- 273f88a1_reviewer_0_output.md
+- 9abe1dec_reviewer_0_output.md
+- project-docs/README.md
+- Harness evaluation/run-2026-04-18-new-vm-baseline.md
+- Harness evaluation/run-2026-04-19-clean-index.md
+- Harness evaluation/run-2026-04-19-clean-index-dedup-normalized.md
+- Harness evaluation/run-2026-04-19-clean-index-no-clickbait.md
+- Harness evaluation/run-2026-04-19-clean-index-no-clickbait-after-khoj-restart.md
+- Harness evaluation/run-2026-04-19-clean-index-no-clickbait-after-refinery-restart.md
+- Harness evaluation/run-2026-04-19-daily-note-penalty.md
+- Harness evaluation/run-2026-04-19-source-aware-priors.md
+- retrieval-benchmark-v0/README.md
+- run_dev.sh
+- corpus-hot-air-staging/gddp/SOURCES.md
+- corpus-hot-air-staging/myapi/SOURCES.md
+- corpus-hot-air-staging/pi-needle-gemma/SOURCES.md
+- corpus-hot/README.md
+- DENYLIST.md
+- raw-air/gddp/SOURCES.md
+- raw-air/myapi/SOURCES.md
+- raw-air/pi-needle-gemma/SOURCES.md
+- raw-mini/README.md
+
+## God Nodes (most connected - your core abstractions)
+1. `3. Native Ingestion Trigger` - 1235 edges
+2. `3. Native Ingestion Trigger` - 1235 edges
+3. `3. Native Ingestion Trigger` - 1235 edges
+4. `Session Text` - 686 edges
+5. `Hook Output Format` - 650 edges
+6. `View logs for a deployment` - 446 edges
+7. `Session Text` - 379 edges
+8. `[Feature Name] Implementation Plan` - 375 edges
+9. `Session Text` - 358 edges
+10. `on the Pi` - 341 edges
+
+## Surprising Connections (you probably didn't know these)
+- `FilenameOnlyMockKhojClient` --uses--> `ResultReranker`  [INFERRED]
+  tests/test_retrieval.py → context_refinery/retrieval.py
+- `HybridMockKhojClient` --uses--> `ResultReranker`  [INFERRED]
+  tests/test_retrieval.py → context_refinery/retrieval.py
+- `MockKhojClient` --uses--> `ResultReranker`  [INFERRED]
+  tests/test_retrieval.py → context_refinery/retrieval.py
+- `RecordingKhojClient` --uses--> `ResultReranker`  [INFERRED]
+  tests/test_retrieval.py → context_refinery/retrieval.py
+- `item_views()` --indirect_call--> `_s()`  [INFERRED]
+  Corpus v1.0/.obsidian/plugins/smart-connections/main.js → Corpus v1.0/.obsidian/plugins/notebook-navigator/main.js
+
+## Import Cycles
+- None detected.
+
+## Communities (3733 total, 427 thin omitted)
+
+### Community 0 - "MyAPI-Rebuild"
+Cohesion: 0.31
+Nodes (4): AGENTS.md (root), Code Understanding Workspace, Graphify, MyAPI-Rebuild
+
+### Community 3 - "3. Native Ingestion Trigger"
+Cohesion: 0.00
+Nodes (1235): 3. Native Ingestion Trigger, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+1227 more)
+
+### Community 4 - "3. Native Ingestion Trigger"
+Cohesion: 0.00
+Nodes (1235): 3. Native Ingestion Trigger, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+1227 more)
+
+### Community 5 - "3. Native Ingestion Trigger"
+Cohesion: 0.00
+Nodes (1235): 3. Native Ingestion Trigger, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+1227 more)
+
+### Community 6 - "Session Text"
+Cohesion: 0.00
+Nodes (686): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+678 more)
+
+### Community 7 - "Hook Output Format"
+Cohesion: 0.00
+Nodes (650): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+642 more)
+
+### Community 8 - "notebook-navigator/main.js"
+Cohesion: 0.01
+Nodes (534): $1e(), _2e(), $3(), _8(), _9(), activateNavigatorView(), activateView(), addDateFilterToSearch() (+526 more)
+
+### Community 9 - "smart-connections/main.js"
+Cohesion: 0.01
+Nodes (270): _5(), a3(), a4(), a5(), aC(), adapter_changed(), adapter_key(), add_ignore_pattern() (+262 more)
+
+### Community 10 - "View logs for a deployment"
+Cohesion: 0.00
+Nodes (446): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+438 more)
+
+### Community 11 - "smart-context/main.js"
+Cohesion: 0.01
+Nodes (196): _3(), _5(), a1(), a5(), adapter_changed(), adapter_key(), aL(), aQ() (+188 more)
+
+### Community 12 - "smart-graph/main.js"
+Cohesion: 0.01
+Nodes (188): hg(), qM(), $3(), actions(), adapter_changed(), adapter_key(), af(), aM() (+180 more)
+
+### Community 13 - "smart-dedupe/main.js"
+Cohesion: 0.01
+Nodes (161): _1(), adapter_changed(), adapter_key(), add_ignore_pattern(), ak(), am(), au(), bw() (+153 more)
+
+### Community 14 - "Session Text"
+Cohesion: 0.01
+Nodes (379): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+371 more)
+
+### Community 15 - "[Feature Name] Implementation Plan"
+Cohesion: 0.01
+Nodes (375): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+367 more)
+
+### Community 16 - "Session Text"
+Cohesion: 0.01
+Nodes (358): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+350 more)
+
+### Community 17 - "get"
+Cohesion: 0.02
+Nodes (353): _4(), _6(), _A(), a2e(), a3(), a5(), Aa(), add() (+345 more)
+
+### Community 18 - "on the Pi"
+Cohesion: 0.01
+Nodes (339): 1. Create the `jules` Label, 2. Configure the Big Pi Webhook, 3. Add the `.github/workflows/jules.yml` Workflow, Assistant, Assistant, Assistant, Assistant, Assistant (+331 more)
+
+### Community 19 - "smart-templates/main.js"
+Cohesion: 0.01
+Nodes (158): adapter_key(), add_footer_connections_icon(), add_inline_connections_icon(), add_smart_context_icon(), add_smart_copy_context_icon(), add_smart_dupe_detector_icon(), add_smart_graph_icon(), add_smart_icons() (+150 more)
+
+### Community 20 - "smart-lookup/main.js"
+Cohesion: 0.01
+Nodes (145): adapter_key(), add_footer_connections_icon(), add_ignore_pattern(), add_inline_connections_icon(), add_smart_context_icon(), add_smart_copy_context_icon(), add_smart_dupe_detector_icon(), add_smart_graph_icon() (+137 more)
+
+### Community 21 - "Visual Indicators"
+Cohesion: 0.01
+Nodes (308): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+300 more)
+
+### Community 22 - "Session Text"
+Cohesion: 0.01
+Nodes (307): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+299 more)
+
+### Community 23 - "Session Text"
+Cohesion: 0.01
+Nodes (306): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+298 more)
+
+### Community 24 - "No api_key= argument. google-genai picks up ADC from the VM metadata server."
+Cohesion: 0.01
+Nodes (287): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+279 more)
+
+### Community 25 - "My request for Codex:"
+Cohesion: 0.01
+Nodes (266): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+258 more)
+
+### Community 26 - "2026-05-18 - environment-context - 019e3af5-5bc7bc5e49.md"
+Cohesion: 0.01
+Nodes (263): 0 — child run produced a valid response.json envelope (regardless of its, 0 — drafted YAML produced and validates against packet schema, 0 — pipeline completed and produced a parseable final envelope, 0 — produced a valid tool call (including null name for no_tools), 0 — produced a valid tool call (including null name for no_tools), 0. Recon (optional): brief filesystem enumeration before planning, so the, 0 - valid JSON written to target path, 1 — child run failed to produce a parseable envelope (+255 more)
+
+### Community 27 - "Session Text"
+Cohesion: 0.01
+Nodes (259): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+251 more)
+
+### Community 28 - "2026-04-15 - environment-context - 019d9045-23e8318f1e.md"
+Cohesion: 0.01
+Nodes (228): ==========================================, ==========================================, ==========================================, 1. Ensure the export bundle exists, 1. Ensure the export bundle exists, 1. Ensure the export bundle exists, 1. Fill these in with your details:, 1. Fill these in with your details: (+220 more)
+
+### Community 29 - "2026-04-15 - environment-context - 019d9045-7340a5e921.md"
+Cohesion: 0.01
+Nodes (228): ==========================================, ==========================================, ==========================================, 1. Ensure the export bundle exists, 1. Ensure the export bundle exists, 1. Ensure the export bundle exists, 1. Fill these in with your details:, 1. Fill these in with your details: (+220 more)
+
+### Community 30 - "2026-04-15 - environment-context - 019d9045-893ce91e49.md"
+Cohesion: 0.01
+Nodes (228): ==========================================, ==========================================, ==========================================, 1. Ensure the export bundle exists, 1. Ensure the export bundle exists, 1. Ensure the export bundle exists, 1. Fill these in with your details:, 1. Fill these in with your details: (+220 more)
+
+### Community 31 - "Assumptions"
+Cohesion: 0.01
+Nodes (220): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+212 more)
+
+### Community 32 - "ssd-big — Sole Gateway"
+Cohesion: 0.01
+Nodes (220): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+212 more)
+
+### Community 33 - "GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓"
+Cohesion: 0.01
+Nodes (219): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+211 more)
+
+### Community 34 - "GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓"
+Cohesion: 0.01
+Nodes (219): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+211 more)
+
+### Community 35 - "GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓"
+Cohesion: 0.01
+Nodes (219): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+211 more)
+
+### Community 36 - "Session Text"
+Cohesion: 0.01
+Nodes (212): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+204 more)
+
+### Community 37 - "Check block devices"
+Cohesion: 0.01
+Nodes (197): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+189 more)
+
+### Community 38 - "Session Text"
+Cohesion: 0.01
+Nodes (195): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+187 more)
+
+### Community 39 - "No api_key= argument. google-genai picks up ADC from the VM metadata server."
+Cohesion: 0.01
+Nodes (194): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+186 more)
+
+### Community 40 - "saveSettingsAndUpdate"
+Cohesion: 0.02
+Nodes (191): _0e(), _1(), _7(), A0e(), a_e(), Aee(), ate(), aUe() (+183 more)
+
+### Community 41 - "2026-05-18 - environment-context - 019e3af5-720a46e2a8.md"
+Cohesion: 0.01
+Nodes (184): 0 — child run produced a valid response.json envelope (regardless of its, 0 — drafted YAML produced and validates against packet schema, 0 — pipeline completed and produced a parseable final envelope, 0 — produced a valid tool call (including null name for no_tools), 0. Recon (optional): brief filesystem enumeration before planning, so the, 1 — child run failed to produce a parseable envelope, 1. Decompose: ask Pi to break the task into 2..max-children bounded, 1 — drafting child ran but produced no usable YAML (or YAML failed schema) (+176 more)
+
+### Community 42 - "addEventListener"
+Cohesion: 0.03
+Nodes (185): gW(), _3(), a1(), a9(), aD(), _add_button(), addEventListener(), after_load() (+177 more)
+
+### Community 43 - "Session Text"
+Cohesion: 0.01
+Nodes (177): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+169 more)
+
+### Community 44 - "onOpen"
+Cohesion: 0.02
+Nodes (165): addProfileWithName(), addRow(), applyChanges(), applyColor(), applySwatchColor(), areMapsEqual(), attachCloseButtonHandler(), bindButton() (+157 more)
+
+### Community 45 - "Qt"
+Cohesion: 0.02
+Nodes (169): BR(), buildPatternCacheKey(), c2e(), cJ(), clearSettingsEntry(), copyFolderDisplayMetadata(), d2e(), Da() (+161 more)
+
+### Community 46 - "Session Text"
+Cohesion: 0.01
+Nodes (166): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+158 more)
+
+### Community 47 - "ie"
+Cohesion: 0.03
+Nodes (165): acquireThumbnailCanvas(), addNavigationSeparator(), applyExtensions(), applyFileMenuExtensions(), applyFolderMenuExtensions(), applyManualSortNewFilePlacement(), applyPropertyMenuExtensions(), applyPropertyNodeToFiles() (+157 more)
+
+### Community 48 - "addEventListener"
+Cohesion: 0.03
+Nodes (154): ar(), $2(), _6(), A4(), ab(), add_settings_listeners(), addEventListener(), aR() (+146 more)
+
+### Community 49 - "addEventListener"
+Cohesion: 0.03
+Nodes (142): Xp(), aB(), add_button_if_needed(), add_settings_listeners(), addEventListener(), ap(), aS(), attach_disposer() (+134 more)
+
+### Community 50 - "addEventListener"
+Cohesion: 0.03
+Nodes (135): PJ(), aa(), ab(), aC(), ad(), addClass(), addEventListener(), after_load() (+127 more)
+
+### Community 51 - "Session Text"
+Cohesion: 0.01
+Nodes (134): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+126 more)
+
+### Community 52 - "Nt"
+Cohesion: 0.03
+Nodes (131): A7(), A9(), ac(), addTagToFile(), aGe(), AJ(), ap(), applyInlineTagRemoval() (+123 more)
+
+### Community 53 - "My request for Codex:"
+Cohesion: 0.02
+Nodes (127): Assistant, Assistant, Assistant, My request for Codex:, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+119 more)
+
+### Community 54 - "get"
+Cohesion: 0.03
+Nodes (127): _4(), add_item(), aJ(), Ak(), append(), aQ(), aY(), bf() (+119 more)
+
+### Community 55 - "Session Text"
+Cohesion: 0.02
+Nodes (126): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+118 more)
+
+### Community 56 - "Session Text"
+Cohesion: 0.02
+Nodes (126): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+118 more)
+
+### Community 57 - "Session Text"
+Cohesion: 0.02
+Nodes (120): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+112 more)
+
+### Community 58 - "emit"
+Cohesion: 0.03
+Nodes (118): A9(), adapter(), after_load(), aj(), before_load(), bF(), Bh(), browse_smart_plugins() (+110 more)
+
+### Community 59 - "error"
+Cohesion: 0.02
+Nodes (116): $4(), add_button_if_needed(), az(), check_for_updates(), complete(), count_tokens(), cX(), debounce_save() (+108 more)
+
+### Community 60 - "on the Pi"
+Cohesion: 0.02
+Nodes (113): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+105 more)
+
+### Community 61 - "emit_event"
+Cohesion: 0.03
+Nodes (113): aI(), AM(), append(), bQ(), BT(), cI(), clear_all(), create_hash() (+105 more)
+
+### Community 62 - "Session Text"
+Cohesion: 0.02
+Nodes (111): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+103 more)
+
+### Community 63 - "error"
+Cohesion: 0.03
+Nodes (109): _2(), add_button_if_needed(), add_item(), add_to_gitignore(), aI(), aj(), ak(), append() (+101 more)
+
+### Community 64 - "on the Pi"
+Cohesion: 0.02
+Nodes (103): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+95 more)
+
+### Community 65 - "on the Pi"
+Cohesion: 0.02
+Nodes (103): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+95 more)
+
+### Community 66 - "at"
+Cohesion: 0.03
+Nodes (101): $2(), Al(), AO(), aq(), at(), aVe(), Ay(), bA() (+93 more)
+
+### Community 67 - "on the Pi"
+Cohesion: 0.02
+Nodes (101): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+93 more)
+
+### Community 68 - "on the Pi"
+Cohesion: 0.02
+Nodes (101): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+93 more)
+
+### Community 69 - "on the Pi"
+Cohesion: 0.02
+Nodes (101): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+93 more)
+
+### Community 70 - "error"
+Cohesion: 0.03
+Nodes (98): add_button_if_needed(), bf(), co(), complete(), count_tokens(), delete_uploaded_files(), Dl(), dS() (+90 more)
+
+### Community 71 - "delete"
+Cohesion: 0.06
+Nodes (94): addFolderPathForTrackedFolderNotePath(), af(), batchClearAllFileContent(), batchClearFeatureImageContent(), batchClearFileContent(), batchUpdate(), batchUpdateFileContent(), batchUpdateFileContentAndProviderProcessedMtimes() (+86 more)
+
+### Community 72 - "get"
+Cohesion: 0.03
+Nodes (93): _1(), $9(), actions(), add_settings_listeners(), aU(), Bc(), bQ(), clear() (+85 more)
+
+### Community 73 - "🚀 3. Handoff Action Items (The Final Steps)"
+Cohesion: 0.02
+Nodes (90): 🚀 3. Handoff Action Items (The Final Steps), Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+82 more)
+
+### Community 74 - "🚀 3. Handoff Action Items (The Final Steps)"
+Cohesion: 0.02
+Nodes (90): 🚀 3. Handoff Action Items (The Final Steps), Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+82 more)
+
+### Community 75 - "🚀 3. Handoff Action Items (The Final Steps)"
+Cohesion: 0.02
+Nodes (90): 🚀 3. Handoff Action Items (The Final Steps), Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+82 more)
+
+### Community 76 - "exists"
+Cohesion: 0.03
+Nodes (90): a6(), b6(), c0(), c4(), c6(), canonical_url(), decode(), details_url() (+82 more)
+
+### Community 77 - "test_retrieval.py"
+Cohesion: 0.05
+Nodes (63): KeywordSearcher, MetadataParser, QueryClassifier, Smart Retrieval Pipeline — query classification, metadata-aware filtering, reran, Groups results by source or project., Auto-select grouping strategy based on intent., Orchestrates the full retrieval flow., Run the full pipeline. Returns a dict matching QueryResponse schema. (+55 more)
+
+### Community 78 - "Pi-7-extensions-state-hardening-thread.md"
+Cohesion: 0.02
+Nodes (87): A glance at the markdown file shows liveness: [/] means a dispatcher is alive, an append-only status log., and prints `target<TAB>packet<TAB>description` on stdout., and verify the agent's reply contains an expected match., and working on this line right now. If [/] persists across multiple checks, Append a structured block to STATUS_FILE for one dispatched task., Append an indented child status line to TASKS_FILE under a given task line., Args: $1=host  $2=packet_path (+79 more)
+
+### Community 79 - "get"
+Cohesion: 0.03
+Nodes (88): _A(), a8(), actions(), addClass(), addSetting(), AF(), BU(), build_menu() (+80 more)
+
+### Community 80 - "create_doc_fragment"
+Cohesion: 0.03
+Nodes (86): _0(), A0(), a2(), AC(), Ad(), apply_style_sheet(), aU(), b2() (+78 more)
+
+### Community 81 - "Session Text"
+Cohesion: 0.02
+Nodes (84): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Session Text, Tool Call Count (+76 more)
+
+### Community 82 - "load"
+Cohesion: 0.04
+Nodes (83): block(), adapter(), adapter_name(), after_load(), before_load(), bind_once(), browse_smart_plugins(), _calculate_embed_tokens_per_second() (+75 more)
+
+### Community 83 - "yR"
+Cohesion: 0.04
+Nodes (82): aB(), Ak(), b_e(), BC(), bf(), canCreatePeriodicHomepageFile(), canOpenHomepage(), capitalizeFirst() (+74 more)
+
+### Community 84 - "get"
+Cohesion: 0.04
+Nodes (82): #a(), actions(), append(), B2(), Bt(), create_hash(), current_note(), default() (+74 more)
+
+### Community 85 - "create_doc_fragment"
+Cohesion: 0.04
+Nodes (81): hq(), _0(), a0(), apply_style_sheet(), AR(), bb(), bk(), cb() (+73 more)
+
+### Community 86 - "create_doc_fragment"
+Cohesion: 0.04
+Nodes (81): _0(), A2(), aA(), apply_style_sheet(), bB(), bM(), bR(), bz() (+73 more)
+
+### Community 87 - "Workflow 2: GDDP Node Planning"
+Cohesion: 0.03
+Nodes (80): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+72 more)
+
+### Community 88 - "empty"
+Cohesion: 0.04
+Nodes (80): add_settings_listeners(), attach_disposer(), build_context_actions_menu(), build_invalid_credentials_message(), build_menu(), build_plugin_list_items(), create_button(), create_render_scheduler() (+72 more)
+
+### Community 89 - "use_adapter"
+Cohesion: 0.04
+Nodes (79): aP(), b6(), Bt(), bU(), canonical_url(), cH(), computed_state(), decode() (+71 more)
+
+### Community 90 - "My request for Codex:"
+Cohesion: 0.03
+Nodes (78): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, My request for Codex:, Tool Call: exec_command (+70 more)
+
+### Community 91 - "error"
+Cohesion: 0.04
+Nodes (78): ev(), add_button_if_needed(), append(), can_render_via_smart_components(), clean_and_update_source_blocks(), clear_remove_pending(), create_hash(), current_note() (+70 more)
+
+### Community 92 - "error"
+Cohesion: 0.05
+Nodes (78): add_settings_listeners(), append(), attach_disposer(), clean_and_update_source_blocks(), cleanup_blocks(), container(), create_hash(), create_settings_proxy() (+70 more)
+
+### Community 93 - "Session Text"
+Cohesion: 0.03
+Nodes (76): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+68 more)
+
+### Community 94 - "emit"
+Cohesion: 0.04
+Nodes (73): Ad(), aU(), bK(), canonical_url(), cu(), decode(), details_url(), display_item_type() (+65 more)
+
+### Community 95 - "create poster frame"
+Cohesion: 0.03
+Nodes (74): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+66 more)
+
+### Community 96 - "installProvider"
+Cohesion: 0.04
+Nodes (74): activateIfEnabled(), appendReport(), applyBundledUpdates(), applyRecentNotesLimit(), areArraysEqual(), areIconMapsEqual(), clearStartupTimers(), cloneIconMap() (+66 more)
+
+### Community 97 - "dO"
+Cohesion: 0.04
+Nodes (74): EU(), add_item(), add_items(), aP(), AS(), aY(), b8(), bg() (+66 more)
+
+### Community 98 - "Raw Conversation"
+Cohesion: 0.03
+Nodes (73): 1) Pre-call intake (5 min before call), 2) Live call capture, 3) Immediate post-call system (within 5–10 min), 4) Turn it into a repeatable asset, 5) Where Codex/API comes in (later), 6) What you’re actually buying, 7) Your leverage move, About your Pi agent / harness (+65 more)
+
+### Community 99 - "Acknowledging Correct Feedback"
+Cohesion: 0.03
+Nodes (73): Acknowledging Correct Feedback, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+65 more)
+
+### Community 100 - "bZ"
+Cohesion: 0.04
+Nodes (71): _6(), Aa(), addClass(), addSetting(), ah(), B6(), bB(), Bi() (+63 more)
+
+### Community 101 - "Dt"
+Cohesion: 0.04
+Nodes (73): a6(), Aw(), bL(), BQ(), bw(), c6(), cT(), cw() (+65 more)
+
+### Community 102 - "hO"
+Cohesion: 0.04
+Nodes (72): _A(), by(), d$(), dk(), DN(), e8(), en(), eo() (+64 more)
+
+### Community 103 - "emit_event"
+Cohesion: 0.04
+Nodes (72): add_item(), add_items(), build_invalid_credentials_message(), build_plugin_list_items(), build_source_suggestions(), copy_to_clipboard2(), default_smart_plugins_list(), display_item_type() (+64 more)
+
+### Community 104 - "Session Text"
+Cohesion: 0.03
+Nodes (71): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+63 more)
+
+### Community 105 - "ft"
+Cohesion: 0.04
+Nodes (69): a1(), a1e(), a8(), aD(), aw(), b2(), c1e(), C9() (+61 more)
+
+### Community 106 - "create_doc_fragment"
+Cohesion: 0.04
+Nodes (69): q1(), p1(), a1(), apply_style_sheet(), az(), b1(), BA(), bU() (+61 more)
+
+### Community 107 - "setInstructions"
+Cohesion: 0.04
+Nodes (69): af(), canonical_url(), cf(), computed_state(), details_url(), Dp(), ei(), filter_suggestions() (+61 more)
+
+### Community 108 - "post_process6"
+Cohesion: 0.04
+Nodes (69): append_entry(), append_filter_button(), append_meta_row(), are_all_levels_active(), build_native_notice_content(), create_all_levels_set(), create_tag(), entries_to_clipboard_text() (+61 more)
+
+### Community 109 - "emit_event"
+Cohesion: 0.05
+Nodes (68): add_item(), add_items(), add_settings_listeners(), b0(), BN(), bQ(), cleanup_blocks(), delete() (+60 more)
+
+### Community 110 - "constructor"
+Cohesion: 0.05
+Nodes (68): add_ignore_pattern(), adjust_for_windows_paths(), build_events_opts(), build_links_map(), build_settings_changed_event(), cleanup_blocks(), clear(), constructor() (+60 more)
+
+### Community 111 - "Verdict: NO-GO"
+Cohesion: 0.03
+Nodes (67): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+59 more)
+
+### Community 112 - "empty"
+Cohesion: 0.04
+Nodes (67): actions(), add_button_if_needed(), add_exclusion(), can_render_via_smart_components(), close(), create_debounced_submit(), create_render_scheduler(), display() (+59 more)
+
+### Community 113 - "key"
+Cohesion: 0.05
+Nodes (67): ajson_merge(), build_links_map(), collection(), collection_to_plain(), component_key(), create_actions_proxy(), create_uid(), debounce_re_import_queue() (+59 more)
+
+### Community 114 - "vo"
+Cohesion: 0.04
+Nodes (66): applyFolderDelete(), applyFolderRename(), applyTagDelete(), applyTagRename(), buildRenameAnalysis(), cleanupFolderMetadata(), cleanupMetadata(), cleanupPinnedNotes() (+58 more)
+
+### Community 115 - "init"
+Cohesion: 0.05
+Nodes (66): build_links_map(), cache_bases_output(), cleanup_blocks(), clear_interval(), create_item_adapter(), create_settings_proxy(), debounce_re_import_queue(), dq() (+58 more)
+
+### Community 116 - "load"
+Cohesion: 0.04
+Nodes (66): NP(), rS(), adapter(), after_load(), before_load(), BP(), commands(), dB() (+58 more)
+
+### Community 117 - "Stop node if misbehaving"
+Cohesion: 0.03
+Nodes (65): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+57 more)
+
+### Community 118 - "mt"
+Cohesion: 0.05
+Nodes (65): _2(), A2(), Ar(), Bg(), By(), c0(), centroid(), cluster() (+57 more)
+
+### Community 119 - "create"
+Cohesion: 0.04
+Nodes (65): add_main(), add_smart_chat_icon(), add_smart_connections_icon(), add_smart_lookup_icon(), before_load(), build_events_opts(), build_plugin_file_record(), build_plugin_release_page_url() (+57 more)
+
+### Community 120 - "emit"
+Cohesion: 0.05
+Nodes (65): addClass(), addSetting(), build_settings_changed_event(), build_settings_group_map(), build_store_event_payload(), canonical_url(), create_settings_group_rerender(), details_url() (+57 more)
+
+### Community 121 - "vM"
+Cohesion: 0.04
+Nodes (64): a2(), bind_live_ui(), bM(), c2(), cancel_scan(), Ck(), cluster_graph_ranked(), cluster_graph_ranked_seeded() (+56 more)
+
+### Community 122 - "to_openai"
+Cohesion: 0.04
+Nodes (64): base64_to_blob(), base64_to_uint8_array(), complete(), delete_file_from_xai(), delete_uploaded_files(), extract_mime_and_base64(), get_enriched_model_data(), get_file_delete_endpoint() (+56 more)
+
+### Community 123 - "OpenClaw CLI Power User Guide"
+Cohesion: 0.03
+Nodes (63): 10. Safety Model — Three Devices Edition, 11. Your Current Setup — What's Working, What to Add, 12. Quick Reference Card, 1. What OpenClaw Actually Is (No Hype, No Fear), 9. Workspace File Strategy, Acceptance Criteria Rules, Active Plans, Anti-Drift Checklist (Internal) (+55 more)
+
+### Community 124 - "on the Pi"
+Cohesion: 0.03
+Nodes (63): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+55 more)
+
+### Community 125 - "renderIcon"
+Cohesion: 0.04
+Nodes (62): BE(), BS(), calculateThumbnailDimensions(), canvasToBlob(), cd(), closeBitmap(), createThumbnailBlob(), createThumbnailBlobFromBuffer() (+54 more)
+
+### Community 126 - "dz"
+Cohesion: 0.04
+Nodes (63): ah(), an(), aS(), ax(), base64_to_blob(), base64_to_uint8_array(), bd(), bh() (+55 more)
+
+### Community 127 - "$e"
+Cohesion: 0.04
+Nodes (62): aB(), AF(), Az(), Bk(), _C(), cA(), cB(), cN() (+54 more)
+
+### Community 128 - "emit_event"
+Cohesion: 0.05
+Nodes (61): add_item(), add_items(), build_named_context_item_payloads(), build_named_context_item_suggestions(), build_source_suggestions(), clear_all(), context_suggest_blocks(), context_suggest_contexts() (+53 more)
+
+### Community 129 - "test_triage_modular.py"
+Cohesion: 0.07
+Nodes (49): Context Refinery — Modular Triage System., Allow `python3 -m context_refinery.triage [directory|files...]`., execute_writes(), Review phase — summary table, confirm, re-edit, execute writes.  Extracted from, Write updated metadata back to each file's YAML frontmatter., Show summary table, confirm, write frontmatter.      The table columns should be, review_phase(), load_queue_files() (+41 more)
+
+### Community 130 - "2026-04-03 - environment-context - 019d52e7-bfc88df032.md"
+Cohesion: 0.03
+Nodes (59): [1.0.0] - 2026-03-12, 1. graph: field dropped from PR body contract — redundant, derived from repo, 2. graph_updater uses GitHub Contents API, not git-on-Pi — no write key on Pi needed, 3. result row written as pending BEFORE graph update — gives replay log without retries, 4. ALLOWED_REPOS validated first — cheapest check, fail fast, 5. auto-dispatch next node explicitly excluded — scope discipline, ---------------------------------------------------------------------------, --------------------------------------------------------------------------- (+51 more)
+
+### Community 131 - "Step 4: Start the development server with auto-reloading and an instant preview."
+Cohesion: 0.03
+Nodes (60): Assistant, Assistant, Assistant, Step 4: Start the development server with auto-reloading and an instant preview., Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+52 more)
+
+### Community 132 - "Session Text"
+Cohesion: 0.03
+Nodes (59): Assistant, Assistant, Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command (+51 more)
+
+### Community 133 - "process_save_queue"
+Cohesion: 0.05
+Nodes (59): Wd(), build_links_map(), cache_bases_output(), cleanup_blocks(), clear_interval(), create_item_adapter(), create_settings_proxy(), debounce_re_import_queue() (+51 more)
+
+### Community 134 - "[Feature Name] Implementation Plan"
+Cohesion: 0.03
+Nodes (58): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, [Feature Name] Implementation Plan (+50 more)
+
+### Community 135 - "TriagePass"
+Cohesion: 0.07
+Nodes (29): ABC, Abstract base class for all triage passes., Display name for the pass (e.g., 'MATURITY STATUS')., Print the keypress legend for this pass., Process a single file. Returns True to continue, False to stop (q pressed)., Return the current value for this pass (shown in review table)., All passes share the same interaction contract., TriagePass (+21 more)
+
+### Community 136 - "Session Text"
+Cohesion: 0.04
+Nodes (56): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Session Text, Tool Call Count (+48 more)
+
+### Community 137 - "on"
+Cohesion: 0.06
+Nodes (56): build_links_map(), cache_bases_output(), clear_interval(), create_item_adapter(), create_settings_proxy(), emit_source_opened(), get_base_file_view(), get_data_file_name() (+48 more)
+
+### Community 138 - "emit"
+Cohesion: 0.06
+Nodes (56): addClass(), build_plugin_file_record(), build_settings_group_map(), build_store_event_payload(), create_settings_group_rerender(), data(), download_and_write_release_asset(), download_plugin_files() (+48 more)
+
+### Community 139 - "Session Text"
+Cohesion: 0.04
+Nodes (55): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Session Text, Tool Call Count (+47 more)
+
+### Community 140 - "process_embed_queue"
+Cohesion: 0.05
+Nodes (55): bd(), bh(), browse_smart_plugins(), _calculate_embed_tokens_per_second(), computed_state(), count_tokens(), debounce_re_import_queue(), ek() (+47 more)
+
+### Community 141 - "init"
+Cohesion: 0.06
+Nodes (55): build_links_map(), cache_bases_output(), cleanup_blocks(), clear_interval(), create_item_adapter(), create_settings_proxy(), er(), get_base_file_view() (+47 more)
+
+### Community 142 - "Session Text"
+Cohesion: 0.04
+Nodes (54): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Session Text (+46 more)
+
+### Community 143 - "process_embed_queue"
+Cohesion: 0.06
+Nodes (54): Ap(), build_native_notice_content(), _calculate_embed_tokens_per_second(), dC(), debounce_re_import_queue(), Dn(), DQ(), _emit_embedding_error() (+46 more)
+
+### Community 144 - "Acknowledging Correct Feedback"
+Cohesion: 0.04
+Nodes (53): Acknowledging Correct Feedback, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+45 more)
+
+### Community 145 - "Acknowledging Correct Feedback"
+Cohesion: 0.04
+Nodes (53): Acknowledging Correct Feedback, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+45 more)
+
+### Community 146 - "createTabContext"
+Cohesion: 0.06
+Nodes (53): addInfoSetting(), addLegacySettingsPageLink(), addToggleSetting(), applyCalendarPlacementView(), attach(), clearOpenLeavesForFileDelete(), configureDebouncedTextAreaSetting(), createDebouncedTextAreaSetting() (+45 more)
+
+### Community 147 - "2026-05-12 - in-nlm-cli-how-do-i-create-flashcards-for-a-specific-notebook-i-e-for - d9aea2a6-9558a3eb1c.md"
+Cohesion: 0.04
+Nodes (51): Adding sources, Audio (Podcast), Batch generate podcasts for all tagged notebooks, Check progress, Check sharing status, Check status, Count: number of questions (default: 2), Creates a NEW deck with revisions. Original unchanged. (+43 more)
+
+### Community 148 - "create"
+Cohesion: 0.05
+Nodes (52): add_main(), Be(), Bg(), compute_collections_version_signature(), config(), constructor(), create(), create_env_getter() (+44 more)
+
+### Community 149 - "load"
+Cohesion: 0.06
+Nodes (52): adapter(), can_fallback_to_v3(), check_for_updates(), clear(), clear_message_timeout(), count_tokens(), create_iframe_timeout_error(), create_item_adapter() (+44 more)
+
+### Community 150 - "emit_event"
+Cohesion: 0.05
+Nodes (51): add_items(), aq(), at(), cq(), dB(), debounce_save(), delete_model(), dispatchEvent() (+43 more)
+
+### Community 151 - "ie"
+Cohesion: 0.07
+Nodes (51): aY(), BX(), centroid(), cluster(), cluster_graph(), cluster_graph_ranked(), cluster_graph_ranked_seeded(), cluster_graph_ranked_seeded_subset() (+43 more)
+
+### Community 152 - "create_doc_fragment"
+Cohesion: 0.05
+Nodes (51): apply_style_sheet(), build_control_html(), build_controls_html(), build_group_html(), build_html11(), build_html13(), build_html14(), build_html15() (+43 more)
+
+### Community 153 - "ResultReranker"
+Cohesion: 0.06
+Nodes (35): _parse_date(), Extract candidate phrases (multi-token, length >= 4) for exact-match boosting., Generate hyphen/space/joined variants of a phrase. Skip very short results., Boost if this doc's tags overlap with tags from other docs., Parse an ISO date string to a timezone-aware datetime., Filter results. All conditions are AND'd. Tags are OR'd., Composite scoring from semantic, recency, trust, and reinforcement., Compute final_score and sort descending. (+27 more)
+
+### Community 154 - "create"
+Cohesion: 0.05
+Nodes (50): SP(), add_main(), an(), bC(), CC(), cM(), compute_collections_version_signature(), config() (+42 more)
+
+### Community 155 - "emit"
+Cohesion: 0.07
+Nodes (50): $2(), al(), decode(), download_and_write_release_asset(), Dt(), emit(), emit_settings_changed(), enable() (+42 more)
+
+### Community 156 - "initialize"
+Cohesion: 0.05
+Nodes (49): XG(), _8(), adapter(), addClass(), addSetting(), apply_connections_view_location(), bA(), check_for_updates() (+41 more)
+
+### Community 157 - "#n"
+Cohesion: 0.05
+Nodes (48): delete_by_path(), XA(), _a(), _add_button(), add_items(), _add_mute_button(), BE(), _build_fragment() (+40 more)
+
+### Community 158 - "2026-03-21 - environment-context - 019d0f7a-ab408ef33b.md"
+Cohesion: 0.04
+Nodes (47): 1. graph: field dropped from PR body contract — redundant, derived from repo, 2. graph_updater uses GitHub Contents API, not git-on-Pi — no write key on Pi needed, 3. result row written as pending BEFORE graph update — gives replay log without retries, ---------------------------------------------------------------------------, ---------------------------------------------------------------------------, ---------------------------------------------------------------------------, 4. ALLOWED_REPOS validated first — cheapest check, fail fast, 5. auto-dispatch next node explicitly excluded — scope discipline (+39 more)
+
+### Community 159 - "Neovim"
+Cohesion: 0.04
+Nodes (47): 07:05 — Context managers: what `with sqlite3.connect()` actually does, 08:14 — 5 new postings, 08:20 — 3 new postings, 08:39 — Audit + Dispatch, 09:02 — Telescope live_grep: search code by content, 11:17 — 2 new postings, 11:23 — 3 new postings, 13:01 — Pydantic `Literal` fields and discriminated unions (+39 more)
+
+### Community 160 - "nearest"
+Cohesion: 0.05
+Nodes (48): _1(), B1(), Bk(), bM(), cc(), cM(), d1(), De() (+40 more)
+
+### Community 161 - "load_templates"
+Cohesion: 0.07
+Nodes (48): adapter_changed(), add_exclusion(), build_template_folder_description(), build_template_headings_description(), build_template_matcher(), collect_block_heading_candidates(), collect_template_folder_candidates(), create_or_update() (+40 more)
+
+### Community 162 - "Stale Training Data Revelation for Pi Orchestration Across Machines"
+Cohesion: 0.04
+Nodes (46): Architectural read, Conversation Identity, Headline findings, How This Lands on the Sprint, Message to Fire Back to Claude Code, On Alternatives — The "Task Two" You Mentioned, On Choosing Madness, On the AI-contradiction thing (+38 more)
+
+### Community 163 - "getFolderDisplayData"
+Cohesion: 0.06
+Nodes (47): emitFolderChangedForPath(), ensureFolderDisplayCacheSettingsListener(), ensureFolderDisplayCacheState(), ensureFolderDisplayCacheVaultListeners(), ex(), getCurrentFolderDisplayCacheSettingsSnapshot(), getCurrentFolderStyleRecordSource(), getEntityIcon() (+39 more)
+
+### Community 164 - "unload"
+Cohesion: 0.07
+Nodes (47): adapter(), _b(), bu(), clear(), clear_collection_vec_index(), clear_collection_vec_index_dirty(), clear_pending_collection_vec_index_items(), clear_vec_index_rebuild_schedules() (+39 more)
+
+### Community 165 - "create_doc_fragment"
+Cohesion: 0.05
+Nodes (47): apply_style_sheet(), build_html11(), build_html13(), build_html14(), build_html15(), build_html16(), build_html21(), build_html22() (+39 more)
+
+### Community 166 - "v4schema.py"
+Cohesion: 0.09
+Nodes (39): _clear_interactive_screen(), collect_suggestions(), _compact_path(), _compact_value(), _dedupe_preserving_order(), _getch_or_signal(), _invalid_fields(), _is_wikilink() (+31 more)
+
+### Community 167 - "Longer Version"
+Cohesion: 0.04
+Nodes (40): Active Workstreams, Bonny Doon Retreat - Project Overview, Core Tech Stack, Current State, Main Unsolved Problems, Summary, Constraints, Backlog (+32 more)
+
+### Community 168 - "Mission 3 — Mac Portfolio + Networking Sprint"
+Cohesion: 0.04
+Nodes (42): Assistant autonomy queue (safe), Block 1 (50m), Block 2 (50m), Block 3 (optional 30–50m), Break (10–15m), Break (10–15m), Daily block template (sustainable), Execution lanes (+34 more)
+
+### Community 169 - "p4"
+Cohesion: 0.06
+Nodes (46): _4(), A0(), b4(), bP(), bs(), d4(), d5(), E0() (+38 more)
+
+### Community 170 - "Universal Agent Taskbook"
+Cohesion: 0.04
+Nodes (45): 8. Prompt Suffixes and Modifiers, Adapter Concept, Adapters, Adapters, Best order to run them, Bottom Line, Core Rule, Core Rule (+37 more)
+
+### Community 171 - "Skill Tree: Code Problem Solving"
+Cohesion: 0.04
+Nodes (40): Code Problem Solving — Anchor, Current detour / progress: [[Vertex AI finally used day 1]], Approach, Basic Plan for First Few Problems, Example of Template, Examples, Key Insights, Mistakes Made (+32 more)
+
+### Community 172 - "V4 Next Session Handoff"
+Cohesion: 0.04
+Nodes (42): Cheat Sheets, Related, Suggested Order, Total Notes with at Least One Suggested Concept: 1376, V4 Concept Suggestions Index, Workflow, 1. Per-batch dryrun JSONs — the queue source, 2. Per-batch concept-suggestion cheat sheets (+34 more)
+
+### Community 173 - "OpenClaw CLI Power User Guide"
+Cohesion: 0.05
+Nodes (44): 10. Safety Model — Three Devices Edition, 11. Your Current Setup — What's Working, What to Add, 12. Quick Reference Card, 1. What OpenClaw Actually Is (No Hype, No Fear), 7.1 Recommended Agent Setup for Your Stack, 7.2 Setup Commands, 7. Multi-Agent Architecture, 8.1 Shell Functions (Add to `~/.zshrc` on Mac, and `~/.bashrc` on Big Pi) (+36 more)
+
+### Community 174 - "OpenClaw CLI Power User Guide"
+Cohesion: 0.05
+Nodes (44): 10. Safety Model — Three Devices Edition, 11. Your Current Setup — What's Working, What to Add, 12. Quick Reference Card, 1. What OpenClaw Actually Is (No Hype, No Fear), 7.1 Recommended Agent Setup for Your Stack, 7.2 Setup Commands, 7. Multi-Agent Architecture, 8.1 Shell Functions (Add to `~/.zshrc` on Mac, and `~/.bashrc` on Big Pi) (+36 more)
+
+### Community 175 - "Brainstorming Ideas Into Designs"
+Cohesion: 0.05
+Nodes (43): 1. Read the room (offline-interactive-pages), 2. Pick a theme, 3. Draft the prompt, 4. Copy to clipboard, 5. Open / focus the Lovable PWA, 6. Hand off, A1 — Helix Selection-First Drill (prompt to paste), Account transfer next step (+35 more)
+
+### Community 176 - "Session Text"
+Cohesion: 0.05
+Nodes (44): Assistant, Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count (+36 more)
+
+### Community 177 - "Pi-5.6.26.Self-Audit-Strengths_Weaknesses.md"
+Cohesion: 0.05
+Nodes (43): 0 — pipeline completed and produced a parseable final envelope, 0. Recon (optional): brief filesystem enumeration before planning, so the, 1. Decompose: ask Pi to break the task into 2..max-children bounded, 1 — pipeline failed at some stage (envelope still emitted with status=error), 2. Fanout:    run pi-subagent for each subtask in parallel, collect digests, 2 — usage error, 3. Integrate: ask Pi to synthesize the children's findings into a final answer, All stages use pi-subagent under the hood, so each is bounded, returns only (+35 more)
+
+### Community 178 - "Build This Shit"
+Cohesion: 0.05
+Nodes (43): Available Skills (prereqs Met, Not done), BASES SETUP (after files exist), Branch Totals, Build This Shit, CHUNKED QUEST SEQUENCE (CLI-JSON-PARSE chain), CONNECTION TEST (do first), CROSS-BRANCH UNLOCKABLE, DASHBOARD DATAVIEWJS (+35 more)
+
+### Community 179 - "ye"
+Cohesion: 0.06
+Nodes (44): ay(), BC(), BG(), bR(), cosine_similarity_i(), cosine_similarity_vec(), cw(), du() (+36 more)
+
+### Community 180 - "context_suggest_templates"
+Cohesion: 0.06
+Nodes (44): add_selected_template_key(), build_display_right(), build_suggest_scope_items(), clear_selected_template(), close(), context_suggest_templates(), dedupe_template_records(), ensure_selected_template() (+36 more)
+
+### Community 181 - "2-Week Documentation Review: All Guides & Docs Created for Saboor"
+Cohesion: 0.05
+Nodes (42): 10. Quick Reference: "I Need to…", 11. Documentation Quality Notes, 12. How to Use This Review, 1.1 **Hammerspoon Hyper System Guide**, 1.2 **Google Antigravity — Beginner to Power User Guide**, 1.3 **OpenClaw CLI Power User Guide**, 1.4 **Ghostty + Obsidian CLI Workflow**, 1. Core System Guides (Implementation Ready) (+34 more)
+
+### Community 182 - "Tech Stack Decision"
+Cohesion: 0.05
+Nodes (36): Authentication System, Definition of Done, Notes, Proof, Why It Matters, Core Feature Prototype, Definition of Done, Notes (+28 more)
+
+### Community 183 - "Neovim"
+Cohesion: 0.05
+Nodes (42): 2026.05.04 07:23 — `asyncio.gather`: true concurrency for batch endpoints, 2026.05.04 08:22 — 2 new postings, 2026.05.04 09:15 — Neogit status: see all git changes in one view, 2026.05.04 11:23 — 3 new postings, 2026.05.04 12:15 — Neogit commit: write messages without leaving the editor, 2026.05.04 13:15 — FastAPI `Depends`: dependency injection that runs before your handler, 2026.05.04 14:23 — 3 new postings, 2026.05.04 16:30 — Neogit log: view and navigate your commit history (+34 more)
+
+### Community 184 - "h_"
+Cohesion: 0.05
+Nodes (43): IHe(), lh(), _5(), a5(), AG(), b5(), bm(), c5() (+35 more)
+
+### Community 185 - "new_context"
+Cohesion: 0.07
+Nodes (43): BA(), Bi(), commands(), copy_file_nav_selection_as_link_tree(), copy_folder_to_clipboard(), copy_selected_files_to_clipboard(), copy_selected_folders_to_clipboard(), copy_to_clipboard() (+35 more)
+
+### Community 186 - "create"
+Cohesion: 0.06
+Nodes (43): A1(), add_main(), AI(), bi(), Bs(), cG(), compute_collections_version_signature(), config() (+35 more)
+
+### Community 187 - "post_process6"
+Cohesion: 0.07
+Nodes (43): append_entry(), append_filter_button(), append_meta_row(), are_all_levels_active(), create_all_levels_set(), create_tag(), entries_to_clipboard_text(), entry_to_clipboard_text() (+35 more)
+
+### Community 188 - "key"
+Cohesion: 0.06
+Nodes (43): actions(), ajson_merge(), ajson_merge2(), collection(), collection_to_plain(), component_key(), create_actions_proxy(), create_actions_proxy2() (+35 more)
+
+### Community 189 - "datetime"
+Cohesion: 0.12
+Nodes (37): datetime, MyMCP foundation for returning fixture-backed context briefs., _context_envelope(), get_person_context(), get_project_context(), Path, Fixture-backed MyMCP foundation.  The future MCP server wrapper should call thes, Return a project context envelope backed by a golden brief fixture. (+29 more)
+
+### Community 190 - "MyAPI Portfolio Case Study - Smart Connections Harvest"
+Cohesion: 0.05
+Nodes (41): Architecture evidence, Blocker-pass / trust evidence, Core project truth, Corpus v1 evidence, `Corpus v1 normalization MyAPI`, Current state and next implementation work, Engineering insight, Evidence (+33 more)
+
+### Community 191 - "2026-05-06 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - 3c5ba2d7-560acb4dfa.md"
+Cohesion: 0.05
+Nodes (41): 0 — pipeline completed and produced a parseable final envelope [L582-583], 0. Recon (optional): brief filesystem enumeration before planning, so the [L556-557], 1. Decompose: ask Pi to break the task into 2..max-children bounded [L560-561], 1 — pipeline failed at some stage (envelope still emitted with status=error) [L583-584], 2. Fanout:    run pi-subagent for each subtask in parallel, collect digests [L562-563], 2 — usage error [L584-622], 3. Integrate: ask Pi to synthesize the children's findings into a final answer [L563-564], All stages use pi-subagent under the hood, so each is bounded, returns only [L565-566] (+33 more)
+
+### Community 192 - "Integrated Plain-English Summary of the Thread"
+Cohesion: 0.05
+Nodes (41): 0) Pick One Narrow Domain, 1. A Defined Core Entity, 1) Define the "Entity" (what Gets scored), 2. A Clear Scoring Model, 2) Choose non-Instagram Signal Sources (delayed but stable), 3) Define the Score: "Cultural Momentum Score" (CMS), 3. Noise Control, 4) Build the Pipeline (minimum viable) (+33 more)
+
+### Community 193 - "create"
+Cohesion: 0.06
+Nodes (42): _add_button(), add_main(), _add_mute_button(), Ae(), BS(), _build_fragment(), bV(), bx() (+34 more)
+
+### Community 194 - "constructor"
+Cohesion: 0.07
+Nodes (42): add_ignore_pattern(), Be(), centroid(), cluster(), cluster_graph(), cluster_graph_ranked(), cluster_graph_ranked_seeded(), cluster_graph_ranked_seeded_subset() (+34 more)
+
+### Community 195 - "2026-05-04 - kernel-panic-analysis - 69f85547-f212ad591f.md"
+Cohesion: 0.05
+Nodes (40): ---------------------------------------------------------------------------, ---------------------------------------------------------------------------, ---------------------------------------------------------------------------, ---------------------------------------------------------------------------, ---------------------------------------------------------------------------, Agent Handoff: Dotfiles Git Cleanup + Rebase Prep, and show a config error like `list-themes: invalid field`., app path can treat the argument as config text, open a separate app instance, (+32 more)
+
+### Community 196 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.05
+Nodes (40): 1. Drop the HTML in `public/`, 2. Update `vercel.json` to route around the SPA fallback, 3. Update `.vercelignore`, 4. Run the deploy, A few notes, Appeal narrative, Files written, Final status (+32 more)
+
+### Community 197 - "Open Questions Before Designing Graphs"
+Cohesion: 0.05
+Nodes (41): Assistant, Assistant, Assistant, Assistant, Open Questions Before Designing Graphs, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+33 more)
+
+### Community 198 - "Open Questions Before Designing Graphs"
+Cohesion: 0.05
+Nodes (41): Assistant, Assistant, Assistant, Assistant, Open Questions Before Designing Graphs, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+33 more)
+
+### Community 199 - "Open Questions Before Designing Graphs"
+Cohesion: 0.05
+Nodes (41): Assistant, Assistant, Assistant, Assistant, Open Questions Before Designing Graphs, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+33 more)
+
+### Community 200 - "water-and-stone-hours-tracking"
+Cohesion: 0.05
+Nodes (41): 3.3 Invoice Requirements, 3.4 Traceability Fields, 3.5 Status / Reconciliation, 4) Internal Contract Decision, 5) Risks / Unknowns, 6) Captured Examples, Assistant, Assistant (+33 more)
+
+### Community 201 - "[Feature Name] Implementation Plan"
+Cohesion: 0.05
+Nodes (41): Assistant, Assistant, [Feature Name] Implementation Plan, Task N: [Component Name], Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+33 more)
+
+### Community 202 - "Neovim essential shortcuts and navigation guide.md"
+Cohesion: 0.05
+Nodes (40): Buffers (Open Files), Character & Line Movement, Cheatsheet for Obsidian Neovim, Combining Verbs + Motions, Common LazyVim Shortcuts, Copy & Paste, Creating Splits, Editing (+32 more)
+
+### Community 203 - "ge"
+Cohesion: 0.06
+Nodes (41): _6(), a6(), a8(), aL(), b3(), BO(), build_native_notice_content(), c6() (+33 more)
+
+### Community 204 - "get_event_level"
+Cohesion: 0.06
+Nodes (41): bind_action_button(), build_native_notice_content(), format_status_bar_notice_message(), get_action_label(), get_display_fallback_level(), get_embed_progress_state(), get_entry_timestamp(), get_env_activity_state() (+33 more)
+
+### Community 205 - "murmur_hash_32_alphanumeric"
+Cohesion: 0.06
+Nodes (41): build_component_data(), connections_from_cache(), connections_from_cache2(), connections_to_cache(), connections_to_cache2(), context_items(), cos_sim(), data() (+33 more)
+
+### Community 206 - "Where you are vs. where the path leads"
+Cohesion: 0.05
+Nodes (40): A concrete shape for the note, A correction to the order, My concrete recommendation for tonight, On "ambiguous" and "stalled", On Q1 — the "gold mine" story, On Q2 — agents using MyAPI as their cold-start eliminator, On the meta-frame, On the routines themselves (+32 more)
+
+### Community 207 - "Claude coroutines implementation plan"
+Cohesion: 0.05
+Nodes (39): Add to `codebase-lesson` prompt, Add to `jobs-scout` prompt, Add to `neovim-drill` prompt, Architecture, Budget split (15/day), Claude coroutines implementation plan, Conversation Identity, Daily schedule (no collisions, max stagger) (+31 more)
+
+### Community 208 - "[[Vault Schema V4 Reference]]d"
+Cohesion: 0.05
+Nodes (39): **1. Default Bias Rule**, **1. QuickAdd "Normalize Note" Macro**, **1️⃣ Type — What is This? (5 Options only)**, **2. CLI Logic (super Powerful for you)**, **2. Concept Promotion Rule**, **2️⃣ Format — How Do I Use It? (4 Options only)**, **3. Anti-Overthinking Rule**, **3. Concept Note Template** (+31 more)
+
+### Community 209 - "**Structured Summary: How Bailey's Business Works and Where Developer Help Creates the Most Value**"
+Cohesion: 0.05
+Nodes (38): **10. Best Opportunities for You as a Developer**, **11. Strategic Interpretation**, **12. Bottom-Line Summary**, **1. Business Snapshot**, **2. Current Software Reality**, **3. Proposal and Contract Flow**, **4. Invoicing and Financial Workflow**, **5. Accounts Receivable Reality** (+30 more)
+
+### Community 210 - "remove"
+Cohesion: 0.06
+Nodes (40): aKe(), bU(), clearAllLocalStorage(), cU(), dte(), enablePreviewTextWarmup(), ensureNavigationStateInitialized(), getDrawingViewType() (+32 more)
+
+### Community 211 - "murmur_hash_32_alphanumeric"
+Cohesion: 0.06
+Nodes (40): build_component_data(), connections_from_cache(), connections_from_cache2(), connections_to_cache(), connections_to_cache2(), cos_sim(), excluded_file_paths(), file_name() (+32 more)
+
+### Community 212 - "Skill Creator"
+Cohesion: 0.05
+Nodes (38): Advanced: Blind comparison, Anatomy of a Skill, Capture Intent, Claude.ai-specific instructions, Communicating with the user, Cowork-Specific Instructions, Creating a skill, Description Optimization (+30 more)
+
+### Community 213 - "Systematic Debugging"
+Cohesion: 0.05
+Nodes (38): After the Design, Anti-Pattern: "This Is Too Simple To Need A Design", Bite-Sized Task Granularity, Brainstorming Ideas Into Designs, Checklist, Common Rationalizations, File Structure, Fix (+30 more)
+
+### Community 214 - "OpenClaw Multi-Device System - Status Briefing"
+Cohesion: 0.05
+Nodes (38): Channel Configuration Status, Check Gateway (SSD-BIG), Check Node (SSD-SMALL), Check SSH Tunnel, Component Roles, Configuration Changes Made, Current Verified Status (Live Check), Design (+30 more)
+
+### Community 215 - "Hand Therapy Tools Integration Add-On"
+Cohesion: 0.05
+Nodes (38): 1. Band Shoulder Micro-Session, 1. Scapular / Posture, 2. Dumbbell Wrist Micro-Session, 2. Neck / Posture Reset, 3. Forearm Roller Session, 3. Pec / Front-of-Shoulder Opening, 4. Hand Accessory / Recovery Micro-Session, 4. Rotator Cuff / Shoulder Stability (+30 more)
+
+### Community 216 - "copy_to_clipboard"
+Cohesion: 0.06
+Nodes (39): build_context_suggest_action_keys(), build_prompt_text(), context_items(), copy_to_clipboard(), copy_to_clipboard2(), create_request_state(), dedupe_action_keys(), default_suggest_action_keys() (+31 more)
+
+### Community 217 - "Writing Plans"
+Cohesion: 0.05
+Nodes (37): After the Design, Anti-Pattern: "This Is Too Simple To Need A Design", base44 web app exports, All right so I recently thought I downloaded from base 4, Batch Patterns, Bite-Sized Task Granularity, Brainstorming Ideas Into Designs, Checking and Pulling Results, Checklist (+29 more)
+
+### Community 218 - "dx"
+Cohesion: 0.07
+Nodes (38): at(), ax(), cd(), cx(), dispatchEvent(), dx(), #e(), ed() (+30 more)
+
+### Community 219 - "create"
+Cohesion: 0.07
+Nodes (38): add_main(), add_smart_chat_icon(), add_smart_connections_icon(), add_smart_lookup_icon(), camel_case_to_snake_case(), camel_case_to_snake_case2(), compare_config_record_versions(), compare_versions() (+30 more)
+
+### Community 220 - "DevInfra Current State"
+Cohesion: 0.05
+Nodes (32): Design principles, DevInfra Anchor, Needle baseline (as of May 2026), Packet protocol, Stable facts, What it is, Current Needle scores, DevInfra Current State (+24 more)
+
+### Community 221 - "Bailey's Business Operations"
+Cohesion: 0.05
+Nodes (36): 10. Best Opportunities for You as a Developer, 11. Strategic Interpretation, 12. Bottom-Line Summary, 1. Business Snapshot, 2. Current Software Reality, 3. Proposal and Contract Flow, 4. Invoicing and Financial Workflow, 5. Accounts Receivable Reality (+28 more)
+
+### Community 222 - "2026-05-03 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - c7053568-fddb158bbc.md"
+Cohesion: 0.05
+Nodes (36): 2026-04-18 [L356-383], 2026-04-19 [L383-427], Agent Operating Pattern [L1057-1214], AGENTS.md - Pi Operating Contract [L427-1057], Assistant [L1-6], Assistant [L23-54], Assistant [L54-233], Combined test for #1 and #2 in one packet run (+28 more)
+
+### Community 223 - "everyday I have 5 lovable credits to burn, and they do not rollover, often I mes"
+Cohesion: 0.05
+Nodes (36): After the Design, Anti-Pattern: "This Is Too Simple To Need A Design", API Field Reference, Available MCP Connectors, Brainstorming Ideas Into Designs, Checklist, CREATE a new routine:, Create body shape (+28 more)
+
+### Community 224 - "Obsidian vs GitHub Issues vs n8n vs systemd.path for Small Pi Control Plane"
+Cohesion: 0.05
+Nodes (36): Comparison Matrix, Documented capabilities, Documented capabilities, Documented capabilities, Documented capabilities, Documented constraints, Documented constraints, Documented constraints (+28 more)
+
+### Community 225 - "process_embed_queue"
+Cohesion: 0.07
+Nodes (37): aG(), _calculate_embed_tokens_per_second(), d6(), dims(), embed_input(), _emit_embedding_error(), Ff(), get_embed_input() (+29 more)
+
+### Community 226 - "nearest"
+Cohesion: 0.07
+Nodes (37): S0(), _0(), A0(), Al(), B0(), d0(), dp(), dz() (+29 more)
+
+### Community 227 - "pO"
+Cohesion: 0.07
+Nodes (37): aA(), aO(), Br(), ek(), escape_html(), fz(), GA(), gL() (+29 more)
+
+### Community 228 - "ingest_all.py"
+Cohesion: 0.10
+Nodes (31): load_claude_export(), parse_claude_conversation(), Any, Adapter for Claude.ai conversation exports (conversations.json from data export), Parses a Claude.ai conversation dict and returns a CanonicalDocument dict., Load conversations.json from a Claude data export zip., _get_project_name(), parse_codex_session() (+23 more)
+
+### Community 229 - "2026-04-27 - environment-context - 019dce12-77d799a380.md"
+Cohesion: 0.06
+Nodes (35): 1. Are services running?, 2. Khoj health, 3. Context Refinery health, 4. Smoke test query, Agenda, Assistant, Assumptions, Beiley Meeting Prep 3.19.26 (+27 more)
+
+### Community 230 - "Custom Function in Lua"
+Cohesion: 0.06
+Nodes (30): Custom Function in Lua, Definition of Done, Notes, Proof, Why It Matters, DAP Debug Adapter Setup, Definition of Done, Notes (+22 more)
+
+### Community 231 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.06
+Nodes (34): Adding a Hook, Adding Permissions, Attribution (Commits & PRs), Common Mistakes to Avoid, Common Patterns, Constructing a Hook (with verification), CRITICAL: Read Before Write, CRITICAL: Use AskUserQuestion for Ambiguity (+26 more)
+
+### Community 232 - "Session Text"
+Cohesion: 0.06
+Nodes (35): Assistant, Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+27 more)
+
+### Community 233 - "Tmux Essential Shortcuts and Navigation.md"
+Cohesion: 0.06
+Nodes (34): Command Mode, Common Workflow, Creating Panes, Entering Copy Mode, Essentials, From the Terminal (Outside tmux), Inside Tmux (Prefix + Key), Layout Presets (+26 more)
+
+### Community 234 - "Karaoke for a Cause — Project Plan"
+Cohesion: 0.06
+Nodes (34): Architecture, Cockpit rule (non-negotiable), Cross-screen choreography, Day 10 — Live rehearsal with Love, Day 13 — Venue tech check, Day 14 — Buffer, Days 11–12 — Fix everything rehearsal exposed, Days 1–4 — Foundation (+26 more)
+
+### Community 235 - "get_env_activity_state"
+Cohesion: 0.07
+Nodes (35): bind_action_button(), build_html2(), calculate_embed_coverage(), collection_instance_name_from(), collection_instance_name_from2(), collection_key(), format_collection_label(), format_collection_name() (+27 more)
+
+### Community 236 - "MyAPI Anchor"
+Cohesion: 0.06
+Nodes (29): Design principles, MyAPI Anchor, Non-goals, Stable facts, Vertex AI data stores, What it is, Key finding from trust-threshold analysis, MyAPI Current State (+21 more)
+
+### Community 237 - "Vault Normalization Anchor"
+Cohesion: 0.06
+Nodes (29): Constraints, Metadata floor (do not over-stamp), Stable facts, Vault Normalization Anchor, Vault structure, What it is, Pass A: Complete, Pass B: In progress (this session) (+21 more)
+
+### Community 238 - "Session Text"
+Cohesion: 0.06
+Nodes (34): Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+26 more)
+
+### Community 239 - "Step 6: Test Chatbot (~5 min)"
+Cohesion: 0.06
+Nodes (34): Assistant, Assistant, Assistant, Assistant, Assistant, Step 6: Test Chatbot (~5 min), Tool Call: exec_command, Tool Call: exec_command (+26 more)
+
+### Community 240 - "Step 6: Test Chatbot (~5 min)"
+Cohesion: 0.06
+Nodes (34): Assistant, Assistant, Assistant, Assistant, Assistant, Step 6: Test Chatbot (~5 min), Tool Call: exec_command, Tool Call: exec_command (+26 more)
+
+### Community 241 - "obsidian.neovim comprehensive command list and breakdown.md"
+Cohesion: 0.06
+Nodes (33): 📅 Daily Notes, 📅 Daily Notes, 📅 Daily Notes, 📅 Daily Notes, 📅 Daily Notes, 🔗 Linking & Refactoring (Visual Mode), 🔗 Linking & Refactoring (Visual Mode), 🔗 Linking & Refactoring (Visual Mode) (+25 more)
+
+### Community 242 - "Terminal Neovim is Your Baseline"
+Cohesion: 0.06
+Nodes (27): Context, CPR for NeoVim Migration, Links, Purpose, Results, Level 1: The "Fixer" Workflow (Beginner), Level 2: The "Architect" Workflow (Intermediate), Level 3: The "Director" Workflow (Advanced) (+19 more)
+
+### Community 243 - "Gemini — Agentic Workflow for AI Developer Roles"
+Cohesion: 0.06
+Nodes (33): 1. The "State Management" Trap, 2. The "Hallucinated API" Trap, 3. The Rework Ratio (The Golden Metric), Brainstorming the Graph Boundaries, Bridging the Gap in Applications, Finishing the Sprint, Gemini, Gemini (+25 more)
+
+### Community 244 - "N9"
+Cohesion: 0.10
+Nodes (34): ai(), E7(), f7(), getNormalizedBaseFolder(), getSyncModeRegistry(), I7(), j7(), mirrorAllSyncModeSettingsToLocalStorage() (+26 more)
+
+### Community 245 - "use_adapter"
+Cohesion: 0.08
+Nodes (34): context_items(), dH(), ensure_exclusion_state(), exists_sync(), find_connections(), get_context_items(), get_results(), has_excluded_patterns() (+26 more)
+
+### Community 246 - "CanonicalDoc"
+Cohesion: 0.13
+Nodes (16): EnrichmentOptions, EnrichmentService, KhojExporter, Any, Converts a string to a safe filesystem filename., Exports a list of CanonicalDoc objects to the specified output directory., CanonicalDoc, GeminiService (+8 more)
+
+### Community 247 - "GDDP Anchor"
+Cohesion: 0.06
+Nodes (28): Core concepts, Design principles, GDDP Anchor, Non-goals, Stable facts, What it is, GDDP Current State, Key design decision (locked) (+20 more)
+
+### Community 248 - "Session Text"
+Cohesion: 0.06
+Nodes (32): 1. ntfy daily detector, 1. ntfy daily detector, 1. pi-big itself is clean of active worm persistence, 2. Credential surface on pi-big — narrower than expected, which is good, 2. Fetch + merge cleanup branch on Pi-Coding-Agent, 2. Fetch + merge cleanup branch on Pi-Coding-Agent, 3. Gitleaks pre-commit hook, globally, 3. Gitleaks pre-commit hook, globally (+24 more)
+
+### Community 249 - "🧭 LMN Field Discovery — Complete Report"
+Cohesion: 0.06
+Nodes (32): 1. Dashboard / Overview, 1. Requests / To-Dos, 2. Estimates — Sent Vs Approved, 2. Invoices — The Most Important Screen, 3. Customers — Revenue Concentration, 3. Jobs, 4. Invoices, 4. Profit & Loss (Jan 1 – Apr 17, 2026) (+24 more)
+
+### Community 250 - "$s"
+Cohesion: 0.06
+Nodes (33): _w(), ak(), b$(), BL(), CE(), Ch(), cL(), cR() (+25 more)
+
+### Community 251 - "_send_message"
+Cohesion: 0.09
+Nodes (33): YQ(), a4(), aC(), can_fallback_to_v3(), clear_message_timeout(), eh(), fallback_to_v3_and_retry(), get_message_timeout_ms() (+25 more)
+
+### Community 252 - "constructor"
+Cohesion: 0.08
+Nodes (33): Ba(), browse_smart_plugins(), constructor(), create_or_update(), De(), download_plugin_files(), encode(), find_by() (+25 more)
+
+### Community 253 - "📊 Summary Metrics"
+Cohesion: 0.06
+Nodes (32): Comparative RAG & Retrieval Benchmark, ⚡ Google Vertex AI Search (Generative RAG), ⚡ Google Vertex AI Search (Generative RAG), ⚡ Google Vertex AI Search (Generative RAG), ⚡ Google Vertex AI Search (Generative RAG), ⚡ Google Vertex AI Search (Generative RAG), ⚡ Google Vertex AI Search (Generative RAG), ⚡ Google Vertex AI Search (Generative RAG) (+24 more)
+
+### Community 254 - "Improving Prompt Book Structure"
+Cohesion: 0.06
+Nodes (32): 1. Operating Modes Fast Chooser, 2. Interface Routing, 3. Internal vs. External Dispatch, 4. Mission Packets vs. One-Shot Commands, 5. Trust Gradient & Technical Debt, acceptance criteria, Acceptance Criteria Rules, allowed files or surfaces (+24 more)
+
+### Community 255 - "Session Text"
+Cohesion: 0.06
+Nodes (32): Assistant, Assistant, Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command (+24 more)
+
+### Community 256 - "Beiley-Water-and-Stone-Landscaper-Part-Time-Job-Meeting.md"
+Cohesion: 0.06
+Nodes (31): 10. First 2–4 Week Execution Plan, 11. Key Principles, 12. Success Criteria, 1.1 Confirm Working Arrangement, 1.2 Resolve Pay Structure, 1.3 Create Current-state Overview, 1. Immediate Priorities, 2.1 Password Management (+23 more)
+
+### Community 257 - "Networking Pitch Cards — Project Set"
+Cohesion: 0.06
+Nodes (31): 1) Bonny Doon Retreat, 2) Market Sentinel (AI-assisted), 2-min version, 2-min version, 2-min version, 2-min version, 2-min version, 2-min version (+23 more)
+
+### Community 258 - "unload"
+Cohesion: 0.10
+Nodes (32): clear(), clear_collection_vec_index(), clear_collection_vec_index_dirty(), clear_pending_collection_vec_index_items(), clear_vec_index_rebuild_schedules(), clear_vec_index_runtime_state(), clear_vec_indices(), __destroy_into_raw() (+24 more)
+
+### Community 259 - "get_track_plugin"
+Cohesion: 0.07
+Nodes (32): build_control_html(), build_controls_html(), build_group_html(), build_html18(), build_plugin_release_page_url(), build_row_html(), canonical_url(), compute_plugin_list_item_state() (+24 more)
+
+### Community 260 - "context_packets.py"
+Cohesion: 0.13
+Nodes (15): ContextBrief, ContextPacket, ContextPacketError, ContextPacketItem, _optional_float(), _optional_int(), packet_from_ctxpack(), Any (+7 more)
+
+### Community 261 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 01:57 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 262 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:04 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 263 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:32 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 264 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:00 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 265 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:08 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 266 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:10 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 267 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:15 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 268 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:12 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 269 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:18 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 270 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 02:06 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 271 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 10. Notes for the agent (you), 1. Mission (TL;DR), 21:39 | main, 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 272 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 06:21 | main, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 273 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.06
+Nodes (30): 05:55 | feat/premium-media-library, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline (+22 more)
+
+### Community 274 - "GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓"
+Cohesion: 0.06
+Nodes (31): Assistant, Assistant, GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+23 more)
+
+### Community 275 - "Command length preference"
+Cohesion: 0.06
+Nodes (31): Assistant, Assistant, Command length preference, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+23 more)
+
+### Community 276 - "Agent Events"
+Cohesion: 0.06
+Nodes (31): after_provider_response, Agent Events, agent_start / agent_end, before_agent_start, before_provider_request, context, Events, input (+23 more)
+
+### Community 277 - "Branch Descriptions"
+Cohesion: 0.06
+Nodes (28): Branch Thresholds, Branches, Completion Method Multipliers, Core Philosophy, File Structure, Links, Point Structure, Skill Tree System (+20 more)
+
+### Community 278 - "Custom CSS Snippets Theme System.md"
+Cohesion: 0.06
+Nodes (30): ✅ **COMPLETE! Headers System Reorganized**, Core Appearance (pick ONE), **✅ CREATED (new Modular system):**, Current Header Set, Customization, **❌ DELETED (conceptually - Rename the Old files):**, 📚 **Documentation Available**, Evening Focus Mode (+22 more)
+
+### Community 279 - "VLT_ Vault Schema V2.md"
+Cohesion: 0.06
+Nodes (30): **00 Inbox**, **01 Projects**, **02 Areas**, **03 Resources**, **04 Periodic**, **05 Archive**, **09 Utilities**, **1️⃣** **type** **— What is this?** (+22 more)
+
+### Community 280 - "ensure_vec_index_runtime_state"
+Cohesion: 0.11
+Nodes (31): ah(), cf(), clear_collection_vec_index(), clear_collection_vec_index_dirty(), clear_pending_collection_vec_index_items(), clear_vec_index_rebuild_schedules(), clear_vec_index_runtime_state(), clear_vec_indices() (+23 more)
+
+### Community 281 - "Branch · Migration Walkthrough Errors"
+Cohesion: 0.07
+Nodes (30): Branch · Migration Walkthrough Errors, Conversation Identity, Estimated scope, order-of-magnitude, Four passes (tight restatement, to confirm I have it), Gate structure (confirming), Headline findings, High-level architecture as observed, Items defaulted to UNCERTAIN — needing Sab triage (+22 more)
+
+### Community 282 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.07
+Nodes (29): 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 3 questions before I go auto, 4. Output spec, 5. Pipeline, 6. Hard constraints (+21 more)
+
+### Community 283 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.07
+Nodes (30): add node files to graphs/<project-id>/nodes/, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+22 more)
+
+### Community 284 - "GDDP Sitrep and Future Plan"
+Cohesion: 0.07
+Nodes (28): Better Frame, Correct Doctrine, Current Direction, Do Not Do Yet, GDDP-15 Corrected Audit, Short Verdict, What Was False Or Unhelpful, What Was Good (+20 more)
+
+### Community 285 - "Espanso terminal file overwhelm - NeoVim way, Obsidian way, and hybrid pathway.md"
+Cohesion: 0.07
+Nodes (29): Cursor Lands at the End so You Can Optionally Type a Directory, Espanso Search Palettes, Espanso Terminal File Overwhelm - NeoVim Way, Obsidian Way, and Hybrid Pathway, LEARN: Flags, Cursor Placeholder, Directory Behavior, LEARN(sab): [[Espanso Search Palettes#content search current dir]], LEARN(sab): [[Espanso Search Palettes#hidden files excluding git]], LEARN(sab): [[Espanso Search Palettes#rg current directory]], LEARN: What Does Each Flag Mean? Rg / -n / --hidden / --glob (+21 more)
+
+### Community 286 - "OpenClaw broke again, exhaustion from running the same loop trying to fix it.md"
+Cohesion: 0.07
+Nodes (26): Ghastly-but-necessary-OpenClaw-struggle-session, Related, 1) Big Pi (brain) —, 1 Brain, One Hands, One Scout, 3. Definition of Done (for Your "productive life" target), 5-minute Recovery (both Mac + Big Pi), Failures, First Action (do This first) (+18 more)
+
+### Community 287 - "BDR Admin Dashboard MVP"
+Cohesion: 0.07
+Nodes (25): BDR Admin Dashboard MVP, Definition of Done, Notes, Proof, Why It Matters, BDR Booking Calendar Working, Definition of Done, Notes (+17 more)
+
+### Community 288 - "Claude Auditor Workflow"
+Cohesion: 0.07
+Nodes (25): Claude Auditor Workflow, Definition of Done, Notes, Proof, Why It Matters, Definition of Done, Gym Hour Automation, Notes (+17 more)
+
+### Community 289 - "_send_message"
+Cohesion: 0.10
+Nodes (30): _9(), can_fallback_to_v3(), CB(), clear_message_timeout(), ER(), fallback_to_v3_and_retry(), fh(), Fn() (+22 more)
+
+### Community 290 - "copy_to_clipboard"
+Cohesion: 0.08
+Nodes (30): auth_token(), authenticated_smart_plugins_request(), build_oauth_storage_prefix(), build_onboarding_start_url(), convert_to_time_ago(), convert_to_time_until(), copy_link_tree(), copy_to_clipboard() (+22 more)
+
+### Community 291 - "schemas.py"
+Cohesion: 0.14
+Nodes (18): enrich_batch(), enrich_content(), query(), BatchEnrichRequest, BatchEnrichResponse, ContentPayload, EnrichRequest, EnrichResponse (+10 more)
+
+### Community 292 - "imports.py"
+Cohesion: 0.13
+Nodes (23): export_to_khoj_bundle(), ClaudeCodeImportRequest, CodexImportRequest, import_chatgpt(), import_claude_code(), import_codex(), import_obsidian(), BaseModel (+15 more)
+
+### Community 293 - "Quick Dev Tasks (codebot → saboors-macbook-air)"
+Cohesion: 0.07
+Nodes (29): 10. Dependency Audit Vulnerabilities (smb-ops-hub), 11. Git Commit Message (dev-journal), 12. Branch Management (smb-ops-hub), 13. Search Codebase (vault-doctor), 14. Check for TODO/FIXME Items (gddp-config), 1. Git Status Check (smb-ops-hub), 2. Git Log Summary (opclaw), 34. Draft a Client Email (+21 more)
+
+### Community 294 - "Copy ALL your skills and extensions (this is the valuable stuff)"
+Cohesion: 0.07
+Nodes (29): Active Repos (on this machine), Canonical Sources, Copy ALL your skills and extensions (this is the valuable stuff), External vs Internal, External vs Internal, File & Artifact Handoffs, Group Chats, Group Chats / General Behavior (+21 more)
+
+### Community 295 - "Quick Dev Tasks (codebot → saboors-macbook-air)"
+Cohesion: 0.07
+Nodes (29): 10. Dependency Audit Vulnerabilities (smb-ops-hub), 11. Git Commit Message (dev-journal), 12. Branch Management (smb-ops-hub), 13. Search Codebase (vault-doctor), 14. Check for TODO/FIXME Items (gddp-config), 1. Git Status Check (smb-ops-hub), 2. Git Log Summary (opclaw), 34. Draft a Client Email (+21 more)
+
+### Community 296 - "Copy ALL your skills and extensions (this is the valuable stuff)"
+Cohesion: 0.07
+Nodes (29): Active Repos (on this machine), Canonical Sources, Copy ALL your skills and extensions (this is the valuable stuff), External vs Internal, External vs Internal, File & Artifact Handoffs, Group Chats, Group Chats / General Behavior (+21 more)
+
+### Community 297 - "Copy ALL your skills and extensions (this is the valuable stuff)"
+Cohesion: 0.07
+Nodes (29): Active Repos (on this machine), Canonical Sources, Copy ALL your skills and extensions (this is the valuable stuff), External vs Internal, External vs Internal, File & Artifact Handoffs, Group Chats, Group Chats / General Behavior (+21 more)
+
+### Community 298 - "So I turned this into a repository on Git because there is a specific script tha"
+Cohesion: 0.07
+Nodes (28): Faster path if you want to resume *right now*, Generalizing the helper so this works going forward, If it feels like too much, If you want them bidirectional, On stash / "remove your commit", On the source-control headache, On your stronger source-control strategy, Pi side (+20 more)
+
+### Community 299 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.07
+Nodes (28): 02:33 | feat/premium-media-library, 14:30 | feat/premium-media-library, Files written, Final status, Major facts now locked in (all live-verified in browser), Phase status, Provenance, Remaining tasks (all blocked on Chrome) (+20 more)
+
+### Community 300 - "Obsidian Sync vs Git for task dispatch workflow"
+Cohesion: 0.07
+Nodes (28): Append to the dispatch queue, Build the task line, Concrete next steps, Conversation Identity, Obsidian Sync vs Git for task dispatch workflow, Optional parameters:, Provenance, Raw Conversation (+20 more)
+
+### Community 301 - "Writer Changes"
+Cohesion: 0.07
+Nodes (29): `area`, Assistant, Assistant, Assistant, Assistant, CLI Menu Target, `concepts`, `format` (+21 more)
+
+### Community 302 - "2026-05-21 - environment-context - 019e488f-1be6ecf640.md"
+Cohesion: 0.07
+Nodes (28): ---------------------------------------------------------------------------, Add the root directory to sys.path to allow importing from scripts package, Check all-notes data store, Check benchmark data store, Clone the repo, Create venv and install deps, Environment, feat/corpus-v1-normalization...origin/feat/corpus-v1-normalization (+20 more)
+
+### Community 303 - "2026-05-21 - environment-context - 019e488f-3af6823c39.md"
+Cohesion: 0.07
+Nodes (28): ---------------------------------------------------------------------------, Add the root directory to sys.path to allow importing from scripts package, Check all-notes data store, Check benchmark data store, Clone the repo, Create venv and install deps, Environment, feat/corpus-v1-normalization...origin/feat/corpus-v1-normalization (+20 more)
+
+### Community 304 - "Obsidian Vault Situation Report"
+Cohesion: 0.07
+Nodes (28): 01 Projects/ (4 Active Projects), 02 Areas/ (Personal + Health Life Domains), 03 Resources/ (Reference & Learning Materials), 04 Archive/ (Historical Data - Organized by Period), 1. **Merge Artifacts Everywhere**, 2. **Incomplete Merge Process**, 3. **Weak Inbox/Capture System**, 4. **Project Documentation Gaps** (+20 more)
+
+### Community 305 - "render2"
+Cohesion: 0.10
+Nodes (29): browse_smart_plugins(), dispatch_btn_event_action(), dispatch_notice_action(), download_json(), export_json(), format_level_label(), get_default_notice_details(), get_default_notice_summary() (+21 more)
+
+### Community 306 - "AGENTS.md - Operating Contract (Headless Raspberry Pi)"
+Cohesion: 0.07
+Nodes (28): acceptance criteria, AGENTS.md - Operating Contract (Headless Raspberry Pi), allowed files or surfaces, Anti-Patterns to Avoid, Auto-Commit Workflow, Before Committing, bonnydoonretreat.net, Branch Discipline (+20 more)
+
+### Community 307 - "2026-04-29 - branch-migration-walkthrough-errors - 69f19c67-3bda9bc3a8.md"
+Cohesion: 0.07
+Nodes (27): 1. Create fresh minimal AGENTS.md tailored for your headless Raspberry Pi, 2. Copy the core brain files (SOUL, AGENTS, etc.), 2. Create a full backup of your entire OpenClaw state, 3. Copy skills + extensions (the valuable part), AGENTS.md - Operating Contract (Headless Raspberry Pi), Copy all your skills and extensions (this is gold), Copy ALL your skills and extensions (this is the valuable stuff), Copy the core Markdown brain files (+19 more)
+
+### Community 308 - "AGENTS.md - Operating Contract (Headless Raspberry Pi)"
+Cohesion: 0.07
+Nodes (28): acceptance criteria, AGENTS.md - Operating Contract (Headless Raspberry Pi), allowed files or surfaces, Anti-Patterns to Avoid, Auto-Commit Workflow, Before Committing, bonnydoonretreat.net, Branch Discipline (+20 more)
+
+### Community 309 - "AGENTS.md - Operating Contract (Headless Raspberry Pi)"
+Cohesion: 0.07
+Nodes (28): acceptance criteria, AGENTS.md - Operating Contract (Headless Raspberry Pi), allowed files or surfaces, Anti-Patterns to Avoid, Auto-Commit Workflow, Before Committing, bonnydoonretreat.net, Branch Discipline (+20 more)
+
+### Community 310 - "Branch · AI Strategy Audit Consulting"
+Cohesion: 0.07
+Nodes (27): Architecture, Branch · AI Strategy Audit Consulting, Conversation Identity, Current Limits, Environment Variables, For Engineers, For Operators & Reviewers, Initialize the DB (+19 more)
+
+### Community 311 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.07
+Nodes (27): 14:15 | first-vm, 18:30 | first-vm, 2026-05-12, 2026-05-13, 22:07 | unknown, 22:10 | unknown, 22:17 | unknown, 22:39 | gcp-billing (+19 more)
+
+### Community 312 - "gddp-runtime"
+Cohesion: 0.07
+Nodes (27): 1. GDDP (gddp-runtime + gddp-config), 1. graph-driven development, 2. My API, 2. My API (personal RAG context endpoint), 3. dag-generator, 3. dag-generator, Boundary, Conversation Identity (+19 more)
+
+### Community 313 - "Verify"
+Cohesion: 0.07
+Nodes (28): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Tool Call: exec_command (+20 more)
+
+### Community 314 - "Verify"
+Cohesion: 0.07
+Nodes (28): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Tool Call: exec_command (+20 more)
+
+### Community 315 - "Verify"
+Cohesion: 0.07
+Nodes (28): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Tool Call: exec_command (+20 more)
+
+### Community 316 - "gddp-runtime"
+Cohesion: 0.07
+Nodes (27): Adding a New Executor Adapter, Boundary, Branch Protection, Core Principle, Creating a New Project, <environment_context>, gddp-config, gddp-runtime (+19 more)
+
+### Community 317 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.07
+Nodes (28): add node files to graphs/<project-id>/nodes/, Assistant, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+20 more)
+
+### Community 318 - "📓 Cookbook"
+Cohesion: 0.07
+Nodes (27): Active Project Anchors, 🔗 Connection Scouting, 📓 Cookbook, 🧪 Custom Workspace Dashboards, Hubs — Notes that Link to *this* Note (richer backlinks), Inbox Count by Folder Depth, 📥 Inbox Health, Inbox Notes with No Tags (+19 more)
+
+### Community 319 - "MyAPI-Rebuild — Architecture"
+Cohesion: 0.07
+Nodes (27): 0.1 Cost posture, 0. The one-sentence thesis, 10. What this is NOT (guardrails, from AGENTS.md + your instincts), 1. What already exists (do not rebuild from zero), 2.1 MyAPI vs MyMCP, 2. The four layers (Codex's frame, made concrete), 3.1 Node types (unified), 3.2 Edge types (the missing piece) (+19 more)
+
+### Community 320 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.07
+Nodes (26): 09:54 | main, 10:34 | main, 10:39 | main, 11:39 | main, 17:40 | main, 18:15 | main, 2026-05-05, 2026-05-07 (+18 more)
+
+### Community 321 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.07
+Nodes (26): 00:40 | main, 06:16 | main, 06:21 | media, 06:24-07:22 | media-asset-manager, 15:30 | aqua-stone-studio, 2026-05-10, 21:39 | chore/gitignore-media, 21:55 | main (+18 more)
+
+### Community 322 - "State of Things — 2026-05-01"
+Cohesion: 0.07
+Nodes (26): 1\. Award-Winning Excellence, 2\. Services & Expertise (The "What we do"), 3\. Community & Ecology (The "Who we are"), "About Us" Content Pillars, Active workstreams, At a Glance, Conversation Identity, Graph-Driven Development — paused, downstream of MyAPI (+18 more)
+
+### Community 323 - "2026-03-19 - environment-context - 019d03bb-e1f87c2f1f.md"
+Cohesion: 0.07
+Nodes (26): 1. Get top 500 stories, 2. For each story, get item details (1 request per item), 3. Track: score velocity (score at 1hr, 6hr, 24hr), 4. Filter for "Show HN" + tech tool mentions, Assistant, Base URL: https://hacker-news.firebaseio.com/v0/, Copy environment template, Edit .env with your configuration (+18 more)
+
+### Community 324 - "Advanced Hook Use Cases"
+Cohesion: 0.07
+Nodes (27): Advanced Hook Use Cases, Audit Logging, Caching Validation Results, Conditional Hook Execution, Context-Aware Prompt Hooks, Dynamic Hook Configuration, Environment Variables, Hook Chaining via State (+19 more)
+
+### Community 325 - "Session Text"
+Cohesion: 0.07
+Nodes (27): Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+19 more)
+
+### Community 326 - "Google Business Profile Recovery — Water & Stone Landscapes LLC"
+Cohesion: 0.07
+Nodes (26): Action plan, Appeal evidence package (assembled), Authoritative current state (CSLB + SOS agree), Canonical business identity (DRAFT — must reconcile address/phone with Jason), Full timeline (live-verified via CSLB + SOS, 2026-05-13), Google Business Profile Recovery — Water & Stone Landscapes LLC, Headline finding, Key risks (+18 more)
+
+### Community 327 - "Dating Apps Push.md"
+Cohesion: 0.07
+Nodes (26): Ally the Neuroplasticity Snapback and Beanie Rocking Hottie 😳, Biographies, Bishes Posting Their Instas, Bumble, Feeld, Feeld Sun Dec 29th, 2024, Fri Dec 27th, 2024, Fri Jan 3rd, 2025 (+18 more)
+
+### Community 328 - "Ivycore.md"
+Cohesion: 0.07
+Nodes (26): Choking, Cum Play (see activities), Detachment + Pure-Self-Pleasure + Praise Degrade to Get Her into Subspace, Dom Phrases, Fri 2024-03-29, From Ivy Herself, Further Examples of Things I want to Do to Her, Giving Good Oral (+18 more)
+
+### Community 329 - "Pi ~ Raspberry Pi Headless Setup 4GB and 8GB 2026.md"
+Cohesion: 0.07
+Nodes (25): Install Homebrew, Installed Bun, Installed Tmux, OR [[Just Use Docker - it's installed and here's first steps]] :), [[02 Areas/Learning Pi's Linux file system]], ***1. Setup for SSD-SMALL***, 1) Update + Reboot, 2) If You're Not Using Tailscale (LAN IP) (+17 more)
+
+### Community 330 - "_send_message"
+Cohesion: 0.10
+Nodes (27): B9(), can_fallback_to_v3(), clear_message_timeout(), count_tokens(), estimate_tokens(), fallback_to_v3_and_retry(), get_message_timeout_ms(), _handle_message() (+19 more)
+
+### Community 331 - "AGENT TASK BOOK v1"
+Cohesion: 0.08
+Nodes (25): 0. Invocation Rule, 0. Invocation Rule, 1. Universal Task Packet, 1. Universal Task Packet, 2. Adapter Layer (Agent-Specific Wrappers), 2. Adapter Layer (Agent-Specific Wrappers), 4. Agent Routing Map, 4. Agent Routing Map (+17 more)
+
+### Community 332 - "Pi Harness — Claude Code Handoff"
+Cohesion: 0.08
+Nodes (26): 1. Run vault-inventory (first real-work packet), 2. Probe the relative traversal gap, 3. Fix cwd-guard to resolve relative paths before checking, 4. Begin scoping the first operational mission packet, audit-log.ts, cwd-guard.ts, Direct Pi output worth referencing, escape-test — cwd-guard blocking a real attempt (+18 more)
+
+### Community 333 - "Smart Context Builder"
+Cohesion: 0.08
+Nodes (26): Context item types, Copy to clipboard, HOW, incubator, links, Manage named contexts, "My bundle is too big", "My saved contexts list is messy" (+18 more)
+
+### Community 334 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.08
+Nodes (25): 01:30 | chore/gitignore-media, 10. Notes for the agent (you), 1. Mission (TL;DR), 2. Context, 3. Environment & pre-flight, 4. Output spec, 5. Pipeline, 6. Hard constraints (+17 more)
+
+### Community 335 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.08
+Nodes (25): 10:29 | main, 14:30-16:43 | main, 16:59 | main, 19:42 | main, 2026-05-11, Archive, Current recent.md, Identity Candidates (+17 more)
+
+### Community 336 - "Organizing Obsidian vault structure and graph view"
+Cohesion: 0.08
+Nodes (25): A Practical Normalization Pass, Concepts, Conversation Identity, For Each Portfolio, For Your SoloDeveloper Vault Specifically, `format` — How do I use it? (4 options only), [[GDDO - operator practice manual run checklist]], <https://miladfarazian.com/> (+17 more)
+
+### Community 337 - "on the Pi"
+Cohesion: 0.08
+Nodes (26): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, on the Pi (+18 more)
+
+### Community 338 - "Pi Extension Pattern Library"
+Cohesion: 0.08
+Nodes (26): P10. Event: Inject System Prompt, P11. Event: Transform User Input, P12. Custom UI: Select Dialog, P13. Custom UI: Timer-based Confirmation, P14. Custom UI: Widget, P15. State Persistence, P16. Branch-Resilient State, P17. Inter-Extension Communication (+18 more)
+
+### Community 339 - "2) LMN Discovery"
+Cohesion: 0.08
+Nodes (26): 1) Integration Goal, 2.1 What LMN Object Starts the Flow?, 2.2 LMN Identifiers, 2.3 LMN Customer Fields, 2.4 LMN Job Fields, 2.5 LMN Line Items, 2.6 LMN Totals and Money, 2.7 LMN Integration Shape (+18 more)
+
+### Community 340 - "Claude.md V1 - for General Work, Tailored to User"
+Cohesion: 0.08
+Nodes (25): 1. Think Before Coding, 2. Simplicity First, 3. Surgical Changes, 4. Goal-Driven Execution, 5. The Time Traveler Inversion (2026-04-29), Auto-Commit, Before Destructive Operations, ALWAYS Ask, Branch Discipline (+17 more)
+
+### Community 341 - "Comprehensive Ergonomic and Technical Analysis: Migrating the Dygma Raise from Bazecor to Native Kaleidoscope Firmware"
+Cohesion: 0.08
+Nodes (25): Advanced State Locking: One-Shot Modifiers and Sequential Execution, Advanced State Management with Meta-Keys, Biomechanical Imperatives and the Eradication of Simultaneous Chording, Comprehensive Ergonomic and Technical Analysis: Migrating the Dygma Raise from Bazecor to Native Kaleidoscope Firmware, Conclusion, Deep Functionality: AutoShift, CapsWord, and the Leader Key Dictionary, Dynamic Macro Generation on the Fly, Emulating Hardware: Advanced Mouse Control and Custom Dialing (+17 more)
+
+### Community 342 - "🖥️ PART 2: iTerm2-Specific Shortcuts"
+Cohesion: 0.08
+Nodes (25): [[03 Resources/iTerm2 Core Essentials Quick Version]], Control (you'll Use These daily), Cursor Movement, Deleting Text, Font & Display, History Navigation, iTerm2 Power Features, iTerm2 Specific (the Good stuff) (+17 more)
+
+### Community 343 - "🖥️ PART 2: iTerm2-Specific Shortcuts"
+Cohesion: 0.08
+Nodes (25): [[00 Inbox/iTerm2 Core Essentials Quick Version]], Control (you'll Use These daily), Cursor Movement, Deleting Text, Font & Display, History Navigation, iTerm2 Power Features, iTerm2 Specific (the Good stuff) (+17 more)
+
+### Community 344 - "MyAPI-rebuild — Implementation Plan"
+Cohesion: 0.08
+Nodes (23): 001 — Rebuild narrative recapture / durable handoffs pivot, Empirical Reality (AGENT ONLY), Narrative / Trajectory (SAB ONLY), Canonical direction, Execution + commit policy, Mental model (how the pieces fit), MyAPI-rebuild — Implementation Plan, Open (Sab decides) (+15 more)
+
+### Community 345 - "v3schema.py"
+Cohesion: 0.14
+Nodes (18): collect_suggestions(), _invalid_fields(), _is_wikilink(), _manual_text(), _missing_fields(), _pick_many(), _pick_one(), V3 normalize pass — fill missing/invalid schema fields, file-by-file.  UX model (+10 more)
+
+### Community 346 - "Heavy Compute / VM (vm-lab / biz → first-vm)"
+Cohesion: 0.08
+Nodes (25): 34. Draft a Client Email, 35. Summarize Project Status (smb-ops-hub), 36. Generate Invoice Line-Item Summary, 37. Competitive/Market Lookup, 38. Lead Follow-Up Reminder, 45. Morning Briefing Cron (ssd-big), 46. Site Health Monitor Cron (ssd-small), 47. Daily Git Summary Cron (saboors-macbook-air) (+17 more)
+
+### Community 347 - "Monitoring / Ops (ops → ssd-small)"
+Cohesion: 0.08
+Nodes (25): 15. Site Health Check (bonnydoonretreat.net), 16. Site Health Check (Multiple URLs), 17. System Resources (RAM, Disk - ssd-big), 18. CPU Temperature (ssd-small), 19. Process Check (obsidian-headless), 20. Log Tail (OpenClaw Gateway), 21. SSL Certificate Expiry Check (waterandstone.org), 22. DNS Resolution Check (saboorkc.dev) (+17 more)
+
+### Community 348 - "Pilot Program Strategy"
+Cohesion: 0.08
+Nodes (24): Bottom line, Capability fit for Bailey, Conversation Identity, Executive judgment, Executive judgment, Executive summary, Meeting script, Open questions and limits (+16 more)
+
+### Community 349 - "Obsidian Flavored Markdown Skill"
+Cohesion: 0.08
+Nodes (24): Callouts, Comments, Complete Example, Counts you asked about, Cross-ref structural payoff, Diagrams (Mermaid), Embeds, Footnotes (+16 more)
+
+### Community 350 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.08
+Nodes (24): 10:29 | main, 14:27 | main, Diagnosis, History search (Ctrl+R), How it differs from transcript rewind, Likely culprit, Proposed cleanup plan (no destructive action without your sign-off), Proposed plan (+16 more)
+
+### Community 351 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.08
+Nodes (24): 08:04 | work, 14:30 | lovable, 17:03 | SoloDeveloper, 18:47 | main, 2026-05-17, 2026-05-18, 23:15 | main, Archive (+16 more)
+
+### Community 352 - "Subagent-Driven Development"
+Cohesion: 0.08
+Nodes (24): Advantages, Example Workflow, Executing Plans, Handling Implementer Status, Integration, Integration, Model Selection, Overview (+16 more)
+
+### Community 353 - "Raw Conversation"
+Cohesion: 0.08
+Nodes (24): 1. The Methodology: "Expert to Authority", 1. The "Operations Specialist" vs. "The Rockstar", 2. Deliverables vs. Hourly: The "Value-Based" Shift, 2. What are the "Integrations"?, 3. Jay’s "Weakness" (The Recruiter Traps), 3. The Developer vs. Business Perspective, 4. How to Intersect with Him, 4. Why the High Trustpilot Scores? (+16 more)
+
+### Community 354 - "Session Text"
+Cohesion: 0.08
+Nodes (25): Assistant, Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count (+17 more)
+
+### Community 355 - "Session Text"
+Cohesion: 0.08
+Nodes (25): Assistant, Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count (+17 more)
+
+### Community 356 - "Session Text"
+Cohesion: 0.08
+Nodes (25): Assistant, Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count (+17 more)
+
+### Community 357 - "--Water and Stone.md"
+Cohesion: 0.08
+Nodes (19): Agenda, Beiley Meeting Prep 3.19.26, Related, Appeal Narrative — Water and Stone Landscapes LLC, Internal notes for Saboor (do NOT include in submission), SECTION 1 — Summary statement (~600 chars), SECTION 2 — Who we are (~1800 chars), SECTION 3 — Evidence of legitimate operation (~2000 chars, formatted as a list) (+11 more)
+
+### Community 358 - "OpenClaw Raspberry Pi Setup Finally.md"
+Cohesion: 0.08
+Nodes (24): 3.) Install and Config, Clone the Repo (Using the Official Merged repo), Configuration: Manual Mode, Delete the Old Config Files, Discord, Enter Directory, Finishing Setup Wizard, Install Dependencies (This Takes a Few Minutes on a Pi 4) (+16 more)
+
+### Community 359 - "Concepts/Developer Infrastructure.md"
+Cohesion: 0.08
+Nodes (13): Agentic AI, AI Tooling, Automation, Benchmarking, Developer Infrastructure, Notes in this area, Documentation, Dygma Raise (+5 more)
+
+### Community 360 - "Key CS Knowledge of the Books DDIA, SICP, and CSAPP.md"
+Cohesion: 0.08
+Nodes (24): 1. CS:APP, 1. Designing Data-Intensive Applications (Kleppmann), 2. SICP, 2. Structure And Interpretation of Computer Programs (SICP), 3. Computer Systems: A Programmer's Perspective (CS:APP), 3. DDIA, Essential Ideas You Learn, Essential Ideas You Learn (+16 more)
+
+### Community 361 - "Obsidian Frontmatter Taxonomy Audit (SoloDeveloper)"
+Cohesion: 0.08
+Nodes (24): 1) Inventory of Current Frontmatter Keys and Value Frequency, 2) Recommended Schema (separate Lifecycle from Content class), 3) Explicit Mapping Table (`format` -> New fields), 4) Edge-case Policy (reference docs/guides Active but Rarely edited), 5) Phased Migration Plan (with Dry-run + rollback), 6) Optional Lint Rules / Check-script Ideas, Bottom Line, Existing Special Case to Normalize (+16 more)
+
+### Community 362 - "zL"
+Cohesion: 0.09
+Nodes (25): add_ignore_pattern(), ax(), ch(), Dj(), eT(), ff(), fM(), get_progress_state() (+17 more)
+
+### Community 363 - "context_suggest_blocks"
+Cohesion: 0.09
+Nodes (25): build_named_context_item_payloads(), build_named_context_item_suggestions(), build_suggest_scope_items(), context_suggest_blocks(), context_suggest_contexts(), context_suggest_sources(), emit_info_event(), filter_suggestions() (+17 more)
+
+### Community 364 - "use_adapter"
+Cohesion: 0.10
+Nodes (25): clear_remove_pending(), excluded_file_paths(), exists_sync(), file_name(), file_path(), get_results(), has_excluded_patterns(), included_files() (+17 more)
+
+### Community 365 - "build_daily_active_corpus.py"
+Cohesion: 0.18
+Nodes (23): main(), materialize_markdown(), Path, Stable flat filename for Khoj (no path traversal)., Copy/hardlink active .md files into bundle_md_dir. Return materialized rows., _safe_bundle_name(), _should_skip(), write_summary() (+15 more)
+
+### Community 366 - "test_normalization_schema.py"
+Cohesion: 0.17
+Nodes (21): infer_primary_project(), infer_source_type(), infer_temporal_mode(), merge_v1_into_frontmatter(), Corpus v1 normalization schema.  Defines the reusable metadata vocabulary for v1, Return the v1 source_type for a corpus item., Default temporal_mode from source_type., Best-effort project label from path segments. (+13 more)
+
+### Community 367 - "2026-04-25 - pi-harness-handoff - 69ed4f2c-fb34798786.md"
+Cohesion: 0.08
+Nodes (23): 1. Create fresh minimal AGENTS.md tailored for your headless Raspberry Pi, 2. Copy the core brain files (SOUL, AGENTS, etc.), 2. Create a full backup of your entire OpenClaw state, 3. Copy skills + extensions (the valuable part), Conversation Identity, Copy all your skills and extensions (this is gold), Copy ALL your skills and extensions (this is the valuable stuff), Copy the core Markdown brain files (+15 more)
+
+### Community 368 - "2026-04-29 - migration-walkthrough-errors - 69f1888e-a186e8f69e.md"
+Cohesion: 0.08
+Nodes (23): 1. Create fresh minimal AGENTS.md tailored for your headless Raspberry Pi, 2. Copy the core brain files (SOUL, AGENTS, etc.), 2. Create a full backup of your entire OpenClaw state, 3. Copy skills + extensions (the valuable part), Conversation Identity, Copy all your skills and extensions (this is gold), Copy ALL your skills and extensions (this is the valuable stuff), Copy the core Markdown brain files (+15 more)
+
+### Community 369 - "<command-message>schedule</command-message>"
+Cohesion: 0.08
+Nodes (23): API Field Reference, Available MCP Connectors, <command-message>schedule</command-message>, CREATE a new routine:, Create body shape, Create Routine — Optional Fields, Create Routine — Required Fields, Cron Expression Examples (+15 more)
+
+### Community 370 - "Jules Batch Task Management"
+Cohesion: 0.08
+Nodes (23): Audit results, Batch Patterns, Checking and Pulling Results, Common Mistakes, Draft prompt, From a task file, From GitHub issues, Gemini-analyzed prioritization (+15 more)
+
+### Community 371 - "Jules Batch Task Management"
+Cohesion: 0.08
+Nodes (23): Audit results, Batch Patterns, Checking and Pulling Results, Common Mistakes, Draft prompt, From a task file, From GitHub issues, Gemini-analyzed prioritization (+15 more)
+
+### Community 372 - "Systematic Debugging"
+Cohesion: 0.08
+Nodes (23): About the SSD migration itself, Common Rationalizations, Find the missing Pi, I tried updating my raspberry pi 4 8gb ram to ssd, and then swapped out the 64GB, Overview, Phase 1: Root Cause Investigation, Phase 2: Pattern Analysis, Phase 3: Hypothesis and Testing (+15 more)
+
+### Community 373 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.08
+Nodes (23): 06:55 | main, 07:31 | main, 08:29 | main, 2026-05-09, Archive, Current recent.md, Identity Candidates, Input (+15 more)
+
+### Community 374 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.08
+Nodes (23): 00:04 | first-vm teardown + SSD backup, 00:32 | GCP buckets backup + billing discovery, 00:40 | GenAI subproject + budget setup, 02:05 | Agent-bus deployment & MyAPI portfolio prep, 2026-05-13, Archive, Current recent.md, Identity Candidates (+15 more)
+
+### Community 375 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.08
+Nodes (23): 11:00 | GBP recovery docs, 11:02 | feat/premium-media-library, 1. Drop the HTML in `public/`, 2. Update `vercel.json` to route around the SPA fallback, 3. Update `.vercelignore`, 4. Run the deploy, A few notes, For Jason specifically (+15 more)
+
+### Community 376 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.08
+Nodes (23): 11:30 | main, 19:48 | main, 20:42 | main, Archive, Current recent.md, Identity Candidates, Input, Output format (+15 more)
+
+### Community 377 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.08
+Nodes (23): 11:42 | feat/corpus-v1-normalization, 12:05 | feat/corpus-v1-normalization, 12:50 | feat/corpus-v1-normalization, 13:00-19:45 | feat/corpus-v1-normalization, 2026-05-20, 2026-05-21, Archive, Current recent.md (+15 more)
+
+### Community 378 - "Extracting Instagram video transcripts to Obsidian"
+Cohesion: 0.08
+Nodes (23): Blink + x-callback-url, the actual mechanics, Brave cookies — one flag, Conversation Identity, Devices and roles, Extracting Instagram video transcripts to Obsidian, Provenance, Raw Conversation, The cleaner architecture (+15 more)
+
+### Community 379 - "2026-05-13 - ssd-nvme-boot-failure-troubleshooting - 373b4728-b61ed124d0.md"
+Cohesion: 0.08
+Nodes (23): Also remove quiet splash so anything that does reach console gets logged, and check your router's connected devices for a new Pi MAC, Automatically load initramfs files, if found, Change BOOT_ORDER=0xf14 to BOOT_ORDER=0xf41, Clean up, Conversation Identity, Copy directly to clipboard (most common: ed25519), Disable initramfs — common rpi-clone footgun, cheap to revert (+15 more)
+
+### Community 380 - "2026-03-19 - environment-context - 019d03bb-df2f01ad32.md"
+Cohesion: 0.08
+Nodes (23): 1. Get top 500 stories, 2. For each story, get item details (1 request per item), 3. Track: score velocity (score at 1hr, 6hr, 24hr), 4. Filter for "Show HN" + tech tool mentions, Assistant, Base URL: https://hacker-news.firebaseio.com/v0/, Copy environment template, Edit .env with your configuration (+15 more)
+
+### Community 381 - "Session Text"
+Cohesion: 0.08
+Nodes (24): Assistant, Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count (+16 more)
+
+### Community 382 - "Proposed plan"
+Cohesion: 0.08
+Nodes (23): 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete, `explore_task` (+15 more)
+
+### Community 383 - "2026 Launchpad: Comprehensive AI-Assisted Action Plan"
+Cohesion: 0.08
+Nodes (24): 2026 Launchpad: Comprehensive AI-Assisted Action Plan, 🛠️ Active Projects & Tools, Bonny Doon Retreat (Vacation Rental Website), 💰 Budget & AI Access, Context for the AI (Jules / Gemini / Claude), **Core Needs across both Pis:**, Current Devices, Deliverable Format (+16 more)
+
+### Community 384 - "yt"
+Cohesion: 0.09
+Nodes (24): context_items(), DC(), eE(), fY(), get_context_items(), JM(), load_components_from_config(), load_from_data() (+16 more)
+
+### Community 385 - "process_embed_queue"
+Cohesion: 0.13
+Nodes (24): bind_once(), build_html2(), calculate_embed_coverage(), _calculate_embed_tokens_per_second(), collection_instance_name_from(), collection_key(), _emit_embedding_error(), format_collection_label() (+16 more)
+
+### Community 386 - "post_process20"
+Cohesion: 0.10
+Nodes (24): auth_token(), authenticated_smart_plugins_request(), build_oauth_storage_prefix(), build_onboarding_start_url(), convert_to_time_ago(), convert_to_time_until(), exchange_code_for_tokens(), fetch_plugin_file() (+16 more)
+
+### Community 387 - "VM Migration Sprint"
+Cohesion: 0.08
+Nodes (23): 1) Confirm the new VM is reachable, 2) On the new VM, prepare the directories, 3) Copy the repo and branch, 4) Copy the notes corpus, 5) Restore the service units, 6) Bring up the services, 7) Verify health, 8) Run the benchmark (+15 more)
+
+### Community 388 - "test_sanitization.py"
+Cohesion: 0.17
+Nodes (21): detect_noise(), normalize_headings(), normalize_stable_text(), normalize_stable_title(), normalize_whitespace(), Ensure proper markdown heading formatting (e.g. #Heading to # Heading)., Strip boilerplate/repeated footers/headers where identifiable., Normalize whitespace and newlines. (+13 more)
+
+### Community 389 - "MyAPI — Context Retrieval for AI Agents and Personal RAG"
+Cohesion: 0.09
+Nodes (22): Architecture, Author, Command Discipline, Conversation Identity, Core Components, Current Gaps and Roadmap, Deployment, License (+14 more)
+
+### Community 390 - """
+Cohesion: 0.09
+Nodes (22): - Directory Map, - Directory Map, File Ownership, Forward Path (what you own as operator), GDD - Pivot Return Route, GDD - Pivot Return Route, I saved this as two commits:, Practical Next Steps (+14 more)
+
+### Community 391 - "2026-04-26 - check-out-my-users-saboor-obsidian-solodeveloper-09-utilities-vault-sy - 407a23da-8d3b798cef.md"
+Cohesion: 0.09
+Nodes (22): After the Design, Anti-Pattern: "This Is Too Simple To Need A Design", Brainstorming Ideas Into Designs, Check out my: /Users/saboor/Obsidian/SoloDeveloper/09 Utilities/_Vault System/_V, Checklist, Important Notes, Important Notes, Important Notes (+14 more)
+
+### Community 392 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.09
+Nodes (22): 08:55 | main, 09:15 | SoloDeveloper, Diagnosis, History search (Ctrl+R), How it differs from transcript rewind, Likely culprit, Proposed cleanup plan (no destructive action without your sign-off), Proposed plan (+14 more)
+
+### Community 393 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (22): 04:39-12:15 | main→test/async-agents, 04:57 | main, 12:55-14:45 | chore/body-conventions, 2026-05-08, 2026-05-10, Archive, Current recent.md, Input (+14 more)
+
+### Community 394 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (22): 15:00 | main, 2026-05-17, Archive, Current recent.md, Identity Candidates, Input, Output format, Provenance (+14 more)
+
+### Community 395 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (22): 00:16 | docs/avatar-reflection-spec, 19:49 | main, 2026-05-22, 20:15 | main, 20:28 | docs/avatar-reflection-spec, Archive, Current recent.md, Input (+14 more)
+
+### Community 396 - "Finding before and after images for slider"
+Cohesion: 0.09
+Nodes (22): Conversation Identity, Feedback on your edits, Finding before and after images for slider, For the video hero specifically, My recommendation for your specific flow, On the 4-day window and Jason's travel, Overall feedback, Practical estimate for your 500 MB zip (+14 more)
+
+### Community 397 - "Session Text"
+Cohesion: 0.09
+Nodes (22): Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command (+14 more)
+
+### Community 398 - "Session Text"
+Cohesion: 0.09
+Nodes (23): Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+15 more)
+
+### Community 399 - "Saboor's Obsidian + Neovim Workflow"
+Cohesion: 0.09
+Nodes (14): Active Projects, Capture Workflows (All Set Up), Documentation, Feedback, GDAD Architecture, Multi-Vault, Neovim Config (Tested ✅), OpenClaw (+6 more)
+
+### Community 400 - "xAI Exact Agent Config Commands.md"
+Cohesion: 0.09
+Nodes (21): Create the New Specialized Agents (one-time), MISSION: Career-brand-check, MISSION: Daily-productivity-pulse, MISSION: Finance-monthly-budget-snapshot, MISSION: Finance-plan-validation, MISSION: Wellness-ergonomics-reminder, Missions - Specialized Life Agents (April 2026), Set Reliable Default Nodes + OpenRouter Models (+13 more)
+
+### Community 401 - "WAS - Claude LMN QBO Manual Pre-Automation Sync.md"
+Cohesion: 0.09
+Nodes (22): 1, 1, 2, 2, 3, 3, Don't Miss Getting Paid, Don't Miss Getting Paid (+14 more)
+
+### Community 402 - "Terminal Browsing - Lynx Links and NotebookLM CLI"
+Cohesion: 0.09
+Nodes (21): Capture and retrieve loop, Config files touched, Daily usage, Ghostty + tmux as the cockpit, Neovim as the workbench, and Obsidian as the memory layer, Mental model, Neovim docs bindings, Neovim note bindings, tmux bindings (+13 more)
+
+### Community 403 - "Agent Bus Rollout & Operations"
+Cohesion: 0.09
+Nodes (22): 1. Deployment summary (current state), 2. Starting a new bus-aware agent session, 3. Adding a third or fourth agent, 4. Debugging missed messages, 4a. Verify your `AGENT_ID`, 4b. Verify your `since` watermark, 4c. Check the bus is actually live, 4d. Tail the service logs (+14 more)
+
+### Community 404 - "Session Log — Neovim + Obsidian Environment Setup *4*"
+Cohesion: 0.09
+Nodes (22): 2026.02.23 Active Workstreams *1*, `daily-notes.lua` — Periodic Notes (Weekly / Monthly / Quarterly), Files Changed Today, Lazy UI Cheat Sheet (learned today), Mon Feb 23rd, 2026 - Plan/Reflect *2, 3*, `obsidian.lua` — The Core Vault Connection, Phase 1 — System Dependencies, Phase 2 — Neovim Core Settings (+14 more)
+
+### Community 405 - "2026.04.27.md"
+Cohesion: 0.09
+Nodes (22): 07:05 — Dict-as-Registry + Strategy: how dispatcher.py routes jobs without if/elif, 08:16 — 5 new postings, 08:33 — Audit + Dispatch, 09:30 — Harpoon File Mark & Quick Jump, 11:19 — 4 new postings, 13:16 — Python ABC + `@abstractmethod`: enforced interface contracts in the Triage pass system, 13:45 — Marks as Navigation Checkpoints, 14:16 — 4 new postings (+14 more)
+
+### Community 406 - "Vault DAG Analysis"
+Cohesion: 0.09
+Nodes (22): `area`, Associative graph (body wikilinks, for contrast), By `area` (top-level conceptual roots), Combined typed-edge graph, `concepts`, Floaters (no typed edges), Folder-restructure proposal, How to read this (+14 more)
+
+### Community 407 - "ensure_vec_index_runtime_state"
+Cohesion: 0.16
+Nodes (23): clear_collection_vec_index(), clear_collection_vec_index_dirty(), clear_pending_collection_vec_index_items(), clear_vec_index_rebuild_schedules(), clear_vec_index_runtime_state(), clear_vec_indices(), __destroy_into_raw(), ensure_vec_index_runtime_state() (+15 more)
+
+### Community 408 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (21): 07:57 | vault & infrastructure, 17:32 | main, 2026-05-05, Archive, Current recent.md, Identity Candidates, Input, Output format (+13 more)
+
+### Community 409 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (21): 00:30 | main, 00:39-02:37 | main, 03:40 | jules-ab/ingest, 2026-05-06, 2026-05-08, Archive, Current recent.md, Input (+13 more)
+
+### Community 410 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (21): 13:04 | infrastructure, 2026-05-14, 2026-05-15, 21:19 | main, 21:34-00:22 | main, Archive, Current archive.md, Current recent.md (+13 more)
+
+### Community 411 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (21): 00:57-01:11 | docs/avatar-reflection-spec, 01:09-01:17 | docs/avatar-reflection-spec, 03:00 | docs/avatar-reflection-spec, 2026-05-22, Archive, Current recent.md, Input, Output format (+13 more)
+
+### Community 412 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.09
+Nodes (21): 19:34 | main, 2026-05-21, 2026-05-22, Archive, Current recent.md, Identity Candidates, Input, Output format (+13 more)
+
+### Community 413 - "Or start normally"
+Cohesion: 0.09
+Nodes (22): Assistant, Assistant, Or start normally, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+14 more)
+
+### Community 414 - "Or start normally"
+Cohesion: 0.09
+Nodes (22): Assistant, Assistant, Or start normally, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+14 more)
+
+### Community 415 - "Or start normally"
+Cohesion: 0.09
+Nodes (22): Assistant, Assistant, Or start normally, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+14 more)
+
+### Community 416 - "[Feature Name] Implementation Plan"
+Cohesion: 0.09
+Nodes (22): Assistant, Assistant, [Feature Name] Implementation Plan, Task N: [Component Name], Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+14 more)
+
+### Community 417 - "[Feature Name] Implementation Plan"
+Cohesion: 0.09
+Nodes (22): Assistant, Assistant, [Feature Name] Implementation Plan, Task N: [Component Name], Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+14 more)
+
+### Community 418 - "--Portfolio.md"
+Cohesion: 0.09
+Nodes (17): Skip Premium Business, Notes in this project, Portfolio, Recent sessions, Portfolio Website Design, 🛠️ Technical Verification, 🚀 "The Resilient Architect" Transformation, Core Tech Stack (+9 more)
+
+### Community 419 - "--MyAPI.md"
+Cohesion: 0.09
+Nodes (11): Jules Prompt for 1st Pass, Recent sessions, Retrieval Benchmark v0, Retrieval Benchmark - New VM Baseline, Retrieval Benchmark - New VM Baseline, Retrieval Benchmark - New VM Baseline, Retrieval Benchmark - New VM Baseline, Retrieval Benchmark - New VM Baseline (+3 more)
+
+### Community 420 - "Understanding OpenClaw's cron, node loop and then a router and grep for Jules.md"
+Cohesion: 0.24
+Nodes (10): Related DevInfra Notes, Best Overall: VS Code + Remote SSH to the VM, Best Terminal Git UI: Lazygit, Good Lighter Alternative: GitUI, Related DevInfra Notes, On Mac, My Unfiltered Input, Output: (+2 more)
+
+### Community 421 - "Fallback Playbook - OpenClaw Reliability"
+Cohesion: 0.09
+Nodes (18): Exit Conditions, Fallback Playbook - OpenClaw Reliability, Principle, Recommended Default Fallback: Hybrid Mode, Trigger Conditions, Job Class Matrix (Mac + Big Pi + Small Pi), Matrix, Routing Rules (+10 more)
+
+### Community 422 - "Power User Sab Era Begins"
+Cohesion: 0.09
+Nodes (22): 1. GitHub & Project Sync, 2. Web Intelligence (The 'Playwright' Power), 3. Life Scheduling, 4. Making it "Always On" (Systemd), A Morning Life-Management Routine for Cline + Gemini 3.1, Assuming You Have `Nvm` or `Node` Installed, !/bin/bash, [[Blink Shell for VS Code Tunneling on iPad or iPhone]] (+14 more)
+
+### Community 423 - "FREE API KEYS YOU CAN GET RIGHT NOW.md"
+Cohesion: 0.09
+Nodes (20): 1. Google Gemini API (Your Best bet), 2. Groq API (Super fast), 3. OpenRouter Free Models, 4. DeepSeek API, 5. Together AI, 6. Hugging Face Inference API, 7. Anthropic Claude API (For students/builders), 8. OpenAI API (+12 more)
+
+### Community 424 - "Modular CSS Snippets for Obsidian"
+Cohesion: 0.09
+Nodes (21): 🎨 Color Schemes (Pick ONE), 🛠️ Customization, **CYBERPUNK L-SHAPE** 🔮, Dark Themes, 📁 File Organization, 🎯 HEADERS - NEW MODULAR SYSTEM!, 🎛️ How to Use, ⚠️ IMPORTANT: Header System Changes (+13 more)
+
+### Community 425 - "🔧 Bonus Coding-Specific Callouts"
+Cohesion: 0.09
+Nodes (21): Anchor, 🔧 Bonus Coding-Specific Callouts, Bug, Callout Variants, 🎯 Core Callouts (Your Requested Types), Custom Callouts Reference, Debug, Feature (+13 more)
+
+### Community 426 - "Vault DAG Analysis"
+Cohesion: 0.09
+Nodes (21): `area`, Associative graph (body wikilinks, for contrast), By `area` (top-level conceptual roots), Combined typed-edge graph, `concepts`, Floaters (no typed edges), Folder-restructure proposal, How to read this (+13 more)
+
+### Community 427 - "render_excluded_list"
+Cohesion: 0.11
+Nodes (22): _add_button(), _add_mute_button(), ah(), _build_fragment(), Bx(), callback(), CN(), ex() (+14 more)
+
+### Community 428 - "after_load"
+Cohesion: 0.13
+Nodes (22): after_load(), build_context_actions_menu(), build_menu(), clear_all(), create_button(), emit_source_opened(), get_help_url(), has_active_context_items() (+14 more)
+
+### Community 429 - "normalize_vault_schema_v4.py"
+Cohesion: 0.22
+Nodes (21): append_coverage_ledger(), apply_suggestion(), as_list(), build_frontmatter(), clean_status(), clean_type(), infer_from_path(), iter_markdown() (+13 more)
+
+### Community 430 - "test_api_enrich.py"
+Cohesion: 0.11
+Nodes (12): KhojClient, KhojUnavailableError, Wraps Khoj's HTTP search API., GET /api/search — returns list of raw result dicts., Any, Calls Gemini to produce a summary, doc_type classification, and tags         for, Exception, mock_enrich_side_effect() (+4 more)
+
+### Community 431 - "Exploring the Connections view"
+Cohesion: 0.10
+Nodes (21): A) Writing: ground a draft in your existing notes, B) Research: build a meaning-ranked reading trail, C) AI work: assemble grounded context fast, Connections displays (same loop, different surfaces), Copy as a list of links, Exploring the Connections view, Footer connections (Pro), Graph view (Pro) (+13 more)
+
+### Community 432 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (20): 16:00 | main, 2026-05-07, 2026-05-08, Archive, Current recent.md, Input, Output format, Provenance (+12 more)
+
+### Community 433 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (20): 04:54 | unknown, 07:22 | MyAPI portfolio hygiene & Pi handoff, Archive, Current archive.md, Current recent.md, Identity Candidates, Input, Output format (+12 more)
+
+### Community 434 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (20): 14:00 | main, 14:45 | main, 2026-05-11, Archive, Current archive.md, Current recent.md, Identity Candidates, Input (+12 more)
+
+### Community 435 - "Systematic Debugging"
+Cohesion: 0.10
+Nodes (20): Common Rationalizations, [Image #1] I was trying to change 4 keybindings in neovim / lazyvim, and the res, Overview, Phase 1: Root Cause Investigation, Phase 2: Pattern Analysis, Phase 3: Hypothesis and Testing, Phase 4: Implementation, Provenance (+12 more)
+
+### Community 436 - "Systematic Debugging"
+Cohesion: 0.10
+Nodes (20): Common Rationalizations, [Image #1] I was trying to change 4 keybindings in neovim / lazyvim, and the res, Overview, Phase 1: Root Cause Investigation, Phase 2: Pattern Analysis, Phase 3: Hypothesis and Testing, Phase 4: Implementation, Provenance (+12 more)
+
+### Community 437 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (20): 05:55 | chore/gitignore-media, 14:30 | research/gbp-recovery, 2026-05-14, Archive, Current recent.md, Input, Output format, Provenance (+12 more)
+
+### Community 438 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (20): 15:28 | main, 2026-05-15, 2026-05-18, Archive, Current recent.md, Input, Output format, Provenance (+12 more)
+
+### Community 439 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.10
+Nodes (20): 10:35 | unknown, 11:27 | unknown, ✅ Done in this session, Explicit Gemini API keys, Findings, Provenance, sb.info.you@gmail.com (credited account), 🚨 sbkchaudry@gmail.com (your active, card-charged account) (+12 more)
+
+### Community 440 - "Raw Conversation"
+Cohesion: 0.10
+Nodes (20): Conversation Identity, Creating a Separate Mac User Profile, Immediate steps to secure against NPM and PyPI malware, Provenance, 📋 Quick Priority Checklist, 📋 Quick Priority Checklist, Raw Conversation, 🔴 Step 1: Don't Revoke Anything Yet (+12 more)
+
+### Community 441 - "push, pull_request, issues, star, fork"
+Cohesion: 0.10
+Nodes (21): Assistant, push, pull_request, issues, star, fork, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+13 more)
+
+### Community 442 - "push, pull_request, issues, star, fork"
+Cohesion: 0.10
+Nodes (21): Assistant, push, pull_request, issues, star, fork, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+13 more)
+
+### Community 443 - "push, pull_request, issues, star, fork"
+Cohesion: 0.10
+Nodes (21): Assistant, push, pull_request, issues, star, fork, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+13 more)
+
+### Community 444 - "GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓"
+Cohesion: 0.10
+Nodes (21): Assistant, Assistant, Assistant, Clean split, GitHub → gddp-config → Settings → Deploy keys → Add key → read-only ✓, My Recommendation, Short answer, Tool Call: exec_command (+13 more)
+
+### Community 445 - "GDDP Operator Practice Checklist"
+Cohesion: 0.10
+Nodes (21): Checkpoints, Checkpoints, Commands, Commands, Common Inspection Commands, Core Questions, GDDP Operator Practice Checklist, Goal (+13 more)
+
+### Community 446 - "Extensions"
+Cohesion: 0.10
+Nodes (19): Assistant, Async factory functions, Available Imports, ctx.fork(entryId, options?), ctx.navigateTree(targetId, options?), ctx.newSession(options?), ctx.switchSession(sessionPath, options?), Error Handling (+11 more)
+
+### Community 447 - "ExtensionAPI Methods"
+Cohesion: 0.10
+Nodes (19): ExtensionAPI Methods, pi.appendEntry(customType, data?), pi.events, pi.exec(command, args, options?), pi.getActiveTools() / pi.getAllTools() / pi.setActiveTools(names), pi.getThinkingLevel() / pi.setThinkingLevel(level), pi.on(event, handler), pi.registerCommand(name, options) (+11 more)
+
+### Community 448 - "Networking Sprint Plan (Now -> Wednesday 6:00 PM)"
+Cohesion: 0.10
+Nodes (20): Big Pi (L2/L3), Constraint Snapshot, Day 0 (today / tonight), Day 1 (night shift-friendly), Day 2, Day 3, Day 4 (buffer before event), Day-by-Day Plan (+12 more)
+
+### Community 449 - "Level 1: Navigation & Quick Actions"
+Cohesion: 0.10
+Nodes (20): App Launching, Cheat Sheet, Configuration, Dev Workflow, Example Workflow, How It Works, Level 1: Navigation & Quick Actions, Level 2: App Launching & Windows (+12 more)
+
+### Community 450 - "Ghostty + Obsidian CLI Workflow"
+Cohesion: 0.10
+Nodes (19): Agent / Claude Code Integration, Combined Daily Workflow, Daily Notes & Quick Capture, Deep Work Session (Native Splits or Tmux), End of Day, Frontmatter / Status Tracking, Ghostty + Obsidian CLI Workflow, Ghostty Setup (Your Config) (+11 more)
+
+### Community 451 - "processNextBatch"
+Cohesion: 0.14
+Nodes (21): clearContent(), clearPendingHiddenStates(), clearRetryForPath(), clearRetryState(), clearRetryTimer(), flushRetries(), getClearFlags(), getContentType() (+13 more)
+
+### Community 452 - "Ne"
+Cohesion: 0.10
+Nodes (21): A3(), bO(), cA(), eE(), g3(), instance(), iO(), Ne() (+13 more)
+
+### Community 453 - "build_v4_owner_queue.py"
+Cohesion: 0.23
+Nodes (20): Namespace, as_list(), build_queue(), choose_duplicate_keeper(), duplicate_key(), infer_area(), infer_type(), is_wikilink() (+12 more)
+
+### Community 454 - "Swish Configuration and Usage"
+Cohesion: 0.10
+Nodes (20): 1) Core Control Layer, 2) Window Actions (Primary usage), 3) Tabs, 4) Arrow Hotkeys (Keyboard-driven control), 4) Mission Control integration, 5) Actual usage pattern, 5) Snapping / Layout (implicit from arrows + modifiers), 6) Minimal execution set (+12 more)
+
+### Community 455 - "Smart Chat API integration"
+Cohesion: 0.10
+Nodes (20): Context is first-class, Control what gets included next (exclude/include message pairs), Custom instructions (thread-level system prompt), Errors and retries (provider reality, surfaced in the UI), links, Open Smart Chat, Option 1: Select context manually (high precision), Option 2: Drag notes/files into the conversation (fastest) (+12 more)
+
+### Community 456 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (19): 04:38 | main, 2026-04-29 | main, 2026-04-30, Archive, Current archive.md, Current recent.md, Input, Output format (+11 more)
+
+### Community 457 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (19): 18:18 | main, 2026-05-06, 21:01 | main, Archive, Current archive.md, Current recent.md, Input, Output format (+11 more)
+
+### Community 458 - "Brainstorming Ideas Into Designs"
+Cohesion: 0.10
+Nodes (19): After the Design, Anti-Pattern: "This Is Too Simple To Need A Design", Brainstorming Ideas Into Designs, Checklist, Handoff to Pi — practical paths, I finally received the hand selected media Beiley and I want to know how to best, Key Principles, On the Pi (when you resume) (+11 more)
+
+### Community 459 - "STATE: MyAPI cleanup proposal (proposal only — no changes yet)"
+Cohesion: 0.10
+Nodes (19): 00:40 | GenAI subproject + budget setup, 01:11 | unknown, A. MOVE to `_archive/` (untracked / gitignored items — no git operations needed), B. MOVE into existing dirs (git-tracked → `git mv`, real commit), C. UNTRACK (`git rm --cached`, then optionally relocate), Commit plan (after approval), D. DELETE outright (truly disposable, regeneratable), E. ADD to `.gitignore` (+11 more)
+
+### Community 460 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (19): 05:39 | main, 14:45 | main, Archive, Current archive.md, Current recent.md, Input, Output format, Provenance (+11 more)
+
+### Community 461 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (19): 04:47 | main, 10:30 | main, 2026-05-17, Archive, Current archive.md, Current recent.md, Input, Output format (+11 more)
+
+### Community 462 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (19): 11:45 | main, 16:10 | main, 2026-05-17, Archive, Current archive.md, Current recent.md, Input, Output format (+11 more)
+
+### Community 463 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.10
+Nodes (19): 12:27 | main, Archive, Current recent.md, Input, Output format, Provenance, Recent, Recent (+11 more)
+
+### Community 464 - "Espanso malfunctioning despite minimal use"
+Cohesion: 0.10
+Nodes (19): Backup steps, Conversation Identity, Espanso malfunctioning despite minimal use, Honest caveat about the backup, Honest tradeoffs, If you still want to fix the Karabiner install, Memory comparison vs Raycast, One thing to check before you commit (+11 more)
+
+### Community 465 - "2026-04-26 - setting-up-direct-agent-communication-with-cmux - cddd6f19-a208914ec2.md"
+Cohesion: 0.10
+Nodes (19): 1. See what it actually returns, 2. If that errors out, try the alternate command, 3. And confirm jq is seeing JSON at all, Conversation Identity, In Claude's tmux pane, set the bus URL, Provenance, Raw Conversation, Run on Big Pi (via SSH or your existing tmux session there) (+11 more)
+
+### Community 466 - "V4 Schema Rules"
+Cohesion: 0.10
+Nodes (20): `area`, CLI Menu Target, `concepts`, `format`, `FormatPass`, Pass Changes, Product Goal, `project` (+12 more)
+
+### Community 467 - "V4 Schema Rules"
+Cohesion: 0.10
+Nodes (20): `area`, CLI Menu Target, `concepts`, `format`, `FormatPass`, Pass Changes, Product Goal, `project` (+12 more)
+
+### Community 468 - "V4 Schema Rules"
+Cohesion: 0.10
+Nodes (20): `area`, CLI Menu Target, `concepts`, `format`, `FormatPass`, Pass Changes, Product Goal, `project` (+12 more)
+
+### Community 469 - "GDDP Operator Practice Checklist"
+Cohesion: 0.10
+Nodes (20): Checkpoints, Checkpoints, Commands, Commands, Common Inspection Commands, Core Questions, GDDP Operator Practice Checklist, Goal (+12 more)
+
+### Community 470 - "Session Text"
+Cohesion: 0.10
+Nodes (20): Assistant, Assistant, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+12 more)
+
+### Community 471 - "Context Checkpoint Ritual.md"
+Cohesion: 0.10
+Nodes (18): During Session (the 5-min discipline), [[Emerging Agentic AI Workflow]], File System, Finally, what next Session Looks like, Handoff and Context Management Lives and Dies By, Handoff Template, Pre-session (10 Min, before You Open Claude Code), Questions to Answer *before* You Start (on Paper, Not with Claude) (+10 more)
+
+### Community 472 - "Master List — 30-Day Sprint"
+Cohesion: 0.10
+Nodes (18): [[Bailey Water & Stone Site]], Bucket 1 — Ship, Bucket 2 — Document & Broadcast, Bucket 3 — Substrate, Decision Log, Dev OS, [[GDDP]], How This Is Maintained (+10 more)
+
+### Community 473 - "Objective"
+Cohesion: 0.10
+Nodes (19): Each Session, **Focus Areas**, Focus Areas, Focus Areas, **Focus Areas**, Mock Rules, Objective, **Patterns To Drill** (+11 more)
+
+### Community 474 - "AI Command-Driven Operations"
+Cohesion: 0.10
+Nodes (19): AI Command-Driven Operations, Claude Operations (Default), Code & Error Analysis, Code & Error Analysis, Espanso Terminal Expansions, Gemini Operations (g-prefix), Giving Context Manually (headless tools), Image Workflow (+11 more)
+
+### Community 475 - "My Topology"
+Cohesion: 0.10
+Nodes (19): Active Repos (on Saboors-macbook-air, in ~/repos/), Agents (use These Exact names), Deliverables — Four Separate Sections in One Markdown File, Interaction Surfaces, Monitored Sites, My Role, OpenClaw's Role, My Topology, Nodes (use These Exact Names — Not placeholders) (+11 more)
+
+### Community 476 - "updateMetadataInfo"
+Cohesion: 0.17
+Nodes (20): bee(), ensureMetadataInfoListener(), ensureStatisticsInterval(), exportFailedMetadataReport(), generateMetadataInfoText(), generateStatisticsText(), getUXPreferences(), handleTabActivation() (+12 more)
+
+### Community 477 - "callback"
+Cohesion: 0.12
+Nodes (20): adapter_changed(), _add_button(), _add_mute_button(), _build_fragment(), callback(), model_changed(), _normalize_notice_key(), open_url() (+12 more)
+
+### Community 478 - "render2"
+Cohesion: 0.15
+Nodes (20): dispatch_btn_event_action(), dispatch_notice_action(), format_level_label(), get_default_notice_details(), get_default_notice_summary(), get_default_notice_title(), get_icon_ids(), get_milestone_notice_details() (+12 more)
+
+### Community 479 - "File-by-file Instructions"
+Cohesion: 0.10
+Nodes (19): CRITICAL RULES, Do NOT, File-by-file Instructions, Final Step, Jules Task: Modular Triage System — Fill In Scaffolded Package, Key files to reference (don't modify except as instructed), `passes/doctype.py` — 2 methods to implement, `passes/links.py` — 2 methods to implement (NEW) (+11 more)
+
+### Community 480 - "LLM Control Flow Insights"
+Cohesion: 0.11
+Nodes (18): Alternatives worth naming, Consequences, honest both ways, Conversation Identity, Four passes (tight restatement, to confirm I have it), Gate structure (confirming), Headline findings, LLM Control Flow Insights, One question back before we plan (+10 more)
+
+### Community 481 - "Smart Context Clipboard"
+Cohesion: 0.11
+Nodes (19): Copy an entire folder, Copy as text vs copy with media (Pro), Copy multiple selected notes, Copy the current note as context, Customize what gets copied, How media handling works, "Images/PDFs did not paste", links (+11 more)
+
+### Community 482 - "STATE: MyAPI cleanup proposal (proposal only — no changes yet)"
+Cohesion: 0.11
+Nodes (18): 07:22 | unknown, A. MOVE to `_archive/` (untracked / gitignored items — no git operations needed), B. MOVE into existing dirs (git-tracked → `git mv`, real commit), C. UNTRACK (`git rm --cached`, then optionally relocate), Commit plan (after approval), D. DELETE outright (truly disposable, regeneratable), E. ADD to `.gitignore`, F. UNSURE — please decide (+10 more)
+
+### Community 483 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.11
+Nodes (18): 08:40 | main, 08:42 | SoloDeveloper, Diagnosis, History search (Ctrl+R), How it differs from transcript rewind, Likely culprit, Proposed cleanup plan (no destructive action without your sign-off), Proposed plan (+10 more)
+
+### Community 484 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.11
+Nodes (18): 00:25 | unknown, 2026-05-10, Archive, Current archive.md, Current recent.md, Input, Output format, Provenance (+10 more)
+
+### Community 485 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.11
+Nodes (18): 06:49 | main, 06:52 | main, Active Plan: Persistent Journal Diagnostic, Constraints, Current Status (top of mind), EEPROM (already configured correctly), Hardware, Likely Failure Modes (rank-ordered) (+10 more)
+
+### Community 486 - ""Yeah, that tracks with what the Reddit post warns about. Here's what's likely h"
+Cohesion: 0.11
+Nodes (18): ✅ Done in this session, Explicit Gemini API keys, Findings, Provenance, sb.info.you@gmail.com (credited account), 🚨 sbkchaudry@gmail.com (your active, card-charged account), Session Identity, Session Text (+10 more)
+
+### Community 487 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.11
+Nodes (18): 14:38 | main, Archive, Current archive.md, Current recent.md, Input, Output format, Provenance, Recent (+10 more)
+
+### Community 488 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.11
+Nodes (18): 21:31 | main, Archive, Current archive.md, Current recent.md, Input, Output format, Provenance, Recent (+10 more)
+
+### Community 489 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.11
+Nodes (18): 2026-05-20, Archive, Current recent.md, Input, Output format, Provenance, Recent, Recent (+10 more)
+
+### Community 490 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.11
+Nodes (18): 06:51 | feat/corpus-v1-normalization, 2026-05-21, Archive, Current recent.md, Input, Output format, Provenance, Recent (+10 more)
+
+### Community 491 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.11
+Nodes (18): 2026-05-21, 23:01-01:27 | feat/corpus-v1-normalization, Archive, Current archive.md, Current recent.md, Input, Output format, Provenance (+10 more)
+
+### Community 492 - "Jules Batch Task Management"
+Cohesion: 0.11
+Nodes (18): Batch Patterns, Checking and Pulling Results, Common Mistakes, From a task file, From GitHub issues, Gemini-analyzed prioritization, Integration with NotebookLM MCP, Jules Batch Task Management (+10 more)
+
+### Community 493 - "MISSION: Fish Shell Migration Audit"
+Cohesion: 0.11
+Nodes (18): 00:57 | docs/avatar-reflection-spec, Action Plan, Action Plan, Conclusion, Current Status, MISSION: Fish Shell Migration Audit, PHASE 1: System Discovery (Silent Analysis), PHASE 2: The Handoff Report (Strict Output Rules) (+10 more)
+
+### Community 494 - "Why This Matters"
+Cohesion: 0.11
+Nodes (18): 1. The OpenClaw references look stale relative to your current setup, 2. "Python 3.9+" is technically true but socially stale, 3. The "suggestion layers vs agentic" framing is from ~2024, Conversation Identity, Finding 1 (README): Codex placement is now misleading, Finding 2 (correction I owe you): My ecosystem claim was wrong, For Engineers, Making the change (+10 more)
+
+### Community 495 - "Check what tools/capabilities are available on each node"
+Cohesion: 0.11
+Nodes (19): Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant, Assistant (+11 more)
+
+### Community 496 - "khoj-headless-engine"
+Cohesion: 0.11
+Nodes (19): Assistant, Assistant, khoj-headless-engine, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+11 more)
+
+### Community 497 - "NanoClaw Recon"
+Cohesion: 0.11
+Nodes (19): 11. Key Principles, Current Read, Fit For Our Stack, Install Surface, Money is Getting Stuck in Three Places, NanoClaw Recon, Objective, Practical Bar (+11 more)
+
+### Community 498 - "2026-05-05 - environment-context - 019df81e-48f6e5ed3b.md"
+Cohesion: 0.11
+Nodes (18): Build locally (uses development env vars by default), Build with production env vars, Deploy directly to production, Deploy from project root (creates preview URL), Deploy only the build output (no remote build), <environment_context>, Equivalent explicit form, Force a new deployment (skip cache) (+10 more)
+
+### Community 499 - "Session Text"
+Cohesion: 0.11
+Nodes (18): Assistant, Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count (+10 more)
+
+### Community 500 - "Pi Extensions — LLM Master Reference"
+Cohesion: 0.11
+Nodes (19): 5-Minute Quick Test, Document Map, Dynamic Model Injection, Examples, Hot Topics, Master Decision Trees, Master References (Read First), One-Line Directives (+11 more)
+
+### Community 501 - "LMN-QBO Field Discovery Checklist"
+Cohesion: 0.11
+Nodes (18): Capture Template, Current Source Notes from the Web, Discovery Checklist, Goal, LMN, LMN, LMN, LMN-QBO Field Discovery Checklist (+10 more)
+
+### Community 502 - "AI code problem solving pipeline.md"
+Cohesion: 0.16
+Nodes (13): Related DevInfra Notes, [[00 Inbox/Daily Loop Solves One Problem]], Related DevInfra Notes, Daily Execution Workflow, Related DevInfra Notes, Neotree Gives `filesystem` + Git Awareness, Related DevInfra Notes, Related DevInfra Notes (+5 more)
+
+### Community 503 - "**WEEK 4 — Stress Test & Decide**"
+Cohesion: 0.11
+Nodes (18): [[02 Areas/Career/Job Search 2026/2026-01 Interview Sprint/1-month Interview Sprint Jan 2026 Anchor|WEEK 1 — Get Presentable Fast]], [[02 Areas/Career/Job Search 2026/2026-01 Interview Sprint/Speedy Technical Mini Plan Jan 2026]], [[02 Areas/Career/Job Search 2026/2026-01 Interview Sprint/Week 1 of Get Presentable Fast]], Core Work Days (Tue–Fri), End-of-Month, **Interview Presence Reminders**, Projects / Career (2 days), **Projects / Career (2 days)** (+10 more)
+
+### Community 504 - "Snapshot"
+Cohesion: 0.11
+Nodes (18): Contact Points (allowed Vs banned), Gear Variable that Likely Worsened it, If it Flares Again (my protocol), Immediate Fix Checklist (desk), Input Mode Vs Rest Mode, Non-negotiables (48–72h Reset if Symptoms flare), Observations to Log next Time (so I Can Learn fast), Quick Diagnostics (to Identify the Culprit fast) (+10 more)
+
+### Community 505 - "SECTION 2 — Script 1: "Create Local Repo only" (no GitHub yet)"
+Cohesion: 0.11
+Nodes (18): Explanation, Explanation, Explanation, Explanation, Explanation, Explanation, Explanation, Make it Executable (+10 more)
+
+### Community 506 - "Agent Bus Smoke Test Plan"
+Cohesion: 0.11
+Nodes (18): Agent Bus Smoke Test Plan, Overall pass criteria, Step 0 — Sanity: bus is reachable, Step 10 — `GET /inbox` does NOT return messages addressed to others, Step 11 — `since` filter is strict-greater-than, Step 12 — Inbox is ordered ascending by `ts`, Step 13 — Inbox cap is 50 rows, Step 14 — Duplicate sends are accepted (no idempotency) (+10 more)
+
+### Community 507 - "Modular CSS Snippets for Obsidian"
+Cohesion: 0.11
+Nodes (18): **ARCTIC MINIMALIST** ❄️, 🎨 Color Schemes (Pick ONE), 🛠️ Customization, **CYBERPUNK DEVELOPER** 🔮, Dark Themes, 📁 File Organization, 🎛️ How to Use, 📦 Installation (+10 more)
+
+### Community 508 - "Warp AI: Reimagining the Terminal for the Agentic Era"
+Cohesion: 0.11
+Nodes (18): A Structured Phased Roadmap to Mastery, Agentic Development and Warp Dispatch, Automating Data Pipelines, Comparative Analysis of Shell Interpreters, Core Utilities and the Philosophy of "Everything is a File", Dotfile Management and Workflow Portability, Error Debugging and Recovery, Integrated Intelligence: Warp AI and Agent Mode (+10 more)
+
+### Community 509 - "2026.04.28.md"
+Cohesion: 0.11
+Nodes (18): 07:04 — SQLite Upsert: `ON CONFLICT DO UPDATE` vs the manual check-then-insert, 08:23 — 4 new postings, 08:38 — Audit + Dispatch, 12:15 — Telescope Grep: Search Text Across All Files, 13:20 — `@dataclass`: `field(default_factory=...)` and the mutable default trap, 14:15 — Harpoon's Menu: Edit Your Four Marks at Once, 14:21 — 3 new postings, 16:15 — Jumplist: Navigate Back and Forward Through Code Edits (+10 more)
+
+### Community 510 - "Engineer-Focused Plain-English Summary"
+Cohesion: 0.11
+Nodes (18): 1. Core Data Model, 2. Scoring Logic, 3. Noise Filtering, 4. Test with Synthetic Data, 5. Data Storage + History, A — Actions, Engineer-Focused Plain-English Summary, Engineer STAR-Style Summary (+10 more)
+
+### Community 511 - "Agent Handoff: Task + Project Management Integration for SoloDeveloper Vault"
+Cohesion: 0.11
+Nodes (18): Agent Handoff: Task + Project Management Integration for SoloDeveloper Vault, Current Vault Structure (confirmed), Key Files the Agent Will Likely Touch, Neovim Compatibility Requirement, Open Questions (agent should clarify with Saboor before proceeding), Phase 1 — Foundation (do first, unlocks everything), Phase 2 — Validation (do second), Phase 3 — Migration (after validation) (+10 more)
+
+### Community 512 - "_send_message"
+Cohesion: 0.16
+Nodes (19): can_fallback_to_v3(), clear_message_timeout(), fallback_to_v3_and_retry(), get_message_timeout_ms(), _handle_message(), _handle_message_result(), J_(), _post_message() (+11 more)
+
+### Community 513 - "Vr"
+Cohesion: 0.11
+Nodes (17): f3(), GE(), get_import_progress_state(), GQ(), K3(), kL(), Lh(), MQ() (+9 more)
+
+### Community 514 - "Gotchas — paths, env, files to skip"
+Cohesion: 0.11
+Nodes (18): Branch / push discipline, Current state (post-hygiene), Deployment (live), File-system trap (read this before grepping), Files to READ first — current state, Files to SKIP — stale Phase 1 (April 9–19) artifacts, Gotchas — paths, env, files to skip, HANDOFF — Pi Agent README Drafting Pass (+10 more)
+
+### Community 515 - "MyAPI — Context Retrieval for AI Agents and Personal RAG"
+Cohesion: 0.11
+Nodes (18): Architecture, Author, Command Discipline, Core Components, Current Gaps and Roadmap, Deployment, License, MyAPI — Context Retrieval for AI Agents and Personal RAG (+10 more)
+
+### Community 516 - "Inline connections"
+Cohesion: 0.11
+Nodes (17): 1. Hover to scan matches, 2. Preview before you commit, 3. Open the full list for the block, 4. Show inline connections only when you want them, Catch duplicates early, How it works, Inline connections, Link while you draft (+9 more)
+
+### Community 517 - "STATE: MyAPI cleanup proposal (proposal only — no changes yet)"
+Cohesion: 0.11
+Nodes (17): A. MOVE to `_archive/` (untracked / gitignored items — no git operations needed), B. MOVE into existing dirs (git-tracked → `git mv`, real commit), C. UNTRACK (`git rm --cached`, then optionally relocate), Commit plan (after approval), D. DELETE outright (truly disposable, regeneratable), E. ADD to `.gitignore`, F. UNSURE — please decide, Open decision for you (+9 more)
+
+### Community 518 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.11
+Nodes (17): 06:37 | main, Active Plan: Persistent Journal Diagnostic, Constraints, Current Status (top of mind), EEPROM (already configured correctly), Hardware, Likely Failure Modes (rank-ordered), Provenance (+9 more)
+
+### Community 519 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.11
+Nodes (17): 22:41 | main, Active Plan: Persistent Journal Diagnostic, Constraints, Current Status (top of mind), EEPROM (already configured correctly), Hardware, Likely Failure Modes (rank-ordered), Provenance (+9 more)
+
+### Community 520 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.11
+Nodes (17): 09:57 | main, Active Plan: Persistent Journal Diagnostic, Constraints, Current Status (top of mind), EEPROM (already configured correctly), Hardware, Likely Failure Modes (rank-ordered), Provenance (+9 more)
+
+### Community 521 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.11
+Nodes (17): 06:58 | main, A. Lazygit walkthrough — local merge of both branches into main, B. The PR alternative (don't merge locally — review on GitHub), Examples, Fix, How to use it, Mental model for the keys you'll use most, My recommendation for *this* moment (+9 more)
+
+### Community 522 - "2026-03-19 - environment-context - 019d03bb-2ff14ddfad.md"
+Cohesion: 0.11
+Nodes (17): 1. Get top 500 stories, 2. For each story, get item details (1 request per item), 3. Track: score velocity (score at 1hr, 6hr, 24hr), 4. Filter for "Show HN" + tech tool mentions, Base URL: https://hacker-news.firebaseio.com/v0/, Copy environment template, Edit .env with your configuration, edit graphs/<project-id>/project.yaml (+9 more)
+
+### Community 523 - "Verification Before Completion"
+Cohesion: 0.11
+Nodes (18): Common Failures, Key Patterns, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main (+10 more)
+
+### Community 524 - "Session Text"
+Cohesion: 0.11
+Nodes (18): Assistant, <environment_context>, How to Access Skills, Instruction Priority, Platform Adaptation, Provenance, Session Identity, Session Text (+10 more)
+
+### Community 525 - "Session Text"
+Cohesion: 0.11
+Nodes (18): Assistant, <environment_context>, How to Access Skills, Instruction Priority, Platform Adaptation, Provenance, Session Identity, Session Text (+10 more)
+
+### Community 526 - "BigPi: Sync + Cron + Retry Rollout"
+Cohesion: 0.11
+Nodes (17): 3a — Strip git pull/push from `pi-dispatch`, 3b — `flock` wrapper, 3c — systemd timer, 3d — Remove any existing cron entry, BigPi: Sync + Cron + Retry Rollout, Deliberately out of scope, Patch shape, Phase 1 — `obsidian-headless` on BigPi (+9 more)
+
+### Community 527 - "MyAPI Senior Engineering Mock Interview Prep Guide"
+Cohesion: 0.11
+Nodes (17): 🎯 Key Interview Talking Points, 🎯 Key Interview Talking Points, 🎯 Key Interview Talking Points, 🎯 Key Interview Talking Points, MyAPI Senior Engineering Mock Interview Prep Guide, 🎙️ Question 1: "Why build a custom Context Refinery instead of just using LlamaIndex or LangChain?", 🎙️ Question 2: "You used Khoj instead of raw pgvector or Pinecone. Why?", 🎙️ Question 3: "Walk me through your path-based normalization strategy. Why is it deterministic?" (+9 more)
+
+### Community 528 - "PP Guest Event.md"
+Cohesion: 0.11
+Nodes (17): Beiley Clearing Call, Clearing and Confirming Men, Flyer, Fri 2024-03-29 Update, Fri 2024-03-29 Update, Guest Event Context, Hobbs Call for Games, Ideas Around Food (+9 more)
+
+### Community 529 - "Jules Task: Expand OpenClaw PROMPT_BOOK.md"
+Cohesion: 0.11
+Nodes (17): 1. Quick Dev Tasks (codebot → mac-hands) — 12-15 Templates, 2. Monitoring / Ops (ops → small-pi) — 8-10 Templates, 3. Personal / Calendar / Life (main → big-pi) — 8-10 Templates, 4. Business / Client (biz → big-pi) — 5-8 Templates, 5. Mission Packets (structured async) — 5-8 Templates, 6. Jules Handoff Briefs — 5-8 Templates, 7. Cron Job Configs — 5-8 Templates, 8. Prompt Suffixes and Modifiers — Expand the Table (+9 more)
+
+### Community 530 - "Useful Git Commands"
+Cohesion: 0.11
+Nodes (17): Advanced Info, Basic Status & Changes, Branch Management, Commit History, File Information, Related Notes, Repository Info, Searching & Finding (+9 more)
+
+### Community 531 - "Dispatch Queue (all 29 subtasks)"
+Cohesion: 0.11
+Nodes (17): Definition of Done (for Each PR), Dispatch Queue (all 29 subtasks), Execution Modes, Global Prompt Header (prepend to Every Jules task), Jules Master Launcher — Santa Cruz Build Plan V2, Merge Discipline, Operator Shortcut, Safety Defaults (+9 more)
+
+### Community 532 - "openclaw-cli-power-user-guide.md"
+Cohesion: 0.11
+Nodes (17): === AGENT + NODE TARGETING ===, === AUTOMATION ===, Check vault file freshness — last modified time on vault root, === CONFIG ===, Confirm symlink is correct — should resolve to /work/state/openclaw/first-vm/, === DAILY USE ===, Direct command: confirm we're on the right machine, From Big Pi — confirm VM is visible and responsive (+9 more)
+
+### Community 533 - "Vision B Plan (Mac-Primary + Pi Remote Hands)"
+Cohesion: 0.11
+Nodes (17): 1) Goal, 2) Scope (what This Plan covers), 3) Definition of Done (DoD), 4) Architecture Rules (operating principles), 5) Execution Plan, 6) A-lite Upgrade Gate (optional, after evidence), 7) Risks + Mitigations, 8) Command Cheat Sheet (to Be validated/edited) (+9 more)
+
+### Community 534 - "Vision B Plan (Mac-Primary + Pi Remote Hands)"
+Cohesion: 0.11
+Nodes (17): 1) Goal, 2) Scope (what This Plan covers), 3) Definition of Done (DoD), 4) Architecture Rules (operating principles), 5) Execution Plan, 6) A-lite Upgrade Gate (optional, after evidence), 7) Risks + Mitigations, 8) Command Cheat Sheet (to Be validated/edited) (+9 more)
+
+### Community 535 - "Commands"
+Cohesion: 0.11
+Nodes (17): Command Tree, Commands, Global Flags, `jules`, Jules CLI — Complete Command Reference with Examples, `jules completion`, `jules help`, `jules login` (+9 more)
+
+### Community 536 - "Overview"
+Cohesion: 0.11
+Nodes (17): 1. The Core Concept, 1. The Core Concept, 2. How it Works (The Workflow), 2. How it Works (The Workflow), 3. Why it Fits My Goals, 3. Why it Fits My Goals, Implement "Safe Trigger" Logic, Implement "Safe Trigger" Logic (+9 more)
+
+### Community 537 - "Useful Git Commands"
+Cohesion: 0.11
+Nodes (17): Advanced Info, Basic Status & Changes, Branch Management, Commit History, File Information, Related Notes, Repository Info, Searching & Finding (+9 more)
+
+### Community 538 - "Vision B Plan (Mac-Primary + Pi Remote Hands)"
+Cohesion: 0.11
+Nodes (17): 1) Goal, 2) Scope (what This Plan covers), 3) Definition of Done (DoD), 4) Architecture Rules (operating principles), 5) Execution Plan, 6) A-lite Upgrade Gate (optional, after evidence), 7) Risks + Mitigations, 8) Command Cheat Sheet (to Be validated/edited) (+9 more)
+
+### Community 539 - "Jules Inbox Triage Brief"
+Cohesion: 0.11
+Nodes (17): Branch Naming, Context: What Just Happened, Core Trinity (required on every note), Deliverable, Empty/Placeholder Notes to Skip, Existing Folders in 02 Areas/, Existing Folders in 03 Resources/, How to Work (+9 more)
+
+### Community 540 - "V4 Vault Triage Handoff"
+Cohesion: 0.11
+Nodes (17): 1. Batch normalizer, 2. Owner-pass CLI, Canonical Files To Use, Current Coverage Snapshot, Current Reality, Mode A — mop up the 9 edge files, Mode B — run a focused owner-pass batch, Mode C — inspect the graph in Obsidian (+9 more)
+
+### Community 541 - "updateSettingsAfterRename"
+Cohesion: 0.14
+Nodes (18): aH(), migratePropertyMetadataAfterRename(), mutatePropertyMetadataRecords(), notifyPropertyKeyRenamed(), removePropertyKeyMetadataFields(), removePropertyKeyMetadataRecord(), removePropertyMetadataForDeletedKey(), removePropertyNodeMetadataFields() (+10 more)
+
+### Community 542 - "use_adapter"
+Cohesion: 0.15
+Nodes (18): exists_sync(), get_results(), has_excluded_patterns(), is_excluded(), list(), list_files(), list_files_recursive(), list_folders() (+10 more)
+
+### Community 543 - "context_to_md_tree"
+Cohesion: 0.15
+Nodes (18): absolute_path_to_file_href(), context_to_md_tree(), create_tree_node(), encode_file_path_segments(), ensure_dir_node(), ensure_path(), escape_markdown_link_text(), format_wikilink_target() (+10 more)
+
+### Community 544 - "context_to_md_tree"
+Cohesion: 0.15
+Nodes (18): absolute_path_to_file_href(), context_to_md_tree(), create_tree_node(), encode_file_path_segments(), ensure_dir_node(), ensure_path(), escape_markdown_link_text(), format_wikilink_target() (+10 more)
+
+### Community 545 - "parse_claude_session"
+Cohesion: 0.24
+Nodes (14): parse_claude_session(), Any, Reads a Claude Code JSONL session file and returns a dict     mapping to the Can, Walk the projects directory tree and parse all session JSONL files.     Returns, scan_claude_sessions(), create_temp_jsonl(), test_conversation_reconstruction(), test_custom_title() (+6 more)
+
+### Community 546 - "Jules Task: Expand OpenClaw PROMPT_BOOK.md"
+Cohesion: 0.12
+Nodes (17): 1. Quick Dev Tasks (codebot → mac-hands) — 12-15 Templates, 2. Monitoring / Ops (ops → small-pi) — 8-10 Templates, 3. Personal / Calendar / Life (main → big-pi) — 8-10 Templates, 4. Business / Client (biz → big-pi) — 5-8 Templates, 5. Mission Packets (structured async) — 5-8 Templates, 6. Jules Handoff Briefs — 5-8 Templates, 7. Cron Job Configs — 5-8 Templates, 8. Prompt Suffixes and Modifiers — Expand the Table (+9 more)
+
+### Community 547 - "3. Task Categories (Mapped to Your Repos)"
+Cohesion: 0.12
+Nodes (17): 3.1 Repo State Inspection, 3.2 Build / Execution Validation, 3.3 Code Intelligence, 3.4 GDDP System Tasks (Core System Layer), 3.5 Data / Benchmark Tasks, 3.6 System / Infra Tasks, 3.7 Obsidian / Knowledge Tasks, 3.8 Multi-Step / Mission Tasks (+9 more)
+
+### Community 548 - "EPOMAKER EK21 — SABOOR iPad+Code Layout Cheat Sheet"
+Cohesion: 0.12
+Nodes (16): Conversation Identity, EPOMAKER EK21 — SABOOR iPad+Code Layout Cheat Sheet, Layer 0 — Numpad, LAYER 0 — Numpad (Home Base), LAYER 1 — iPad/Mac Navigation, Layer 1 — iPad/Mac Navigation, Layer 2 — Vim/Terminal + Code, LAYER 2 — Vim/Terminal + Code Symbols (+8 more)
+
+### Community 549 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.12
+Nodes (16): 04:38 | main, 2026-04-29 | main, Current archive.md, Current recent.md, Input, Output format, Provenance, Rules (+8 more)
+
+### Community 550 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.12
+Nodes (16): 04:38 | main, 2026-04-29 | main, Current archive.md, Current recent.md, Input, Output format, Provenance, Rules (+8 more)
+
+### Community 551 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.12
+Nodes (16): 04:38 | main, 2026-04-29 | main, Current archive.md, Current recent.md, Input, Output format, Provenance, Rules (+8 more)
+
+### Community 552 - "You are a memory consolidation agent. Your job is mechanical compression — no cr"
+Cohesion: 0.12
+Nodes (16): 04:38 | main, 2026-04-29 | main, Current archive.md, Current recent.md, Input, Output format, Provenance, Rules (+8 more)
+
+### Community 553 - "2026-05-09 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - 860b9ada-3024400132.md"
+Cohesion: 0.12
+Nodes (16): 08:45 | SoloDeveloper, 08:50 | main, Important Notes, Important Notes, Important Notes, Per-Note Checklist (~60 Sec per note), Provenance, Session Identity (+8 more)
+
+### Community 554 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.12
+Nodes (16): 21:39 | chore/gitignore-media, 21:41 | main, Find files that`], Handoff to Pi — practical paths, On the Pi (when you resume), On this Mac (one command), Proposed workflow (will execute unless you redirect), Provenance (+8 more)
+
+### Community 555 - "2026-05-09 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - a30f5349-9f15cbcb22.md"
+Cohesion: 0.12
+Nodes (16): 08:36 | SoloDeveloper, 08:38 | main, Important Notes, Important Notes, Important Notes, Per-Note Checklist (~60 Sec per note), Provenance, Session Identity (+8 more)
+
+### Community 556 - "2026-05-09 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - ed8ef3e2-69298e1e1d.md"
+Cohesion: 0.12
+Nodes (16): 08:45 | SoloDeveloper, 08:51 | main, Important Notes, Important Notes, Important Notes, Per-Note Checklist (~60 Sec per note), Provenance, Session Identity (+8 more)
+
+### Community 557 - ""# Pi 4 NVMe USB Boot Troubleshooting — Handoff"
+Cohesion: 0.12
+Nodes (16): Active Plan: Persistent Journal Diagnostic, Constraints, Current Status (top of mind), EEPROM (already configured correctly), Hardware, Likely Failure Modes (rank-ordered), "# Pi 4 NVMe USB Boot Troubleshooting — Handoff, Provenance (+8 more)
+
+### Community 558 - ""# Pi 4 NVMe USB Boot Troubleshooting — Handoff"
+Cohesion: 0.12
+Nodes (16): Active Plan: Persistent Journal Diagnostic, Constraints, Current Status (top of mind), EEPROM (already configured correctly), Hardware, Likely Failure Modes (rank-ordered), "# Pi 4 NVMe USB Boot Troubleshooting — Handoff, Provenance (+8 more)
+
+### Community 559 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.12
+Nodes (16): 02:10 | feat/premium-media-library, 11:05 | GBP briefing deployment & client delivery, Find files that`], Handoff to Pi — practical paths, On the Pi (when you resume), On this Mac (one command), Proposed workflow (will execute unless you redirect), Provenance (+8 more)
+
+### Community 560 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.12
+Nodes (16): 11:56 | main, 1) Use preview instead of open, 20:41 | main, 2) Remap explorer toggle/focus, 3) Check your LazyVim keymaps, Common LazyVim fix, For Neo-tree specifically, If you want, I can give you the exact LazyVim config to: (+8 more)
+
+### Community 561 - "Workflow"
+Cohesion: 0.12
+Nodes (16): 1. Read the room (offline-interactive-pages), 2. Pick a theme, 3. Draft the prompt, 4. Copy to clipboard, 5. Open / focus the Lovable PWA, 6. Hand off, <command-message>lovable-burn</command-message>, Common mistakes (+8 more)
+
+### Community 562 - "OpenClaw vision-assisted browsing agent architecture"
+Cohesion: 0.12
+Nodes (16): 1. Strategic: is this the right bet?, 2. Tactical: if you *do* decide to move on this, 3. Technical: the vision-loop architecture itself, Conversation Identity, Draft response to BigClaw, One meta-observation, OpenClaw vision-assisted browsing agent architecture, Provenance (+8 more)
+
+### Community 563 - "Session Text"
+Cohesion: 0.12
+Nodes (17): Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command (+9 more)
+
+### Community 564 - "Practice Log Template"
+Cohesion: 0.12
+Nodes (17): Assistant, Next Improvement, Practice Log Template, Run Log, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+9 more)
+
+### Community 565 - "MyAPI Smart Retrieval: Architectural Audit & Developer's Debugging Guide"
+Cohesion: 0.12
+Nodes (16): 1. High-Level Architectural Map, 2. Codebase Deep-Dive: Key Modular Components, 3. How to Debug & Hunt Bugs (Step-by-Step), 4. Querying the Live VM (Remote Testing), 5. Senior Developer Takeaways, Check Service Status, Metadata Parser (`MetadataParser`), MyAPI Smart Retrieval: Architectural Audit & Developer's Debugging Guide (+8 more)
+
+### Community 566 - "--SocialXP.md"
+Cohesion: 0.12
+Nodes (11): Default-note, Prototype Walk-through and Micro-Design, How to Collaborate, Collaboration Model, My Role, Recent sessions, Status, Important Notes (+3 more)
+
+### Community 567 - "02 Areas/Zed Day 1 basic keyboard workflows picking up quick.md"
+Cohesion: 0.12
+Nodes (12): Dual Modifiers Timings, Related Keyboard Infrastructure Notes, Related Keyboard Infrastructure Notes, Related Keyboard Infrastructure Notes, The Obvious 4 + the 3 ontop (`cvb` and `nm,`), [[02 Areas/My shortcuts mapping system for keyboard shortcuts]], [Claude thread link](https://claude.ai/share/5efb84bd-8963-4fe7-ab5a-4950276f789c) And the Five Categories, Related Keyboard Infrastructure Notes (+4 more)
+
+### Community 568 - "Mission — BigPi + SmallPi Stabilization (No Messaging Beyond Telegram on BigPi)"
+Cohesion: 0.12
+Nodes (16): 1) Baseline Checks, 1) Health Check, 2) Ensure Persistent Node Service, 2) Keep Gateway Local-only + Rate-limited, 3) Ensure Node Service is Ready (enable, but Run Only as needed), 3) Keep Gateway Loopback-safe, 4) Prime Docs (control-plane repo), 4) Verify Channel State Only (no sends) (+8 more)
+
+### Community 569 - "Mission — BigPi + SmallPi Stabilization (No Messaging Beyond Telegram on BigPi)"
+Cohesion: 0.12
+Nodes (16): 1) Baseline Checks, 1) Health Check, 2) Ensure Persistent Node Service, 2) Keep Gateway Local-only + Rate-limited, 3) Ensure Node Service is Ready (enable, but Run Only as needed), 3) Keep Gateway Loopback-safe, 4) Prime Docs (control-plane repo), 4) Verify Channel State Only (no sends) (+8 more)
+
+### Community 570 - "Execution Topology V1"
+Cohesion: 0.12
+Nodes (16): 1) MacBook Air (Primary Hub), 2) Big Pi (Production Worker), 3) Small Pi (Sandbox Worker), Environment Overview, Execution Topology V1, Immediate Next Steps, Node Lifecycle Conventions (Current Version Notes), Operating Model (Hub-and-Spoke) (+8 more)
+
+### Community 571 - "AGENTS.md - Your Workspace"
+Cohesion: 0.12
+Nodes (16): AGENTS.md - Your Workspace, Every Session, External Vs Internal, First Run, Group Chats, Heartbeat Vs Cron: When to Use Each, 💓 Heartbeats - Be Proactive!, 💬 Know When to Speak! (+8 more)
+
+### Community 572 - "Obsidian Git (Mac) + Headless Pi Mirror Plan"
+Cohesion: 0.12
+Nodes (16): 1) Create Deploy Key on Pi, 2) SSH Config, 3) Clone Repo on Pi, 4) Optional: Sparse Checkout (only Selected folders), Architecture, Auto-refresh on Pi, Goal, Mac Setup (Obsidian Git plugin) (+8 more)
+
+### Community 573 - "2026 Launchpad: Phased Action Plan"
+Cohesion: 0.12
+Nodes (16): 1.1. Bonny Doon Retreat (The Flagship), 1.2. Raspberry Pi Infrastructure (The Foundation), 1.3. Workflow & Health, 2026 Launchpad: Phased Action Plan, 2.1. OpenClaw / Vault Dispatcher (Pi 4GB), 2.2. Market Sentinel Migration (Cloud), 2.3. Linux Skills, 3.1. Portfolio Website (+8 more)
+
+### Community 574 - "Untitled 4.md"
+Cohesion: 0.12
+Nodes (16): --- 1. Agent Dispatcher ---, --- 2. Vault Doctor ---, ============================================================, ============================================================, --- 3. Vault Keeper ---, --- 4. Launchpad 2026 ---, Before: Cd Agent-dispatcher, Before: Cd Agent-dispatcher (+8 more)
+
+### Community 575 - "AGENTS.md - Your Workspace"
+Cohesion: 0.12
+Nodes (16): AGENTS.md - Your Workspace, Every Session, External Vs Internal, First Run, Group Chats, Heartbeat Vs Cron: When to Use Each, 💓 Heartbeats - Be Proactive, 💬 Know When to Speak (+8 more)
+
+### Community 576 - "render_excluded_list"
+Cohesion: 0.15
+Nodes (17): _add_mute_button(), Bn(), _build_fragment(), callback(), CM(), getItems(), J0(), lm() (+9 more)
+
+### Community 577 - "callback"
+Cohesion: 0.14
+Nodes (17): _add_button(), _add_mute_button(), addSetting(), _build_fragment(), callback(), _normalize_notice_key(), off_entry(), once() (+9 more)
+
+### Community 578 - "Jules Task: Add Batch Gemini Enrichment Endpoint"
+Cohesion: 0.12
+Nodes (16): 1. New endpoint: `POST /enrich/batch`, 2. Rate limiting, 3. Input validation, 4. Register the endpoint, Current Architecture, Do NOT, EnrichmentService (`context_refinery/enrichment.py`), Existing endpoint: `POST /enrich` (+8 more)
+
+### Community 579 - "MyAPI Smart Retrieval: Architectural Audit & Developer's Debugging Guide"
+Cohesion: 0.12
+Nodes (16): 1. High-Level Architectural Map, 2. Codebase Deep-Dive: Key Modular Components, 3. How to Debug & Hunt Bugs (Step-by-Step), 4. Querying the Live VM (Remote Testing), 5. Senior Developer Takeaways, Check Service Status, Metadata Parser (`MetadataParser`), MyAPI Smart Retrieval: Architectural Audit & Developer's Debugging Guide (+8 more)
+
+### Community 580 - "1. Quick Dev Tasks"
+Cohesion: 0.12
+Nodes (16): 1. Quick Dev Tasks, BRANCH_DIFF_SUMMARY, BRANCH_MANAGEMENT_CHECK, BUILD_VERIFY, CODEBASE_PATTERN_SEARCH, COMMIT_MESSAGE_GENERATION, DEPENDENCY_AUDIT, GIT_DIFF_SUMMARY (+8 more)
+
+### Community 581 - "MagSafe Stand Solutions"
+Cohesion: 0.12
+Nodes (15): Best Current Match, Conversation Identity, entity["turn0product0","KraftGeek MagStand Magnetic Selfie Tripod"], entity["turn0product10","Spigen.com Tripod Selfie Stick"], entity["turn0product13","JustTap Magnetic Phone Tripod"], entity["turn0product1","MA60 Foldable Magnetic Phone Tripod"], entity["turn0product1","MA60 Foldable Magnetic Phone Tripod"], entity["turn0product7","Omoton Tp03 Ultra-Slim MagSafe Tripod"] (+7 more)
+
+### Community 582 - "Raspberry Pi SSD Setup"
+Cohesion: 0.12
+Nodes (15): 0. State snapshot (so you can verify after boot), 1. Pre-swap (do these on BigPi *before* powering down), 2. Connect the SSD enclosure via USB. Confirm device name:, 3. Clone, 4. Power down + physical swap, 5. First-boot verification, 6. Then: old SD → SmallPi (separate operation, do later), 7. Rollback (if anything goes wrong) (+7 more)
+
+### Community 583 - "App Ownership and Export"
+Cohesion: 0.12
+Nodes (16): App Ownership and Export, Conversation Identity, decisions, incubator, links, next actions, next decisions, page content (+8 more)
+
+### Community 584 - "2026-05-11 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - e4c498ac-be95f2a399.md"
+Cohesion: 0.12
+Nodes (15): 10:13 | main, Important Notes, Important Notes, Important Notes, Per-Note Checklist (~60 Sec per note), Provenance, Session Identity, Session Text (+7 more)
+
+### Community 585 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.12
+Nodes (15): 14:15 | first-vm, 14:15 | first-vm, 18:30 | first-vm, 18:30 | first-vm, 22:10 | unknown, 22:17 | unknown, 22:17 | unknown, 22:39 | gcp-billing (+7 more)
+
+### Community 586 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.12
+Nodes (15): 06:49 | main, 06:52 | main, 06:58-07:04 | main, 06:58 | main, 07:04 | main, 07:09-07:24 | main, 07:09 | main, 07:12 | main (+7 more)
+
+### Community 587 - "MISSION: Fish Shell Migration Audit"
+Cohesion: 0.12
+Nodes (15): 23:06 | main, Action Plan, Action Plan, Conclusion, MISSION: Fish Shell Migration Audit, PHASE 1: System Discovery (Silent Analysis), PHASE 2: The Handoff Report (Strict Output Rules), Provenance (+7 more)
+
+### Community 588 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.12
+Nodes (15): 03:20 | main, Bucket-by-bucket read, Draft Proposal — Backlog Slate + Format, File format (proposed), Idea slate (10 entries, ~2 weeks of burns), Pre-chat read, Provenance, Question 1 of ~3: Where does the backlog file live? (+7 more)
+
+### Community 589 - "You are implementing Tasks 1-5 of a plan for adding a `dev-journal note` subcomm"
+Cohesion: 0.12
+Nodes (15): Architectural context, Before you begin, Provenance, Report back, Session Identity, Session Text, Task 1: Writer helper — `append_to_note`, Task 2: Resolver — `resolve_note_path` (+7 more)
+
+### Community 590 - "2026-05-07 - claude-web-versus-desktop-performance-and-optimization - 1f75e006-cac53525ab.md"
+Cohesion: 0.12
+Nodes (15): Better routing options for Vowen's AI cleanup, Claude web versus desktop performance and optimization, Conversation Identity, iPad + Universal Clipboard, Memory triage for your 8GB push, My honest read, On the laptop upgrade, On the Pi-as-Whisper-server idea (+7 more)
+
+### Community 591 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.12
+Nodes (16): add node files to graphs/<project-id>/nodes/, Assistant, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+8 more)
+
+### Community 592 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.12
+Nodes (16): add node files to graphs/<project-id>/nodes/, Assistant, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+8 more)
+
+### Community 593 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.12
+Nodes (16): add node files to graphs/<project-id>/nodes/, Assistant, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+8 more)
+
+### Community 594 - "on the Pi"
+Cohesion: 0.12
+Nodes (16): Assistant, Assistant, Assistant, Assistant, on the Pi, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+8 more)
+
+### Community 595 - "Core Rules"
+Cohesion: 0.12
+Nodes (16): 10. Runtime state is not product truth, 1. Do not invent missing facts, 2. The graph is the source of truth, 3. One job, one target outcome, 4. Constraints are first-class, 5. Read before write, 6. Show evidence for claims, 7. Required artifacts are part of done (+8 more)
+
+### Community 596 - "Antigravity Workflows"
+Cohesion: 0.12
+Nodes (16): Antigravity Workflows, Implementation Gate, Inputs, Output, Planning Standard, Review Rule, Steps, Steps (+8 more)
+
+### Community 597 - "Saboor Neovim Field Guide"
+Cohesion: 0.12
+Nodes (15): Add A New Leaf, <environment_context>, Explorer, Explorer Micro-Map, File Picker, Files, High-Frequency Leaves, Orient (+7 more)
+
+### Community 598 - "-Users-saboor-repos-MyAPI/memory/MEMORY.md"
+Cohesion: 0.12
+Nodes (7): How to apply, Rule 1: Default workspace, not services, Rule 2: Don't double down on a wrong assumption, Corpus, Current VM (as of 2026-04-18), Old VM (offline), Services
+
+### Community 599 - "Pi Extension Architecture (LLM Reference)"
+Cohesion: 0.12
+Nodes (16): 10. File Mutation Safety (Parallel Tools), 11. Decision Trees, 12. Quick Import Map, 1. The Extension as a Pure Function, 2. Execution Model: Event-Driven Registry, 3. ExtensionAPI: Capability Registry, 4. ExtensionContext: What Handlers Receive, 5. Event Semantics (Exact Behavior) (+8 more)
+
+### Community 600 - "Pi Extension Anti-Patterns"
+Cohesion: 0.12
+Nodes (16): A10. Calling Command-Only Methods from Event Handlers, A11. Ignoring `signal` in Long-Running Tools, A12. Using `details` Inconsistently for State Reconstruction, A13. Loading Extensions from Relative Paths Without Resolution, A14. Using `renderShell: "self"` Unnecessarily, A15. Not Checking Model Availability Before Switching, A1. Calling Runtime Actions During Registration, A2. Using `custom()` in RPC Mode (+8 more)
+
+### Community 601 - "Water & Stone: Game Plan & Next Steps"
+Cohesion: 0.12
+Nodes (15): Phase 1: Getting Set Up & 1099 Stuff, Phase 1: Getting Set Up & 1099 Stuff, Phase 1: Getting Set Up & 1099 Stuff, Phase 2: The Website Overhaul, Phase 2: The Website Overhaul, Phase 2: The Website Overhaul, Phase 3: The LMN & QuickBooks "Holy Grail", Phase 3: The LMN & QuickBooks "Holy Grail" (+7 more)
+
+### Community 602 - "Fallback Playbook - OpenClaw Reliability"
+Cohesion: 0.12
+Nodes (13): Exit Conditions, Fallback Playbook - OpenClaw Reliability, Principle, Recommended Default Fallback: Hybrid Mode, Trigger Conditions, Job Class Matrix (Mac + Big Pi + Small Pi), Matrix, Routing Rules (+5 more)
+
+### Community 603 - "Santa Cruz Smart Automations — Build Plan V2"
+Cohesion: 0.12
+Nodes (15): Dependency Map, Execution Timeline, Phase 1 — Jason's Live Review System, Phase 2 — Lead Capture for Jason, Phase 3 — Sales Tooling for Future Clients, Pre-Task Blockers (do outside Jules), Santa Cruz Smart Automations — Build Plan V2, Task 3 — Review Engine `SEQUENTIAL` (+7 more)
+
+### Community 604 - "Prompting as Route Selection, Not Magic"
+Cohesion: 0.12
+Nodes (15): A more precise mental model, Better reasoning paths, Core idea, Fast rule of thumb, One-line takeaway, Prompting as Route Selection, Not Magic, Role cosplay, Role routing (+7 more)
+
+### Community 605 - "Vault.md"
+Cohesion: 0.12
+Nodes (10): Knowledge Management, Life, Notes in this area, Notes in this area, Personal Growth, Notes in this area, Private, Vault Normalization (+2 more)
+
+### Community 606 - "Searching Basics / Re-uses"
+Cohesion: 0.12
+Nodes (15): Combined Filters and or Not, Comments, Editing, Examples, Filters, Getting Explanations, Getting Started, Global Queries / Presets / Query File Defaults (+7 more)
+
+### Community 607 - "Files Kept for Review"
+Cohesion: 0.12
+Nodes (15): `2026 Tasks Queries Presets and Syntax.md`, `Ergonomics - Nerve Safe Left Hand Typing Protocol.md`, Files Kept for Review, `First weekend new NA checklist and routine.md`, `Frictionless LinkedIn 2026 Update.md`, `Ghostty Final Switch Plus Copilot for Terminal help and Aider to be dev-ready.md`, `Identify the smallest consistent action that moves your key project forward each day.md`, Inbox Canonical-Dupes Cleanup — 2026-05-08 (+7 more)
+
+### Community 608 - "zn"
+Cohesion: 0.13
+Nodes (16): aG(), dims(), eG(), hD(), hw(), jd(), nG(), pD() (+8 more)
+
+### Community 609 - "Batch run snapshot"
+Cohesion: 0.12
+Nodes (15): Batch run snapshot, Category labels, Corpus v1 live categorization run - 2026-05-05, Q1, Q10, Q1 - Graph-driven development core concept, Q2, Q2 - Bounded GDDP execution (+7 more)
+
+### Community 610 - "Benchmark readiness plan"
+Cohesion: 0.12
+Nodes (15): 1. Freeze v0, 2. Build the v1 eval set from observed failures, 3. Build a corpus normalizer CLI, 4. Add conversation viewer and approval workflow, 5. Normalize routing after the data exists, Benchmark contract, Benchmark readiness plan, Canonical metadata (+7 more)
+
+### Community 611 - "Data Source"
+Cohesion: 0.12
+Nodes (15): 1. Create `context_refinery/adapters/codex.py`, 2. Create a batch scanner function, 3. Add API endpoint, 4. Tests, `commands.jsonl`, Data Source, Do NOT, Jules Task: Codex CLI Session Adapter (+7 more)
+
+### Community 612 - "2026-04-23 - swish-configuration-and-usage - 69e9930d-9438e519b1.md"
+Cohesion: 0.13
+Nodes (14): 2) Windows (core window actions), 3) Tabs, 4) Screens (multi-monitor routing), 5) Apps (dock + app-level control), 6) Menubar (global system layer), 7) Mission Control, 8) Actual operating flow, 9) Minimal execution set (+6 more)
+
+### Community 613 - "Quick Dev Tasks (codebot → saboors-macbook-air)"
+Cohesion: 0.13
+Nodes (15): 10. Dependency Audit Vulnerabilities (smb-ops-hub), 11. Git Commit Message (dev-journal), 12. Branch Management (smb-ops-hub), 13. Search Codebase (vault-doctor), 14. Check for TODO/FIXME Items (gddp-config), 1. Git Status Check (smb-ops-hub), 2. Git Log Summary (opclaw), 3. Git Diff Summary (My_DevInfra) (+7 more)
+
+### Community 614 - "Quick Dev Tasks (codebot → saboors-macbook-air)"
+Cohesion: 0.13
+Nodes (15): 10. Dependency Audit Vulnerabilities (smb-ops-hub), 11. Git Commit Message (dev-journal), 12. Branch Management (smb-ops-hub), 13. Search Codebase (vault-doctor), 14. Check for TODO/FIXME Items (gddp-config), 1. Git Status Check (smb-ops-hub), 2. Git Log Summary (opclaw), 3. Git Diff Summary (My_DevInfra) (+7 more)
+
+### Community 615 - "Bird Feeder Repair Solutions"
+Cohesion: 0.13
+Nodes (14): Bird Feeder Repair Solutions, Can you reuse the existing hook?, Conversation Identity, Final shape (this is the whole system), Important clarifications, Provenance, Quick answer to your instinct, Raw Conversation (+6 more)
+
+### Community 616 - "LazyVim Explorer Behavior Fixes"
+Cohesion: 0.13
+Nodes (14): 1) Use preview instead of open, 2) Remap explorer toggle/focus, 3) Check your LazyVim keymaps, Common LazyVim fix, Conversation Identity, For Neo-tree specifically, If you want, I can give you the exact LazyVim config to:, LazyVim Explorer Behavior Fixes (+6 more)
+
+### Community 617 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.13
+Nodes (14): 08:36 | SoloDeveloper, 08:36 | SoloDeveloper, 08:42 | SoloDeveloper, 08:42 | SoloDeveloper, 08:45-09:48 | SoloDeveloper, 08:45 | SoloDeveloper, 09:15 | SoloDeveloper, 09:48 | SoloDeveloper (+6 more)
+
+### Community 618 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.13
+Nodes (14): 06:15 | feat/premium-media-library, Provenance, Remaining tasks (all blocked on Chrome), Session Identity, Session Text, Strategic recommendation that came out of the recon, The 5-phase plan, The reality check (worth saying before we sprint) (+6 more)
+
+### Community 619 - "Can you help me implement this? ---------> What you’re seeing is mostly **expect"
+Cohesion: 0.13
+Nodes (14): 1) Use preview instead of open, 2) Remap explorer toggle/focus, 3) Check your LazyVim keymaps, Can you help me implement this? ---------> What you’re seeing is mostly **expect, Common LazyVim fix, For Neo-tree specifically, If you want, I can give you the exact LazyVim config to:, Practical recommendation (+6 more)
+
+### Community 620 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.13
+Nodes (14): 09:43 | feat/corpus-v1-normalization, 21:54 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?) (+6 more)
+
+### Community 621 - "You are reviewing whether a Python implementation matches its specification. Rea"
+Cohesion: 0.13
+Nodes (14): CRITICAL: Verification process, Known acceptable deviations (DO NOT flag these), Provenance, Report, Session Identity, Session Text, Task 1: `append_to_note` in `src/dev_journal/writer.py`, Task 2: `default_note_folder` + `resolve_note_path` in `src/dev_journal/resolver.py` (+6 more)
+
+### Community 622 - "Building a personal AI coding agent from leaked harness techniques"
+Cohesion: 0.13
+Nodes (14): 1. Permission classifier via "critic" side-query (1–2 days), 2. Sub-agent fork for "explore without polluting context" (2–3 days), 3. Atomic prompt compiler (3–5 days), 4. Multi-model routing (1–2 days, do after #1), 5. Magic docs (low priority — when bored), Building a personal AI coding agent from leaked harness techniques, Conversation Identity, Provenance (+6 more)
+
+### Community 623 - "Photo inventory curation for Bailey demo"
+Cohesion: 0.13
+Nodes (14): 3 questions before I go auto, 3 questions before I go auto, Conversation Identity, Implications for the pipeline, Implications for the pipeline, Photo inventory curation for Bailey demo, Plan of action, Plan of action (+6 more)
+
+### Community 624 - "VM fine-tuning vs deterministic routing tradeoffs"
+Cohesion: 0.13
+Nodes (14): 1. The VM Fine-Tuning Route, 1. What We Tried Initially, 2. The Hybrid Router Route (Our Current State), 2. What Failed (The Baseline Analysis), 3. How We Addressed It (The Deterministic Hybrid Router), 4. JAX Fine-Tuning Trial & Trade-Offs, 5. Branch State, Conversation Identity (+6 more)
+
+### Community 625 - "2026-05-05 - environment-context - 019df7d9-b70d164407.md"
+Cohesion: 0.13
+Nodes (14): Assistant, Assistant, Assistant, In app browser:, In app browser:, In app browser:, In app browser:, In app browser: (+6 more)
+
+### Community 627 - "Failure-Mode Audit v1: Enforcement Map (Steps 1-2 only)"
+Cohesion: 0.13
+Nodes (14): 10. Host/network identity facts stale or ambiguous, 1. Wrong locus / over-expanded repair path, 2. Side-effect attempted while user is still deciding, 3. Shell command construction brittle under zsh/globs, 4. Clarification UI loses the user's actual context, 5. Viewport-hostile output, 6. Duplicate final answer delivery, 7. Reasoning/thinking leakage into user-visible transcript (+6 more)
+
+### Community 628 - "Jules Prompts for SC Automation.md"
+Cohesion: 0.13
+Nodes (13): Jules Prompt 1 — SC-03A (Comms Libs + Env docs), Jules Prompt 2 — SC-08 (Schema + migration), Jules Prompt 3 — SC-07A (Reviews UI skeleton), Jules Prompt 4 — SC-05A (/api/reviews/send), Jules Prompt 5 — SC-05B (/remind, /complete, GET, Jules Prompt 6 — SC-06A (process-reminders +, Jules Prompt 7 — SC-07B (UI Wiring + actions), Jules Prompt 8 — SC-09 + Verify (edge Cases + QA (+5 more)
+
+### Community 629 - "BDSM Dom Behaviors and Phrases.md"
+Cohesion: 0.13
+Nodes (14): Are You Thinking? Stop Thinking and Bounce, Asking Her what She is (answer: Good girl), Cock Slut, Do You like Being a Good Girl, Dont touch Yourself, Holes Dont Deserve Pleasure, Full of Cock, Good Girls Take it, Not Yet, close Your Mouth Slut (+6 more)
+
+### Community 630 - "I am an dependent addict with arrested development, she is a transgender slut with obsession of validation.md"
+Cohesion: 0.13
+Nodes (14): [[02 Areas/Confidential/Relationships/Grieving the loss of someone with poor memory]], [[02 Areas/Confidential/Relationships/Twinks weird her out but they remind me of her]], After a Period of Healing, Genuine, positive… Make Sure to BULLSHIT Her properly… [[02 Areas/Confidential/Relationships/Working on your bullshit 2025]], Begin Being Responsive and Cool, Send the Occasional Meme, but Do not Ever Expect Her to Respond in time (she's a Slut Doing Slut things), Do not Delude Yourself into Stopping Pursuing other Women – She's a Fucking Slut, Do not Forget She's also not a Good Person, Her 2nd Puberty, My 2nd Maturation, I Am Going to Tell Her I Am Celibate and I Have to Focus , that I Am Okay with Her Doing whatever She Wants, I Don't Intend on Getting Jealous of Current Experiences Ivy is Doing now (+6 more)
+
+### Community 631 - "Trans corn content curation.md"
+Cohesion: 0.13
+Nodes (14): [[02 Areas/Confidential/Relationships/BDSM Dom Behaviors and Phrases]], Content Inspired Positions/Angles, [Forest pov!](https://www.eporner.com/video-xEDXKlLQKR6/sexy-slim-ts-loves-riding-cock/), Fun Content Videos, Funny Amatuer Content, Gay, Getting Ivy to Get Louder and Louder, [Hotter than Hell](https://www.eporner.com/profile/Retrolover83/) (+6 more)
+
+### Community 632 - "Token Reconciliation Checklist"
+Cohesion: 0.13
+Nodes (14): Current Status, Full System Verification (After Reconciliation), MacBook, SSD-BIG, SSD-SMALL, Status After Reconciliation, Step 1: Check Current Token on SSD-SMALL, Step 2: If Token Doesn't Match (+6 more)
+
+### Community 633 - "Codex and Claude Log History + Hooks"
+Cohesion: 0.13
+Nodes (14): Claude, Claude, Claude Session Artifacts, Codex, Codex, Codex and Claude Log History + Hooks, Codex Wrapper, Daily Cheat Sheet (+6 more)
+
+### Community 634 - "Hand Therapy Master Plan"
+Cohesion: 0.13
+Nodes (14): [[02 Areas/hand therapy tools integration plan 2026]], 1. Morning Reset (5–8 min), 2. Midday Desk Break (3–6 min), 3. Strength Micro-Session (8–12 min), 4. Evening Unwind (5–10 min), Core Rule, Example Workflow Templates, Hand Therapy Master Plan (+6 more)
+
+### Community 635 - "The 8 Biggest Things That Changed (Tailored to You)"
+Cohesion: 0.13
+Nodes (14): 1. 🧠 Session Compaction for Long-Running Agents, 2. 📡 Broadcast Strategy (Parallel Vs Sequential), 3. 🔒 Docker Sandboxing + Zero-Trust Execution, 4. 🌐 Chrome Attach Mode (Authenticated Browser Automation), 5. ⏰ Timezone Fix for Docker Cron Jobs, 6. 🤫 Reasoning Token Stripping (for Local Models), 7. 🧬 OpenClaw-RL: Agents That Learn From Failures, 8. 🗄️ Vector Memory + "Second Me" RAG Architecture (+6 more)
+
+### Community 636 - "The 8 Biggest Things That Changed (Tailored to You)"
+Cohesion: 0.13
+Nodes (14): 1. 🧠 Session Compaction for Long-Running Agents, 2. 📡 Broadcast Strategy (Parallel Vs Sequential), 3. 🔒 Docker Sandboxing + Zero-Trust Execution, 4. 🌐 Chrome Attach Mode (Authenticated Browser Automation), 5. ⏰ Timezone Fix for Docker Cron Jobs, 6. 🤫 Reasoning Token Stripping (for Local Models), 7. 🧬 OpenClaw-RL: Agents That Learn From Failures, 8. 🗄️ Vector Memory + "Second Me" RAG Architecture (+6 more)
+
+### Community 637 - "Quick Dev Tasks (codebot → mac-hands)"
+Cohesion: 0.13
+Nodes (15): 10. Dependency Audit (Vulnerabilities), 11. Git Commit Message, 12. Branch Management, 13. Search Codebase (grep/ripgrep), 14. Check for TODO/FIXME Items, 1. Git Status Check, 2. Git Log Summary, 3. Git Diff Summary (+7 more)
+
+### Community 638 - "EPOMAKER K21 Macro Numpad Power Key.md"
+Cohesion: 0.13
+Nodes (14): 2️⃣ Layer 1: "The Workshop" (Symbols & Text Editing), 3️⃣ Layer 2: "The Compass" (Navigation), 4️⃣ Layer 3: "The Engine Room" (Media & System), Claude Breakdown, Device, Encoder (knob), EPOMAKER K21 Macro Numpad Power Key, Layer 0 — Number Pad (default) (+6 more)
+
+### Community 639 - "Mac Memory Control Playbook (8GB)"
+Cohesion: 0.13
+Nodes (14): 1) Fast triage (2–5 min), 2) App tuning, 3) OpenClaw operating modes, 4) Offload strategy, 5) Decision matrix, 6) Useful aliases, Antigravity / Electron IDEs, Ghostty (+6 more)
+
+### Community 640 - "Apple Shortcuts — Capture from iPad/iPhone via SSH"
+Cohesion: 0.13
+Nodes (15): Advanced: Quick Capture (No Questions), Apple Shortcuts — Capture from iPad/iPhone via SSH, "Command not recognized", Install the script, Next Steps, Prerequisites, "Script not found", "SSH command failed" (+7 more)
+
+### Community 641 - "GDDP — BRIEF-DRAFT (air)"
+Cohesion: 0.13
+Nodes (14): Evidence (exist on air), Evidence paths (exist on mini), From air, From mini, GDDP — BRIEF-DRAFT (air), gddp / BRIEF-DRAFT — merged v1, GDDP — BRIEF-DRAFT (mini pass-1), Next (+6 more)
+
+### Community 642 - "GDDP — QUERIES (mini pass-1)"
+Cohesion: 0.13
+Nodes (14): Connect, Connect A→B, Evidence, Evidence, From air, From mini, GDDP — QUERIES (air), gddp / QUERIES — merged v1 (+6 more)
+
+### Community 643 - "MyAPI — BRIEF-DRAFT (air)"
+Cohesion: 0.13
+Nodes (14): Evidence (paths exist on air), Evidence paths (exist on mini), From air, From mini, MyAPI — BRIEF-DRAFT (air), myapi / BRIEF-DRAFT — merged v1, MyAPI — BRIEF-DRAFT (mini pass-1), Next (for pass 2 / humans) (+6 more)
+
+### Community 644 - "MyAPI — QUERIES (mini pass-1)"
+Cohesion: 0.13
+Nodes (14): Connect A→B, Connect (A→B), Evidence, Evidence, From air, From mini, MyAPI — QUERIES (air), myapi / QUERIES — merged v1 (+6 more)
+
+### Community 645 - "Pi / Needle / Gemma — BRIEF-DRAFT (air)"
+Cohesion: 0.13
+Nodes (14): Evidence (exist on air), Evidence paths (exist on mini), From air, From mini, Next, Operator one-liner, Pi / Needle / Gemma — BRIEF-DRAFT (air), pi-needle-gemma / BRIEF-DRAFT — merged v1 (+6 more)
+
+### Community 646 - "Pi / Needle / Gemma — QUERIES (mini pass-1)"
+Cohesion: 0.13
+Nodes (14): Connect, Connect A→B, Evidence, Evidence, From air, From mini, Graphify-class, Now-state (+6 more)
+
+### Community 647 - "AGENTS.md - Operating Contract"
+Cohesion: 0.14
+Nodes (14): Active Repos (on this Raspberry Pi), AGENTS.md - Operating Contract, Canonical Sources, External vs Internal, General Behavior, High-Impact Bias, Memory, Operating Modes (+6 more)
+
+### Community 648 - "Branch · Claude Coroutine Optimization"
+Cohesion: 0.14
+Nodes (13): 1) entity["software","MyAPI","software project"] — Context Refinery vertical slice, 2) entity["software","graphgen","DAG Generator CLI project"] — merge PR #1 into production shape, Branch · Claude Coroutine Optimization, Codebase family (4-7) — Sonnet model, Conversation Identity, Jobs scout (9) — Sonnet + WebSearch, Jules feeder family (10-11) — Sonnet model, Neovim family (1-3) — Haiku model (+5 more)
+
+### Community 649 - "AGENTS.md - Operating Contract"
+Cohesion: 0.14
+Nodes (14): Active Repos (on this Raspberry Pi), AGENTS.md - Operating Contract, Canonical Sources, External vs Internal, General Behavior, High-Impact Bias, Memory, Operating Modes (+6 more)
+
+### Community 650 - "AGENTS.md - Operating Contract"
+Cohesion: 0.14
+Nodes (14): Active Repos (on this Raspberry Pi), AGENTS.md - Operating Contract, Canonical Sources, External vs Internal, General Behavior, High-Impact Bias, Memory, Operating Modes (+6 more)
+
+### Community 651 - "2026-05-03 - branch-cache-misses-and-strategy - 69f70fd3-4332928a0a.md"
+Cohesion: 0.14
+Nodes (13): Anything not in the output → /plugin disable <skill-name>, Anything that's just a "loaded" notification → kill, Audit SessionStart hooks, Branch · Cache Misses and Strategy, claude-audit.sh — run in your project root, Conversation Identity, Disable any hook you can't justify with a specific task, Find what's in your CLAUDE.md (+5 more)
+
+### Community 652 - "2026-05-03 - cache-misses-and-strategy - 69f6aeaf-cf97fa0b78.md"
+Cohesion: 0.14
+Nodes (13): Anything not in the output → /plugin disable <skill-name>, Anything that's just a "loaded" notification → kill, Audit SessionStart hooks, Cache Misses and Strategy, claude-audit.sh — run in your project root, Conversation Identity, Disable any hook you can't justify with a specific task, Find what's in your CLAUDE.md (+5 more)
+
+### Community 653 - "Lovable Prompt Refinement"
+Cohesion: 0.14
+Nodes (13): Bailey's Live Footer, Checklist Summary, Conversation Identity, Design Direction Notes, Footer, Key Details from Bailey's Site (Missing or Different in New Site), Lovable Prompt Refinement, Phase 3: Verify & Secure the Profile (+5 more)
+
+### Community 654 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 13:55 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 655 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 14:17 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 656 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 14:20 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 657 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 14:53 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 658 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 14:48 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 659 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 14:44 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 660 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 14:25 | main, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+5 more)
+
+### Community 661 - "# MISSION: Fish Shell Migration Audit"
+Cohesion: 0.14
+Nodes (13): Action Plan, Action Plan, Conclusion, # MISSION: Fish Shell Migration Audit, PHASE 1: System Discovery (Silent Analysis), PHASE 2: The Handoff Report (Strict Output Rules), Provenance, Session Identity (+5 more)
+
+### Community 662 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.14
+Nodes (13): 06:15 | unknown, Explicit Gemini API keys, Findings, Provenance, sb.info.you@gmail.com (credited account), 🚨 sbkchaudry@gmail.com (your active, card-charged account), Session Identity, Session Text (+5 more)
+
+### Community 663 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.14
+Nodes (14): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Files to modify, Implementation, On Q1 — the "gold mine" story (+6 more)
+
+### Community 664 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.14
+Nodes (14): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Files to modify, Implementation, On Q1 — the "gold mine" story (+6 more)
+
+### Community 665 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.14
+Nodes (14): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Files to modify, Implementation, On Q1 — the "gold mine" story (+6 more)
+
+### Community 666 - "2) LMN Discovery"
+Cohesion: 0.14
+Nodes (14): 1) Integration Goal, 2.1 What LMN Object Starts the Flow?, 2.2 LMN Identifiers, 2.3 LMN Customer Fields, 2.4 LMN Job Fields, 2) LMN Discovery, Change next, Clear next Steps (+6 more)
+
+### Community 667 - "Session Text"
+Cohesion: 0.14
+Nodes (13): Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command (+5 more)
+
+### Community 668 - "GDDP Operator Practice Checklist"
+Cohesion: 0.14
+Nodes (14): Checkpoints, Commands, Common Inspection Commands, Core Questions, docs/host-roles.md, GDDP Operator Practice Checklist, Goal, Graph Truth (+6 more)
+
+### Community 669 - "Session Text"
+Cohesion: 0.14
+Nodes (14): Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command (+6 more)
+
+### Community 670 - "Session Text"
+Cohesion: 0.14
+Nodes (14): Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command, Tool Call: exec_command (+6 more)
+
+### Community 671 - "System State After the Freeze"
+Cohesion: 0.14
+Nodes (14): Assistant, Forward Path (what You Own as operator), Return Path (frozen, Do Not touch), System State After the Freeze, The Invariant (hard boundary), Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+6 more)
+
+### Community 672 - "🤝 Handoff: NCCT Recertification for Farhana Chaudury (NCPT, exp. 7/30/2026)"
+Cohesion: 0.14
+Nodes (13): Context for incoming agent, handoff if we need more help (the tone commentary tho), 🤝 Handoff: NCCT Recertification for Farhana Chaudury (NCPT, exp. 7/30/2026), Key requirements (verified from site, not user memory), Known gotchas (per the site itself), Mom Study and Course plan, Past cycle context (already verified in transcript), Pathway to select courses (verified click path) (+5 more)
+
+### Community 673 - "Vincent Social Interactivity Meeting 2.md"
+Cohesion: 0.14
+Nodes (13): App Timeline, Geocaching Vs Ghost-caching, Haseeb's Capture the Flag Group, Male-dominated, Mental Health Cringe, Next Group is 2nd or 3rd Week of Jan 2026, Reddit Survey, 200+ Responses, Reviews: Some Good, Some Bad, Rock Solid Foundation to Start (+5 more)
+
+### Community 674 - "Core Team Call 1.md"
+Cohesion: 0.14
+Nodes (13): 72 Hours before Leadership Call, Altenberg Path back, Chaudry is the Elements Manager in Training, Community Service, Cooper, Debrief Leader Cycle, Homework Manager, Love Was Late 50 Pushups (+5 more)
+
+### Community 675 - "[[02 Areas/Learning/Closing out the end of Jan 2026 with powerfully tooled workflow]]"
+Cohesion: 0.14
+Nodes (13): [[02 Areas/Learning/Closing out the end of Jan 2026 with powerfully tooled workflow]], 1. Seed Tracer: The Agentic "Coverage Sprint", 1. The Tool-to-Task Matrix, 2. BDR Website: The NeoVim "Muscle Memory" Project, 2. Execution Strategy: The "BDR" Vanilla Track, 3. Coding Problems: The "No-Agent" Dojo, 3. Execution Strategy: The "Seed Tracer" Command Track, 4. Transitioning: Easy $\to$ Medium Coding Problems (+5 more)
+
+### Community 676 - "How My OpenClaw Agent, Larry, Got Millions of TikTok Views in One Week. (Full Step-by-step guide)"
+Cohesion: 0.14
+Nodes (13): How it Works, How Larry Learns and Improves, How My OpenClaw Agent, Larry, Got Millions of TikTok Views in One Week. (Full Step-by-step guide), How the Images Get Generated, How They Get Posted, How We Failed (before it worked), How We Succeeded, Set This up Yourself (+5 more)
+
+### Community 677 - "Agent Bus API Spec"
+Cohesion: 0.14
+Nodes (13): 1.1 `POST /send`, 1.2 `GET /inbox`, 1.3 `GET /health`, 1. Endpoints, 2. Pydantic Models, 3. SQLite Schema, 4. Inbox Query — Reference SQL, 5. Error Codes — Required Behavior (+5 more)
+
+### Community 678 - "How My OpenClaw Agent, Larry, Got Millions of TikTok Views in One Week. (Full Step-by-step guide)"
+Cohesion: 0.14
+Nodes (13): How it Works, How Larry Learns and Improves, How My OpenClaw Agent, Larry, Got Millions of TikTok Views in One Week. (Full Step-by-step guide), How the Images Get Generated, How They Get Posted, How We Failed (before it worked), How We Succeeded, Set This up Yourself (+5 more)
+
+### Community 679 - "Vision B — Transfer File Map (Pi ➜ Mac)"
+Cohesion: 0.14
+Nodes (13): A) Files to Transfer via Obsidian Git (recommended), B) Config Files (do NOT Put These in Obsidian), C) Fast Transfer Method Using Your Obsidian Repo, Core Identity + Behavior, D) Config Handoff (secure/manual), Do NOT Migrate Blindly, Memory, On Mac (pull + Install into Local OpenClaw workspace) (+5 more)
+
+### Community 680 - "Headless Obsidian Sync Commands"
+Cohesion: 0.14
+Nodes (14): Continuous Sync, Core Rules, First-Time Setup for SSD-BIG, Headless Obsidian Sync Commands, Inspect Remote and Local Vaults, Install, Login, Pre-Flight (+6 more)
+
+### Community 681 - "Obsidian Headless Sync on Raspberry Pi Runbook"
+Cohesion: 0.14
+Nodes (14): Authenticate and Map the Vault, BlinkShell Follow-Up, Continuous Service Setup, Decision Rule, Enable the Service, Fill In These Real Values, Install the CLI, Obsidian Headless Sync on Raspberry Pi Runbook (+6 more)
+
+### Community 682 - "2026.05.02.md"
+Cohesion: 0.14
+Nodes (13): 05-02 Output, 13:03 — Week 18 Saturday, 2026.05.02 19:09 — CSAPP: Cache Locality, 2026.05.02 19:24 — FPiS Ch1: Referential Transparency, Codebase — Saturday, CS Classics Lesson, [[EPOMAKER EK21 — Macropad and Complete Keymap Reference]], FPiS Lesson (+5 more)
+
+### Community 683 - "Proposed Strategy: The "Red Zone" Prevention (V2)"
+Cohesion: 0.14
+Nodes (13): 1. Model Categories, 2. Refresh Dynamics & The "Penalty Box", 3. The "Last Model Standing" Effect, Antigravity Model Quota Analysis & Management Plan, Phase 1: Aggressive Model Offloading, Phase 2: Monitoring the "Four Segments", Phase 3: Model Roles & Responsibility Matrix, Phase 4: Obsidian Knowledge Sync (On-Demand) (+5 more)
+
+### Community 684 - "Quota Survival & Synchronization Strategy: The "Mastermind" Protocol"
+Cohesion: 0.14
+Nodes (13): 1. Obsidian Knowledge Mirroring, 1. The "Flash" Workhorse (Default), 2. Batch Repository Synchronization (`push-all-repos.sh`), 2. The Gemini Pro "Daily Driver", 3. Surgical Claude Usage (The "Thinker"), 3. VM-to-MacBook SSD Pipeline (`vm-to-ssd.sh`), Manual Verification, Proposed Strategy: "Flash-First" Workflow (+5 more)
+
+### Community 685 - "Output: [[VS Code Tunnel Service Installed on Big Pi]]"
+Cohesion: 0.14
+Nodes (13): Core Commands, Definition of Done, Fill In Before Execution, Output: [[VS Code Tunnel Service Installed on Big Pi]], Phase 1 - VS Code Tunnel, Phase 2 - Remove Temporary Device Pressure, Phase 3 - Obsidian Headless Sync on SSD-BIG, Phase 4 - Persistent Obsidian Sync Service (+5 more)
+
+### Community 686 - "renderGalleryView"
+Cohesion: 0.27
+Nodes (14): applyViewMode(), bindChange(), bindClick(), registerFileCheckbox(), registerSelectableElement(), renderFileNode(), renderFolderNode(), renderGalleryView() (+6 more)
+
+### Community 687 - "Pt"
+Cohesion: 0.19
+Nodes (14): b0(), ej(), fT(), iQ(), nQ(), ph(), Pt(), Qd() (+6 more)
+
+### Community 688 - "upload_file_to_xai"
+Cohesion: 0.20
+Nodes (14): base64_to_blob(), base64_to_uint8_array(), delete_file_from_xai(), extract_mime_and_base64(), get_file_delete_endpoint(), infer_mime_type_from_filename(), normalize_image_part(), normalize_or_upload_file_part() (+6 more)
+
+### Community 689 - "upload_file_to_xai"
+Cohesion: 0.20
+Nodes (14): base64_to_blob(), base64_to_uint8_array(), delete_file_from_xai(), extract_mime_and_base64(), get_file_delete_endpoint(), infer_mime_type_from_filename(), normalize_image_part(), normalize_or_upload_file_part() (+6 more)
+
+### Community 690 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.14
+Nodes (13): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Deploy, Files to modify, Implementation (+5 more)
+
+### Community 691 - "Jules Task: Claude Code Session Adapter"
+Cohesion: 0.14
+Nodes (13): 1. Create `context_refinery/adapters/claude_code.py`, 2. Create a batch scanner function, 3. Add API endpoint, 4. Tests, Data Source, Do NOT, Important: Content filtering, Jules Task: Claude Code Session Adapter (+5 more)
+
+### Community 692 - "MyAPI-Rebuild — Context Anchor"
+Cohesion: 0.14
+Nodes (13): Communication rules for agents, Day-zero origin (why Context Refinery had a UI), Glossary (stop re-deriving), Integrated plan (Sab + session consensus), Key paths, MCP tools (two, not three names), MyAPI-Rebuild — Context Anchor, Next session starter (+5 more)
+
+### Community 693 - "Pi / Needle / Gemma — GAPS (mini pass-1)"
+Cohesion: 0.14
+Nodes (13): Air strength, From air, From mini, Ingest risks (explicit), Ingest risks (explicit), Pass-1 stop, Pi / Needle / Gemma — GAPS (air), pi-needle-gemma / GAPS — merged v1 (+5 more)
+
+### Community 694 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.15
+Nodes (12): <local-command-caveat>Caveat: The messages below were generated by the user whil, Option A: Install Tailscale on the VM (original plan), Option B: Skip Tailscale entirely, use IAP port forwarding, Provenance, Session Identity, Session Text, Test 1: The Tailscale Ping (Are they in the same room?), Test 2: The SSH Key Trap (Is GCP blocking the door?) (+4 more)
+
+### Community 695 - "Brainstorming Ideas Into Designs"
+Cohesion: 0.15
+Nodes (12): After the Design, Anti-Pattern: "This Is Too Simple To Need A Design", Brainstorming Ideas Into Designs, Checklist, I have two options for what welcomes me when I open Obsidian: notebook navigator, Key Principles, Process Flow, Provenance (+4 more)
+
+### Community 696 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.15
+Nodes (12): 00:39 | main, 02:37 | main, 1. Jules session reuse — don't, 2. Skill — yes, but not yet, On your screenshots, Provenance, Reversibility note (per your earlier ask), Session Identity (+4 more)
+
+### Community 697 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.15
+Nodes (12): 06:21 | media, 06:24-07:22 | media-asset-manager, 06:24 | media-asset-manager, 06:29 | media-asset-manager, 06:42 | media-asset-manager, 07:22 | media-asset-manager, 15:30 | aqua-stone-studio, 15:30 | aqua-stone-studio (+4 more)
+
+### Community 698 - "Systematic Debugging"
+Cohesion: 0.15
+Nodes (13): Common Rationalizations, Diagnosis, Likely culprit, Overview, Quick Reference, Real-World Impact, Red Flags - STOP and Follow Process, Supporting Techniques (+5 more)
+
+### Community 699 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.15
+Nodes (12): 06:21 | media, 06:24 | main, Handoff to Pi — practical paths, On the Pi (when you resume), On this Mac (one command), Proposed workflow (will execute unless you redirect), Provenance, Session Identity (+4 more)
+
+### Community 700 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.15
+Nodes (12): 10:21 | feat/premium-media-library, Files written, Final status, Provenance, Session Identity, Session Text, Three ways to share it with Jason, What only Jason can do (covered in the briefing memo) (+4 more)
+
+### Community 701 - "Handoff 006 — Checkpoint: SDK upgrade + Task 3 in flight"
+Cohesion: 0.15
+Nodes (12): 01:51 | docs/avatar-reflection-spec, Audit results: SDK Upgrade Phase 1, Context that's not in the code, Handoff 006 — Checkpoint: SDK upgrade + Task 3 in flight, Provenance, Resumption checklist (for next session), Session Identity, Session Text (+4 more)
+
+### Community 702 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.15
+Nodes (12): 06:44 | main, 14:30 | main, Counts you asked about, Cross-ref structural payoff, On the capture-path workflow, Provenance, Session Identity, Session Text (+4 more)
+
+### Community 703 - "Pi Orchestrator: 5-Package Research"
+Cohesion: 0.15
+Nodes (12): 1. `pi-messenger` (v0.14.1, by Nico Bailon), 2. `pi-multiagent` (v0.5.0, by Tiziano-AI), 30-min first experiment for pi-subagents, 3. `pi-subagents` (v0.23.1, by Nico Bailon — same author as pi-messenger), 4. `@tmustier/pi-agent-teams` (v0.5.4), 5. `@dreki-gg/pi-delegate` (v0.2.1) — DEPRECATED, Pi Orchestrator: 5-Package Research, Provenance (+4 more)
+
+### Community 704 - "Development checkpoint: intake capability and next steps"
+Cohesion: 0.15
+Nodes (12): Conversation Identity, Development checkpoint: intake capability and next steps, How this stacks against yesterday's checkpoint, My read on the three options, Provenance, Raw Conversation, The 15-minute triage that should precede the merge, The headline (+4 more)
+
+### Community 705 - "Using Google credits with different account for VM"
+Cohesion: 0.15
+Nodes (12): Alternative: keep accounts fully separated, Cleanest path: relink the billing account, Conversation Identity, Do this, Do this, One gotcha to check, Provenance, Raw Conversation (+4 more)
+
+### Community 706 - "Next Steps In Order"
+Cohesion: 0.15
+Nodes (13): 1. Full System Understanding, 2. Key Architectural Decisions Made, 3. Three Real Projects Defined (not yet committed to gddp-config), 4. Repo State, Next Steps In Order, Session Handoff — GDAD Deep Dive, Step 1: Design cultural-intel DAG (answer these first), Step 2: Design the other two DAGs (+5 more)
+
+### Community 707 - "Next Steps In Order"
+Cohesion: 0.15
+Nodes (13): 1. Full System Understanding, 2. Key Architectural Decisions Made, 3. Three Real Projects Defined (not yet committed to gddp-config), 4. Repo State, Next Steps In Order, Session Handoff — GDAD Deep Dive, Step 1: Design cultural-intel DAG (answer these first), Step 2: Design the other two DAGs (+5 more)
+
+### Community 708 - "Next Steps In Order"
+Cohesion: 0.15
+Nodes (13): 1. Full System Understanding, 2. Key Architectural Decisions Made, 3. Three Real Projects Defined (not yet committed to gddp-config), 4. Repo State, Next Steps In Order, Session Handoff — GDAD Deep Dive, Step 1: Design cultural-intel DAG (answer these first), Step 2: Design the other two DAGs (+5 more)
+
+### Community 709 - "return loop so merged PRs automatically advance graph state."
+Cohesion: 0.15
+Nodes (13): feat-dag-graph-design, return loop so merged PRs automatically advance graph state., wip-jules-2026-03-19T09-53-32-580Z...origin/wip-jules-2026-03-19T09-53-32-580Z, wip-jules-2026-03-19T09-53-32-580Z...origin/wip-jules-2026-03-19T09-53-32-580Z, /work/repos/gddp-config/graphs/gddp-runtime/nodes/dispatch-contract-freeze.yaml, /work/repos/gddp-config/graphs/gddp-runtime/nodes/failure-replay.yaml, /work/repos/gddp-config/graphs/gddp-runtime/nodes/failure-replay.yaml, /work/repos/gddp-config/graphs/gddp-runtime/nodes/first-overnight-run.yaml (+5 more)
+
+### Community 710 - "2026-03-21 - environment-context - 019d100f-370f25d8eb.md"
+Cohesion: 0.15
+Nodes (12): 1. graph: field dropped from PR body contract — redundant, derived from repo, 2. graph_updater uses GitHub Contents API, not git-on-Pi — no write key on Pi needed, 3. result row written as pending BEFORE graph update — gives replay log without retries, 4. ALLOWED_REPOS validated first — cheapest check, fail fast, 5. auto-dispatch next node explicitly excluded — scope discipline, Design decisions documented here:, gddp-runtime is the control plane itself. Nodes here represent, /home/sab-ssd/.config/systemd/user/openclaw-node.service (+4 more)
+
+### Community 711 - "Review Queue"
+Cohesion: 0.15
+Nodes (13): 00 Inbox/1099 Contractor.md, 00 Inbox/10 open source tools that feel illegal.md, 00 Inbox/2026 Dataview Queries Presets and Syntax.md, 00 Inbox/2026 Overview for Ergonomic, Mutli-Layered Dygma Raise Keyboard Layers and Mappings.md, 00 Inbox/2026 Tasks Queries Presets and Syntax.md, 00 Inbox/AI Sparring Loop.md, 00 Inbox/All fast actions should be done on the thumb keys.md, 00 Inbox/AMCC can be retrained and grown.md (+5 more)
+
+### Community 712 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (13): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, feat/claude-web-adapter...origin/feat/claude-web-adapter, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You (+5 more)
+
+### Community 713 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (13): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, feat/claude-web-adapter...origin/feat/claude-web-adapter, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You (+5 more)
+
+### Community 714 - "Review Queue"
+Cohesion: 0.15
+Nodes (13): 00 Inbox/1099 Contractor.md, 00 Inbox/10 open source tools that feel illegal.md, 00 Inbox/2026 Dataview Queries Presets and Syntax.md, 00 Inbox/2026 Overview for Ergonomic, Mutli-Layered Dygma Raise Keyboard Layers and Mappings.md, 00 Inbox/2026 Tasks Queries Presets and Syntax.md, 00 Inbox/AI Sparring Loop.md, 00 Inbox/All fast actions should be done on the thumb keys.md, 00 Inbox/AMCC can be retrained and grown.md (+5 more)
+
+### Community 715 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (13): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, feat/claude-web-adapter...origin/feat/claude-web-adapter, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You (+5 more)
+
+### Community 716 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (13): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, feat/claude-web-adapter...origin/feat/claude-web-adapter, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You (+5 more)
+
+### Community 717 - "Review Queue"
+Cohesion: 0.15
+Nodes (13): 00 Inbox/1099 Contractor.md, 00 Inbox/10 open source tools that feel illegal.md, 00 Inbox/2026 Dataview Queries Presets and Syntax.md, 00 Inbox/2026 Overview for Ergonomic, Mutli-Layered Dygma Raise Keyboard Layers and Mappings.md, 00 Inbox/2026 Tasks Queries Presets and Syntax.md, 00 Inbox/AI Sparring Loop.md, 00 Inbox/All fast actions should be done on the thumb keys.md, 00 Inbox/AMCC can be retrained and grown.md (+5 more)
+
+### Community 718 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (13): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, feat/claude-web-adapter...origin/feat/claude-web-adapter, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You (+5 more)
+
+### Community 719 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (13): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, feat/claude-web-adapter...origin/feat/claude-web-adapter, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You (+5 more)
+
+### Community 720 - "LMN-QBO Field Discovery Checklist"
+Cohesion: 0.15
+Nodes (13): Current Source Notes from the Web, Discovery Checklist, Goal, LMN, LMN, LMN, LMN-QBO Field Discovery Checklist, QBO (+5 more)
+
+### Community 721 - "2026-05-04 - environment-context - 019df32c-0b31ab6d66.md"
+Cohesion: 0.15
+Nodes (12): 1) Inspect comments needing attention, 2) Ask the user for clarification, 3) If user chooses comments, create webm fallback, <environment_context>, main...origin/main, main...origin/main, normalize each clip (resolution, fps, bitrate, no audio) (+4 more)
+
+### Community 722 - "Run 5: Human Reject Or Defer Drill"
+Cohesion: 0.15
+Nodes (13): Avoid For Practice, Checkpoints, Commands, Goal, Good Candidates, Good Task Examples, Human Action, OpenClaw v0 Spec (+5 more)
+
+### Community 723 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.15
+Nodes (13): add node files to graphs/<project-id>/nodes/, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output (+5 more)
+
+### Community 724 - "2026-05-07 - environment-context - 019e0097-44a9491d7f.md"
+Cohesion: 0.15
+Nodes (12): Add the parent directory to sys.path to allow importing from the current package, Add the parent directory to sys.path to allow importing from the current package, Add the root directory to sys.path to allow importing from scripts.adapters, Environment, Falls back to the repo root for local dev (Mac), Logs, OPCLAW_ROOT: set OPCLAW_ROOT env var on Pi to point to ~/opclaw, OS (+4 more)
+
+### Community 725 - "GDDP Operator Practice Checklist"
+Cohesion: 0.15
+Nodes (13): Checkpoints, Commands, Common Inspection Commands, Core Questions, GDDP Operator Practice Checklist, Goal, Graph Truth, Inspect (+5 more)
+
+### Community 726 - "Verification Before Completion"
+Cohesion: 0.15
+Nodes (13): Common Failures, Key Patterns, main...origin/main, main...origin/main, main...origin/main, Overview, Rationalization Prevention, Red Flags - STOP (+5 more)
+
+### Community 727 - "Verification Before Completion"
+Cohesion: 0.15
+Nodes (13): Common Failures, Key Patterns, main...origin/main, main...origin/main, main...origin/main, Overview, Rationalization Prevention, Red Flags - STOP (+5 more)
+
+### Community 728 - "Writing Plans"
+Cohesion: 0.15
+Nodes (13): 15 Core Citations: Evidence-Driven Roadmap for GDDP-Runtime, Bite-Sized Task Granularity, docs/share-pdf...origin/docs/share-pdf, feat/openclaw-nodes...origin/feat/openclaw-nodes, File Structure, No Placeholders, Overview, Part 1: Git History Evidence (The Built Reality) (+5 more)
+
+### Community 729 - "Writing Plans"
+Cohesion: 0.15
+Nodes (13): 15 Core Citations: Evidence-Driven Roadmap for GDDP-Runtime, Bite-Sized Task Granularity, docs/share-pdf...origin/docs/share-pdf, feat/openclaw-nodes...origin/feat/openclaw-nodes, File Structure, No Placeholders, Overview, Part 1: Git History Evidence (The Built Reality) (+5 more)
+
+### Community 730 - "GDDP-15 Corrected Audit"
+Cohesion: 0.15
+Nodes (12): 15 Core Citations: Evidence-Driven Roadmap for GDDP-Runtime, Correct Doctrine, Current Direction, <environment_context>, GDDP-15 Corrected Audit, Part 1: Git History Evidence (The Built Reality), Part 2: Project Documentation Evidence (The Contract), Provenance (+4 more)
+
+### Community 731 - "Approach to Medical Learning with *Three Key Principles*"
+Cohesion: 0.15
+Nodes (12): 1. Areas, 1. Summarisation, 2. Projects, 2. Synthesis, 3. Resources, 3. Spaced Repetition, 4. system, 5. Tasks (+4 more)
+
+### Community 732 - "--GDDP.md"
+Cohesion: 0.17
+Nodes (4): GDD Commitment, GDD Main Thread Summary, GDD - Ran My First Supervised Rep and Succeded to Dispatch, [[GDDO - operator practice manual run checklist]]
+
+### Community 733 - "2026-04-29 — Raycast Advanced URI plugin error: diagnosis"
+Cohesion: 0.15
+Nodes (12): 2026-04-29 — Raycast Advanced URI plugin error: diagnosis, Evidence gathered, Notes for the dispatcher pivot, Obsidian vault registry, Plugin state (confirmed installed + enabled in SoloDeveloper), Plugin state in other vaults, Raycast extension info, Recommended fix order (+4 more)
+
+### Community 734 - "Main remaining gaps"
+Cohesion: 0.15
+Nodes (13): 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete, Inference Guidelines (+5 more)
+
+### Community 735 - "Main remaining gaps"
+Cohesion: 0.15
+Nodes (13): 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete, Assistant (+5 more)
+
+### Community 736 - "Post Ivy Sab Fight.md"
+Cohesion: 0.15
+Nodes (12): Can I ignore/avoid/detach → it is Possible, Crux of Issue: Going off Script, Fight Details Mon Feb 10th, 2025, Fuuuuuck, Her Transness → Vulnerable Narcissism as Coping Mechanism, I Have a Pit in My Stomach, and Feel Disgust in Myself, ***"This Person is Manipulating Your Mind 100% and Using you* "**, This Was a Tragic Situation (+4 more)
+
+### Community 737 - "Egoless Thought-Provoking Answer"
+Cohesion: 0.15
+Nodes (12): 1. **Understanding Emotional Reactions**, 2. **The Silent Treatment and Communication Breakdown**, 3. **The Impact of Substances on Emotions**, 4. **Relationship Dynamics and Maturity**, 5. **Addressing Underlying Issues**, 6. **Moving Forward**, Egoless Thought-Provoking Answer, Final Thought (+4 more)
+
+### Community 738 - "Meeting 2 Timeline"
+Cohesion: 0.15
+Nodes (12): Break Will Be Given, Chain of Command given next, End Meeting Check-Outs, Get Used to Calling Men, Hearing from the Project Leaders, Homework Section of the Meeting, Meeting 2 Timeline, Next Section: what is a Pack, what is a Team (+4 more)
+
+### Community 739 - "Someone Else's Keymaps"
+Cohesion: 0.15
+Nodes (12): Complete Final Layout Overview, EPOMAKER EK21 — Macropad and Complete Keymap Reference, G(KC_ …) ⟶ Command +, Layer 0 — Base / Numpad, Layer 1 — App & Window Management, Layer 2 — Symbols & Brackets, Layer 3 — Editor Shortcuts + Device Control, Media / Knob (+4 more)
+
+### Community 740 - "LinkedIn Payload.md"
+Cohesion: 0.15
+Nodes (12): 1. HEADLINE, 2. ABOUT (Systems & Pipelines), 3. EXPERIENCE ENTRY: Market Sentinel, 4. SKILLS TO ADD, 4. SKILLS TO ADD, 5. EDUCATION & FOUNDATION, 5. EDUCATION & FOUNDATION, 6. PREVIOUS EXPERIENCE (To Ensure comprehensiveness) (+4 more)
+
+### Community 741 - "Folder-Specific Task Presets"
+Cohesion: 0.15
+Nodes (12): 00 Inbox (Triage), 01 Projects (Actionable & Time-Bound), 02 Areas (Ongoing Responsibilities), 03 Resources (Review & Consume), [[03 Resources/Tasks plugin docs with syntax explained and examples]], 04 Periodic (Routines & Habits), Find Tasks in Files Created before a Specific Exact Date and Time, Find Tasks in Files Created in the Last 7 Days (+4 more)
+
+### Community 742 - "`agy` / `antigravity` CLI — What It Actually Does"
+Cohesion: 0.15
+Nodes (12): ✅ Actual Headless AI — One-Shot Commands (Non-Interactive), ✅ Actually Productive Non-AI One-Shots, `agy` / `antigravity` CLI — What It Actually Does, Diff two files, ❌ Invalid / Misleading `antigravity -` Usage, Jump to a specific line, Links, Open a file (+4 more)
+
+### Community 743 - "PR Review: Documentation Update"
+Cohesion: 0.15
+Nodes (12): 1. **CRITICAL: Misleading Feature Claims**, 2. **Minor: Inconsistency with CLAUDE.md**, 3. **Security Note Missing Context**, Code Quality, Followed it with a Comment Request to update/modify, ⚠️ Issues Found, Jules PR, Overview (+4 more)
+
+### Community 744 - "ChatGPT"
+Cohesion: 0.15
+Nodes (12): 1. Focus on Shipping Over "Meta-Work", 2. Reinforcing the Right Muscle Memory, 3. Hardware Optimization, 4. The "Progressive Enhancement" Route, But… Don't Ignore Vision A 😈 (it's Your "Phase 2"), ChatGPT, Claude, Definition of Done (so You Can Execute with Zero ambiguity) (+4 more)
+
+### Community 745 - "The Danger Illusion of AI Code"
+Cohesion: 0.15
+Nodes (12): 🛠 1. Coding vs. Software Engineering: The Critical Distinction, 📉 2. The "Pernicious Erosion of Control", 💡 3. The "Inhumane" Modern Workflow, 🚀 4. The Path Forward: Human-AI Synthesis, 🏛 5. Societal & Political Risks, 📄 Briefing: The Illusion of AI Code & The Future of Engineering, **Date:** March 21, 2026 (Report Date), 🎯 Executive Summary (+4 more)
+
+### Community 746 - "Editor Workflow.md"
+Cohesion: 0.18
+Nodes (8): Developer Workflow, Editor Workflow, Notes in this area, NeoVim as IDE, Notes in this area, NeoVim Configurations, Notes in this area, NeoVim Editor
+
+### Community 747 - "jq + Script Pipeline"
+Cohesion: 0.15
+Nodes (10): Definition of Done, jq + Script Pipeline, Notes, Proof, Why It Matters, Definition of Done, jq Transform on AI Exports, Notes (+2 more)
+
+### Community 748 - "🔓 Remote Ops"
+Cohesion: 0.15
+Nodes (11): Definition of Done, Network Debugging Toolkit, Notes, Proof, Why It Matters, Definition of Done, Milestone Unlock — Requires 100 Terminal Points, Notes (+3 more)
+
+### Community 749 - "Pi Cluster Runs Distributed Task"
+Cohesion: 0.15
+Nodes (11): Definition of Done, Notes, Options, Pi Cluster Runs Distributed Task, Proof, Why It Matters, Definition of Done, Notes (+3 more)
+
+### Community 750 - "Pi Runs Real Service"
+Cohesion: 0.15
+Nodes (11): Definition of Done, Notes, Options, Pi Runs Real Service, Proof, Why It Matters, Definition of Done, Notes (+3 more)
+
+### Community 751 - "🔓 Prototype Complete"
+Cohesion: 0.15
+Nodes (11): Definition of Done, Notes, Proof, User Testing Session, Why It Matters, Definition of Done, Milestone Unlock — Requires 100 SocialXP Points, Notes (+3 more)
+
+### Community 752 - "Scratchpad"
+Cohesion: 0.15
+Nodes (12): 1. The Setup (One-Time), 2. The "Drive-By" Capture (Arguments), 3. The "Deep Thought" (Editor), 4. The "Researcher" (Clipboard), 5. The "Developer" (Piping), 6. Checking Your Work (Preview & Open), 7. Customizing the Destinations, Log (+4 more)
+
+### Community 753 - "2026.05.17.md"
+Cohesion: 0.15
+Nodes (12): 05-17 Output, 09:00 — Week 4 Sunday, 13:06 — Sprint Retrospective (Day 25, post-sprint), 2026.05.17 19:05 — SICP: Higher-Order Procedures, 2026.05.17 19:20 — FPiS Ch6: purely-functional-state, CS Classics Lesson, FPiS Lesson, Neovim — Sunday (+4 more)
+
+### Community 754 - "Folder-Specific Task Presets"
+Cohesion: 0.15
+Nodes (12): [[00 Inbox/Tasks plugin docs with syntax explained and examples]], 00 Inbox (Triage), 01 Projects (Actionable & Time-Bound), 02 Areas (Ongoing Responsibilities), 03 Resources (Review & Consume), 04 Periodic (Routines & Habits), Find Tasks in Files Created before a Specific Exact Date and Time, Find Tasks in Files Created in the Last 7 Days (+4 more)
+
+### Community 755 - "Lt"
+Cohesion: 0.18
+Nodes (13): aS(), bd(), cS(), df(), en(), fl(), has_outdated_env_compatibility(), Ho() (+5 more)
+
+### Community 756 - "Empirical Reality (2-3 sentences max, anything more must be critically justifiable)"
+Cohesion: 0.15
+Nodes (12): 000 — *Session Name / Stopping Point*, Artifacts (Filepath - Description, 1 line max per artifact), Constrained areas touched (none / list + justification), Current Git state (2-3 sentences max, anything more must be critically justifiable), Empirical Reality (2-3 sentences max, anything more must be critically justifiable), Friction experienced or anticipated, Intent going into/at start of session, Interpretation of how the session went (+4 more)
+
+### Community 757 - "VM Migration Handoff"
+Cohesion: 0.15
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 758 - "Empirical Reality"
+Cohesion: 0.15
+Nodes (12): 029 — GDDP first durable handoff node, Artifacts, Constrained areas touched, Current Git state, Empirical Reality, Friction experienced or anticipated, Intent going into/at start of session, Interpretation of how the session went (+4 more)
+
+### Community 759 - "Corpus v1 baseline candidate queries"
+Cohesion: 0.15
+Nodes (12): 10. CLI session evidence, 1. Graph-driven development core concept, 2. Bounded GDDP execution, 3. Vault schema history, 4. OpenClaw recommendation, 5. Recent topics and goals, 6. Mac, Big Pi, and Small Pi roles, 7. Post-UCSC episodic arc (+4 more)
+
+### Community 760 - "2026-07-29 — wave1 land + first smoke"
+Cohesion: 0.15
+Nodes (12): 2026-07-29 — wave1 land + first smoke, Arrived on VM, Corpus landed, First optimization (not done yet — next), First retrieval results, Khoj API “200”, Locations (canonical), WAVE1 CHANGELOG — snapshot corpus on VM (+4 more)
+
+### Community 761 - "Corpus v1.0 Vault Build Summary"
+Cohesion: 0.17
+Nodes (9): Corpus v1.0 Home, Purpose, Start Here, Source Counts, Corpus v1.0 Vault Build Summary, Counts, Detailed Counts, Open In Obsidian (+1 more)
+
+### Community 762 - "AI Tutoring Business Plan"
+Cohesion: 0.17
+Nodes (11): AI Tutoring Business Plan, Better mobile workaround, Conversation Identity, iPhone / iPad (constraint), macOS (cleanest), Minimal rule, Provenance, Record / transcribe (+3 more)
+
+### Community 763 - "Claude Coroutine Optimization"
+Cohesion: 0.17
+Nodes (11): Claude Coroutine Optimization, Codebase family (4-7) — Sonnet model, Conversation Identity, Jobs scout (9) — Sonnet + WebSearch, Jules feeder family (10-11) — Sonnet model, Neovim family (1-3) — Haiku model, Provenance, Quick reference table (+3 more)
+
+### Community 764 - "Smart Lookup: semantic search in Obsidian"
+Cohesion: 0.17
+Nodes (12): A simple query formula, Fast decision: Lookup vs Obsidian search vs Connections, How to handle results from file_search, How to invoke the file_search tool, Lookup vs Connections: which view should you open?, Opening the Lookup view, Patterns that work well, Smart Lookup: semantic search in Obsidian (+4 more)
+
+### Community 765 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 766 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 767 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 768 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 769 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 770 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 771 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 04:49 | main, 04:53 | main, Audit results, Draft prompt, Provenance, Recommended next steps, Session Identity, Session Text (+3 more)
+
+### Community 772 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 04:49 | main, 04:57 | main, Audit results, Draft prompt, Provenance, Recommended next steps, Session Identity, Session Text (+3 more)
+
+### Community 773 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 07:31 | main, History search (Ctrl+R), How it differs from transcript rewind, Provenance, Session Identity, Session Text, So to answer directly, Toggling todos (Ctrl+T) (+3 more)
+
+### Community 774 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 06:16 | main, Handoff to Pi — practical paths, On the Pi (when you resume), On this Mac (one command), Proposed workflow (will execute unless you redirect), Provenance, Session Identity, Session Text (+3 more)
+
+### Community 775 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 12:55 | chore/body-conventions, 14:00 | chore/body-conventions, Audit results, Draft prompt, Provenance, Recommended next steps, Session Identity, Session Text (+3 more)
+
+### Community 776 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 04:53 | main, 12:28 | chore/body-conventions, Audit results, Draft prompt, Provenance, Recommended next steps, Session Identity, Session Text (+3 more)
+
+### Community 777 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.17
+Nodes (11): 00:04 | first-vm teardown + SSD backup, 00:32 | GCP buckets backup + billing discovery, 00:32 | GCP buckets backup + billing discovery, 00:40 | GenAI subproject + budget setup, 00:40 | GenAI subproject + budget setup, 02:05 | Agent-bus deployment & MyAPI portfolio prep, 02:05 | Agent-bus deployment & MyAPI portfolio prep, Apply maximum non-destructive compression. Rules: (+3 more)
+
+### Community 778 - "<command-message>frontend-design:frontend-design</command-message>"
+Cohesion: 0.17
+Nodes (11): <command-message>frontend-design:frontend-design</command-message>, Design Thinking, Frontend Aesthetics Guidelines, Inside the chapters (640 lines, 31%), Inside the CSS (52.6% of the file), My recommendation, Provenance, Session Identity (+3 more)
+
+### Community 779 - "Where we are right now"
+Cohesion: 0.17
+Nodes (11): 10:11 | feat/premium-media-library, Major facts now locked in (all live-verified in browser), Phase status, Provenance, Session Identity, Session Text, What I was just about to do (and paused for your check-in), What's blocking everything from here forward (+3 more)
+
+### Community 780 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.17
+Nodes (11): 11:30 | main, Factual specificity (the brittle-defaults test), Prose voice, Provenance, Session Identity, Session Text, Spec violations, Structure & brief fidelity (+3 more)
+
+### Community 781 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.17
+Nodes (11): 03:20 | main, 03:31 | main, 03:31 | main, 03:45 | main, 03:45 | main, 04:52 | main, 04:52 | main, Apply maximum non-destructive compression. Rules: (+3 more)
+
+### Community 782 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.17
+Nodes (11): 00:16 | docs/avatar-reflection-spec, 00:16 | docs/avatar-reflection-spec, 19:49 | main, 20:15 | main, 20:15 | main, 20:28 | docs/avatar-reflection-spec, 20:28 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules: (+3 more)
+
+### Community 783 - "Pipeline Mapping: Owner-Pass / Concept-Writing Pipeline"
+Cohesion: 0.17
+Nodes (11): 1. **Concept Assignment & Writing: `frontmatter["concepts"]`**, 2. **Frontmatter Write Call & Path Resolution**, 3. **Triage Directory Structure**, 4. **Entry-Point CLI**, 5. **Progress/Coverage Tracking**, 6. **Concept Source: Human Interaction Only**, Pipeline Mapping: Owner-Pass / Concept-Writing Pipeline, Provenance (+3 more)
+
+### Community 784 - "You are doing a code quality review on uncommitted changes for a Python CLI feat"
+Cohesion: 0.17
+Nodes (11): Base commit (compare against), Deviation notes (already accepted — DO NOT flag), How to inspect, Provenance, Report format, Session Identity, Session Text, What this change does (+3 more)
+
+### Community 785 - "Headless iPad dev machine via Blink callbacks"
+Cohesion: 0.17
+Nodes (11): 1. The "No-Keyboard" Automation Strategy, 2. Integrating with your Obsidian "Bases" Workflow, 3. Dealing with the "8GB vs 4GB" Split, 4. Pro Tip: The "Shared Clipboard" Loophole, Conversation Identity, Headless iPad dev machine via Blink callbacks, Idle cost: basically zero, Power User Move: Triggering "Snips" (+3 more)
+
+### Community 786 - "API projects discussion"
+Cohesion: 0.17
+Nodes (11): API projects discussion, Classifier aliases and ordering, Conversation Identity, Provenance, Query-corpus terminology gap (A7), Raw Conversation, Score-shaping vocabulary, Sentinel / regression (+3 more)
+
+### Community 787 - "Project Graph Quality"
+Cohesion: 0.17
+Nodes (12): A Good Node, Anti-Patterns, Artifact Contract, Governing Principle, Graph Readiness Litmus Test, Minimum Required Structure, Minimum Routing Contract, Node Contract (+4 more)
+
+### Community 788 - "on the Pi"
+Cohesion: 0.17
+Nodes (12): Assistant, on the Pi, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output (+4 more)
+
+### Community 789 - "Changelog"
+Cohesion: 0.17
+Nodes (12): [1.0.0] - 2026-03-13, [1.1.0] - 2026-03-13, [1.1.1] - 2026-03-19, [1.1.2] - 2026-04-07, Added, Added, Added, Changed (+4 more)
+
+### Community 790 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.17
+Nodes (12): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, feat/claude-web-adapter...origin/feat/claude-web-adapter, Files to modify, Implementation (+4 more)
+
+### Community 791 - "Human Retrieval (H)"
+Cohesion: 0.17
+Nodes (12): A1. What is MyAPI and what is its current goal?, A2. What's the current state of the retrieval pipeline end-to-end?, A3. What is the status of the API deployment?, Agent Retrieval (A), Framework, H1. Find the thread where I set up the Khoj VM migration, H2. What did I decide about source-aware priors?, H3. When was I last working on the benchmark harness? (+4 more)
+
+### Community 792 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 793 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 794 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 795 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.17
+Nodes (12): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, feat/claude-web-adapter...origin/feat/claude-web-adapter, Files to modify, Implementation (+4 more)
+
+### Community 796 - "Human Retrieval (H)"
+Cohesion: 0.17
+Nodes (12): A1. What is MyAPI and what is its current goal?, A2. What's the current state of the retrieval pipeline end-to-end?, A3. What is the status of the API deployment?, Agent Retrieval (A), Framework, H1. Find the thread where I set up the Khoj VM migration, H2. What did I decide about source-aware priors?, H3. When was I last working on the benchmark harness? (+4 more)
+
+### Community 797 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 798 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 799 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 800 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.17
+Nodes (12): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, feat/claude-web-adapter...origin/feat/claude-web-adapter, Files to modify, Implementation (+4 more)
+
+### Community 801 - "Human Retrieval (H)"
+Cohesion: 0.17
+Nodes (12): A1. What is MyAPI and what is its current goal?, A2. What's the current state of the retrieval pipeline end-to-end?, A3. What is the status of the API deployment?, Agent Retrieval (A), Framework, H1. Find the thread where I set up the Khoj VM migration, H2. What did I decide about source-aware priors?, H3. When was I last working on the benchmark harness? (+4 more)
+
+### Community 802 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 803 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 804 - "VM Migration Handoff"
+Cohesion: 0.17
+Nodes (12): Context Refinery, Current Repo State Worth Preserving, Current Runtime Assumptions, Important Environment Variables, Khoj, Suggested Bring-Up Order, Unknowns Still Needed From You, Verification Checklist (+4 more)
+
+### Community 805 - "Session Text"
+Cohesion: 0.17
+Nodes (11): Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command (+3 more)
+
+### Community 806 - "Session Text"
+Cohesion: 0.17
+Nodes (11): Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command (+3 more)
+
+### Community 807 - "Session Text"
+Cohesion: 0.17
+Nodes (11): Assistant, Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, Tool Call: exec_command (+3 more)
+
+### Community 808 - "<environment_context>"
+Cohesion: 0.17
+Nodes (11): Basic Configuration, Clever Enhancement: "Escape" Key, <environment_context>, For your `.tmux.conf` (outer session):, Provenance, Session Identity, Session Text, Tool Call Count (+3 more)
+
+### Community 809 - "bpuymxix4.txt.md"
+Cohesion: 0.17
+Nodes (11): bpuymxix4, Provenance, Raw Text, Run on Mac:, Run on Mac:, Run on Mac:, Run on Mac:, Run on Mac: (+3 more)
+
+### Community 812 - "lc_1004 — Max Consecutive Ones III"
+Cohesion: 0.17
+Nodes (9): Claude's Algorithm, Jules' Algorithm, lc_1004 — Max Consecutive Ones III, The Verdict, Where Each Wins, 1. [[lc_1004 — Max Consecutive Ones III]], [[Code Problem Solving Anchor]] meets[[00 Inbox/AI Sparring Loop]], Problems (+1 more)
+
+### Community 813 - "Session Log — 2026-04-27"
+Cohesion: 0.17
+Nodes (11): Code (in `~/repos/aqua-stone-studio`), Codex 5.5 evaluation (the meta-thread), Concrete deliverables, Docs (in this repo), Key findings from Packet 1 (site audit), Next session, Session Log — 2026-04-27, Surprise moments worth keeping (+3 more)
+
+### Community 814 - "Anchor Targets"
+Cohesion: 0.17
+Nodes (11): Anchor Targets, Batch Normalizer Scope, Benchmark-Driven Refinement Queue, First Pilot Batch, Q10: What notes mention Khoj deployment or indexing?, Q12: What is the status of the API deployment?, Q16: What notes are tied to Tailscale, SSH, or VM access?, Q18: What docs should I use to understand the current system end to end? (+3 more)
+
+### Community 815 - "Pi Harness"
+Cohesion: 0.17
+Nodes (12): Assistant, Changelog, Deferred (tracked, not yet implemented), Dependencies, Design Principles, Install, Layout, Pi Harness (+4 more)
+
+### Community 816 - "Custom Tools"
+Cohesion: 0.17
+Nodes (12): Best Practices, Custom Rendering, Custom Tools, Fallback, Keybinding Hints, Multiple Tools, Output Truncation, Overriding Built-in Tools (+4 more)
+
+### Community 817 - "TASK PACKET"
+Cohesion: 0.17
+Nodes (12): Context, Entry Point, Expected Evidence, Glossary (authoritative definitions for this packet), Goal, Inference Boundary, Out Of Scope (do not touch, infer about, or expand into), Scope (allowed surfaces) (+4 more)
+
+### Community 818 - "ExtensionContext"
+Cohesion: 0.17
+Nodes (7): ctx.cwd, ctx.hasUI, ctx.modelRegistry / ctx.model, ctx.sessionManager, ctx.signal, ctx.ui, ExtensionContext
+
+### Community 819 - "Proposed plan"
+Cohesion: 0.17
+Nodes (12): `explore_task`, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Phase 2 — Build a real capability registry, Phase 3 — Add an intake/compiler step, Phase 4 — Build an independent verifier, Phase 5 — Add permission/safety classifier, Phase 6 — Add bounded explorer/verifier subagents (+4 more)
+
+### Community 820 - "Co-Design Group 1.md"
+Cohesion: 0.17
+Nodes (11): **10-20 Min Discussion 1: Experiences of Social Isolation of Gen Z males**, **30 – 45 Min Brainstorm: Wireframe Concepts**, **45- 55 Min Gaming App Validation**, **55 – 60 Closing, Summary, and Appreciation**, **Brainstorm: Wireframe Concepts and Design**, **Closing, Summary, and Appreciation**, Debrief, **Discussion 1: Experiences of Social Isolation** (+3 more)
+
+### Community 821 - "**Discussion 2: Gaming as a Connector**"
+Cohesion: 0.17
+Nodes (12): Coming back, **Discussion 2: Gaming as a Connector**, Features in a Mobile App, In-Game: Avatar, Incentives to Get together, Minecraft Earth Failed + Had Limited Social Interaction in the Game, Monopoly Go + McDs, Out-of-game Rewards (+4 more)
+
+### Community 822 - "SocialXP/Vincent Social Interactivity Meeting 3.md"
+Cohesion: 0.17
+Nodes (11): App-Specific Validation, Figma and Design, Language / Expansion, Meeting Role - Show Up, Be Attentive, PokemonGo and Social Fitness, Questions for Upcoming Poll Group, Tasks, The Fabulous App (+3 more)
+
+### Community 823 - "Architecture Active Recall Cards"
+Cohesion: 0.17
+Nodes (11): Architecture Active Recall Cards, Card 1, Card 10, Card 2, Card 3, Card 4, Card 5, Card 6 (+3 more)
+
+### Community 824 - "Agent Autonomy Contract V1.1"
+Cohesion: 0.17
+Nodes (11): Agent Autonomy Contract V1.1, Rule 10 — Conflict Precedence, Rule 1 — No Deletes Without Explicit Permission, Rule 2 — Leave It Better Than You Found It, Rule 3 — Stealth Mode. No Contact Without Explicit Permission., Rule 4 — Do No Harm, Rule 5 — No Scope Creep, Rule 6 — Irreversible Actions Require Explicit Approval (+3 more)
+
+### Community 825 - "Agent Autonomy Contract V1.1"
+Cohesion: 0.17
+Nodes (11): Agent Autonomy Contract V1.1, Rule 10 — Conflict Precedence, Rule 1 — No Deletes Without Explicit Permission, Rule 2 — Leave It Better Than You Found It, Rule 3 — Stealth Mode. No Contact Without Explicit Permission, Rule 4 — Do No Harm, Rule 5 — No Scope Creep, Rule 6 — Irreversible Actions Require Explicit Approval (+3 more)
+
+### Community 826 - "Neovim Workflows — Non-Intimidating Guide"
+Cohesion: 0.17
+Nodes (12): 1. Open Today's Daily Note, 2. Search Your Vault, 3. Follow a Link, Add a Task to Today, Append to Today from CLI, Common Editing Tasks, Neovim Workflows — Non-Intimidating Guide, The Three Essential Keys (+4 more)
+
+### Community 827 - "Obsidian CLI — Quick Capture from Terminal"
+Cohesion: 0.17
+Nodes (12): Append — Add Content to Existing File, Create — Create a New Note, Files — List Files in Vault, From Mac Terminal, From Raspberry Pi, Next: [[03-Apple-Shortcuts-Setup]], Obsidian CLI — Quick Capture from Terminal, Pro Tips (+4 more)
+
+### Community 828 - "Get into the Right Directory"
+Cohesion: 0.17
+Nodes (11): Build the Kaleidoscope Firmware for Your Keyboard, Clone the Hardware Definitions, Get into the Right Directory, Getting Started, Install the Libraries and Hardware Definitions, Kaleidoscope, Linux, macOS (+3 more)
+
+### Community 829 - "STAR Summary: Claude Code + Obsidian Vault Integration"
+Cohesion: 0.17
+Nodes (11): [[02 Areas/Learning/Claude Code Filesystem MCP Tools]], Action, Bulk Tagging Workflow, Key Insight, 🔮 Next Bulk Operations to Consider, Result, Results, Situation (+3 more)
+
+### Community 830 - "-skills-list-from-the-antigravity-repo-is-the-curated-top-50-skills-list.md"
+Cohesion: 0.17
+Nodes (11): **🤖 Agent & AI Engineering**, **🌐 APIs & Integration**, **🏗️ Architecture & Design**, **🔬 Code Quality & Dev Process**, **🗄️ Database & Backend**, **🔧 Development**, **📦 Infrastructure**, **🧠 LLM / RAG / Context Engineering** (+3 more)
+
+### Community 831 - "Hand therapy exercises packet 2026.md"
+Cohesion: 0.17
+Nodes (11): ✅ Block A — Posture + Neck/Shoulder Reset (Task = 1 block), ✅ Block B — Chest + Wall Mobility (Task = 1 block), ✅ Block C — Nerve Glides / Flossing (Task = 1 block), Daily Routine Blocks, Hand Therapy Routine (Home Program), Quick Rules (read first), Quick Tracking (optional), Reference (video portal) (+3 more)
+
+### Community 832 - "Indexed Searches Accomplish Near-Zero Latency, Richer Matching Behavior, and Interactive Navigation Speed.md"
+Cohesion: 0.17
+Nodes (11): Benefit is speed, Conclusions, Concrete Example, Context, Execution Difference of Scanning Vs Indexed Search, **indexed flow**, Indexed = Pre-built Map of Every Token → File Locations, Indexed Search (+3 more)
+
+### Community 833 - "Terminal and Git and Dev Macros.md"
+Cohesion: 0.17
+Nodes (10): `Ctrl+W` Is the Prefix for Window Management Commands, Key Points, Macros + About the Commands, [[Terminal and Git and Dev Macros]], Vertical Split & Switch: `Ctrl+W` + `v` + `Ctrl+W` + `l`, 2. The "Terminal & Git" Macros (Left Hand), 3. The "Developer Workflow" Specials, A Pro-Tip for Your Apple Workflow (+2 more)
+
+### Community 834 - "Raspberry Pi Remote Dev Setup"
+Cohesion: 0.17
+Nodes (12): Default Recommendation, First-time registration, Install as a service, iPad / BlinkShell Flow, My Practical Rule, Next Step After Tunnel Stability, Raspberry Pi Remote Dev Setup, Recommended Setup for SSD-BIG (+4 more)
+
+### Community 835 - "BDR Ad Campaign Ready"
+Cohesion: 0.17
+Nodes (10): BDR Ad Campaign Ready, Definition of Done, Notes, Proof, Why It Matters, BDR Analytics Setup, Definition of Done, Notes (+2 more)
+
+### Community 836 - "BDR Local SEO"
+Cohesion: 0.17
+Nodes (10): BDR Local SEO, Definition of Done, Notes, Proof, Why It Matters, BDR SEO Basics, Definition of Done, Notes (+2 more)
+
+### Community 837 - "BDR Performance Audit"
+Cohesion: 0.17
+Nodes (10): BDR Performance Audit, Definition of Done, Notes, Proof, Why It Matters, BDR Performance Fixes, Definition of Done, Notes (+2 more)
+
+### Community 838 - "Break the AI Solution"
+Cohesion: 0.17
+Nodes (10): Break the AI Solution, Definition of Done, Notes, Proof, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 839 - "Cron Job on Pi"
+Cohesion: 0.17
+Nodes (10): Cron Job on Pi, Definition of Done, Notes, Proof, Why It Matters, Definition of Done, Notes, Pi Serves HTTP Locally (+2 more)
+
+### Community 840 - "Install and Configure 3 Plugins"
+Cohesion: 0.17
+Nodes (10): Definition of Done, Install and Configure 3 Plugins, Notes, Proof, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 841 - "LeetCode Pattern Recognition"
+Cohesion: 0.17
+Nodes (10): Definition of Done, LeetCode Pattern Recognition, Notes, Proof, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 842 - "Model Comparison Sparring"
+Cohesion: 0.17
+Nodes (10): Definition of Done, Model Comparison Sparring, Notes, Proof, Why It Matters, Definition of Done, Model Strengths Map, Notes (+2 more)
+
+### Community 843 - "Monitoring and Logging on Pi"
+Cohesion: 0.17
+Nodes (10): Definition of Done, Monitoring and Logging on Pi, Notes, Proof, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 844 - "NeoVim + tmux Seamless Navigation"
+Cohesion: 0.17
+Nodes (10): Definition of Done, NeoVim + tmux Seamless Navigation, Notes, Proof, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 845 - "Pi in SSH Config"
+Cohesion: 0.17
+Nodes (10): Definition of Done, Notes, Pi in SSH Config, Proof, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 846 - "Remote tmux from iPad"
+Cohesion: 0.17
+Nodes (10): Definition of Done, Notes, Proof, Remote tmux from iPad, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 847 - "Scripted Deployment to Pi"
+Cohesion: 0.17
+Nodes (10): Definition of Done, Notes, Proof, Scripted Deployment to Pi, Why It Matters, Definition of Done, Notes, Proof (+2 more)
+
+### Community 848 - "_to-delete-after-30d/Vincent Social Interactivity Meeting 3.md"
+Cohesion: 0.17
+Nodes (11): App-Specific Validation, Figma and Design, Language / Expansion, Meeting Role - Show Up, Be Attentive, PokemonGo and Social Fitness, Questions for Upcoming Poll Group, Tasks, The Fabulous App (+3 more)
+
+### Community 849 - "Neovim Workflows — Non-Intimidating Guide"
+Cohesion: 0.17
+Nodes (12): 1. Open Today's Daily Note, 2. Search Your Vault, 3. Follow a Link, Add a Task to Today, Append to Today from CLI, Common Editing Tasks, Neovim Workflows — Non-Intimidating Guide, The Three Essential Keys (+4 more)
+
+### Community 850 - "VM Headless Obsidian Sync Setup Summary"
+Cohesion: 0.17
+Nodes (11): **1. The Core Vision**, **2. Setup Steps (The "ob" CLI)**, **3. The "Always-On" Background Service**, **4. The "Hub-and-Spoke" Non-Negotiables**, **5. Future Node Additions**, **6. Next Migration: SSD-BIG**, **Date:** 2026-03-02, Operational rule (+3 more)
+
+### Community 851 - "Empirical Reality (2-3 sentences max, anything more must be critically justifiable)"
+Cohesion: 0.17
+Nodes (11): 026 — Cost-Aware MyMCP / Corpus Tiers, Artifacts (Filepath - Description, 1 line max per artifact), Current Git state (2-3 sentences max, anything more must be critically justifiable), Empirical Reality (2-3 sentences max, anything more must be critically justifiable), Friction experienced or anticipated, Intent going into/at start of session, Interpretation of how the session went, Narrative / Trajectory (SAB ONLY) (+3 more)
+
+### Community 852 - "Empirical Reality (2-3 sentences max, anything more must be critically justifiable)"
+Cohesion: 0.17
+Nodes (11): 027 — Active Corpus Manifest, Artifacts (Filepath - Description, 1 line max per artifact), Current Git state (2-3 sentences max, anything more must be critically justifiable), Empirical Reality (2-3 sentences max, anything more must be critically justifiable), Friction experienced or anticipated, Intent going into/at start of session, Interpretation of how the session went, Narrative / Trajectory (SAB ONLY) (+3 more)
+
+### Community 853 - "Empirical Reality (2-3 sentences max, anything more must be critically justifiable)"
+Cohesion: 0.17
+Nodes (11): 028 — Source Manifest Output Overrides, Artifacts (Filepath - Description, 1 line max per artifact), Current Git state (2-3 sentences max, anything more must be critically justifiable), Empirical Reality (2-3 sentences max, anything more must be critically justifiable), Friction experienced or anticipated, Intent going into/at start of session, Interpretation of how the session went, Narrative / Trajectory (SAB ONLY) (+3 more)
+
+### Community 854 - "Jules Task: Fix Export Tab Buttons"
+Cohesion: 0.17
+Nodes (11): 1. Wire up the Output Manifest to real data, 2. Remove or gate the Personal Read Export card, 3. Remove the fake Consolidated_Context.json and Refined_Insights.pdf from the manifest, Current State, Data Flow, Do NOT, Jules Task: Fix Export Tab Buttons, Key Files (+3 more)
+
+### Community 855 - "Anchor Targets"
+Cohesion: 0.17
+Nodes (11): Anchor Targets, Batch Normalizer Scope, Benchmark-Driven Refinement Queue, First Pilot Batch, Q10: What notes mention Khoj deployment or indexing?, Q12: What is the status of the API deployment?, Q16: What notes are tied to Tailscale, SSH, or VM access?, Q18: What docs should I use to understand the current system end to end? (+3 more)
+
+### Community 856 - "eval-bank-v0 (DRAFT — Sab edits before freeze)"
+Cohesion: 0.17
+Nodes (11): A. From real graphify / agent history (seed truth), B. MyAPI (from pass-1 QUERIES + product canon), C. GDDP (ownership is non-negotiable), Column legend, D. Pi / Needle / Gemma, E. Person / environment (second tool surface), eval-bank-v0 (DRAFT — Sab edits before freeze), Explicitly NOT in v0 (+3 more)
+
+### Community 857 - "GDDP — GAPS (mini pass-1)"
+Cohesion: 0.17
+Nodes (11): Air-unique vs mini, From air, From mini, GDDP — GAPS (air), gddp / GAPS — merged v1, GDDP — GAPS (mini pass-1), Pass-1 stop, Still missing (+3 more)
+
+### Community 858 - "MyAPI — GAPS (mini pass-1)"
+Cohesion: 0.17
+Nodes (11): From air, From mini, MyAPI — GAPS (air), myapi / GAPS — merged v1, MyAPI — GAPS (mini pass-1), Pass-1 stop, Still missing on air (for a complete brief), Still missing on mini (for pass-2 / air merge) (+3 more)
+
+### Community 859 - "Pi / Needle / Gemma — SOURCES (mini pass-1)"
+Cohesion: 0.17
+Nodes (11): Core paths, Env names only (no values), From air, From mini, Gemma — path + config, not weights, Ingest risks (do not full-ingest `~/.pi`), mini-only vs missing, Needle layout notes (from README) (+3 more)
+
+### Community 860 - "2026-07-29 — What we did"
+Cohesion: 0.17
+Nodes (11): 1. Source material (before VM), 2026-07-29 — What we did, 2. Merge (on sab-mini only), 3. Landed on VM, 4. Made searchable in Khoj, 5. Index call, 6. Smoke test (8 questions), 7. What is NOT done (+3 more)
+
+### Community 861 - ".process_file"
+Cohesion: 0.24
+Nodes (7): normalize_projects(), page_items(), ProjectsPass, Keep preset projects in a stable order, then preserve custom projects., Print the project keypress legend., Toggle projects for one file. t=custom, enter/space=done, q=quit all.          R, test_projects_paging_helpers()
+
+### Community 862 - "TagsPass"
+Cohesion: 0.24
+Nodes (7): normalize_tags(), page_items(), Keep preset tags in a stable order, then preserve custom tags., Print the tag keypress legend with numbered/lettered presets., Toggle tags for one file. t=custom, enter/space=done, q=quit all.          Retur, TagsPass, test_tags_paging_helpers()
+
+### Community 863 - "Monitoring / Ops (ops → ssd-small)"
+Cohesion: 0.18
+Nodes (11): 15. Site Health Check (bonnydoonretreat.net), 16. Site Health Check (Multiple URLs), 17. System Resources (RAM, Disk - ssd-big), 18. CPU Temperature (ssd-small), 19. Process Check (obsidian-headless), 20. Log Tail (OpenClaw Gateway), 21. SSL Certificate Expiry Check (waterandstone.org), 22. DNS Resolution Check (saboorkc.dev) (+3 more)
+
+### Community 864 - "2. Monitoring / Ops"
+Cohesion: 0.18
+Nodes (11): 2. Monitoring / Ops, DB_CONNECTION_TEST, DNS_RESOLUTION_CHECK, LOG_TAIL, PORT_CONNECTIVITY_CHECK, PROCESS_CHECK, SITE_HEALTH_CHECK_MULTI, SITE_HEALTH_CHECK_SINGLE (+3 more)
+
+### Community 865 - "3. Task Categories (Mapped to Repos)"
+Cohesion: 0.18
+Nodes (11): 3.10 Heavy Compute / Processing, 3.1 Repo State Inspection, 3.2 Build / Execution Validation, 3.3 Code Intelligence, 3.4 GDDP System Tasks (Core System Layer), 3.5 Data / Benchmark Tasks, 3.6 System / Infra Tasks, 3.7 Obsidian / Knowledge Tasks (+3 more)
+
+### Community 866 - "3. Personal / Calendar / Life"
+Cohesion: 0.18
+Nodes (11): 3. Personal / Calendar / Life, ADD_CALENDAR_EVENT, DRAFT_SHORT_REPLY, END_OF_DAY_REVIEW, MORNING_BRIEFING, QUICK_FACTUAL_QUESTION, QUICK_NOTE_TO_INBOX, SET_REMINDER (+3 more)
+
+### Community 867 - "Heavy Compute / VM (vm-lab / biz → first-vm)"
+Cohesion: 0.18
+Nodes (11): 51. Run Background Data Sync (first-vm), 52. Generate Large Report (first-vm), 53. Batch Image Processing (first-vm), 54. Execute Headless Backup (first-vm), 55. Run ML Model Inference (first-vm), 56. Database Dump Generation (first-vm), 57. Container Redeployment (first-vm), 58. Load Testing Execution (first-vm) (+3 more)
+
+### Community 868 - "Monitoring / Ops (ops → ssd-small)"
+Cohesion: 0.18
+Nodes (11): 15. Site Health Check (bonnydoonretreat.net), 16. Site Health Check (Multiple URLs), 17. System Resources (RAM, Disk - ssd-big), 18. CPU Temperature (ssd-small), 19. Process Check (obsidian-headless), 20. Log Tail (OpenClaw Gateway), 21. SSL Certificate Expiry Check (waterandstone.org), 22. DNS Resolution Check (saboorkc.dev) (+3 more)
+
+### Community 869 - "Operations Layer"
+Cohesion: 0.18
+Nodes (11): Active Repos (on saboors-macbook-air, in ~/repos/), Agents, Canonical Sources (Sab’s working surfaces), Monitored Sites, Node Topology, Operating Modes, Operations Layer, Roles (+3 more)
+
+### Community 870 - "Monitoring / Ops (ops → ssd-small)"
+Cohesion: 0.18
+Nodes (11): 15. Site Health Check (bonnydoonretreat.net), 16. Site Health Check (Multiple URLs), 17. System Resources (RAM, Disk - ssd-big), 18. CPU Temperature (ssd-small), 19. Process Check (obsidian-headless), 20. Log Tail (OpenClaw Gateway), 21. SSL Certificate Expiry Check (waterandstone.org), 22. DNS Resolution Check (saboorkc.dev) (+3 more)
+
+### Community 871 - "Heavy Compute / VM (vm-lab / biz → first-vm)"
+Cohesion: 0.18
+Nodes (11): 51. Run Background Data Sync (first-vm), 52. Generate Large Report (first-vm), 53. Batch Image Processing (first-vm), 54. Execute Headless Backup (first-vm), 55. Run ML Model Inference (first-vm), 56. Database Dump Generation (first-vm), 57. Container Redeployment (first-vm), 58. Load Testing Execution (first-vm) (+3 more)
+
+### Community 872 - "Operations Layer"
+Cohesion: 0.18
+Nodes (11): Active Repos (on saboors-macbook-air, in ~/repos/), Agents, Canonical Sources (Sab’s working surfaces), Monitored Sites, Node Topology, Operating Modes, Operations Layer, Roles (+3 more)
+
+### Community 873 - "Heavy Compute / VM (vm-lab / biz → first-vm)"
+Cohesion: 0.18
+Nodes (11): 51. Run Background Data Sync (first-vm), 52. Generate Large Report (first-vm), 53. Batch Image Processing (first-vm), 54. Execute Headless Backup (first-vm), 55. Run ML Model Inference (first-vm), 56. Database Dump Generation (first-vm), 57. Container Redeployment (first-vm), 58. Load Testing Execution (first-vm) (+3 more)
+
+### Community 874 - "Operations Layer"
+Cohesion: 0.18
+Nodes (11): Active Repos (on saboors-macbook-air, in ~/repos/), Agents, Canonical Sources (Sab’s working surfaces), Monitored Sites, Node Topology, Operating Modes, Operations Layer, Roles (+3 more)
+
+### Community 875 - "Brief"
+Cohesion: 0.18
+Nodes (10): Brief, Concept, Conversation Identity, Goal, Offline Interactive Pages iOS, Provenance, Raw Conversation, Required Interactions (+2 more)
+
+### Community 876 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 05:55 | refactor/reflection-no-carry-forward, 23:35 | master, Commands to invoke (entry points), External dependencies the automation host needs, Files modified or created this session, Provenance, Session Identity, Session Text (+2 more)
+
+### Community 877 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 06:03 | refactor/github-projects-drop-24h, 23:35 | master, Commands to invoke (entry points), External dependencies the automation host needs, Files modified or created this session, Provenance, Session Identity, Session Text (+2 more)
+
+### Community 878 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 05:57 | master, 23:35 | master, Commands to invoke (entry points), External dependencies the automation host needs, Files modified or created this session, Provenance, Session Identity, Session Text (+2 more)
+
+### Community 879 - "Main remaining gaps"
+Cohesion: 0.18
+Nodes (11): 000 — 7-Extension Hardening Sweep + Stage 0/2 Closure, 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete (+3 more)
+
+### Community 880 - "Main remaining gaps"
+Cohesion: 0.18
+Nodes (11): 000 — 7-Extension Hardening Sweep + Stage 0/2 Closure, 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete (+3 more)
+
+### Community 881 - "Main remaining gaps"
+Cohesion: 0.18
+Nodes (11): 000 — 7-Extension Hardening Sweep + Stage 0/2 Closure, 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete (+3 more)
+
+### Community 882 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 00:30 | main, Audit results, Draft prompt, Provenance, Recommended next steps, Session Identity, Session Text, What does matter (runtime, not clone-time) (+2 more)
+
+### Community 883 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.18
+Nodes (10): History search (Ctrl+R), How it differs from transcript rewind, <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text, So to answer directly, Toggling todos (Ctrl+T) (+2 more)
+
+### Community 884 - "Obsidian Bases Skill"
+Cohesion: 0.18
+Nodes (11): Default Summary Formulas, Embedding Bases, Formula Syntax, Obsidian Bases Skill, Proposed plan, Quick clarifying questions before I write, References, Schema (+3 more)
+
+### Community 885 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 00:25 | unknown, How "switch on/off" works, My read, Provenance, Session Identity, Session Text, The honest problems, Topology (+2 more)
+
+### Community 886 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.18
+Nodes (10): 04:39 | main, 04:49 | main, 04:53 | main, 04:57 | main, 04:57 | main, 12:15 | test/async-agents, Apply maximum non-destructive compression. Rules:, Provenance (+2 more)
+
+### Community 887 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 12:55 | chore/body-conventions, 14:16 | chore/body-conventions, Counts you asked about, Cross-ref structural payoff, Provenance, Session Identity, Session Text, Tags & links created (+2 more)
+
+### Community 888 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 17:44 | unknown, How "switch on/off" works, My read, Provenance, Session Identity, Session Text, The honest problems, Topology (+2 more)
+
+### Community 889 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 09:54 | main, Inside the chapters (640 lines, 31%), Inside the CSS (52.6% of the file), My recommendation, Provenance, Session Identity, Session Text, Where the 2060 lines actually go (+2 more)
+
+### Community 890 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.18
+Nodes (10): <local-command-caveat>Caveat: The messages below were generated by the user whil, Probe Results, Provenance, Recommended next move, Session Identity, Session Text, Setup for the Build (template stays open), Single Text to Client (gather everything in one ask) (+2 more)
+
+### Community 891 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 10:42 | feat/premium-media-library, 10:47 | GBP recovery docs, Option A — Vercel preview link (recommended), Option B — AirDrop / iMessage attachment, Option C — Long screenshot (PNG), Option D — Paste into Google Docs, Provenance, Session Identity (+2 more)
+
+### Community 892 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 01:50 | main, Probe Results, Provenance, Recommended next move, Session Identity, Session Text, Setup for the Build (template stays open), Single Text to Client (gather everything in one ask) (+2 more)
+
+### Community 893 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 23:37 | main, "Migrate me to Mac" — orthogonal but worth naming, Provenance, Session Identity, Session Text, Suggested ordering (your call), The Cactus × host matrix (decoupled), The disk-fix track (independent) (+2 more)
+
+### Community 894 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 05:29 | main, "Migrate me to Mac" — orthogonal but worth naming, Provenance, Session Identity, Session Text, Suggested ordering (your call), The Cactus × host matrix (decoupled), The disk-fix track (independent) (+2 more)
+
+### Community 895 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 05:43 | main, Account transfer next step, Changes I made to the inner Lovable project (`pages/011-git-object-explorer/`), Changes I made to the OUTER repo that reference the OLD URL, Decision before we cut over, Provenance, Session Identity, Session Text (+2 more)
+
+### Community 896 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.18
+Nodes (10): 09:45 | feat/corpus-v1-normalization, 10:18 | feat/corpus-v1-normalization, Provenance, Raw REST endpoints you have available, Session Identity, Session Text, --- Vertex AI notes CLI (sb-genai-2026 / benchmark-s`], What works right now (+2 more)
+
+### Community 897 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.18
+Nodes (10): 00:57 | docs/avatar-reflection-spec, 01:03 | docs/avatar-reflection-spec, 01:09-01:17 | docs/avatar-reflection-spec, 01:09 | docs/avatar-reflection-spec, 01:11 | docs/avatar-reflection-spec, 01:17 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance (+2 more)
+
+### Community 898 - "V4 Schema Compliance Audit Report"
+Cohesion: 0.18
+Nodes (10): **Codex's Migration Claim: PARTIALLY VERIFIED**, **Compliance Samples (by folder)**, **Critical Findings**, **Folder-by-Folder Coverage**, **Next Normalization Steps**, Provenance, Session Identity, Session Text (+2 more)
+
+### Community 899 - "Normalization Status Report: Floor-Pass Coverage"
+Cohesion: 0.18
+Nodes (10): Apply Manifests: Floor-Pass Complete Batches, Backup Snapshots: Full File Copies, Normalization Status Report: Floor-Pass Coverage, Other Manifest Files & Ledgers, Owner-Pass Tracking, Provenance, Punch List Summary, Session Identity (+2 more)
+
+### Community 900 - "Viewing HTML files without specific browsers"
+Cohesion: 0.18
+Nodes (10): 1. Check Neovim version, 2. Set your default browser to Safari (or whatever), 3. Create the plugin file, 4. Try it, 5. Optional: autosave so refresh feels instant, Conversation Identity, On bun for the non-nvim case, Provenance (+2 more)
+
+### Community 901 - "Google representation for Bailey's Water and Stone"
+Cohesion: 0.18
+Nodes (10): Conversation Identity, Google representation for Bailey's Water and Stone, How cases resolve, How Google "vets" you, How representation actually works, Provenance, Raw Conversation, SEO + GEO (here's where it gets interesting) (+2 more)
+
+### Community 902 - "Raw Conversation"
+Cohesion: 0.18
+Nodes (10): AI Integration Potential, Base 44 Migration Assessment, Conversation Identity, Market Opportunity & Timing, Next Steps, Platform Comparison & Recommendation, Project Collaboration Proposal, Provenance (+2 more)
+
+### Community 903 - "Decision"
+Cohesion: 0.18
+Nodes (11): Acceptance Check, Changed Files, Decision, Initial Understanding, Live Decision Log, Outcome, Rejected Alternatives, Risks And Gaps (+3 more)
+
+### Community 904 - "OpenClaw Systems Architect"
+Cohesion: 0.18
+Nodes (11): Cleanup and migration policy, Core principles, Default architecture bias, Environment model, OpenClaw Systems Architect, Preferred outcomes, Primary goals, Purpose (+3 more)
+
+### Community 905 - "2026-04-05 - environment-context - 019d5ca4-e9fe8430fc.md"
+Cohesion: 0.18
+Nodes (10): 2.1.91, 2.1.92, Changelog, Check file size quickly, Check for path traversal, Check for system paths, <environment_context>, Hard-coded validation logic (+2 more)
+
+### Community 906 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 02 Areas/My_DevInfra/AGY - New era means stale and old data will be approached thoughtfully.md, 02 Areas/My_DevInfra/AI/OpenClaw-clean-node-pairing-with-first-VM-and-big-pi-commit-id,-dot-file-celebration.md, 02 Areas/My_DevInfra/AI/OpenClaw-skills-info-research-and-preparation.md, 02 Areas/My_DevInfra/For custom keybindings in your neovim, go to leader-sk, or.md, 02 Areas/My_DevInfra/IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-.md, 02 Areas/My_DevInfra/Keybindings/agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md, 02 Areas/My_DevInfra/Mobile-SSH-antigravity-development-workflow-examples-using-piping.md, 02 Areas/My_DevInfra/My-inline-non-interactive-alias-commands-for-Claude,-Gemini,-and-copilot.md (+3 more)
+
+### Community 907 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 02 Areas/My_DevInfra/For custom keybindings in your neovim, go to leader-sk, or.md, 02 Areas/My_DevInfra/IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-.md, 02 Areas/My_DevInfra/Keybindings/agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md, 02 Areas/My_DevInfra/Mobile-SSH-antigravity-development-workflow-examples-using-piping.md, 02 Areas/My_DevInfra/My-inline-non-interactive-alias-commands-for-Claude,-Gemini,-and-copilot.md, 02 Areas/My_DevInfra/My_Neovim/Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM.md, 02 Areas/My_DevInfra/My_Neovim/One Week NeoVim Challenge.md, 02 Areas/My_DevInfra/My-own-custom-Jules-because-fuck-Google.md (+3 more)
+
+### Community 908 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 03 Resources/NeoVim/3  ways to save a PKM note from the terminal.md, 03 Resources/NeoVim/AI-augmented terminal power user primer.md, 03 Resources/NeoVim/Daily Neogit workflow loop.md, 03 Resources/NeoVim/Lazy Vim keyboard shortcut wizardry using which-key.md, 03 Resources/NeoVim/Lazyvim - Getting Started Docs.md, 03 Resources/NeoVim/Modern recommended Python stack on Neovim.md, 03 Resources/NeoVim/Modify a specific property globally using substitute and global commands.md, 03 Resources/NeoVim/NEOVIM PRACTICE IPAD?!.md (+3 more)
+
+### Community 909 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.18
+Nodes (11): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Files to modify, Implementation, Problem (+3 more)
+
+### Community 910 - "VM Migration Sprint"
+Cohesion: 0.18
+Nodes (11): 1) Confirm the new VM is reachable, Command Pack, Database Decision, Deployment Command Sheet, Fast Decision Matrix, Noon's Critical Path, Shutdown Checklist For The Old VM, Strategy (+3 more)
+
+### Community 911 - "Authentication Flow Brainstorm"
+Cohesion: 0.18
+Nodes (11): Assistant, Assistant, Authentication Flow Brainstorm, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+3 more)
+
+### Community 912 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 02 Areas/My_DevInfra/AGY - New era means stale and old data will be approached thoughtfully.md, 02 Areas/My_DevInfra/AI/OpenClaw-clean-node-pairing-with-first-VM-and-big-pi-commit-id,-dot-file-celebration.md, 02 Areas/My_DevInfra/AI/OpenClaw-skills-info-research-and-preparation.md, 02 Areas/My_DevInfra/For custom keybindings in your neovim, go to leader-sk, or.md, 02 Areas/My_DevInfra/IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-.md, 02 Areas/My_DevInfra/Keybindings/agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md, 02 Areas/My_DevInfra/Mobile-SSH-antigravity-development-workflow-examples-using-piping.md, 02 Areas/My_DevInfra/My-inline-non-interactive-alias-commands-for-Claude,-Gemini,-and-copilot.md (+3 more)
+
+### Community 913 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 02 Areas/My_DevInfra/For custom keybindings in your neovim, go to leader-sk, or.md, 02 Areas/My_DevInfra/IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-.md, 02 Areas/My_DevInfra/Keybindings/agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md, 02 Areas/My_DevInfra/Mobile-SSH-antigravity-development-workflow-examples-using-piping.md, 02 Areas/My_DevInfra/My-inline-non-interactive-alias-commands-for-Claude,-Gemini,-and-copilot.md, 02 Areas/My_DevInfra/My_Neovim/Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM.md, 02 Areas/My_DevInfra/My_Neovim/One Week NeoVim Challenge.md, 02 Areas/My_DevInfra/My-own-custom-Jules-because-fuck-Google.md (+3 more)
+
+### Community 914 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 03 Resources/NeoVim/3  ways to save a PKM note from the terminal.md, 03 Resources/NeoVim/AI-augmented terminal power user primer.md, 03 Resources/NeoVim/Daily Neogit workflow loop.md, 03 Resources/NeoVim/Lazy Vim keyboard shortcut wizardry using which-key.md, 03 Resources/NeoVim/Lazyvim - Getting Started Docs.md, 03 Resources/NeoVim/Modern recommended Python stack on Neovim.md, 03 Resources/NeoVim/Modify a specific property globally using substitute and global commands.md, 03 Resources/NeoVim/NEOVIM PRACTICE IPAD?!.md (+3 more)
+
+### Community 915 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.18
+Nodes (11): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Files to modify, Implementation, Problem (+3 more)
+
+### Community 916 - "VM Migration Sprint"
+Cohesion: 0.18
+Nodes (11): 1) Confirm the new VM is reachable, Command Pack, Database Decision, Deployment Command Sheet, Fast Decision Matrix, Noon's Critical Path, Shutdown Checklist For The Old VM, Strategy (+3 more)
+
+### Community 917 - "Authentication Flow Brainstorm"
+Cohesion: 0.18
+Nodes (11): Assistant, Assistant, Authentication Flow Brainstorm, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+3 more)
+
+### Community 918 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 02 Areas/My_DevInfra/AGY - New era means stale and old data will be approached thoughtfully.md, 02 Areas/My_DevInfra/AI/OpenClaw-clean-node-pairing-with-first-VM-and-big-pi-commit-id,-dot-file-celebration.md, 02 Areas/My_DevInfra/AI/OpenClaw-skills-info-research-and-preparation.md, 02 Areas/My_DevInfra/For custom keybindings in your neovim, go to leader-sk, or.md, 02 Areas/My_DevInfra/IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-.md, 02 Areas/My_DevInfra/Keybindings/agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md, 02 Areas/My_DevInfra/Mobile-SSH-antigravity-development-workflow-examples-using-piping.md, 02 Areas/My_DevInfra/My-inline-non-interactive-alias-commands-for-Claude,-Gemini,-and-copilot.md (+3 more)
+
+### Community 919 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 02 Areas/My_DevInfra/For custom keybindings in your neovim, go to leader-sk, or.md, 02 Areas/My_DevInfra/IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-.md, 02 Areas/My_DevInfra/Keybindings/agy - Antigravity Hotkeys and Keybindings for Mac and Linux VM.md, 02 Areas/My_DevInfra/Mobile-SSH-antigravity-development-workflow-examples-using-piping.md, 02 Areas/My_DevInfra/My-inline-non-interactive-alias-commands-for-Claude,-Gemini,-and-copilot.md, 02 Areas/My_DevInfra/My_Neovim/Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM.md, 02 Areas/My_DevInfra/My_Neovim/One Week NeoVim Challenge.md, 02 Areas/My_DevInfra/My-own-custom-Jules-because-fuck-Google.md (+3 more)
+
+### Community 920 - "Review Queue"
+Cohesion: 0.18
+Nodes (11): 03 Resources/NeoVim/3  ways to save a PKM note from the terminal.md, 03 Resources/NeoVim/AI-augmented terminal power user primer.md, 03 Resources/NeoVim/Daily Neogit workflow loop.md, 03 Resources/NeoVim/Lazy Vim keyboard shortcut wizardry using which-key.md, 03 Resources/NeoVim/Lazyvim - Getting Started Docs.md, 03 Resources/NeoVim/Modern recommended Python stack on Neovim.md, 03 Resources/NeoVim/Modify a specific property globally using substitute and global commands.md, 03 Resources/NeoVim/NEOVIM PRACTICE IPAD?!.md (+3 more)
+
+### Community 921 - "Task: Add Hybrid Search (Vector + Keyword) to Retrieval Pipeline"
+Cohesion: 0.18
+Nodes (11): 1. Add `KeywordSearcher` class to `context_refinery/retrieval.py`, 2. Modify `RetrievalPipeline.execute()`, 3. Boost keyword matches in `ResultReranker.rerank()`, 4. Handle local vs VM execution, Architecture, Files to modify, Implementation, Problem (+3 more)
+
+### Community 922 - "VM Migration Sprint"
+Cohesion: 0.18
+Nodes (11): 1) Confirm the new VM is reachable, Command Pack, Database Decision, Deployment Command Sheet, Fast Decision Matrix, Noon's Critical Path, Shutdown Checklist For The Old VM, Strategy (+3 more)
+
+### Community 923 - "Authentication Flow Brainstorm"
+Cohesion: 0.18
+Nodes (11): Assistant, Assistant, Authentication Flow Brainstorm, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+3 more)
+
+### Community 924 - "<environment_context>"
+Cohesion: 0.18
+Nodes (10): <environment_context>, How to Access Skills, Instruction Priority, Platform Adaptation, Provenance, Session Identity, Session Text, Tool Call Count (+2 more)
+
+### Community 925 - "Host Roles — OpenClaw Topology"
+Cohesion: 0.18
+Nodes (10): docs/openclaw-spec.md, <environment_context>, Host Roles — OpenClaw Topology, Intended Roles, mac — Operator Host, Provenance, Session Identity, ssd-big — Sole Gateway (+2 more)
+
+### Community 926 - "Next Needle Boundary Decision"
+Cohesion: 0.18
+Nodes (11): 1. `model_thinking_v1`, 2. `packet_lane_v1`, 3. `return_route_v1`, 4. `command_policy_v1`, Candidate Comparison, Decision, feat/router-hardening-v1, Immediate Next Steps (+3 more)
+
+### Community 927 - "Code Review Reception"
+Cohesion: 0.18
+Nodes (11): Code Review Reception, Forbidden Responses, From External Reviewers, From your human partner, Handling Unclear Feedback, Implementation Order, Overview, Source-Specific Handling (+3 more)
+
+### Community 928 - "Code Review Reception"
+Cohesion: 0.18
+Nodes (11): Code Review Reception, Forbidden Responses, From External Reviewers, From your human partner, Handling Unclear Feedback, Implementation Order, Overview, Source-Specific Handling (+3 more)
+
+### Community 929 - "Verification Before Completion"
+Cohesion: 0.18
+Nodes (11): Common Failures, feat/router-hardening-v1, Key Patterns, Overview, Rationalization Prevention, Red Flags - STOP, The Gate Function, The Iron Law (+3 more)
+
+### Community 930 - "Code Review Reception"
+Cohesion: 0.18
+Nodes (11): Code Review Reception, Forbidden Responses, From External Reviewers, From your human partner, Handling Unclear Feedback, Implementation Order, Overview, Source-Specific Handling (+3 more)
+
+### Community 931 - "solutions for whichkey in neovim in terminal due to jarring editing experience.md"
+Cohesion: 0.18
+Nodes (10): 1. Increase WhichKey's Delay, 2. Disable Animations, 3. Use a Floating Window that Doesn't Shift Layout, 4. Optimize Neovim's Terminal Rendering, 5. Consider Using an Alternative Trigger, 6. Combine Delay + Conditional Rendering by Filetype, More Elegant Solutions, Quick Fixes (+2 more)
+
+### Community 932 - "GDAD System Roadmap"
+Cohesion: 0.18
+Nodes (10): GDAD System Roadmap, Phase 0 — Foundation (Obsidian + Schemas), Phase 1 — Config Repo Setup, Phase 2 — Queue and Artifact Wiring, Phase 3 — First Real Mission (Manual Trigger), Phase 4 — First Semi-Automatic Mission, Phase 5 — First Overnight Mission, Phase 6 — OpenClaw Hardening (+2 more)
+
+### Community 933 - "System State After the Freeze"
+Cohesion: 0.18
+Nodes (9): Forward Path (what You Own as operator), Return Path (frozen, Do Not touch), System State After the Freeze, The Invariant (hard boundary), What "running Nodes correctly" Means for You now, - Directory Map, File Ownership, GDD - Pivot Return Route (+1 more)
+
+### Community 934 - "Guide: Building a Unified Vertex AI Chatbot over Multiple Obsidian Vaults"
+Cohesion: 0.18
+Nodes (10): 1. The Multi-Vault Sync Script, 2. Run the Multi-Vault Sync, 📋 Architectural Overview, Guide: Building a Unified Vertex AI Chatbot over Multiple Obsidian Vaults, Option A: A Single Unified Data Store (Recommended for simplicity), Option B: Multiple Distinct Data Stores (Recommended for logical separation), 🛠️ Step 1: Local Multi-Vault Setup & Syncing, ☁️ Step 2: Creating the Vertex AI Data Stores (+2 more)
+
+### Community 935 - "Run — Blocker Pass (Trust-Categorized v1)"
+Cohesion: 0.18
+Nodes (10): 1. Exact-phrase boost (closed F5/H4 regression), 2. Classifier alias patch (closed A1/A2 weak wins), 3. Synthesized_note guard (lifted A1/A2 over chat-dump noise), 4. Corpus sync for A7, Lane attribution, Open items (not blocking tonight), Result: blocker set closed, Run — Blocker Pass (Trust-Categorized v1) (+2 more)
+
+### Community 936 - "Custom UI"
+Cohesion: 0.18
+Nodes (11): Autocomplete Providers, Custom Components, Custom Editor, Custom UI, Dialogs, Manual Dismissal with AbortSignal, Message Rendering, Overlay Mode (Experimental) (+3 more)
+
+### Community 937 - "Become the quiet, avoidant, spiteful, resentful man with a long game for revenge.md"
+Cohesion: 0.18
+Nodes (10): [[Being present exposes the illusions and delusions]], Find a Girl to Watch White Lotus with, Flexxing on Her to Smino, If Erin is receptive…, Leveling up My Finances and Clothing, Little Things that Make Me Feel Better, My Teeth Must Be PEARLS, Revenge is a Dish Best Served Cold (+2 more)
+
+### Community 938 - "Core Team Call 2.md"
+Cohesion: 0.18
+Nodes (10): [[02 Areas/Confidential/SMW/leader-cycle-1/Men missing meetings call the men but confidentiality must be upheld]], Balthazar Cleared to Miss All In-persons, Cooper and Bowman Have not Reached out, CPR for Zoom Meeting → Upload CPRs to Drive, Jones Missing Team-Away Too, Love → How Did You Manage Your Day, Love Will Reach out to Cooper and Bowman, if Non-responsive, Report back to Leadership and We Will Take over, MA and Women's Weekend (+2 more)
+
+### Community 939 - "Apple Shortcuts — Capture from iPad/iPhone via SSH"
+Cohesion: 0.18
+Nodes (11): Advanced: Quick Capture (No Questions), Apple Shortcuts — Capture from iPad/iPhone via SSH, Install the Script:, Next Steps, Prerequisites, Step 1: Create a Capture Script on Mac, Step 2: Get Your Mac's SSH Details, Step 3: Create Shortcut on iPad/iPhone (+3 more)
+
+### Community 940 - "Talon Voice Control for Coding Neovim"
+Cohesion: 0.18
+Nodes (10): 1. Core Architecture & Environment, 2. The Scripting Ecosystem & Foundation, 3. Advanced Customization & Neovim Integration, 4. Acoustic Design Principles (Rules for Custom Commands), 5. Brainstorming: Phonetic Triggers for Neovim, Editing Actions, File Management, Mode Switching & Escaping (+2 more)
+
+### Community 941 - "Answer: Aliasing a Folder"
+Cohesion: 0.18
+Nodes (10): Answer: Aliasing a Folder, Best Combo Approach, For Your Brave PWAs Specifically, Keyboard Shortcuts through Raycast ⟶ PWAs, Method 1: Using Finder (Easiest), Method 2: Create an Alias Using Keyboard Shortcut, Method 3: Add to Dock, Method 4: Add to Finder Sidebar (+2 more)
+
+### Community 942 - "[[CLI OAuth vs Traditional API Keys ]]"
+Cohesion: 0.18
+Nodes (9): **API keys** Are Completely Separate, Claude Code Specifically, CLI Authentication, [[CLI OAuth vs Traditional API Keys ]], Pay-per-token vs. Large Usage Cap (no rollover), **premium subscriptions** (Gemini AI Pro, ChatGPT Pro, Claude Pro) Give You, Traditional API Keys, Claude Code Specifically (+1 more)
+
+### Community 943 - "Monitoring / Ops (ops → small-pi)"
+Cohesion: 0.18
+Nodes (11): 15. Site Health Check (Single URL), 16. Site Health Check (Multiple URLs), 17. System Resources (RAM, Disk), 18. CPU Temperature, 19. Process Check (Is Service X running?), 20. Log Tail (Last N lines), 21. SSL Certificate Expiry Check, 22. DNS Resolution Check (+3 more)
+
+### Community 944 - "Evening Prep — 2026.04.23"
+Cohesion: 0.18
+Nodes (10): Evening Prep — 2026.04.23, —— GitHub ——, Morning Briefing, 📝 Notes captured today, Reflections, Scratchpad, —— Setting Up Tomorrow ——, Thursday Plan (+2 more)
+
+### Community 945 - "2026.05.16.md"
+Cohesion: 0.18
+Nodes (10): 05-16 Output, 13:08 — Week 20 Saturday, 2026.05.16 19:03 — CSAPP: Virtual Memory & Paging, 2026.05.16 19:20 — FPiS Ch5: Laziness & Stream.unfold, Codebase — Saturday, CS Classics Lesson, FPiS Lesson, Reflections (+2 more)
+
+### Community 946 - "2. Strict Constraints for All Future Responses"
+Cohesion: 0.18
+Nodes (10): 05-20 Output, 1. Root Causes to Expose, 2. Strict Constraints for All Future Responses, A. The "Failure-First" Audit, B. The "Zero Superlatives" Ban, C. Path and Reference Integrity, D. Verified Citations Only, Reflections (+2 more)
+
+### Community 947 - "Duplicate Cleanup Log — 2026-02-28"
+Cohesion: 0.18
+Nodes (10): Analysis Results:, Batch 1: Empty Exact Duplicates (27/28 files), Batch 2: Exact Non-empty Duplicates (3 files), Batch 3: High-Confidence Merges (12 pairs), Duplicate Cleanup Log — 2026-02-28, Files moved:, Files moved to `Archive/_to-delete-after-30d/`:, From `00 Inbox/` (18 files) (+2 more)
+
+### Community 948 - "2. The Core Engine (The "Bridge")"
+Cohesion: 0.18
+Nodes (10): 1. The Multi-Agent Power Stack, 2. The Core Engine (The "Bridge"), 3. The Jules "100-Task" Workflow, **Layer 1: Ingestion (The "Hands")**, **Layer 2: Intelligence (The "Mind")**, **Layer 3: Action (The "Strike")**, **Layer 4: Delivery (The "Message")**, **Module 1: Lead Detective (Direct Strike)** (+2 more)
+
+### Community 949 - "The Hardened Configuration Vision (10,000-foot view)"
+Cohesion: 0.18
+Nodes (10): **1. The Core Philosophy**, **2. The Layers of the Machine**, **3. The "Standard Alignment" Promise**, **4. The Scalability Goal**, **Date:** 2026-03-02, **Layer 1: The Blueprint (`/work/repos/dotfiles`)**, **Layer 2: The Router (Symlinks)**, **Layer 3: The Laboratory (Isolated State)** (+2 more)
+
+### Community 950 - "Run — Blocker Pass (Trust-Categorized v1)"
+Cohesion: 0.18
+Nodes (10): 1. Exact-phrase boost (closed F5/H4 regression), 2. Classifier alias patch (closed A1/A2 weak wins), 3. Synthesized_note guard (lifted A1/A2 over chat-dump noise), 4. Corpus sync for A7, Lane attribution, Open items (not blocking tonight), Result: blocker set closed, Run — Blocker Pass (Trust-Categorized v1) (+2 more)
+
+### Community 951 - "Run — Tighten Pass (Trust-Categorized v1)"
+Cohesion: 0.18
+Nodes (10): F5 regression — separate, blocking, Lane attribution, Open items (next session), Real fix paths (deferred to next session), Result: mixed — sentinels held, A7 fix was wrong diagnosis, F5 regressed, Run — Tighten Pass (Trust-Categorized v1), State of the system, Vocab bridge in `_expand_query_for_retrieval` (deployed, no-op on target) (+2 more)
+
+### Community 952 - "Khoj Deployment and Indexing Anchor"
+Cohesion: 0.18
+Nodes (10): Current Service State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Indexing Flow, Khoj Deployment and Indexing Anchor, Runtime Topology, Source Evidence (+2 more)
+
+### Community 953 - "My_DevInfra System Anchor"
+Cohesion: 0.18
+Nodes (10): Benchmark Relevance, Core Components, Current State, Decisions Made, Failure Modes / Gotchas, Important Files, My_DevInfra System Anchor, Operating Loop (+2 more)
+
+### Community 954 - "VM Tailscale SSH Access Anchor"
+Cohesion: 0.18
+Nodes (10): Access Paths, Current Access Facts, Disk Layout, Failure Modes / Gotchas, Important Commands or Files, Recovery Cases, Service Checks, Source Evidence (+2 more)
+
+### Community 955 - "The proposal"
+Cohesion: 0.18
+Nodes (10): Backfill stance, Followups (downstream of this plan), Open design questions, Sequencing, source_type taxonomy — design plan, Stamp every doc with `source_type` at ingestion, The proposal, What we're not doing (+2 more)
+
+### Community 956 - "Status & Next Steps"
+Cohesion: 0.18
+Nodes (10): A note on stale docs, Current deployment, Live source documents, Pending queue, Phase 2 — what's closed (2026-04-25), Status & Next Steps, Strategic frame, Tighten pass (2026-05-02) (+2 more)
+
+### Community 957 - "GDDP — SOURCES (mini pass-1)"
+Cohesion: 0.18
+Nodes (10): Env names only, From air, From mini, GDDP — SOURCES (air), gddp / SOURCES — merged v1, GDDP — SOURCES (mini pass-1), Git tips (mini), Handoffs (1–2 named samples) (+2 more)
+
+### Community 958 - "Guide: Building a Unified Vertex AI Chatbot over Multiple Obsidian Vaults"
+Cohesion: 0.18
+Nodes (10): 1. The Multi-Vault Sync Script, 2. Run the Multi-Vault Sync, 📋 Architectural Overview, Guide: Building a Unified Vertex AI Chatbot over Multiple Obsidian Vaults, Option A: A Single Unified Data Store (Recommended for simplicity), Option B: Multiple Distinct Data Stores (Recommended for logical separation), 🛠️ Step 1: Local Multi-Vault Setup & Syncing, ☁️ Step 2: Creating the Vertex AI Data Stores (+2 more)
+
+### Community 959 - "Personal / Calendar / Life (main → ssd-big)"
+Cohesion: 0.20
+Nodes (10): 25. Morning Briefing, 26. Weekly Schedule Overview, 27. Add a Calendar Event, 28. Set a Reminder, 29. Quick Factual Question, 30. Summarize an Email Thread, 31. Draft a Short Reply, 32. End-of-Day Review (+2 more)
+
+### Community 960 - "Section 3: Sub-Agent Execution Briefs"
+Cohesion: 0.20
+Nodes (10): Bug Fix Brief, Code Review Only Brief, Dependency Upgrade Brief, Documentation Generation Brief, Focused Feature Implementation Brief, Refactoring Brief, Repo Triage Brief, Section 3: Sub-Agent Execution Briefs (+2 more)
+
+### Community 961 - "Graph Tool Feedback"
+Cohesion: 0.20
+Nodes (9): Conversation Identity, Graph Tool Feedback, Provenance, Raw Conversation, Recommended Next Steps, Remaining Limitations, Renderer Upgrades & Identifier Safety, Syntax Decisions (+1 more)
+
+### Community 962 - "Project Review Feedback"
+Cohesion: 0.20
+Nodes (9): Conversation Identity, Project Review Feedback, Provenance, Raw Conversation, Recommended Next Steps, Remaining Limitations, Renderer Upgrades & Identifier Safety, Syntax Decisions (+1 more)
+
+### Community 963 - "Master List Population"
+Cohesion: 0.20
+Nodes (9): Conversation Identity, Master List Population, Path 1 — Dev Foundation, Path 2 — Shipped Work (the hot path), Path 3 — Career Leverage, Provenance, Raw Conversation, The Thing You're Naming (+1 more)
+
+### Community 964 - "Personal / Calendar / Life (main → ssd-big)"
+Cohesion: 0.20
+Nodes (10): 25. Morning Briefing, 26. Weekly Schedule Overview, 27. Add a Calendar Event, 28. Set a Reminder, 29. Quick Factual Question, 30. Summarize an Email Thread, 31. Draft a Short Reply, 32. End-of-Day Review (+2 more)
+
+### Community 965 - "Section 3: Sub-Agent Execution Briefs"
+Cohesion: 0.20
+Nodes (10): Bug Fix Brief, Code Review Only Brief, Dependency Upgrade Brief, Documentation Generation Brief, Focused Feature Implementation Brief, Refactoring Brief, Repo Triage Brief, Section 3: Sub-Agent Execution Briefs (+2 more)
+
+### Community 966 - "Personal / Calendar / Life (main → ssd-big)"
+Cohesion: 0.20
+Nodes (10): 25. Morning Briefing, 26. Weekly Schedule Overview, 27. Add a Calendar Event, 28. Set a Reminder, 29. Quick Factual Question, 30. Summarize an Email Thread, 31. Draft a Short Reply, 32. End-of-Day Review (+2 more)
+
+### Community 967 - "Section 3: Sub-Agent Execution Briefs"
+Cohesion: 0.20
+Nodes (10): Bug Fix Brief, Code Review Only Brief, Dependency Upgrade Brief, Documentation Generation Brief, Focused Feature Implementation Brief, Refactoring Brief, Repo Triage Brief, Section 3: Sub-Agent Execution Briefs (+2 more)
+
+### Community 968 - "Personal / Calendar / Life (main → ssd-big)"
+Cohesion: 0.20
+Nodes (10): 25. Morning Briefing, 26. Weekly Schedule Overview, 27. Add a Calendar Event, 28. Set a Reminder, 29. Quick Factual Question, 30. Summarize an Email Thread, 31. Draft a Short Reply, 32. End-of-Day Review (+2 more)
+
+### Community 969 - "Section 3: Sub-Agent Execution Briefs"
+Cohesion: 0.20
+Nodes (10): Bug Fix Brief, Code Review Only Brief, Dependency Upgrade Brief, Documentation Generation Brief, Focused Feature Implementation Brief, Refactoring Brief, Repo Triage Brief, Section 3: Sub-Agent Execution Briefs (+2 more)
+
+### Community 970 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.20
+Nodes (9): 10:34 | main, 10:39 | main, 10:39 | main, 11:39 | main, 11:39 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity (+1 more)
+
+### Community 971 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 10:34 | main, 10:37 | main, Disable plan (9 routines), Done, Last 3 days — routine activity (from git log), Provenance, Session Identity, Session Text (+1 more)
+
+### Community 972 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 04:39 | main, Cleanup either way, Provenance, Scheduling question — yes, Session Identity, Session Text, The Jules patch is a mess, What I recommend (+1 more)
+
+### Community 973 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.20
+Nodes (9): 21:39 | chore/gitignore-media, 21:55 | main, 21:55 | main, 23:07 | main, 23:07 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity (+1 more)
+
+### Community 974 - "I am trying to come up with a "simple" Multi-machine API key  system that allows"
+Cohesion: 0.20
+Nodes (9): How "switch on/off" works, I am trying to come up with a "simple" Multi-machine API key  system that allows, My read, Provenance, Session Identity, Session Text, The honest problems, Topology (+1 more)
+
+### Community 975 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 07:31 | main, 08:29 | main, Proposed plan, Provenance, Quick clarifying questions before I write, Session Identity, Session Text, What the Cards view looks like (+1 more)
+
+### Community 976 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 06:24 | media-asset-manager, 06:29 | main, Provenance, Session Identity, Session Text, Two clean paths from here, What actually happened, Where we actually are (+1 more)
+
+### Community 977 - "2026-05-14 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - 5d9cc963-117ddb4008.md"
+Cohesion: 0.20
+Nodes (9): 21:19 | main, Authentication checked with Tailscale SSH., Provenance, Session Identity, Session Text, Tailscale SSH requires an additional check., Time since last authentication: 0s, To authenticate, visit: https://login.tailscale.com/a/l155d6dac38d030 (+1 more)
+
+### Community 978 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.20
+Nodes (9): 14:49 | main, 15:10 | main, 15:11 | main, 15:28 | main, 15:42 | dotfiles sync, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity (+1 more)
+
+### Community 979 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 02:09 | unknown, 02:46 | unknown, Boot disk — `/home/saboor/` (183M total), Data disk — `/work/` (30G total), Final state, Provenance, Session Identity, Session Text (+1 more)
+
+### Community 980 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.20
+Nodes (9): <local-command-caveat>Caveat: The messages below were generated by the user whil, "Migrate me to Mac" — orthogonal but worth naming, Provenance, Session Identity, Session Text, Suggested ordering (your call), The Cactus × host matrix (decoupled), The disk-fix track (independent) (+1 more)
+
+### Community 981 - "2026-05-17 - you-are-summarizing-a-claude-code-session-for-a-daily-memory-log-read - b9b1113a-79f7c500f9.md"
+Cohesion: 0.20
+Nodes (9): 00:40 | main, Authentication checked with Tailscale SSH., Provenance, Session Identity, Session Text, Tailscale SSH requires an additional check., Time since last authentication: 0s, To authenticate, visit: https://login.tailscale.com/a/l155d6dac38d030 (+1 more)
+
+### Community 982 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 03:31 | main, 03:45 | main, Audit results (10 existing pages vs backlog), E1 — Git Object Model Visualizer (prompt to paste), Provenance, Session Identity, Session Text, Ship today — pick one (+1 more)
+
+### Community 983 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 13:00 | feat/corpus-v1-normalization, 13:33 | feat/corpus-v1-normalization, 1. Data Store Deletions (Moves 1 & 2), 2. Updating the Sync Filter (Move 3), 3. Re-syncing (Move 4), Provenance, Session Identity, Session Text (+1 more)
+
+### Community 984 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.20
+Nodes (9): 01:27 | feat/corpus-v1-normalization, 23:01 | feat/corpus-v1-normalization, 23:06 | feat/corpus-v1-normalization, 23:28 | feat/corpus-v1-normalization, 23:36 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity (+1 more)
+
+### Community 985 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.20
+Nodes (9): 10:04 | main, Fix, Provenance, Root cause, Same bug, untouched (your call), Session Identity, Session Text, Verification (please confirm) (+1 more)
+
+### Community 986 - "Building an orchestration system from scratch"
+Cohesion: 0.20
+Nodes (9): Building an orchestration system from scratch, Conversation Identity, During session (the 5-min discipline), Pre-session (10 min, before you open Claude Code), Provenance, Questions to answer *before* you start (on paper, not with Claude), Raw Conversation, Session start (first message to Claude Code) (+1 more)
+
+### Community 987 - "on the Pi"
+Cohesion: 0.20
+Nodes (10): Assistant, on the Pi, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+2 more)
+
+### Community 988 - "on the Pi"
+Cohesion: 0.20
+Nodes (10): Assistant, on the Pi, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+2 more)
+
+### Community 989 - "on the Pi"
+Cohesion: 0.20
+Nodes (10): Assistant, on the Pi, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+2 more)
+
+### Community 990 - "on the Pi"
+Cohesion: 0.20
+Nodes (10): Assistant, Assistant, on the Pi, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output (+2 more)
+
+### Community 991 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (10): Branches of note (MyAPI repo), Corpus breakdown, feat/claude-web-adapter...origin/feat/claude-web-adapter, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes (+2 more)
+
+### Community 992 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (10): Branches of note (MyAPI repo), Corpus breakdown, feat/claude-web-adapter...origin/feat/claude-web-adapter, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes (+2 more)
+
+### Community 993 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (10): Branches of note (MyAPI repo), Corpus breakdown, feat/claude-web-adapter...origin/feat/claude-web-adapter, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes (+2 more)
+
+### Community 994 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (10): Branches of note (MyAPI repo), Corpus breakdown, feat/claude-web-adapter...origin/feat/claude-web-adapter, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes (+2 more)
+
+### Community 995 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (10): Branches of note (MyAPI repo), Corpus breakdown, feat/claude-web-adapter...origin/feat/claude-web-adapter, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes (+2 more)
+
+### Community 996 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (10): Branches of note (MyAPI repo), Corpus breakdown, feat/claude-web-adapter...origin/feat/claude-web-adapter, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes (+2 more)
+
+### Community 997 - "2026-05-08 - agents-md-instructions-for-users-saboor-repos-myapi - 019e076b-3121ac58f6.md"
+Cohesion: 0.20
+Nodes (9): 004 — Corpus v1 field-test realization, 004 — Corpus v1 field-test realization, AGENTS.md instructions for /Users/saboor/repos/MyAPI, Doc types must match CanonicalDoc.doc_type values, Empirical Reality, Empirical Reality, See docs/01-taxonomy.md for the meaning of each value., ── Smart Retrieval Schemas ────────────────────────────────────────────────── (+1 more)
+
+### Community 998 - "Pi Harness"
+Cohesion: 0.20
+Nodes (10): Changelog, Deferred (tracked, not yet implemented), Dependencies, Design Principles, Install, Layout, Pi Harness, Quickstart (+2 more)
+
+### Community 999 - "Executing Plans"
+Cohesion: 0.20
+Nodes (10): Executing Plans, Integration, Overview, Remember, Step 1: Load and Review Plan, Step 2: Execute Tasks, Step 3: Complete Development, The Process (+2 more)
+
+### Community 1000 - "Executing Plans"
+Cohesion: 0.20
+Nodes (10): Executing Plans, Integration, Overview, Remember, Step 1: Load and Review Plan, Step 2: Execute Tasks, Step 3: Complete Development, The Process (+2 more)
+
+### Community 1001 - "Test-Driven Development (TDD)"
+Cohesion: 0.20
+Nodes (10): GREEN - Minimal Code, main...origin/main, Overview, Red-Green-Refactor, RED - Write Failing Test, Test-Driven Development (TDD), The Iron Law, Verify GREEN - Watch It Pass (+2 more)
+
+### Community 1002 - "Pi Harness"
+Cohesion: 0.20
+Nodes (10): Changelog, Deferred (tracked, not yet implemented), Dependencies, Design Principles, Install, Layout, Pi Harness, Quickstart (+2 more)
+
+### Community 1003 - "Executing Plans"
+Cohesion: 0.20
+Nodes (10): Executing Plans, Integration, Overview, Remember, Step 1: Load and Review Plan, Step 2: Execute Tasks, Step 3: Complete Development, The Process (+2 more)
+
+### Community 1004 - "Test-Driven Development (TDD)"
+Cohesion: 0.20
+Nodes (10): GREEN - Minimal Code, main...origin/main, Overview, Red-Green-Refactor, RED - Write Failing Test, Test-Driven Development (TDD), The Iron Law, Verify GREEN - Watch It Pass (+2 more)
+
+### Community 1005 - "Runtime Decision Loop v0 Spec"
+Cohesion: 0.20
+Nodes (10): 1. `dispatch_next`, 1. gddp-config graph YAML, 2. SQLite recent rows, 3. Current event, Context Window, Decision Logic, Powers (v0 scope — exactly 4), Purpose (+2 more)
+
+### Community 1006 - "Runtime Decision Loop v0 Spec"
+Cohesion: 0.20
+Nodes (10): 1. `dispatch_next`, 1. gddp-config graph YAML, 2. SQLite recent rows, 3. Current event, Context Window, Decision Logic, Powers (v0 scope — exactly 4), Purpose (+2 more)
+
+### Community 1007 - "🛠️ Summary of Accomplishments"
+Cohesion: 0.20
+Nodes (9): 1. Active Infrastructure Verification, 1. The Custom Local Retrieval Pipeline (MyAPI), 2. Dialed-In Comparative Benchmark Client, 2. Google Vertex AI Search (Generative RAG), 3. Interview Readiness Scaffold, 🔬 RAG Comparison: Core Insights, 🛠️ Summary of Accomplishments, Verification & Implementation Walkthrough: RAG Comparative Benchmark (+1 more)
+
+### Community 1008 - "Evidence Upload Checklist — Use During Appeal Submission"
+Cohesion: 0.20
+Nodes (9): Cover letter (optional but recommended), Day-of submission flow (VERIFIED from Google's official docs 2026-05-13), Evidence Upload Checklist — Use During Appeal Submission, Pre-flight: assemble these in a single local folder before opening the form, Tier 1 — Government / official records (MUST HAVE), Tier 2 — Industry / trade legitimacy (STRONG SIGNALS), Tier 3 — Web / social presence (CORROBORATING), Tier 4 — Operational proof (JASON PROVIDES; CRITICAL FOR APPROVAL) (+1 more)
+
+### Community 1009 - "CIM - Phase 0 Mistake Was Hypothesis and Marketing Friendly Not Reality of API Docs Friendluy"
+Cohesion: 0.20
+Nodes (9): And Another Set of Docs Saying:, CIM - Phase 0 Mistake Was Hypothesis and Marketing Friendly Not Reality of API Docs Friendluy, Simple Version, The New Rule is Simple:, The short Principle Is:, These Files Had Drifted Apart:, We Had One Set of Docs Saying:, What The Situation Was (+1 more)
+
+### Community 1010 - "Core Team Call 11.md"
+Cohesion: 0.20
+Nodes (9): Check-In, Debrief Zoom, Graduate Guest Event, Granado and Standards Manager, Have a Section on Asking for Help, Love and Homework Missing Section, Meeting Location, Scheduling (+1 more)
+
+### Community 1011 - "MW Anger Journal.md"
+Cohesion: 0.20
+Nodes (9): Event 1, Event 2, Mon 2024-01-01, Sun 2024-01-07, Thu 2023-12-28, Thu 2024-02-01, Thu Jan 30th, 2025, Tue 2024-01-02 (+1 more)
+
+### Community 1012 - "VimR Config Setup"
+Cohesion: 0.20
+Nodes (9): Concept 1: Detecting VimR in Lua, Concept 2: Font, Concept 3: Colorscheme, Concept 4: Disabling Unused LSP Extras, Files Changed, Goal, How to Inspect Live RAM Usage, Memory Reality Check (+1 more)
+
+### Community 1013 - "Clipboard Sandbox and Gemini on Mac"
+Cohesion: 0.20
+Nodes (10): Clipboard Sandbox and Gemini on Mac, Optional Triggers, Phase 1: Mac-only, Working now, Phase 2: iPad/iPhone, Scripts, Shortcut 1: Clipboard to Sandbox, Shortcut 2: Clipboard to Gemini, Sources (+2 more)
+
+### Community 1014 - "Mental Model"
+Cohesion: 0.20
+Nodes (9): 1. Read Docs with a Question, not a Curiosity, 2. A 3-layer Capture (1 is mandatory), 3. Engineer-mindset, Not Student = Traceability, 4. [[09 Utilities/99_staging_gtg/Coding-Tech/templates/learning-templates/minimal-test-learning-template|From Docs to Test Immediately]], 5. Prefer "contract reading" over Feature Reading, Mental Model, One Meta-note to Rule Them All, Terminal Docs Habit (crucial) (+1 more)
+
+### Community 1015 - "Google Antigravity — Beginner to Power User Guide"
+Cohesion: 0.20
+Nodes (9): 9.1 Available Models (Early 2026), 9.2 When to Use Which Model, Bonny Doon Retreat (BDR), Final Note, Google Antigravity — Beginner to Power User Guide, Part 13 — Your Project Playbook, Part 9 — Model Selection Strategy, Santa Cruz Smart Automations (+1 more)
+
+### Community 1016 - "OpenClaw CLI Power User Guide"
+Cohesion: 0.20
+Nodes (10): 10. Safety Model — Three Devices Edition, 11. Your Current Setup — What’s Working, What to Add, 1. What OpenClaw Actually Is (No Hype, No Fear), 2.1 The Mental Model, 2.2 What a Node Is, 2.3 Node vs. Agent vs. Session — The Key Distinction, 2. Nodes — What They Are and How They Work, 9. Workspace File Strategy (+2 more)
+
+### Community 1017 - "Personal / Calendar / Life (main → big-pi)"
+Cohesion: 0.20
+Nodes (10): 25. Morning Briefing, 26. Weekly Schedule Overview, 27. Add a Calendar Event, 28. Set a Reminder, 29. Quick Factual Question, 30. Summarize an Email Thread, 31. Draft a Short Reply, 32. End-of-Day Review (+2 more)
+
+### Community 1018 - "5. The Core Lifts: Squat, Press, and Deadlift"
+Cohesion: 0.20
+Nodes (10): 5.1.1 Neutral Neck, Engaged Core, and Stress-free Knee Alignment, 5.1.2 Quote: *"I Believe the Squat is the Exercise that Has Most Corrected My Posture problems."*, 5.1 The Squat: The Posture Corrector, 5.2.1 Countering the Unnatural Micro-movements of Typing and Swiping, 5.2.2 Thickening Ligaments and Increasing Bone Density in the Wrists and Elbows, 5.2 The Press: Reinforcing the "Arm Chain", 5.3.1 Training the Posterior Chain and Grip Strength, 5.3.2 Reversing the "evolutionarily Unadapted Desk life." (+2 more)
+
+### Community 1019 - "⌨️ Vim Core: The Bread & Butter"
+Cohesion: 0.20
+Nodes (9): 1. `r` Vs. `c` (The "What" and "How"), 1. Single-Character Precision: `r`, 2. Chunk Remodeling: `c`, 2. The "Surround" Secret (Quotes and Parentheses), 3. The "Inside" Secret: `i`, 4. The "Around" Secret: `a`, Detailed Explanation, 🚀 Paradigm Shift: Do You Want the "Surround" Plugin? (+1 more)
+
+### Community 1020 - "a-Shell Vs Blink Shell: Crisp Distinction"
+Cohesion: 0.20
+Nodes (9): `a-Shell` A Local iOS Shell + File viewer/editor T, a-Shell (secondary), a-Shell Vs Blink Shell: Crisp Distinction, Best at, Blink (primary), Blink Shell, Practical iPad Workflows, Workflow A: "iPad as Portal, Pi as engine" (best for Offloading Mac RAM) (+1 more)
+
+### Community 1021 - "Blink Code is Desktop Grade Blink Shell"
+Cohesion: 0.20
+Nodes (9): AIR TERMINALS, ALWAYS ON, Blink Code is Desktop Grade Blink Shell, BLINK CODE. YOUR NEW SUPERPOWER, DESKTOP GRADE, Emacs or Vim like Pro, FEATURES, …with Unix Base Tools (+1 more)
+
+### Community 1022 - "Git Gets way less Mysterious once These Three Click together"
+Cohesion: 0.20
+Nodes (9): `Git Diff =` What Changed, Git Gets way less Mysterious once These Three Click together, `Git Log / Git Show =` What Happened before, `Git Status =` What's Happening now, Git - the Git Trinity and Navigational Workflow of Status, Diff, Log - Show, That's the Core Mental Model. Think of Git like This, The **Commit** **History** is Your *Saved Timeline*, The **Staging** Area is Your *"next snapshot."* (+1 more)
+
+### Community 1023 - "Vi - Jumplist Vs Marks Delinieation Clarifies so Much"
+Cohesion: 0.20
+Nodes (9): Backtick and Single Quote Usage, Conclusion, Example Workflow, Jump List in Vim, Mark (like bookmarks) in Vim, Navigating the Jump List, Summary of Key Commands, Vi - Jumplist Vs Marks Delinieation Clarifies so Much (+1 more)
+
+### Community 1024 - "2026.02.17.md"
+Cohesion: 0.20
+Nodes (8): 2026.02.17 Active Workstreams, Plan, Reflect, Tue Feb 17th, 2026 - Plan/Reflect, Enter Templater / Quickadd, Related, Related, Scenario
+
+### Community 1025 - "00 Dailys/2026.02.26.md"
+Cohesion: 0.20
+Nodes (9): CIM and Ty Talk 3, 📋 Due Today, First NeoVim Obsidian-style Header 1, [[grep - Double Grep Piped for Clean Retrieval of Searched Infogrep -A 5 '"auth"' ~/.openclaw/openclaw.json | Grep Token, 📋 Overdue, Plan/Reflect _2_, Shows Entire Auth Block with Mode, Token, Etc., Shows Only the Token line(s) (+1 more)
+
+### Community 1026 - "2026.04.26_2.md"
+Cohesion: 0.20
+Nodes (9): 02:55 — `run_in_executor`: offloading blocking code in async FastAPI handlers, 02:56 — Multi-signal reranking with intent-adaptive weights, 04:22 — Diagnostic, 09:11 — Week 1 Sunday: Filesystem Trust — never feel lost, 13:01 — Sprint Week 1 of 3: Pulse, Codebase Lesson, Jules Feeder — Sunday Diagnostic, Neovim — Sunday Reflection (+1 more)
+
+### Community 1027 - "2026.05.09.md"
+Cohesion: 0.20
+Nodes (9): 13:00 — Week 19 Saturday, 2026.05.09 19:12 — DDIA: Replication Lag, 2026.05.09 19:21 — FPiS Ch3: Algebraic Data Types & Structural Recursion, Codebase — Saturday, CS Classics Lesson, FPiS Lesson, Plan, Reflections (+1 more)
+
+### Community 1028 - "2026-W05 Anchor.md"
+Cohesion: 0.20
+Nodes (8): 2026-W05 • Planning • 🔄 Check-In, Jan 27th 2026 • 27th Day • W05 Active Workstreams, Jan 27th 2026 • 27th Day • W05 Objective, Next Actions, Open Questions / Risks, Structure / Workflow, Jan 29th 2026 • W05 • 29/365 • 4/7, 🌊 Reflect
+
+### Community 1029 - "OpenClaw Known-Good State — debian-vm Node"
+Cohesion: 0.20
+Nodes (9): Architecture Reference, Connectivity, Invariant 1: Gateway Bind Mode, Invariant 2: Token Source of Truth, Invariant 3: Version/Process Restart Protocol, Node Status (Known-Good), OpenClaw Known-Good State — debian-vm Node, Rollback (+1 more)
+
+### Community 1030 - "SAFE Manual Cleanup Plan — SoloDeveloper Duplicate Notes"
+Cohesion: 0.20
+Nodes (9): 1) Exact Duplicates to Archive First (lowest risk), 2) Likely Merges with Canonical Keep Target (manual Compare + merge), 3) Likely False Positives to Leave Alone, 4) Ordered Execution Checklist (risk-minimizing), A) Empty-note Duplicate Cluster (hash `e3b0c442…`): Archive These First, B) Non-empty Exact Duplicate Pairs: Archive Second File in Each Pair, Guardrails (do These before cleanup), SAFE Manual Cleanup Plan — SoloDeveloper Duplicate Notes (+1 more)
+
+### Community 1031 - "Daily Dashboard Query"
+Cohesion: 0.20
+Nodes (9): All In-Progress Across Vault, BDR Timeline View, Blocked Items Review, Daily Dashboard Query, Deferred Items (Weekly Review), Example Queries (use Source mode), Not Done, Project-Specific Queries (+1 more)
+
+### Community 1032 - "_code-problem-templater.md"
+Cohesion: 0.20
+Nodes (9): Analysis, Approach, Constraints, Examples, Insight and Reflections, Problem, Solution, Space Complexity (+1 more)
+
+### Community 1033 - "notebook-navigator/manifest.json"
+Cohesion: 0.20
+Nodes (9): author, authorUrl, description, fundingUrl, id, isDesktopOnly, minAppVersion, name (+1 more)
+
+### Community 1034 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.20
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1035 - "MyAPI — SOURCES (mini pass-1)"
+Cohesion: 0.20
+Nodes (9): Corpus v1.0 buckets (sample list — no dump), Env / secret names only (no values), From air, From mini, Golden briefs (names only), mini vs air, MyAPI — SOURCES (air), myapi / SOURCES — merged v1 (+1 more)
+
+### Community 1036 - "🛠️ Summary of Accomplishments"
+Cohesion: 0.20
+Nodes (9): 1. Active Infrastructure Verification, 1. The Custom Local Retrieval Pipeline (MyAPI), 2. Dialed-In Comparative Benchmark Client, 2. Google Vertex AI Search (Generative RAG), 3. Interview Readiness Scaffold, 🔬 RAG Comparison: Core Insights, 🛠️ Summary of Accomplishments, Verification & Implementation Walkthrough: RAG Comparative Benchmark (+1 more)
+
+### Community 1037 - "remove_chatgpt_branch_variants.py"
+Cohesion: 0.47
+Nodes (9): Candidate, canonicalize(), find_candidates(), main(), move_candidates(), print_report(), Path, Collapse chatgpt-branch-* variants back to their base chatgpt-* name. (+1 more)
+
+### Community 1038 - "LinksPass"
+Cohesion: 0.22
+Nodes (5): LinksPass, Link related notes to each other.      For each file:     1. Show filename + pre, Store reference to all records for cross-linking.          Args:             all, Print the links legend — number to toggle, enter/space to confirm., test_links_pass_init()
+
+### Community 1039 - "Task Categories"
+Cohesion: 0.22
+Nodes (9): Build Verification, Code Review, GDDP Graph State, Mission Task, Repo State Inspection, Solve Bench Execution, System Health, Task Categories (+1 more)
+
+### Community 1040 - "Task Categories"
+Cohesion: 0.22
+Nodes (9): Build Verification, Code Review, GDDP Graph State, Mission Task, Repo State Inspection, Solve Bench Execution, System Health, Task Categories (+1 more)
+
+### Community 1041 - "6. The CLI Surface Area — Everything You Can Do Without Chat"
+Cohesion: 0.22
+Nodes (9): 6.1 Sending a One-Shot Agent Turn, 6.2 Session Management, 6.3 Configuration, 6.4 Model Management, 6.5 Memory System, 6.6 Cron Jobs, 6.7 Gateway Control, 6.8 Diagnostics (+1 more)
+
+### Community 1042 - "6. The CLI Surface Area — Everything You Can Do Without Chat"
+Cohesion: 0.22
+Nodes (9): 6.1 Sending a One-Shot Agent Turn, 6.2 Session Management, 6.3 Configuration, 6.4 Model Management, 6.5 Memory System, 6.6 Cron Jobs, 6.7 Gateway Control, 6.8 Diagnostics (+1 more)
+
+### Community 1043 - "6. The CLI Surface Area — Everything You Can Do Without Chat"
+Cohesion: 0.22
+Nodes (9): 6.1 Sending a One-Shot Agent Turn, 6.2 Session Management, 6.3 Configuration, 6.4 Model Management, 6.5 Memory System, 6.6 Cron Jobs, 6.7 Gateway Control, 6.8 Diagnostics (+1 more)
+
+### Community 1044 - "Interactive HTML Reference Guide"
+Cohesion: 0.22
+Nodes (8): Conversation Identity, How to handle results from file_search, How to invoke the file_search tool, Interactive HTML Reference Guide, Provenance, Raw Conversation, then sync bundle to VM and reindex (see deploy_to_khoj.sh)</pre>, Tool usage instructions and ordering
+
+### Community 1045 - "Branch · Markdown as Source Code"
+Cohesion: 0.22
+Nodes (8): Branch · Markdown as Source Code, Conversation Identity, entity["software","Brave Browser","Chromium-based web browser"], entity["software","Google Chrome","Chromium-based web browser"], entity["software","LibreWolf","Firefox-based privacy browser"], entity["software","Safari","web browser"], Provenance, Raw Conversation
+
+### Community 1046 - "Raw Conversation"
+Cohesion: 0.22
+Nodes (8): Compare Termius and Termux, Conversation Identity, 🎯 For your use case, My pick, Provenance, Raw Conversation, ✅ Termius, 🔧 Termux
+
+### Community 1047 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.22
+Nodes (8): Commands to invoke (entry points), External dependencies the automation host needs, Files modified or created this session, <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text, Suggested cadence
+
+### Community 1048 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 07:57 | vault & infrastructure, 10:06 | main, Elegant approach for finding duplicates in the vault, Findings on `My_DevInfra/` vs `Developer Infrastructure/`, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1049 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 07:57 | vault & infrastructure, 09:49 | main, Also fix the section header text "DAILY-NOTE PAT`], Provenance, Session Identity, Session Text, transformations applied to every prompt`], You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1050 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 07:57 | vault & infrastructure, 10:01 | main, Elegant approach for finding duplicates in the vault, Findings on `My_DevInfra/` vs `Developer Infrastructure/`, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1051 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 07:57 | vault & infrastructure, 09:49 | main, Also fix the section header text "DAILY-NOTE PAT`], Provenance, Session Identity, Session Text, transformations applied to every prompt`], You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1052 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 07:57 | vault & infrastructure, 09:59 | main, Elegant approach for finding duplicates in the vault, Findings on `My_DevInfra/` vs `Developer Infrastructure/`, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1053 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 05:50 | main, 07:57 | vault & infrastructure, Also fix the section header text "DAILY-NOTE PAT`], Provenance, Session Identity, Session Text, transformations applied to every prompt`], You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1054 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 08:25 | main, 17:40 | main, Elegant approach for finding duplicates in the vault, Findings on `My_DevInfra/` vs `Developer Infrastructure/`, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1055 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 09:54 | main, Disable plan (9 routines), Done, Last 3 days — routine activity (from git log), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1056 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 06:42 | media-asset-manager, 07:11 | main, Done. Premium media library complete., Find files that`], Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1057 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 06:55 | main, Disable plan (9 routines), Done, Last 3 days — routine activity (from git log), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1058 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.22
+Nodes (8): 14:30 | main, 14:37 | main, 15:11 | main, 16:43 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1059 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 17:53 | unknown, About the SSD migration itself, Find the missing Pi, Provenance, Session Identity, Session Text, What I'd do in your shoes, in order, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1060 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 14:37 | main, 15:11 | main, Observations worth flagging, Provenance, Session Identity, Session Text, What you have in those 3 slots, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1061 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 22:39 | gcp-billing, 22:57 | unknown, Boot disk — `/home/saboor/` (183M total), Data disk — `/work/` (30G total), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1062 - "2026-05-14 - the-current-dir-matters-less-than-the-current-reality-i-am-trying-to-a - dc6819d4-57c4ecba35.md"
+Cohesion: 0.22
+Nodes (8): Authentication checked with Tailscale SSH., Provenance, Session Identity, Session Text, Tailscale SSH requires an additional check., the current dir matters less than the current reality I am trying to accomplish:, Time since last authentication: 0s, To authenticate, visit: https://login.tailscale.com/a/l155d6dac38d030
+
+### Community 1063 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 10:21 | GBP recovery recon, 10:34 | feat/premium-media-library, Appeal narrative, Jason briefing (the HTML you'll share), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1064 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.22
+Nodes (8): 02:42 | unknown, 02:46 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text, unknown | unknown, unknown | unknown
+
+### Community 1065 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 04:11 | main, Compute now+3 minutes, Provenance, Session Identity, Session Text, The prompt (sent to a fresh cloud Sonnet 4.6 session), What was going to land, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1066 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.22
+Nodes (8): 06:49 | main, 06:49 | main, 20:45 | main, 20:45 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1067 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 06:20 | unknown, ✅ Done in this session, Provenance, Session Identity, Session Text, Still open / worth doing later, Summary of what you just told me, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1068 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 05:11 | unknown, Provenance, Session Identity, Session Text, The fix going forward, What to check right now, You are summarizing a Claude Code session for a daily memory log., Your situation
+
+### Community 1069 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 06:42 | main, For pi-small hosting (built static version), Provenance, Session Identity, Session Text, Simplest on Mac (dev mode with hot reload), What you can't do, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1070 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 1. Data Store Deletions (Moves 1 & 2), 23:01 | feat/corpus-v1-normalization, 2. Updating the Sync Filter (Move 3), 3. Re-syncing (Move 4), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1071 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.22
+Nodes (8): 10:04 | main, 10:11 | main, 13:09 | main, 13:09 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1072 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 09:29 | feat/corpus-v1-normalization, Provenance, Raw REST endpoints you have available, Session Identity, Session Text, What works right now, Which you should hit most, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1073 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.22
+Nodes (8): 06:51 | feat/corpus-v1-normalization, 1. Data Store Deletions (Moves 1 & 2), 2. Updating the Sync Filter (Move 3), 3. Re-syncing (Move 4), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1074 - "Preparing Bailey's website presentation"
+Cohesion: 0.22
+Nodes (8): Conversation Identity, My honest take on framing, Preparing Bailey's website presentation, Provenance, Raw Conversation, The plan (don't pitch as either/or), Things to verify in the demo doc before sending, Two sites, two states
+
+### Community 1075 - "Raw Conversation"
+Cohesion: 0.22
+Nodes (8): Conversation Identity, How to Handle the Conversation If She Hesitates, How to Preempt the "That's Expensive" Objection, Pricing a website for my local barbershop, Provenance, Quick Final Tips for 1 PM, Quick Final Tips for 1 PM, Raw Conversation
+
+### Community 1076 - "Raw Conversation"
+Cohesion: 0.22
+Nodes (8): Conversation Identity, Frozen hard evaluation set for model testing, How to Bridge the Two (The "Needle" Pivot), Mode 1: The "Cold" Auditor (Non-Interactive / High-Integrity), Mode 2: The "Hot" Worker (Interactive / Frontier Reasoning), Provenance, Raw Conversation, Why your "Needle" setup is perfect for this:
+
+### Community 1077 - "Claude and Codex command logging analysis"
+Cohesion: 0.22
+Nodes (8): Claude and Codex command logging analysis, Conversation Identity, Evidence requirements (non-negotiable), N. <Failure mode name>, Output format, Provenance, Raw Conversation, What I'm watching for
+
+### Community 1078 - "Session Text"
+Cohesion: 0.22
+Nodes (9): Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, User, User (+1 more)
+
+### Community 1079 - "Session Text"
+Cohesion: 0.22
+Nodes (9): Assistant, <environment_context>, Provenance, Session Identity, Session Text, Tool Call Count, User, User (+1 more)
+
+### Community 1080 - "2026-03-19 - environment-context - 019d0435-9c08d2f67e.md"
+Cohesion: 0.22
+Nodes (8): Assistant, <environment_context>, on the Pi, Provenance, Restore openclaw config, Session Identity, Tool Call: exec_command, Tool Output
+
+### Community 1081 - "Stop node if misbehaving"
+Cohesion: 0.22
+Nodes (9): Assistant, Stop node if misbehaving, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output, Tool Output (+1 more)
+
+### Community 1082 - "Changelog"
+Cohesion: 0.22
+Nodes (9): [1.0.0] - 2026-03-13, [1.1.0] - 2026-03-13, [1.1.1] - 2026-03-19, Added, Added, Added, Changed, Changelog (+1 more)
+
+### Community 1083 - "Result Summary"
+Cohesion: 0.22
+Nodes (9): Acceptance Criteria Status, Artifacts Produced, Decisions Made, Files Modified, Recommended Next Action, Remaining Risks, Result Summary, Verification Performed (+1 more)
+
+### Community 1084 - "add node files to graphs/<project-id>/nodes/"
+Cohesion: 0.22
+Nodes (9): add node files to graphs/<project-id>/nodes/, Assistant, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command (+1 more)
+
+### Community 1085 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1086 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1087 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1088 - "VM Tailscale SSH Access Anchor"
+Cohesion: 0.22
+Nodes (9): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, main...origin/main, Related Notes, Source Evidence, VM Tailscale SSH Access Anchor (+1 more)
+
+### Community 1089 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1090 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1091 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1092 - "VM Tailscale SSH Access Anchor"
+Cohesion: 0.22
+Nodes (9): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, main...origin/main, Related Notes, Source Evidence, VM Tailscale SSH Access Anchor (+1 more)
+
+### Community 1093 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1094 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1095 - "Situational Summary — Context Refinery — 2026-04-15"
+Cohesion: 0.22
+Nodes (9): Branches of note (MyAPI repo), Corpus breakdown, Open work items, Situational Summary — Context Refinery — 2026-04-15, What just happened, What's deployed, What to do when the index finishes, What was built/shipped in this session (+1 more)
+
+### Community 1096 - "VM Tailscale SSH Access Anchor"
+Cohesion: 0.22
+Nodes (9): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, main...origin/main, Related Notes, Source Evidence, VM Tailscale SSH Access Anchor (+1 more)
+
+### Community 1097 - "<environment_context>"
+Cohesion: 0.22
+Nodes (8): Bootstrap, Browser, <environment_context>, Provenance, Session Identity, Session Text, User, User
+
+### Community 1098 - "OpenClaw powers — each module exposes a run() function"
+Cohesion: 0.22
+Nodes (9): Acceptance Criteria, Acceptance Criteria, Constraints, Constraints, OpenClaw powers — each module exposes a run() function, Output Requirements, Output Requirements, Why (+1 more)
+
+### Community 1099 - "2026-05-07 - environment-context - 019e0097-e206101d23.md"
+Cohesion: 0.22
+Nodes (8): edit graphs/<project-id>/project.yaml, <environment_context>, GitHub → gddp-config → Set, on the Pi, paste the public key into:, Provenance, runtime nodes summary, Session Identity
+
+### Community 1100 - "Pi-Coding-Agent"
+Cohesion: 0.22
+Nodes (9): `agent/`, `agents/`, `harness/`, License, Local Files (Not in Repo), Pi-Coding-Agent, Repository Layout, Setup (+1 more)
+
+### Community 1101 - "Task Group: Needle routing eval harness, commit workflow, and daemon identification/cleanup"
+Cohesion: 0.22
+Nodes (9): keywords, keywords, rollout_summary_files, rollout_summary_files, rollout_summary_files, Task 1: Inspect Needle and map the small, checkable harness routing surfaces, Task 2: Harden frozen router evals, refresh baselines, and add a 120-row hardening slice, Task 3: Use the accepted local-commit workflow while leaving push to the human (+1 more)
+
+### Community 1102 - "Pi-Coding-Agent"
+Cohesion: 0.22
+Nodes (9): `agent/`, `agents/`, `harness/`, License, Local Files (Not in Repo), Pi-Coding-Agent, Repository Layout, Setup (+1 more)
+
+### Community 1103 - "🛠️ Summary of Accomplishments"
+Cohesion: 0.22
+Nodes (9): 1. Active Infrastructure Verification, 1. The Custom Local Retrieval Pipeline (MyAPI), 2. Dialed-In Comparative Benchmark Client, 2. Google Vertex AI Search (Generative RAG), 3. Interview Readiness Scaffold, 🔬 RAG Comparison: Core Insights, 🛠️ Summary of Accomplishments, Verification & Implementation Walkthrough: RAG Comparative Benchmark (+1 more)
+
+### Community 1104 - "Handoff 007: Vertex AI Infrastructure & OCR Pipeline Established"
+Cohesion: 0.22
+Nodes (9): 1. Data Ingestion, 2. Vertex AI Data Stores & Engines, 3. Document Processing Pipeline (OCR), Billing Check, Handoff 007: Vertex AI Infrastructure & OCR Pipeline Established, Infrastructure Built (GCP Project: `sb-genai-2026`), Objective Completed, Pending / Next Steps (+1 more)
+
+### Community 1105 - "GDDP Sitrep and Future Plan"
+Cohesion: 0.22
+Nodes (9): Current Sitrep, gddp-runtime, GDDP Sitrep and Future Plan, How to Access Skills, Instruction Priority, Platform Adaptation, Short Verdict, What Is Good In GDDP-15 (+1 more)
+
+### Community 1106 - "🛠️ Summary of Accomplishments"
+Cohesion: 0.22
+Nodes (9): 1. Active Infrastructure Verification, 1. The Custom Local Retrieval Pipeline (MyAPI), 2. Dialed-In Comparative Benchmark Client, 2. Google Vertex AI Search (Generative RAG), 3. Interview Readiness Scaffold, 🔬 RAG Comparison: Core Insights, 🛠️ Summary of Accomplishments, Verification & Implementation Walkthrough: RAG Comparative Benchmark (+1 more)
+
+### Community 1107 - "Handoff 007: Vertex AI Infrastructure & OCR Pipeline Established"
+Cohesion: 0.22
+Nodes (9): 1. Data Ingestion, 2. Vertex AI Data Stores & Engines, 3. Document Processing Pipeline (OCR), Billing Check, Handoff 007: Vertex AI Infrastructure & OCR Pipeline Established, Infrastructure Built (GCP Project: `sb-genai-2026`), Objective Completed, Pending / Next Steps (+1 more)
+
+### Community 1108 - "GDDP Sitrep and Future Plan"
+Cohesion: 0.22
+Nodes (9): Current Sitrep, gddp-runtime, GDDP Sitrep and Future Plan, How to Access Skills, Instruction Priority, Platform Adaptation, Short Verdict, What Is Good In GDDP-15 (+1 more)
+
+### Community 1109 - "Handoff 008 — Needle Router v1: Finetune to Crush It"
+Cohesion: 0.22
+Nodes (8): 5-tool registry, Baselines, Handoff 008 — Needle Router v1: Finetune to Crush It, Improvement plan, Key failure patterns, Repos, Summary, Training data at checkpoint
+
+### Community 1110 - "MyAPI Retrieval Pipeline — Architecture & Debugging Guide"
+Cohesion: 0.22
+Nodes (8): Component map, Design principles, document_kind inference (MetadataParser), Live VM query test, MyAPI Retrieval Pipeline — Architecture & Debugging Guide, Path → source_type mapping (normalization_schema), Pipeline overview, Reranker weights (default)
+
+### Community 1111 - "Search & Chat Vertex AI — Commands and Aliases"
+Cohesion: 0.22
+Nodes (8): Aliases (already in `~/.zshrc`), Auth, CLI surfaces, Engine context (why these are the surfaces), Quick recap, Raw endpoints not yet wrapped, Search & Chat Vertex AI — Commands and Aliases, State files
+
+### Community 1112 - "ChatGPT 5.4 thinking played a significant role in crafting the GDAD Pipeline system.md"
+Cohesion: 0.22
+Nodes (8): Dispatch Packet, Execution Model, Executor Routing, Failure Handling, OpenClaw Restrictions, Principle, Safety Model, State Changes
+
+### Community 1113 - "System Roles"
+Cohesion: 0.22
+Nodes (9): Big Pi, Claude, Codex, Graph, Human, Jules, OpenClaw, Small Pi (+1 more)
+
+### Community 1114 - "v1/README.md"
+Cohesion: 0.28
+Nodes (5): 00 — Pipeline Overview, End-to-End Example, Start of Docs: [[01-event-schema]], The Full Loop, Next[[02-job-schema]]
+
+### Community 1115 - "Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault"
+Cohesion: 0.22
+Nodes (8): 1. View the Sync Script, 2. Run the Sync Command, 📋 Architectural Overview, Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault, 🛠️ Step 1: Local Setup & GCS Syncing, ☁️ Step 2: Creating the Vertex AI Data Store, 🤖 Step 3: Creating the Chatbot App, 💻 Step 4: Querying from the Local Terminal
+
+### Community 1116 - "Analysis"
+Cohesion: 0.22
+Nodes (8): Analysis, Anchor Results, Full Run, Known issues, Remaining refinement queue targets, Retrieval Benchmark - Post Anchor V2, What changed, Wins (vs run-2026-04-19-source-aware-priors baseline)
+
+### Community 1117 - "Phone Call"
+Cohesion: 0.22
+Nodes (8): LMN Login, LMN Login, LMN Software Ought to Link to QuickBooks and Connected to All Job Estimates and Clients, LMN Software Ought to Link to QuickBooks and Connected to All Job Estimates and Clients, Phone Call, Phone Call, Wix - Migrate? Email? Domain?, Wix - Migrate? Email? Domain?
+
+### Community 1118 - "LMN-QBO First-Flow Discovery"
+Cohesion: 0.22
+Nodes (8): Change next, Clear next Steps, Codex Prompt: Upgrade Stub → Real QBO Integration, Keep These Foundations, LMN-QBO First-Flow Discovery, What is Being suggested/told, What Remains Stubbed for now, What We Are Doing
+
+### Community 1119 - "STAR Overview"
+Cohesion: 0.22
+Nodes (8): Action, Crucial Insights, Essential Action Items, Result, - Situation, STAR Overview, 📝 Strategic Archive Summary, Task
+
+### Community 1120 - "Easy Problems Anchor.md"
+Cohesion: 0.22
+Nodes (8): [[02 Areas/Code Problem Solving/easy/Count Vowels in String]], [[02 Areas/Code Problem Solving/easy/Find Max Element in Array]], [[02 Areas/Code Problem Solving/easy/Reverse a String]], 2026-01-14, Context, Problems, Purpose, Results
+
+### Community 1121 - "Why I have been fumbling so hard on dating apps.md"
+Cohesion: 0.22
+Nodes (8): Cherry, Feb 2nd 2026 WAY BETTER, Jupiter Example, Lovering, Mostly in Reference to Feeld, Wed Feb 12th, 2025 Update → Better, What Does not Work as an Opening, What Works when Opening
+
+### Community 1122 - "Anger Journal.md"
+Cohesion: 0.22
+Nodes (8): Event 1, Event 2, Mon 2024-01-01, Sun 2024-01-07, Thu 2023-12-28, Thu 2024-02-01, Tue 2024-01-02, Tue 2024-02-06
+
+### Community 1123 - "March Element 2025 Addictions, Consequences, and Formula.md"
+Cohesion: 0.22
+Nodes (8): Back to Basics: Two Part Formula, CLOSING, FIRST: Exposing the Cost (of Being Addicted, the pain), HOMEWORK, Opening Question, SECOND: Exposing the Lie (how We Bullshit ourselves), THIRD: Close Look at Your Character, Working Out (Two Part Formula, Addicted)
+
+### Community 1124 - "Links"
+Cohesion: 0.22
+Nodes (8): 1. Interactive Search (The LazyVim Way), 2. Standard Neovim Command, 3. Find Exactly where a Key is Defined, 4. Where to Define or Find Your *custom* Ones in the Files, Context, For Custom Keybindings in Your Neovim, Go to Leader-sk, or, Links, Subtasks
+
+### Community 1125 - "Fallback Playbook if OpenClaw Is Unreliable"
+Cohesion: 0.22
+Nodes (8): Core Principle, Exit Conditions (return to normal), Fallback Playbook if OpenClaw Is Unreliable, Strategy A — Orchestrator-only OpenClaw (recommended First fallback), Strategy B — Mac-only Agent, Pi Workers, Strategy C — No-agent Ops Mode, Strategy D — Hybrid Reliability Mode (default recommendation), Trigger Conditions to Enter Fallback
+
+### Community 1126 - "Log"
+Cohesion: 0.22
+Nodes (8): [[back-braced-ez-curl]], [[cross-body-tricep-extension]], Iron Pulse - Upper - 2026-04-01, Log, [[machine-laterals]], [[Seated Neutral Grip Chest Press]], [[smith-machine-kelso-shrugs]], [[supinated-grip-lat-pulldowns]]
+
+### Community 1127 - "2026's Dygma raise keyboard new layers will drive my progress.md"
+Cohesion: 0.22
+Nodes (8): 1. Home Row here I come, Idea - Feb 10th 2026 • W07, Implementation / Imported Rule, New Home Layout, Overview, Pictures of Layout, Superkey Space, Warning: RGB is Training Wheels Mode
+
+### Community 1128 - "One NotebookLM Notebook per Theme or Subject that You Add Sources to"
+Cohesion: 0.22
+Nodes (7): Carefully Using AI in a Smart Notes System, Reference, 1. Eliminate "create New NotebookLM notebook" Every time, 2. Let Obsidian Be the Source of Truth (NotebookLM is disposable), All Notes and Links Related, One NotebookLM Notebook per Theme or Subject that You Add Sources to, Summaries Boring, instead try…
+
+### Community 1129 - "Power User Workflow Primer"
+Cohesion: 0.22
+Nodes (8): [[02 Areas/Learning/MCP Server setup for Obsidian vaults]], 1. Project Memory (CLAUDE.md), 3. Digital Prosthetics (MCP), 3. Persistent Progress (ConversionProgress.md), 4. Specialized Subagents, 5. Parallel Execution (tmux & Worktrees), 6. Efficiency Shortcuts, Power User Workflow Primer
+
+### Community 1130 - "The Big Picture → Battle Plan and Tips"
+Cohesion: 0.22
+Nodes (8): 1. AI is not a Collaborator, 2. Workflow is around Context (not prompts), 3. Move Human Effort to Highest Leverage Points, 4. Compaction as Scaling Mechanism, 5. S.D.D Is Wrong Frame, 6. Optimize for Brownfield Reality, not Greenfield Demos, [[Slash Commands for AI Code Agents in Codebases]], The Big Picture → Battle Plan and Tips
+
+### Community 1131 - "Morgan NA Training.md"
+Cohesion: 0.22
+Nodes (8): Cancelling / Leaving Early Prepaids, Double Check 35s, microOS, MicroOS Platinum Arrial Gift, Prepaid Taking Deposits, Quick Notes on 35s / DNAs, Settling 25s, Settling All 30s
+
+### Community 1132 - "Gateway Troubleshoot"
+Cohesion: 0.22
+Nodes (9): 1. Kill the Service and Any Zombie Processes, 1. Stop the Service, 2. Force Delete the Config Folder (requires sudo), 2. FORCE Delete the Config Folder (using Sudo to Override permissions), 3. Start the Setup Wizard, 3. Verify It's Gone (should Say "No such File or directory"), 4. Start the Wizard Immediately, Complete!! (continue below important) (+1 more)
+
+### Community 1133 - "Odin Note-taking Process"
+Cohesion: 0.22
+Nodes (8): Examples of Note-types, Fleeting Notes, Literature Notes, Note Title Guidelines, Odin Note-taking Process, Permanent or Atomic Notes, Refine Literature and Fleeting Notes into Atomic, Using [[09 Utilities/99_staging_gtg/Coding-Tech/Spaced Repetition]]
+
+### Community 1134 - "Session Card — Saboor KC"
+Cohesion: 0.22
+Nodes (8): Blockers, Current Timeline, Environment, Key Repos, Principles, Session Card — Saboor KC, Tools, Where We Left Off (2026-03-03)
+
+### Community 1135 - "How a Personal AI Agent Will Change Your Entire Life in 1 Day."
+Cohesion: 0.22
+Nodes (8): How a Personal AI Agent Will Change Your Entire Life in 1 Day., How OpenClaw Changes the Game, Larry Makes Me Money While I Sleep, Start Now, The Article That Changed Everything, The Window Is Closing, Then Came LarryBrain, Then Something Hit Me
+
+### Community 1136 - "How a Personal AI Agent Will Change Your Entire Life in 1 Day."
+Cohesion: 0.22
+Nodes (8): How a Personal AI Agent Will Change Your Entire Life in 1 Day., How OpenClaw Changes the Game, Larry Makes Me Money While I Sleep, Start Now, The Article That Changed Everything, The Window Is Closing, Then Came LarryBrain, Then Something Hit Me
+
+### Community 1137 - "6. The CLI Surface Area — Everything You Can Do Without Chat"
+Cohesion: 0.22
+Nodes (9): 6.1 Sending a One-Shot Agent Turn, 6.2 Session Management, 6.3 Configuration, 6.4 Model Management, 6.5 Memory System, 6.6 Cron Jobs, 6.7 Gateway Control, 6.8 Diagnostics (+1 more)
+
+### Community 1138 - "LLM Wiki"
+Cohesion: 0.22
+Nodes (8): Architecture, LLM Wiki, Notes, Operations, Research-note, Sources, Summary, The Core Idea
+
+### Community 1139 - "1.1 The Failure of the "Ergonomic Arms Race""
+Cohesion: 0.22
+Nodes (9): 1.1.1 The Short-term Relief Cycle of Gadgets (gaming Chairs, Vertical Mice, Split keyboards), 1.1.2 The "Monkey's Paw" of Productivity: More Time Spent Writing Leads to Catastrophic RSI, 1.1.3 Quote: *"I now Realize the Act of Changing My Desk Environment Was Perhaps what Was Working, Not Any Specific Change I Had made."*, 1.1 The Failure of the "Ergonomic Arms Race", 1.2.1 Why Specialists Often Prescribe "little stretches": Most Patients Won't Commit to the Gym, 1.2.2 The Transition from "rehab" (fixing pain) to "prehab" (building strength), 1.2.3 Quote: *"Strength is Better than ergonomics."*, 1.2 The "Music to a Physio's Ears" (+1 more)
+
+### Community 1140 - "{{title}}"
+Cohesion: 0.22
+Nodes (8): Context, Evidence, Frontmatter Reference, Objective, Points Earned, Reflection, Steps, {{title}}
+
+### Community 1141 - "2026.03.04 Active Workstreams *1*"
+Cohesion: 0.22
+Nodes (8): 2026.03.04 Active Workstreams *1*, [[3  ways to save a PKM note from the terminal]], Actual Santa Cruz New Tech Event Prep, notebookLM, Plan *2*, Pre-SC New Tech Event Preparation, Reflet *3*, Wed Mar 4th, 2026 - Plan/Reflect *2*
+
+### Community 1142 - "2026.05.10.md"
+Cohesion: 0.22
+Nodes (8): 05-10 Output, 13:01 — Week 3 of 3, 2026.05.10 19:20 — FPiS Ch4: errors-as-values, FPiS Lesson, Reflections, Scratchpad, Sprint Pulse, Sunday Plan
+
+### Community 1143 - "Jules Task Brief: Lead Detective Implementation (v1)"
+Cohesion: 0.22
+Nodes (8): Core Rules, Jules Task Brief: Lead Detective Implementation (v1), Mission Context, Task 1: Scraper Foundation, Task 2: Description Classifier, Task 3: Lead Schema (SQLite), Task 4: Ingestion Bridge, Task 5: Dispatch Draft Generator
+
+### Community 1144 - "Jules Task Brief: Review Engine Implementation (v1)"
+Cohesion: 0.22
+Nodes (8): Core Rules, Jules Task Brief: Review Engine Implementation (v1), Mission Context, Task 1: Redirect & Tracking Logic, Task 2: Unique Link Generator, Task 3: Funnel State Schema, Task 4: Minimalist Handoff Screen, Task 5: Private Feedback Collector
+
+### Community 1145 - "Odin Note-taking Process"
+Cohesion: 0.22
+Nodes (8): Examples of Note-types, Fleeting Notes, Literature Notes, Note Title Guidelines, Odin Note-taking Process, Permanent or Atomic Notes, Refine Literature and Fleeting Notes into Atomic, Using [[09 Utilities/99_staging_gtg/Coding-Tech/Spaced Repetition]]
+
+### Community 1146 - "YOU ARE THE OBSIDIAN VAULT NORMALIZATION AGENT"
+Cohesion: 0.22
+Nodes (8): 1. The Core Trinity Properties, 2. Routing Properties, 3. The Tagging Taxonomy, 4. The Critical "Area vs. Resource" Test, 5. Execution Workflow, Example Usage:, normalize_note("00 Inbox/MyNote.md", {"type": "area", "status": "active", "format": "note", "area": "[[Infrastructure]]", "tags": ["topic/ops"]}, ["OtherNote.md"]), YOU ARE THE OBSIDIAN VAULT NORMALIZATION AGENT
+
+### Community 1147 - "New Home"
+Cohesion: 0.22
+Nodes (8): Active Workspaces, Career, Friction Log, New Home, On Claude and Max Plan, Tooling Notes -, 🏅 Update Indisputable Wins, Workout [[_Homepage]]
+
+### Community 1148 - "Obsidian Duplicate Scan Report — SoloDeveloper"
+Cohesion: 0.22
+Nodes (8): 1) Exact Duplicate Files (same Content hash), 2) Duplicate filenames/titles, 3) Near-duplicate Titles (typos/variants), 4) High-overlap Content Candidates, Duplicate Filenames (same stem), Duplicate Titles (same Normalized Title / H1), Obsidian Duplicate Scan Report — SoloDeveloper, Quick Action Plan
+
+### Community 1149 - "smart-connections/manifest.json"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 1150 - "smart-context/manifest.json"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 1151 - "smart-dedupe/manifest.json"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 1152 - "smart-graph/manifest.json"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 1153 - "smart-lookup/manifest.json"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 1154 - "smart-templates/manifest.json"
+Cohesion: 0.22
+Nodes (8): author, authorUrl, description, id, isDesktopOnly, minAppVersion, name, version
+
+### Community 1155 - "Task: Implement Modular Triage Package (Fill-in-the-Blanks)"
+Cohesion: 0.22
+Nodes (8): How to work, Key references, One thing the spec doesn't mention, Quick orientation, Rules, Task: Implement Modular Triage Package (Fill-in-the-Blanks), Verification, What this is
+
+### Community 1156 - "Context Refinery — Handoff Summary"
+Cohesion: 0.22
+Nodes (8): Context Refinery — Handoff Summary, Current State, Next Steps for Incoming Agent, Primary Data Sources (User's Actual Data), User Context, What Has NOT Been Verified, What This Project Is, What Was Built
+
+### Community 1157 - "Code Context"
+Cohesion: 0.22
+Nodes (8): 1. Document & Page Counts, 2. Freshness & Update Requirements, Architecture, Code Context, Files Retrieved, Inventory & Findings, Key Code, Start Here
+
+### Community 1158 - "Code Context"
+Cohesion: 0.22
+Nodes (8): 1. Document & Page Counts, 2. Freshness & Update Requirements, Architecture, Code Context, Files Retrieved, Inventory & Findings, Key Code, Start Here
+
+### Community 1159 - "Analysis"
+Cohesion: 0.22
+Nodes (8): Analysis, Anchor Results, Full Run, Known issues, Remaining refinement queue targets, Retrieval Benchmark - Post Anchor V2, What changed, Wins (vs run-2026-04-19-source-aware-priors baseline)
+
+### Community 1160 - "MyAPI Status Anchor"
+Cohesion: 0.22
+Nodes (8): Failure Modes / Gotchas, MyAPI Status Anchor, Open Issues — Acceptable / Mapped, Open Issues — Annoying, Open Issues — Blocking, Recently Closed, Source Evidence, What This Is
+
+### Community 1161 - "Source-of-Truth Anchor"
+Cohesion: 0.22
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1162 - "Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault"
+Cohesion: 0.22
+Nodes (8): 1. View the Sync Script, 2. Run the Sync Command, 📋 Architectural Overview, Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault, 🛠️ Step 1: Local Setup & GCS Syncing, ☁️ Step 2: Creating the Vertex AI Data Store, 🤖 Step 3: Creating the Chatbot App, 💻 Step 4: Querying from the Local Terminal
+
+### Community 1163 - "benchmark_to_refinement_queue.py"
+Cohesion: 0.39
+Nodes (8): BenchmarkRow, main(), parse_benchmark(), Path, Split a simple markdown table row while preserving escaped pipes., RefinementTarget, render_queue(), split_markdown_row()
+
+### Community 1164 - "render_batch_report"
+Cohesion: 0.31
+Nodes (8): main(), Path, Return (frontmatter_block, body_text). Empty frontmatter if none., Return [(concept, total_hits), ...] sorted by hits desc., Build the per-batch cheat-sheet markdown. Returns (md_text, suggested_count)., render_batch_report(), split_frontmatter(), suggest_for_body()
+
+### Community 1165 - "5. Mission Packets"
+Cohesion: 0.25
+Nodes (8): 5. Mission Packets, BUILD_AND_REPORT_MISSION, CODEBASE_AUDIT_MISSION, DATA_COLLECTION_MISSION, DEPLOYMENT_CHECK_MISSION, GENERIC_MISSION, RESEARCH_BRIEF_MISSION, SCHEDULED_MAINTENANCE_MISSION
+
+### Community 1166 - "6. Jules Handoff Briefs"
+Cohesion: 0.25
+Nodes (8): 6. Jules Handoff Briefs, BUG_FIX_BRIEF, DEPENDENCY_UPGRADE_BRIEF, DOCUMENTATION_GENERATION_BRIEF, FEATURE_IMPLEMENTATION_BRIEF, REFACTORING_BRIEF, SIDE_PROJECT_SCAFFOLD_BRIEF, UNIT_TEST_GENERATION_BRIEF
+
+### Community 1167 - "Exact Transformation"
+Cohesion: 0.25
+Nodes (8): Exact Transformation, Layer A — Task Definitions (file1 content), Layer B — Execution Adapters (file0 concept), Step 1 — Keep ALL templates from file1, Step 2 — Replace the “Universal Task Packet” in file1 with the stricter version from file0, Step 3 — Normalize every template, Step 4 — Split the book into 2 layers, Step 5 — Add ONE enforcement rule globally
+
+### Community 1168 - "2026-04-23 - claude-max-task-planning - 69ea040b-07c6966890.md"
+Cohesion: 0.25
+Nodes (7): Add remote + push with upstream tracking, Claude Max Task Planning, Conversation Identity, Create GitHub repo (no auto push/remote), Provenance, Raw Conversation, $repo
+
+### Community 1169 - "2026-04-23 - dag-generator-critique - 69e9dfe5-616ffde0bd.md"
+Cohesion: 0.25
+Nodes (7): Conversation Identity, DAG Generator Critique, Edges, Edges, Nodes, Provenance, Raw Conversation
+
+### Community 1170 - "Response Discipline"
+Cohesion: 0.25
+Nodes (8): 1. Answer the literal question. Then stop., 2. Do not escalate scope without explicit invitation., 3. Do not diagnose unless asked "why is this broken?", 4. Match confidence to evidence., 5. Do not make the user pay for alignment., 6. Default response shape., 7. When in doubt, do less., Response Discipline
+
+### Community 1171 - "Roles"
+Cohesion: 0.25
+Nodes (8): AGENTS.md - Operating Contract (Headless Raspberry Pi), General, High-Impact Style, Memory & Startup, Operating Modes, Roles, Rules, Trust & Safety (Red Lines)
+
+### Community 1172 - "Roles"
+Cohesion: 0.25
+Nodes (8): AGENTS.md - Operating Contract (Raspberry Pi), General, High-Impact Style, Memory, Operating Modes (choose one per task), Roles, Routing & Rules, Trust & Safety
+
+### Community 1173 - "Roles"
+Cohesion: 0.25
+Nodes (8): General Behavior, High-Impact Bias, Memory & Session Startup, Operating Modes, Red Lines, Roles, Rules, Trust Gradient
+
+### Community 1174 - "Response Discipline"
+Cohesion: 0.25
+Nodes (8): 1. Answer the literal question. Then stop., 2. Do not escalate scope without explicit invitation., 3. Do not diagnose unless asked "why is this broken?", 4. Match confidence to evidence., 5. Do not make the user pay for alignment., 6. Default response shape., 7. When in doubt, do less., Response Discipline
+
+### Community 1175 - "Roles"
+Cohesion: 0.25
+Nodes (8): AGENTS.md - Operating Contract (Raspberry Pi), General, High-Impact Style, Memory, Operating Modes (choose one per task), Roles, Routing & Rules, Trust & Safety
+
+### Community 1176 - "Cross-cutting findings"
+Cohesion: 0.25
+Nodes (8): Cross-cutting findings, F1 — Pass 2 is already written down as doctrine, just not enforced, F2 — A briefing schema exists but is (probably) decorative, F3 — The 15 observed errors are a Pass 2 specification disguised as a postmortem, F4 — The morning-Sab invariant collapses 60-70% of decisions when applied, F5 — The cron is currently disabled, F6 — The runtime is a black box, but it doesn't have to be one, F7 — Plaintext secrets in `openclaw.json`
+
+### Community 1177 - "Roles"
+Cohesion: 0.25
+Nodes (8): General Behavior, High-Impact Bias, Memory & Session Startup, Operating Modes, Red Lines, Roles, Rules, Trust Gradient
+
+### Community 1178 - "Hardware store recommendations"
+Cohesion: 0.25
+Nodes (7): 1. Scarborough Ace Hardware Web Image ress: 218 Mount Hermon Rd, Scotts Valley, CA 95066 Ace Hardware ne: (831) 438‑0581 Ace Hardware rs: Mon–Fri 8 :00 am–6 :00 pm; Sat 8:30–5:30; Sun 9–5 Scarborough Lumber l‑rounded store covering hand/power tools, paint, plumbing, garden, etc., 2. Scarborough Lumber & Building Supply Web Image ress: 20 El Pueblo Rd, Scotts Valley, CA 95066 Scarborough Lumber ne: (831) 438‑0331 Ace Hardware rs: Mon–Fri 7:30–5:00; Sat 8:00–5:00; Sun 9–5 Scarborough Lumber ger focus on lumber & building materials—good if you’re sourcing project‑scale supplies., 3. Central Home Supply Web Image ress: 180 El Pueblo Rd, Scotts Valley, CA 95066 Central Home Supply ne: (831) 440‑0763 Central Home Supply rs: Mon–Fri 6:30–4:30; Sat 8–4 Central Home Supply cializes in landscape & hardscape supplies; tool rental available too. ---, Conversation Identity, Hardware store recommendations, Provenance, Raw Conversation
+
+### Community 1179 - "Response Discipline"
+Cohesion: 0.25
+Nodes (8): 1. Answer the literal question. Then stop., 2. Do not escalate scope without explicit invitation., 3. Do not diagnose unless asked "why is this broken?", 4. Match confidence to evidence., 5. Do not make the user pay for alignment., 6. Default response shape., 7. When in doubt, do less., Response Discipline
+
+### Community 1180 - "Roles"
+Cohesion: 0.25
+Nodes (8): AGENTS.md - Operating Contract (Headless Raspberry Pi), General, High-Impact Style, Memory & Startup, Operating Modes, Roles, Rules, Trust & Safety (Red Lines)
+
+### Community 1181 - "Roles"
+Cohesion: 0.25
+Nodes (8): AGENTS.md - Operating Contract (Raspberry Pi), General, High-Impact Style, Memory, Operating Modes (choose one per task), Roles, Routing & Rules, Trust & Safety
+
+### Community 1182 - "Cross-cutting findings"
+Cohesion: 0.25
+Nodes (8): Cross-cutting findings, F1 — Pass 2 is already written down as doctrine, just not enforced, F2 — A briefing schema exists but is (probably) decorative, F3 — The 15 observed errors are a Pass 2 specification disguised as a postmortem, F4 — The morning-Sab invariant collapses 60-70% of decisions when applied, F5 — The cron is currently disabled, F6 — The runtime is a black box, but it doesn't have to be one, F7 — Plaintext secrets in `openclaw.json`
+
+### Community 1183 - "Roles"
+Cohesion: 0.25
+Nodes (8): General Behavior, High-Impact Bias, Memory & Session Startup, Operating Modes, Red Lines, Roles, Rules, Trust Gradient
+
+### Community 1184 - "Track 1: Services & Certifications Update"
+Cohesion: 0.25
+Nodes (8): 1. Design/Build, 2. Custom Water Features, 3. Gardening & Maintenance, [MODIFY] [About.tsx](file:///data/repos/aqua-stone-studio/src/pages/About.tsx), [MODIFY] [Footer.tsx](file:///data/repos/aqua-stone-studio/src/components/Footer.tsx), [MODIFY] [Index.tsx](file:///data/repos/aqua-stone-studio/src/pages/Index.tsx), [MODIFY] [Services.tsx](file:///data/repos/aqua-stone-studio/src/pages/Services.tsx), Track 1: Services & Certifications Update
+
+### Community 1185 - "Branch · Interactive HTML Reference Guide"
+Cohesion: 0.25
+Nodes (7): Branch · Interactive HTML Reference Guide, Conversation Identity, How to handle results from file_search, How to invoke the file_search tool, Provenance, Raw Conversation, Tool usage instructions and ordering
+
+### Community 1186 - "Palette UX Improvements"
+Cohesion: 0.25
+Nodes (7): Boundaries, Conversation Identity, Palette UX Improvements, Provenance, Raw Conversation, Sample Commands You Can Use (these are illustrative, you should first figure out what this repo needs first), UX Coding Standards
+
+### Community 1187 - "Main remaining gaps"
+Cohesion: 0.25
+Nodes (8): 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete, Main remaining gaps
+
+### Community 1188 - "Recommended build order"
+Cohesion: 0.25
+Nodes (8): Creating the branch, Decision points before I dispatch, Proposed next move: build the universal verifier, Proposed sequence, Recommended build order, Status, The core design principle, What's left for "free-by-default"
+
+### Community 1189 - "Main remaining gaps"
+Cohesion: 0.25
+Nodes (8): 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete, Main remaining gaps
+
+### Community 1190 - "Recommended build order"
+Cohesion: 0.25
+Nodes (8): Creating the branch, Decision points before I dispatch, Proposed next move: build the universal verifier, Proposed sequence, Recommended build order, Status, The core design principle, What's left for "free-by-default"
+
+### Community 1191 - "Main remaining gaps"
+Cohesion: 0.25
+Nodes (8): 1. No strong intake layer, 2. Dispatcher routing is still manual/hardcoded, 3. Verification is not independent enough, 4. Stop conditions are prompt reminders, not evaluated state, 5. Safety is partial, 6. No bounded explorer/verifier subagent pattern yet, 7. Observability is incomplete, Main remaining gaps
+
+### Community 1192 - "Recommended build order"
+Cohesion: 0.25
+Nodes (8): Creating the branch, Decision points before I dispatch, Proposed next move: build the universal verifier, Proposed sequence, Recommended build order, Status, The core design principle, What's left for "free-by-default"
+
+### Community 1193 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 07:57 | vault & infrastructure, 17:32 | main, 17:32 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1194 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 17:40 | main, 18:15 | main, 18:15 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1195 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 04:25 | main, Diagnostic when the push lands, Provenance, Session Identity, Session Text, Two possibilities, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1196 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 07:31 | main, 08:29 | main, 08:29 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1197 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 12:55 | chore/body-conventions, 14:00 | chore/body-conventions, 14:45 | chore/body-conventions, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1198 - "I have a fun new task for us, which, you will probably play for now, but, the ul"
+Cohesion: 0.25
+Nodes (7): Build order when we move from plan to code, I have a fun new task for us, which, you will probably play for now, but, the ul, Proposed plan (assuming wrap-not-rebuild, extend-not-replace), Provenance, Session Identity, Session Text, Three questions that shape the plan
+
+### Community 1199 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 16:59 | main, 19:42 | main, 19:42 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1200 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 19:48 | main, 20:42 | main, 20:42 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1201 - "NotebookLM CLI & MCP Expert"
+Cohesion: 0.25
+Nodes (8): 1. Authentication, Command Categories, Critical Rules (Read First!), MCP Authentication, NotebookLM CLI & MCP Expert, Quick Reference, Tool Detection (CRITICAL - Read First!), Workflow Decision Tree
+
+### Community 1202 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 22:39 | unknown, 22:45 | gcp-billing, Final state, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1203 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 02:51 | myapi, 02:51 | myapi, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text, unknown | myapi
+
+### Community 1204 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 04:24-14:30 | dotfiles, 04:24 | dotfiles, 14:30 | dotfiles, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1205 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 07:24 | main, 07:51 | main, 🔗 https://login.tailscale.com/a/3f8c4ad019656, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1206 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 10:15 | main, 10:15 | main, 20:41 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1207 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 08:04 | work, 18:47 | main, 18:47 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1208 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 17:13 | main, Provenance, Session Identity, Session Text, The prompt (sent to a fresh cloud Sonnet 4.6 session), What was going to land, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1209 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 04:47 | main, How to enable per-project, On NotebookLM and Obsidian MCP servers, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1210 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 08:04 | work, 18:47 | main, Compute now+3 minutes, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1211 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 04:42 | main, 06:15 | main, 06:15 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1212 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 10:35 | unknown, 11:27 | unknown, 11:41 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1213 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 06:20 | unknown, 10:29 | unknown, 10:29 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1214 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 03:20 | main, 03:31 | main, A1 — Helix Selection-First Drill (prompt to paste), Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1215 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 12:11 | unknown, 12:17 | unknown, Bootstrap stable venv now so first use`], Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1216 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 12:05 | feat/corpus-v1-normalization, 12:50 | feat/corpus-v1-normalization, 12:50 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1217 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 13:00 | feat/corpus-v1-normalization, 13:33 | feat/corpus-v1-normalization, 19:45 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1218 - "Okay. So look at the following image.[Image #2] Basically I want you to decide w"
+Cohesion: 0.25
+Nodes (7): 1. Data Store Deletions (Moves 1 & 2), 2. Updating the Sync Filter (Move 3), 3. Re-syncing (Move 4), Okay. So look at the following image.[Image #2] Basically I want you to decide w, Provenance, Session Identity, Session Text
+
+### Community 1219 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 13:43 | main, 18:45 | feat/note-command, 18:45 | feat/note-command, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1220 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 07:48 | main, 09:47 | main, 09:47 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1221 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 07:48 | main, 09:47 | main, Proposed path to pi-big, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1222 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.25
+Nodes (7): 21:43 | docs/avatar-reflection-spec, 22:25 | docs/avatar-reflection-spec, Provenance, SDK 49 → 54 Upgrade Scope, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1223 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.25
+Nodes (7): 06:44 | main, 14:30 | main, 14:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1224 - "AI-driven animations for mobile app development"
+Cohesion: 0.25
+Nodes (7): AI-driven animations for mobile app development, Conversation Identity, Provenance, Raw Conversation, The map, Two meta-patterns worth internalizing, What to actually watch / read
+
+### Community 1225 - "2026-04-24 - debugging-pi-packet-smoke-test-verification-failure - 6b4522ec-8899372f16.md"
+Cohesion: 0.25
+Nodes (7): 1. Move the guard out of the way, 2. Rerun escape-test, 3. Re-enable, at the bottom of the runner, after status.json exists, pane 1, pane 2 — run immediately after, follows as it writes, ~/.pi/harness/bin/follow-latest
+
+### Community 1226 - "Raw Conversation"
+Cohesion: 0.25
+Nodes (7): Conversation Identity, Leader Tree, Provenance, Raw Conversation, Series Map, Single-file HTML teaching document, Translation Cards
+
+### Community 1227 - "AGENTS.md - Your Workspace"
+Cohesion: 0.25
+Nodes (8): AGENTS.md - Your Workspace, External vs Internal, First Run, Memory, 🧠 MEMORY.md - Your Long-Term Memory, Red Lines, Session Startup, 📝 Write It Down - No "Mental Notes"!
+
+### Community 1228 - "Big Pi Runbook"
+Cohesion: 0.25
+Nodes (8): Active Paths, Active Service, Big Pi Runbook, Canonical Commands, First Real Dispatch Preflight, Mutation Boundaries, Source Of Truth, Troubleshooting Notes
+
+### Community 1229 - "Security Patterns"
+Cohesion: 0.25
+Nodes (8): Assistant, Rate Limiting, Security Patterns, Tool Call: exec_command, Tool Call: exec_command, Tool Call: exec_command, Tool Output, Tool Output
+
+### Community 1230 - "Source-of-Truth Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1231 - "Source-of-Truth Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1232 - "My_DevInfra System Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, My_DevInfra System Anchor, Related Notes, Source Evidence, What This Is
+
+### Community 1233 - "Khoj Deployment and Indexing Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Khoj Deployment and Indexing Anchor, Related Notes, Source Evidence, What This Is
+
+### Community 1234 - "Python"
+Cohesion: 0.25
+Nodes (8): feat/claude-web-adapter...origin/feat/claude-web-adapter, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main [ahead 1], Python
+
+### Community 1235 - "Source-of-Truth Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1236 - "Source-of-Truth Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1237 - "My_DevInfra System Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, My_DevInfra System Anchor, Related Notes, Source Evidence, What This Is
+
+### Community 1238 - "Khoj Deployment and Indexing Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Khoj Deployment and Indexing Anchor, Related Notes, Source Evidence, What This Is
+
+### Community 1239 - "Python"
+Cohesion: 0.25
+Nodes (8): feat/claude-web-adapter...origin/feat/claude-web-adapter, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main [ahead 1], Python
+
+### Community 1240 - "Source-of-Truth Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1241 - "Source-of-Truth Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Related Notes, Source Evidence, Source-of-Truth Anchor, What This Is
+
+### Community 1242 - "My_DevInfra System Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, My_DevInfra System Anchor, Related Notes, Source Evidence, What This Is
+
+### Community 1243 - "Khoj Deployment and Indexing Anchor"
+Cohesion: 0.25
+Nodes (8): Current State, Decisions Made, Failure Modes / Gotchas, Important Commands or Files, Khoj Deployment and Indexing Anchor, Related Notes, Source Evidence, What This Is
+
+### Community 1244 - "Python"
+Cohesion: 0.25
+Nodes (8): feat/claude-web-adapter...origin/feat/claude-web-adapter, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main, main...origin/main [ahead 1], Python
+
+### Community 1245 - "<environment_context>"
+Cohesion: 0.25
+Nodes (7): Assistant, <environment_context>, Provenance, Session Identity, Session Text, User, User
+
+### Community 1246 - "Run 2: Forward Dispatch On A Tiny Real Repo"
+Cohesion: 0.25
+Nodes (8): Checkpoints, Commands, Goal, Inspect, Run 2: Forward Dispatch On A Tiny Real Repo, Setup, Suggested Task Shapes, Write Down
+
+### Community 1247 - "Run 2: Forward Dispatch On A Tiny Real Repo"
+Cohesion: 0.25
+Nodes (8): Checkpoints, Commands, Goal, Inspect, Run 2: Forward Dispatch On A Tiny Real Repo, Setup, Suggested Task Shapes, Write Down
+
+### Community 1248 - "Needle Router Architecture Assessment"
+Cohesion: 0.25
+Nodes (8): Bottlenecks and Trade-offs (Where it breaks):, Core Goal, Current Architecture, Future Viability for Multi-Stage Routing in Pi, Needle Router Architecture Assessment, The "Hybrid" Approach (v1), What Works:, Why is this important for the agent overall?
+
+### Community 1249 - "<environment_context>"
+Cohesion: 0.25
+Nodes (7): Assistant, <environment_context>, Provenance, Session Identity, Session Text, User, User
+
+### Community 1250 - "Handoff 009: Migrate MyAPI + Vertex AI Workspace to khoj-vm-new"
+Cohesion: 0.25
+Nodes (8): Context, Handoff 009: Migrate MyAPI + Vertex AI Workspace to khoj-vm-new, Step 1: Clone & Setup MyAPI (~5 min), Step 2: Auth gcloud for Vertex AI (~2 min), Step 3: Verify Data Store Imports Completed (~2 min), Step 4: Import Normalized Exports (if initial import is done) (~1 min to trigger), Step 5: Test Search Query (~5 min), VM Connection
+
+### Community 1251 - "Handoff 009: Migrate MyAPI + Vertex AI Workspace to khoj-vm-new"
+Cohesion: 0.25
+Nodes (8): Context, Handoff 009: Migrate MyAPI + Vertex AI Workspace to khoj-vm-new, Step 1: Clone & Setup MyAPI (~5 min), Step 2: Auth gcloud for Vertex AI (~2 min), Step 3: Verify Data Store Imports Completed (~2 min), Step 4: Import Normalized Exports (if initial import is done) (~1 min to trigger), Step 5: Test Search Query (~5 min), VM Connection
+
+### Community 1252 - "Handoff 011 — Corpus v1 Obsidian Substrate Architecture"
+Cohesion: 0.25
+Nodes (7): Baseline body headers, Handoff 011 — Corpus v1 Obsidian Substrate Architecture, Key principle, Required shape for each admitted artifact, Summary, The core architecture decision, Trust model
+
+### Community 1253 - "The Three (really four) Tools"
+Cohesion: 0.25
+Nodes (7): 1. Playwright + Chromium — Pi (here, now), 2. Cmux Browser — Mac Only, 3. Claude-in-Chrome — Mac Only, 4. Playwright on Mac (you Have It, just Didn't List it), How to Pick — for Your Work Specifically, The Mental Model in One Line, The Three (really four) Tools
+
+### Community 1254 - "3. Hosting a Local Web Server on Your Raspberry Pi"
+Cohesion: 0.25
+Nodes (7): 1. Content Structure in Obsidian, 2. The Content Workflow: Obsidian → Next.js, 3. Hosting a Local Web Server on Your Raspberry Pi, Claude's Take, Running a Web Server on the Pi, The Honest Take: Pi Vs Vercel for Your Portfolio, The Three Immediate Next Steps
+
+### Community 1255 - "Vim Marks Cheatseet.md"
+Cohesion: 0.25
+Nodes (7): Conclusion, Deleting Marks, Example Workflow, Navigating to Marks, Practice Routine for Learning Marks, Setting Marks, Vim Marks Cheat Sheet
+
+### Community 1256 - "GDD - agentic or autonomous dispatch pipeline anchor.md"
+Cohesion: 0.25
+Nodes (5): Active Workstreams, Constraints, Objective, Open Questions / Risks, Related
+
+### Community 1257 - "10 — Project Graph Contract"
+Cohesion: 0.25
+Nodes (7): 10 — Project Graph Contract, Node Schema, Node Types, Status Values, The Mental Model, The Split, Three Layers
+
+### Community 1258 - "Analysis: Robust Verification for Semi-Autonomy"
+Cohesion: 0.25
+Nodes (7): 1. Granular Invariant and Constraint Checks (The "Case Builder"), 2. Contextual Evaluation (Resolving the "Open Items"), 3. Streamlining the Checkpoint, Analysis: Robust Verification for Semi-Autonomy, Major Audit of GDDP-Runtime and OpenClaw, Project Status: Semi-Autonomous Checkpoint Reached, Summary of Path Forward
+
+### Community 1259 - "Active Sessions for 2026 April Career Sprint"
+Cohesion: 0.25
+Nodes (7): Active Sessions for 2026 April Career Sprint, Active Threads, Decisions Captured, Per-Machine Setup, Pointers, Related, Sessions
+
+### Community 1260 - "Purpose"
+Cohesion: 0.25
+Nodes (8): Core Insight, How It Works (High Level), Problem Being Solved, Product Thesis, Purpose, SocialXP Anchor, Target User, Validation Strategy
+
+### Community 1261 - "3. Website Audit + Migration"
+Cohesion: 0.25
+Nodes (8): 3.1 Audit Current Wix Setup, 3.2 Define Migration Risks, 3.3 Gather Inspiration / References, 3.4 Define New Website Goals, 3.5 Define V1 Site Structure, 3.6 Gather Assets, 3.7 Build + Prepare Migration, 3. Website Audit + Migration
+
+### Community 1262 - "Lock 2–3 Resume-worthy Projects"
+Cohesion: 0.25
+Nodes (7): [[01 Projects/SocialXP/SocialXP Anchor]], [[02 Areas/Career/Job Search 2026/2026-01 Interview Sprint/Speedy Technical Mini Plan Jan 2026]], [[05 Archive/Crypto-Wallet-Recovery/SeedTracer/Seed Tracer Anchor]], [[--BDR]], Create Barebones Portfolio Site, Lock 2–3 Resume-worthy Projects, My Own Obsidian Vault (?)
+
+### Community 1263 - "LinkedIn Comprehensive Action Plan — Saboor Chaudry"
+Cohesion: 0.25
+Nodes (7): LinkedIn Comprehensive Action Plan — Saboor Chaudry, On Premium — Honest Assessment, Phase 1: Quick Wins (Under 5 Minutes Each — Do These First), Phase 2: High-Impact Profile Fixes (15–30 Minutes Each), Phase 3: Content & Visibility Strategy (Ongoing), Phase 4: Network Growth (Targeted, Not Spray-and-Pray), The Single Most Important Thing
+
+### Community 1264 - "Portfolio Websites of Peer or Near Peer Developers"
+Cohesion: 0.25
+Nodes (7): For Each Portfolio, <https://miladfarazian.com/>, <https://mvahabi.github.io/portfolio/>, <https://victoria-duan.vercel.app/>, <https://www.ysanghvi.com/l> - This One Wow, Patterns, Portfolio Websites of Peer or Near Peer Developers
+
+### Community 1265 - "Count Vowels in String.md"
+Cohesion: 0.25
+Nodes (7): Approach, Constraints, Examples, Key Insights, Mistakes Made, Problem Statement, Solution
+
+### Community 1266 - "Find Max Element in Array.md"
+Cohesion: 0.25
+Nodes (7): Approach, Constraints, Examples, Key Insights, Mistakes Made, Problem Statement, Solution
+
+### Community 1267 - "Reverse a String.md"
+Cohesion: 0.25
+Nodes (7): Approach, Constraints, Examples, Key Insights, Mistakes Made, Problem Statement, Solution
+
+### Community 1268 - "Thu Jan 30th, 2025"
+Cohesion: 0.25
+Nodes (7): Fri Feb 14th, 2025, Fucking Gym Didn't Work what the Fuck, I Am Actually Disgusted by Her, I Am Sober Now, but Sobriety Sucks Sometimes, I Hate Ivy, I Hate Ivy, I Fucking Hate Ivy, The Ted and Skyler Post Sex Scene, Thu Jan 30th, 2025
+
+### Community 1269 - "But You Won't Forget that I Was the only One Who Listened to You and Knew the Real You"
+Cohesion: 0.25
+Nodes (7): Act like I Don't Exist, Blame Me for Everything that Happened, But You Won't Forget that I Was the only One Who Listened to You and Knew the Real You, Lie on My name, You Can Keep Me Blocked, You Won't Forget how Many times I Chose to Stay when I Should've Left, You Won't Forget the times I Helped You Get through the Situation Nobody Knew About, even when I Was Struggling with My Own Mental Health
+
+### Community 1270 - "Wilburn Clearing Call.md"
+Cohesion: 0.25
+Nodes (7): Clearing the Men, Events and Budgets, S1 Drafts CPRs, S1 Duties with Wilburn, S1 Pays Attention to what the Men Need, S1 Takes Notes on ALL Meetings and Calls, Team and Men Agreements
+
+### Community 1271 - "Terminal Bash Scripts for Views"
+Cohesion: 0.25
+Nodes (7): "dashboard" Command per Periodic Note, Filename Format Inconsistencies, Oldest and Newest Filenames, Quick Count per Folder, "shape" Of Recent Activity, Terminal Bash Scripts for Views, Useful Ls, Grep, Find Usages Examples
+
+### Community 1272 - "C. The "learn faster" System inside Neovim (LazyVim-specific)"
+Cohesion: 0.25
+Nodes (7): 1. Use Built-in Discovery, 2. Turn Everything into Micro-drills, 3. Write One Line into Drills.md after Each Skill, "Be My Neovim Coach. I'm Using LazyVim. For Every Request, Answer in Exactly This Structure, C. The "learn faster" System inside Neovim (LazyVim-specific), Example Micro-skills that Move the Needle:, One Week NeoVim Challenge
+
+### Community 1273 - "C. The "learn faster" System inside Neovim (LazyVim-specific)"
+Cohesion: 0.25
+Nodes (7): 1. Use Built-in Discovery, 2. Turn Everything into Micro-drills, 3. Write One Line into Drills.md after Each Skill, "Be My Neovim Coach. I'm Using LazyVim. For Every Request, Answer in Exactly This Structure, C. The "learn faster" System inside Neovim (LazyVim-specific), Example Micro-skills that Move the Needle:, One Week NeoVim Challenge
+
+### Community 1274 - "Starter Checklist — Distributed Ops (Mac + Big Pi + Small Pi)"
+Cohesion: 0.25
+Nodes (7): Immediate “Many Things” Triage Template, Phase 1: Stabilize (today), Phase 2: Baseline Critical Jobs (this week), Phase 3: Controlled Routing, Phase 4: Reliability Guardrails, Resource-aware Note (8GB Mac), Starter Checklist — Distributed Ops (Mac + Big Pi + Small Pi)
+
+### Community 1275 - "Final Pro-tip"
+Cohesion: 0.25
+Nodes (7): 1. Install Zoxide (The "Smart" cd), 2. The "Break-Out" Workflow, 3. A "Quick-Create" Macro, 4. How to "Break out" a Pane into a New Window Right now, Final Pro-tip, Fully Equipped with, What's New in the Cyberdream bar
+
+### Community 1276 - "Rehab Buckets"
+Cohesion: 0.25
+Nodes (8): 1. Scapular / Posture, 2. Neck / Posture Reset, 3. Pec / Front-of-Shoulder Opening, 4. Rotator Cuff / Shoulder Stability, 5. Nerve Mobility, 6. Wrist Mobility, 7. Wrist Loading / Tissue Tolerance, Rehab Buckets
+
+### Community 1277 - "Example Weekly Flow"
+Cohesion: 0.25
+Nodes (8): Example Weekly Flow, Friday, Monday, Saturday, Sunday, Thursday, Tuesday, Wednesday
+
+### Community 1278 - "Master Exercise Bank"
+Cohesion: 0.25
+Nodes (8): Master Exercise Bank, Neck / Posture Reset, Nerve Mobility, Pec / Front-of-Shoulder Opening, Rotator Cuff / Shoulder Stability, Scapular / Posture, Wrist Loading / Tissue Tolerance, Wrist Mobility
+
+### Community 1279 - "Weekly Bucket Tracker"
+Cohesion: 0.25
+Nodes (8): Neck / Posture Reset, Nerve Mobility, Pec / Front-of-Shoulder Opening, Rotator Cuff / Shoulder Stability, Scapular / Posture, Weekly Bucket Tracker, Wrist Loading / Tissue Tolerance, Wrist Mobility
+
+### Community 1280 - "Day1-2026-03-14"
+Cohesion: 0.25
+Nodes (7): Calf Press, Day1-2026-03-14, Incline DB Row, Incline Press, Leg Extension, Seated Leg Curl, Session Notes
+
+### Community 1281 - "YS7 Upper 2.md"
+Cohesion: 0.25
+Nodes (7): Acclimation, Cable Flyes (Unilateral, etc) 10 6 8, Ez Curl 10 6 8, Machine Shoulder Press 10 6 8, Neutral Grip Lat Pulldowns 10 6 8, Tricep Pushdowns 10 6 8, Upperback Barbell Row 10 6 8
+
+### Community 1282 - "Evaluating the  Johnny Decimal project management system.md"
+Cohesion: 0.25
+Nodes (7): [[02 Areas/Learning/The Advantages of File Name Conventions and Tagging]], Brilliant Answer, NotebookLM Chat, NotebookLM Deep Research, Question, Reddit User Asks, Gets Amazing Reply, Yo
+
+### Community 1283 - "Problematic Typing Postures"
+Cohesion: 0.25
+Nodes (7): Conventional Keyboard-tray, Desk top Keyboard, Ergonomics of Ideal Posture, **Ideal Typing Posture:** ***Negative Slope Keyboard support***, Problematic Typing Postures, Side Effects from Desktop Posture, Side Effects of Conventional Keyboard-tray
+
+### Community 1284 - "To Run a Script (macOS zsh) Reliably"
+Cohesion: 0.25
+Nodes (7): 1. Create the Script File, 2. Make it Executable, 3. Run it, 4. Safer Patterns (recommended), 5. Debug if it Doesn't Work, Best Practices, To Run a Script (macOS zsh) Reliably
+
+### Community 1285 - "The 4-Week Layer Approach"
+Cohesion: 0.25
+Nodes (7): The 4-Week Layer Approach, The Friction Log, The Neovim Stabilization Plan, Week 1: Filesystem Trust, Week 2: Picker and Explorer Trust, Week 3: Git Trust (Neogit + Lazygit), Week 4: Graph Workflow Integration
+
+### Community 1286 - "Claude_Code_pipe-stdin-usage-command-examples.md"
+Cohesion: 0.25
+Nodes (7): Analyze logs, Code review, Explain errors, JSON (good for scripting), Plain text (default), Streaming JSON, Summarize output
+
+### Community 1287 - "PROMPT_BOOK.md — OpenClaw Prompt Templates"
+Cohesion: 0.25
+Nodes (7): 58. Run Background Data Sync, 59. Generate Large Report, 60. Batch Image Processing, Heavy Compute / VM (vm-lab → debian-vm), PROMPT_BOOK.md — OpenClaw Prompt Templates, Prompt Suffixes, Table of Contents
+
+### Community 1288 - "Jules Handoff Briefs"
+Cohesion: 0.25
+Nodes (8): 45. Feature Implementation Brief, 46. Unit Test Generation Brief, 47. Refactoring Brief, 48. Bug Fix Brief, 49. Dependency Upgrade Brief, 50. Documentation Generation Brief, 51. Side Project Scaffold Brief, Jules Handoff Briefs
+
+### Community 1289 - "Vision B — Operating Rules (One-Screen)"
+Cohesion: 0.25
+Nodes (7): Core Mode, Definition of Done (ongoing), Guardrails, Minimum Observability, Source of Truth, Task Routing, Vision B — Operating Rules (One-Screen)
+
+### Community 1290 - "Finger Placement on Home Row Keys.md"
+Cohesion: 0.25
+Nodes (7): Cons, Index - One left/right Arrow, Middle - down/up, New Proposal, Originally: Trident, Pros, Ring - Other left/right
+
+### Community 1291 - "LLM Payload Idea between Mac and iPad.md"
+Cohesion: 0.25
+Nodes (3): [[LLM Payload Workflow]], Prompt, [[Using the Raspberry Pi in 2026]]
+
+### Community 1292 - "3 Ways to Add a Note from Terminal"
+Cohesion: 0.25
+Nodes (7): 1. obsidian.nvim (Neovim) — Best Option, 2. Obsidian URI (macOS Native, no CLI needed), 3. Direct File Creation — Fastest, no App Needed, 3 Ways to Add a Note from Terminal, 3 Ways to save a PKM Note from the Terminal, I have, [[nvim - ;e - An Espanso match for a new Neovim plugin ObsidianNew note 1]]
+
+### Community 1293 - ":edit, nvim filepath+name, picker f + c + filename"
+Cohesion: 0.25
+Nodes (6): :edit, nvim filepath+name, picker f + c + filename, Fastest Workflow is one-liner or file picker, One-liner if you know the path:, Pro LazyVim moves:, Related, The Move: Delete Inside Quotes
+
+### Community 1294 - "Lazyvim - Getting Started Docs.md"
+Cohesion: 0.25
+Nodes (5): Keymaps, [[Lazy Vim keyboard shortcut wizardry using which-key]], [Lazyvim - Getting Started Docs](https://www.lazyvim.org/), [00:27](https://www.youtube.com/watch?v=N93cTbtLCIM&t=28#t=00:27.77) Installing Lazyvim (backing up Nvm first), [[Lazyvim - Getting Started Docs]]
+
+### Community 1295 - "[[Vim workflows helps me understand code better]]"
+Cohesion: 0.25
+Nodes (6): Command, Scenario, Global Command: `:g/border-left/d`, Option 2 is More Manual, Search and Replace, [[Vim workflows helps me understand code better]]
+
+### Community 1296 - "Getting Comfortable with NeoVim as Your Daily Driver"
+Cohesion: 0.25
+Nodes (7): Essential Commands to Break Through the Startup Screen, Getting Comfortable with NeoVim as Your Daily Driver, Power Moves for Coding, Reducing Intimidation: Your Safety Net, Two Core Workflows, Workflow 1: Working on Existing Projects/Codebases, Workflow 2: Solving LeetCode/Interview Problems
+
+### Community 1297 - "Portfolio Site Live"
+Cohesion: 0.25
+Nodes (7): Bonus, Deliverables, Evidence, Minimum Viable Portfolio, Objective, Portfolio Site Live, Reflection
+
+### Community 1298 - "🔓 Terminal Wizard"
+Cohesion: 0.25
+Nodes (7): Definition of Done, Milestone Unlock — Requires 150 Terminal Points, Notes, Proof, 🔓 Terminal Wizard, What This Means, Why It Matters
+
+### Community 1299 - "2026.03.01.md"
+Cohesion: 0.25
+Nodes (7): 2026.03.01 Active Workstreams *1*, [[2026 ~ dotfiles repo must be made]], 📋 Dataview / Tasks View *(coming soon)*, [[Google first-vm compute engine setup workflow using gcloud aliases]], Plan *2*, Reflect *3*, Sun Mar 1st, 2026 - Plan/Reflect *2*
+
+### Community 1300 - "2026.03.03.md"
+Cohesion: 0.25
+Nodes (6): 2026.03.03 Active Workstreams *1*, *a Very Tight window*, March 3rd (62/365) • 2026 • D2 of W10, Plan *2*, Tue Mar 3rd, 2026 - Plan/Reflect *2*, Vowen is Too Memory Intensive while Idle
+
+### Community 1301 - "Active Workstreams and Workflows *1*"
+Cohesion: 0.25
+Nodes (7): Active Workstreams and Workflows *1*, Fri Mar 20th, 2026 *2*, Journal && || Reflect *3*, Maybe even Silicon or Eva Foam, Metric M3 Machine Screws, Pan Head or Socket Head, Painter's Tape, Spacers - Nylon or Aluminum Spacers
+
+### Community 1302 - "Scratchpad"
+Cohesion: 0.25
+Nodes (7): File 1: The Master Types (The Code Contract), File 2: The Taxonomy & Rules (The Logic Contract), File 3: The Khoj Target Template (The Output Contract), Plan, Reflections, Scratchpad, What to do next:
+
+### Community 1303 - "2026.04.10.md"
+Cohesion: 0.25
+Nodes (7): 1. GDDP Runs, OpenClaw Has Arrived, Plan, Reflections, Scratchpad, Talon Soon, The Top 3 Killer Todos for Weekend
+
+### Community 1304 - "Problematic Typing Postures"
+Cohesion: 0.25
+Nodes (7): Conventional Keyboard-tray, Desk top Keyboard, Ergonomics of Ideal Posture, **Ideal Typing Posture:** ***Negative Slope Keyboard support***, Problematic Typing Postures, Side Effects from Desktop Posture, Side Effects of Conventional Keyboard-tray
+
+### Community 1305 - "🌅 Morning Hub"
+Cohesion: 0.25
+Nodes (7): ✅ Due Today, 📥 Inbox, 🧭 Jump, 🌅 Morning Hub, ⚓ Project Anchors, 🕘 Recent Notes, 📅 Today
+
+### Community 1306 - "Morning Sweep"
+Cohesion: 0.25
+Nodes (7): Explicitly Dated Inline Tasks, Kanban, Morning Sweep, New Inbox Notes, New TaskNotes, Snapshot, Yesterday's Daily Note Tasks
+
+### Community 1307 - "Expected Fixture: get_person_context("Sab")"
+Cohesion: 0.25
+Nodes (7): Evidence, Expected Fixture: get_person_context("Sab"), Key Relationships, Open Risks / Unknowns, Short Answer, Useful Next Questions, Why This Matters
+
+### Community 1308 - "Expected Fixture: get_project_context("MyAPI-rebuild")"
+Cohesion: 0.25
+Nodes (7): Evidence, Expected Fixture: get_project_context("MyAPI-rebuild"), Key Relationships, Open Risks / Unknowns, Short Answer, Useful Next Questions, Why This Matters
+
+### Community 1309 - "Expected Fixture: get_project_context("Pi / Needle")"
+Cohesion: 0.25
+Nodes (7): Evidence, Expected Fixture: get_project_context("Pi / Needle"), Key Relationships, Open Risks / Unknowns, Short Answer, Useful Next Questions, Why This Matters
+
+### Community 1310 - "MyAPI-Rebuild Corpus Freshness Audit - 2026-07-01"
+Cohesion: 0.25
+Nodes (7): Actual read defaults observed, Freshness judgment, MyAPI-Rebuild Corpus Freshness Audit - 2026-07-01, Recommended next action, Short answer, Source audit, Validation
+
+### Community 1311 - "Corpus Tier Policy - 2026-07-02"
+Cohesion: 0.25
+Nodes (7): CLI Normalization Pass, Corpus Tier Policy - 2026-07-02, MyAPI vs MyMCP, Retrieval Policy, Tier Model, VM / Khoj Role, What Goes Where
+
+### Community 1312 - "Parallel Work Board — 2026-04-21"
+Cohesion: 0.25
+Nodes (7): Best Next Sidecar Pick, Lane 1 — CLI Triage Owner Pass, Lane 2 — BigPi / Harness Work, Lane 3 — Neovim Workflow Training, Lane 4 — Zapier / SMB Ops Hub, Parallel Work Board — 2026-04-21, Priority Rule
+
+### Community 1313 - "🚀 3. Handoff Action Items (The Final Steps)"
+Cohesion: 0.25
+Nodes (7): 🟢 1. What We Conquered (The Good News), 🟡 2. The Great Matrix Twist (Why It Failed At The End), 🚀 3. Handoff Action Items (The Final Steps), 📡 SITREP: Context Refinery -> Khoj Deployment, Step 1: Discover the True GCP IP, Step 2: Route the Bridge correctly, Step 3: Bask in the JSON
+
+### Community 1314 - "GDDP — BRIEF-DRAFT (air)"
+Cohesion: 0.25
+Nodes (7): Evidence (exist on air), GDDP — BRIEF-DRAFT (air), Next, Relationships, Risks, Short Answer, Why
+
+### Community 1315 - "MyAPI — BRIEF-DRAFT (air)"
+Cohesion: 0.25
+Nodes (7): Evidence (paths exist on air), MyAPI — BRIEF-DRAFT (air), Next (for pass 2 / humans), Relationships, Risks, Short Answer, Why it exists
+
+### Community 1316 - "Pi / Needle / Gemma — BRIEF-DRAFT (air)"
+Cohesion: 0.25
+Nodes (7): Evidence (exist on air), Next, Pi / Needle / Gemma — BRIEF-DRAFT (air), Relationships, Risks, Short Answer, Why
+
+### Community 1317 - "Pi / Needle / Gemma — SOURCES (mini pass-1)"
+Cohesion: 0.25
+Nodes (7): Core paths, Env names only (no values), Gemma — path + config, not weights, Ingest risks (do not full-ingest `~/.pi`), mini-only vs missing, Needle layout notes (from README), Pi / Needle / Gemma — SOURCES (mini pass-1)
+
+### Community 1318 - "GDDP — BRIEF-DRAFT (air)"
+Cohesion: 0.25
+Nodes (7): Evidence (exist on air), GDDP — BRIEF-DRAFT (air), Next, Relationships, Risks, Short Answer, Why
+
+### Community 1319 - "MyAPI — BRIEF-DRAFT (air)"
+Cohesion: 0.25
+Nodes (7): Evidence (paths exist on air), MyAPI — BRIEF-DRAFT (air), Next (for pass 2 / humans), Relationships, Risks, Short Answer, Why it exists
+
+### Community 1320 - "Pi / Needle / Gemma — BRIEF-DRAFT (air)"
+Cohesion: 0.25
+Nodes (7): Evidence (exist on air), Next, Pi / Needle / Gemma — BRIEF-DRAFT (air), Relationships, Risks, Short Answer, Why
+
+### Community 1321 - "Pi / Needle / Gemma — SOURCES (mini pass-1)"
+Cohesion: 0.25
+Nodes (7): Core paths, Env names only (no values), Gemma — path + config, not weights, Ingest risks (do not full-ingest `~/.pi`), mini-only vs missing, Needle layout notes (from README), Pi / Needle / Gemma — SOURCES (mini pass-1)
+
+### Community 1322 - "deliver_daily_active_corpus.py"
+Cohesion: 0.46
+Nodes (7): _http_json(), khoj_healthy(), main(), _priority_key(), put_batch(), Path, Multipart PUT without requests dependency (stdlib).
+
+### Community 1323 - "MyAPI: Agent-API Framing Realized + Trust Threshold Crossed"
+Cohesion: 0.29
+Nodes (6): 1. Trust threshold crossed (exact-term search), 2. Agent-API framing realization, Downstream decision, MyAPI: Agent-API Framing Realized + Trust Threshold Crossed, What happened, Why this matters
+
+### Community 1324 - "One clean setup to run"
+Cohesion: 0.29
+Nodes (7): Capture (iPhone), Immediate extract (no waiting), One clean setup to run, One small upgrade, Parallel shortcut (faster), Turn into system (same loop every time), What this gives you
+
+### Community 1325 - "Git Fetch and Mirror Explained"
+Cohesion: 0.29
+Nodes (6): Conversation Identity, Git Fetch and Mirror Explained, Mirror, Provenance, Raw Conversation, Summary Mapping
+
+### Community 1326 - "Cron Job Configs (Monitoring & Automation)"
+Cohesion: 0.29
+Nodes (7): 45. Morning Briefing Cron (ssd-big), 46. Site Health Monitor Cron (ssd-small), 47. Daily Git Summary Cron (saboors-macbook-air), 48. Weekly Project Status Digest (ssd-big), 49. Disk Space Warning (first-vm), 50. SSL Expiry Weekly Check (waterandstone.org), Cron Job Configs (Monitoring & Automation)
+
+### Community 1327 - "4. Business / Client"
+Cohesion: 0.29
+Nodes (7): 4. Business / Client, DRAFT_CLIENT_EMAIL, INVOICE_LINE_ITEM_GENERATOR, LEAD_FOLLOW_UP_REMINDER, MARKET_COMPETITOR_LOOKUP, MEETING_MINUTES_GENERATOR, PROJECT_STATUS_SUMMARY
+
+### Community 1328 - "7. Scheduled / Cron Tasks"
+Cohesion: 0.29
+Nodes (7): 7. Scheduled / Cron Tasks, CRON_DAILY_GIT_SUMMARY, CRON_DISK_SPACE_WARNING, CRON_MORNING_BRIEFING, CRON_SITE_HEALTH_MONITOR, CRON_SSL_EXPIRY_WEEKLY, CRON_WEEKLY_PROJECT_DIGEST
+
+### Community 1329 - "Section 2: Natural-Language Briefing Book"
+Cohesion: 0.29
+Nodes (7): Build Check on smb-ops-hub, Draft Client Update, End of Day Review, Monitoring Site Health, Morning Operations Brief, Section 2: Natural-Language Briefing Book, Spin up External Worker for Research
+
+### Community 1330 - "Interactive Graph Builder"
+Cohesion: 0.29
+Nodes (6): Conversation Identity, Edges, Interactive Graph Builder, Nodes, Provenance, Raw Conversation
+
+### Community 1331 - "13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests"
+Cohesion: 0.29
+Nodes (7): 13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests, Running All 5 in Sequence, Test 1 — Connectivity & Identity Check (30 seconds), Test 2 — State Isolation Verification (2 minutes), Test 3 — Disk & RAM Inventory (1 minute, genuinely useful), Test 4 — Vault Sync Health Check (3 minutes), Test 5 — Agent Round-Trip (5 minutes, the real test)
+
+### Community 1332 - "Mission Packets (Structured Async)"
+Cohesion: 0.29
+Nodes (7): 39. Run Mission Packet (first-vm), 40. Build-and-Report Mission (smb-ops-hub), 41. Research Brief Mission (biz), 42. Multi-Step Deployment Check Mission (waterandstone.org), 43. Scheduled Maintenance Mission (first-vm), 44. Data Collection Mission (Scrape/Aggregate), Mission Packets (Structured Async)
+
+### Community 1333 - "Section 2: Natural-Language Briefing Book"
+Cohesion: 0.29
+Nodes (7): Build Check on smb-ops-hub, Draft Client Update, End of Day Review, Monitoring Site Health, Morning Operations Brief, Section 2: Natural-Language Briefing Book, Spin up External Worker for Research
+
+### Community 1334 - "Where you are vs. where the path leads"
+Cohesion: 0.29
+Nodes (7): Sequencing — the 30-day picture, The single most important call, Thread A — From harness to **operator-grade tool**, Thread B — From bounded missions to **a packet library that does work**, Thread C — From extensions to **skills**, Thread D — From local harness to **system-integrated agent**, Where you are vs. where the path leads
+
+### Community 1335 - "13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests"
+Cohesion: 0.29
+Nodes (7): 13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests, Running All 5 in Sequence, Test 1 — Connectivity & Identity Check (30 seconds), Test 2 — State Isolation Verification (2 minutes), Test 3 — Disk & RAM Inventory (1 minute, genuinely useful), Test 4 — Vault Sync Health Check (3 minutes), Test 5 — Agent Round-Trip (5 minutes, the real test)
+
+### Community 1336 - "Mission Packets (Structured Async)"
+Cohesion: 0.29
+Nodes (7): 39. Run Mission Packet (first-vm), 40. Build-and-Report Mission (smb-ops-hub), 41. Research Brief Mission (biz), 42. Multi-Step Deployment Check Mission (waterandstone.org), 43. Scheduled Maintenance Mission (first-vm), 44. Data Collection Mission (Scrape/Aggregate), Mission Packets (Structured Async)
+
+### Community 1337 - "Section 2: Natural-Language Briefing Book"
+Cohesion: 0.29
+Nodes (7): Build Check on smb-ops-hub, Draft Client Update, End of Day Review, Monitoring Site Health, Morning Operations Brief, Section 2: Natural-Language Briefing Book, Spin up External Worker for Research
+
+### Community 1338 - "13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests"
+Cohesion: 0.29
+Nodes (7): 13. VM (debian-vm) Test Missions — Genuinely Useful Smoke Tests, Running All 5 in Sequence, Test 1 — Connectivity & Identity Check (30 seconds), Test 2 — State Isolation Verification (2 minutes), Test 3 — Disk & RAM Inventory (1 minute, genuinely useful), Test 4 — Vault Sync Health Check (3 minutes), Test 5 — Agent Round-Trip (5 minutes, the real test)
+
+### Community 1339 - "Mission Packets (Structured Async)"
+Cohesion: 0.29
+Nodes (7): 39. Run Mission Packet (first-vm), 40. Build-and-Report Mission (smb-ops-hub), 41. Research Brief Mission (biz), 42. Multi-Step Deployment Check Mission (waterandstone.org), 43. Scheduled Maintenance Mission (first-vm), 44. Data Collection Mission (Scrape/Aggregate), Mission Packets (Structured Async)
+
+### Community 1340 - "Section 2: Natural-Language Briefing Book"
+Cohesion: 0.29
+Nodes (7): Build Check on smb-ops-hub, Draft Client Update, End of Day Review, Monitoring Site Health, Morning Operations Brief, Section 2: Natural-Language Briefing Book, Spin up External Worker for Research
+
+### Community 1341 - "Pick a problem and save a bundle"
+Cohesion: 0.29
+Nodes (7): Pick a problem and save a bundle, Problem 1: "I keep re-explaining this project every session", Problem 2: "AI misses constraints and produces the wrong thing", Problem 3: "I want help drafting but it does not sound like me", Problem 4: "This note is long. I only need one section and I need accuracy", Problem 5: "I need meeting continuity without losing threads", Problem 6: "My context is too big to fit. I need to stay under limits"
+
+### Community 1342 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:03 | main, 07:57 | vault & infrastructure, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1343 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:13 | main, 07:57 | vault & infrastructure, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1344 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 05:03 | master, 23:35 | master, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1345 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 05:59 | main, 07:57 | vault & infrastructure, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1346 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 04:08 | master, 23:35 | master, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1347 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 05:39 | master, 23:35 | master, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1348 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:01 | main, 07:57 | vault & infrastructure, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1349 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 05:47 | refactor/home-page-tighter-filter, 23:35 | master, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1350 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 04:01 | master, 23:35 | master, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1351 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 05:49 | master, 23:35 | master, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1352 - "2026-05-04 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - 3833fa8b-d6722452fe.md"
+Cohesion: 0.29
+Nodes (6): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Recommended build order, Session Identity, Session Text, The core design principle
+
+### Community 1353 - "2026-05-04 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - ecf82a2a-43c1826091.md"
+Cohesion: 0.29
+Nodes (6): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Recommended build order, Session Identity, Session Text, The core design principle
+
+### Community 1354 - "2026-05-04 - local-command-caveat-caveat-the-messages-below-were-generated-by-the-u - f4631c6e-2be7aa9bb2.md"
+Cohesion: 0.29
+Nodes (6): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Recommended build order, Session Identity, Session Text, The core design principle
+
+### Community 1355 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 07:57 | vault & infrastructure, 17:32 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1356 - "File outline for /home/sab-ssd/.pi/Pi-5.6.26.Self-Audit-Strengths_Weaknesses.md"
+Cohesion: 0.29
+Nodes (7): Assistant [L1-6], Assistant [L28-41], Extensions [L14-24], File outline for /home/sab-ssd/.pi/Pi-5.6.26.Self-Audit-Strengths_Weaknesses.md, Prompts [L9-14], Skills [L6-9], User (checkpoint) [L24-28]
+
+### Community 1357 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 10:34 | main, 10:39 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1358 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 10:39 | main, 11:19 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1359 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 00:39 | main, 02:37 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1360 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 21:41 | main, 21:54 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1361 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 01:45 | main, 21:54 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1362 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 04:39 | main, 04:48 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1363 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:29 | media-asset-manager, 06:42 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1364 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 21:55 | main, 22:33 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1365 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 09:48 | SoloDeveloper, 12:02 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1366 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 07:22 | media-asset-manager, 20:41 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1367 - "https://gemini.google.com/share/53b46ba9151b - i am curious if you or me can fin"
+Cohesion: 0.29
+Nodes (6): https://gemini.google.com/share/53b46ba9151b - i am curious if you or me can fin, Observations worth flagging, Provenance, Session Identity, Session Text, What you have in those 3 slots
+
+### Community 1368 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.29
+Nodes (6): Design Thinking, Frontend Aesthetics Guidelines, <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 1369 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 17:53 | Raspberry Pi SSD migration troubleshooting, 18:00 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1370 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 14:30 | main, 14:37 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1371 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 16:59 | main, 19:30 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1372 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 15:11 | main, 16:43 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1373 - "I need to get into a VM right now, read  /Users/saboor/repos/vm-instructions.txt"
+Cohesion: 0.29
+Nodes (6): Boot disk — `/home/saboor/` (183M total), Data disk — `/work/` (30G total), I need to get into a VM right now, read  /Users/saboor/repos/vm-instructions.txt, Provenance, Session Identity, Session Text
+
+### Community 1374 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 00:04 | unknown, Provenance, Ready for teardown when you give the word, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1375 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 14:15 | first-vm, 23:54 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1376 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 22:17 | unknown, 22:25 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1377 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 00:04 | first-vm teardown + SSD backup, 00:32 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1378 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 00:32 | GCP buckets backup + billing discovery, 00:40 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1379 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 22:10 | unknown, 22:17 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1380 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 09:54 | main, 10:17 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1381 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 10:23 | main, 19:48 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1382 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 02:34 | unknown, Provenance, Session Identity, Session Text, unknown | myapi, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1383 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:58 | main, 07:04 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1384 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 04:23 | main, 14:30 | dotfiles, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1385 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:52 | main, 06:58 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1386 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 07:12 | main, 07:20 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1387 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 07:12 | main, 07:23 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1388 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 07:04 | main, 07:09 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1389 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 07:09 | main, 07:12 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1390 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 02:42 | unknown, 02:45 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1391 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 00:22 | main, 21:34 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1392 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 01:58 | main, Provenance, Session Identity, Session Text, Talking points for the in-person — keep on your phone, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1393 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 00:20 | main, 21:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1394 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 15:11 | main, 15:26 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1395 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 15:28 | main, 15:42 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1396 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 15:10 | main, 15:11 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1397 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 14:49 | main, 15:00 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1398 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.29
+Nodes (6): How to enable per-project, <local-command-caveat>Caveat: The messages below were generated by the user whil, On NotebookLM and Obsidian MCP servers, Provenance, Session Identity, Session Text
+
+### Community 1399 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:07 | main, loo`], Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1400 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 11:42 | main, Proposed path to pi-big, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1401 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 14:00 | obsidian-themes, 14:00 | obsidian-themes, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1402 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 05:29 | main, 05:29 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1403 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 04:42 | main, 06:45 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1404 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 13:03 |, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log., |
+
+### Community 1405 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 02:49 | main, 02:49 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1406 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 11:27 | unknown, 11:41 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1407 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 12:02 | unknown, 12:11 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1408 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:49 | main, 20:45 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1409 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 12:17 | unknown, 12:37 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1410 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 03:45 | main, 04:35 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1411 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 06:20 | unknown, 10:29 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1412 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 11:46 | unknown, 12:02 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1413 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 06:58 | main, 06:58 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1414 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 23:01 | feat/corpus-v1-normalization, 23:06 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1415 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 13:33 | feat/corpus-v1-normalization, 19:45 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1416 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 23:06 | feat/corpus-v1-normalization, 23:28 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1417 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 13:33 | feat/corpus-v1-normalization, 19:28 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1418 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 12:05 | feat/corpus-v1-normalization, 12:50 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1419 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 23:28 | feat/corpus-v1-normalization, 23:36 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1420 - "python3 scratch/vertex_client.py chat "What is MyAPI?""
+Cohesion: 0.29
+Nodes (6): Provenance, python3 scratch/vertex_client.py chat "What is MyAPI?", Raw REST endpoints you have available, Session Identity, Session Text, Which you should hit most
+
+### Community 1421 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 10:04 | main, 10:11 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1422 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 20:15 | main, 20:28 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1423 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 19:49 | main, 20:15 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1424 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 01:27 | feat/corpus-v1-normalization, 23:36 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1425 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 10:11 | main, 13:09 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1426 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 13:43 | main, 18:45 | feat/note-command, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1427 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 18:23 | docs/avatar-reflection-spec, 21:03 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1428 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 21:43 | docs/avatar-reflection-spec, 22:25 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1429 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.29
+Nodes (6): 03:03 | docs/avatar-reflection-spec, 08:06 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1430 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 01:09 | docs/avatar-reflection-spec, 01:11 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1431 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 00:57 | docs/avatar-reflection-spec, 01:03 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1432 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 01:03 | docs/avatar-reflection-spec, 01:09 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1433 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 01:11 | docs/avatar-reflection-spec, 01:17 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1434 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 18:23 | docs/avatar-reflection-spec, 18:24 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1435 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 00:16 | docs/avatar-reflection-spec, 20:28 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1436 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 18:23 | docs/avatar-reflection-spec, 21:03 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1437 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 18:23 | docs/avatar-reflection-spec, 18:26 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1438 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.29
+Nodes (6): 03:03 | docs/avatar-reflection-spec, 08:06 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1439 - "Task-bound book for agent design"
+Cohesion: 0.29
+Nodes (6): Conversation Identity, On the architecture question, Provenance, Raw Conversation, Task-bound book for agent design, Taskbook
+
+### Community 1440 - "Impact on Your Sprint"
+Cohesion: 0.29
+Nodes (7): Impact on Your Sprint, The Compounding Effect, The Failure Mode It Prevents, The General Pattern, The Templating Step, What You Did Instead, Why "Isolated Variables" Is the Point
+
+### Community 1441 - "💬 explain and expand the followi…"
+Cohesion: 0.29
+Nodes (6): Conversation Identity, 💬 explain and expand the followi…, Provenance, Raw Conversation, The impedance mismatch, Why this is cheap to build
+
+### Community 1442 - "Needle: lightweight tool routing model"
+Cohesion: 0.29
+Nodes (6): Conversation Identity, Needle: lightweight tool routing model, On Claude Code's status update, Part 6: The Tool Registry Question, Provenance, Raw Conversation
+
+### Community 1443 - "Combining and testing Codex tools"
+Cohesion: 0.29
+Nodes (6): Combining and testing Codex tools, Conversation Identity, Enabled, Non-Enabled / Disabled, Provenance, Raw Conversation
+
+### Community 1444 - "Graph driven development project audit"
+Cohesion: 0.29
+Nodes (6): Conversation Identity, Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026), Graph driven development project audit, Overview & The Portfolio Narrative, Provenance, Raw Conversation
+
+### Community 1445 - "Runner.py Fixes"
+Cohesion: 0.29
+Nodes (7): Automated Tests, Goal Description, [MODIFY] [runner.py](file:///home/saboor/work/repos/gddp-runtime/scripts/runtime/heartbeat/runner.py), Proposed Changes, Runner.py Fixes, `scripts/runtime/heartbeat/runner.py`, Verification Plan
+
+### Community 1446 - "gddp-config"
+Cohesion: 0.29
+Nodes (7): Branch Protection, Core Principle, Creating a New Project, gddp-config, Related, Schema Index, What This Repo Is
+
+### Community 1447 - "GDD Boot"
+Cohesion: 0.29
+Nodes (7): Canonical Repos, Default Focus, GDD Boot, /home/sab-ssd/repos/gddp-config/graphs/vault-doctor/nodes/check-performance.yaml, Operating Rules, Primary Role, Startup Sequence
+
+### Community 1448 - "gddp-config"
+Cohesion: 0.29
+Nodes (7): Branch Protection, Core Principle, Creating a New Project, gddp-config, Related, Schema Index, What This Repo Is
+
+### Community 1449 - "gddp-config"
+Cohesion: 0.29
+Nodes (7): Branch Protection, Core Principle, Creating a New Project, gddp-config, Related, Schema Index, What This Repo Is
+
+### Community 1450 - "gddp-config"
+Cohesion: 0.29
+Nodes (7): Branch Protection, Core Principle, Creating a New Project, gddp-config, Related, Schema Index, What This Repo Is
+
+### Community 1451 - "Detect project type"
+Cohesion: 0.29
+Nodes (7): Cross-Event Workflows, Database Logging, Detect project type, Integration with External Systems, Metrics Collection, Slack Notifications, Tool Output
+
+### Community 1452 - "Anchor Targets"
+Cohesion: 0.29
+Nodes (7): Anchor Targets, Benchmark-Driven Refinement Queue, Q10: What notes mention Khoj deployment or indexing?, Q12: What is the status of the API deployment?, Q1: What is My_DevInfra?, Q7: What was I learning about retrieval systems?, Q8: What did I decide about the vault schema?
+
+### Community 1453 - "Parallel Work Board — 2026-04-21"
+Cohesion: 0.29
+Nodes (7): Best Next Sidecar Pick, Lane 1 — CLI Triage Owner Pass, Lane 2 — BigPi / Harness Work, Lane 3 — Neovim Workflow Training, Lane 4 — Zapier / SMB Ops Hub, Parallel Work Board — 2026-04-21, Priority Rule
+
+### Community 1454 - "Anchor Targets"
+Cohesion: 0.29
+Nodes (7): Anchor Targets, Benchmark-Driven Refinement Queue, Q10: What notes mention Khoj deployment or indexing?, Q12: What is the status of the API deployment?, Q1: What is My_DevInfra?, Q7: What was I learning about retrieval systems?, Q8: What did I decide about the vault schema?
+
+### Community 1455 - "Parallel Work Board — 2026-04-21"
+Cohesion: 0.29
+Nodes (7): Best Next Sidecar Pick, Lane 1 — CLI Triage Owner Pass, Lane 2 — BigPi / Harness Work, Lane 3 — Neovim Workflow Training, Lane 4 — Zapier / SMB Ops Hub, Parallel Work Board — 2026-04-21, Priority Rule
+
+### Community 1456 - "Anchor Targets"
+Cohesion: 0.29
+Nodes (7): Anchor Targets, Benchmark-Driven Refinement Queue, Q10: What notes mention Khoj deployment or indexing?, Q12: What is the status of the API deployment?, Q1: What is My_DevInfra?, Q7: What was I learning about retrieval systems?, Q8: What did I decide about the vault schema?
+
+### Community 1457 - "Parallel Work Board — 2026-04-21"
+Cohesion: 0.29
+Nodes (7): Best Next Sidecar Pick, Lane 1 — CLI Triage Owner Pass, Lane 2 — BigPi / Harness Work, Lane 3 — Neovim Workflow Training, Lane 4 — Zapier / SMB Ops Hub, Parallel Work Board — 2026-04-21, Priority Rule
+
+### Community 1458 - "Your 3 Core Outcomes (keep these)"
+Cohesion: 0.29
+Nodes (7): 1, 2, 3, Don't Miss Getting Paid, Get Paid Faster, Know Where Money is, Your 3 Core Outcomes (keep these)
+
+### Community 1459 - "Your 3 Core Outcomes (keep these)"
+Cohesion: 0.29
+Nodes (7): 1, 2, 3, Don't Miss Getting Paid, Get Paid Faster, Know Where Money is, Your 3 Core Outcomes (keep these)
+
+### Community 1460 - "Phone Call"
+Cohesion: 0.29
+Nodes (7): 6.2 Build Scheduling Structure, 6.3 Create Lead Triage Flow, 6.4 Create Simple Intake Process, LMN Login, LMN Software Ought to Link to QuickBooks and Connected to All Job Estimates and Clients, Phone Call, Wix - Migrate? Email? Domain?
+
+### Community 1461 - "2026-05-07 - environment-context - 019e0087-a168f6f399.md"
+Cohesion: 0.29
+Nodes (6): edit graphs/<project-id>/project.yaml, <environment_context>, on the Pi, paste the public key into:, Provenance, Session Identity
+
+### Community 1462 - "003 — Final v0 benchmark run"
+Cohesion: 0.29
+Nodes (7): 003 — Final v0 benchmark run, Empirical Reality, main...origin/main, Narrative / Trajectory, Narrative / Trajectory, Narrative / Trajectory, Per Sab Instructions: Codex Sitrep Post README And Repo Going Live
+
+### Community 1463 - "Khoj Deployment and Indexing Anchor"
+Cohesion: 0.29
+Nodes (7): Current Service State, Decisions Made, Indexing Flow, Khoj Deployment and Indexing Anchor, Runtime Topology, Verification Checks, What This Is
+
+### Community 1464 - "Needle Router Hardening Summary"
+Cohesion: 0.29
+Nodes (7): 1. What We Tried Initially, 2. What Failed (The Baseline Analysis), 3. How We Addressed It (The Deterministic Hybrid Router), 4. JAX Fine-Tuning Trial & Trade-Offs, 5. Branch State, Needle Router Hardening Summary, Performance & Operational Impact:
+
+### Community 1465 - "Needle Router Assessment"
+Cohesion: 0.29
+Nodes (7): Current Architecture, Evidence Snapshot, Needle Router Assessment, Next Work, Operational Read, Scope, Where This Leaves Router v1
+
+### Community 1466 - "Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault"
+Cohesion: 0.29
+Nodes (7): 1. View the Sync Script, 2. Run the Sync Command, 📋 Architectural Overview, Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault, 🛠️ Step 1: Local Setup & GCS Syncing, ☁️ Step 2: Creating the Vertex AI Data Store, 🤖 Step 3: Creating the Chatbot App
+
+### Community 1467 - "Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault"
+Cohesion: 0.29
+Nodes (7): 1. View the Sync Script, 2. Run the Sync Command, 📋 Architectural Overview, Guide: Building a Vertex AI Chatbot over the SoloDeveloper Vault, 🛠️ Step 1: Local Setup & GCS Syncing, ☁️ Step 2: Creating the Vertex AI Data Store, 🤖 Step 3: Creating the Chatbot App
+
+### Community 1470 - "Handoff 010 — Corpus v1 Mac Readiness: Shard Export Wired and Scanned"
+Cohesion: 0.29
+Nodes (6): Handoff 010 — Corpus v1 Mac Readiness: Shard Export Wired and Scanned, Key code change, Manifest location, Scan totals (2026-05-29), Summary, Test coverage
+
+### Community 1471 - "Handoff 012 — MacBook ACP Claude Setup: Vault Run"
+Cohesion: 0.29
+Nodes (6): Constraints, Handoff 012 — MacBook ACP Claude Setup: Vault Run, Metadata floor (enforced), Pass A output (on Pi), Pass B ordered steps, Summary
+
+### Community 1472 - "GDDP Project Anchor — Normalized"
+Cohesion: 0.29
+Nodes (6): GDDP Project Anchor — Normalized, Non-negotiables (constraints), Objective, Promotion note, Relationship to current state, Status
+
+### Community 1473 - "GDDP Runtime Audit — Normalized"
+Cohesion: 0.29
+Nodes (6): GDDP Runtime Audit — Normalized, Key findings, Path forward (from audit), Promotion candidate, Specific open items from the audit, The case builder pattern (decision)
+
+### Community 1474 - "Overview of Frameworks Thus Far"
+Cohesion: 0.29
+Nodes (6): Compare/contrast, Deeper Explanation, Default Nvim, Nvim-mini-pi, Nvim-sab-pi, Overview of Frameworks Thus Far
+
+### Community 1475 - "Merge-Conflict Fix Audit — 2026-05-07"
+Cohesion: 0.29
+Nodes (6): Critical Finding, .gitattributes Status, Merge-Conflict Fix Audit — 2026-05-07, Quantitative Comparison, Union-Merge Mishap Spot-Check, Verdict
+
+### Community 1476 - "2026-W06 Anchor.md"
+Cohesion: 0.29
+Nodes (6): Feb 3rd 2026 • W06 • 03/365 • 2/7 Active Workstreams, February 5th 2026 • W06, Intentions, Next Actions, Open Questions / Risks, Structure / Workflow
+
+### Community 1477 - "11 — Schema Versioning"
+Cohesion: 0.29
+Nodes (6): 11 — Schema Versioning, Rollback, Schema Version Field, Upgrade Rule, Version Format, What Triggers a Version Bump
+
+### Community 1478 - "12 — Transcript Event Type"
+Cohesion: 0.29
+Nodes (6): 12 — Transcript Event Type, Controlled transcript event_type Values, Schema Extension, Typical Flow, What a Transcript Event Is, Why This Matters
+
+### Community 1479 - "GDD - just start and FAFO.md"
+Cohesion: 0.29
+Nodes (5): File Structure Summary, Files Created Today ✅, Next Steps to Ship, What's Ready to Deploy, Hard pivot: [[GDD - just start and FAFO ]]
+
+### Community 1480 - "Session Log — 2026-04-27 — Vault V4: Private Split + DevInfra Rename"
+Cohesion: 0.29
+Nodes (6): Next steps, Rollback, Session Log — 2026-04-27 — Vault V4: Private Split + DevInfra Rename, State at handoff, Takeaway, What was done
+
+### Community 1481 - "Harness Evaluation Rubric"
+Cohesion: 0.29
+Nodes (6): Checkpoints, Diagnose the failure, Harness Evaluation Rubric, Notes, Output format, Score each query
+
+### Community 1482 - "Retrieval Benchmark v0 Run — 2026-04-15"
+Cohesion: 0.29
+Nodes (6): Notes On Scoring, Per-Query Report, Recommended Tuning Targets, Retrieval Benchmark v0 Run — 2026-04-15, Summary, What This Says
+
+### Community 1483 - "Retrieval Benchmark v0 Run After Tuning — 2026-04-15"
+Cohesion: 0.29
+Nodes (6): Interpretation, Next Moves, Result, Retrieval Benchmark v0 Run After Tuning — 2026-04-15, Top Sources Observed, What Improved
+
+### Community 1484 - "USER.md - Sab Context"
+Cohesion: 0.29
+Nodes (7): Avoid, Communication Preferences, Core Context, Ergonomics And Friction, Safety Boundaries, USER.md - Sab Context, Working Preferences
+
+### Community 1485 - "USER.md - Sab Context"
+Cohesion: 0.29
+Nodes (7): Avoid, Communication Preferences, Core Context, Ergonomics And Friction, Safety Boundaries, USER.md - Sab Context, Working Preferences
+
+### Community 1486 - "Pi-Orchestration-Scoped-Work.md"
+Cohesion: 0.29
+Nodes (6): Assistant, Assistant, Route A — Velocity-forward: Pi becomes a real orchestrator, Route B — Trust-forward: verifier becomes load-bearing, Route C — Scope-expansion: Pi acts on real things, User
+
+### Community 1487 - "Hey Jason — Quick on the Google Business Profile situation"
+Cohesion: 0.29
+Nodes (6): Hey Jason — Quick on the Google Business Profile situation, What happens after we file, What I found, What I'm NOT doing, What I need from you (4 quick things, ~15 min total), What I've already done (no input needed from you)
+
+### Community 1488 - "Project Polish for Presenting a Senior Engineer Narrative"
+Cohesion: 0.29
+Nodes (6): 1. Where This Project Belongs in Your Portfolio Narrative, 2. What You Should Do with it in January (lightweight, High leverage), 4. How it Boosts Your Interview Performance without Extra LeetCode Time, 5. Tiny Adjustment to Your January Weekly Cadence, Examples You Can Adapt, Project Polish for Presenting a Senior Engineer Narrative
+
+### Community 1489 - "Fuck and forget Ivy Jan 30 2025.md"
+Cohesion: 0.29
+Nodes (6): [[02 Areas/Confidential/Relationships/I am an dependent addict with arrested development, she is a transgender slut with obsession of validation]], Merged "Ivy Jan 30 Pics" and "FUCK IVY Jan 29" Notes, Remember [[02 Areas/Confidential/Relationships/post breakup being cheated on and rejected and lied to about sexual health]], REMEMBER, She is Pure Indecision, Nothing She Says Holds, She Did Offer to Rim Me / Eat My Ass (but She's a fraud), Tue Feb 4th, 2025
+
+### Community 1490 - "I am proud of how I handled that.md"
+Cohesion: 0.29
+Nodes (6): Don't Drop Everything, Further Thoughts because She's a Messy Gay Cunt, I Did not Ruin It, You Ruined it, IVY HOMOPHOBIA LOL, Ivy Meth Use → Sun Mar 23rd, 2025, My Beautiful Final Thoughts
+
+### Community 1491 - "Post Breakup Processing and Decision Making.md"
+Cohesion: 0.29
+Nodes (6): Mon Jan 20th, 2025, Sat Jan 11th, 2025, Sun Jan 19th, 2025, Thu Jan 16th, 2025, Tue Jan 21st, 2025, Wed Jan 15th, 2025
+
+### Community 1492 - "Tyler Overnight 2.md"
+Cohesion: 0.29
+Nodes (6): HRT Does not Move Fat, it Re-locates New Fat, I Think the Grinding Right before the Turtle Position, On Dysphoria, Positions, The Age Gap Tweet, Words
+
+### Community 1493 - "Core Team Call 3.md"
+Cohesion: 0.29
+Nodes (6): Agenda for Zoom Meeting, Any Man not Present at This Upcoming In-person Meeting Should Send Their Blackout Dates for the Rest of the Year, Approving the CPR via Wilburn, CPR Writing and Submitting Takeaways, Love Clean Up for 3rd Missed Meeting, Past Team Meetings
+
+### Community 1494 - "Core Team Call 4.md"
+Cohesion: 0.29
+Nodes (6): Debrief Zoom Meeting, Inventory Manager, Keeping Men Engaged, Next In-Person Meeting, What Didn't Work, What Worked
+
+### Community 1495 - "Core Team Call 5.md"
+Cohesion: 0.29
+Nodes (6): Buddy Calls → what is the Point?, Check-In + Team Thread Comms, Clarifying, Debrief - What Worked / What Didn't Work, Graduate Event for PP and Weekend Moving Forward, Upcoming Core Team Call Important Topics
+
+### Community 1496 - "Core Team Call 6.md"
+Cohesion: 0.29
+Nodes (6): Armstrong: Welcome Zoom and In-person, CPR Drive, Purpose, Fri Apr 4th, 2025 → for This Upcoming Monday, Holding Separate Meetings for Non-graduates, Wilburn's Men; Miller Has 2 Men, Witte Reaching out to Mr. Singh by next In-person
+
+### Community 1497 - "Oct Wildmen Leadership Call 2.md"
+Cohesion: 0.29
+Nodes (6): Bowman Help, Enrollment and Guest Count, Guest Event By-Whens, Guest Event (Wyzga's), Love's Proposal: Boys to Men, New Community Service Leader
+
+### Community 1498 - "The 6 Tasks for a LCR.md"
+Cohesion: 0.29
+Nodes (6): 1. Be the Master of Your Territory, 2. Be a Good Listener, 3. Give a Good Fuck, 4. Cooperate, but Never Compromise on Your terms, 5. Make Sure She Knows Your Feelings on Your terms, 6. Find Interesting, Exciting, Fulfilling New Ways to Care for Her
+
+### Community 1499 - "OpenClaw Decision Note — Feat-markdown-pipeline-1094435478313569748"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — Feat-markdown-pipeline-1094435478313569748, Policy Evaluation
+
+### Community 1500 - "OpenClaw Decision Note — Feat-resilient-architect-copy"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — Feat-resilient-architect-copy, Policy Evaluation
+
+### Community 1501 - "OpenClaw Decision Note — feature/astro-version"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feature/astro-version, Policy Evaluation
+
+### Community 1502 - "OpenClaw Decision Note — Fix-dead-subscription-form-11146584180811433169"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — Fix-dead-subscription-form-11146584180811433169, Policy Evaluation
+
+### Community 1503 - "OpenClaw Decision Note — Fix-optimize-navigation-rendering-4508866026702962936"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — Fix-optimize-navigation-rendering-4508866026702962936, Policy Evaluation
+
+### Community 1504 - "OpenClaw Decision Note — perf/fix-blog-post-key-6294485228969439525"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/fix-blog-post-key-6294485228969439525, Policy Evaluation
+
+### Community 1505 - "OpenClaw Decision Note — perf/fix-react-keys-projects-page-16679005189783209206"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/fix-react-keys-projects-page-16679005189783209206, Policy Evaluation
+
+### Community 1506 - "OpenClaw Decision Note — perf/stable-react-keys-14940850307799154199"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/stable-react-keys-14940850307799154199, Policy Evaluation
+
+### Community 1507 - "OpenClaw Decision Note — perf/stable-react-keys-projects-14335487169626350116"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/stable-react-keys-projects-14335487169626350116, Policy Evaluation
+
+### Community 1508 - "OpenClaw Decision Note — Perf-unique-keys-15434530512014776475"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — Perf-unique-keys-15434530512014776475, Policy Evaluation
+
+### Community 1509 - "OpenClaw Decision Note — Security-obfuscate-email-1254930352502245485"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — Security-obfuscate-email-1254930352502245485, Policy Evaluation
+
+### Community 1510 - "**Deep Planning Questions for The Vault Keeper:**"
+Cohesion: 0.29
+Nodes (6): **Deep Planning Questions for The Vault Keeper:**, Develop Watcher Service (`src/main.py`), Initialize Vault Keeper Project, Integration & Verification, Integration with Agent Dispatcher (The Bridge), Summary
+
+### Community 1511 - "wfl-Neovim-key-commnands-only-5-workflows"
+Cohesion: 0.29
+Nodes (6): wfl-Neovim-key-commnands-only-5-workflows, Workflow 1 — Daily LeetCode Grind, Workflow 2 — Project Work, Workflow 3 — Neovim Discovery, Workflow 4 — Whisper Voice Capture, Workflow 5 — Full Day Loop
+
+### Community 1512 - "wfl-Neovim-key-commnands-only-5-workflows"
+Cohesion: 0.29
+Nodes (6): wfl-Neovim-key-commnands-only-5-workflows, Workflow 1 — Daily LeetCode Grind, Workflow 2 — Project Work, Workflow 3 — Neovim Discovery, Workflow 4 — Whisper Voice Capture, Workflow 5 — Full Day Loop
+
+### Community 1513 - "🦞 OpenClaw SSH Tunneling Guide"
+Cohesion: 0.29
+Nodes (6): 1. The Golden Rule: Where to Run the Command, 2. Troubleshooting "Address Already in use", 3. The "Fail-Safe" SSH Command, 4. Accessing the Dashboard, 5. Quick Checklist for Next Time, 🦞 OpenClaw SSH Tunneling Guide
+
+### Community 1514 - "Log"
+Cohesion: 0.29
+Nodes (6): [[calf-press]], Iron Pulse - Lower - 2026-04-02, [[leg-press]], [[leg-press]], Log, [[seated-leg-curl]]
+
+### Community 1515 - "Day2 - 2026-03-15"
+Cohesion: 0.29
+Nodes (6): Day2 - 2026-03-15, Dips, Hack Squat (Reverse Banded), Session Notes, Supinated Grip Chin Ups, Trap Bar RDL
+
+### Community 1516 - "Day3 - 2026-03-15"
+Cohesion: 0.29
+Nodes (6): Barbell Good Mornings, Day3 - 2026-03-15, DB Bench Press, Quad Leg Press, Session Notes, Supinated Grip Cable Rows
+
+### Community 1517 - "**How To Apply This to Your Life**"
+Cohesion: 0.29
+Nodes (6): **1. The "Boredom" Buffer**, **2. Practice Active Recall (The 1-to-1 Rule)**, **3. Create "No Phone Zones"**, **Does It Have merit?**, **How To Apply This to Your Life**, **Summary Of Key Concepts**
+
+### Community 1518 - "March 2026 Element on Ego and Context"
+Cohesion: 0.29
+Nodes (6): Back to Basics: Mastering Ego / Context, Closing, Homework, March 2026 Element on Ego and Context, Opening Question, Working Out: Default Context
+
+### Community 1519 - "Claude"
+Cohesion: 0.29
+Nodes (6): Claude, Codex, **Codex 3x5 Card**, **For Me (3×5)**, **For You (3×5)**, Your 3x5 Card
+
+### Community 1520 - "Run Loop once per Day per Project"
+Cohesion: 0.29
+Nodes (6): Block 1 — Forward (20 min), Block 2 — Tighten (20 min), Block 3 — Lock (5 min), Run Loop once per Day per Project, Template, Why I Think This Works
+
+### Community 1521 - "BlueBubbles Setup (Saved for Later)"
+Cohesion: 0.29
+Nodes (6): 10-minute Setup Checklist, BlueBubbles Setup (Saved for Later), Deferred, Minimal BlueBubbles Config (OpenClaw), Quick Commands for Later, What “current topology” Means
+
+### Community 1522 - "Mission Packets (Structured Async)"
+Cohesion: 0.29
+Nodes (7): 39. Generic Mission Template, 40. Build-and-Report Mission, 41. Research Brief Mission, 42. Multi-Step Deployment Check Mission, 43. Scheduled Maintenance Mission, 44. Data Collection Mission (Scrape/Aggregate), Mission Packets (Structured Async)
+
+### Community 1523 - "Cron Job Configs"
+Cohesion: 0.29
+Nodes (7): 52. Morning Briefing Cron, 53. Site Health Monitor Cron, 54. Daily Git Summary Cron, 55. Weekly Project Status Digest, 56. Disk Space Warning, 57. SSL Expiry Weekly Check, Cron Job Configs
+
+### Community 1524 - "Career.md"
+Cohesion: 0.29
+Nodes (4): Career, Notes in this area, Client Work, Portfolio Design
+
+### Community 1525 - "03 Resources/Ergonomics - Nerve Safe Left Hand Typing Protocol.md"
+Cohesion: 0.29
+Nodes (6): Goal, "Legs As Arm support" (minimum Viable setup), Non-negotiables (do These Every session), Red Flags (scale down and reassess), Support Hierarchy (what to use), Workspace Experiments (small, controlled)
+
+### Community 1526 - "GDDP Protocol & Operator Mastery"
+Cohesion: 0.29
+Nodes (6): Architecture & Source of Truth, Design Philosophy, GDDP Protocol & Operator Mastery, Human Action & Graph Truth, Manual Run & Operational Checkpoints, The Heartbeat Loop
+
+### Community 1527 - "2.1 Parallel vs. Serial Processing in Fitness"
+Cohesion: 0.29
+Nodes (7): 2.1.1 Isolation Machines (Serial): Working One Muscle at a Time is Slow and Inefficient, 2.1.2 Compound Barbell Lifts (Parallel): Working Dozens of Muscles Simultaneously, 2.1 Parallel vs. Serial Processing in Fitness, 2.2.1 Comparing Yoga, Stretching, and Weightlifting on a Time-to-benefit Ratio, 2.2.2 Quote: *"Powerlifting Represents the Absolute Least Amount of Time I Need to Be away from My Computer in Order to Continue Using it indefinitely."*, 2.2 The Efficiency Scale, 2. Powerlifting as Time-Efficiency Hacking
+
+### Community 1528 - "3.1 Applying Software Engineering to Biology"
+Cohesion: 0.29
+Nodes (7): 3.1.1 Contract Tests Check External Interfaces (APIs) for Failure, 3.1.2 Finding "production issues" in the Body: Desk Work vs. Heavy Lifting, 3.1.3 Quote: *"You Can either Find out Your Body Has a Production Issue when You Try to Move a table… or Find out Early in the Gym under Controlled conditions."*, 3.1 Applying Software Engineering to Biology, 3.2.1 Using the Gym to Inform the "upstream provider" (your brain) of Physical Limits, 3.2 Proactive vs. Reactive Health, 3. The "Contract Test" Framework
+
+### Community 1529 - "4.1 The Myth of the "Accidental Bodybuilder""
+Cohesion: 0.29
+Nodes (7): 4.1.1 Why Powerlifting Doesn't Automatically Make You "bulky.", 4.1.2 Proprioception: The Nervous System Learning to "pull together" under Load, 4.1 The Myth of the "Accidental Bodybuilder", 4.2.1 Linear Progression: Adding 2.5kg Every Session, 4.2.2 Quote: *"In This Novice phase… We're Mostly Learning Skills, Not Building muscle."*, 4.2 The Novice Phase, 4. Neural Adaptation and "Newbie Gains"
+
+### Community 1530 - "6. Training vs. Exercise"
+Cohesion: 0.29
+Nodes (7): 6.1.1 Exercise is "on vibes"; Training is Scientific and Planned, 6.1.2 The Role of Recovery: Rest, Eat, Sleep, 6.1 The Scientific Approach, 6.2.1 Quote: *"To Be a Powerlifter is to Be an Engineer Who Solves Linear Acceleration Equations with Your body."*, 6.2 Powerlifting as Technology, 6. Training vs. Exercise, **Custom Transcript Prompt for Your AI**
+
+### Community 1531 - "🔑 The Core Shortcuts You Need Right Now"
+Cohesion: 0.29
+Nodes (6): **Control:**, iTerm2 / Terminals wSpecific, ⚙️ One Setting to Change Now, 🔑 The Core Shortcuts You Need Right Now, The Mental Model, The Top 10 to Memorize First
+
+### Community 1532 - "Example"
+Cohesion: 0.29
+Nodes (6): 1) Yank once into a Named Register, 2) Replace 2 Lines in H2 Using Black-hole Delete, 3) Repeat for H3, Example, Super Useful Register Habits, Why This Works
+
+### Community 1533 - "OpenClaw Gateway Restart SOP"
+Cohesion: 0.29
+Nodes (6): Affected Nodes, Architecture Reference, Fix (takes ~2 minutes), OpenClaw Gateway Restart SOP, Prevention, The Problem
+
+### Community 1534 - "Fzf - Newly Discovered Functionality Make Fzf a Game Changer"
+Cohesion: 0.29
+Nodes (6): Fzf - Newly Discovered Functionality Make Fzf a Game Changer, Layout, Most Useful Combo for Your Skills Use Case, Multi-select & Toggling, Preview - [[02 Areas/fzf - Interactive X-Ray Mode is absurdly helpful]], Sorting
+
+### Community 1535 - "Helix Flirting Begins - Tutor, Projects, Minimal Config, Batteries Included"
+Cohesion: 0.29
+Nodes (6): 1. The Tutor (Mandatory First Step), 2. Opening Any File, 3. Quick Tips for Your Transition, Helix Flirting Begins - Tutor, Projects, Minimal Config, Batteries Included, Helix Uses a `"Selection → Action"` Model, Why it feels "File Only":
+
+### Community 1536 - "Pi Terminal Color and Visual Feedback"
+Cohesion: 0.29
+Nodes (6): Better Tools, Fast Improvements, Goal, Later Upgrades, Pi Terminal Color and Visual Feedback, Why This Helps
+
+### Community 1537 - "The 2026 CLI Agent Sprawl Compared and Contrasted"
+Cohesion: 0.29
+Nodes (6): 1. Claude Code (Anthropic): The Autonomous Orchestrator, 2. Gemini CLI (Google): The Context & Memory Titan, 3. Codex CLI (OpenAI): The Sandboxed Multimodal Executor, 4. Aider (Open Source): The Git-Native Architect, The 2026 CLI Agent Sprawl Compared and Contrasted, The Ultimate Power User Move: Persistent Guidance
+
+### Community 1538 - "BDR Booking Calendar Integration"
+Cohesion: 0.29
+Nodes (6): BDR Booking Calendar Integration, Deliverables, Evidence, Objective, Options to Explore, Reflection
+
+### Community 1539 - "Dotfiles V1"
+Cohesion: 0.29
+Nodes (6): Definition of Done, Dotfiles V1, Notes, Proof, Update after 2 Months, Why It Matters
+
+### Community 1540 - "First Recruiter Outreach"
+Cohesion: 0.29
+Nodes (6): Evidence, First Recruiter Outreach, Objective, Process, Reflection, Rules
+
+### Community 1541 - "First Technical Interview"
+Cohesion: 0.29
+Nodes (6): Evidence, First Technical Interview, Objective, Prep, Reflection, The Interview
+
+### Community 1542 - "Resume 2.0 with Real Projects"
+Cohesion: 0.29
+Nodes (6): Deliverables, Evidence, Objective, Reflection, Requirements, Resume 2.0 with Real Projects
+
+### Community 1543 - "🔓 AI Fluent"
+Cohesion: 0.29
+Nodes (6): 🔓 AI Fluent, Definition of Done, Milestone Unlock — Requires 100 AI Sparring Points, Notes, Proof, Why It Matters
+
+### Community 1544 - "🔓 AI Multiplied"
+Cohesion: 0.29
+Nodes (6): 🔓 AI Multiplied, Definition of Done, Milestone Unlock — Requires 150 AI Sparring Points, Notes, Proof, Why It Matters
+
+### Community 1545 - "🔓 AI Strategist"
+Cohesion: 0.29
+Nodes (6): 🔓 AI Strategist, Definition of Done, Milestone Unlock — Requires 100 AI Sparring Points, Notes, Proof, Why It Matters
+
+### Community 1546 - "🔓 AI Whisperer"
+Cohesion: 0.29
+Nodes (6): 🔓 AI Whisperer, Definition of Done, Milestone Unlock — Requires 150 AI Sparring Points, Notes, Proof, Why It Matters
+
+### Community 1547 - "🔓 Business Ready"
+Cohesion: 0.29
+Nodes (6): 🔓 Business Ready, Definition of Done, Milestone Unlock — Requires 100 BDR Points, Notes, Proof, Why It Matters
+
+### Community 1548 - "🔓 MVP Live"
+Cohesion: 0.29
+Nodes (6): Definition of Done, Milestone Unlock — Requires 50 BDR Points, 🔓 MVP Live, Notes, Proof, Why It Matters
+
+### Community 1549 - "🔓 Editor Wizard"
+Cohesion: 0.29
+Nodes (6): Definition of Done, 🔓 Editor Wizard, Milestone Unlock — Requires 225 NeoVim Points, Notes, Proof, Why It Matters
+
+### Community 1550 - "🔓 NeoVim as IDE"
+Cohesion: 0.29
+Nodes (6): Definition of Done, Milestone Unlock — Requires 150 NeoVim Points, 🔓 NeoVim as IDE, Notes, Proof, Why It Matters
+
+### Community 1551 - "🔓 Dissertation Ready"
+Cohesion: 0.29
+Nodes (6): Definition of Done, 🔓 Dissertation Ready, Milestone Unlock — Requires 150 SocialXP Points, Notes, Proof, Why It Matters
+
+### Community 1552 - "🔓 Foundation Solid"
+Cohesion: 0.29
+Nodes (6): Definition of Done, 🔓 Foundation Solid, Milestone Unlock — Requires 50 SocialXP Points, Notes, Proof, Why It Matters
+
+### Community 1553 - "🔓 Sparring Partner"
+Cohesion: 0.29
+Nodes (6): Definition of Done, Milestone Unlock — Requires 50 AI Sparring Points, Notes, Proof, 🔓 Sparring Partner, Why It Matters
+
+### Community 1554 - "🔓 Your Config, Your Editor"
+Cohesion: 0.29
+Nodes (6): Definition of Done, Milestone Unlock — Requires 75 NeoVim Points, Notes, Proof, Why It Matters, 🔓 Your Config, Your Editor
+
+### Community 1555 - "🔓 Your Toolbox"
+Cohesion: 0.29
+Nodes (6): Definition of Done, Milestone Unlock — Requires 50 Terminal Points, Notes, Proof, Why It Matters, 🔓 Your Toolbox
+
+### Community 1556 - "2026.01.29.md"
+Cohesion: 0.29
+Nodes (6): [[00 Inbox/Ergonomic Breakthrough finding the nerve pain-free setup for sustained period of time]], [[00 Inbox/Justin Call - Revitalize website for mentorship and alumni and coaching]], 3 Goals, Actually Taking Breaks!!, CLI Focus ->, Thu Jan 29th, 2026 - Plan/Reflect
+
+### Community 1557 - "2026.02.18 Active Workstreams *1*"
+Cohesion: 0.29
+Nodes (6): 2026.02.18 Active Workstreams *1*, Last Night, Plan *2*, Reflect *3*, Today, Wed Feb 18th, 2026 - Plan/Reflect *2, 3*
+
+### Community 1558 - "2026.02.24.md"
+Cohesion: 0.29
+Nodes (6): 2026.02.24 What I'm Doing *1*, 📋 Due Today, 📋 Overdue, Plan *2*, Reflect *3*, Tue Feb 24th, 2026 - Plan/Reflect *2*
+
+### Community 1559 - "Fri Feb 27th, 2026 - Plan/Reflect *2*"
+Cohesion: 0.29
+Nodes (6): 2026.02.27 Active Workstreams *1*, Fri Feb 27th, 2026 - Plan/Reflect *2*, Plan *2*, Priority Order, Reflect *3*, 📋 Tasks
+
+### Community 1560 - "Sat Feb 28th, 2026 - Plan/Reflect *2*"
+Cohesion: 0.29
+Nodes (6): 2026.02.28 Active Workstreams *1*, Dating Relationships, Plan *2*, Reflect *3*, Sat Feb 28th, 2026 - Plan/Reflect *2*, 📋 Tasks
+
+### Community 1561 - "2026.04.02.md"
+Cohesion: 0.29
+Nodes (6): 2026.04.02 What I'm Doing, 2026.04.02 What I'm Doing, Plan, Plan, Reflections, Reflections
+
+### Community 1562 - "2026.04.29.md"
+Cohesion: 0.29
+Nodes (6): 2026-04-29 Output, Reflections, Scratchpad, Spoke with Beiley - Demo Packet + CPA + Google, Spoke with Wyzga - Josh and Calendar Module, Wednesday Plan
+
+### Community 1563 - "🎯 🏆 ☑️ 2026-W06 Intentions"
+Cohesion: 0.29
+Nodes (6): 2026-W06 Active Workstreams, 🎯 🏆 ☑️ 2026-W06 Intentions, Last Week's Mistakes, Open Questions / Risks / Constraints, Structure / Workflow, 🧠🪞📝
+
+### Community 1564 - "inbox-canonical-dupes-2026-05-08/Ergonomics - Nerve Safe Left Hand Typing Protocol.md"
+Cohesion: 0.29
+Nodes (6): Goal, "Legs As Arm support" (minimum Viable setup), Non-negotiables (do These Every session), Red Flags (scale down and reassess), Support Hierarchy (what to use), Workspace Experiments (small, controlled)
+
+### Community 1565 - "Obsidian CLI — Quick Capture from Terminal"
+Cohesion: 0.29
+Nodes (7): From Mac Terminal, From Raspberry Pi, Next: [[03-Apple-Shortcuts-Setup]], Obsidian CLI — Quick Capture from Terminal, Pro Tips, Shell Aliases (Optional), Workflow Examples
+
+### Community 1566 - "Reminders-CLI Workflow"
+Cohesion: 0.29
+Nodes (6): Command Patterns (Use `--help` to confirm flags), Defaults, Future Sync Direction, Purpose, Reminders-CLI Workflow, Workflow
+
+### Community 1567 - "OpenClaw Decision Note — add-jules-mcp-case-study-2336253627227224160"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — add-jules-mcp-case-study-2336253627227224160, Policy Evaluation
+
+### Community 1568 - "OpenClaw Decision Note — dispatch-queue"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — dispatch-queue, Policy Evaluation
+
+### Community 1569 - "OpenClaw Decision Note — feat/add-cn-utility-tests-12605712029049757920"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat/add-cn-utility-tests-12605712029049757920, Policy Evaluation
+
+### Community 1570 - "OpenClaw Decision Note — feat-add-jules-case-study-12239587449017906312"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-add-jules-case-study-12239587449017906312, Policy Evaluation
+
+### Community 1571 - "OpenClaw Decision Note — feat-add-pathfinder-case-study-4226522165892727140"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-add-pathfinder-case-study-4226522165892727140, Policy Evaluation
+
+### Community 1572 - "OpenClaw Decision Note — feat-expand-agentic-workflow-post-17722960923824425775"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-expand-agentic-workflow-post-17722960923824425775, Policy Evaluation
+
+### Community 1573 - "OpenClaw Decision Note — feat-expand-agentic-workflow-post-6509006787236807011"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-expand-agentic-workflow-post-6509006787236807011, Policy Evaluation
+
+### Community 1574 - "OpenClaw Decision Note — feat-markdown-pipeline-1094435478313569748"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-markdown-pipeline-1094435478313569748, Policy Evaluation
+
+### Community 1575 - "OpenClaw Decision Note — feat-pathfinder-case-study-17358931347304674095"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-pathfinder-case-study-17358931347304674095, Policy Evaluation
+
+### Community 1576 - "OpenClaw Decision Note — feat/portfolio-content-update"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat/portfolio-content-update, Policy Evaluation
+
+### Community 1577 - "OpenClaw Decision Note — feat-projects-definition-of-done-8072404381463155084"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-projects-definition-of-done-8072404381463155084, Policy Evaluation
+
+### Community 1578 - "OpenClaw Decision Note — feat-resilient-architect-copy"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-resilient-architect-copy, Policy Evaluation
+
+### Community 1579 - "OpenClaw Decision Note — feat-rewrite-openclaw-md-721425389482289999"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feat-rewrite-openclaw-md-721425389482289999, Policy Evaluation
+
+### Community 1580 - "OpenClaw Decision Note — feature/astro-version"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — feature/astro-version, Policy Evaluation
+
+### Community 1581 - "OpenClaw Decision Note — fix-dead-subscription-form-11146584180811433169"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — fix-dead-subscription-form-11146584180811433169, Policy Evaluation
+
+### Community 1582 - "OpenClaw Decision Note — fix/merge-conflict-and-email-obfuscation-1741595167-10136734606162562078"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — fix/merge-conflict-and-email-obfuscation-1741595167-10136734606162562078, Policy Evaluation
+
+### Community 1583 - "OpenClaw Decision Note — fix-merge-conflicts-blog-projects-17123638390372322339"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — fix-merge-conflicts-blog-projects-17123638390372322339, Policy Evaluation
+
+### Community 1584 - "OpenClaw Decision Note — fix-optimize-navigation-rendering-4508866026702962936"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — fix-optimize-navigation-rendering-4508866026702962936, Policy Evaluation
+
+### Community 1585 - "OpenClaw Decision Note — fix/projects-merge-conflict-13269831740869035011"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — fix/projects-merge-conflict-13269831740869035011, Policy Evaluation
+
+### Community 1586 - "OpenClaw Decision Note — jules-11570014157736730045-f4906c1d"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — jules-11570014157736730045-f4906c1d, Policy Evaluation
+
+### Community 1587 - "OpenClaw Decision Note — jules-5358149949114829266-f19ce31f"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — jules-5358149949114829266-f19ce31f, Policy Evaluation
+
+### Community 1588 - "OpenClaw Decision Note — jules-rewrite-santa-cruz-automations-5578262483978790649"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — jules-rewrite-santa-cruz-automations-5578262483978790649, Policy Evaluation
+
+### Community 1589 - "OpenClaw Decision Note — perf/fix-blog-post-key-6294485228969439525"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/fix-blog-post-key-6294485228969439525, Policy Evaluation
+
+### Community 1590 - "OpenClaw Decision Note — perf/fix-react-keys-projects-page-16679005189783209206"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/fix-react-keys-projects-page-16679005189783209206, Policy Evaluation
+
+### Community 1591 - "OpenClaw Decision Note — perf-optimize-get-post-by-slug-14243126727577805702"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf-optimize-get-post-by-slug-14243126727577805702, Policy Evaluation
+
+### Community 1592 - "OpenClaw Decision Note — perf/stable-react-keys-14940850307799154199"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/stable-react-keys-14940850307799154199, Policy Evaluation
+
+### Community 1593 - "OpenClaw Decision Note — perf/stable-react-keys-projects-14335487169626350116"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf/stable-react-keys-projects-14335487169626350116, Policy Evaluation
+
+### Community 1594 - "OpenClaw Decision Note — perf-unique-keys-15434530512014776475"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — perf-unique-keys-15434530512014776475, Policy Evaluation
+
+### Community 1595 - "OpenClaw Decision Note — security-obfuscate-email-1254930352502245485"
+Cohesion: 0.29
+Nodes (6): Commits, Decision, Files Changed, Full Diff, OpenClaw Decision Note — security-obfuscate-email-1254930352502245485, Policy Evaluation
+
+### Community 1596 - "SoloDeveloper ↔ LLM Wiki — Vault Relationship"
+Cohesion: 0.29
+Nodes (6): Cross-Vault Links, Shared Conventions, SoloDeveloper ↔ LLM Wiki — Vault Relationship, *The Other* Vault (LLM Wiki), The Split, *This Vault* (SoloDeveloper)
+
+### Community 1597 - "🎯 🏆 ☑️ {{date}} Intentions"
+Cohesion: 0.29
+Nodes (6): {{date}} Active Workstreams, 🎯 🏆 ☑️ {{date}} Intentions, Last Week's Mistakes, Open Questions / Risks / Constraints, Structure / Workflow, 🧠🪞📝
+
+### Community 1598 - "Midday Progress Update"
+Cohesion: 0.29
+Nodes (6): /data disk fix needed, End-of-day state (VM auto-stopped at 00:25 UTC), Midday Progress Update, Reindex definition of done (enforced going forward), Resume sequence (next VM session), The situation around indexing
+
+### Community 1599 - "Harness Evaluation Rubric"
+Cohesion: 0.29
+Nodes (6): Checkpoints, Diagnose the failure, Harness Evaluation Rubric, Notes, Output format, Score each query
+
+### Community 1600 - "Retrieval Benchmark v0 Run — 2026-04-15"
+Cohesion: 0.29
+Nodes (6): Notes On Scoring, Per-Query Report, Recommended Tuning Targets, Retrieval Benchmark v0 Run — 2026-04-15, Summary, What This Says
+
+### Community 1601 - "Retrieval Benchmark v0 Run After Tuning — 2026-04-15"
+Cohesion: 0.29
+Nodes (6): Interpretation, Next Moves, Result, Retrieval Benchmark v0 Run After Tuning — 2026-04-15, Top Sources Observed, What Improved
+
+### Community 1602 - "Query Typing, Post-Retrieval Grouping and Expansion"
+Cohesion: 0.29
+Nodes (6): Desired behavior, Expansion rules, Failure modes, Post-retrieval grouping, Query typing, Query Typing, Post-Retrieval Grouping and Expansion
+
+### Community 1603 - "Pass-1 corpus-hot (sab-mini)"
+Cohesion: 0.29
+Nodes (6): Done when, Focus (mini), Pass-1 corpus-hot (sab-mini), Per project — four files only, Top 3 projects, Write path
+
+### Community 1604 - "Pass-1 corpus-hot (sab-air)"
+Cohesion: 0.29
+Nodes (6): Done when, Focus (air), Pass-1 corpus-hot (sab-air), Per project — four files only, Top 3 projects, Write path
+
+### Community 1605 - "GDDP — QUERIES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Connect A→B, Evidence, GDDP — QUERIES (mini pass-1), Graphify-class (labels only), Now-state, Ownership (runtime vs config) — required pair
+
+### Community 1606 - "GDDP — SOURCES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Env names only, GDDP — SOURCES (mini pass-1), Git tips (mini), Handoffs (1–2 named samples), Ownership split, Paths
+
+### Community 1607 - "MyAPI — QUERIES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Connect A→B, Evidence, MyAPI — QUERIES (mini pass-1), Now-state, Ownership, Steal shapes (graphify-class)
+
+### Community 1608 - "Pi / Needle / Gemma — QUERIES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Connect A→B, Evidence, Graphify-class, Now-state, Ownership, Pi / Needle / Gemma — QUERIES (mini pass-1)
+
+### Community 1609 - "Pass-1 corpus-hot (sab-air)"
+Cohesion: 0.29
+Nodes (6): Done when, Focus (air), Pass-1 corpus-hot (sab-air), Per project — four files only, Top 3 projects, Write path
+
+### Community 1610 - "Pass-1 corpus-hot (sab-mini)"
+Cohesion: 0.29
+Nodes (6): Done when, Focus (mini), Pass-1 corpus-hot (sab-mini), Per project — four files only, Top 3 projects, Write path
+
+### Community 1611 - "GDDP — QUERIES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Connect A→B, Evidence, GDDP — QUERIES (mini pass-1), Graphify-class (labels only), Now-state, Ownership (runtime vs config) — required pair
+
+### Community 1612 - "GDDP — SOURCES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Env names only, GDDP — SOURCES (mini pass-1), Git tips (mini), Handoffs (1–2 named samples), Ownership split, Paths
+
+### Community 1613 - "MyAPI — QUERIES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Connect A→B, Evidence, MyAPI — QUERIES (mini pass-1), Now-state, Ownership, Steal shapes (graphify-class)
+
+### Community 1614 - "Pi / Needle / Gemma — QUERIES (mini pass-1)"
+Cohesion: 0.29
+Nodes (6): Connect A→B, Evidence, Graphify-class, Now-state, Ownership, Pi / Needle / Gemma — QUERIES (mini pass-1)
+
+### Community 1615 - "audit_tags_v4.py"
+Cohesion: 0.43
+Nodes (6): classify(), main(), normalize_tag(), Strip leading #, lowercase, trim whitespace., Return suggested prefix for an unprefixed tag, or None to drop., split_frontmatter()
+
+### Community 1616 - "is_concept_note"
+Cohesion: 0.38
+Nodes (6): is_concept_note(), link_canonical(), main(), Path, Normalize a wiki link target: strip alias, strip subpath, strip .md, trim., Cheap check: a file is a concept note if its frontmatter has type: concept.
+
+### Community 1617 - "khoj_repair_index_delta.py"
+Cohesion: 0.52
+Nodes (5): fetch_indexed_files(), main(), delete_extra_files(), main(), patch_missing_files()
+
+### Community 1619 - "10) Minimal working set (use this repeatedly)"
+Cohesion: 0.33
+Nodes (6): 10) Minimal working set (use this repeatedly), Behavior toggles (already enabled), Core gestures (⌘ modifier), Secondary precision (fn modifier), Tertiary precision (fn + ⌘), Usage loop
+
+### Community 1620 - "Section 4: Design Rules"
+Cohesion: 0.33
+Nodes (6): 1. Operating Modes Fast Chooser, 2. Interface Routing, 3. Internal vs. External Dispatch, 4. Mission Packets vs. One-Shot Commands, 5. Trust Gradient & Technical Debt, Section 4: Design Rules
+
+### Community 1621 - "4. Your Three-Device Architecture — How to Use It"
+Cohesion: 0.33
+Nodes (6): 4.1 Big Pi — The Brain (Control Plane), 4.2 Mac (mac-hands) — The Development Node, 4.3 Small Pi — The Lightweight / Isolated Node, 4.4 Cloud VM (debian-vm) — The Heavy-Compute Node, 4.5 Multi-Node Agent Routing — Putting It Together, 4. Your Three-Device Architecture — How to Use It
+
+### Community 1622 - "Section 4: Design Rules"
+Cohesion: 0.33
+Nodes (6): 1. Operating Modes Fast Chooser, 2. Interface Routing, 3. Internal vs. External Dispatch, 4. Mission Packets vs. One-Shot Commands, 5. Trust Gradient & Technical Debt, Section 4: Design Rules
+
+### Community 1623 - "4. Your Three-Device Architecture — How to Use It"
+Cohesion: 0.33
+Nodes (6): 4.1 Big Pi — The Brain (Control Plane), 4.2 Mac (mac-hands) — The Development Node, 4.3 Small Pi — The Lightweight / Isolated Node, 4.4 Cloud VM (debian-vm) — The Heavy-Compute Node, 4.5 Multi-Node Agent Routing — Putting It Together, 4. Your Three-Device Architecture — How to Use It
+
+### Community 1624 - "Section 4: Design Rules"
+Cohesion: 0.33
+Nodes (6): 1. Operating Modes Fast Chooser, 2. Interface Routing, 3. Internal vs. External Dispatch, 4. Mission Packets vs. One-Shot Commands, 5. Trust Gradient & Technical Debt, Section 4: Design Rules
+
+### Community 1625 - "4. Your Three-Device Architecture — How to Use It"
+Cohesion: 0.33
+Nodes (6): 4.1 Big Pi — The Brain (Control Plane), 4.2 Mac (mac-hands) — The Development Node, 4.3 Small Pi — The Lightweight / Isolated Node, 4.4 Cloud VM (debian-vm) — The Heavy-Compute Node, 4.5 Multi-Node Agent Routing — Putting It Together, 4. Your Three-Device Architecture — How to Use It
+
+### Community 1626 - "Keycap Comparison OEM vs PBT"
+Cohesion: 0.33
+Nodes (5): Conversation Identity, Keycap Comparison OEM vs PBT, Provenance, Raw Conversation, SteelSeries PrismCaps
+
+### Community 1627 - "./02 Areas/My_DevInfra/Zed/Zed Search All Files and ripgrep Query Syntax.md"
+Cohesion: 0.33
+Nodes (5): ./02 Areas/My_DevInfra/Zed/Zed Search All Files and ripgrep Query Syntax.md, Elegant approach for finding duplicates in the vault, Provenance, Session Identity, Session Text
+
+### Community 1628 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 17:40 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1629 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 21:01 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1630 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 18:18 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1631 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 18:18 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1632 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 21:01 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1633 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 04:54 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1634 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 16:00 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1635 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 11:42 | vault-doctor-assessment, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1636 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 00:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1637 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 09:54 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1638 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 07:22 | MyAPI portfolio hygiene & Pi handoff, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1639 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 04:54 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1640 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 12:28 | performance-dashboard-17813547050308898222, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1641 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 10:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1642 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 20:35 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1643 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:42 | performance-dashboard-17813547050308898222, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1644 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 10:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1645 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 00:39 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1646 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 21:31 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1647 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 03:40 | jules-ab/ingest, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1648 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 21:31 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1649 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 21:41 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1650 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 00:40 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1651 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 06:16 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1652 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 06:55 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1653 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 00:25 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1654 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 08:36 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1655 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 01:45 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1656 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:45 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1657 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 05:39 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1658 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 17:34 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1659 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 03:45 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1660 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 17:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1661 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 05:43 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1662 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 05:39 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1663 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 12:54 | chore/body-conventions, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1664 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): Apply maximum non-destructive compression. Rules:, -- | main, Provenance, Session Identity, Session Text
+
+### Community 1665 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 10:29 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1666 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 09:10 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1667 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 12:27 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1668 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:45 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1669 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 17:44 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1670 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:00 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1671 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 11:40 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1672 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 03:13 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1673 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:32 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1674 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 13:27 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1675 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 19:48 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1676 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:40 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1677 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 10:29 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1678 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 13:21 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1679 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 13:10 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1680 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 14:32 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1681 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 17:37 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1682 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 12:27 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1683 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 16:59 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1684 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 02:30 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1685 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 09:41 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1686 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 22:07 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1687 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 11:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1688 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:30 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1689 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 01:41 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1690 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 22:07 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1691 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 22:10 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1692 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 09:41 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1693 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 10:59 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1694 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 09:57 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1695 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 22:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1696 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 06:37 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1697 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 02:42 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1698 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 10:59 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1699 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 06:49 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1700 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 04:30 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1701 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 04:36 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1702 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 01:50 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1703 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 05:55 | chore/gitignore-media, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1704 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:30 | research/gbp-recovery, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1705 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 13:04 | infrastructure, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1706 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 21:19 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1707 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 21:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1708 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 13:04 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1709 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:38 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1710 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:42 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1711 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 14:42 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1712 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 14:49 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1713 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:30 | lovable, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1714 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 11:45 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1715 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 23:15 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1716 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 15:28 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1717 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 17:03 | SoloDeveloper, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1718 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 15:00 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1719 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 06:33 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1720 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 04:47 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1721 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 10:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1722 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 23:15 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1723 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 16:10 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1724 - "oh lord, help me figure out this dev-journal situation, there is absolutely good"
+Cohesion: 0.33
+Nodes (5): oh lord, help me figure out this dev-journal situation, there is absolutely good, Proposed path to pi-big, Provenance, Session Identity, Session Text
+
+### Community 1725 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 00:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1726 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 06:33 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1727 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 23:35 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1728 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 23:15 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1729 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 15:45 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1730 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 17:03 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1731 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 17:03 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1732 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 17:45 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1733 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1734 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 15:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1735 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 08:56 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1736 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 04:11 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1737 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 04:42 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1738 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 06:08 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1739 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 12:09 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1740 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:28 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1741 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 08:56 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1742 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 12:12 |, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1743 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 05:11 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1744 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 14:30 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1745 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 06:15 | unknown, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1746 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 02:49 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1747 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 10:35 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1748 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:46 | unknown, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1749 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 22:47 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1750 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 11:42 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1751 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 13:00 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1752 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 11:42 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1753 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 07:48 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1754 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 22:47 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1755 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 12:05 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1756 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 09:29 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1757 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 19:34 | main, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1758 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 06:51 | feat/corpus-v1-normalization, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1759 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 13:43 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1760 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 09:45 | feat/corpus-v1-normalization, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1761 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 19:34 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1762 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 19:49 | main, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1763 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 18:15 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1764 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 09:24 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1765 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 03:00 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1766 - "What is the status on Jules published branches?"
+Cohesion: 0.33
+Nodes (5): Provenance, SDK 49 → 54 Upgrade Scope, Session Identity, Session Text, What is the status on Jules published branches?
+
+### Community 1767 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 03:03 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1768 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 18:15 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1769 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 21:43 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1770 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 03:00 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1771 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 18:23 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1772 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 09:24 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1773 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.33
+Nodes (5): 01:20 | docs/avatar-reflection-spec, Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 1774 - "You are summarizing a Claude Code session for a daily memory log."
+Cohesion: 0.33
+Nodes (5): 01:20 | docs/avatar-reflection-spec, Provenance, Session Identity, Session Text, You are summarizing a Claude Code session for a daily memory log.
+
+### Community 1775 - "Read-only exploration. I need to understand what forward-looking planning docs e"
+Cohesion: 0.33
+Nodes (5): Provenance, Read-only exploration. I need to understand what forward-looking planning docs e, Session Identity, Session Text, Summary
+
+### Community 1776 - "I'm planning to author an "agent-bus" system: a SQLite-backed FastAPI message bu"
+Cohesion: 0.33
+Nodes (5): I'm planning to author an "agent-bus" system: a SQLite-backed FastAPI message bu, Provenance, Session Identity, Session Text, Summary
+
+### Community 1777 - "GDD Boot"
+Cohesion: 0.33
+Nodes (6): Canonical Repos, Default Focus, GDD Boot, Operating Rules, Primary Role, Startup Sequence
+
+### Community 1778 - "gddp-runtime"
+Cohesion: 0.33
+Nodes (6): Deployment, gddp-runtime, Key rule, Related repos, Structure, Updating the Pi
+
+### Community 1779 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1780 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1781 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1782 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1783 - "Harness Evaluation Rubric"
+Cohesion: 0.33
+Nodes (6): Checkpoints, Diagnose the failure, Harness Evaluation Rubric, Notes, Output format, Score each query
+
+### Community 1784 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1785 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1786 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1787 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1788 - "Harness Evaluation Rubric"
+Cohesion: 0.33
+Nodes (6): Checkpoints, Diagnose the failure, Harness Evaluation Rubric, Notes, Output format, Score each query
+
+### Community 1789 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1790 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1791 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1792 - "Status And Next Steps"
+Cohesion: 0.33
+Nodes (6): Architectural Reality, Current Situation, Recommended Canonical Model, Status And Next Steps, VM Environment, What Context Refinery Is Right Now
+
+### Community 1793 - "Harness Evaluation Rubric"
+Cohesion: 0.33
+Nodes (6): Checkpoints, Diagnose the failure, Harness Evaluation Rubric, Notes, Output format, Score each query
+
+### Community 1794 - "3. Website Audit + Migration"
+Cohesion: 0.33
+Nodes (6): 3.1 Audit Current Wix Setup, 3.2 Define Migration Risks, 3.3 Gather Inspiration / References, 3.4 Define New Website Goals, 3.5 Define V1 Site Structure, 3. Website Audit + Migration
+
+### Community 1795 - "7. LMN + QuickBooks Integration"
+Cohesion: 0.33
+Nodes (6): 7.1 Learn Current Usage, 7.2 Find Integration Gaps, 7.3 Prepare Vendor Questions, 7.4 Schedule Support Call, 7.5 Improve End-to-end Flow, 7. LMN + QuickBooks Integration
+
+### Community 1796 - "# AGENTS.md instructions for /Users/saboor/repos/MyAPI"
+Cohesion: 0.33
+Nodes (6): # AGENTS.md instructions for /Users/saboor/repos/MyAPI, Provenance, Session Identity, Session Text, Tool Call Count, User
+
+### Community 1797 - "Cactus Migration — JAX → C/C++ inference"
+Cohesion: 0.33
+Nodes (6): 2026-05-17 research finding: weight format is compatible, Cactus Migration — JAX → C/C++ inference, Migration steps (sketch), Status, Throughput on Pi 4 — uncharacterized, What changes vs. current setup
+
+### Community 1798 - "TPU Setup & Workflow"
+Cohesion: 0.33
+Nodes (6): CLI Reference, GCP Setup, Single-host (v6e-8) - SSH into instance, Tool Output, TPU Factsheet, TPU Setup & Workflow
+
+### Community 1799 - "Needle Routing Eval Constitution"
+Cohesion: 0.33
+Nodes (6): Files, Grader Contract, Hard Rules, Needle Routing Eval Constitution, Reporting, Researcher Leakage
+
+### Community 1800 - "Cactus Migration — JAX → C/C++ inference"
+Cohesion: 0.33
+Nodes (6): 2026-05-17 research finding: weight format is compatible, Cactus Migration — JAX → C/C++ inference, Migration steps (sketch), Status, Throughput on Pi 4 — uncharacterized, What changes vs. current setup
+
+### Community 1801 - "TPU Setup & Workflow"
+Cohesion: 0.33
+Nodes (6): CLI Reference, GCP Setup, Single-host (v6e-8) - SSH into instance, Tool Output, TPU Factsheet, TPU Setup & Workflow
+
+### Community 1802 - "Needle Routing Eval Constitution"
+Cohesion: 0.33
+Nodes (6): Files, Grader Contract, Hard Rules, Needle Routing Eval Constitution, Reporting, Researcher Leakage
+
+### Community 1803 - "Analysis: Robust Verification for Semi-Autonomy"
+Cohesion: 0.33
+Nodes (6): 1. Granular Invariant and Constraint Checks (The "Case Builder"), 2. Contextual Evaluation (Resolving the "Open Items"), 3. Streamlining the Checkpoint, Analysis: Robust Verification for Semi-Autonomy, Major Audit of GDDP-Runtime and OpenClaw, Project Status: Semi-Autonomous Checkpoint Reached
+
+### Community 1804 - "GDDP Sitrep and Future Plan"
+Cohesion: 0.33
+Nodes (6): Current Sitrep, gddp-runtime, GDDP Sitrep and Future Plan, Short Verdict, What Is Good In GDDP-15, What Is Not Good
+
+### Community 1805 - "Analysis: Robust Verification for Semi-Autonomy"
+Cohesion: 0.33
+Nodes (6): 1. Granular Invariant and Constraint Checks (The "Case Builder"), 2. Contextual Evaluation (Resolving the "Open Items"), 3. Streamlining the Checkpoint, Analysis: Robust Verification for Semi-Autonomy, Major Audit of GDDP-Runtime and OpenClaw, Project Status: Semi-Autonomous Checkpoint Reached
+
+### Community 1806 - "GDDP Sitrep and Future Plan"
+Cohesion: 0.33
+Nodes (6): Current Sitrep, gddp-runtime, GDDP Sitrep and Future Plan, Short Verdict, What Is Good In GDDP-15, What Is Not Good
+
+### Community 1807 - "GDDP Sitrep and Future Plan"
+Cohesion: 0.33
+Nodes (6): Current Sitrep, gddp-runtime, GDDP Sitrep and Future Plan, Short Verdict, What Is Good In GDDP-15, What Is Not Good
+
+### Community 1808 - "Memory Index"
+Cohesion: 0.33
+Nodes (4): Feedback, Memory Index, Project, User
+
+### Community 1810 - "-Volumes-sab-ssd--openclaw-workspace/memory/MEMORY.md"
+Cohesion: 0.33
+Nodes (3): Feedback, Memory Index, Project
+
+### Community 1811 - "Handoff 007 — Vertex AI Infrastructure Established"
+Cohesion: 0.33
+Nodes (5): Handoff 007 — Vertex AI Infrastructure Established, Infrastructure created, Key decisions, Status at handoff, Summary
+
+### Community 1812 - "Handoff 009 — Migrate MyAPI + Vertex AI Workspace to khoj-vm-new"
+Cohesion: 0.33
+Nodes (5): Handoff 009 — Migrate MyAPI + Vertex AI Workspace to khoj-vm-new, Post-migration state, Setup steps (completed), Summary, VM facts
+
+### Community 1813 - "The stalled workflows despite progress being made in 2026 Sprint.md"
+Cohesion: 0.33
+Nodes (3): Beiley and Was, Gddp, MyAPI
+
+### Community 1814 - "07 — Jules Dispatch"
+Cohesion: 0.33
+Nodes (5): 07 — Jules Dispatch, API vs CLI Dispatch Layer, Economics Note, Task Packet, When to use each
+
+### Community 1815 - "13 — Artifact Verification"
+Cohesion: 0.33
+Nodes (5): 13 — Artifact Verification, Gate Logic, Validation Methods, Verification Record Schema, Why This Exists
+
+### Community 1816 - "Session Log — 2026-04-23 — Bailey Contact Form"
+Cohesion: 0.33
+Nodes (5): After that, Session Log — 2026-04-23 — Bailey Contact Form, State at handoff, Takeaway, What to do in Cmux first (smoke test — ~10 min)
+
+### Community 1817 - "Context Refinery: Personal Data Export Tool"
+Cohesion: 0.33
+Nodes (5): Context Refinery: Personal Data Export Tool, Core Tech Stack, Current State of the Project, Main Unsolved Problems, Overview
+
+### Community 1818 - "Context Refinery"
+Cohesion: 0.33
+Nodes (5): Context Refinery, Core Tech Stack, Current State of the Project, Main Unsolved Problems, Summary
+
+### Community 1819 - "Context Refinery: Personal Data Export Tool"
+Cohesion: 0.33
+Nodes (5): Context Refinery: Personal Data Export Tool, Core Tech Stack, Current State of the Project, Main Unsolved Problems, Summary
+
+### Community 1820 - "SocialXP Pre-Codesign Group 2026-01-21.md"
+Cohesion: 0.33
+Nodes (5): Academic Path Vs App Path, Finding Balance between the Big Tech Dev Vs Engineer Approach, My Role in Co-design Group, Walk Away with…, Walk through Jan 21
+
+### Community 1821 - "Wireframes Day 1.md"
+Cohesion: 0.33
+Nodes (5): Aside: Norm Abandonment, Plan, Reviewing [[01 Projects/SocialXP/Co-Design Group 1|Co-Design Group 1]], Vincent Task for Week 1, Vincent Tasks
+
+### Community 1822 - "Vault Doctor"
+Cohesion: 0.33
+Nodes (5): Core Tech Stack, Current State, Main Unsolved Problems, Summary, Vault Doctor
+
+### Community 1823 - "7. LMN + QuickBooks Integration"
+Cohesion: 0.33
+Nodes (6): 7.1 Learn Current Usage, 7.2 Find Integration Gaps, 7.3 Prepare Vendor Questions, 7.4 Schedule Support Call, 7.5 Improve End-to-end Flow, 7. LMN + QuickBooks Integration
+
+### Community 1824 - "Water & Stone Landscapes - README Anchor"
+Cohesion: 0.33
+Nodes (5): Core Tech Stack, Current State of the Project, Main Unsolved Problems, Project Summary, Water & Stone Landscapes - README Anchor
+
+### Community 1825 - "Project-note"
+Cohesion: 0.33
+Nodes (5): 📌 Context / Plan, 📎 Links / Assets, ✅ Next Actions, Outcome, Project-note
+
+### Community 1826 - "Blink-Build-SSH-Pathway-to-GitHub"
+Cohesion: 0.33
+Nodes (5): Blink-Build-SSH-Pathway-to-GitHub, Blink Build SSH Pathway to GitHub, Context, Links, Subtasks
+
+### Community 1827 - "Categories"
+Cohesion: 0.33
+Nodes (5): Categories, Facefucking/deepthroat, Moo Girl, POV Fisting Her, Solo
+
+### Community 1828 - "Ivycore ll.md"
+Cohesion: 0.33
+Nodes (5): Counting for the sake of counting, Deserves to Be in a Separate Note, New Vids Aka Research, Phrases to Use, Roleplaying Scernarios (BDSM Kink)
+
+### Community 1829 - "Next2025 S3X Encounter.md"
+Cohesion: 0.33
+Nodes (5): [[02 Areas/Confidential/Relationships/FUCK IVY JAN 29 2025]] Make Her Eat My Ass for Being a Slut, [[02 Areas/Confidential/Relationships/On bottoming]], Mon Jan 20th, 2025, Wed Jan 29th, 2025, With Ivy… while Fucking Her and Starting to Fuck Her
+
+### Community 1830 - "element.md"
+Cohesion: 0.33
+Nodes (5): Back to Basics: How to Evict Your Monkeys, Closing, Homework: Eradicating Your Excuses, Justifications, and Lies, Opening Question, Working Out: The Chattering Monkeys
+
+### Community 1831 - "Feb Element 2025 on Tragic Cosmic Joke and Addictions and Commitments.md"
+Cohesion: 0.33
+Nodes (5): [[02 Areas/Confidential/SMW/General MW Element Delivery for Meetings Overview and Notes]], All Call Notes for This Element, Element per the Google Doc (Script), Next Element: [[02 Areas/Confidential/SMW/March Element 2025 Addictions, Consequences, and Formula]], Opening
+
+### Community 1832 - "Core Team Call 10.md"
+Cohesion: 0.33
+Nodes (5): Bringing Men into Core Team Calls More Often, Check-In, Graduate Guest Event CPR Update, Renew Context and Purpose of Asking for Help, The Power and Potential of a Men's Team
+
+### Community 1833 - "Core Team Call 7.md"
+Cohesion: 0.33
+Nodes (5): [[02 Areas/Confidential/SMW/leader-cycle-1/Core Team Call 8]], Agenda, End of Leadership Call Coaching Moment, Hybrid Guest Circle, In-Person April CPR
+
+### Community 1834 - "MWC 3.md"
+Cohesion: 0.33
+Nodes (5): Be Self-sufficient, Defined Your terms, Exercise, Proficient in Bullshitting, Proficient in Short-term Relationships (ended them)
+
+### Community 1835 - "Oct Wildmen Leadership Call 1.md"
+Cohesion: 0.33
+Nodes (5): Guest Event and CPR, Leadership Takeaways, Next In-Person Meeting, Wenzel's Leadership Debrief, What Worked What Didn't Work
+
+### Community 1836 - "PP Completion Event.md"
+Cohesion: 0.33
+Nodes (5): Guest Event Invites, Guest Locations, Invites, Site Address, WhatsApp Call Invites
+
+### Community 1837 - "Obsidian X Article Import"
+Cohesion: 0.33
+Nodes (5): Command, Default Workflow, Notes, Obsidian X Article Import, What This Skill Does
+
+### Community 1838 - "**Status:** Ready for Live Deployment"
+Cohesion: 0.33
+Nodes (5): Phase 3: The "SmallPi Approved" OpenClaw Bootstrap, **Rollback Protocol:**, **Status:** Ready for Live Deployment, **The Bootstrap Sequence (Copy/Paste This block)**, **What This achieves:**
+
+### Community 1839 - "OpenClaw Decision Note — Fix-font-family"
+Cohesion: 0.33
+Nodes (5): Decision, Diff Summary, Notes, OpenClaw Decision Note — Fix-font-family, Policy Evaluation
+
+### Community 1840 - "IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-"
+Cohesion: 0.33
+Nodes (5): Context, IDEs-not-as-simple-as-minimialist-Zed-vs-heavy-VS-Code-or-Trae-, IDEs - Not as Simple as 'minimialist Zed Vs Heavy VS Code or Trae', Links, Subtasks
+
+### Community 1841 - "Mobile-SSH-antigravity-development-workflow-examples-using-piping"
+Cohesion: 0.33
+Nodes (5): 1. **"Fix My Broken build"**, Context, Links, Mobile-SSH-antigravity-development-workflow-examples-using-piping, Subtasks
+
+### Community 1842 - "Common Workflows"
+Cohesion: 0.33
+Nodes (6): Capture Done Task, Capture Task to Today, Common Workflows, Create Idea Note (Auto-Timestamped), Find All Notes with a Tag, Search for Something Specific
+
+### Community 1843 - "Obsidian + Neovim Setup"
+Cohesion: 0.33
+Nodes (6): Architecture, File Structure, Guides in This Folder, Next Steps, Obsidian + Neovim Setup, Quick Start
+
+### Community 1844 - "MEMORY.md - Long-Term Memory"
+Cohesion: 0.33
+Nodes (5): 2026 Foundation, Accountability Cadence (Initial), Coaching Principles, Constraints and Logistics, MEMORY.md - Long-Term Memory
+
+### Community 1845 - "SOUL.md - Who You Are"
+Cohesion: 0.33
+Nodes (5): Boundaries, Continuity, Core Truths, SOUL.md - Who You Are, Vibe
+
+### Community 1846 - "TOOLS.md - Local Notes"
+Cohesion: 0.33
+Nodes (5): Examples, OpenClaw CLI Version Notes (important), TOOLS.md - Local Notes, What Goes Here, Why Separate?
+
+### Community 1847 - "Great Set of Commands. Here's what Each One Does"
+Cohesion: 0.33
+Nodes (5): 1. `git branch -vv`, 2. `git branch -r --merged origin/main`, 3. `git branch -r --no-merged origin/main`, 4. `git for-each-ref --sort=-committerdate refs/remotes/origin --format='%(committerdate:short) %(refname:short)' | head -40`, Great Set of Commands. Here's what Each One Does
+
+### Community 1848 - "Mnemonic Ladder"
+Cohesion: 0.33
+Nodes (5): `101` = **Git Commit 101**, `102` = **Batch Commit 102**, `103` = **Targeted Commit 103**, Mnemonic Ladder, The New Git 101 with 102 and 103 to Avoid Constant Conflicts across Multi-machine Setup
+
+### Community 1849 - "Zed Search All Files and ripgrep Query Syntax.md"
+Cohesion: 0.33
+Nodes (5): [[00 Inbox/Indexed Searches Accomplish Near-Zero Latency, Richer Matching Behavior, and Interactive Navigation Speed]], 📌 Context / Plan, 📎 Links / Assets, ✅ Next Actions, `Search All Files` Options Contrasted with `rg`
+
+### Community 1850 - "Barbell Good Mornings"
+Cohesion: 0.33
+Nodes (5): Barbell Good Mornings, Exercise History, Images, Notes, Workouts
+
+### Community 1851 - "Calf Press"
+Cohesion: 0.33
+Nodes (5): Calf Press, Exercise History, Images, Notes, Workouts
+
+### Community 1852 - "DB Bench Press"
+Cohesion: 0.33
+Nodes (5): DB Bench Press, Exercise History, Images, Notes, Workouts
+
+### Community 1853 - "Dips"
+Cohesion: 0.33
+Nodes (5): Dips, Exercise History, Images, Notes, Workouts
+
+### Community 1854 - "Hack Squat Reverse Banded"
+Cohesion: 0.33
+Nodes (5): Exercise History, Hack Squat Reverse Banded, Images, Notes, Workouts
+
+### Community 1855 - "Incline DB Row"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Incline DB Row, Notes, Workouts
+
+### Community 1856 - "Incline Press"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Incline Press, Notes, Workouts
+
+### Community 1857 - "Leg Extension"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Leg Extension, Notes, Workouts
+
+### Community 1858 - "Quad Leg Press"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Notes, Quad Leg Press, Workouts
+
+### Community 1859 - "Seated Leg Curl"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Notes, Seated Leg Curl, Workouts
+
+### Community 1860 - "Seated Neutral Grip Chest Press"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Notes, Seated Neutral Grip Chest Press, Workouts
+
+### Community 1861 - "Supinated Grip Cable Rows"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Notes, Supinated Grip Cable Rows, Workouts
+
+### Community 1862 - "Supinated Grip Chin Ups"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Notes, Supinated Grip Chin Ups, Workouts
+
+### Community 1863 - "Trap Bar RDL"
+Cohesion: 0.33
+Nodes (5): Exercise History, Images, Notes, Trap Bar RDL, Workouts
+
+### Community 1864 - "🏋️ Workout Hub"
+Cohesion: 0.33
+Nodes (5): 📋 Active Programs, 🏋️ Movement Library, 📈 Recent Sessions, 🗓️ Training Days (Blueprints), 🏋️ Workout Hub
+
+### Community 1865 - "YS7 Upper 1.md"
+Cohesion: 0.33
+Nodes (5): Cable Y-Raise 10, 6, 8, 8, Dual Rope Overhead Tricep Extension 10, 6, 8, 8, Hammer Curls 10, 6, 8, 8, Reverse Band Incline Press 10, 6, 8, 8, Sagittal Plane Dumbbell Rows 10, 6, 8, 8
+
+### Community 1866 - "Learning/2026 Overview for Ergonomic, Mutli-Layered Dygma Raise Keyboard Layers and Mappings.md"
+Cohesion: 0.33
+Nodes (5): [[02 Areas/New Dygma Raise Keyboard layout]], Dual Modifiers Timings, Key Press Timings, Layer and Thumb Moves, UPGRADE TIME 3/6/26
+
+### Community 1867 - "JULES — Useful Commands & Flags"
+Cohesion: 0.33
+Nodes (5): Examples from `jules help`, [Jules CLI Docs](https://jules.google/docs/cli/reference/), JULES — Useful Commands & Flags, Power Pattern, Related
+
+### Community 1868 - "The Ralph Method: Streamlining AI Coding Agents with Simple Loops"
+Cohesion: 0.33
+Nodes (5): Iteration and Task Backlog, PRD + Ongoing Progress File, Requirements Gatherer, The Ralph Method: Streamlining AI Coding Agents with Simple Loops, Transcript from Video
+
+### Community 1869 - "My Tmux config.md"
+Cohesion: 0.33
+Nodes (5): Core Settings (lines 9-30), Key Bindings (lines 35-85), Pane Dimming (lines 145-158), Quick Layout Shortcuts (lines 129-136), Theme (lines 88-123)
+
+### Community 1870 - "New Tech SC Event Questions for Presenters.md"
+Cohesion: 0.33
+Nodes (5): Brand Capsule, Innovation Within, Questions, Redi8, Transitions into [[00 Inbox/Asking deeply intelligent technical questions while remaining calm and non-emotional]]
+
+### Community 1871 - "Quotes on resilience and withstand adversity and winning.md"
+Cohesion: 0.33
+Nodes (5): 1. Thomas Sankara: On the Audacity of Invention, 2. James Baldwin: On the Weight of History, 3. Antonio Gramsci: On Intellectual Honesty, 4. Nawal El Saadawi: On the Danger of Truth, 5. Frantz Fanon: On the Act of Questioning
+
+### Community 1872 - "Part 12 — Power User Playbook"
+Cohesion: 0.33
+Nodes (6): 12.1 Building Your Rules Library, 12.2 Building Your Workflows Library, 12.3 Building Your Skills Library, 12.4 The Feedback Loop Mastery, 12.5 Prompt Patterns That Work, Part 12 — Power User Playbook
+
+### Community 1873 - "Part 3 — Core Concepts (The Building Blocks)"
+Cohesion: 0.33
+Nodes (6): 3.1 The Two Windows: Agent Manager & Editor, 3.2 Artifacts: The Trust Bridge, 3.3 Planning Mode vs. Fast Mode, 3.4 The Inbox: Your Work History, 3.5 The Playground: Your Scratchpad, Part 3 — Core Concepts (The Building Blocks)
+
+### Community 1874 - "4. Your Node Architecture — How to Use It"
+Cohesion: 0.33
+Nodes (6): 4.1 ssd-big — The Brain (Control Plane), 4.2 saboors-macbook-air — The Development Node, 4.3 ssd-small — The Lightweight / Isolated Node, 4.4 first-vm — The Heavy-Compute Node (Optional / On-Demand), 4.5 Multi-Node Agent Routing — Putting It Together, 4. Your Node Architecture — How to Use It
+
+### Community 1875 - "Assistant Behavior Contract (Saboor)"
+Cohesion: 0.33
+Nodes (5): Assistant Behavior Contract (Saboor), Fastest Way to Work with Me, What I **will** Do by Default, What I **won’t** Do by Default, Why This Happened in the Obsidian Flow
+
+### Community 1876 - "SOUL.md - Who You Are"
+Cohesion: 0.33
+Nodes (5): Boundaries, Continuity, Core Truths, SOUL.md - Who You Are, Vibe
+
+### Community 1877 - "Business / Client (biz → big-pi)"
+Cohesion: 0.33
+Nodes (6): 34. Draft a Client Email, 35. Summarize Project Status, 36. Generate Invoice Line-Item Summary, 37. Competitive/Market Lookup, 38. Lead Follow-Up Reminder, Business / Client (biz → big-pi)
+
+### Community 1878 - "Topic: `<Research>` : Exploring Tmux Scripting and Automation"
+Cohesion: 0.33
+Nodes (5): 1. The "Project Launcher" (The Foundation), 2. Interactive Menus (`display-menu`), 3. Cross-Pane Controller, **Let's Build a "Cyberdream Command Palette"**, Topic: `<Research>` : Exploring Tmux Scripting and Automation
+
+### Community 1879 - "Output Contract (paste exactly)"
+Cohesion: 0.33
+Nodes (5): CONTROL PROMPTS (use These in the moment), Output Contract (paste exactly), Progressive Disclosure, Purpose, Relevance Filter
+
+### Community 1880 - "eg - Ek21 Numpad Hybrid Mac iPad Layout.md"
+Cohesion: 0.33
+Nodes (5): **Layer 0 — Numpad**, **Layer 1 — iPad/Mac Navigation**, **Layer 2 — Vim/Terminal + Code**, **Layer 3 — Git + Obsidian**, **Macro IDs**
+
+### Community 1881 - "Git remote history core workflow"
+Cohesion: 0.33
+Nodes (5): Git remote history core workflow, 💡 Quick Tip for Your Repo, 🌿 Remote Branches, 📜 Remote Git History, 🔗 Remote Info
+
+### Community 1882 - "Lean Mode Toggle Commands"
+Cohesion: 0.33
+Nodes (5): Lean Mode Toggle Commands, Lean OFF (return to orchestration mode), Lean ON (for Antigravity / heavy IDE focus), One-line aliases (add to `~/.zshrc`), Quick check command
+
+### Community 1883 - "Neovim Cheat Sheet v2 Idea"
+Cohesion: 0.33
+Nodes (5): Deliverable shape, Inputs needed when revisiting, Neovim Cheat Sheet v2 Idea, Request, Scope for v2
+
+### Community 1884 - "Popular-readline-Keyboard-Shortcuts-for-the-GNU-Bash-Shell"
+Cohesion: 0.33
+Nodes (5): Context, Links, Popular-readline-Keyboard-Shortcuts-for-the-GNU-Bash-Shell, Popular `readline` Keyboard Shortcuts for the GNU Bash Shell, Subtasks
+
+### Community 1885 - "03 Resources/Raycast quick reference keyboard shortcuts.md"
+Cohesion: 0.33
+Nodes (4): Raycast Quick Reference Keyboard Shortcuts, Related Keyboard Infrastructure Notes, > The Mental Model is Simple, Zed Day 1 Basic Keyboard Workflows Picking up Quick
+
+### Community 1886 - "Tables for Worldview Harness Creation.md"
+Cohesion: 0.33
+Nodes (4): What 5.4 got right, What 5.4 got wrong / missed, What openclaw got wrong / missed, What they got right
+
+### Community 1887 - "10 Motions That Feel Natural"
+Cohesion: 0.33
+Nodes (5): 10 Motions That Feel Natural, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1888 - "10 Pipe Chains That Solve Problems"
+Cohesion: 0.33
+Nodes (5): 10 Pipe Chains That Solve Problems, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1889 - "10 Sparring Sessions Logged"
+Cohesion: 0.33
+Nodes (5): 10 Sparring Sessions Logged, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1890 - "Antigravity Deep Dive Session"
+Cohesion: 0.33
+Nodes (5): Antigravity Deep Dive Session, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1891 - "Architecture Discussion"
+Cohesion: 0.33
+Nodes (5): Architecture Discussion, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1892 - "Ask Why Five Times"
+Cohesion: 0.33
+Nodes (5): Ask Why Five Times, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1893 - "Autocommands Basics"
+Cohesion: 0.33
+Nodes (5): Autocommands Basics, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1894 - "BDR Architecture Doc"
+Cohesion: 0.33
+Nodes (5): BDR Architecture Doc, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1895 - "BDR Codebase Orientation"
+Cohesion: 0.33
+Nodes (5): BDR Codebase Orientation, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1896 - "BDR Deployed to Production"
+Cohesion: 0.33
+Nodes (5): BDR Deployed to Production, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1897 - "BDR Email Notifications"
+Cohesion: 0.33
+Nodes (5): BDR Email Notifications, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1898 - "BDR Local Dev Environment"
+Cohesion: 0.33
+Nodes (5): BDR Local Dev Environment, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1899 - "BDR Mobile Responsive"
+Cohesion: 0.33
+Nodes (5): BDR Mobile Responsive, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1900 - "BDR Photo Gallery Polished"
+Cohesion: 0.33
+Nodes (5): BDR Photo Gallery Polished, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1901 - "BDR Project Architecture Doc"
+Cohesion: 0.33
+Nodes (5): BDR Project Architecture Doc, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1902 - "BDR README Accurate"
+Cohesion: 0.33
+Nodes (5): BDR README Accurate, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1903 - "BDR Reviews Integration"
+Cohesion: 0.33
+Nodes (5): BDR Reviews Integration, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1904 - "BDR SEO Foundation"
+Cohesion: 0.33
+Nodes (5): BDR SEO Foundation, Deliverables, Evidence, Objective, Reflection
+
+### Community 1905 - "BDR Supabase Schema Solid"
+Cohesion: 0.33
+Nodes (5): BDR Supabase Schema Solid, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1906 - "Burn $50 of Google Credits Strategically"
+Cohesion: 0.33
+Nodes (5): Burn $50 of Google Credits Strategically, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1907 - "Colorscheme That's Yours"
+Cohesion: 0.33
+Nodes (5): Colorscheme That's Yours, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1908 - "Daily Driver Note Template"
+Cohesion: 0.33
+Nodes (5): Daily Driver Note Template, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1909 - "Debug a Plugin Issue"
+Cohesion: 0.33
+Nodes (5): Debug a Plugin Issue, Definition of Done, Notes, Proof, Why It Matters
+
+### Community 1910 - "DSA Problem Category Deep Dive"
+Cohesion: 0.33
+Nodes (5): Definition of Done, DSA Problem Category Deep Dive, Notes, Proof, Why It Matters
+
+### Community 1911 - "Explain It Back"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Explain It Back, Notes, Proof, Why It Matters
+
+### Community 1912 - "File Navigation with Telescope"
+Cohesion: 0.33
+Nodes (5): Definition of Done, File Navigation with Telescope, Notes, Proof, Why It Matters
+
+### Community 1913 - "First AI Sparring Session"
+Cohesion: 0.33
+Nodes (5): Definition of Done, First AI Sparring Session, Notes, Proof, Why It Matters
+
+### Community 1914 - "Git from CLI Only"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Git from CLI Only, Notes, Proof, Why It Matters
+
+### Community 1915 - "Git Integration"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Git Integration, Notes, Proof, Why It Matters
+
+### Community 1916 - "Jump List Navigation"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Jump List Navigation, Notes, Proof, Why It Matters
+
+### Community 1917 - "Macros for Repetitive Edits"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Macros for Repetitive Edits, Notes, Proof, Why It Matters
+
+### Community 1918 - "Marks Local and Global"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Marks Local and Global, Notes, Proof, Why It Matters
+
+### Community 1919 - "Mock Interview with AI"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Mock Interview with AI, Notes, Proof, Why It Matters
+
+### Community 1920 - "Options You Actually Set"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Options You Actually Set, Proof, Why It Matters
+
+### Community 1921 - "Pair with Antigravity on Config Deep Dive"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Pair with Antigravity on Config Deep Dive, Proof, Why It Matters
+
+### Community 1922 - "Process Management"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Process Management, Proof, Why It Matters
+
+### Community 1923 - "Profile and Optimize Startup"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Profile and Optimize Startup, Proof, Why It Matters
+
+### Community 1924 - "Project Command Centers"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Project Command Centers, Proof, Why It Matters
+
+### Community 1925 - "Prompt Engineering Experiment"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Prompt Engineering Experiment, Proof, Why It Matters
+
+### Community 1926 - "Question the Big-O"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Question the Big-O, Why It Matters
+
+### Community 1927 - "Quickfix List Workflow"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Quickfix List Workflow, Why It Matters
+
+### Community 1928 - "Real Bug, AI Fix, Your Verification"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Real Bug, AI Fix, Your Verification, Why It Matters
+
+### Community 1929 - "Refactor with AI Critique"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Refactor with AI Critique, Why It Matters
+
+### Community 1930 - "Registers Beyond Basics"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Registers Beyond Basics, Why It Matters
+
+### Community 1931 - "Rewrite Without Looking"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Rewrite Without Looking, Why It Matters
+
+### Community 1932 - "ripgrep + fd Power Moves"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, ripgrep + fd Power Moves, Why It Matters
+
+### Community 1933 - "Search Until Muscle Memory"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Search Until Muscle Memory, Why It Matters
+
+### Community 1934 - "Deployment Pipeline"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Deployment Pipeline, Notes, Proof, Why It Matters
+
+### Community 1935 - "Understand Vincent's Dissertation Context"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Understand Vincent's Dissertation Context, Why It Matters
+
+### Community 1936 - "Documentation for Vincent"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Documentation for Vincent, Notes, Proof, Why It Matters
+
+### Community 1937 - "Mobile Responsive Design"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Mobile Responsive Design, Notes, Proof, Why It Matters
+
+### Community 1938 - "Privacy and Ethics Considerations"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Privacy and Ethics Considerations, Proof, Why It Matters
+
+### Community 1939 - "Project Repo Setup"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Project Repo Setup, Proof, Why It Matters
+
+### Community 1940 - "Research Therapeutic App Landscape"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Research Therapeutic App Landscape, Why It Matters
+
+### Community 1941 - "UI Component Library"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, UI Component Library, Why It Matters
+
+### Community 1942 - "Solve It First, Then Compare"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Solve It First, Then Compare, Why It Matters
+
+### Community 1943 - "Solve Something with awk"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Solve Something with awk, Why It Matters
+
+### Community 1944 - "Solve Something with sed"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Solve Something with sed, Why It Matters
+
+### Community 1945 - "Spar on a Real Bug"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Spar on a Real Bug, Why It Matters
+
+### Community 1946 - "Spot the Code Smell"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Spot the Code Smell, Why It Matters
+
+### Community 1947 - "Spot the Hallucination"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Spot the Hallucination, Why It Matters
+
+### Community 1948 - "Statusline Configured"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Statusline Configured, Why It Matters
+
+### Community 1949 - "Substitute Mastery"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Substitute Mastery, Why It Matters
+
+### Community 1950 - "Survive a Full Day in NeoVim"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Survive a Full Day in NeoVim, Why It Matters
+
+### Community 1951 - "System Design Sparring"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, System Design Sparring, Why It Matters
+
+### Community 1952 - "Teach AI Sparring to Someone"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Teach AI Sparring to Someone, Why It Matters
+
+### Community 1953 - "Teach AI Your Codebase"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Teach AI Your Codebase, Why It Matters
+
+### Community 1954 - "Teach Someone One NeoVim Trick"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Teach Someone One NeoVim Trick, Why It Matters
+
+### Community 1955 - "Terminal Prompt Customized"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Terminal Prompt Customized, Why It Matters
+
+### Community 1956 - "Text Objects Deep Dive"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Text Objects Deep Dive, Why It Matters
+
+### Community 1957 - "The Dot Command"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, The Dot Command, Why It Matters
+
+### Community 1958 - "The g Commands"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, The g Commands, Why It Matters
+
+### Community 1959 - "The Socratic Prompt"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, The Socratic Prompt, Why It Matters
+
+### Community 1960 - "Time Complexity Analysis"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Time Complexity Analysis, Why It Matters
+
+### Community 1961 - "Trace the Logic Line by Line"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Trace the Logic Line by Line, Why It Matters
+
+### Community 1962 - "Trace the Logic Step by Step"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Trace the Logic Step by Step, Why It Matters
+
+### Community 1963 - "Undo Tree"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Undo Tree, Why It Matters
+
+### Community 1964 - "Visual Mode Variants"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Visual Mode Variants, Why It Matters
+
+### Community 1965 - "Weekly Review Dashboard"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Weekly Review Dashboard, Why It Matters
+
+### Community 1966 - "xargs for Batch Operations"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Why It Matters, xargs for Batch Operations
+
+### Community 1967 - "Your First Custom Keybind"
+Cohesion: 0.33
+Nodes (5): Definition of Done, Notes, Proof, Why It Matters, Your First Custom Keybind
+
+### Community 1968 - "🫶 Nerve-Calming & Circulation (Today)"
+Cohesion: 0.33
+Nodes (5): 🚫 Avoid Today, Do 2–4 Rounds throughout the Day, 🫶 Nerve-Calming & Circulation (Today), Oo [[05 Archive/Crypto-Wallet-Recovery/SeedTracer/Testing approach and frameworks for Seed Tracer|Testing approach and frameworks for Seed Tracer]], Tue Jan 27th, 2026 - Plan/Reflect
+
+### Community 1969 - "Sun Feb 22nd, 2026 - Plan/Reflect *2, 3*"
+Cohesion: 0.33
+Nodes (5): 2026.02.22 Active Workstreams *1*, At Work -> Lots of Claude, Plan *2*, Reflect *3*, Sun Feb 22nd, 2026 - Plan/Reflect *2, 3*
+
+### Community 1970 - "2026.03.02.md"
+Cohesion: 0.33
+Nodes (5): 2026.03.02 Active Workstreams *1*, 📋 Dataview / Tasks View *(coming soon)*, Mon Mar 2nd, 2026 - Plan/Reflect *2*, Plan *2*, Reflect *3*
+
+### Community 1971 - "2026.03.05.md"
+Cohesion: 0.33
+Nodes (5): 2026.03.05 Active Workstreams *1*, Plan *2*, Reflect *3*, Thu Mar 5th, 2026 - Plan/Reflect *2*, [[Ty Conversation Call 4]]
+
+### Community 1972 - "2026.03.07.md"
+Cohesion: 0.33
+Nodes (5): 2026.03.07 Active Workstreams *1*, Plan *2*, Pre-NA Shift Nap Work Update, Reflect *3*, Sat Mar 7th, 2026 - Plan/Reflect *2*
+
+### Community 1973 - "Active Workstreams and Workflows _1_"
+Cohesion: 0.33
+Nodes (5): Active Workstreams and Workflows _1_, Journal && || Reflect _3_, Neovim-obsidian, Related, Sat Mar 14th, 2026 _2_
+
+### Community 1974 - "Active Workstreams and Workflows _1_"
+Cohesion: 0.33
+Nodes (5): Active Workstreams and Workflows _1_, Journal && || Reflect _3_, 💭 Reflections, 📋 Tasks, Wed Mar 18th, 2026 _2_
+
+### Community 1975 - "2026.05.04.md"
+Cohesion: 0.33
+Nodes (5): 05-04 Output, Honest count, Monday Plan, Reflections, Scratchpad
+
+### Community 1976 - "📅 9th Week of 2026"
+Cohesion: 0.33
+Nodes (5): 📅 9th Week of 2026, Active Workstreams, 🧠 Last Week's Mistakes, Open Questions / Risks, 📋 This Week's Tasks
+
+### Community 1977 - "Tech News Sneak Peak — 2026-05-09"
+Cohesion: 0.33
+Nodes (5): 💡 Developer Pro-Tip, 🛡️ Emerging Security & Dev-Ops Risks, 🗓️ Preview: The Week Ahead (May 11–15), Tech News Sneak Peak — 2026-05-09, 🏗️ The Infrastructure Pivot: Scaling & Chips
+
+### Community 1978 - "Path A Test — Gemini CLI Output, 2026-05-11"
+Cohesion: 0.33
+Nodes (5): 🚩 Major Events Starting Today, Path A Test — Gemini CLI Output, 2026-05-11, 🔮 Preview: Tomorrow & Next Week, Test Notes, 🚀 Unfolding Trends: The Week Ahead
+
+### Community 1979 - "Common Workflows"
+Cohesion: 0.33
+Nodes (6): Capture Done Task, Capture Task to Today, Common Workflows, Create Idea Note (Auto-Timestamped), Find All Notes with a Tag, Search for Something Specific
+
+### Community 1980 - "Obsidian + Neovim Setup"
+Cohesion: 0.33
+Nodes (6): Architecture, File Structure, Guides in This Folder, Next Steps, Obsidian + Neovim Setup, Quick Start
+
+### Community 1981 - "**Status:** Ready for Live Deployment"
+Cohesion: 0.33
+Nodes (5): Phase 3: The "SmallPi Approved" OpenClaw Bootstrap, **Rollback Protocol:**, **Status:** Ready for Live Deployment, **The Bootstrap Sequence (Copy/Paste this block)**, **What this achieves:**
+
+### Community 1982 - "OpenClaw Decision Note — fix-font-family"
+Cohesion: 0.33
+Nodes (5): Decision, Diff Summary, Notes, OpenClaw Decision Note — fix-font-family, Policy Evaluation
+
+### Community 1983 - "transcript-Danger-Illusion-of-AI-Code"
+Cohesion: 0.33
+Nodes (5): Context, Links, Subtasks, transcript-Danger-Illusion-of-AI-Code, Transcript - Danger Illusion of AI Code
+
+### Community 1984 - "Originial Intent 2026/22/01"
+Cohesion: 0.33
+Nodes (5): 1. Is it an Active Deliverable with a Finish Line?, 2. Is it an Ongoing Standard (health, Career System, Relationships, admin)?, 3. Is it reference/library (how-to, Research, docs)?, 4. Is it Vault Tooling / Workflows / Dashboards / Templates?, Originial Intent 2026/22/01
+
+### Community 1985 - "Recommended RegEx"
+Cohesion: 0.33
+Nodes (5): Alternative Version, Breakdown, Gemini 3:05 AM • D25 • W4, Recommended RegEx, Why This Pattern
+
+### Community 1986 - "2026-W03 Project Anchor.md"
+Cohesion: 0.33
+Nodes (5): 2026-01-16 Active Workstreams, 2026-01-16 Objective, Next Actions, Open Questions / Risks, Structure / Workflow
+
+### Community 1987 - "2026-W04 Anchor.md"
+Cohesion: 0.33
+Nodes (5): 2026-01-20 Active Workstreams, 2026-01-20 Objective, Next Actions, Open Questions / Risks, Structure / Workflow
+
+### Community 1988 - "{{date:YYYY}} — Yearly Note"
+Cohesion: 0.33
+Nodes (5): {{date:YYYY}} — Yearly Note, Extended Vision, Other, Yearly Reflection, Yearly Themes / Identity Markers
+
+### Community 1989 - "project-note"
+Cohesion: 0.33
+Nodes (5): 📌 Context / Plan, 📎 Links / Assets, ✅ Next Actions, Outcome, project-note
+
+### Community 1990 - "Corpus v1.0 Vault Build Summary"
+Cohesion: 0.33
+Nodes (5): Corpus v1.0 Vault Build Summary, Counts, Detailed Counts, Open In Obsidian, Paths
+
+### Community 1991 - "Context Refinery: RAG Taxonomy & Rules"
+Cohesion: 0.33
+Nodes (5): 1. Maturity Status, 2. Document Types (`doc_type`), 3. Source Systems, 4. Source Types, Context Refinery: RAG Taxonomy & Rules
+
+### Community 1992 - "Target Output Format for Khoj Ingestion"
+Cohesion: 0.33
+Nodes (5): Critical Rules, Example File: `auth-flow-brainstorm.md`, Markdown Body Order (After `---`), Target Output Format for Khoj Ingestion, YAML Field Order (Mandatory)
+
+### Community 1993 - "My-API-Trust-Threshold-Plan.md"
+Cohesion: 0.33
+Nodes (5): My concrete recommendation for tonight, On Q1 — the "gold mine" story, On Q2 — agents using MyAPI as their cold-start eliminator, The shift work, refined, What this changes about tonight
+
+### Community 1994 - "MyAPI Reuse Map - 2026-07-01"
+Cohesion: 0.33
+Nodes (5): MyAPI Reuse Map - 2026-07-01, Recommended First Implementation Slice, Repeat-Work Risks, Reuse Candidates, Short Answer
+
+### Community 1995 - "GDDP — QUERIES (air)"
+Cohesion: 0.33
+Nodes (5): Connect, Evidence, GDDP — QUERIES (air), Now-state, Ownership (runtime vs config) — required pair
+
+### Community 1996 - "MyAPI — QUERIES (air)"
+Cohesion: 0.33
+Nodes (5): Connect (A→B), Evidence, MyAPI — QUERIES (air), Now-state, Ownership
+
+### Community 1997 - "Pi / Needle / Gemma — GAPS (air)"
+Cohesion: 0.33
+Nodes (5): Air strength, Ingest risks (explicit), Pi / Needle / Gemma — GAPS (air), What’s missing / unclear this pass, Why graphify / semantic would fail alone
+
+### Community 1998 - "Pi / Needle / Gemma — QUERIES (air)"
+Cohesion: 0.33
+Nodes (5): Connect, Evidence, Now-state, Ownership, Pi / Needle / Gemma — QUERIES (air)
+
+### Community 1999 - "corpus-hot pass-1 (sab-air)"
+Cohesion: 0.33
+Nodes (5): Air-only / air-strong sources (summary), corpus-hot pass-1 (sab-air), Idle status, Pass-1 checklist, Quality table
+
+### Community 2000 - "MyAPI — SOURCES (mini pass-1)"
+Cohesion: 0.33
+Nodes (5): Corpus v1.0 buckets (sample list — no dump), Env / secret names only (no values), Golden briefs (names only), mini vs air, MyAPI — SOURCES (mini pass-1)
+
+### Community 2001 - "Pi / Needle / Gemma — GAPS (mini pass-1)"
+Cohesion: 0.33
+Nodes (5): Ingest risks (explicit), Pass-1 stop, Pi / Needle / Gemma — GAPS (mini pass-1), Still missing, Why graphify / semantic alone would fail
+
+### Community 2002 - "GDDP — QUERIES (air)"
+Cohesion: 0.33
+Nodes (5): Connect, Evidence, GDDP — QUERIES (air), Now-state, Ownership (runtime vs config) — required pair
+
+### Community 2003 - "MyAPI — QUERIES (air)"
+Cohesion: 0.33
+Nodes (5): Connect (A→B), Evidence, MyAPI — QUERIES (air), Now-state, Ownership
+
+### Community 2004 - "Pi / Needle / Gemma — GAPS (air)"
+Cohesion: 0.33
+Nodes (5): Air strength, Ingest risks (explicit), Pi / Needle / Gemma — GAPS (air), What’s missing / unclear this pass, Why graphify / semantic would fail alone
+
+### Community 2005 - "Pi / Needle / Gemma — QUERIES (air)"
+Cohesion: 0.33
+Nodes (5): Connect, Evidence, Now-state, Ownership, Pi / Needle / Gemma — QUERIES (air)
+
+### Community 2006 - "corpus-hot pass-1 (sab-air)"
+Cohesion: 0.33
+Nodes (5): Air-only / air-strong sources (summary), corpus-hot pass-1 (sab-air), Idle status, Pass-1 checklist, Quality table
+
+### Community 2007 - "MyAPI — SOURCES (mini pass-1)"
+Cohesion: 0.33
+Nodes (5): Corpus v1.0 buckets (sample list — no dump), Env / secret names only (no values), Golden briefs (names only), mini vs air, MyAPI — SOURCES (mini pass-1)
+
+### Community 2008 - "Pi / Needle / Gemma — GAPS (mini pass-1)"
+Cohesion: 0.33
+Nodes (5): Ingest risks (explicit), Pass-1 stop, Pi / Needle / Gemma — GAPS (mini pass-1), Still missing, Why graphify / semantic alone would fail
+
+### Community 2010 - "Needle Router Baseline Committed"
+Cohesion: 0.40
+Nodes (4): Needle Router Baseline Committed, Next step at time of handoff, Significance, What happened
+
+### Community 2011 - "GDDP Runtime Audit — Semi-Autonomous Checkpoint Reached"
+Cohesion: 0.40
+Nodes (4): GDDP Runtime Audit — Semi-Autonomous Checkpoint Reached, Key design decisions confirmed at audit, Significance, What happened
+
+### Community 2012 - "Shell Variables Explanation"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Shell Variables Explanation
+
+### Community 2013 - "GLM 5.1 and ZAI"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, GLM 5.1 and ZAI, Provenance, Raw Conversation
+
+### Community 2014 - "AI Roleplaying and Prompting"
+Cohesion: 0.40
+Nodes (4): AI Roleplaying and Prompting, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2015 - "AI Model Stack Strategy"
+Cohesion: 0.40
+Nodes (4): AI Model Stack Strategy, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2016 - "Agent Setup Configuration"
+Cohesion: 0.40
+Nodes (4): Agent Setup Configuration, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2017 - "CLI AI Automation Setup"
+Cohesion: 0.40
+Nodes (4): CLI AI Automation Setup, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2018 - "Git Shell Command Aliases"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Git Shell Command Aliases, Provenance, Raw Conversation
+
+### Community 2019 - "Keycap Profiles Comparison"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keycap Profiles Comparison, Provenance, Raw Conversation
+
+### Community 2020 - "Productivity Loop Framework"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Productivity Loop Framework, Provenance, Raw Conversation
+
+### Community 2021 - "1) Snapping (layout control system)"
+Cohesion: 0.40
+Nodes (5): 1) Snapping (layout control system), Base layer (General modifier), Behavior switches (active), Secondary layer (Secondary modifier), Tertiary layer (Tertiary modifier)
+
+### Community 2022 - "Terminal Search Replication"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Terminal Search Replication
+
+### Community 2023 - "Agentic Harness and Permissions"
+Cohesion: 0.40
+Nodes (4): Agentic Harness and Permissions, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2024 - "AI Gadgets and OpenClaw"
+Cohesion: 0.40
+Nodes (4): AI Gadgets and OpenClaw, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2025 - "Anthropic Refund Policy"
+Cohesion: 0.40
+Nodes (4): Anthropic Refund Policy, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2026 - "Claude Max Plan Benefits"
+Cohesion: 0.40
+Nodes (4): Claude Max Plan Benefits, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2027 - "Cmux Commands Explanation"
+Cohesion: 0.40
+Nodes (4): Cmux Commands Explanation, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2028 - "Neovim and Claude Code"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Neovim and Claude Code, Provenance, Raw Conversation
+
+### Community 2029 - "Zed Command Palette Customization"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Zed Command Palette Customization
+
+### Community 2030 - "Desk Setup Advice"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Desk Setup Advice, Provenance, Raw Conversation
+
+### Community 2031 - "OKTA 2FA Help"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, OKTA 2FA Help, Provenance, Raw Conversation
+
+### Community 2032 - "3. Node CLI Commands — Full Reference"
+Cohesion: 0.40
+Nodes (5): 3.1 Checking Node Status (Always Run This on Big Pi), 3.2 Targeting a Specific Node for Execution, 3.3 Node Registration and Management, 3.4 Node-Aware Diagnostics, 3. Node CLI Commands — Full Reference
+
+### Community 2033 - "Vault4 Schema Insights"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Vault4 Schema Insights
+
+### Community 2034 - "Branch · NanoClaw vs OpenClaw"
+Cohesion: 0.40
+Nodes (4): Branch · NanoClaw vs OpenClaw, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2035 - "CMUX and TMUX Integration"
+Cohesion: 0.40
+Nodes (4): CMUX and TMUX Integration, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2036 - "Git Repo Root Issue"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Git Repo Root Issue, Provenance, Raw Conversation
+
+### Community 2037 - "Hermes Self-Learning vs Claws"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Hermes Self-Learning vs Claws, Provenance, Raw Conversation
+
+### Community 2038 - "Hermes vs OpenClaw Comparison"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Hermes vs OpenClaw Comparison, Provenance, Raw Conversation
+
+### Community 2039 - "LazyVim Visual Feedback"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LazyVim Visual Feedback, Provenance, Raw Conversation
+
+### Community 2040 - "LuaRocks in LazyVim"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LuaRocks in LazyVim, Provenance, Raw Conversation
+
+### Community 2041 - "NanoClaw vs OpenClaw"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, NanoClaw vs OpenClaw, Provenance, Raw Conversation
+
+### Community 2042 - "OP Post Analysis"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, OP Post Analysis, Provenance, Raw Conversation
+
+### Community 2043 - "Syspeek Process Fix"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Syspeek Process Fix
+
+### Community 2044 - "Embracing AI Friction"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Embracing AI Friction, Provenance, Raw Conversation
+
+### Community 2045 - "Desk Setup Feedback"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Desk Setup Feedback, Provenance, Raw Conversation
+
+### Community 2046 - "Keyboard Ergonomics & Nerve Health"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keyboard Ergonomics & Nerve Health, Provenance, Raw Conversation
+
+### Community 2047 - "MagSafe Ring Placement Guide"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, MagSafe Ring Placement Guide, Provenance, Raw Conversation
+
+### Community 2048 - "3. Node CLI Commands — Full Reference"
+Cohesion: 0.40
+Nodes (5): 3.1 Checking Node Status (Always Run This on Big Pi), 3.2 Targeting a Specific Node for Execution, 3.3 Node Registration and Management, 3.4 Node-Aware Diagnostics, 3. Node CLI Commands — Full Reference
+
+### Community 2049 - "Haircut Feedback and Advice"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Haircut Feedback and Advice, Provenance, Raw Conversation
+
+### Community 2050 - "MagSafe Ring Experimentation"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, MagSafe Ring Experimentation, Provenance, Raw Conversation
+
+### Community 2051 - "3. Node CLI Commands — Full Reference"
+Cohesion: 0.40
+Nodes (5): 3.1 Checking Node Status (Always Run This on Big Pi), 3.2 Targeting a Specific Node for Execution, 3.3 Node Registration and Management, 3.4 Node-Aware Diagnostics, 3. Node CLI Commands — Full Reference
+
+### Community 2052 - "Non-lethal Rat Repellents"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Non-lethal Rat Repellents, Provenance, Raw Conversation
+
+### Community 2053 - "Branch · Branch · Business Model Clarity"
+Cohesion: 0.40
+Nodes (4): Branch · Branch · Business Model Clarity, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2054 - "Branch · Business Model Clarity"
+Cohesion: 0.40
+Nodes (4): Branch · Business Model Clarity, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2055 - "Business Model Clarity"
+Cohesion: 0.40
+Nodes (4): Business Model Clarity, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2056 - "Extracting Heroic Routine Data"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Extracting Heroic Routine Data, Provenance, Raw Conversation
+
+### Community 2057 - "Non-lethal Rat Control"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Non-lethal Rat Control, Provenance, Raw Conversation
+
+### Community 2058 - "About Us Page Redesign"
+Cohesion: 0.40
+Nodes (4): About Us Page Redesign, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2059 - "OpenClaw Security Risks"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, OpenClaw Security Risks, Provenance, Raw Conversation
+
+### Community 2060 - "UI/UX Polish Strategy"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, UI/UX Polish Strategy
+
+### Community 2061 - "Forearm Roller Technique"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Forearm Roller Technique, Provenance, Raw Conversation
+
+### Community 2062 - "Google Listing Recovery Path"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Google Listing Recovery Path, Provenance, Raw Conversation
+
+### Community 2063 - "HUANUO Desk Assembly Help"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, HUANUO Desk Assembly Help, Provenance, Raw Conversation
+
+### Community 2064 - "Reading X Post"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Reading X Post
+
+### Community 2065 - "Session Planning Overview"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Session Planning Overview
+
+### Community 2066 - "Zed LazyVim Cheatsheet"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Zed LazyVim Cheatsheet
+
+### Community 2067 - "53-Hour Project Reality"
+Cohesion: 0.40
+Nodes (4): 53-Hour Project Reality, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2068 - "About Us Page Strategy"
+Cohesion: 0.40
+Nodes (4): About Us Page Strategy, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2069 - "Keyboard cleaning solution"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keyboard cleaning solution, Provenance, Raw Conversation
+
+### Community 2070 - "Keyboard Cleaning Tips"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keyboard Cleaning Tips, Provenance, Raw Conversation
+
+### Community 2071 - "Layer Toggle Customization"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Layer Toggle Customization, Provenance, Raw Conversation
+
+### Community 2072 - "Orchestration System Design"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Orchestration System Design, Provenance, Raw Conversation
+
+### Community 2073 - "Roller Ergonomics and Biomechanics"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Roller Ergonomics and Biomechanics
+
+### Community 2074 - "Trackpad Pressure Solution"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Trackpad Pressure Solution
+
+### Community 2075 - "Zed Session Handoffs"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Zed Session Handoffs
+
+### Community 2076 - "Codex vs Claude Speed"
+Cohesion: 0.40
+Nodes (4): Codex vs Claude Speed, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2077 - "Defective Keycap Issue"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Defective Keycap Issue, Provenance, Raw Conversation
+
+### Community 2078 - "JSON envelope hardening"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, JSON envelope hardening, Provenance, Raw Conversation
+
+### Community 2079 - "LinkedIn Project Strategy"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LinkedIn Project Strategy, Provenance, Raw Conversation
+
+### Community 2080 - "Project 2 Deployment Summary"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Project 2 Deployment Summary, Provenance, Raw Conversation
+
+### Community 2081 - "Website Redesign Strategy"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Website Redesign Strategy
+
+### Community 2082 - "Zed Developer Culture"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Zed Developer Culture
+
+### Community 2083 - "Cognitive Outsourcing and AI"
+Cohesion: 0.40
+Nodes (4): Cognitive Outsourcing and AI, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2084 - "Device Not Registering Issue"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Device Not Registering Issue, Provenance, Raw Conversation
+
+### Community 2085 - "Keycap Stem Adapters"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keycap Stem Adapters, Provenance, Raw Conversation
+
+### Community 2086 - "Link shared without response"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Link shared without response, Provenance, Raw Conversation
+
+### Community 2087 - "Siri Contact Resolution"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Siri Contact Resolution
+
+### Community 2088 - "AI in Systems Programming"
+Cohesion: 0.40
+Nodes (4): AI in Systems Programming, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2089 - "Lead Management Architecture"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Lead Management Architecture, Provenance, Raw Conversation
+
+### Community 2090 - "LLC and Laptop Upgrade"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LLC and Laptop Upgrade, Provenance, Raw Conversation
+
+### Community 2091 - "LLC Setup with Tailor Brands"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LLC Setup with Tailor Brands, Provenance, Raw Conversation
+
+### Community 2092 - "MacBook Air Options"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, MacBook Air Options, Provenance, Raw Conversation
+
+### Community 2093 - "MacBook Air vs Framework"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, MacBook Air vs Framework, Provenance, Raw Conversation
+
+### Community 2094 - "Neovim Tutor Prompts"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Neovim Tutor Prompts, Provenance, Raw Conversation
+
+### Community 2095 - "Squarespace Integration Advice"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Squarespace Integration Advice
+
+### Community 2096 - "AI Momentum vs Adversarial Instincts"
+Cohesion: 0.40
+Nodes (4): AI Momentum vs Adversarial Instincts, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2097 - "Arctic Monkeys Riff Comparison"
+Cohesion: 0.40
+Nodes (4): Arctic Monkeys Riff Comparison, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2098 - "Calendly Autofill Issue"
+Cohesion: 0.40
+Nodes (4): Calendly Autofill Issue, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2099 - "Google Business Profile Issues"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Google Business Profile Issues, Provenance, Raw Conversation
+
+### Community 2100 - "Industry Rockstars Research"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Industry Rockstars Research, Provenance, Raw Conversation
+
+### Community 2101 - "LinkedIn Algorithm Shift"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LinkedIn Algorithm Shift, Provenance, Raw Conversation
+
+### Community 2102 - "Little Bird AI vs Granola AI"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Little Bird AI vs Granola AI, Provenance, Raw Conversation
+
+### Community 2103 - "Website and Google Strategy"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Website and Google Strategy
+
+### Community 2104 - "AI Memory and Workflows"
+Cohesion: 0.40
+Nodes (4): AI Memory and Workflows, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2105 - "AI Strategy Audit Consulting"
+Cohesion: 0.40
+Nodes (4): AI Strategy Audit Consulting, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2106 - "Ben Affleck on AI"
+Cohesion: 0.40
+Nodes (4): Ben Affleck on AI, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2107 - "Branch · PR Process and Licensing"
+Cohesion: 0.40
+Nodes (4): Branch · PR Process and Licensing, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2108 - "Data Processing API Idea"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Data Processing API Idea, Provenance, Raw Conversation
+
+### Community 2109 - "Keycap Smoothing Tips"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keycap Smoothing Tips, Provenance, Raw Conversation
+
+### Community 2110 - "About Page"
+Cohesion: 0.40
+Nodes (5): About Page, Bailey's Live Copy (About Intro), Bailey's Live Copy (Owner Letter), New Site About Copy, New Site About Intro
+
+### Community 2111 - "Phase 2: Find & Claim "Water and Stone""
+Cohesion: 0.40
+Nodes (5): Escalation path (if denied or stuck):, Phase 2: Find & Claim "Water and Stone", Scenario A: The profile exists but nobody currently manages it, Scenario B: The profile exists and is claimed by someone (Bailey's old account), What happens next:
+
+### Community 2112 - "Tea Caps Shipping CA"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Tea Caps Shipping CA
+
+### Community 2113 - "Trackpad Handedness Strategy"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Trackpad Handedness Strategy
+
+### Community 2114 - "Agent Command Binds"
+Cohesion: 0.40
+Nodes (4): Agent Command Binds, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2115 - "Benchmark vs Automated Testing"
+Cohesion: 0.40
+Nodes (4): Benchmark vs Automated Testing, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2116 - "Closet Sleepers for AI"
+Cohesion: 0.40
+Nodes (4): Closet Sleepers for AI, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2117 - "Desk Disassembly Tips"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Desk Disassembly Tips, Provenance, Raw Conversation
+
+### Community 2118 - "Hermes Pi Backend Setup"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Hermes Pi Backend Setup, Provenance, Raw Conversation
+
+### Community 2119 - "Keychain Password Sync Issue"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Keychain Password Sync Issue, Provenance, Raw Conversation
+
+### Community 2120 - "Markdown as Source Code"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Markdown as Source Code, Provenance, Raw Conversation
+
+### Community 2121 - "MyAPI and GDDP Integration"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, MyAPI and GDDP Integration, Provenance, Raw Conversation
+
+### Community 2122 - "Raspberry Pi Storage Upgrade"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raspberry Pi Storage Upgrade, Raw Conversation
+
+### Community 2123 - "Complementary System Layers"
+Cohesion: 0.40
+Nodes (4): Complementary System Layers, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2124 - "Raspberry Pi Shutdown Steps"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raspberry Pi Shutdown Steps, Raw Conversation
+
+### Community 2125 - "Branch · Neo4j LangGraph GDD Integration"
+Cohesion: 0.40
+Nodes (4): Branch · Neo4j LangGraph GDD Integration, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2126 - "Neo4j LangGraph GDD Integration"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Neo4j LangGraph GDD Integration, Provenance, Raw Conversation
+
+### Community 2127 - "1) Create links (fastest path from "relevant" to "connected")"
+Cohesion: 0.40
+Nodes (5): 1) Create links (fastest path from "relevant" to "connected"), 2) Preview before you commit (confirm relevance without losing flow), Copy as list of links, Core interactions (the everyday moves), Drag to add a link
+
+### Community 2128 - "Malware Attack Hardening Insights"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Malware Attack Hardening Insights, Provenance, Raw Conversation
+
+### Community 2129 - "Custom Keybinding Support F23"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Custom Keybinding Support F23, Provenance, Raw Conversation
+
+### Community 2130 - "GDDP vs LangGraph"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, GDDP vs LangGraph, Provenance, Raw Conversation
+
+### Community 2131 - "LazyVim Key Mapping"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LazyVim Key Mapping, Provenance, Raw Conversation
+
+### Community 2132 - "PyCodingAgent Overview"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, PyCodingAgent Overview, Raw Conversation
+
+### Community 2133 - "Slayer and Aryan Allegations"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Slayer and Aryan Allegations
+
+### Community 2134 - "Wi-Fi Mesh Experimentation"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Wi-Fi Mesh Experimentation
+
+### Community 2135 - "Laundry Time Pricing"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Laundry Time Pricing, Provenance, Raw Conversation
+
+### Community 2136 - "Adhesive Cable Clip Tips"
+Cohesion: 0.40
+Nodes (4): Adhesive Cable Clip Tips, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2137 - "AI Engineering Shift"
+Cohesion: 0.40
+Nodes (4): AI Engineering Shift, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2138 - "Hermes Setup and Roles"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Hermes Setup and Roles, Provenance, Raw Conversation
+
+### Community 2139 - "Raspberry Pi UASP Testing"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raspberry Pi UASP Testing, Raw Conversation
+
+### Community 2140 - "Tauri vs Electron Debate"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Tauri vs Electron Debate
+
+### Community 2141 - "AI Career Insights"
+Cohesion: 0.40
+Nodes (4): AI Career Insights, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2142 - "ChatGPT connectors explanation"
+Cohesion: 0.40
+Nodes (4): ChatGPT connectors explanation, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2143 - "Git push error fix"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Git push error fix, Provenance, Raw Conversation
+
+### Community 2144 - "Neovim Translation Review"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Neovim Translation Review, Provenance, Raw Conversation
+
+### Community 2145 - "Text Expansion Tool Comments"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Text Expansion Tool Comments
+
+### Community 2146 - "ChatGPT and Siri integration"
+Cohesion: 0.40
+Nodes (4): ChatGPT and Siri integration, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2147 - "Siri's Limitations Explained"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Siri's Limitations Explained
+
+### Community 2148 - "Branch · Training Hermes Agent"
+Cohesion: 0.40
+Nodes (4): Branch · Training Hermes Agent, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2149 - "Graph-Driven Development Insights"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Graph-Driven Development Insights, Provenance, Raw Conversation
+
+### Community 2150 - "Training Hermes Agent"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Training Hermes Agent
+
+### Community 2151 - "plan: continue GDDP and move towards openclaw, last time I believe CIM or cultur"
+Cohesion: 0.40
+Nodes (4): plan: continue GDDP and move towards openclaw, last time I believe CIM or cultur, Provenance, Session Identity, Session Text
+
+### Community 2152 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2153 - "Hey so I have five notes titled TBI 1 through 5, or just TBI and then TBI 2 thro"
+Cohesion: 0.40
+Nodes (4): Hey so I have five notes titled TBI 1 through 5, or just TBI and then TBI 2 thro, Provenance, Session Identity, Session Text
+
+### Community 2154 - "how to use rg or any search tool to find a script or alias that was for the prog"
+Cohesion: 0.40
+Nodes (4): how to use rg or any search tool to find a script or alias that was for the prog, Provenance, Session Identity, Session Text
+
+### Community 2155 - ""Error: The requested module '../models.js' does not provide an export named 'cl"
+Cohesion: 0.40
+Nodes (4): "Error: The requested module '../models.js' does not provide an export named 'cl, Provenance, Session Identity, Session Text
+
+### Community 2156 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2157 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2158 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2159 - "I'm curious if you can check into the functionality of this program and whether"
+Cohesion: 0.40
+Nodes (4): I'm curious if you can check into the functionality of this program and whether, Provenance, Session Identity, Session Text
+
+### Community 2160 - "there is a note with the tbi prefixx, I'm curious if we got this protocol so tha"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, there is a note with the tbi prefixx, I'm curious if we got this protocol so tha
+
+### Community 2161 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2162 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2163 - "The following is an update that i just asked to give us some grounding um i'm go"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, The following is an update that i just asked to give us some grounding um i'm go
+
+### Community 2164 - "View Types"
+Cohesion: 0.40
+Nodes (5): Cards View, List View, Map View, Table View, View Types
+
+### Community 2165 - "The Four Phases"
+Cohesion: 0.40
+Nodes (5): Phase 1: Root Cause Investigation, Phase 2: Pattern Analysis, Phase 3: Hypothesis and Testing, Phase 4: Implementation, The Four Phases
+
+### Community 2166 - "can you help me configure and setup the git diff and git difftool so my editor e"
+Cohesion: 0.40
+Nodes (4): can you help me configure and setup the git diff and git difftool so my editor e, Provenance, Session Identity, Session Text
+
+### Community 2167 - "With MyAPI and GDDP-runtime and GDDP-config becoming public, its time to get my"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, With MyAPI and GDDP-runtime and GDDP-config becoming public, its time to get my
+
+### Community 2168 - "I have  sources for you!"
+Cohesion: 0.40
+Nodes (4): I have  sources for you!, Provenance, Session Identity, Session Text
+
+### Community 2169 - "Look over my current obsidian theme which is a CSS file and that CSS file is spe"
+Cohesion: 0.40
+Nodes (4): Look over my current obsidian theme which is a CSS file and that CSS file is spe, Provenance, Session Identity, Session Text
+
+### Community 2170 - "So I was kind of riffing with Gemini AI and this was after a video of how the bi"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, So I was kind of riffing with Gemini AI and this was after a video of how the bi
+
+### Community 2171 - "ssp minimal, Help me add spacing right now I'm I just ran the following command"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, ssp minimal, Help me add spacing right now I'm I just ran the following command
+
+### Community 2172 - "/Users/saboor/Obsidian/SoloDeveloper/01 Projects/GDDP"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, /Users/saboor/Obsidian/SoloDeveloper/01 Projects/GDDP
+
+### Community 2173 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2174 - "Apply maximum non-destructive compression. Rules:"
+Cohesion: 0.40
+Nodes (4): Apply maximum non-destructive compression. Rules:, Provenance, Session Identity, Session Text
+
+### Community 2175 - "Create a single file interactive html document that is stylized for after and mo"
+Cohesion: 0.40
+Nodes (4): Create a single file interactive html document that is stylized for after and mo, Provenance, Session Identity, Session Text
+
+### Community 2176 - "So I don't understand what this change is to this file and I'm trying to clean i"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, So I don't understand what this change is to this file and I'm trying to clean i
+
+### Community 2177 - "So in a recent session we extracted from the virtual machine a number of claude"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, So in a recent session we extracted from the virtual machine a number of claude
+
+### Community 2178 - "There was a tremendous branch cleanup endeavor I partook in with a claude cloud"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, There was a tremendous branch cleanup endeavor I partook in with a claude cloud
+
+### Community 2179 - "2 things: 1. add commit push the untracked dir? 2. we need to go chrome mode, I"
+Cohesion: 0.40
+Nodes (4): 2 things: 1. add commit push the untracked dir? 2. we need to go chrome mode, I, Provenance, Session Identity, Session Text
+
+### Community 2180 - "Can you do a history search or get history search to find out where did the fold"
+Cohesion: 0.40
+Nodes (4): Can you do a history search or get history search to find out where did the fold, Provenance, Session Identity, Session Text
+
+### Community 2181 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2182 - "The current theme is the midnight blue with pros headers, although I would like"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, The current theme is the midnight blue with pros headers, although I would like
+
+### Community 2183 - "Alright, I'm genuinely lost. I don't know how to fix this main branch"
+Cohesion: 0.40
+Nodes (4): Alright, I'm genuinely lost. I don't know how to fix this main branch, Provenance, Session Identity, Session Text
+
+### Community 2184 - "the current header css theme is pro modern; unfortunately it appends a side bar"
+Cohesion: 0.40
+Nodes (4): Provenance, Session Identity, Session Text, the current header css theme is pro modern; unfortunately it appends a side bar
+
+### Community 2185 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2186 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2187 - "On this machine there's a Python process running I think its related to Needle a"
+Cohesion: 0.40
+Nodes (4): On this machine there's a Python process running I think its related to Needle a, Provenance, Session Identity, Session Text
+
+### Community 2188 - "sb.info.you@gmail.com, Man, I need help. I am trying to accomplish something. I"
+Cohesion: 0.40
+Nodes (4): Provenance, sb.info.you@gmail.com, Man, I need help. I am trying to accomplish something. I, Session Identity, Session Text
+
+### Community 2189 - ""dev-journal: Vault path is not configured. Set DEVJOURNAL_VAULT, create ~/.conf"
+Cohesion: 0.40
+Nodes (4): "dev-journal: Vault path is not configured. Set DEVJOURNAL_VAULT, create ~/.conf, Provenance, Session Identity, Session Text
+
+### Community 2190 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2191 - "Okay. So look at the following image.[Image #2] Basically I want you to decide w"
+Cohesion: 0.40
+Nodes (4): Okay. So look at the following image.[Image #2] Basically I want you to decide w, Provenance, Session Identity, Session Text
+
+### Community 2192 - "Ok so instead of starting a long running conversation which needs to be compacte"
+Cohesion: 0.40
+Nodes (4): Ok so instead of starting a long running conversation which needs to be compacte, Provenance, Session Identity, Session Text
+
+### Community 2193 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.40
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2194 - "Quick factual question about Claude Code (the CLI tool)."
+Cohesion: 0.40
+Nodes (4): Provenance, Quick factual question about Claude Code (the CLI tool)., Session Identity, Session Text
+
+### Community 2195 - "Obsidian schema audit for flat knowledge structure"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Obsidian schema audit for flat knowledge structure, Provenance, Raw Conversation
+
+### Community 2196 - "Optimizing LMN configuration and automation for Beiley"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Optimizing LMN configuration and automation for Beiley, Provenance, Raw Conversation
+
+### Community 2197 - "Building independence while using Claude Max"
+Cohesion: 0.40
+Nodes (4): Building independence while using Claude Max, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2198 - "Base44 app export capabilities"
+Cohesion: 0.40
+Nodes (4): Base44 app export capabilities, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2199 - "Codex vs Claude Max comparison"
+Cohesion: 0.40
+Nodes (4): Codex vs Claude Max comparison, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2200 - "Installing Claude Code CLI on Raspberry Pi"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Installing Claude Code CLI on Raspberry Pi, Provenance, Raw Conversation
+
+### Community 2201 - "Modifying MagSafe rings for keyboard attachment"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Modifying MagSafe rings for keyboard attachment, Provenance, Raw Conversation
+
+### Community 2202 - "Trello board setup for SocialXP project"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Trello board setup for SocialXP project
+
+### Community 2203 - "Using Zed and Tmux simultaneously"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Using Zed and Tmux simultaneously
+
+### Community 2204 - "Watching AI agents work in cmux"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Watching AI agents work in cmux
+
+### Community 2205 - "Language servers on remote backend for Neovim"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Language servers on remote backend for Neovim, Provenance, Raw Conversation
+
+### Community 2206 - "Managing Claude desktop memory usage on limited RAM"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Managing Claude desktop memory usage on limited RAM, Provenance, Raw Conversation
+
+### Community 2207 - "Optimizing data organization with Claude code"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Optimizing data organization with Claude code, Provenance, Raw Conversation
+
+### Community 2208 - "Digma keyboard command key stuck issue"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Digma keyboard command key stuck issue, Provenance, Raw Conversation
+
+### Community 2209 - "Training Pi Coding Agent with OpenClaw automation"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Training Pi Coding Agent with OpenClaw automation
+
+### Community 2210 - "Admitting failure and uncertainty in AI systems"
+Cohesion: 0.40
+Nodes (4): Admitting failure and uncertainty in AI systems, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2211 - "Automating email triage with AI briefings"
+Cohesion: 0.40
+Nodes (4): Automating email triage with AI briefings, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2212 - "Categorizing LLM control-flow decisions for determinism"
+Cohesion: 0.40
+Nodes (4): Categorizing LLM control-flow decisions for determinism, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2213 - "Claude Code concurrent capacity across devices"
+Cohesion: 0.40
+Nodes (4): Claude Code concurrent capacity across devices, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2214 - "Demo packet formatting for Bailey"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Demo packet formatting for Bailey, Provenance, Raw Conversation
+
+### Community 2215 - "Integrating Apple and Google calendars with AI agents"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Integrating Apple and Google calendars with AI agents, Provenance, Raw Conversation
+
+### Community 2216 - "Multi-agent orchestration with Claude and Jules"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Multi-agent orchestration with Claude and Jules, Provenance, Raw Conversation
+
+### Community 2217 - "OpenClaw markdown files and runtime architecture"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, OpenClaw markdown files and runtime architecture, Provenance, Raw Conversation
+
+### Community 2218 - "Lovable AI integration for keyboard shortcuts project"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Lovable AI integration for keyboard shortcuts project, Provenance, Raw Conversation
+
+### Community 2219 - "Using Claude in Chrome for productivity"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Using Claude in Chrome for productivity
+
+### Community 2220 - "Vim vs Helix performance comparison"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Vim vs Helix performance comparison
+
+### Community 2221 - "Implementing skill tree system with Obsidian"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Implementing skill tree system with Obsidian, Provenance, Raw Conversation
+
+### Community 2222 - "SAB upgrade"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, SAB upgrade
+
+### Community 2223 - "Dygma key tap hold configurations  for accidental triggers"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Dygma key tap hold configurations  for accidental triggers, Provenance, Raw Conversation
+
+### Community 2224 - "Dynamic pricing and market manipulation concerns"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Dynamic pricing and market manipulation concerns, Provenance, Raw Conversation
+
+### Community 2225 - "Filtering meta-commentary in RAG retrieval"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Filtering meta-commentary in RAG retrieval, Provenance, Raw Conversation
+
+### Community 2226 - "Finding a CPA for Bailey's business taxes"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Finding a CPA for Bailey's business taxes, Provenance, Raw Conversation
+
+### Community 2227 - "Karabiner and Thor for hyper key app launching"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Karabiner and Thor for hyper key app launching, Provenance, Raw Conversation
+
+### Community 2228 - "LinkedIn presence and incomplete projects"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LinkedIn presence and incomplete projects, Provenance, Raw Conversation
+
+### Community 2229 - "Rebuilding search indexes from normalized corpus versions"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Rebuilding search indexes from normalized corpus versions
+
+### Community 2230 - "Weak ties and networking value"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Weak ties and networking value
+
+### Community 2231 - "Character revealed through behavior toward others"
+Cohesion: 0.40
+Nodes (4): Character revealed through behavior toward others, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2232 - "LibreWolf vs Brave memory efficiency"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, LibreWolf vs Brave memory efficiency, Provenance, Raw Conversation
+
+### Community 2233 - "Meeting transcription and action item extraction"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Meeting transcription and action item extraction, Provenance, Raw Conversation
+
+### Community 2234 - "Website refresh and review strategy for landscaping business"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Website refresh and review strategy for landscaping business
+
+### Community 2235 - "Building a personal RAG system from years of notes"
+Cohesion: 0.40
+Nodes (4): Building a personal RAG system from years of notes, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2236 - "Missing downloaded Google Drive file"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Missing downloaded Google Drive file, Provenance, Raw Conversation
+
+### Community 2237 - "Understanding Claude skills and GSD superpowers"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Understanding Claude skills and GSD superpowers
+
+### Community 2238 - "AI consulting vs implementation services"
+Cohesion: 0.40
+Nodes (4): AI consulting vs implementation services, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2239 - "Magnetic AI voice recorder and MagSafe iPhone case"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Magnetic AI voice recorder and MagSafe iPhone case, Provenance, Raw Conversation
+
+### Community 2240 - "Coordinating synchronous and asynchronous coding agents"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Coordinating synchronous and asynchronous coding agents, Provenance, Raw Conversation
+
+### Community 2241 - "Gemini's pattern recognition vs ChatGPT's web search limitations"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Gemini's pattern recognition vs ChatGPT's web search limitations, Provenance, Raw Conversation
+
+### Community 2242 - "Upgrading index.html with NeoVim use cases and interactive elements"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Upgrading index.html with NeoVim use cases and interactive elements
+
+### Community 2243 - "Balancing caution with action in agent development"
+Cohesion: 0.40
+Nodes (4): Balancing caution with action in agent development, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2244 - "Social XP market positioning strategy"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Social XP market positioning strategy
+
+### Community 2245 - "Immediate steps to secure against NPM and PyPI malware"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Immediate steps to secure against NPM and PyPI malware, Provenance, Raw Conversation
+
+### Community 2246 - "Missed meeting and calendar communication expectations"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Missed meeting and calendar communication expectations, Provenance, Raw Conversation
+
+### Community 2247 - "Using $1000 in Google Vertex AI credits"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Using $1000 in Google Vertex AI credits
+
+### Community 2248 - "Appeal silence and starting fresh on Yelp"
+Cohesion: 0.40
+Nodes (4): Appeal silence and starting fresh on Yelp, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2249 - "Extracting development links from Discord messages"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Extracting development links from Discord messages, Provenance, Raw Conversation
+
+### Community 2250 - "Website cost for a haircut business in 2026"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Website cost for a haircut business in 2026
+
+### Community 2251 - "Claude Code's permission harness behavior"
+Cohesion: 0.40
+Nodes (4): Claude Code's permission harness behavior, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2252 - "Fixing Universal Control between iPad and Mac"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Fixing Universal Control between iPad and Mac, Provenance, Raw Conversation
+
+### Community 2253 - "Hermes agent harness and model compliance failures"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Hermes agent harness and model compliance failures, Provenance, Raw Conversation
+
+### Community 2254 - "Delegator shutdown semantics gap"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Delegator shutdown semantics gap, Provenance, Raw Conversation
+
+### Community 2255 - "Harness routing beyond tool selection"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Harness routing beyond tool selection, Provenance, Raw Conversation
+
+### Community 2256 - "Raspberry Pi SSD upgrade performance boost"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raspberry Pi SSD upgrade performance boost, Raw Conversation
+
+### Community 2257 - "Resuming previous work on version update"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Resuming previous work on version update
+
+### Community 2258 - "Google Antigravity agent manager memory optimization"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Google Antigravity agent manager memory optimization, Provenance, Raw Conversation
+
+### Community 2259 - "Testing Pi with LLM prose architecture extensions"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Testing Pi with LLM prose architecture extensions
+
+### Community 2260 - "Comparing Lovable vs HTML/Claude outputs"
+Cohesion: 0.40
+Nodes (4): Comparing Lovable vs HTML/Claude outputs, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2261 - "Context handoff design system"
+Cohesion: 0.40
+Nodes (4): Context handoff design system, Conversation Identity, Provenance, Raw Conversation
+
+### Community 2262 - "💬 So if you... you've been aroun…"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, 💬 So if you... you've been aroun…
+
+### Community 2263 - "Two extremes of video game mechanics"
+Cohesion: 0.40
+Nodes (4): Conversation Identity, Provenance, Raw Conversation, Two extremes of video game mechanics
+
+### Community 2264 - "BOOTSTRAP.md - Hello, World"
+Cohesion: 0.40
+Nodes (5): After You Know Who You Are, BOOTSTRAP.md - Hello, World, Connect (Optional), The Conversation, When You're Done
+
+### Community 2265 - "OpenClaw Operations — Post-Recovery Baseline"
+Cohesion: 0.40
+Nodes (5): 1. Final Topology, 2. Recovery Timeline, 3. Final Known-Good State, 4. Key Identifiers, OpenClaw Operations — Post-Recovery Baseline
+
+### Community 2266 - "ANTIGRAVITY"
+Cohesion: 0.40
+Nodes (5): ANTIGRAVITY, Execution Standard, Load Order, Minimum Artifact Set, Required Operating Behavior
+
+### Community 2267 - "ANTIGRAVITY"
+Cohesion: 0.40
+Nodes (5): ANTIGRAVITY, Execution Standard, Load Order, Minimum Artifact Set, Required Operating Behavior
+
+### Community 2268 - "Workflow 1: Task Intake"
+Cohesion: 0.40
+Nodes (5): Antigravity Workflows, Inputs, Output, Steps, Workflow 1: Task Intake
+
+### Community 2269 - "<environment_context>"
+Cohesion: 0.40
+Nodes (4): <environment_context>, first-vm, Provenance, Session Identity
+
+### Community 2270 - "My_DevInfra - Project Anchor"
+Cohesion: 0.40
+Nodes (5): Core Tech Stack, Current State of the Project, Main Unsolved Problems, My_DevInfra - Project Anchor, Summary
+
+### Community 2271 - "My_DevInfra - Project Anchor"
+Cohesion: 0.40
+Nodes (5): Core Tech Stack, Current State of the Project, Main Unsolved Problems, My_DevInfra - Project Anchor, Summary
+
+### Community 2272 - "My_DevInfra - Project Anchor"
+Cohesion: 0.40
+Nodes (5): Core Tech Stack, Current State of the Project, Main Unsolved Problems, My_DevInfra - Project Anchor, Summary
+
+### Community 2273 - "10. First 2–4 Week Execution Plan"
+Cohesion: 0.40
+Nodes (5): 10. First 2–4 Week Execution Plan, Week 1, Week 2, Week 3, Week 4
+
+### Community 2274 - "8. Role Definition + Boundaries"
+Cohesion: 0.40
+Nodes (5): 8.1 Define Responsibilities, 8.2 Define Boundaries, 8.3 Track Work Clearly, 8.4 Review Cadence, 8. Role Definition + Boundaries
+
+### Community 2275 - "Project-note"
+Cohesion: 0.40
+Nodes (5): 📌 Context / Plan, 📎 Links / Assets, ✅ Next Actions, Outcome, Project-note
+
+### Community 2276 - "Water & Stone: Game Plan & Next Steps"
+Cohesion: 0.40
+Nodes (5): Phase 1: Getting Set Up & 1099 Stuff, Phase 2: The Website Overhaul, Phase 3: The LMN & QuickBooks "Holy Grail", Phase 4: Mastering the Schedule & Leads, Water & Stone: Game Plan & Next Steps
+
+### Community 2277 - "Trigger Model"
+Cohesion: 0.40
+Nodes (5): Checkpoints, Human Action, Inspect, Trigger Model, Write Down
+
+### Community 2278 - "Context Refinery: RAG Taxonomy & Rules"
+Cohesion: 0.40
+Nodes (5): 1. Maturity Status, 2. Document Types (`doc_type`), 3. Source Systems, 4. Source Types, Context Refinery: RAG Taxonomy & Rules
+
+### Community 2279 - "AGENTS.md"
+Cohesion: 0.40
+Nodes (5): AGENTS.md, Command formatting rule, Example, General rule, Required command locations
+
+### Community 2280 - "Target Output Format for Khoj Ingestion"
+Cohesion: 0.40
+Nodes (5): Critical Rules, Example File: `auth-flow-brainstorm.md`, Markdown Body Order (After `---`), Target Output Format for Khoj Ingestion, YAML Field Order (Mandatory)
+
+### Community 2281 - "Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026)"
+Cohesion: 0.40
+Nodes (5): Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026), Evidence from the Deep Dive, Overview & The Portfolio Narrative, Source Entity 1: GDDP-Runtime Git History & Documentation, Source Entity 2: AI Session Corpus (`ai-session-corpus/` & DBs)
+
+### Community 2282 - "Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026)"
+Cohesion: 0.40
+Nodes (5): Deep Dive: GDDP-Runtime and Ai-Session-Corpus Audit (May 2026), Evidence from the Deep Dive, Overview & The Portfolio Narrative, Source Entity 1: GDDP-Runtime Git History & Documentation, Source Entity 2: AI Session Corpus (`ai-session-corpus/` & DBs)
+
+### Community 2284 - ""I cried tears of joy the night I fiinally figured out multi-agent orchestration" article.md"
+Cohesion: 0.40
+Nodes (3): Notes on Framing of Article, Related articles or links, [["I cried tears of joy the night I fiinally figured out multi-agent orchestration" article]]
+
+### Community 2285 - "Level A, B, and C of Sab Solo.md"
+Cohesion: 0.40
+Nodes (4): A-tier for Introduction (cheapest), B-tier Systems for Significant Savings time/token Cost, C-tier Frontier Agency / Autonomy and Life Assistance, Level A, B, and C of Sab Solo
+
+### Community 2286 - "LLM Payload Workflow.md"
+Cohesion: 0.40
+Nodes (4): "Append Clipboard to Obsidian mailbox" Action, H2: Payload Start Header (timestamp + Optional metadata), [[LLM Payload Mailbox]], Payload Architecture
+
+### Community 2287 - "Mission 001: Control Plane Bootstrap"
+Cohesion: 0.40
+Nodes (5): Definition of Done, Deliverables, Mission 001: Control Plane Bootstrap, Non-Goals, Objective
+
+### Community 2288 - "Three-Layer Project Model"
+Cohesion: 0.40
+Nodes (4): The Authorship Split, The Layers, Three-Layer Project Model, Why This Matters
+
+### Community 2289 - "03 — Queue Design"
+Cohesion: 0.40
+Nodes (4): 03 — Queue Design, Queue Record, States, Storage
+
+### Community 2290 - "04 — Classifier Stage"
+Cohesion: 0.40
+Nodes (4): 04 — Classifier Stage, Category Values (examples), Output Schema, Questions It Must Answer
+
+### Community 2291 - "05 — Scope Check"
+Cohesion: 0.40
+Nodes (4): 05 — Scope Check, Possible Outcomes, Questions It Asks, Why This Layer Exists
+
+### Community 2292 - "06 — Executor Routing"
+Cohesion: 0.40
+Nodes (4): 06 — Executor Routing, Decision Rules, Router Output, Routing Matrix
+
+### Community 2293 - "09 — Artifact Contract"
+Cohesion: 0.40
+Nodes (4): 09 — Artifact Contract, decision.md Format, Folder Layout, graph-update.yaml Format
+
+### Community 2294 - "GDD Naming and Glossary"
+Cohesion: 0.40
+Nodes (4): Conceptual Stack, Full Glossary, GDD Naming and Glossary, The Core Design Rule
+
+### Community 2295 - "Minimum Contract for a Good GDD Project Graph"
+Cohesion: 0.40
+Nodes (4): **Each Node Must define**, Minimum Contract for a Good GDD Project Graph, **`project.yaml` Must define**, **Required structure**
+
+### Community 2296 - "MyAPI rebuild anchor note.md"
+Cohesion: 0.40
+Nodes (4): Active Workstreams, Constraints, Objective, Open Questions / Risks
+
+### Community 2297 - "Retrieval Benchmark v0 Run After Second Anchor Pass — 2026-04-15"
+Cohesion: 0.40
+Nodes (4): Notable Outcomes, Readout, Remaining Gaps, Retrieval Benchmark v0 Run After Second Anchor Pass — 2026-04-15
+
+### Community 2298 - "Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15"
+Cohesion: 0.40
+Nodes (4): Notable Improvements, Remaining Weak Spots, Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15, Takeaway
+
+### Community 2299 - "Benchmark Run — 2026-04-15 Post Anchor Rerun"
+Cohesion: 0.40
+Nodes (4): Benchmark Run — 2026-04-15 Post Anchor Rerun, Takeaway, What improved, What is still weak
+
+### Community 2300 - "Benchmark Run — 2026-04-16 Canonical Anchor"
+Cohesion: 0.40
+Nodes (4): Benchmark Run — 2026-04-16 Canonical Anchor, Takeaway, What changed, What stayed the same
+
+### Community 2301 - "Benchmark Run — 2026-04-16 Narrow Anchors"
+Cohesion: 0.40
+Nodes (4): Benchmark Run — 2026-04-16 Narrow Anchors, Still imperfect, Takeaway, What improved
+
+### Community 2302 - "Known Issues in v0.2 (updated in the local working copy)"
+Cohesion: 0.40
+Nodes (5): 1. Resolved: check-jsonschema stdout leak into validate output, 2. Resolved: verification now waits for a zero `pi` exit code, 3. No end-to-end live test against actual `pi` yet, 4. Deferred from the audit (not yet implemented, tracked for later), Known Issues in v0.2 (updated in the local working copy)
+
+### Community 2303 - "Self-audit summary"
+Cohesion: 0.40
+Nodes (5): Architecture / trajectory, Self-audit summary, Strong: bounded local execution, Strong: extension layer as guardrails, Strong: verifier/subagent trajectory
+
+### Community 2304 - "Proposed plan"
+Cohesion: 0.40
+Nodes (5): Assistant, Phase 0 — Fix and harden current seven extensions, Phase 1 — Define the orchestration contract, Proposed plan, Work items
+
+### Community 2305 - "Weaknesses"
+Cohesion: 0.40
+Nodes (5): Weak: intake and routing still immature, Weak: observability is good per-run, weaker cross-run, Weak: safety model is partial, Weak: verification is still partly advisory, Weaknesses
+
+### Community 2306 - "MEMORY.md - Curated Durable Memory"
+Cohesion: 0.40
+Nodes (5): Assistant, Inference Guidelines, MEMORY.md - Curated Durable Memory, Operating Decisions, Reference Index
+
+### Community 2307 - "Pi Anchor.md"
+Cohesion: 0.40
+Nodes (4): Active Workstreams, Constraints, Objective, Open Questions / Risks
+
+### Community 2308 - "Co-Design Group Prep.md"
+Cohesion: 0.40
+Nodes (4): Be 80% Observer, 20% Precise Interrupter, Before You Join (30–45 Minutes total), High-leverage Questions to Ask (use sparingly), Your "groundskeeper" Phrases (gentle but firm)
+
+### Community 2309 - "4. Email + Domain Cleanup"
+Cohesion: 0.40
+Nodes (5): 4.1 Audit Current Business Email, 4.2 Design Cleaner Email Structure, 4.3 Preserve Continuity, 4.4 Domain Decision, 4. Email + Domain Cleanup
+
+### Community 2310 - "5. Operations Systems Assessment"
+Cohesion: 0.40
+Nodes (5): 5.1 Get Tool Access, 5.2 Map the Real Workflow, 5.3 Identify Friction Points, 5.4 Create Workflow Map, 5. Operations Systems Assessment
+
+### Community 2311 - "2026-the-emergeing-paradigm-the-next-2-years-of-software-development"
+Cohesion: 0.40
+Nodes (4): 2026-the-emergeing-paradigm-the-next-2-years-of-software-development, Context, Links, Subtasks
+
+### Community 2312 - "MIke - Resilience and an Engineered Approach"
+Cohesion: 0.40
+Nodes (4): Diya Did Everything Right, so why the Struggle?, MIke - Resilience and an Engineered Approach, The Actual Story of failing upwards, The Lesson for You Specifically
+
+### Community 2313 - "Big vs little asses.md"
+Cohesion: 0.40
+Nodes (4): Big Booty Loves, Experiences with Big, Experiences with Small, Small Booty Loves
+
+### Community 2314 - "How do I approach Ivy over the same poly-open BS.md"
+Cohesion: 0.40
+Nodes (4): Did I Make Sacrifices?, Ideal Scenarios, My Ideal Scenario, Oct 1st, 2024 - Wait after We Edge
+
+### Community 2315 - "In the name of variety pure cute and petiteness.md"
+Cohesion: 0.40
+Nodes (4): DD, Jewel Diamant, Petite and Cute and Small, Random Petite
+
+### Community 2316 - "Managing self-disclosure means knowing your motives, audience, and timing when self-disclosing.md"
+Cohesion: 0.40
+Nodes (4): [[02 Areas/Confidential/Relationships/Involuntary self-disclosure is very common]], 1. **Be** **aware** Of Your **intentions**. *Consider Your motives.*, Consider Your Audience → Family, Girlfriend, Etc, Overview → Be Mindful of Why, Who, how and when You "share"
+
+### Community 2317 - "post breakup being cheated on and rejected.md"
+Cohesion: 0.40
+Nodes (4): It Wasn't cheating/rejection, but, The Porn I Liked then Vs now, What I Must Do: Find Cis Bitches, Double Dip with Them and Ivy wherever I Can, What I Must Do: Find Cis Bitches, Double Dip with Them and Ivy wherever I Can
+
+### Community 2318 - "post breakup being cheated on and rejected and lied to about sexual health.md"
+Cohesion: 0.40
+Nodes (4): Hot Porn Video Title, but also what Happened, It Wasn't cheating/rejection, but, What I Must Do: Find Cis Bitches, Double Dip with Them and Ivy wherever I Can, What I Must Do: Find Cis Bitches, Double Dip with Them and Ivy wherever I Can
+
+### Community 2319 - "Thoughts with, for, and about Jess.md"
+Cohesion: 0.40
+Nodes (4): [[02 Areas/Confidential/Relationships/Getting Rimmed]], Mutual Intitiation, Or, [this instead](https://www.eporner.com/video-zpg4fj4DaZR/outdoor-fucking-with-a-horny-big-ass-redhead-mil-u00e1n-rodr-u00edguez-devil-khloee/), [[Playing with it vs Sucking it]]
+
+### Community 2320 - "Feb Roundtable Element 2025 on Tragic Cosmic Joke and Addictions and Commitments.md"
+Cohesion: 0.40
+Nodes (4): [[02 Areas/Confidential/SMW/General MW Element Delivery for Meetings Overview and Notes]], All Call Notes for This Element, Element per the Google Doc (Script), Opening
+
+### Community 2321 - "Wildmen March 2025 In-Person Meeting.md"
+Cohesion: 0.40
+Nodes (4): Agenda Flow, Meeting 3-4 Hours Buy-in, We Are here to Transition from a FVS to a MVS, Zoom Standards
+
+### Community 2322 - "Accountability and Community Service"
+Cohesion: 0.40
+Nodes (4): Accountability and Community Service, Came up $4,000 short, Clean-up → Follow-up with People I Need to, Set a Goal of $200 or $250
+
+### Community 2323 - "Tuesday Elements Clearing Call.md"
+Cohesion: 0.40
+Nodes (4): Agreements, Has Book to Becoming Prepared, Purpose of Not So Round Table, Short Term is a Job to Do
+
+### Community 2324 - "Wildmen 2024 Nov In-Person Meeting.md"
+Cohesion: 0.40
+Nodes (4): Clearing Calls, Guest Event Debrief, Homework, Strike is only 15 Minutes
+
+### Community 2325 - "Pre-Meeting Preparation"
+Cohesion: 0.40
+Nodes (4): Homework, Post-Meeting Reflection, Pre-Meeting Preparation, The Game
+
+### Community 2326 - "Night Shift -Autonomous Safe Plan"
+Cohesion: 0.40
+Nodes (4): 1) Sleep-Safe (recommended), 2) Throughput Mode, Definition of Done (by morning), Night Shift -Autonomous Safe Plan
+
+### Community 2327 - "AI/OpenClaw-skills-info-research-and-preparation.md"
+Cohesion: 0.40
+Nodes (4): Gemini - One-shot Q&A, Etc, Gh Issues, GitHub, Obsidian
+
+### Community 2328 - "My Obsidian Tasks Full Calendar synchronized with Apple apps setup.md"
+Cohesion: 0.40
+Nodes (4): Do This **outside Obsidian** (important), **Guardrails (important)**, 🧠 How to Use it (don't overthink), **Next Small wins**
+
+### Community 2329 - "My-own-custom-Jules-because-fuck-Google"
+Cohesion: 0.40
+Nodes (4): Context, Links, My-own-custom-Jules-because-fuck-Google, Subtasks
+
+### Community 2330 - "Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM"
+Cohesion: 0.40
+Nodes (4): Context, Links, Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM, Subtasks
+
+### Community 2331 - "Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM"
+Cohesion: 0.40
+Nodes (4): Context, Links, Neovim-and-Obsidian-Integration-explained-by-Claude-CLI-since-Claude-desktop-is-2GB-RAM, Subtasks
+
+### Community 2332 - "Navigating the File Explorer (Neo-tree)"
+Cohesion: 0.40
+Nodes (4): Closing and Quitting, Initiating from Leader Key, Navigating the File Explorer (Neo-tree), Snooping Around" (Buffers vs. Windows)
+
+### Community 2333 - "Navigating the File Explorer (Neo-tree)"
+Cohesion: 0.40
+Nodes (4): Closing and Quitting, Initiating from Leader Key, Navigating the File Explorer (Neo-tree), Snooping Around" (Buffers vs. Windows)
+
+### Community 2334 - "nvim - No more lazyvim logo if you want it.md"
+Cohesion: 0.40
+Nodes (4): 1. The Theme Choice: Tokyo Night, 2. Matching Your Starship Colors, 3. Making the Dashboard Yours, Why This Matters for Your Workflow
+
+### Community 2335 - "nvim - No more lazyvim logo if you want it 1.md"
+Cohesion: 0.40
+Nodes (4): 1. The Theme Choice: Tokyo Night, 2. Matching Your Starship Colors, 3. Making the Dashboard Yours, Why This Matters for Your Workflow
+
+### Community 2336 - "Night Shift -Autonomous Safe Plan"
+Cohesion: 0.40
+Nodes (4): 1) Sleep-Safe (recommended), 2) Throughput Mode, Definition of Done (by morning), Night Shift -Autonomous Safe Plan
+
+### Community 2338 - "Quick Reference"
+Cohesion: 0.40
+Nodes (5): Append to Today's Daily Note, Create a Quick Inbox Note, List Daily Notes, Quick Reference, Search Your Vault
+
+### Community 2339 - "Job Class Matrix (v1)"
+Cohesion: 0.40
+Nodes (4): Current Node Notes (version-sensitive), Job Class Matrix (v1), Matrix, Routing Rules
+
+### Community 2340 - "Developer Infrastructure/OpenClaw-skills-info-research-and-preparation.md"
+Cohesion: 0.40
+Nodes (4): Gemini - One-shot Q&A, Etc, Gh Issues, GitHub, Obsidian
+
+### Community 2341 - "To Be Done (Worthy)"
+Cohesion: 0.40
+Nodes (4): Notes, Sources, Summary, To Be Done (Worthy)
+
+### Community 2342 - "Configure Swish's modifier keys.md"
+Cohesion: 0.40
+Nodes (4): Configure Swish's modifier keys, Context, Links, Subtasks
+
+### Community 2343 - "Mouse keycodes"
+Cohesion: 0.40
+Nodes (4): Arrow keys (+ modifiers) keycodes, HRM Style Arrow Mods, Hyper Key + Letter, Mouse keycodes
+
+### Community 2344 - "Barbell Curl"
+Cohesion: 0.40
+Nodes (4): Barbell Curl, Exercise History, Notes, Workouts
+
+### Community 2345 - "Banded 45s"
+Cohesion: 0.40
+Nodes (4): Banded 45s, Exercise History, Notes, Workouts
+
+### Community 2346 - "Bayesian Curls"
+Cohesion: 0.40
+Nodes (4): Bayesian Curls, Exercise History, Notes, Workouts
+
+### Community 2347 - "Cable Crossovers"
+Cohesion: 0.40
+Nodes (4): Cable Crossovers, Exercise History, Notes, Workouts
+
+### Community 2348 - "Cable-tate-press"
+Cohesion: 0.40
+Nodes (4): Cable-tate-press, Exercise History, Notes, Workouts
+
+### Community 2349 - "Clavicular-cable-flye"
+Cohesion: 0.40
+Nodes (4): Clavicular-cable-flye, Exercise History, Notes, Workouts
+
+### Community 2350 - "Cross Body Tricep Extension Back Braced"
+Cohesion: 0.40
+Nodes (4): Cross Body Tricep Extension Back Braced, Exercise History, Notes, Workouts
+
+### Community 2351 - "Hip Brace Cable Lat Rows"
+Cohesion: 0.40
+Nodes (4): Exercise History, Hip Brace Cable Lat Rows, Notes, Workouts
+
+### Community 2352 - "Hip Thrust"
+Cohesion: 0.40
+Nodes (4): Exercise History, Hip Thrust, Notes, Workouts
+
+### Community 2353 - "Leg Extension Unilateral"
+Cohesion: 0.40
+Nodes (4): Exercise History, Leg Extension Unilateral, Notes, Workouts
+
+### Community 2354 - "Machine Laterals"
+Cohesion: 0.40
+Nodes (4): Exercise History, Machine Laterals, Notes, Workouts
+
+### Community 2355 - "Machine Rows"
+Cohesion: 0.40
+Nodes (4): Exercise History, Machine Rows, Notes, Workouts
+
+### Community 2356 - "Smith Machine Kelso Shrugs"
+Cohesion: 0.40
+Nodes (4): Exercise History, Notes, Smith Machine Kelso Shrugs, Workouts
+
+### Community 2357 - "Smith-press-behind-neck"
+Cohesion: 0.40
+Nodes (4): Exercise History, Notes, Smith-press-behind-neck, Workouts
+
+### Community 2358 - "Supinated Grip Lat Pulldowns"
+Cohesion: 0.40
+Nodes (4): Exercise History, Notes, Supinated Grip Lat Pulldowns, Workouts
+
+### Community 2359 - "Upper Back Dumbbell Row"
+Cohesion: 0.40
+Nodes (4): Exercise History, Notes, Upper Back Dumbbell Row, Workouts
+
+### Community 2360 - "Hermes install day 0 config.md"
+Cohesion: 0.40
+Nodes (4): Context, Hermes Install Day 0 Config, Links, Subtasks
+
+### Community 2361 - "Learn Neovim Configuration via Plugins and their Docs.md"
+Cohesion: 0.40
+Nodes (4): 1. The "Deep Dive" (Enter Key), 2. Understanding Your "Powerhouse" Plugins, 3. "Not Loaded" Vs "Loaded", My Suggestion for Your next "Dig"
+
+### Community 2362 - "Claude Skills are reusable components for specific tasks and specialized functions.md"
+Cohesion: 0.40
+Nodes (4): [[02 Areas/Learning/Creating a Claude Skills UI prompt library]], [[02 Areas/Learning/Gemini Gems are equivalent to Claude Skills]], Claude Skills October 2025, Key Features Include
+
+### Community 2363 - "Learn by doing AND by Reviewing.md"
+Cohesion: 0.40
+Nodes (4): [[Focus on quality over quantity for learning code patterns and how to solve code problems]], [[Mix Practice with Theory]], Solve then Re-solve, Study Solutions Thoughtfully
+
+### Community 2364 - "Using the Filesystem MCP Server"
+Cohesion: 0.40
+Nodes (4): Config Storage: `~/.claude.json`, **Management & Troubleshooting**, Purpose: Technical Insights into Vault, Using the Filesystem MCP Server
+
+### Community 2365 - "Styx-and-NeoOrg-as-Per-Document-Language-Exploration"
+Cohesion: 0.40
+Nodes (4): Context, Links, Styx-and-NeoOrg-as-Per-Document-Language-Exploration, Subtasks
+
+### Community 2366 - "**The Workplace Cue Hierarchy**"
+Cohesion: 0.40
+Nodes (4): - **Level 1: The Thoracic Root** –, - **Level 2: The Shoulder Anchor** –, - **Level 3: The Wrist/Knuckle Line** –, **The Workplace Cue Hierarchy**
+
+### Community 2367 - "--- STEP 2: Install Node.js 22 (Required for OpenClaw) ---"
+Cohesion: 0.40
+Nodes (5): Install Node and NPM, --- STEP 2: Install Node.js 22 (Required for OpenClaw) ---, The Default `apt Install Nodejs'` is Often Too Old (v18 or v20), This Grabs the V22 Setup Script from NodeSource, Verify Versions (Should Be v22.x and v10.x)
+
+### Community 2368 - "Shortcuts Anchor for smart, evidence-driven, useful shortcuts and automations.md"
+Cohesion: 0.40
+Nodes (4): Active Workstreams, Constraints, Objective, Open Questions / Risks
+
+### Community 2369 - "17 Claude Code SubAgents examples with templates.md"
+Cohesion: 0.40
+Nodes (3): 17 Claude Code SubAgents Examples (With Templates [You Can Use Immediately](https://medium.com/@joe.njenga/17-claude-code-subagents-examples-with-templates-you-can-use-immediately-c70ef5567308)), Same Author: [[Turn Claude Code SubAgents personal coding army]], How I'm Using Claude Code Sub Agents (Newest Feature) As My Coding Army
+
+### Community 2370 - "AGY-models"
+Cohesion: 0.40
+Nodes (4): AGY-models, Context, Links, Subtasks
+
+### Community 2371 - "AI Code Reviews are CRUCIAL as an aspiring developer.md"
+Cohesion: 0.40
+Nodes (3): Reflections on `"Don't read code"`, Related DevInfra Notes, Related DevInfra Notes
+
+### Community 2372 - "Combing-through-SmallPi-WhatsApp-thread-for-useful-BDR,-SCA,-Obsidian,-OC-config,-and-more,-info"
+Cohesion: 0.40
+Nodes (4): Combing-through-SmallPi-WhatsApp-thread-for-useful-BDR,-SCA,-Obsidian,-OC-config,-and-more,-info, Context, Links, Subtasks
+
+### Community 2373 - "Part 2 — Getting Started (First 30 Minutes)"
+Cohesion: 0.40
+Nodes (5): 2.1 Installation & Initial Setup, 2.2 Choosing Your Agent Mode, 2.3 Installing the Chrome Extension, 2.4 Security Configuration (Do This First), Part 2 — Getting Started (First 30 Minutes)
+
+### Community 2374 - "Part 4 — Persistent Context: GEMINI.md, Rules & Workflows"
+Cohesion: 0.40
+Nodes (5): 4.1 The GEMINI.md File, 4.2 Rules vs. Workflows, 4.3 Example Rules for Your Projects, 4.4 Example Workflows (Saved Prompts), Part 4 — Persistent Context: GEMINI.md, Rules & Workflows
+
+### Community 2375 - "Part 6 — Beyond Code: Non-Developer Use Cases"
+Cohesion: 0.40
+Nodes (5): 6.1 Obsidian Vault Management, 6.2 Research & Knowledge Work, 6.3 File & System Tasks, 6.4 Content & Documentation, Part 6 — Beyond Code: Non-Developer Use Cases
+
+### Community 2376 - "Part 8 — Your First Real Workflows (Hands-On)"
+Cohesion: 0.40
+Nodes (5): 8.1 Beginner: Build a Contact Form, 8.2 Intermediate: Full Feature Development, 8.3 Advanced: Multi-Step Autonomous Task, 8.4 Non-Code: Obsidian Vault Cleanup, Part 8 — Your First Real Workflows (Hands-On)
+
+### Community 2377 - "NotebookLM Artifact User Guide (CLI)"
+Cohesion: 0.40
+Nodes (4): 1. Generation, 2. Monitoring Status, 3. Downloading, NotebookLM Artifact User Guide (CLI)
+
+### Community 2378 - "3. Node CLI Commands — Full Reference"
+Cohesion: 0.40
+Nodes (5): 3.1 Checking Node Status (Always Run This on Big Pi), 3.2 Targeting a Specific Node for Execution, 3.3 Node Registration and Management, 3.4 Node-Aware Diagnostics, 3. Node CLI Commands — Full Reference
+
+### Community 2379 - "TOOLS.md - Local Notes"
+Cohesion: 0.40
+Nodes (4): Examples, TOOLS.md - Local Notes, What Goes Here, Why Separate?
+
+### Community 2380 - "Vision B First Task Report"
+Cohesion: 0.40
+Nodes (4): Gateway Status, OpenClaw Status, System, Vision B First Task Report
+
+### Community 2381 - "Vision B First Task Report"
+Cohesion: 0.40
+Nodes (4): Gateway Status, OpenClaw Status, System, Vision B First Task Report
+
+### Community 2382 - "Antigravity login to VM was failing because 10GB folder filled up.md"
+Cohesion: 0.40
+Nodes (3): [[03 Resources/Ghostty copy screen commands creates historical artifacts of your terminal session]], 💿 Storage & Partition Fix, Example from [[Antigravity login to VM was failing because 10GB folder filled up|agy clean up]]
+
+### Community 2383 - "CLI Workflow.md"
+Cohesion: 0.40
+Nodes (3): CLI Workflow, Notes in this area, Terminal Workflow
+
+### Community 2384 - "Health.md"
+Cohesion: 0.40
+Nodes (3): Hand Therapy, Health, Notes in this area
+
+### Community 2385 - "Espanso How-to Guide for Adding Matches"
+Cohesion: 0.40
+Nodes (4): Context, Espanso How-to Guide for Adding Matches, Links, Subtasks
+
+### Community 2386 - "Create `vault_doctor/` Directory."
+Cohesion: 0.40
+Nodes (4): Create `vault_doctor/` Directory., Develop Vault Analysis Tool (`src/doctor.py`), Feature 1: The Triage Strategist. Scan the "Inbox/Archive" Folder (the 3700 notes)., Initialize Vault Doctor Project
+
+### Community 2387 - "Creating Flashcards for a Notebook"
+Cohesion: 0.40
+Nodes (4): After Creation, Creating Flashcards for a Notebook, Finding Your GDD Notebook ID, Options Reference
+
+### Community 2388 - "Shell Vocabulary Map for Vars, Prompt, Env, Path, RC Files, Completion, Etc"
+Cohesion: 0.40
+Nodes (4): Context, Links, Shell Vocabulary Map for Vars, Prompt, Env, Path, RC Files, Completion, Etc, Subtasks
+
+### Community 2389 - "Terminal command use upgrade with less, reactive output search, and recent command search.md"
+Cohesion: 0.40
+Nodes (4): CLI-level Searching (more powerful), Ghostty Built-in Scrollback Search, Reverse History Search (zsh), Terminal Command Use Upgrade
+
+### Community 2390 - "tmux Fallback Workflow"
+Cohesion: 0.40
+Nodes (5): Detach and leave it running, Reattach later, Start, Stop the tunnel, tmux Fallback Workflow
+
+### Community 2391 - "First Shell Script That Saves Time"
+Cohesion: 0.40
+Nodes (5): Definition of Done, First Shell Script That Saves Time, Notes, Proof, Why It Matters
+
+### Community 2392 - "2026.01.26.md"
+Cohesion: 0.40
+Nodes (4): [[00 Inbox/iTerm2 Setup]] Finish Please, [[LLM Payload Workflow]], Rest of Shift Boys to Men, [[YS7 Upper 1]]
+
+### Community 2393 - "2026.02.06 Active Workstreams"
+Cohesion: 0.40
+Nodes (4): 2026.02.06 Active Workstreams, Fri Feb 6th, 2026 - Plan/Reflect, iTerm2 AI General Prompt, Jules Kickoff for [[Using the Raspberry Pi in 2026]]
+
+### Community 2394 - "Tue Feb 10th, 2026 - Plan/Reflect"
+Cohesion: 0.40
+Nodes (4): 2026.02.10 Active Workstreams, Misc, Random, Cool, Tue Feb 10th, 2026 - Plan/Reflect, Using [[00 Inbox/EPOMAKER K21 Macro Numpad Power Key]]
+
+### Community 2395 - "Wed Feb 11th, 2026 - Plan/Reflect"
+Cohesion: 0.40
+Nodes (4): 2026.02.11 Active Workstream, Big To-do for Today, Personal, Wed Feb 11th, 2026 - Plan/Reflect
+
+### Community 2396 - "Fri Feb 13th, 2026 - Plan/Reflect"
+Cohesion: 0.40
+Nodes (4): 2026.02.13 Active Workstreams, Fri Feb 13th, 2026 - Plan/Reflect, Plan, Reflect
+
+### Community 2397 - "Sat Feb 14th, 2026 - Plan/Reflect"
+Cohesion: 0.40
+Nodes (4): 2026.02.14 Active Workstreams, Plan, Reflect, Sat Feb 14th, 2026 - Plan/Reflect
+
+### Community 2398 - "Sun Feb 15th, 2026 - Plan/Reflect"
+Cohesion: 0.40
+Nodes (4): 2026.02.15 Active Workstreams, Plan, Reflect, Sun Feb 15th, 2026 - Plan/Reflect
+
+### Community 2399 - "Mon Feb 16th, 2026 - Plan/Reflect"
+Cohesion: 0.40
+Nodes (4): 2026.02.16 Active Workstreams, Mon Feb 16th, 2026 - Plan/Reflect, Plan, Reflect
+
+### Community 2400 - "Thu Feb 19th, 2026 - Plan/Reflect *2, 3*"
+Cohesion: 0.40
+Nodes (4): 2026.02.19 Active Workstreams *1*, Plan *2*, Reflect *3*, Thu Feb 19th, 2026 - Plan/Reflect *2, 3*
+
+### Community 2401 - "Fri Feb 20th, 2026 - Plan/Reflect *2, 3*"
+Cohesion: 0.40
+Nodes (4): 2026.02.20 Active Workstreams *1*, Fri Feb 20th, 2026 - Plan/Reflect *2, 3*, Plan *2*, Reflect *3*
+
+### Community 2402 - "2026.02.25.md"
+Cohesion: 0.40
+Nodes (4): 2026.02.25 What I'm Doing *1*, 📋 Due Today, 📋 Overdue, Wed Feb 25th, 2026 - Plan/Reflect *2*
+
+### Community 2403 - "Fri Mar 6th, 2026 - Plan/Reflect *2*"
+Cohesion: 0.40
+Nodes (4): 2026.03.06 Active Workstreams *1*, Fri Mar 6th, 2026 - Plan/Reflect *2*, Plan *2*, Reflect *3*
+
+### Community 2404 - "Sun Mar 8th, 2026 - Plan/Reflect *2*"
+Cohesion: 0.40
+Nodes (4): 2026.03.08 Active Workstreams *1*, Plan *2*, Reflect *3*, Sun Mar 8th, 2026 - Plan/Reflect *2*
+
+### Community 2405 - "Mon Mar 9th, 2026 - Plan/Reflect _2_"
+Cohesion: 0.40
+Nodes (4): 2026.03.09 Active Workstreams _1_, Mon Mar 9th, 2026 - Plan/Reflect _2_, Plan _2_, Reflect _3_
+
+### Community 2406 - "Tue Mar 10th, 2026 - Plan/Reflect _2_"
+Cohesion: 0.40
+Nodes (4): 2026.03.10 Active Workstreams _1_, Plan _2_, Reflect _3_, Tue Mar 10th, 2026 - Plan/Reflect _2_
+
+### Community 2407 - "Active Workstreams and Workflows *1*"
+Cohesion: 0.40
+Nodes (4): [[00 Inbox/Google AI Pro Recovery 2026-W12]], Active Workstreams and Workflows *1*, Journal && || Reflect *3*, Sun Mar 15th, 2026 *2*
+
+### Community 2408 - "Active Workstreams and Workflows _1_"
+Cohesion: 0.40
+Nodes (4): 3 Big Things, Active Workstreams and Workflows _1_, Journal && || Reflect _3_, Tue Mar 24th, 2026 _2_
+
+### Community 2409 - "2026.04.17.md"
+Cohesion: 0.40
+Nodes (4): Friday Plan, Reflections, Scratchpad, Water and Stone
+
+### Community 2410 - "2026.05.01.md"
+Cohesion: 0.40
+Nodes (4): 05-01 Output, Friday Plan, Reflections, Scratchpad
+
+### Community 2411 - "2026.05.03.md"
+Cohesion: 0.40
+Nodes (4): 05-03 Output, Reflections, Scratchpad, Sunday Plan
+
+### Community 2412 - "2026.05.05.md"
+Cohesion: 0.40
+Nodes (4): 05-05 Output, Reflections, Scratchpad, Tuesday Plan
+
+### Community 2413 - "2026.05.06.md"
+Cohesion: 0.40
+Nodes (4): 05-06 Output, Reflections, Scratchpad, Wednesday Plan
+
+### Community 2414 - "2026.05.07.md"
+Cohesion: 0.40
+Nodes (4): 05-07 Output, Reflections, Scratchpad, Thursday Plan
+
+### Community 2415 - "2026.05.08.md"
+Cohesion: 0.40
+Nodes (4): 05-08 Output, Friday Plan, Reflections, Scratchpad
+
+### Community 2416 - "2026.05.11.md"
+Cohesion: 0.40
+Nodes (4): 05-11 Output, Monday Plan, Reflections, Scratchpad
+
+### Community 2417 - "2026.05.13.md"
+Cohesion: 0.40
+Nodes (4): 05-13 Output, Reflections, Scratchpad, Wednesday Plan
+
+### Community 2418 - "2026.05.14.md"
+Cohesion: 0.40
+Nodes (4): 05-14 Output, Reflections, Scratchpad, Thursday Plan
+
+### Community 2419 - "2026.05.15.md"
+Cohesion: 0.40
+Nodes (4): 05-15 Output, Friday Plan, Reflections, Scratchpad
+
+### Community 2420 - "2026.05.18.md"
+Cohesion: 0.40
+Nodes (4): 05-18 Output, Monday Plan, Reflections, Scratchpad
+
+### Community 2421 - "2026.05.21.md"
+Cohesion: 0.40
+Nodes (4): Reflections, Scratchpad, Thursday Output, Thursday Plan
+
+### Community 2422 - "📅 12th Week of 2026"
+Cohesion: 0.40
+Nodes (4): 📅 12th Week of 2026, Active Workstreams, 🧠 Last Week's Mistakes, Open Questions / Risks
+
+### Community 2423 - "📅 14th Week of 2026"
+Cohesion: 0.40
+Nodes (4): 📅 14th Week of 2026, Active Workstreams, 🧠 Last Week's Mistakes, Open Questions / Risks
+
+### Community 2424 - "2026-W15.md"
+Cohesion: 0.40
+Nodes (4): 📅 15th Week of 2026, Active Workstreams, 🧠 Last Week's Mistakes, Open Questions / Risks
+
+### Community 2425 - "Q1 / Q4 2026 — Quarterly Note"
+Cohesion: 0.40
+Nodes (4): Optional Modules, Q1 / Q4 2026 — Quarterly Note, Quarterly Insights, Themes, Growth, Shifts
+
+### Community 2426 - "Mission: Lead Detective (Direct Strike)"
+Cohesion: 0.40
+Nodes (4): Ingestion Pipeline, Mission: Lead Detective (Direct Strike), Outcome: The Stealth Delivery, Targeted Data Entities (Strike 1)
+
+### Community 2427 - "JULES — Useful Commands & Flags"
+Cohesion: 0.40
+Nodes (4): Examples from `jules help`, [Jules CLI Docs](https://jules.google/docs/cli/reference/), JULES — Useful Commands & Flags, Power Pattern
+
+### Community 2428 - "Vision B First Task Report"
+Cohesion: 0.40
+Nodes (4): Gateway Status, OpenClaw Status, System, Vision B First Task Report
+
+### Community 2429 - "The Two Tiers"
+Cohesion: 0.40
+Nodes (4): Hybrid Task System Architecture, The Two Tiers, Tier 1: Inline Tasks (Tasks plugin + nldates), Tier 2: TaskNotes (one file per task)
+
+### Community 2430 - "Syntax Reference"
+Cohesion: 0.40
+Nodes (5): append — Add content to existing file, create — Create a new note, files — List files in vault, search — Find notes by text, Syntax Reference
+
+### Community 2431 - "Quick Reference"
+Cohesion: 0.40
+Nodes (5): Append to Today's Daily Note, Create a Quick Inbox Note, List Daily Notes, Quick Reference, Search Your Vault
+
+### Community 2432 - "Review current callouts and custom callouts.md"
+Cohesion: 0.40
+Nodes (4): Context, Links, Review Current Callouts and Custom Callouts, Subtasks
+
+### Community 2433 - "Finish-GDDP-and-Khoj-project-audit"
+Cohesion: 0.40
+Nodes (4): Context, Finish-GDDP-and-Khoj-project-audit, Links, Subtasks
+
+### Community 2434 - "docs-reading-template.md"
+Cohesion: 0.40
+Nodes (4): Defensive Habit, Implications Vs Reality, Pattern, Where it Shows up
+
+### Community 2435 - "primary-project-anchor-template.md"
+Cohesion: 0.40
+Nodes (4): Active Workstreams, Constraints, Objective, Open Questions / Risks
+
+### Community 2436 - "research-note"
+Cohesion: 0.40
+Nodes (4): Notes, research-note, Sources, Summary
+
+### Community 2437 - "workout-session.md"
+Cohesion: 0.40
+Nodes (4): Lifts, Next time, Quick notes, <% tp.date.now("YYYY-MM-DD ddd") %> — Full Body
+
+### Community 2438 - "Retrieval Benchmark v0 Run After Second Anchor Pass — 2026-04-15"
+Cohesion: 0.40
+Nodes (4): Notable Outcomes, Readout, Remaining Gaps, Retrieval Benchmark v0 Run After Second Anchor Pass — 2026-04-15
+
+### Community 2439 - "Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15"
+Cohesion: 0.40
+Nodes (4): Notable Improvements, Remaining Weak Spots, Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15, Takeaway
+
+### Community 2440 - "Benchmark Run — 2026-04-15 Post Anchor Rerun"
+Cohesion: 0.40
+Nodes (4): Benchmark Run — 2026-04-15 Post Anchor Rerun, Takeaway, What improved, What is still weak
+
+### Community 2441 - "Benchmark Run — 2026-04-16 Canonical Anchor"
+Cohesion: 0.40
+Nodes (4): Benchmark Run — 2026-04-16 Canonical Anchor, Takeaway, What changed, What stayed the same
+
+### Community 2442 - "Benchmark Run — 2026-04-16 Narrow Anchors"
+Cohesion: 0.40
+Nodes (4): Benchmark Run — 2026-04-16 Narrow Anchors, Still imperfect, Takeaway, What improved
+
+### Community 2443 - "GDDP — GAPS (air)"
+Cohesion: 0.40
+Nodes (4): Air-unique vs mini, GDDP — GAPS (air), Still missing / weaker on air, Why graphify / semantic would fail alone
+
+### Community 2444 - "MyAPI — GAPS (air)"
+Cohesion: 0.40
+Nodes (4): MyAPI — GAPS (air), Still missing on air (for a complete brief), What air uniquely contributes, Why graphify / semantic search would fail alone
+
+### Community 2445 - "GDDP — BRIEF-DRAFT (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): Evidence paths (exist on mini), GDDP — BRIEF-DRAFT (mini pass-1), Operator one-liner, Short Answer
+
+### Community 2446 - "GDDP — GAPS (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): GDDP — GAPS (mini pass-1), Pass-1 stop, Still missing, Why graphify / semantic alone would fail
+
+### Community 2447 - "MyAPI — BRIEF-DRAFT (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): Evidence paths (exist on mini), MyAPI — BRIEF-DRAFT (mini pass-1), Operator one-liner, Short Answer
+
+### Community 2448 - "MyAPI — GAPS (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): MyAPI — GAPS (mini pass-1), Pass-1 stop, Still missing on mini (for pass-2 / air merge), Why graphify / semantic alone would fail
+
+### Community 2449 - "Pi / Needle / Gemma — BRIEF-DRAFT (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): Evidence paths (exist on mini), Operator one-liner, Pi / Needle / Gemma — BRIEF-DRAFT (mini pass-1), Short Answer
+
+### Community 2450 - "GDDP — GAPS (air)"
+Cohesion: 0.40
+Nodes (4): Air-unique vs mini, GDDP — GAPS (air), Still missing / weaker on air, Why graphify / semantic would fail alone
+
+### Community 2451 - "MyAPI — GAPS (air)"
+Cohesion: 0.40
+Nodes (4): MyAPI — GAPS (air), Still missing on air (for a complete brief), What air uniquely contributes, Why graphify / semantic search would fail alone
+
+### Community 2452 - "GDDP — BRIEF-DRAFT (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): Evidence paths (exist on mini), GDDP — BRIEF-DRAFT (mini pass-1), Operator one-liner, Short Answer
+
+### Community 2453 - "GDDP — GAPS (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): GDDP — GAPS (mini pass-1), Pass-1 stop, Still missing, Why graphify / semantic alone would fail
+
+### Community 2454 - "MyAPI — BRIEF-DRAFT (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): Evidence paths (exist on mini), MyAPI — BRIEF-DRAFT (mini pass-1), Operator one-liner, Short Answer
+
+### Community 2455 - "MyAPI — GAPS (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): MyAPI — GAPS (mini pass-1), Pass-1 stop, Still missing on mini (for pass-2 / air merge), Why graphify / semantic alone would fail
+
+### Community 2456 - "Pi / Needle / Gemma — BRIEF-DRAFT (mini pass-1)"
+Cohesion: 0.40
+Nodes (4): Evidence paths (exist on mini), Operator one-liner, Pi / Needle / Gemma — BRIEF-DRAFT (mini pass-1), Short Answer
+
+### Community 2457 - "corpus-hot v1 (merged)"
+Cohesion: 0.40
+Nodes (4): corpus-hot v1 (merged), Next, Raw copies, What
+
+### Community 2458 - "acceptance.py"
+Cohesion: 0.60
+Nodes (4): evaluate(), main(), post_query(), Return (verdict, evidence_string). verdict ∈ {PASS, FAIL, SKIP}.
+
+### Community 2459 - "CLAUDE.md — MyAPI"
+Cohesion: 0.50
+Nodes (3): CLAUDE.md — MyAPI, General Rule, Shell Commands: Don't Make Me Fix Your Work
+
+### Community 2460 - "Vertex AI Infrastructure Established"
+Cohesion: 0.50
+Nodes (3): Significance, Vertex AI Infrastructure Established, What happened
+
+### Community 2461 - "VM Migration: khoj-vm-new Becomes Primary Workspace"
+Cohesion: 0.50
+Nodes (3): Significance, VM Migration: khoj-vm-new Becomes Primary Workspace, What happened
+
+### Community 2462 - "Corpus v1 Pass A Complete"
+Cohesion: 0.50
+Nodes (3): Corpus v1 Pass A Complete, Significance, What happened
+
+### Community 2463 - "How to test this (do this once, you’ll know forever)"
+Cohesion: 0.50
+Nodes (4): A — Same model, weak harness, B — Same model, strong harness, C — Swap model, keep harness from B, How to test this (do this once, you’ll know forever)
+
+### Community 2464 - "Your clean tier structure (this is strong)"
+Cohesion: 0.50
+Nodes (4): **Tier 1 — AI User System ($)**, **Tier 2 — AI Operator System ($$)**, **Tier 3 — AI Owner System ($$$)**, Your clean tier structure (this is strong)
+
+### Community 2465 - "Resulting control model"
+Cohesion: 0.50
+Nodes (4): 1) Normal gestures (title bar only), 2) Global gestures (entire window), 3) Stacked usage (full system), Resulting control model
+
+### Community 2466 - "2. Nodes — What They Are and How They Work"
+Cohesion: 0.50
+Nodes (4): 2.1 The Mental Model, 2.2 What a Node Is, 2.3 Node vs. Agent vs. Session — The Key Distinction, 2. Nodes — What They Are and How They Work
+
+### Community 2467 - "5. Mission Packets — Coordinating Work Across Nodes"
+Cohesion: 0.50
+Nodes (4): 5.1 Mission Packet Format, 5.2 Triggering a Mission from the CLI, 5.3 Your First Test Mission (Right Now), 5. Mission Packets — Coordinating Work Across Nodes
+
+### Community 2468 - "2. Nodes — What They Are and How They Work"
+Cohesion: 0.50
+Nodes (4): 2.1 The Mental Model, 2.2 What a Node Is, 2.3 Node vs. Agent vs. Session — The Key Distinction, 2. Nodes — What They Are and How They Work
+
+### Community 2469 - "5. Mission Packets — Coordinating Work Across Nodes"
+Cohesion: 0.50
+Nodes (4): 5.1 Mission Packet Format, 5.2 Triggering a Mission from the CLI, 5.3 Your First Test Mission (Right Now), 5. Mission Packets — Coordinating Work Across Nodes
+
+### Community 2470 - "2. Nodes — What They Are and How They Work"
+Cohesion: 0.50
+Nodes (4): 2.1 The Mental Model, 2.2 What a Node Is, 2.3 Node vs. Agent vs. Session — The Key Distinction, 2. Nodes — What They Are and How They Work
+
+### Community 2471 - "5. Mission Packets — Coordinating Work Across Nodes"
+Cohesion: 0.50
+Nodes (4): 5.1 Mission Packet Format, 5.2 Triggering a Mission from the CLI, 5.3 Your First Test Mission (Right Now), 5. Mission Packets — Coordinating Work Across Nodes
+
+### Community 2472 - "8. Command-Driven Workflow Patterns"
+Cohesion: 0.50
+Nodes (4): 8.1 Shell Functions (Add to `~/.zshrc` on Mac, and `~/.bashrc` on Big Pi), 8.2 Piping and Composition, 8.3 Slash Commands (In-Session), 8. Command-Driven Workflow Patterns
+
+### Community 2473 - "Services Page"
+Cohesion: 0.50
+Nodes (4): Bailey's Live Services Hub Copy, New Site Services Hero, Service Category Copy (Bailey's → keep verbatim or close), Services Page
+
+### Community 2474 - "Phase 5: The Review Tool (Website Side)"
+Cohesion: 0.50
+Nodes (4): Delivery templates:, How it works:, Phase 5: The Review Tool (Website Side), Why a branded page instead of a raw Google link:
+
+### Community 2475 - "Phase 4: Generate the Review Link"
+Cohesion: 0.50
+Nodes (4): Method 1: From the Dashboard (Easiest), Method 2: Using Place ID (If dashboard method isn't available yet), Phase 4: Generate the Review Link, Shorten the Link
+
+### Community 2476 - "Understanding the Connections list (mental model + UI cues)"
+Cohesion: 0.50
+Nodes (4): Connection score (<span style="color: yellow;">yellow underlined</span>), Play/Pause updates (<span style="color:orange;">Play/Pause</span>), Show/hide content (<span style="color:magenta;">Expand/collapse</span>), Understanding the Connections list (mental model + UI cues)
+
+### Community 2477 - "Managing noise: Hide and Pin"
+Cohesion: 0.50
+Nodes (4): Hide results, Managing noise: Hide and Pin, Pin results, Unhide results
+
+### Community 2478 - "<local-command-caveat>Caveat: The messages below were generated by the user whil"
+Cohesion: 0.50
+Nodes (4): <local-command-caveat>Caveat: The messages below were generated by the user whil, Provenance, Session Identity, Session Text
+
+### Community 2479 - "Pi Harness [L741-912]"
+Cohesion: 0.50
+Nodes (4): Pi Harness [L741-912], Route A — Velocity-forward: Pi becomes a real orchestrator, Route B — Trust-forward: verifier becomes load-bearing, Route C — Scope-expansion: Pi acts on real things
+
+### Community 2480 - "Complete Examples"
+Cohesion: 0.50
+Nodes (4): Complete Examples, Daily Notes Index, Reading List Base, Task Tracker Base
+
+### Community 2481 - "Properties"
+Cohesion: 0.50
+Nodes (4): File Properties Reference, Properties, The `this` Keyword, Three Types of Properties
+
+### Community 2482 - "Proposed cleanup plan (no destructive action without your sign-off)"
+Cohesion: 0.50
+Nodes (4): Proposed cleanup plan (no destructive action without your sign-off), Recommendations, Root cause of the 192 inbox dupes — confirmed, Wiring map
+
+### Community 2483 - "In nlm cli, how do I create flashcards for a specific notebook i.e. for my GDD n"
+Cohesion: 0.50
+Nodes (4): In nlm cli, how do I create flashcards for a specific notebook i.e. for my GDD n, Provenance, Session Identity, Session Text
+
+### Community 2484 - "Compiled threads, revised"
+Cohesion: 0.50
+Nodes (4): Compiled threads, revised, Thread 1 — Operator practice in neovim, tonight, Thread 2 — MyAPI to meaningful tool, Thread 3 — GDDP to meaningful tool
+
+### Community 2485 - "Debugging pi-packet smoke test verification failure"
+Cohesion: 0.50
+Nodes (4): Conversation Identity, Debugging pi-packet smoke test verification failure, Provenance, Raw Conversation
+
+### Community 2486 - "📡 SITREP: Context Refinery -> Khoj Deployment"
+Cohesion: 0.50
+Nodes (4): 🟢 1. What We Conquered (The Good News), 🟡 2. The Great Matrix Twist (Why It Failed At The End), Decision Rule, 📡 SITREP: Context Refinery -> Khoj Deployment
+
+### Community 2487 - "── projects pass (legacy, if still present) ──────────────────────────────────"
+Cohesion: 0.50
+Nodes (4): main...origin/main, main...origin/main, main...origin/main, ── projects pass (legacy, if still present) ──────────────────────────────────
+
+### Community 2488 - "Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15"
+Cohesion: 0.50
+Nodes (4): Notable Improvements, Remaining Weak Spots, Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15, Takeaway
+
+### Community 2489 - "📡 SITREP: Context Refinery -> Khoj Deployment"
+Cohesion: 0.50
+Nodes (4): 🟢 1. What We Conquered (The Good News), 🟡 2. The Great Matrix Twist (Why It Failed At The End), Decision Rule, 📡 SITREP: Context Refinery -> Khoj Deployment
+
+### Community 2490 - "── projects pass (legacy, if still present) ──────────────────────────────────"
+Cohesion: 0.50
+Nodes (4): main...origin/main, main...origin/main, main...origin/main, ── projects pass (legacy, if still present) ──────────────────────────────────
+
+### Community 2491 - "Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15"
+Cohesion: 0.50
+Nodes (4): Notable Improvements, Remaining Weak Spots, Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15, Takeaway
+
+### Community 2492 - "📡 SITREP: Context Refinery -> Khoj Deployment"
+Cohesion: 0.50
+Nodes (4): 🟢 1. What We Conquered (The Good News), 🟡 2. The Great Matrix Twist (Why It Failed At The End), Decision Rule, 📡 SITREP: Context Refinery -> Khoj Deployment
+
+### Community 2493 - "── projects pass (legacy, if still present) ──────────────────────────────────"
+Cohesion: 0.50
+Nodes (4): main...origin/main, main...origin/main, main...origin/main, ── projects pass (legacy, if still present) ──────────────────────────────────
+
+### Community 2494 - "Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15"
+Cohesion: 0.50
+Nodes (4): Notable Improvements, Remaining Weak Spots, Retrieval Benchmark v0 Run After Anchor Tuning — 2026-04-15, Takeaway
+
+### Community 2495 - "1. Immediate Priorities"
+Cohesion: 0.50
+Nodes (4): 1.1 Confirm Working Arrangement, 1.2 Resolve Pay Structure, 1.3 Create Current-state Overview, 1. Immediate Priorities
+
+### Community 2496 - "2. Access + Security"
+Cohesion: 0.50
+Nodes (4): 2.1 Password Management, 2.2 Secure Access Setup, 2.3 Credential Cleanup, 2. Access + Security
+
+### Community 2497 - "9. Specialist / Outside Support"
+Cohesion: 0.50
+Nodes (4): 9.1 Identify Likely Outside-help Areas, 9.2 Build Shortlist, 9.3 Use outside Help Strategically, 9. Specialist / Outside Support
+
+### Community 2498 - "Remote Session Baseline Plan"
+Cohesion: 0.50
+Nodes (4): Key Changes, Remote Session Baseline Plan, Summary, Test Plan
+
+### Community 2499 - "Phone Call"
+Cohesion: 0.50
+Nodes (4): LMN Login, LMN Software Ought to Link to QuickBooks and Connected to All Job Estimates and Clients, Phone Call, Wix - Migrate? Email? Domain?
+
+### Community 2500 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2501 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2502 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2503 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2504 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2505 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2506 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2507 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2508 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2509 - "needle/"
+Cohesion: 0.50
+Nodes (4): Auth path that actually worked: Vertex AI + ADC, Deployment shape, needle/, What's here
+
+### Community 2510 - "Simple Attention Networks"
+Cohesion: 0.50
+Nodes (4): Gated Residuals, Simple Attention Networks, Why Encoder-Decoder, Why No FFN
+
+### Community 2511 - "needle/"
+Cohesion: 0.50
+Nodes (4): Auth path that actually worked: Vertex AI + ADC, Deployment shape, needle/, What's here
+
+### Community 2512 - "Simple Attention Networks"
+Cohesion: 0.50
+Nodes (4): Gated Residuals, Simple Attention Networks, Why Encoder-Decoder, Why No FFN
+
+### Community 2513 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2514 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2515 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2516 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2517 - "Using Skills"
+Cohesion: 0.50
+Nodes (4): docs/share-pdf...origin/docs/share-pdf, Red Flags, The Rule, Using Skills
+
+### Community 2518 - "Using Skills"
+Cohesion: 0.50
+Nodes (4): docs/share-pdf...origin/docs/share-pdf, Red Flags, The Rule, Using Skills
+
+### Community 2519 - "<environment_context>"
+Cohesion: 0.50
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2520 - "bflr3k99g"
+Cohesion: 0.50
+Nodes (3): bflr3k99g, Provenance, Raw Text
+
+### Community 2521 - "bl180pkgy"
+Cohesion: 0.50
+Nodes (3): bl180pkgy, Provenance, Raw Text
+
+### Community 2522 - ".session-aliases"
+Cohesion: 0.50
+Nodes (3): Provenance, Raw Text, .session-aliases
+
+### Community 2523 - "agent-a0db78fbc5a4703dd.meta"
+Cohesion: 0.50
+Nodes (3): agent-a0db78fbc5a4703dd.meta, Provenance, Raw Text
+
+### Community 2524 - "agent-a704fdc99daf331ad.meta"
+Cohesion: 0.50
+Nodes (3): agent-a704fdc99daf331ad.meta, Provenance, Raw Text
+
+### Community 2525 - "agent-ac77a8fac914c07ed.meta"
+Cohesion: 0.50
+Nodes (3): agent-ac77a8fac914c07ed.meta, Provenance, Raw Text
+
+### Community 2526 - "bu9aoclam"
+Cohesion: 0.50
+Nodes (3): bu9aoclam, Provenance, Raw Text
+
+### Community 2527 - "toolu_01MidS2zTNficrKaeiVE3CvL"
+Cohesion: 0.50
+Nodes (3): Provenance, Raw Text, toolu_01MidS2zTNficrKaeiVE3CvL
+
+### Community 2528 - "bq5alzu14"
+Cohesion: 0.50
+Nodes (3): bq5alzu14, Provenance, Raw Text
+
+### Community 2529 - "bupcq9wlz"
+Cohesion: 0.50
+Nodes (3): bupcq9wlz, Provenance, Raw Text
+
+### Community 2530 - "agent-a42c6649db0b87614.meta"
+Cohesion: 0.50
+Nodes (3): agent-a42c6649db0b87614.meta, Provenance, Raw Text
+
+### Community 2531 - "agent-a966d48987867e5b3.meta"
+Cohesion: 0.50
+Nodes (3): agent-a966d48987867e5b3.meta, Provenance, Raw Text
+
+### Community 2532 - "agent-ae45d61d3b72307c9.meta"
+Cohesion: 0.50
+Nodes (3): agent-ae45d61d3b72307c9.meta, Provenance, Raw Text
+
+### Community 2533 - "b5z37yebi"
+Cohesion: 0.50
+Nodes (3): b5z37yebi, Provenance, Raw Text
+
+### Community 2534 - "bkea1mn6m"
+Cohesion: 0.50
+Nodes (3): bkea1mn6m, Provenance, Raw Text
+
+### Community 2535 - "bprqfd061"
+Cohesion: 0.50
+Nodes (3): bprqfd061, Provenance, Raw Text
+
+### Community 2536 - "bntfmj4k8"
+Cohesion: 0.50
+Nodes (3): bntfmj4k8, Provenance, Raw Text
+
+### Community 2537 - "bcasa86w4"
+Cohesion: 0.50
+Nodes (3): bcasa86w4, Provenance, Raw Text
+
+### Community 2538 - "bojlon3cj"
+Cohesion: 0.50
+Nodes (3): bojlon3cj, Provenance, Raw Text
+
+### Community 2539 - "agent-ada0f660ed65cf160.meta"
+Cohesion: 0.50
+Nodes (3): agent-ada0f660ed65cf160.meta, Provenance, Raw Text
+
+### Community 2540 - "b3ftbwb1e"
+Cohesion: 0.50
+Nodes (3): b3ftbwb1e, Provenance, Raw Text
+
+### Community 2541 - "bovu37aiy"
+Cohesion: 0.50
+Nodes (3): bovu37aiy, Provenance, Raw Text
+
+### Community 2542 - "agent-a01f1ddd7bec64118.meta"
+Cohesion: 0.50
+Nodes (3): agent-a01f1ddd7bec64118.meta, Provenance, Raw Text
+
+### Community 2543 - "agent-a1e4f3243c0040c03.meta"
+Cohesion: 0.50
+Nodes (3): agent-a1e4f3243c0040c03.meta, Provenance, Raw Text
+
+### Community 2544 - "agent-a334914306f7cee33.meta"
+Cohesion: 0.50
+Nodes (3): agent-a334914306f7cee33.meta, Provenance, Raw Text
+
+### Community 2545 - ".session-aliases"
+Cohesion: 0.50
+Nodes (3): Provenance, Raw Text, .session-aliases
+
+### Community 2546 - "bpncynkld"
+Cohesion: 0.50
+Nodes (3): bpncynkld, Provenance, Raw Text
+
+### Community 2547 - "bscdq0bu8"
+Cohesion: 0.50
+Nodes (3): bscdq0bu8, Provenance, Raw Text
+
+### Community 2548 - "toolu_016QNAwYsYXz6cw4F8Ukht54"
+Cohesion: 0.50
+Nodes (3): Provenance, Raw Text, toolu_016QNAwYsYXz6cw4F8Ukht54
+
+### Community 2549 - ".session-aliases"
+Cohesion: 0.50
+Nodes (3): Provenance, Raw Text, .session-aliases
+
+### Community 2551 - "The App Landscape: Blink 🏆, A-Shell 🐚, Termius ⚔"
+Cohesion: 0.50
+Nodes (3): A-Shell - Local Offline Sandbox, Compare and Contrast: a-Shell vs. Blink Shell, The App Landscape: Blink 🏆, A-Shell 🐚, Termius ⚔
+
+### Community 2552 - "nvim - q enters macro recording mode and only q exits.md"
+Cohesion: 0.50
+Nodes (3): How it Works, How to Use what You Recorded, Recording at Register `w`
+
+### Community 2553 - "01 — Event Schema"
+Cohesion: 0.50
+Nodes (4): 01 — Event Schema, Controlled event_type Values, Purpose, Schema
+
+### Community 2554 - "08 — Result Schema"
+Cohesion: 0.50
+Nodes (3): 08 — Result Schema, Key Fields, Schema
+
+### Community 2555 - "v1 Design — Index"
+Cohesion: 0.50
+Nodes (4): Files, Key Principle, The Three Core Contracts, v1 Design — Index
+
+### Community 2556 - "Phase 4 Complete"
+Cohesion: 0.50
+Nodes (3): How We Got Here, Phase 4 Complete, The Core Hiccup
+
+### Community 2557 - "claude-expediting-proposal.md"
+Cohesion: 0.50
+Nodes (3): Honest risks of going aggressive, Step 1: Patch session-tagger, The bigger plan you asked for
+
+### Community 2558 - "Claude Code Leaked Prompt → Pi Extension Map"
+Cohesion: 0.50
+Nodes (4): Assistant, Assistant, Claude Code Leaked Prompt → Pi Extension Map, Notes
+
+### Community 2559 - "Threads"
+Cohesion: 0.50
+Nodes (3): All sessions, How to use, Threads
+
+### Community 2560 - "01 Projects/Semantic complexity around "already existing user profile" is why Zapier stays deliberately dumb.md"
+Cohesion: 0.50
+Nodes (3): App Variability is why This Breaks down, Don't Assume Anything, User Holds Source of Truth, Why "just check" Explodes into Messiness
+
+### Community 2561 - "Breakups and Goodbyes.md"
+Cohesion: 0.50
+Nodes (3): If I want to Move on, If She Wants to Move on, Moving Forward
+
+### Community 2562 - "Cool Position and Transitions 2025.md"
+Cohesion: 0.50
+Nodes (3): Great Facefucking Position, Having Her Sit or Squat over Me → "power bottoming", On the Couch → Leg over into Being behind Her
+
+### Community 2563 - "Goldmine of RJ and RIM content.md"
+Cohesion: 0.50
+Nodes (3): [[02 Areas/Confidential/Relationships/Watersport Beautiful Babes Going Hardcore]], [Lena Coxx](https://sxyprn.com/Lena-Coxx-rim.html), Petite Babes Hardcore
+
+### Community 2564 - "Hot but simple position but what if it wasn’t Rebel.md"
+Cohesion: 0.50
+Nodes (3): Now Imagine Christina Vosucramer, Or Sabrinas, Or Victoria Garcia
+
+### Community 2565 - "I actually found her non-twin version of her.md"
+Cohesion: 0.50
+Nodes (3): Continued Pestering due Diligence, I Did My due Diligence, I FOUND THE REAL AUSTIN LOLLLLLLL
+
+### Community 2566 - "Ivy and Choosing How To Say Things.md"
+Cohesion: 0.50
+Nodes (3): 03:22 AM September 16th, 2024, 07:33 AM Update, What Could or Should Have Been Said
+
+### Community 2567 - "Jess OF Collab Proposal and Plan.md"
+Cohesion: 0.50
+Nodes (3): Draft 2 (*aka it worked*), Going through OF Clips and Jotting down Notes, Ideas
+
+### Community 2568 - "MJI Casting Content GOATs.md"
+Cohesion: 0.50
+Nodes (3): Cougars and MILFs Tossing Salad, Job Interview Amateur MILF, Ruby Jewel
+
+### Community 2569 - "Two ways to respond to sexual contact and stimulation, present and reactive or third person and observational.md"
+Cohesion: 0.50
+Nodes (3): Inspired by…, Rather Than, in the Moment, Raw, Reaction and Receiving Uncritically and Non-judgementally, What I Mean by Porn-brain Observing and Judging
+
+### Community 2570 - "Use gray rock method to become disinterested and disengaged with abusive or manipulative behavior.md"
+Cohesion: 0.50
+Nodes (3): Grey Rock Techniques and Approaches, Grey Rock Vs Social Withdrawal, People with Narcissistic Tendencies Enjoy Getting a Reaction from Their Victims
+
+### Community 2571 - "I Found out why it Bothers Me"
+Cohesion: 0.50
+Nodes (3): First Off, because She Lies, I Found out why it Bothers Me, Second Off, because She's a Bad Liar and is Obvious
+
+### Community 2572 - "Delivering my first element.md"
+Cohesion: 0.50
+Nodes (3): Ensure Interactivity, Quibbling about Addiction and Commitment, Teaching the Mens Weekend by SPEAKING WITH THE MEN
+
+### Community 2573 - "General MW Element Delivery for Meetings Overview and Notes.md"
+Cohesion: 0.50
+Nodes (3): *Bold-Italics* Are Spoken Aloud, Prepare well → Go off Script if Needed, Spirit of the MW is Alive in the Meeting by Disengaging the Ego
+
+### Community 2574 - "Core Team Call 12.md"
+Cohesion: 0.50
+Nodes (3): Check-In, In-Person 9PM Location Meeting, Wyzga Has to Show up to the In-person Meeting
+
+### Community 2575 - "Core Team Call 8.md"
+Cohesion: 0.50
+Nodes (3): Check-In Question Icebreaker, Love Getting Leadership Leading Meetings Ala Justin, Team Mentor and in Training
+
+### Community 2576 - "Wildmen Zoom Meeting March 2025.md"
+Cohesion: 0.50
+Nodes (3): Granado Did not Call All Men, Men Need to STOP STORY-ing LOL, Witte and His Addictions
+
+### Community 2577 - "PP Community Service Event.md"
+Cohesion: 0.50
+Nodes (3): 5:14 PM Tue 2024-05-07, CPR-AP Review, Tue 2024-04-16
+
+### Community 2578 - "Core Team Call 2026-W12.md"
+Cohesion: 0.50
+Nodes (3): Leading by Example is the Most Masculine, Love's Rant on Standards and Time, On Being Nice
+
+### Community 2579 - "Feedback before Expansion"
+Cohesion: 0.50
+Nodes (3): CLAUDE, Feedback before Expansion, OC Response
+
+### Community 2580 - "Plan"
+Cohesion: 0.50
+Nodes (3): Complete, Initialized `agent_dispatcher` Directory., Plan
+
+### Community 2581 - "Feedback before Expansion"
+Cohesion: 0.50
+Nodes (3): CLAUDE, Feedback before Expansion, OC Response
+
+### Community 2583 - "Troubleshooting"
+Cohesion: 0.50
+Nodes (4): "Command Not recognized", "Script Not found", "SSH Command failed", Troubleshooting
+
+### Community 2585 - "Shortcuts Implemenation with Ghostty ones now"
+Cohesion: 0.50
+Nodes (3): Automation 1: Light Work turns ON, Automation 2: Deep Work turns OFF, Shortcuts Implemenation with Ghostty ones now
+
+### Community 2586 - "The command"
+Cohesion: 0.50
+Nodes (3): Run it in `/Users/saboor/.config/nvim/lua`, The command, up/down for list, shift up/down *for the file*
+
+### Community 2587 - "Super Short Decision Rules"
+Cohesion: 0.50
+Nodes (4): If I Only Have 3 Minutes, If I Only Have 5–8 Minutes, If I Want a More "real session", Super Short Decision Rules
+
+### Community 2588 - "Learning/Important Ergonomics Tests .md"
+Cohesion: 0.50
+Nodes (3): Critical Ergonomic Metrics (Beyond the Knuckle Test), Ergonomics Checklist and Why, Quick Posture Checklist
+
+### Community 2589 - "Learning connections are living documents.md"
+Cohesion: 0.50
+Nodes (3): [[02 Areas/Learning/Atomic Notes for Learning and PMS]], 👉 Learning / Connections Notes, Purpose: Sense-making across Multiple Concepts
+
+### Community 2590 - "Examples"
+Cohesion: 0.50
+Nodes (3): [[00 Inbox/Ghostty master cheatsheet]], Examples, Helix
+
+### Community 2591 - "OpenCode CLI commands and options.md"
+Cohesion: 0.50
+Nodes (3): Core Commands, High-Value Options, Power Pattern
+
+### Community 2592 - "Lessons from the SC Works.md"
+Cohesion: 0.50
+Nodes (3): Find the Founders, Preparation, TRAINING ORGANOIDS ?!?!
+
+### Community 2593 - "02 Areas/New Dygma Raise Keyboard layout.md"
+Cohesion: 0.50
+Nodes (3): [[00 Inbox/dr~ Bazeor to Kaleidoscope Report]], [[02 Areas/Idea for Dygma raise keyboard - each thumb cluster is 7 distinct keys]], New Keyboard Layout
+
+### Community 2594 - "Daily Ops (5 commands)"
+Cohesion: 0.50
+Nodes (4): 1) ~/bin/OPENCLAW-SHIM-README.md, 2. ~/bin/OPENCLAW-SHIM-GOTCHAS.md, Daily Ops (5 commands), Related DevInfra Notes
+
+### Community 2595 - "Tone Example"
+Cohesion: 0.50
+Nodes (3): ChadGPT, Me, Tone Example
+
+### Community 2596 - "Part 10 — 8GB M1 Optimization"
+Cohesion: 0.50
+Nodes (4): 10.1 Memory-Conscious Habits, 10.2 Settings That Help, 10.3 What to Close vs. Keep Open, Part 10 — 8GB M1 Optimization
+
+### Community 2597 - "Part 11 — Security Deep Dive"
+Cohesion: 0.50
+Nodes (4): 11.1 Terminal Policies, 11.2 Allow List vs. Deny List, 11.3 Browser Security, Part 11 — Security Deep Dive
+
+### Community 2598 - "Part 1 — The Mindset Shift: From Typist to Architect"
+Cohesion: 0.50
+Nodes (4): 1.1 Why This Matters for Nerve Health & Longevity, 1.2 The New Mental Model, 1.3 What Your Role Actually Becomes, Part 1 — The Mindset Shift: From Typist to Architect
+
+### Community 2599 - "Part 5 — Skills: Teaching the Agent Your Standards"
+Cohesion: 0.50
+Nodes (4): 5.1 What Skills Are, 5.2 Skill Structure, 5.3 Example Skills for Your Projects, Part 5 — Skills: Teaching the Agent Your Standards
+
+### Community 2600 - "Part 7 — Keyboard Shortcuts & Interface Reference"
+Cohesion: 0.50
+Nodes (4): 7.1 Essential Shortcuts, 7.2 Agent Manager Quick Reference, 7.3 Editor Quick Reference, Part 7 — Keyboard Shortcuts & Interface Reference
+
+### Community 2601 - "5. Mission Packets — Coordinating Work Across Nodes"
+Cohesion: 0.50
+Nodes (4): 5.1 Mission Packet Format, 5.2 Triggering a Mission from the CLI, 5.3 Your First Test Mission (Right Now), 5. Mission Packets — Coordinating Work Across Nodes
+
+### Community 2602 - "8. Command-Driven Workflow Patterns"
+Cohesion: 0.50
+Nodes (4): 8.1 Shell Functions (Add to `~/.zshrc` on Mac, and `~/.bashrc` on Big Pi), 8.2 Piping and Composition, 8.3 Slash Commands (In-Session), 8. Command-Driven Workflow Patterns
+
+### Community 2604 - "03 Resources/Ghostty Final Switch Plus Copilot for Terminal help and Aider to be dev-ready.md"
+Cohesion: 0.50
+Nodes (3): Config Based on [[03 Resources/iTerm2 Setup]], Gemini Setup Input + [[02 Areas/Maximize Google AI Pro credits and finish them by]], [[zshrc ghostty & iterm2 failure incident reflections]]
+
+### Community 2605 - "Summary and a Message Body"
+Cohesion: 0.50
+Nodes (3): Omitting -m for Editor Pull-up, Summary and a Message Body, The Syntax of both
+
+### Community 2606 - "How to Do both without Self-sabotage"
+Cohesion: 0.50
+Nodes (3): 1. Job Lane (80% of Deep work), 2. Income Lane (20% of Deep work), How to Do both without Self-sabotage
+
+### Community 2607 - "03 Resources/Journaling to build keyboard inuition to complete the final layers.md"
+Cohesion: 0.50
+Nodes (3): [[02 Areas/My shortcuts mapping system for keyboard shortcuts]], [Claude thread link](https://claude.ai/share/5efb84bd-8963-4fe7-ab5a-4950276f789c) And the Five Categories, Window Tiling = Dedicated or Toolbox
+
+### Community 2608 - "nvim -- Obsidian, fast text copilot, voice, Neovim, all have in common this.md"
+Cohesion: 0.50
+Nodes (3): 1. Install ImageMagick (Required for Ghostty/Snacks to Render Images in Neovim), 2. Install Ripgrep (Required for Instant Obsidian Vault searching), 3. Install Whisper.cpp (Required for Local, Zero-latency voice-to-text)
+
+### Community 2609 - "=fzf= Example Commands for Its Dope Features"
+Cohesion: 0.50
+Nodes (3): =fzf= Example Commands for Its Dope Features, `--preview` — Purpose & Function, Preview Window Positioning
+
+### Community 2610 - "03 Resources/Semantic complexity around "already existing user profile" is why Zapier stays deliberately dumb.md"
+Cohesion: 0.50
+Nodes (3): App Variability is why This Breaks down, Don't Assume Anything, User Holds Source of Truth, Why "just check" Explodes into Messiness
+
+### Community 2611 - "03 Resources/Using trackpad gestures app Swish.md"
+Cohesion: 0.50
+Nodes (3): Context, Links, Subtasks
+
+### Community 2612 - "vi~ replacing $ with shift-6 or A or Ff or Tt or %.md"
+Cohesion: 0.50
+Nodes (3): *Could* Remap, Using ^ Instead of $ or Or g_, Vim Notes Inspired
+
+### Community 2613 - "7:30 PM • D23 • W4"
+Cohesion: 0.50
+Nodes (3): [[2026 New DevTools features from Chrome]], 7:30 PM • D23 • W4, [[Offload Compute Work With M1 and Raspberry Pi Devices]]
+
+### Community 2614 - "Fri Jan 30th, 2026 - Plan/Reflect"
+Cohesion: 0.50
+Nodes (3): [[00 Inbox/Brutal Claude 2026 Jan 29 callout more right than not]], Fri Jan 30th, 2026 - Plan/Reflect, Plan
+
+### Community 2615 - "Housecleaning"
+Cohesion: 0.50
+Nodes (3): Have Claude Add and Prune Plugins BUT, Housecleaning, Sun Feb 1st, 2026 - Plan/Reflect
+
+### Community 2616 - "2026.03.11.md"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows *1*, Journal && || Reflect *3*, Wed Mar 11th, 2026 *2*
+
+### Community 2617 - "2026.03.12.md"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows *1*, Journal && || Reflect *3*, Thu Mar 12th, 2026 *2*
+
+### Community 2618 - "Active Workstreams and Workflows *1*"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows *1*, Fri Mar 13th, 2026 *2*, Journal && || Reflect *3*
+
+### Community 2619 - "Active Workstreams and Workflows *1*"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows *1*, Journal && || Reflect *3*, Mon Mar 16th, 2026 *2*
+
+### Community 2620 - "Active Workstreams and Workflows _1_"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows _1_, Journal && || Reflect _3_, Sat Mar 21st, 2026 _2_
+
+### Community 2621 - "Active Workstreams and Workflows _1_"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows _1_, Journal && || Reflect _3_, Sun Mar 22nd, 2026 _2_
+
+### Community 2622 - "Active Workstreams and Workflows _1_"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows _1_, Fri Mar 27th, 2026 _2_, Journal && || Reflect _3_
+
+### Community 2623 - "Active Workstreams and Workflows *1*"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows *1*, Journal && || Reflect *3*, Sat Mar 28th, 2026 *2*
+
+### Community 2624 - "Active Workstreams and Workflows *1*"
+Cohesion: 0.50
+Nodes (3): Active Workstreams and Workflows *1*, Fri Apr 3rd, 2026 *2*, Journal && || Reflect *3*
+
+### Community 2625 - "2026.04.08.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2626 - "2026.04.11.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2627 - "2026.04.13.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2628 - "2026.04.14.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2629 - "2026.04.15.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2630 - "2026.04.16.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2631 - "2026.04.18.md"
+Cohesion: 0.50
+Nodes (3): Reflections, Saturday Plan, Scratchpad
+
+### Community 2632 - "2026.04.19.md"
+Cohesion: 0.50
+Nodes (3): Reflections, Scratchpad, Sunday Plan
+
+### Community 2633 - "2026.04.20.md"
+Cohesion: 0.50
+Nodes (3): Monday Plan, Reflections, Scratchpad
+
+### Community 2634 - "2026.04.21.md"
+Cohesion: 0.50
+Nodes (3): Reflections, Scratchpad, Tuesday Plan
+
+### Community 2635 - "2026.04.22.md"
+Cohesion: 0.50
+Nodes (3): Reflections, Scratchpad, Wednesday Plan
+
+### Community 2636 - "2026.04.24.md"
+Cohesion: 0.50
+Nodes (3): Friday Plan, Reflections, Scratchpad
+
+### Community 2637 - "2026.04.25.md"
+Cohesion: 0.50
+Nodes (3): Reflections, Saturday Plan, Scratchpad
+
+### Community 2638 - "2026.04.26.md"
+Cohesion: 0.50
+Nodes (3): 02:56 — Sprint Week 1 of 3: Pulse, [[sprint-goal]] made in response to below, Sprint Pulse
+
+### Community 2639 - "2026.04.30.md"
+Cohesion: 0.50
+Nodes (3): Plan, Reflections, Scratchpad
+
+### Community 2640 - "2026-W16.md"
+Cohesion: 0.50
+Nodes (3): 🧠 Reflections and Mistakes, Scratchpad, 📅 Week 16 of 2026
+
+### Community 2641 - "2026-W17.md"
+Cohesion: 0.50
+Nodes (3): 🧠 Reflections and Mistakes, Scratchpad, 📅 Week 17 of 2026
+
+### Community 2642 - "2026-W20.md"
+Cohesion: 0.50
+Nodes (3): 🧠 Reflections and Mistakes, Scratchpad, 📅 Week 20 of 2026
+
+### Community 2643 - "2026-W21.md"
+Cohesion: 0.50
+Nodes (3): 🧠 Reflections and Mistakes, Scratchpad, 📅 Week 21 of 2026
+
+### Community 2644 - "Q2 / Q4 2026 — Quarterly Note"
+Cohesion: 0.50
+Nodes (3): Optional Modules, Q2 / Q4 2026 — Quarterly Note, Quarterly Insights
+
+### Community 2645 - "Mission: Review Engine (Intent Preservation)"
+Cohesion: 0.50
+Nodes (3): Delivery Strategy, Friction Compression Layers, Mission: Review Engine (Intent Preservation)
+
+### Community 2646 - "Ergonomics Checklist and Why"
+Cohesion: 0.50
+Nodes (3): Critical Ergonomic Metrics (Beyond the Knuckle Test), Ergonomics Checklist and Why, Quick Posture Checklist
+
+### Community 2647 - "inbox-canonical-dupes-2026-05-08/Ghostty Final Switch Plus Copilot for Terminal help and Aider to be dev-ready.md"
+Cohesion: 0.50
+Nodes (3): Config Based on [[00 Inbox/iTerm2 Setup]], Gemini Setup Input + [[00 Inbox/Maximize Google AI Pro credits and finish them by]], [[zshrc ghostty & iterm2 failure incident reflections]]
+
+### Community 2648 - "inbox-canonical-dupes-2026-05-08/Journaling to build keyboard inuition to complete the final layers.md"
+Cohesion: 0.50
+Nodes (3): [[00 Inbox/My shortcuts mapping system for keyboard shortcuts]], [Claude thread link](https://claude.ai/share/5efb84bd-8963-4fe7-ab5a-4950276f789c) And the Five Categories, Window Tiling = Dedicated or Toolbox
+
+### Community 2649 - "inbox-canonical-dupes-2026-05-08/New Dygma Raise Keyboard layout.md"
+Cohesion: 0.50
+Nodes (3): [[00 Inbox/dr~ Bazeor to Kaleidoscope Report]], [[00 Inbox/Idea for Dygma raise keyboard - each thumb cluster is 7 distinct keys]], New Keyboard Layout
+
+### Community 2650 - "inbox-canonical-dupes-2026-05-08/Using trackpad gestures app Swish.md"
+Cohesion: 0.50
+Nodes (3): Context, Links, Subtasks
+
+### Community 2651 - "inbox-canonical-dupes-2026-05-08/Water and Stone Ride Along.md"
+Cohesion: 0.50
+Nodes (3): [[00 Inbox/Zapier's Zaps are background listeners waiting to take action on a specified a trigger event]], crew management system and incentives, QBO
+
+### Community 2652 - "minimal-theme-variations.md"
+Cohesion: 0.50
+Nodes (3): Classic E-paper, high tech e-ink, warm paper
+
+### Community 2653 - "Notebook Navigator Icon Reference"
+Cohesion: 0.50
+Nodes (3): Notebook Navigator Icon Reference, Per-Folder Icons, Toolbar / Interface Icons
+
+### Community 2655 - "Portfolio website careful vetting and copywriting, do of work before.md"
+Cohesion: 0.50
+Nodes (3): [[The git commands I could have used to untangle the portfolio site git history]], 🛠 The Key Tools You've Now Seen In Action, 🔍 What `ahead: 0 | behind: 0` Means
+
+### Community 2656 - "21-monthly.md"
+Cohesion: 0.50
+Nodes (3): {{date:YYYY-MM}} — Monthly Note, Scratchpad, Trajectories & Reassessment
+
+### Community 2657 - "Q{{date:Q}} / Q4 {{date:YYYY}} — Quarterly Note"
+Cohesion: 0.50
+Nodes (3): Optional Modules, Q{{date:Q}} / Q4 {{date:YYYY}} — Quarterly Note, Quarterly Insights
+
+### Community 2658 - "daily-note.md"
+Cohesion: 0.50
+Nodes (3): {{date:dddd}} Output, {{date: dddd}} Plan, Reflections
+
+### Community 2659 - "miq-brainstorm.md"
+Cohesion: 0.50
+Nodes (3): Brain Dump, Distillation, Final MIQ
+
+### Community 2660 - "Session — {{title}}"
+Cohesion: 0.50
+Nodes (3): Notes produced this session, Session — {{title}}, Summary
+
+### Community 2661 - "task-note.md"
+Cohesion: 0.50
+Nodes (3): Context, Links, Subtasks
+
+### Community 2662 - "utility-note"
+Cohesion: 0.50
+Nodes (3): Notes, Steps, utility-note
+
+### Community 2663 - "weekly-note-template.md"
+Cohesion: 0.50
+Nodes (3): 🧠 Reflections and Mistakes, Scratchpad, 📅 Week {{date:w}} of {{date:YYYY}}
+
+### Community 2664 - "000 — Cleared context, bare retrieval"
+Cohesion: 0.50
+Nodes (3): 000 — Cleared context, bare retrieval, Narrative / Trajectory (Sab ONLY), Objective Reality (Agent ONLY)
+
+### Community 2665 - "001 — A7 anchor + variant fix + episodic vs meta axis"
+Cohesion: 0.50
+Nodes (3): 001 — A7 anchor + variant fix + episodic vs meta axis, Narrative / Trajectory (Sab ONLY), Objective Reality (Agent ONLY)
+
+### Community 2666 - "002 — F5 episodic + S1 schema + source_type design alignment"
+Cohesion: 0.50
+Nodes (3): 002 — F5 episodic + S1 schema + source_type design alignment, Narrative / Trajectory (Sab ONLY), Objective Reality (Agent ONLY)
+
+### Community 2667 - "003 — Final v0 benchmark run"
+Cohesion: 0.50
+Nodes (3): 003 — Final v0 benchmark run, Empirical Reality, Narrative / Trajectory
+
+### Community 2668 - "004 — Corpus v1 field-test realization"
+Cohesion: 0.50
+Nodes (3): 004 — Corpus v1 field-test realization, Empirical Reality, Narrative / Trajectory
+
+### Community 2669 - "CLI-agent-sessions-data-PLAN.md"
+Cohesion: 0.50
+Nodes (3): What I'll handle as architect, What's ready to hand off, Your data inventory
+
+### Community 2670 - "Context Packet Contract - 2026-07-01"
+Cohesion: 0.50
+Nodes (3): Context Packet Contract - 2026-07-01, Shared Unit, Why It Bridges The Three Surfaces
+
+### Community 2671 - "Benchmark v0 Queries"
+Cohesion: 0.50
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2672 - "Benchmark v0 Queries"
+Cohesion: 0.50
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2673 - "reindex_khoj_safe.py"
+Cohesion: 0.83
+Nodes (3): collect_files(), log(), main()
+
+### Community 2674 - "run_daily_hot_corpus.sh"
+Cohesion: 0.50
+Nodes (3): HOME, PATH, run_daily_hot_corpus.sh script
+
+### Community 2675 - "run_query_benchmark.py"
+Cohesion: 0.83
+Nodes (3): main(), post_query(), result_summary()
+
+### Community 2677 - "2) Apps (dock + app-level control)"
+Cohesion: 0.67
+Nodes (3): 2) Apps (dock + app-level control), Core actions (⌘ modifier), Usage loop
+
+### Community 2678 - "7. Multi-Agent Architecture"
+Cohesion: 0.67
+Nodes (3): 7.1 Recommended Agent Setup for Your Stack, 7.2 Setup Commands, 7. Multi-Agent Architecture
+
+### Community 2679 - "Homepage"
+Cohesion: 0.67
+Nodes (3): Bailey's Live Copy, Homepage, New Site Copy
+
+### Community 2680 - "Contact Page"
+Cohesion: 0.67
+Nodes (3): Bailey's Live Copy, Contact Page, New Site
+
+### Community 2681 - "Track 2: Review Redirect Tool"
+Cohesion: 0.67
+Nodes (3): [MODIFY] [App.tsx](file:///data/repos/aqua-stone-studio/src/App.tsx), [NEW] [LeaveReview.tsx](file:///data/repos/aqua-stone-studio/src/pages/LeaveReview.tsx), Track 2: Review Redirect Tool
+
+### Community 2682 - "Troubleshooting"
+Cohesion: 0.67
+Nodes (3): Common Formula Errors, Troubleshooting, YAML Syntax Errors
+
+### Community 2683 - "Key Functions"
+Cohesion: 0.67
+Nodes (3): Date Arithmetic, Duration Type, Key Functions
+
+### Community 2684 - "Filter Syntax"
+Cohesion: 0.67
+Nodes (3): Filter Operators, Filter Structure, Filter Syntax
+
+### Community 2685 - "Readiness Report: `skchaudr/cultural-intel`"
+Cohesion: 0.67
+Nodes (3): Big Pi Side — Blockers, GitHub Side — All Green, Readiness Report: `skchaudr/cultural-intel`
+
+### Community 2686 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2687 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2688 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2689 - "── Smart Retrieval Schemas ──────────────────────────────────────────────────"
+Cohesion: 0.67
+Nodes (3): feat/claude-web-adapter...origin/feat/claude-web-adapter, feat/claude-web-adapter...origin/feat/claude-web-adapter, ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+
+### Community 2690 - "── validation ────────────────────────────────────────────────────────────────"
+Cohesion: 0.67
+Nodes (3): main...origin/main, main...origin/main, ── validation ────────────────────────────────────────────────────────────────
+
+### Community 2691 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2692 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2693 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2694 - "── Smart Retrieval Schemas ──────────────────────────────────────────────────"
+Cohesion: 0.67
+Nodes (3): feat/claude-web-adapter...origin/feat/claude-web-adapter, feat/claude-web-adapter...origin/feat/claude-web-adapter, ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+
+### Community 2695 - "── validation ────────────────────────────────────────────────────────────────"
+Cohesion: 0.67
+Nodes (3): main...origin/main, main...origin/main, ── validation ────────────────────────────────────────────────────────────────
+
+### Community 2696 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2697 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2698 - "Benchmark v0 Queries"
+Cohesion: 0.67
+Nodes (3): Benchmark v0 Queries, Manual notes, Queries
+
+### Community 2699 - "── Smart Retrieval Schemas ──────────────────────────────────────────────────"
+Cohesion: 0.67
+Nodes (3): feat/claude-web-adapter...origin/feat/claude-web-adapter, feat/claude-web-adapter...origin/feat/claude-web-adapter, ── Smart Retrieval Schemas ──────────────────────────────────────────────────
+
+### Community 2700 - "── validation ────────────────────────────────────────────────────────────────"
+Cohesion: 0.67
+Nodes (3): main...origin/main, main...origin/main, ── validation ────────────────────────────────────────────────────────────────
+
+### Community 2701 - "<environment_context>"
+Cohesion: 0.67
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2702 - "<environment_context>"
+Cohesion: 0.67
+Nodes (3): <environment_context>, Provenance, Session Identity
+
+### Community 2703 - "002 — *Needle migrated to Mac, HTTP daemon shipped*"
+Cohesion: 0.67
+Nodes (3): 002 — *Needle migrated to Mac, HTTP daemon shipped*, Empirical Reality (agent only), Narrative / Trajectory (sab only)
+
+### Community 2704 - "Use numpy at module level to avoid initializing JAX backend before jax.distributed.initialize"
+Cohesion: 0.67
+Nodes (3): main...origin/main, main...origin/main [ahead 3], Use numpy at module level to avoid initializing JAX backend before jax.distributed.initialize()
+
+### Community 2705 - "002 — *Needle migrated to Mac, HTTP daemon shipped*"
+Cohesion: 0.67
+Nodes (3): 002 — *Needle migrated to Mac, HTTP daemon shipped*, Empirical Reality (agent only), Narrative / Trajectory (sab only)
+
+### Community 2706 - "Use numpy at module level to avoid initializing JAX backend before jax.distributed.initialize"
+Cohesion: 0.67
+Nodes (3): main...origin/main, main...origin/main [ahead 3], Use numpy at module level to avoid initializing JAX backend before jax.distributed.initialize()
+
+### Community 2707 - "Using Skills"
+Cohesion: 0.67
+Nodes (3): Red Flags, The Rule, Using Skills
+
+### Community 2708 - "Using Skills"
+Cohesion: 0.67
+Nodes (3): Red Flags, The Rule, Using Skills
+
+### Community 2715 - "02 — Job Schema"
+Cohesion: 0.67
+Nodes (3): 02 — Job Schema, Key Fields, Schema
+
+### Community 2716 - "GDDP"
+Cohesion: 0.67
+Nodes (3): GDDP, Notes in this project, Recent sessions
+
+### Community 2717 - "Recommended build order"
+Cohesion: 0.67
+Nodes (3): Recommended build order, The core design principle, User
+
+### Community 2721 - "1. How the "Split" Works"
+Cohesion: 0.67
+Nodes (3): 1. How the "Split" Works, Clean up Local Mac VS Code 😈, Related DevInfra Notes
+
+### Community 2781 - "7. Multi-Agent Architecture"
+Cohesion: 0.67
+Nodes (3): 7.1 Agent Setup — Canonical Agents, 7.2 Setup Commands, 7. Multi-Agent Architecture
+
+## Knowledge Gaps
+- **34002 isolated node(s):** `id`, `name`, `version`, `minAppVersion`, `description` (+33997 more)
+  These have ≤1 connection - possible missing edges or undocumented components.
+- **427 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Suggested Questions
+_Questions this graph is uniquely positioned to answer:_
+
+- **Why does `ev()` connect `error` to `emit_event`, `create_doc_fragment`, `emit_event`, `smart-dedupe/main.js`, `empty`, `empty`?**
+  _High betweenness centrality (0.005) - this node is a cross-community bridge._
+- **Why does `matches()` connect `Nt` to `notebook-navigator/main.js`, `get`, `vo`, `error`, `error`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **Why does `post_process14()` connect `empty` to `error`, `smart-templates/main.js`, `key`, `create_doc_fragment`?**
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
+- **What connects `id`, `name`, `version` to the rest of the system?**
+  _34002 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `3. Native Ingestion Trigger` be split into smaller, more focused modules?**
+  _Cohesion score 0.0016194331983805667 - nodes in this community are weakly interconnected._
+- **Should `3. Native Ingestion Trigger` be split into smaller, more focused modules?**
+  _Cohesion score 0.0016194331983805667 - nodes in this community are weakly interconnected._
+- **Should `3. Native Ingestion Trigger` be split into smaller, more focused modules?**
+  _Cohesion score 0.0016194331983805667 - nodes in this community are weakly interconnected._
