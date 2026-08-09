@@ -1,0 +1,12 @@
+{
+  "host": "khoj-38",
+  "finished_at": "2026-08-09T00:22:52.205605+00:00",
+  "ok": true,
+  "staged_count": 303,
+  "database_entry_count": 2590,
+  "indexed_data_size_in_mb": 4,
+  "search_smoke": "8/8 high-signal",
+  "index_method": "PUT 50 priority + PATCH rest in 30s",
+  "stage_dir": "/data/corpus-hot/intended-v1/stage",
+  "script": "scripts/assemble_intended_corpus_vm.py"
+}
