@@ -1,6 +1,5 @@
-> **Git durable copy** of `Lane A project claim`.
-> **VM root reflection (preferred on host):** `/home/sab-mini/00-*.md`
-> Keep root + this file in sync when either changes.
+> **Git durable copy** of Lane A project claim.
+> **VM root:** `/home/sab-mini/00-PROJECT-LANE.md`
 
 # Lane A — Project / corpus (this Grok)
 
@@ -117,14 +116,14 @@ Connectivity ≠ product. **Lane A job is quality + corpus truth.**
 
 ## Near-term Lane A queue (ordered)
 
-1. **Single tip discipline** — prefer `/home/sab-mini/MyAPI`; do not silently edit `/data/repos/MyAPI` API without sync plan.
-2. **Corpus truth decision** — document active index set: lean hot pack vs full notes vs staged hybrid; fix denylist.
-3. **High-signal reindex** — get anchors + corpus-hot-v1 + status docs into live Khoj entries; measure entry count + golden HIT rate.
-4. **Durable goldens** — copy latest smoke results into MyAPI git; push.
+1. ~~**Intended sources assembled + searchable on this VM**~~ — **DONE 2026-08-09** as **pre-normalize allowlist index only**: 303 staged → ~2590 Khoj entries, search 8/8. **Not sanitized/normalized.** See smoke doc honesty section.
+2. **Sanitize → normalize intended slice** — run `sanitization` + `normalize_corpus` / schema (source_type, trust, conversation vs artifact) on a pilot batch; reindex **normalized** output. This is the real corpus step.
+3. **Single tip discipline** — prefer `/home/sab-mini/MyAPI`; do not silently edit `/data/repos/MyAPI` API without sync plan.
+4. **Re-run assemble when sources change** — then normalize before treating as product corpus; batch PUT/PATCH only.
 5. **Agent `/query` contract** — short doc + examples (`q`, `n`) agents can paste (N2).
 6. **Briefs** — project + person orientation payloads (N3–N4) with honest empty/weak.
 7. **Eight must-questions prove** (N6) with receipts — definition of v1 done.
-8. **Mini continuation test** — after a push, confirm Mini can pull packs without this disk.
+8. **Mini continuation test** — pull packs; re-assemble/index with Lane B engine up.
 
 **Leave alone (Lane B):** `deploy/khoj-engine/*` authorship, docker compose health on Mini, postgres container — coordinate only.
 

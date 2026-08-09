@@ -48,7 +48,32 @@
 
 ## `/query` (Context Refinery)
 
-Still returns results; titles often `untitled` (metadata surface), but underlying Khoj hits are now the intended pack. Ranking polish is a follow-up — **corpus is up**.
+Still returns results; titles often `untitled` (metadata surface), but underlying Khoj hits are now the intended pack.
+
+## Honesty: what this is *not*
+
+**This run did not sanitize or normalize the corpus.**
+
+What happened:
+
+1. **Allowlist / assemble** — pick intended sources (handoffs, docs, session *summaries*, git tip docs, graphify, wave-1).
+2. **Light wrap** — provenance frontmatter (`source: intended-corpus-vm`, `category`, `origin_path`).
+3. **Index** — batch PUT/PATCH into Khoj so search can see the mix.
+
+What did **not** run:
+
+| Layer | Status |
+|-------|--------|
+| `context_refinery/sanitization.py` (`sanitize_document`) | **not applied** to stage |
+| `scripts/normalize_corpus.py` / `normalization_schema` | **not run** on this slice |
+| Vault v1 / Obsidian substrate shape | **not built** |
+| Conversation → event + artifact summary split | **not done** |
+| Trust / canonicality / source_type backfill | **not stamped** (beyond coarse `category`) |
+| Presentable narrative with evidence pointers (product bar) | **not produced** |
+
+So: **searchable raw-ish allowlist**, not **normalized knowledge objects**. Reindex made ranking *possible*; it does not satisfy the rebuild line: *sanitize → normalize → presentable narrative*.
+
+Next product step (Lane A): normalize this intended slice (or a smaller pilot batch) through the existing schema/adapters, then reindex **normalized** output — not re-copy raw again.
 
 ## Re-run
 
