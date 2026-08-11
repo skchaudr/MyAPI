@@ -2,6 +2,7 @@ import json
 import logging
 import tempfile
 import os
+import asyncio
 from fastapi import APIRouter, HTTPException, UploadFile, File, Body
 from api.schemas import CanonicalDocumentResponse
 from context_refinery.adapters.obsidian import parse_obsidian_file
@@ -20,17 +21,32 @@ class CodexImportRequest(BaseModel):
 class ClaudeCodeImportRequest(BaseModel):
     root: str = "~/.claude/projects"
 
+def sync_write_chunk(path, chunk):
+    with open(path, 'ab') as f:
+        f.write(chunk)
+
+def sync_remove_file(path):
+    if os.path.exists(path):
+        os.remove(path)
+
+def sync_parse_chatgpt(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
 @router.post("/obsidian", response_model=CanonicalDocumentResponse)
 async def import_obsidian(file: UploadFile = File(...)):
     if not file.filename.endswith(".md"):
         raise HTTPException(status_code=400, detail="Only .md files are supported for Obsidian import.")
 
-    with tempfile.NamedTemporaryFile(suffix=".md", delete=False) as tmp:
-        tmp.write(await file.read())
-        tmp_path = tmp.name
+    loop = asyncio.get_running_loop()
+    fd, tmp_path = tempfile.mkstemp(suffix=".md")
+    os.close(fd) # Close it immediately, we'll append to path directly
 
     try:
-        result = parse_obsidian_file(tmp_path)
+        while chunk := await file.read(1024 * 1024):
+            await loop.run_in_executor(None, sync_write_chunk, tmp_path, chunk)
+
+        result = await loop.run_in_executor(None, parse_obsidian_file, tmp_path)
         # Only override title if it wasn't extracted from frontmatter
         if "title" not in result or not result["title"]:
             result["title"] = file.filename.replace(".md", "")
@@ -44,18 +60,29 @@ async def import_obsidian(file: UploadFile = File(...)):
         logger.error("Error importing obsidian", exc_info=True)
         raise HTTPException(status_code=500, detail="An internal server error occurred")
     finally:
-        os.remove(tmp_path)
+        await loop.run_in_executor(None, sync_remove_file, tmp_path)
 
 @router.post("/chatgpt", response_model=list[CanonicalDocumentResponse])
 async def import_chatgpt(file: UploadFile = File(...)):
     if not file.filename.endswith(".json"):
         raise HTTPException(status_code=400, detail="Only .json files are supported for ChatGPT import.")
 
-    content = await file.read()
+    loop = asyncio.get_running_loop()
+    fd, tmp_path = tempfile.mkstemp(suffix=".json")
+    os.close(fd) # Close it immediately, we'll append to path directly
+
     try:
-        data = json.loads(content)
+        while chunk := await file.read(1024 * 1024):
+            await loop.run_in_executor(None, sync_write_chunk, tmp_path, chunk)
+
+        data = await loop.run_in_executor(None, sync_parse_chatgpt, tmp_path)
     except json.JSONDecodeError:
         raise HTTPException(status_code=422, detail="Invalid JSON file.")
+    except Exception:
+        logger.error("Error reading chatgpt import", exc_info=True)
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
+    finally:
+        await loop.run_in_executor(None, sync_remove_file, tmp_path)
 
     if isinstance(data, dict):
         data = [data]
@@ -63,7 +90,7 @@ async def import_chatgpt(file: UploadFile = File(...)):
     results = []
     for item in data:
         try:
-            doc = parse_chatgpt_conversation(item)
+            doc = await loop.run_in_executor(None, parse_chatgpt_conversation, item)
             results.append(CanonicalDocumentResponse(**doc))
         except Exception:
             logger.error("Skipping a conversation due to parsing error", exc_info=True)
@@ -73,7 +100,8 @@ async def import_chatgpt(file: UploadFile = File(...)):
 @router.post("/codex", response_model=list[CanonicalDocumentResponse])
 async def import_codex(request: CodexImportRequest = CodexImportRequest()):
     try:
-        results = scan_codex_sessions(root=request.root)
+        loop = asyncio.get_running_loop()
+        results = await loop.run_in_executor(None, scan_codex_sessions, request.root)
 
         parsed_results = []
         for doc in results:
@@ -87,7 +115,8 @@ async def import_codex(request: CodexImportRequest = CodexImportRequest()):
 @router.post("/claude-code", response_model=list[CanonicalDocumentResponse])
 async def import_claude_code(request: ClaudeCodeImportRequest = ClaudeCodeImportRequest()):
     try:
-        docs = scan_claude_sessions(root=request.root)
+        loop = asyncio.get_running_loop()
+        docs = await loop.run_in_executor(None, scan_claude_sessions, request.root)
         return [CanonicalDocumentResponse(**doc) for doc in docs]
     except Exception:
         logger.error("Error importing claude code sessions", exc_info=True)
