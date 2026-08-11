@@ -1,19 +1,22 @@
 # AGENTS.md — MyAPI / MyAPI-rebuild
 
-Personal context engine rebuild. A vault of durable handoffs surfaced as
-context briefs via MCP — not v0's single RAG pool.
+Personal context engine rebuild. MyAPI maintains an evidence-backed Decision
+Graph and serves current project intent as ContextBriefs through MCP.
 
-Read [`project-documents/REBUILD-CONTEXT-ANCHOR.md`](project-documents/REBUILD-CONTEXT-ANCHOR.md)
-first in any cold session — it locks the paradigm, glossary, and direction
-so origin/naming don't get re-litigated. Build plan:
-[`project-documents/ARCHITECTURE.md`](project-documents/ARCHITECTURE.md).
-Project brief: [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md).
+Read [`docs/decision-object-is-born-8.10.26.md`](docs/decision-object-is-born-8.10.26.md)
+and [`IMPLEMENTATION-PLAN.md`](IMPLEMENTATION-PLAN.md) first in any cold session.
+The canonical language lives in [`CONTEXT.md`](CONTEXT.md). Earlier substrate and
+history remain in [`project-docs/REBUILD-CONTEXT-ANCHOR.md`](project-docs/REBUILD-CONTEXT-ANCHOR.md),
+[`project-docs/ARCHITECTURE.md`](project-docs/ARCHITECTURE.md), and
+[`PROJECT-BRIEF.md`](PROJECT-BRIEF.md).
 
 ## Phase
 
-Planning / docs-first rebuild work is now merged toward `main`. Do not invent
-run/test/lint commands for new rebuild surfaces until the repo adds them.
-Work order is traces → golden briefs → reader → MCP, in that sequence.
+The Decision Graph direction is accepted. Execute M1 through M8 from
+`IMPLEMENTATION-PLAN.md` in order, beginning with the frozen MyAPI Decision
+evaluation set. MyAPI-rebuild is the first subject corpus, and execution starts
+directly in this repository. Do not invent run/test/lint commands for new rebuild
+surfaces until the repo adds them.
 
 ## Project snapshot
 
@@ -32,7 +35,7 @@ Work order is traces → golden briefs → reader → MCP, in that sequence.
 - **MCP surface (target):** `get_project_context`, `get_person_context` —
   the anchor locks these two names; do not fork into `get_user_context` /
   "operator context"
-- **Key dirs:** `project-documents/`, `handoffs/`, `graphify-out/`, `evals/`,
+- **Key dirs:** `project-docs/`, `.handoffs/`, `graphify-out/`, `evals/`,
   `ingest/`, `rag-pipeline/` (sub-agent contracts)
 
 ## Command location rules
