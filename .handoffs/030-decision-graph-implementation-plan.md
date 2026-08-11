@@ -24,7 +24,7 @@ The corpus-first scaffold has been replaced by an eight-node Decision Graph plan
 
 ### Current Git state (2-3 sentences max, anything more must be critically justifiable)
 
-This checkpoint belongs entirely to `codex/myapi-decision-plan` and contains documentation plus machine-local Graphify ignore rules. The intended checkpoint leaves the branch clean after commit and push.
+This checkpoint belongs entirely to `codex/myapi-decision-plan` and contains documentation plus machine-local Graphify ignore rules. The branch is committed locally; environment policy reserves the remote push for Sab.
 
 ### Artifacts (Filepath - Description, 1 line max per artifact)
 
