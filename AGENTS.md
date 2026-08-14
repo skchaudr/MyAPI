@@ -1,146 +1,82 @@
-# AGENTS.md — MyAPI / MyAPI-rebuild
+# AGENTS.md — Part 1 ICM Routing Map
 
-Personal context engine rebuild. A vault of durable handoffs surfaced as
-context briefs via MCP — not v0's single RAG pool.
+Fresh agent entrypoint for MyAPI Part 1. GDDP schedules; this map routes.
 
-Read [`project-documents/REBUILD-CONTEXT-ANCHOR.md`](project-documents/REBUILD-CONTEXT-ANCHOR.md)
-first in any cold session — it locks the paradigm, glossary, and direction
-so origin/naming don't get re-litigated. Build plan:
-[`project-documents/ARCHITECTURE.md`](project-documents/ARCHITECTURE.md).
-Project brief: [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md).
+## Load order
 
-## Phase
+1. This file (where to go)
+2. `docs/CONTEXT.md` (slice boundary)
+3. Room `CONTEXT.md` (what the stage means)
+4. Exactly one `tasks/<task>.md` named by the node (what to do)
 
-Planning / docs-first rebuild work is now merged toward `main`. Do not invent
-run/test/lint commands for new rebuild surfaces until the repo adds them.
-Work order is traces → golden briefs → reader → MCP, in that sequence.
+## Node id → room → contract
 
-## Project snapshot
+Match the GDDP `node_id` / task slug against the table. One hop from this map reaches the room; the room CONTEXT names the contract file.
 
-- **Target stack:** Python (`context_refinery/` — adapters, triage CLI,
-  FastAPI `/query`), Markdown/Obsidian (corpus + brief output,
-  FSRS-migratable frontmatter), JSON/YAML (graph + schemas)
-- **Existing tooling:** `graphify extract .` refreshes
-  `graphify-out/.graphify_analysis.json` (no LLM cold-start needed)
-- **Substrates** (layout-dependent — use the row for your machine):
-  - **Mac dual worktree** (`MyAPI-rebuild` + `MyAPI`): vault at
-    `../MyAPI/Corpus v1.0/` (22 PARA buckets); graph at `graphify-out/graph.json`
-  - **VM sab-dev** (`myapi` + `myapi-corpus`): vault at
-    `../myapi-corpus/Corpus v1.0/` when synced; graph at `graphify-out/graph.json`
-  - **Single checkout:** use sibling corpus worktree path if present, else note
-    vault is Mac-local until synced
-- **MCP surface (target):** `get_project_context`, `get_person_context` —
-  the anchor locks these two names; do not fork into `get_user_context` /
-  "operator context"
-- **Key dirs:** `project-documents/`, `handoffs/`, `graphify-out/`, `evals/`,
-  `ingest/`, `rag-pipeline/` (sub-agent contracts)
+### 01-decisions/
 
-## Command location rules
+| Task slug | Contract |
+|---|---|
+| `decision-schema` | `01-decisions/tasks/decision-schema.md` |
+| `inventory-sources` | `01-decisions/tasks/inventory-sources.md` |
+| `extract-decisions` | `01-decisions/tasks/extract-decisions.md` |
+| `normalize-decisions` | `01-decisions/tasks/normalize-decisions.md` |
+| `validate-decision-set` | `01-decisions/tasks/validate-decision-set.md` |
 
-This repository has historically used both local Mac and remote VM surfaces.
-When giving a command, always state where it should be run.
+Room map: `01-decisions/CONTEXT.md`
 
-Required labels:
+### 02-corpus/
 
-- `Run on Mac:` — local workstation where the user is typing
-- `Run on VM:` — command executed from the remote Google Cloud VM target
-- `Run in VM shell:` — command run after SSHing into the VM
-- `Run in Cloud Shell:` — command run in Google Cloud Shell
+| Task slug | Contract |
+|---|---|
+| `build-corpus` | `02-corpus/tasks/build-corpus.md` |
+| `corpus-repro-check` | `02-corpus/tasks/corpus-repro-check.md` |
+| `khoj-transform` | `02-corpus/tasks/khoj-transform.md` |
 
-If a command depends on `localhost`, `127.0.0.1`, a service port, or a local
-file path, the target machine must be explicit. If the command only makes sense
-after an SSH hop or inside a specific shell session, say that too.
+Room map: `02-corpus/CONTEXT.md`
 
-Prefer one long command line over wrapped multi-line commands when possible. If
-a command must be multi-line, keep each line self-contained and clearly
-delimited. Any command being instructed to run must be placed on its own
-separate line, not inline with surrounding prose.
+### 03-ingestion/
 
-## Agent-driven development workflow
+| Task slug | Contract |
+|---|---|
+| `khoj-ingest` | `03-ingestion/tasks/khoj-ingest.md` |
+| `verify-retrieval` | `03-ingestion/tasks/verify-retrieval.md` |
 
-The default reader of this repo is often another agent. Optimize for the next
-session being able to start immediately, not for the current session merely
-appearing done.
+Room map: `03-ingestion/CONTEXT.md`
 
-### Start-of-session contract
+### 04-evaluation/
 
-1. Run `git status --short --branch` before editing. If it is not clean, stop
-   and classify the existing state as tracked changes, untracked files, ignored
-   generated files, or branch divergence.
-2. Do not overwrite, delete, rename, reformat, or "clean up" inherited changes
-   until you know whether they are user work, another agent's work, or generated
-   noise. If unsure, ask.
-3. Verify branch and upstream before work: `git branch --show-current`,
-   `git rev-parse --abbrev-ref --symbolic-full-name @{u}` when available, and
-   `git fetch --prune` before merge/rebase decisions.
-4. If work continues from another branch, first understand whether it should be
-   merged, rebased, abandoned, or left as a PR branch. Do not create parallel
-   branches for the same task without a reason recorded in the handoff.
+| Task slug | Contract |
+|---|---|
+| `eval-factual-rationale` | `04-evaluation/tasks/eval-factual-rationale.md` |
+| `eval-supersession-relationship` | `04-evaluation/tasks/eval-supersession-relationship.md` |
+| `eval-negative-control` | `04-evaluation/tasks/eval-negative-control.md` |
+| `preserve-results` | `04-evaluation/tasks/preserve-results.md` |
 
-### During-work rules
+Room map: `04-evaluation/CONTEXT.md`
 
-- Keep changes scoped to the requested task. Separate formatting-only churn from
-  functional/doc changes unless the formatter is the task.
-- Update `.gitignore` as soon as a tool creates repeatable local noise
-  (`node_modules/`, `dist/`, caches, local logs, generated media, temp exports),
-  but do not hide meaningful source artifacts just to get a clean status.
-- Make small commits at coherent checkpoints. A repo with hours of uncommitted
-  agent work is an unsafe handoff state.
-- Prefer existing project commands from this file. If a command is missing or
-  dependencies are unavailable, run the smallest relevant validation you can and
-  record the limitation.
-- Never force-push, rewrite shared history, delete remote branches, or discard
-  worktree changes unless the operator explicitly authorizes that exact action.
-- Inherited uncommitted changes are evidence, not debris. Commit and push them
-  unless you can prove they are noise. They may be the only copy.
+## Stage sequence
 
+`01-decisions → 02-corpus → 03-ingestion → 04-evaluation → stop`
 
-### Handoff requirement
+Do not skip upstream artifacts. If a required input path is missing, stop and report; do not invent replacements.
 
-At the first natural checkpoint after the initial task is complete, or sooner if
-context-window reset would help, create/update a handoff so the next session can
-resume without archaeology.
+## Contract shape (every task file)
 
-- Use the root `.handoffs/` folder. If it does not exist, create it.
-- Keep `.handoffs/000-template.md` as the canonical template. Do not overwrite it
-  with session notes.
-- For each substantive session, create the next numbered handoff file, e.g.
-  `.handoffs/001-brief-description.md`.
-- Fill only the `Agent Section`. Do not write below `Do NOT edit this file past
-  this point`; that section is reserved for Sab.
-- Keep the handoff short and empirical: date, branch, touched files, git state,
-  artifacts, and exact resume point.
-- A handoff is required before claiming completion if the repo had merges,
-  branch changes, conflicts, generated artifacts, failing validation, or any
-  state the next agent would otherwise need to rediscover.
+Each `tasks/*.md` must state:
 
-### End-of-session contract
+- **Inputs** — exact paths
+- **Output** — exact artifact path and shape
+- **Verification** — command or check
+- **Authoritative sources** — pointers only (no pre-answered schema/sources/queries)
 
-Before saying "done":
+## Global constraints (Part 1)
 
-1. Run the relevant validation/build/test commands documented above, or explain
-   exactly why they could not run.
-2. Run `git status --short --branch`. The target state is clean and synced with
-   upstream. If anything remains, it must be intentionally ignored or explicitly
-   called out with a path and reason.
-3. Commit all intended changes. Do not leave staged, unstaged, or untracked task
-   artifacts for the next session to interpret.
-4. Push the working branch. If the task is meant to land on `main`, merge it to
-   `main`, push `main`, and verify local `main` equals `origin/main`.
-5. Leave a concise handoff in the final response: branch, commit, pushed status,
-   validation run, changed surfaces, and any residual risk.
+- Scaffold and stage agents create markdown/artifacts only where contracts allow.
+- Never modify graph truth or runtime databases unless a later contract explicitly names a Khoj target.
+- Evaluation uses only the memo’s five fixed intents.
+- Answer quality is recorded; it is not a completion gate.
 
-### Not-done triggers
+## Rebuild / project docs
 
-Do not report completion if any of these are true:
-
-- uncommitted task changes remain;
-- local commits are not pushed;
-- the branch is diverged and unresolved;
-- merge conflicts or stash entries remain;
-- validation failed and no explicit follow-up decision exists;
-- generated files, logs, caches, screenshots, or media are untracked and
-  unclassified.
-
-The standard is: the next agent can clone/pull, read this file, run the listed
-commands, and continue without first becoming a repository janitor.
+Broader rebuild operating notes live under `project-docs/`, `PROJECT-BRIEF.md`, and related trees. Part 1 execution stays inside the four rooms above unless a task contract points elsewhere for read-only authoritative input.
