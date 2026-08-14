@@ -9,10 +9,19 @@ into a clean target corpus, and verify presence plus basic retrieval.
 - Decision schema (field/metadata expectations for chunks)
 
 ## Produces
-- `output/` — transform receipts, ingest logs, verification notes
+- `output/khoj-corpus/` — exact Markdown files staged for Khoj ingestion
+- `output/transform-notes.md` — format, deployment-discovery, and transform evidence
+- Later nodes add ingest logs and verification notes under `output/`
 
-## Local layout
-- `output/` — ingestion evidence only (no second corpus copy required)
+## Transform
+Run on Mac, from the repository root:
+
+```bash
+python3 03-ingestion/transform_for_khoj.py
+```
+
+The transform copies the flat Stage D Markdown snapshot byte-for-byte and
+atomically replaces only the derived `output/khoj-corpus/` directory.
 
 ## Next room
 `04-evaluation` runs the fixed query set against the ingested corpus and stops.
