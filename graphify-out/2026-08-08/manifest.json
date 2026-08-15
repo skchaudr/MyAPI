@@ -1,0 +1,1462 @@
+{
+  ".handoffs/000-template.md": {
+    "mtime": 1783079440.6216583,
+    "ast_hash": "d3fd90ae3f7b8c97aa185e4bca8741c3",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1784952340.7068949,
+    "ast_hash": "951d185cd603d4051ad02d74bd9deabe",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1783559111.3652573,
+    "ast_hash": "339940a06d40cf33907b05beb64d91bd",
+    "semantic_hash": ""
+  },
+  ".agents/hooks.json": {
+    "mtime": 1783079440.6210277,
+    "ast_hash": "87f12382827d18960c9e2d979eb21a74",
+    "semantic_hash": ""
+  },
+  ".agents/hooks/ag_natural_guard.py": {
+    "mtime": 1783079440.62121,
+    "ast_hash": "0306dd67ab92a1035169154df258c6a6",
+    "semantic_hash": ""
+  },
+  ".agents/hooks/test_ag_natural_guard.py": {
+    "mtime": 1783079440.6213202,
+    "ast_hash": "8a2c7a0abc5d7e4034de8c97c1207f2b",
+    "semantic_hash": ""
+  },
+  ".mcp.json": {
+    "mtime": 1785002215.669255,
+    "ast_hash": "771c3c4a8b2d719420859801d349c419",
+    "semantic_hash": ""
+  },
+  "bin/gddp": {
+    "mtime": 1785981658.1687994,
+    "ast_hash": "0b63e661caeb1eb4bcd99e2f6ecc3c51",
+    "semantic_hash": ""
+  },
+  "droid-wiki/.wiki-meta.json": {
+    "mtime": 1783694093.9343593,
+    "ast_hash": "9781dfbb9fb7bc3810ae0ab23d899b24",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/references/obsidian-audit-jules-pr39-reference.py": {
+    "mtime": 1773469932.7712424,
+    "ast_hash": "e43a86225448bd5537e2849d60e1c57d",
+    "semantic_hash": ""
+  },
+  "scripts/_test_support_node_status_history.py": {
+    "mtime": 1784846332.1805809,
+    "ast_hash": "0ff3d73abb929532bb3c89b42bc4304e",
+    "semantic_hash": ""
+  },
+  "scripts/acceptance_items.py": {
+    "mtime": 1783079440.635647,
+    "ast_hash": "5717d7b33aace5566500a604f3bebd21",
+    "semantic_hash": ""
+  },
+  "scripts/batch_fill.py": {
+    "mtime": 1785399169.1878674,
+    "ast_hash": "f8091b40675b047e6d0dc584b0a3968b",
+    "semantic_hash": ""
+  },
+  "scripts/enrich_graph.py": {
+    "mtime": 1783559111.3770986,
+    "ast_hash": "dc734fcaf1596beb92140c09425066f8",
+    "semantic_hash": ""
+  },
+  "scripts/export_graph_bundles.py": {
+    "mtime": 1783160459.0913498,
+    "ast_hash": "7028e272086d5bc9f412ab88c28b9cd9",
+    "semantic_hash": ""
+  },
+  "scripts/frontier.py": {
+    "mtime": 1785399142.127499,
+    "ast_hash": "3d0270ce7392f9f995146732ef8a2b9b",
+    "semantic_hash": ""
+  },
+  "scripts/gddp.py": {
+    "mtime": 1786182416.682939,
+    "ast_hash": "3fa08bc9838f7478122295ecce4babea",
+    "semantic_hash": ""
+  },
+  "scripts/graph_compare.py": {
+    "mtime": 1783559111.3772187,
+    "ast_hash": "b3f418a481330073898f532022eef359",
+    "semantic_hash": ""
+  },
+  "scripts/graphify_to_nodes.py": {
+    "mtime": 1783559111.3773444,
+    "ast_hash": "beb9252308011223638ca9b13eef4317",
+    "semantic_hash": ""
+  },
+  "scripts/import_node.py": {
+    "mtime": 1786179169.4239507,
+    "ast_hash": "78cea4c4d211f4bbf650ac26be836b57",
+    "semantic_hash": ""
+  },
+  "scripts/llm_draft.py": {
+    "mtime": 1783559111.3775916,
+    "ast_hash": "22820cf9ac1b47abd91d31d5b8408fd8",
+    "semantic_hash": ""
+  },
+  "scripts/new_node.py": {
+    "mtime": 1785063357.7807024,
+    "ast_hash": "41e7665656704742fe8043abc1718712",
+    "semantic_hash": ""
+  },
+  "scripts/node_cli.py": {
+    "mtime": 1786109638.2249863,
+    "ast_hash": "b6d555b79162e0b2b6e7dd912ee6b1f6",
+    "semantic_hash": ""
+  },
+  "scripts/obsidian_export.py": {
+    "mtime": 1783559111.3778908,
+    "ast_hash": "f674014d50f8d515f12cf12b5a893436",
+    "semantic_hash": ""
+  },
+  "scripts/outline_to_nodes.py": {
+    "mtime": 1783559111.3780055,
+    "ast_hash": "f6d47ebebbcd1b0e17cf42b5c5a8944e",
+    "semantic_hash": ""
+  },
+  "scripts/rapid_add.py": {
+    "mtime": 1784135622.2201576,
+    "ast_hash": "8af9f901af30369a03a0e3c94f059052",
+    "semantic_hash": ""
+  },
+  "scripts/terminal.py": {
+    "mtime": 1785555009.6538208,
+    "ast_hash": "919ffe12e0c5e70eaae92878ab9fe73c",
+    "semantic_hash": ""
+  },
+  "scripts/test_batch_fill_cli.py": {
+    "mtime": 1783559111.3782322,
+    "ast_hash": "21073c17af7265cb990e52c844dac707",
+    "semantic_hash": ""
+  },
+  "scripts/test_compliance.py": {
+    "mtime": 1785063357.7856708,
+    "ast_hash": "2d1718910dd8b689338a3bfdae1a73b2",
+    "semantic_hash": ""
+  },
+  "scripts/test_frontier.py": {
+    "mtime": 1785165456.614831,
+    "ast_hash": "f8478dfd7366b0fb2f7a4d0ac01c8b0d",
+    "semantic_hash": ""
+  },
+  "scripts/test_gddp.py": {
+    "mtime": 1785981658.1702511,
+    "ast_hash": "f12d20997513050a5c80f321fb67945a",
+    "semantic_hash": ""
+  },
+  "scripts/test_gddp_dispatch.py": {
+    "mtime": 1785922600.4662776,
+    "ast_hash": "a8b2e75bdaf65a678e831feb8376c304",
+    "semantic_hash": ""
+  },
+  "scripts/test_node_cli.py": {
+    "mtime": 1786109797.3482707,
+    "ast_hash": "45c1eda6676f495cd08e55f79c3ecca5",
+    "semantic_hash": ""
+  },
+  "scripts/test_terminal.py": {
+    "mtime": 1785561295.9626427,
+    "ast_hash": "64426ad7e9a0459c1623bc1d12945d4b",
+    "semantic_hash": ""
+  },
+  "scripts/test_validate.py": {
+    "mtime": 1786044279.1489713,
+    "ast_hash": "2b08709486d5cb8825f57b141e1adc05",
+    "semantic_hash": ""
+  },
+  "scripts/validate.py": {
+    "mtime": 1786179169.3917348,
+    "ast_hash": "9bf1cbb991105a57510d12e2638320b2",
+    "semantic_hash": ""
+  },
+  "setup.sh": {
+    "mtime": 1783079440.637255,
+    "ast_hash": "50ade83b7c8191abf2a6035da8873ed5",
+    "semantic_hash": ""
+  },
+  "verification-runtime/aa-cli/common-core.json": {
+    "mtime": 1783440838.3102102,
+    "ast_hash": "207760a3c52ad935fb4765b2599d2926",
+    "semantic_hash": ""
+  },
+  "verification-runtime/gddp-runtime/pi-evaluator-harness.json": {
+    "mtime": 1783440838.3103688,
+    "ast_hash": "faed1368b0c5e206cb398a67d049abc3",
+    "semantic_hash": ""
+  },
+  "verification-runtime/vault-doctor/scan-vault-core.json": {
+    "mtime": 1783440838.310566,
+    "ast_hash": "de5964c5f861d9113c919896d41b9597",
+    "semantic_hash": ""
+  },
+  ".agents/rules/natural-bounded-autonomy.md": {
+    "mtime": 1783079440.6214492,
+    "ast_hash": "6072989a5ad30b68a7b27d3e73db7aab",
+    "semantic_hash": ""
+  },
+  ".handoffs/001-node-cli-next-session.md": {
+    "mtime": 1783079440.6217575,
+    "ast_hash": "f1e28194ccc96e431aa4dd015e127352",
+    "semantic_hash": ""
+  },
+  ".handoffs/002-build-real-graphs.md": {
+    "mtime": 1783079440.6218474,
+    "ast_hash": "b547aa505d0343efdf904bebc3024dba",
+    "semantic_hash": ""
+  },
+  ".handoffs/003-practice-graphs-loop.md": {
+    "mtime": 1783079440.621929,
+    "ast_hash": "080212fa29bbd4bf80ab22e46692170e",
+    "semantic_hash": ""
+  },
+  ".handoffs/004-verification-harness.md": {
+    "mtime": 1783079440.6220353,
+    "ast_hash": "1f567d665b054ffbc2e281abf357241b",
+    "semantic_hash": ""
+  },
+  ".handoffs/005-sell-valuables-evaluation-probes.md": {
+    "mtime": 1783079440.6221557,
+    "ast_hash": "47712cb22a4585b257795d943edab391",
+    "semantic_hash": ""
+  },
+  ".handoffs/014-first-live-loop-run-and-harness-redesign.md": {
+    "mtime": 1783079440.6223645,
+    "ast_hash": "993343a72f497eadf484d369e0c28abc",
+    "semantic_hash": ""
+  },
+  ".handoffs/015-obsidian-vault-export.md": {
+    "mtime": 1783079440.622512,
+    "ast_hash": "9e0f3e4e1de73c8eaff5be989948a957",
+    "semantic_hash": ""
+  },
+  ".handoffs/015-verifier-contract-priorities.md": {
+    "mtime": 1783079440.6226666,
+    "ast_hash": "d772b77cc25621cb855dad283d288990",
+    "semantic_hash": ""
+  },
+  ".handoffs/016-verifier-contract-reconciliation.md": {
+    "mtime": 1783079440.622808,
+    "ast_hash": "a500f315bce0ed73a40a75d952329583",
+    "semantic_hash": ""
+  },
+  ".handoffs/017-verifier-contract-target.md": {
+    "mtime": 1783079440.6229334,
+    "ast_hash": "fec1df1d9ba17d2fc340dabfa2cd7955",
+    "semantic_hash": ""
+  },
+  ".handoffs/018-aa-cli-graph-hygiene.md": {
+    "mtime": 1783079440.6230776,
+    "ast_hash": "2cc95c7746b83fecaca522add1ce5ce3",
+    "semantic_hash": ""
+  },
+  ".handoffs/019-runtime-graph-reconciliation.md": {
+    "mtime": 1783079440.623226,
+    "ast_hash": "160f0457ded578005e260f346c2f091f",
+    "semantic_hash": ""
+  },
+  ".handoffs/020-shareable-graph-bundles.md": {
+    "mtime": 1783126652.6343377,
+    "ast_hash": "fd1e8944d84d4f4000d28bc110c71f11",
+    "semantic_hash": ""
+  },
+  ".handoffs/021-evaluator-three-graph-run.md": {
+    "mtime": 1783440838.3084712,
+    "ast_hash": "87497e0d0e4d7c338e8d744bd8bb803b",
+    "semantic_hash": ""
+  },
+  ".handoffs/022-unified-node-cli-stage1.md": {
+    "mtime": 1784668355.3444276,
+    "ast_hash": "67199f839dc82b0bc1b48deeddc5427a",
+    "semantic_hash": ""
+  },
+  ".handoffs/023-executor-neutral-agent-mode.md": {
+    "mtime": 1784669706.4977648,
+    "ast_hash": "2f03458234d0b02152b0c264fd283769",
+    "semantic_hash": ""
+  },
+  ".handoffs/024-responsive-node-cli-vision-qa.md": {
+    "mtime": 1784674588.036355,
+    "ast_hash": "34c5442ba74ee2c77a1f9e4cfcb97eb4",
+    "semantic_hash": ""
+  },
+  ".handoffs/025-config-owned-gddp-cli.md": {
+    "mtime": 1784841778.958242,
+    "ast_hash": "735aacd734503444bc24effda6fe9ce4",
+    "semantic_hash": ""
+  },
+  ".handoffs/026-cli-output-hierarchy.md": {
+    "mtime": 1784854118.3237352,
+    "ast_hash": "04e2caef4381de9d4bf8cc3c4819750d",
+    "semantic_hash": ""
+  },
+  ".handoffs/027-interactive-redraw-jobs-browser.md": {
+    "mtime": 1784855642.2525895,
+    "ast_hash": "0fb7c81870d4a7a9cd0a9391671ee78b",
+    "semantic_hash": ""
+  },
+  ".handoffs/028-current-evaluator-evidence-gate.md": {
+    "mtime": 1784856626.4242241,
+    "ast_hash": "e9d0480f9977f74c40b92992f3031bb8",
+    "semantic_hash": ""
+  },
+  ".handoffs/029-node-job-status-boundary.md": {
+    "mtime": 1784952340.7063427,
+    "ast_hash": "6fe57af697ea18a080081c17adacb85b",
+    "semantic_hash": ""
+  },
+  ".handoffs/030-jules-api-dual-run-routing.md": {
+    "mtime": 1785063413.482031,
+    "ast_hash": "a004467713ea811ddd7f85a4dbe170d4",
+    "semantic_hash": ""
+  },
+  ".handoffs/031-operator-dispatch.md": {
+    "mtime": 1785145969.0885165,
+    "ast_hash": "eac00ffc54dd59dc4f6219a21235bf0d",
+    "semantic_hash": ""
+  },
+  ".handoffs/032-operator-frontier-view.md": {
+    "mtime": 1785165887.2980523,
+    "ast_hash": "32ecf823455fa5de38b36f5c1ca09c48",
+    "semantic_hash": ""
+  },
+  ".handoffs/033-gddp-tui-navigation.md": {
+    "mtime": 1785338151.33016,
+    "ast_hash": "84393faa1cfa73d81be88d8e7fc8b611",
+    "semantic_hash": ""
+  },
+  ".handoffs/034-dispatch-graph-target-fix.md": {
+    "mtime": 1785338151.330479,
+    "ast_hash": "a00a4b4b73510dcc7fbd461df723bd3c",
+    "semantic_hash": ""
+  },
+  ".handoffs/035-human-first-evaluator-output.md": {
+    "mtime": 1785631366.4559336,
+    "ast_hash": "11317dce914015cae2c5a40be825be23",
+    "semantic_hash": ""
+  },
+  ".handoffs/036-node-update-input-fix.md": {
+    "mtime": 1785633628.9825985,
+    "ast_hash": "754a2b226aa2c157e67950f358a7478d",
+    "semantic_hash": ""
+  },
+  ".handoffs/037-gddp-wayfinder-skill-and-aa-cli-verify-map.md": {
+    "mtime": 1786109126.295746,
+    "ast_hash": "0fc53989fd9157e2ca03668106beb2c1",
+    "semantic_hash": ""
+  },
+  ".handoffs/HANDOFF-PI-README.md": {
+    "mtime": 1783079440.623641,
+    "ast_hash": "e0eb5a38f6193863d3480e8a39d08773",
+    "semantic_hash": ""
+  },
+  ".handoffs/upgrade-strategy.md": {
+    "mtime": 1783079440.6238341,
+    "ast_hash": "69c0f4eb5d1ebf60c2d79646f39fa845",
+    "semantic_hash": ""
+  },
+  "CHANGELOG.md": {
+    "mtime": 1783079440.6242657,
+    "ast_hash": "d924d4be247c6047880ede4665c01766",
+    "semantic_hash": ""
+  },
+  "Wayfinder-Workflow-and-GDDP-Workflow.md": {
+    "mtime": 1785771246.2734118,
+    "ast_hash": "cae7616ff104020e4e8692ee956f589a",
+    "semantic_hash": ""
+  },
+  "_archive/ACTION_PACKET_HANDOFF.md": {
+    "mtime": 1783559111.3656776,
+    "ast_hash": "8a10cde0bfa04c460598dec7bd8288b0",
+    "semantic_hash": ""
+  },
+  "_archive/april-update.txt": {
+    "mtime": 1783079440.624836,
+    "ast_hash": "cc09760e1c6245948b706162ab042201",
+    "semantic_hash": ""
+  },
+  "docs/pi-harness-execution-graph-intent.md": {
+    "mtime": 1786154190.2858846,
+    "ast_hash": "8c9c3c8a1790a2080fc50a560ff511d0",
+    "semantic_hash": ""
+  },
+  "docs/portfolio-graph-priorities-2026-07-02.md": {
+    "mtime": 1783079440.6250892,
+    "ast_hash": "8f0d0d8ca1fd9219301b304e954e8310",
+    "semantic_hash": ""
+  },
+  "docs/practice-graphs-semantic-walkthrough.md": {
+    "mtime": 1783079440.625287,
+    "ast_hash": "2910e6bc2eb35156446f6258d9d17d66",
+    "semantic_hash": ""
+  },
+  "docs/reviewer-benchmark-gddp-vs-greptile-vs-coderabbit-2026-08-02.md": {
+    "mtime": 1785881682.9713469,
+    "ast_hash": "e90d2ee8aef52639c0f1b993247a57df",
+    "semantic_hash": ""
+  },
+  "docs/verification-runway-2026-07-01.md": {
+    "mtime": 1783079440.6254644,
+    "ast_hash": "bc4a60d1ac7bbb03b9f8dbb31033d4f8",
+    "semantic_hash": ""
+  },
+  "droid-wiki/background/design-decisions.md": {
+    "mtime": 1783694068.134357,
+    "ast_hash": "31a6427de76d3603e8fda495ae571d73",
+    "semantic_hash": ""
+  },
+  "droid-wiki/background/index.md": {
+    "mtime": 1783694058.2418475,
+    "ast_hash": "1dd7b66895cbb1f4f8e7d0b58f8498c6",
+    "semantic_hash": ""
+  },
+  "droid-wiki/by-the-numbers.md": {
+    "mtime": 1783693996.28341,
+    "ast_hash": "c19b66712e81d2be30c911f68e7d12e2",
+    "semantic_hash": ""
+  },
+  "droid-wiki/features/index.md": {
+    "mtime": 1783693960.5985792,
+    "ast_hash": "406540c1641a79dd9589ae92b1b2d67b",
+    "semantic_hash": ""
+  },
+  "droid-wiki/features/node-authoring.md": {
+    "mtime": 1783693974.9759161,
+    "ast_hash": "f60c23a2446ec16ba871e208a2c02822",
+    "semantic_hash": ""
+  },
+  "droid-wiki/features/obsidian-export.md": {
+    "mtime": 1783693997.4585264,
+    "ast_hash": "7b6b5ea03c7714c065c5c3df601d2a19",
+    "semantic_hash": ""
+  },
+  "droid-wiki/features/project-bootstrapping.md": {
+    "mtime": 1783693987.9359791,
+    "ast_hash": "76f1686837160686e938a7ad694207c5",
+    "semantic_hash": ""
+  },
+  "droid-wiki/features/shareable-bundles.md": {
+    "mtime": 1783694006.8135972,
+    "ast_hash": "f2d49f7e9ab5b53102dc456e805361b1",
+    "semantic_hash": ""
+  },
+  "droid-wiki/fun-facts.md": {
+    "mtime": 1783693996.7125754,
+    "ast_hash": "be75771baf4c61fd5de6771de8332801",
+    "semantic_hash": ""
+  },
+  "droid-wiki/how-to-contribute/debugging.md": {
+    "mtime": 1783694018.4728587,
+    "ast_hash": "844b2da1237a8dbbedcaad5ad8efefc9",
+    "semantic_hash": ""
+  },
+  "droid-wiki/how-to-contribute/development-workflow.md": {
+    "mtime": 1783694000.5850399,
+    "ast_hash": "5357819781e02b6884fbec816234a511",
+    "semantic_hash": ""
+  },
+  "droid-wiki/how-to-contribute/index.md": {
+    "mtime": 1783693990.2655344,
+    "ast_hash": "b344883f9359bc8669ca461e4c71205c",
+    "semantic_hash": ""
+  },
+  "droid-wiki/how-to-contribute/patterns-and-conventions.md": {
+    "mtime": 1783693911.816219,
+    "ast_hash": "67574e818f5d3cdd2816eb7418addfac",
+    "semantic_hash": ""
+  },
+  "droid-wiki/how-to-contribute/testing.md": {
+    "mtime": 1783694008.6442015,
+    "ast_hash": "97226ad67473773c71d7ea04dd9bd362",
+    "semantic_hash": ""
+  },
+  "droid-wiki/how-to-contribute/tooling.md": {
+    "mtime": 1783694027.4203258,
+    "ast_hash": "0d8cca406786f366c2672aa34d83d42e",
+    "semantic_hash": ""
+  },
+  "droid-wiki/lore.md": {
+    "mtime": 1783693996.5204804,
+    "ast_hash": "810a376fd216880d88f8aa5a607acdef",
+    "semantic_hash": ""
+  },
+  "droid-wiki/overview/architecture.md": {
+    "mtime": 1783693911.2464917,
+    "ast_hash": "352a41cf969aedb031e76995d5f72317",
+    "semantic_hash": ""
+  },
+  "droid-wiki/overview/getting-started.md": {
+    "mtime": 1783693911.440443,
+    "ast_hash": "e4ddfe5dd33cd65e1c6ab5ec21c00782",
+    "semantic_hash": ""
+  },
+  "droid-wiki/overview/glossary.md": {
+    "mtime": 1783693911.6282594,
+    "ast_hash": "e31251fc1d6b8f091d518e1434d056ae",
+    "semantic_hash": ""
+  },
+  "droid-wiki/overview/index.md": {
+    "mtime": 1783693911.0525196,
+    "ast_hash": "30e11c96ee9d83b3e83dc22e4e3eea0d",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/artifact-verification.md": {
+    "mtime": 1783693978.4751186,
+    "ast_hash": "ab079a537efee5c148457f1aa476e338",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/event.md": {
+    "mtime": 1783693977.6525626,
+    "ast_hash": "3b715f4fe245365097107586af446666",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/index.md": {
+    "mtime": 1783693977.245548,
+    "ast_hash": "2e5ed2b0ddee2f2f5828fe6f46c80630",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/job.md": {
+    "mtime": 1783693977.8600643,
+    "ast_hash": "3c185fa625755a753122f40f97420ce9",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/node.md": {
+    "mtime": 1783693977.4511762,
+    "ast_hash": "1c8ac40aa76324262bc7adbbdc9ef246",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/queue-record.md": {
+    "mtime": 1783693978.2726064,
+    "ast_hash": "0495eeea4906c38c6e64403de6f827e5",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/result.md": {
+    "mtime": 1783693978.0620615,
+    "ast_hash": "cae30fe04d5bec64bb662c3d7281d577",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/shape-profile.md": {
+    "mtime": 1783693978.899003,
+    "ast_hash": "05c339b46650a241dbda8fdaceb1806a",
+    "semantic_hash": ""
+  },
+  "droid-wiki/primitives/task-packet.md": {
+    "mtime": 1783693978.6825416,
+    "ast_hash": "250945fa9ccc1734c6e0f2786d241126",
+    "semantic_hash": ""
+  },
+  "droid-wiki/projects/aa-cli.md": {
+    "mtime": 1783694007.334881,
+    "ast_hash": "3969ebded971198a9ee7cf97806f60cf",
+    "semantic_hash": ""
+  },
+  "droid-wiki/projects/album-production.md": {
+    "mtime": 1783694050.040851,
+    "ast_hash": "48c9d070236079675cec415ee9491cc7",
+    "semantic_hash": ""
+  },
+  "droid-wiki/projects/gddp-runtime.md": {
+    "mtime": 1783694031.813143,
+    "ast_hash": "845b2465075bf76d5429a383decf6ed4",
+    "semantic_hash": ""
+  },
+  "droid-wiki/projects/index.md": {
+    "mtime": 1783693996.3674905,
+    "ast_hash": "1dbe19e729ec8a9cd0627eeed0a254c4",
+    "semantic_hash": ""
+  },
+  "droid-wiki/projects/sell-valuables.md": {
+    "mtime": 1783694042.1178157,
+    "ast_hash": "a8f63fed75595b600398510721bdf4ab",
+    "semantic_hash": ""
+  },
+  "droid-wiki/projects/vault-doctor.md": {
+    "mtime": 1783694015.2972186,
+    "ast_hash": "d81778480d80fe54ea59f67a7ee1d12e",
+    "semantic_hash": ""
+  },
+  "droid-wiki/reference/configuration.md": {
+    "mtime": 1783694039.175303,
+    "ast_hash": "aacffa258c0ac9cdf9df5b8de2905ef0",
+    "semantic_hash": ""
+  },
+  "droid-wiki/reference/data-models.md": {
+    "mtime": 1783694047.2750883,
+    "ast_hash": "64131504ece2a574bae02d69e87b3ec0",
+    "semantic_hash": ""
+  },
+  "droid-wiki/reference/dependencies.md": {
+    "mtime": 1783694053.623398,
+    "ast_hash": "c055f887cb1426cda13ba124857e9a03",
+    "semantic_hash": ""
+  },
+  "droid-wiki/reference/index.md": {
+    "mtime": 1783694031.758193,
+    "ast_hash": "e3cb82102edb3ff97e1513e29229fc58",
+    "semantic_hash": ""
+  },
+  "droid-wiki/systems/cli-tooling.md": {
+    "mtime": 1783694033.245016,
+    "ast_hash": "69cd464cc1398204ea81ceb934bfae9e",
+    "semantic_hash": ""
+  },
+  "droid-wiki/systems/graph-engine.md": {
+    "mtime": 1783693996.3072002,
+    "ast_hash": "57426244b6b2edcd269e853f5d13905a",
+    "semantic_hash": ""
+  },
+  "droid-wiki/systems/index.md": {
+    "mtime": 1783693971.8268676,
+    "ast_hash": "21cdfabe22cb8f77dd3d8f32c5dabb7e",
+    "semantic_hash": ""
+  },
+  "droid-wiki/systems/schemas.md": {
+    "mtime": 1783693985.333572,
+    "ast_hash": "4954990eafd56e28754a2460bfa9a16f",
+    "semantic_hash": ""
+  },
+  "droid-wiki/systems/validation-engine.md": {
+    "mtime": 1783694053.4741457,
+    "ast_hash": "c28618df3cbc7fe5add9f78397e66f27",
+    "semantic_hash": ""
+  },
+  "droid-wiki/systems/verification-harness.md": {
+    "mtime": 1783694058.9636433,
+    "ast_hash": "39ab6c22abe731d0c788b888d791784a",
+    "semantic_hash": ""
+  },
+  "exports/shareable-graphs/aa-cli.yaml": {
+    "mtime": 1783559111.368927,
+    "ast_hash": "f527f2e06e9d85b49abc334a83d6b3c2",
+    "semantic_hash": ""
+  },
+  "exports/shareable-graphs/album-production.yaml": {
+    "mtime": 1783559111.369174,
+    "ast_hash": "ab6ca7539ce3dbed335de1cbdedff69b",
+    "semantic_hash": ""
+  },
+  "exports/shareable-graphs/gddp-runtime.yaml": {
+    "mtime": 1783559111.3694422,
+    "ast_hash": "d0df946842657d4c363d6460d499ea63",
+    "semantic_hash": ""
+  },
+  "exports/shareable-graphs/sell-valuables.yaml": {
+    "mtime": 1783559111.3697183,
+    "ast_hash": "366aad0a2f44526fae3a08de604f209b",
+    "semantic_hash": ""
+  },
+  "exports/shareable-graphs/vault-doctor.yaml": {
+    "mtime": 1783559111.3699675,
+    "ast_hash": "d8dc54bde3a05ef8a9ce500dba9bf2f8",
+    "semantic_hash": ""
+  },
+  "gddp-runtimes-understand-reviewer-evaluations.md": {
+    "mtime": 1784841778.9606762,
+    "ast_hash": "aeab85c18bf21ec4ae2d32018383fdf1",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20260725_175256_since_agents_would_often_query_graphify_i_m_curiou.md": {
+    "mtime": 1785001976.0190952,
+    "ast_hash": "1dc995548785e525fe04144f562bf53e",
+    "semantic_hash": ""
+  },
+  "graphs/_template/nodes/capability-template.yaml": {
+    "mtime": 1783559111.3701327,
+    "ast_hash": "74f7b521701f857686adc7881020d233",
+    "semantic_hash": ""
+  },
+  "graphs/_template/project.yaml": {
+    "mtime": 1783788083.4341655,
+    "ast_hash": "ce59aa71bf19e85e42fae025f30c3ce6",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/MAP.md": {
+    "mtime": 1786109126.295888,
+    "ast_hash": "3f688e8f42d4ff29470badfd4beb7278",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/async-verify-composition.yaml": {
+    "mtime": 1786109126.2960134,
+    "ast_hash": "0860993065afb01fb4e7146a1c3ddaef",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/generic-verify-entry.yaml": {
+    "mtime": 1786109126.2961054,
+    "ast_hash": "98e9dd5b3f8dffa20834027fc1b3d3b5",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/past-tasks-reflection.yaml": {
+    "mtime": 1786109126.2962124,
+    "ast_hash": "9fedda1ea3bc222065febb3daf4ce07d",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/validated-blast-radius.yaml": {
+    "mtime": 1786109126.296314,
+    "ast_hash": "047b7f5427dca6822ecc2d775cfeb89d",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verified-state-location.yaml": {
+    "mtime": 1786109126.2964072,
+    "ast_hash": "f791a24a5934ac107c09bdc319610438",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verifier-agent-contract.yaml": {
+    "mtime": 1786109126.296503,
+    "ast_hash": "547377658d934a80955e64084bc41a9f",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verify-architecture-split.yaml": {
+    "mtime": 1786109126.2965987,
+    "ast_hash": "6492e4ca00176b3e27fc06c5f8ddf7af",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verify-evidence-surface.yaml": {
+    "mtime": 1786109126.2966878,
+    "ast_hash": "eff20456a3347d0efc18b916e176dded",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verify-menu-mechanics.yaml": {
+    "mtime": 1786109126.2967784,
+    "ast_hash": "8d64c990651d013319c7fcfb932a8ee4",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verify-menu-subtree.yaml": {
+    "mtime": 1786109126.296877,
+    "ast_hash": "847e04a362ce0cb96c9d00048b67a532",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/nodes/verify-state-model.yaml": {
+    "mtime": 1786109126.2969682,
+    "ast_hash": "8669c703d32cc6a2263c9fd89b3389f1",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/project.yaml": {
+    "mtime": 1786109126.2970617,
+    "ast_hash": "594a1a4fd9e0d1a016102486a05bc309",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli-verify/research/validated-blast-radius.md": {
+    "mtime": 1786109126.297235,
+    "ast_hash": "f2968cfe8ec215d9ad863418df37e0f5",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/common-core.yaml": {
+    "mtime": 1784853957.1472936,
+    "ast_hash": "9b45bd36e1f8fc28c1e2313b2db5c0ef",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-codex.yaml": {
+    "mtime": 1783559111.3705034,
+    "ast_hash": "8ebf0878097be926fc7dc033df44fb10",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-droid.yaml": {
+    "mtime": 1783559111.3706129,
+    "ast_hash": "2c482a1b3bd9c01628c314cd570a7896",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-gemini.yaml": {
+    "mtime": 1783559111.3707125,
+    "ast_hash": "d916abb285a7947739a3d5856e011753",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-grok.yaml": {
+    "mtime": 1783559111.3708196,
+    "ast_hash": "0da5ec40fe53ec8c139f59cda95752ac",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-jules.yaml": {
+    "mtime": 1783559111.3709283,
+    "ast_hash": "116ba5da19f42770ea7e0ef3cb17fcda",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-pi-cli.yaml": {
+    "mtime": 1783559111.37104,
+    "ast_hash": "7a291ed2eece5d6d89076a0ce698900f",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-pi-harness.yaml": {
+    "mtime": 1783559111.3711452,
+    "ast_hash": "e3222506fb2b0682ac9d00e0e28ad898",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/dispatch-router.yaml": {
+    "mtime": 1783559111.3712475,
+    "ast_hash": "99119a8b769043db385689dd5a9ee00f",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/ledger-system.yaml": {
+    "mtime": 1783559111.371359,
+    "ast_hash": "a2ab589c03d023da23759ff431970cba",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/reconciliation.yaml": {
+    "mtime": 1783559111.3714716,
+    "ast_hash": "24bb9a53b4d39359ffe3c92b7017f8c2",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/nodes/target-registry.yaml": {
+    "mtime": 1783559111.3715944,
+    "ast_hash": "117e65a8bd9405700ad4b6abb0215140",
+    "semantic_hash": ""
+  },
+  "graphs/aa-cli/project.yaml": {
+    "mtime": 1783788083.4345183,
+    "ast_hash": "c1fb4cbaf5809d654606005590ec5796",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/album-art-design.yaml": {
+    "mtime": 1783559111.3717232,
+    "ast_hash": "729dc8426ea5b0b420b3d59cc3f14388",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/album-release.yaml": {
+    "mtime": 1783559111.371841,
+    "ast_hash": "5f4f54e786d2a6325e090d9bc653a057",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/arrangement.yaml": {
+    "mtime": 1783559111.3719618,
+    "ast_hash": "45d7a12d32cafcb2df046d3945c3f64b",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/demo-recording.yaml": {
+    "mtime": 1783559111.3720825,
+    "ast_hash": "a8e7b25e52c1cb9a0fe8ec126d89720e",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/distribution.yaml": {
+    "mtime": 1783559111.3722014,
+    "ast_hash": "ed340fee8508248d2b5b82849bad1634",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/marketing-campaign.yaml": {
+    "mtime": 1783559111.3723178,
+    "ast_hash": "e83e72bfa4ae1955d117ba586c4d29a1",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/mastering.yaml": {
+    "mtime": 1783559111.3724332,
+    "ast_hash": "4aad76331b143389d18c2d842ee9ff58",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/mixing.yaml": {
+    "mtime": 1783559111.3725417,
+    "ast_hash": "e3cdfc989a1b7cc67a78afa1c8445274",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/songwriting.yaml": {
+    "mtime": 1783559111.372645,
+    "ast_hash": "c13c5edecebf0a9b261ae4a6aa462434",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/nodes/studio-recording.yaml": {
+    "mtime": 1783559111.3727438,
+    "ast_hash": "4d66a17b3ef2b7522fc41055d6ba60c7",
+    "semantic_hash": ""
+  },
+  "graphs/album-production/project.yaml": {
+    "mtime": 1783788083.4346583,
+    "ast_hash": "f65b40cf7755f25b188c710bc57ea45c",
+    "semantic_hash": ""
+  },
+  "graphs/gate-live-test/nodes/node-01-gate-smoke.yaml": {
+    "mtime": 1786142491.170736,
+    "ast_hash": "86bc7cdf2138aa7d9f99b17ff9f8e05c",
+    "semantic_hash": ""
+  },
+  "graphs/gate-live-test/project.yaml": {
+    "mtime": 1786142491.171016,
+    "ast_hash": "1ec6c95418b2b5ca34abf64477d88d59",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/ane-verifier-read-tool-eval.yaml": {
+    "mtime": 1783559111.3728707,
+    "ast_hash": "742591e17359e711648c105385b42611",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/canary-retry-proof.yaml": {
+    "mtime": 1785317927.3367612,
+    "ast_hash": "5430e8ac63df24046a2c33e0191f40b0",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/concurrent-node-flow.yaml": {
+    "mtime": 1784669706.4983468,
+    "ast_hash": "278972031b6199add76c6106b7224a14",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/decision-loop-review-gate.yaml": {
+    "mtime": 1783559111.3729842,
+    "ast_hash": "997050ed5eafff8075c35baca1d69f34",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/decision-loop-runtime.yaml": {
+    "mtime": 1783559111.3731158,
+    "ast_hash": "3b68df5790ff72fd4ac3f903b301d6bd",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/decision-loop-spec.yaml": {
+    "mtime": 1783559111.373223,
+    "ast_hash": "a424becccf527483e29e9933977c95c7",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/direct-executor-round-trip.yaml": {
+    "mtime": 1784669706.4987807,
+    "ast_hash": "d3f5f09b82243b5b8a2a271bf2e02aff",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/droid-executor-smoke.yaml": {
+    "mtime": 1785759794.9733658,
+    "ast_hash": "fbebe137fd1dcd7ea17ce0c8e47a7269",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/evaluator-canonical-context.yaml": {
+    "mtime": 1783559111.3733516,
+    "ast_hash": "4bdd2e876a4942d6571450c2f465d84e",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/evaluator-intent-integrity-verdict.yaml": {
+    "mtime": 1783559111.3734918,
+    "ast_hash": "a30faf3ec1f33c0a4cddeea8a4dbc1db",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/graph-frontier-operations.yaml": {
+    "mtime": 1786044293.8196244,
+    "ast_hash": "7a5b355784bb331bdbf0c672c7afa061",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/heartbeat-crash-recovery.yaml": {
+    "mtime": 1785063319.3225355,
+    "ast_hash": "3e85d6fd218fde065fdf0cc1abba12ce",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/immediate-evaluator-round-trip.yaml": {
+    "mtime": 1784669706.4997053,
+    "ast_hash": "aad2a16c3f685a6e8d13329bbf274034",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/job-state-consistency.yaml": {
+    "mtime": 1785317927.336965,
+    "ast_hash": "c3af14f71d1ae17c57062b8aac8c6a01",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/neutral-executor-contract.yaml": {
+    "mtime": 1784841787.6262789,
+    "ast_hash": "5c9761268245d658f2ba2aea139d702f",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/pi-evaluator-guard.yaml": {
+    "mtime": 1786044293.82056,
+    "ast_hash": "b4817c513ba265d202348bbb615c524f",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/pi-evaluator-harness.yaml": {
+    "mtime": 1785317927.3377833,
+    "ast_hash": "7d6d4faa29d037bf0f9bc7d5e20f5494",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/return-router.yaml": {
+    "mtime": 1783559111.3739443,
+    "ast_hash": "f4f9425c8f3e55692769109d6238ba0a",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/semantic-submit-verdict-tool.yaml": {
+    "mtime": 1783559111.374174,
+    "ast_hash": "c617263b189e60c5ee8ae26612d1e880",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/semantic-validation-retry.yaml": {
+    "mtime": 1783559111.374289,
+    "ast_hash": "4a42689716d1b061cc08b26ee11644c7",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/verdict-confidence-split.yaml": {
+    "mtime": 1785317927.33826,
+    "ast_hash": "7ea399a35aab3534512dd7e80902e369",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/nodes/verification-receipt-contract.yaml": {
+    "mtime": 1783559111.374541,
+    "ast_hash": "59acec71908868eb4ec76c86e31ae03a",
+    "semantic_hash": ""
+  },
+  "graphs/gddp-runtime/project.yaml": {
+    "mtime": 1785759794.9736402,
+    "ast_hash": "f683a0c035d5a352b234d546dbe2e622",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/nodes/assemble-current-personal-corpus.yaml": {
+    "mtime": 1785317927.4540865,
+    "ast_hash": "8bc389c8c6adf1ea6acf927c05212bdc",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/nodes/capture-live-vertex-baseline.yaml": {
+    "mtime": 1785317927.4542387,
+    "ast_hash": "6f925fb1b50ced9ac77390bc12ae80ba",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/nodes/mine-real-agent-query-benchmark.yaml": {
+    "mtime": 1785317927.4543898,
+    "ast_hash": "32d1cc84d1c287d3cc15d60f64dc8d94",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/nodes/prove-incremental-refresh.yaml": {
+    "mtime": 1785317927.4545424,
+    "ast_hash": "75328819b0f4043d57a01899f33f84c7",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/nodes/prove-myapi-context-retrieval.yaml": {
+    "mtime": 1785317927.4546843,
+    "ast_hash": "507637ec8342d6ceeb6b6edf6a93817e",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/nodes/serve-context-via-mcp.yaml": {
+    "mtime": 1786044314.1424007,
+    "ast_hash": "51a96ba4304fac6afb7ae0fce70714fd",
+    "semantic_hash": ""
+  },
+  "graphs/myapi/project.yaml": {
+    "mtime": 1785288239.6572995,
+    "ast_hash": "70d9aad88efd85f704ab4172ebe34a1b",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-01-subagents-audit.yaml": {
+    "mtime": 1786185333.390978,
+    "ast_hash": "079d83cebfc8eafbfe8c98ec4cf4cd7e",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-02-subagents-execute.yaml": {
+    "mtime": 1786185333.390007,
+    "ast_hash": "7b6de8be82a20eecc3c7590d7e7245e2",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-03-tui-audit.yaml": {
+    "mtime": 1786185333.3914416,
+    "ast_hash": "989bb7c76aa389eb5b83539d622a933a",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-04-tui-execute.yaml": {
+    "mtime": 1786185333.3933253,
+    "ast_hash": "8f7cb8b9e567bac9e74bfc3645326e3f",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-05-extensions-audit.yaml": {
+    "mtime": 1786185333.388933,
+    "ast_hash": "f7f51e0164ef7846e1e4172d50508495",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-06-extensions-execute.yaml": {
+    "mtime": 1786185333.3923848,
+    "ast_hash": "6b66fd9c95578f95aa616dc8d936fe4f",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-07-instructions-audit.yaml": {
+    "mtime": 1786185333.3894691,
+    "ast_hash": "429d788a63579a53c721421de29f15ac",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-08-instructions-execute.yaml": {
+    "mtime": 1786185333.3904877,
+    "ast_hash": "2ff6b2c6823c9551cc24ea88c1619b3a",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-09-portfolio-audit.yaml": {
+    "mtime": 1786185333.392856,
+    "ast_hash": "1dde8120c89bee65d938270e60740775",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes.bak/node-10-portfolio-execute.yaml": {
+    "mtime": 1786185333.3919125,
+    "ast_hash": "0bc61ebd96772a180b12a188f6465991",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-01-subagents-audit.yaml": {
+    "mtime": 1786242536.7904365,
+    "ast_hash": "b98a1d86b23a7930da35b546649781e2",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-02-subagents-execute.yaml": {
+    "mtime": 1786185386.4998426,
+    "ast_hash": "7b6de8be82a20eecc3c7590d7e7245e2",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-03-tui-audit.yaml": {
+    "mtime": 1786242536.9010026,
+    "ast_hash": "18fed99d59cbceaabc7e341ef837a289",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-04-tui-execute.yaml": {
+    "mtime": 1786185386.609048,
+    "ast_hash": "8f7cb8b9e567bac9e74bfc3645326e3f",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-05-extensions-audit.yaml": {
+    "mtime": 1786247377.017595,
+    "ast_hash": "e603d0a8d05538f43d0a67bf0461c203",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-06-extensions-execute.yaml": {
+    "mtime": 1786185386.7175925,
+    "ast_hash": "6b66fd9c95578f95aa616dc8d936fe4f",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-07-instructions-audit.yaml": {
+    "mtime": 1786242537.124111,
+    "ast_hash": "cdb0208f08be7095604ab9292663602b",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-08-instructions-execute.yaml": {
+    "mtime": 1786185386.8263044,
+    "ast_hash": "2ff6b2c6823c9551cc24ea88c1619b3a",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-09-portfolio-audit.yaml": {
+    "mtime": 1786242537.237004,
+    "ast_hash": "3d72847cb5d43cf49bd7b460115d3650",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/nodes/node-10-portfolio-execute.yaml": {
+    "mtime": 1786185386.9362876,
+    "ast_hash": "0bc61ebd96772a180b12a188f6465991",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-execution/project.yaml": {
+    "mtime": 1786247377.0214233,
+    "ast_hash": "c7a19a97d2e23ebe86e8dbe05b2e91e2",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-hygiene/nodes/node-01-extension-noise-cleanup.yaml": {
+    "mtime": 1786038944.2910452,
+    "ast_hash": "ddf490731a12d9ade8b14059d42e4d05",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-hygiene/nodes/node-02-chain-pin-repair.yaml": {
+    "mtime": 1786039492.72512,
+    "ast_hash": "49af84855f8fb5bc52880f024cd2544e",
+    "semantic_hash": ""
+  },
+  "graphs/pi-harness-hygiene/project.yaml": {
+    "mtime": 1786039492.7253325,
+    "ast_hash": "17a138dc495c6165cc62bf91041a5757",
+    "semantic_hash": ""
+  },
+  "graphs/pi-hub-projection/nodes/node-01-sqlite-projection.yaml": {
+    "mtime": 1786043401.4636848,
+    "ast_hash": "c24d9de56579c5686294634b4a80061a",
+    "semantic_hash": ""
+  },
+  "graphs/pi-hub-projection/nodes/node-02-localhost-api.yaml": {
+    "mtime": 1786045064.8736007,
+    "ast_hash": "ff9e10d41f21edbcc36059caa5cac0e4",
+    "semantic_hash": ""
+  },
+  "graphs/pi-hub-projection/nodes/node-03-visualizer-fork.yaml": {
+    "mtime": 1786047050.5134368,
+    "ast_hash": "6beef52142be20bdbd16d977ab5dd55a",
+    "semantic_hash": ""
+  },
+  "graphs/pi-hub-projection/nodes/node-04-receipts-ingestion.yaml": {
+    "mtime": 1786045593.7407556,
+    "ast_hash": "62d4d4869a1aac2e3ce3abab49825460",
+    "semantic_hash": ""
+  },
+  "graphs/pi-hub-projection/project.yaml": {
+    "mtime": 1786047050.5138721,
+    "ast_hash": "6d5d5b3ac6b4162281168552fde89519",
+    "semantic_hash": ""
+  },
+  "graphs/sab-orchestrate/nodes/scripted-pi-fleet-canary.yaml": {
+    "mtime": 1785230249.6054604,
+    "ast_hash": "8a0a9a1de41f0370640a625f7804d0ef",
+    "semantic_hash": ""
+  },
+  "graphs/sab-orchestrate/project.yaml": {
+    "mtime": 1785230200.668549,
+    "ast_hash": "66c91bcba26ffe6b1701f60bad7a1184",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/fb-playwright-form-fill.yaml": {
+    "mtime": 1783559111.3749156,
+    "ast_hash": "f4d5fb4519b96c607b8e530921634678",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/fb-playwright-session.yaml": {
+    "mtime": 1783559111.375031,
+    "ast_hash": "c31f83506c3b999d1af70969e6f6e066",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/fb-post-hook.yaml": {
+    "mtime": 1783559111.375143,
+    "ast_hash": "61d65d72648a324352f98589272bcdba",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/fb-submit-gate.yaml": {
+    "mtime": 1783559111.375253,
+    "ast_hash": "df04c576691df8c8b1fdd7723ba40f42",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/imessage-intake-path.yaml": {
+    "mtime": 1783559111.3753552,
+    "ast_hash": "7d186f0c6ba89e3d5bdd624473f492f5",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/intake-folder-convention.yaml": {
+    "mtime": 1783559111.3754637,
+    "ast_hash": "521988fe809fcec9880f077197d9c05d",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/intake-loader.yaml": {
+    "mtime": 1783559111.3755739,
+    "ast_hash": "d357d73824b77af8eed717a2f39e75f1",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/listing-cli.yaml": {
+    "mtime": 1783559111.3756883,
+    "ast_hash": "105eb2a799d4bc5455f317c2564497e4",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/listing-text-builder.yaml": {
+    "mtime": 1783559111.3758116,
+    "ast_hash": "1924bfbc191dd22a14202bb357fd045d",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/nodes/test-suite.yaml": {
+    "mtime": 1783559111.3759186,
+    "ast_hash": "d4116106a34e7881606f1cab8c2aeba7",
+    "semantic_hash": ""
+  },
+  "graphs/sell-valuables/project.yaml": {
+    "mtime": 1783788083.435088,
+    "ast_hash": "2cf6c81ba5a7cad8ba4ffa79581aac5a",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-01-asset-sync.yaml": {
+    "mtime": 1785661727.5043733,
+    "ast_hash": "673b4957f7fe14a5609cd6a1f356bcdb",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-02-briefs-import.yaml": {
+    "mtime": 1785662660.139861,
+    "ast_hash": "292147d5cd2d51cbc50cfa71ace8e6cf",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-03-project-mdx-gddp.yaml": {
+    "mtime": 1785642557.5469027,
+    "ast_hash": "6e1f6f9f9ead268d92688e710c67af98",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-04-project-mdx-myapi.yaml": {
+    "mtime": 1785642673.7547977,
+    "ast_hash": "8920e10f3c5539b34ed2daaa3417d0dc",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-05-project-mdx-pi-agent.yaml": {
+    "mtime": 1785642706.239766,
+    "ast_hash": "b859087662a444ee9002ba864dd05b68",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-06-blog-mdx-dygma.yaml": {
+    "mtime": 1785642734.716573,
+    "ast_hash": "e29866db9c608e377fd16e8f13372d74",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-07-tanstack-vercel-preset.yaml": {
+    "mtime": 1785643152.823141,
+    "ast_hash": "465c76cef5688d3573035db44c23e331",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-08-meta-seo-resume.yaml": {
+    "mtime": 1785634130.4487112,
+    "ast_hash": "7c789272b0b3249e2efef60feaacaa22",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-09-build-lint-pass.yaml": {
+    "mtime": 1785634132.7019506,
+    "ast_hash": "a44936eb75acc911dc623607ccc90ed5",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/nodes/node-10-vercel-domain-checklist.yaml": {
+    "mtime": 1785634135.5502565,
+    "ast_hash": "885ed96c9a5eafed2a98dff951f5ebfe",
+    "semantic_hash": ""
+  },
+  "graphs/skc-portfolio-migration/project.yaml": {
+    "mtime": 1785662660.140282,
+    "ast_hash": "012d53ceacc085c09488e71085bff5eb",
+    "semantic_hash": ""
+  },
+  "graphs/test-project/nodes/canary-retry-proof.yaml": {
+    "mtime": 1783788770.9606204,
+    "ast_hash": "f3480a693930a9770e1b48417a5a9652",
+    "semantic_hash": ""
+  },
+  "graphs/test-project/nodes/gate-continuation-smoke-a.yaml": {
+    "mtime": 1785479855.5067923,
+    "ast_hash": "c2ff9f44fe5fa10c78e2ad91f16b7942",
+    "semantic_hash": ""
+  },
+  "graphs/test-project/nodes/gate-continuation-smoke-b.yaml": {
+    "mtime": 1785482730.4730706,
+    "ast_hash": "3a9604723baf6e7d666b19e48300d6c4",
+    "semantic_hash": ""
+  },
+  "graphs/test-project/project.yaml": {
+    "mtime": 1785482730.4733753,
+    "ast_hash": "204d95955f502e7bd319b1090c5e9c74",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/check-performance.yaml": {
+    "mtime": 1783559111.376041,
+    "ast_hash": "641116030425e74d67e3dbe3c471956c",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/find-duplicates.yaml": {
+    "mtime": 1783559111.3761592,
+    "ast_hash": "aac662a46d8ecc19fdc28d3ad4449a11",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/find-stale-todos.yaml": {
+    "mtime": 1783559111.3762794,
+    "ast_hash": "4da5feb6a414e19759f0d1b4f30d74dd",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/obsidian-audit.yaml": {
+    "mtime": 1783559111.3764005,
+    "ast_hash": "1039afac464551a0320187f3dc311dde",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/performance-dashboard.yaml": {
+    "mtime": 1783559111.3765109,
+    "ast_hash": "b617f544decd5f6998f7fc363a2f6874",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/scan-vault-core.yaml": {
+    "mtime": 1783559111.3766193,
+    "ast_hash": "b263d9d31d07cb1e7929b8501c2be3db",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/nodes/triage-cli-core.yaml": {
+    "mtime": 1783559111.3767283,
+    "ast_hash": "6759e304b1a8db65c37ee9ca1549a73c",
+    "semantic_hash": ""
+  },
+  "graphs/vault-doctor/project.yaml": {
+    "mtime": 1783788083.4352598,
+    "ast_hash": "44e2045ea21fd7dcef0ab1720325b248",
+    "semantic_hash": ""
+  },
+  "graphs/vm-harness-audit/nodes/node-01-entrypoints-audit.yaml": {
+    "mtime": 1785921675.0272603,
+    "ast_hash": "934646e16cc4566b9243d8c2094f3adb",
+    "semantic_hash": ""
+  },
+  "graphs/vm-harness-audit/nodes/node-02-extensions-audit.yaml": {
+    "mtime": 1785921675.0277693,
+    "ast_hash": "d07c321f27df26e6c867cb22de138125",
+    "semantic_hash": ""
+  },
+  "graphs/vm-harness-audit/nodes/node-03-subagents-chains-audit.yaml": {
+    "mtime": 1785921675.0281432,
+    "ast_hash": "46a3dc8763981fca270c72b103fbf23a",
+    "semantic_hash": ""
+  },
+  "graphs/vm-harness-audit/nodes/node-04-tty-validation-probe.yaml": {
+    "mtime": 1785921675.02875,
+    "ast_hash": "e30f88a05b7ebf18a7e4d7172e9c8d8b",
+    "semantic_hash": ""
+  },
+  "graphs/vm-harness-audit/nodes/node-05-separation-proposal.yaml": {
+    "mtime": 1785921675.0290756,
+    "ast_hash": "77e109e77ba8b5aa6367973d37938cb1",
+    "semantic_hash": ""
+  },
+  "graphs/vm-harness-audit/project.yaml": {
+    "mtime": 1785921675.0293698,
+    "ast_hash": "c5f6e5066ee04090fa9fdb4699a8e5ca",
+    "semantic_hash": ""
+  },
+  "graphs/vm-loop-smoke/nodes/node-01-heartbeat-status.yaml": {
+    "mtime": 1786179169.33727,
+    "ast_hash": "e9ce050bef386830188e25251ebb3f70",
+    "semantic_hash": ""
+  },
+  "graphs/vm-loop-smoke/nodes/node-02-mission-readiness.yaml": {
+    "mtime": 1786179169.3373773,
+    "ast_hash": "a042b301e316283040ba6b0574ad106e",
+    "semantic_hash": ""
+  },
+  "graphs/vm-loop-smoke/project.yaml": {
+    "mtime": 1786179169.3374848,
+    "ast_hash": "29936a0a3b91d62a017aa0a28b7e30a1",
+    "semantic_hash": ""
+  },
+  "schemas/v1/artifact_verification.yaml": {
+    "mtime": 1783079440.6349137,
+    "ast_hash": "80d0d189f08814f5f44bb3b1626ad363",
+    "semantic_hash": ""
+  },
+  "schemas/v1/event.yaml": {
+    "mtime": 1785063357.784246,
+    "ast_hash": "e3822352a5ee8177fe41da3842f1926e",
+    "semantic_hash": ""
+  },
+  "schemas/v1/job.yaml": {
+    "mtime": 1785063357.7830086,
+    "ast_hash": "e782d34664dea36719f784313ff2fa5d",
+    "semantic_hash": ""
+  },
+  "schemas/v1/node.yaml": {
+    "mtime": 1785063357.7822666,
+    "ast_hash": "a6c19d96f39c2176431bf85f040e5a00",
+    "semantic_hash": ""
+  },
+  "schemas/v1/queue_record.yaml": {
+    "mtime": 1773320239.5091403,
+    "ast_hash": "db9c02fc56ff7def6152b3b4986ae634",
+    "semantic_hash": ""
+  },
+  "schemas/v1/result.yaml": {
+    "mtime": 1783079440.635254,
+    "ast_hash": "c04f5c1fddcc4ef3f7cff6a8e53d88c4",
+    "semantic_hash": ""
+  },
+  "schemas/v1/shape_profile.yaml": {
+    "mtime": 1783079440.6353266,
+    "ast_hash": "fc2e679289fa65ecfa04e89144c7d6ff",
+    "semantic_hash": ""
+  },
+  "schemas/v1/task_packet.yaml": {
+    "mtime": 1783079440.6354527,
+    "ast_hash": "ae5238771d6699de6e7889ed6e84b4c1",
+    "semantic_hash": ""
+  },
+  "scripts/README.md": {
+    "mtime": 1785981658.1690133,
+    "ast_hash": "8960277118dae6bf52e6091e6ca5a0c0",
+    "semantic_hash": ""
+  },
+  "templates/draft-node-prompt.md": {
+    "mtime": 1783559111.378878,
+    "ast_hash": "2c3eb77f0c2c2617b6025e9ef4443de8",
+    "semantic_hash": ""
+  },
+  "templates/job-template.yaml": {
+    "mtime": 1783559111.3790224,
+    "ast_hash": "6c662472d8b9b67ceb0683e4de24fa06",
+    "semantic_hash": ""
+  },
+  "templates/node-template.yaml": {
+    "mtime": 1783559111.3791294,
+    "ast_hash": "fec489a7f9ed0ad72fca179122e8ffcd",
+    "semantic_hash": ""
+  }
+}
