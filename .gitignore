@@ -50,6 +50,11 @@ graphify-out/cache/
 # daily hot corpus bundles (local)
 scratch/corpus-daily/
 
+# hot corpus staging — regenerable from the corpus build pipeline
+scratch/corpus-hot/
+scratch/corpus-hot-air-staging/
+scratch/corpus-hot-v1/
+
 # Local corpus vault dump + agent run noise (lean copies live under project-docs/)
 Corpus v1.0/
 .pi-subagents/
