@@ -1,0 +1,31 @@
+{
+  "execution_attempt_id": "job_20260815T0045189219fa28cd0235:attempt:0",
+  "target": {
+    "vm": "khoj-38-b",
+    "service": "http://localhost:42110",
+    "email": "gddp-part1@local",
+    "health_http_status": 200
+  },
+  "requests": [
+    {
+      "id": "q1",
+      "query": "What decision was made about how nodes enter GDDP graphs?",
+      "asked_at": "2026-08-15T00:48:03.099381+00:00",
+      "received_at": "2026-08-15T00:48:03.203895+00:00",
+      "http_status": 500,
+      "response": {
+        "detail": "Set your OpenAI API key or enable Local LLM via Khoj settings."
+      }
+    },
+    {
+      "id": "q2",
+      "query": "Why was the import tool chosen as the only path for nodes to enter GDDP graphs?",
+      "asked_at": "2026-08-15T00:48:03.203924+00:00",
+      "received_at": "2026-08-15T00:48:03.313234+00:00",
+      "http_status": 500,
+      "response": {
+        "detail": "Set your OpenAI API key or enable Local LLM via Khoj settings."
+      }
+    }
+  ]
+}
