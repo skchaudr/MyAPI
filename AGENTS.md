@@ -147,3 +147,17 @@ Do not report completion if any of these are true:
 
 The standard is: the next agent can clone/pull, read this file, run the listed
 commands, and continue without first becoming a repository janitor.
+
+## Part 1 stage rooms (ICM routing)
+
+Minimal filesystem map for MyAPI Part 1 (decisions → corpus → Khoj → eval):
+
+| Room | Path | Start here |
+|---|---|---|
+| Decisions | `01-decisions/` | `01-decisions/CONTEXT.md`; schema at `01-decisions/output/decision-schema.md` |
+| Corpus | `02-corpus/` | `02-corpus/CONTEXT.md` |
+| Ingestion | `03-ingestion/` | `03-ingestion/CONTEXT.md` |
+| Evaluation | `04-evaluation/` | `04-evaluation/CONTEXT.md` |
+
+Read the room `CONTEXT.md` before working in that stage. Do not invent task
+contracts or later-stage content ahead of the active node.
