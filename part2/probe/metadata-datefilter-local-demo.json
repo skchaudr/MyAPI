@@ -1,0 +1,15 @@
+{
+  "implementation": "local copy of khoj 1.42.10 DateFilter.extract_dates / get_filter_terms regexes; dateparser/dateutil not imported",
+  "source_file": "03-ingestion/output/khoj-corpus/D09.md",
+  "frontmatter_extracted_dates": [
+    "2026-08-08"
+  ],
+  "body_extracted_dates": [
+    "2026-08-08"
+  ],
+  "q1_filter_terms": [],
+  "dt_syntax_filter_terms": [
+    "dt>='2026-08-08'",
+    "dt<='2026-08-08'"
+  ]
+}

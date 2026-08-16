@@ -1,0 +1,36 @@
+{
+  "source": "04-evaluation/results/raw-search-responses.json + q3/q4 embedded JSON",
+  "n_results_analyzed": 20,
+  "frontmatter_entry_count": 6,
+  "non_frontmatter_entry_count": 14,
+  "union_result_keys": [
+    "additional",
+    "corpus-id",
+    "cross-score",
+    "entry",
+    "score"
+  ],
+  "union_additional_keys": [
+    "compiled",
+    "file",
+    "heading",
+    "source"
+  ],
+  "part2_envelope_keys_in_additional": {},
+  "part2_envelope_keys_in_entry_text": {},
+  "part1_temporal_provenance_in_additional": {},
+  "part1_temporal_provenance_in_entry_text": {
+    "sources": 15,
+    "id": 19,
+    "project": 18,
+    "status": 15,
+    "rationale": 15,
+    "decided_on": 6,
+    "decided_by": 6,
+    "evidence_paths": 6,
+    "schema_version": 6,
+    "review_mark": 6,
+    "confidence": 6
+  },
+  "note": "Counts are presence in returned search objects, not proof of structured consumption."
+}

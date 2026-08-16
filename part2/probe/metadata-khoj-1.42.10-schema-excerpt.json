@@ -1,0 +1,46 @@
+{
+  "package": "khoj",
+  "version": "1.42.10",
+  "wheel": "https://files.pythonhosted.org/packages/fd/30/850869ceb13ec2446b573ee1660ecd620afa45c4dbd96a280f4dbb5949c1/khoj-1.42.10-py3-none-any.whl",
+  "search_response_fields": [
+    "entry",
+    "score",
+    "cross_score",
+    "additional",
+    "corpus_id"
+  ],
+  "search_additional_fields_from_collate_results": [
+    "source",
+    "file",
+    "compiled",
+    "heading"
+  ],
+  "entry_model_fields": [
+    "user",
+    "agent",
+    "embeddings",
+    "raw",
+    "compiled",
+    "heading",
+    "file_source",
+    "file_type",
+    "file_path",
+    "file_name",
+    "url",
+    "hashed_value",
+    "corpus_id",
+    "search_model",
+    "file_object"
+  ],
+  "entry_dates_model_fields": [
+    "date",
+    "entry"
+  ],
+  "markdown_frontmatter_parser_present": false,
+  "named_envelope_fields_on_entry_model": [],
+  "structured_filters": {
+    "file": "file_path regex via file:\"...\" query syntax",
+    "word": "raw__icontains via +\"word\" / -\"word\"",
+    "date": "embeddings_dates__date via dt>=\"...\" query syntax; dates extracted from compiled text"
+  }
+}

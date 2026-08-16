@@ -1,0 +1,49 @@
+{
+  "query_id": "q1",
+  "query": "What decision was made about how nodes enter GDDP graphs?",
+  "http_status": 200,
+  "body_chunk": {
+    "file": "D09.md",
+    "score": 0.1024263440116423,
+    "corpus_id": "6048f5f1-a203-46c1-9f0e-629a7929da82",
+    "result_keys": [
+      "additional",
+      "corpus-id",
+      "cross-score",
+      "entry",
+      "score"
+    ],
+    "additional_keys": [
+      "compiled",
+      "file",
+      "heading",
+      "source"
+    ],
+    "entry_head": "# D09 \u2014 Nodes enter graphs only via import tool\n\n> Nodes only via import tool\n\n## Decision\n\nNodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\n\n## Rationale\n\nOne write path; prevents silent graph drift and review bypass.\n\n## Record\n\n- **Project:** `GDDP`\n- **Status:** `accepted`\n- **Decided on:** `2026-08-08`\n- **Decided by:** Sab\n\n## Sources\n\n- `review_sheet` `project-docs/corpus-work-2026-08/DECISIONS-REVIEW-SHEET.md` \u2014 inclusion and status authority. Q",
+    "compiled_head": "# D09.md\n## D09 \u2014 Nodes enter graphs only via import tool\n\n> Nodes only via import tool\n\n## Decision\n\nNodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\n\n## Rationale\n\nOne write path; prevents silent graph drift and review bypass.\n\n## Record\n\n- **Project:** `GDDP`\n- **Status:** `accepted`\n- **Decided on:** `2026-08-08`\n- **Decided by:** Sab\n\n## Sources\n\n- `",
+    "heading": "# D09.md\n## D09 \u2014 Nodes enter graphs only via import tool",
+    "source": "computer"
+  },
+  "frontmatter_chunk": {
+    "file": "D09.md",
+    "score": 0.14321408948730352,
+    "corpus_id": "0c91bccc-0b20-48e2-b170-9e4dba1fa13a",
+    "result_keys": [
+      "additional",
+      "corpus-id",
+      "cross-score",
+      "entry",
+      "score"
+    ],
+    "additional_keys": [
+      "compiled",
+      "file",
+      "heading",
+      "source"
+    ],
+    "entry": "---\nid: \"D09\"\nschema_version: \"1.0\"\nproject: \"GDDP\"\ntitle: \"Nodes enter graphs only via import tool\"\nsummary: \"Nodes only via import tool\"\nstatement: \"Nodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\"\nstatus: \"accepted\"\nrationale: \"One write path; prevents silent graph drift and review bypass.\"\ndecided_on: \"2026-08-08\"\ndecided_by: \"Sab\"\nsources:\n  -\n    kind: \"review_sheet\"\n    ref: \"project-docs/corpus-work-2026-08/DECISIONS-REVIEW-SHEET.md\"\n    note: \"inclusion and status authority. Quote: D09 | Y | Nodes only via import tool\"\n  -\n    kind: \"memo\"\n    ref: \"project-docs/corpus-work-2026-08/2026-08-08-last2w-decisions.md\"\n    note: \"repo-local decision wording. Quote: Nodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\"\n  -\n    kind: \"other\"\n    ref: \"/Users/sab-mini/repos/MyAPI/Corpus v1.0/40-decisions-and-trajectories/2026-08-08-last2w-decisions.md\"\n    note: \"byte-identical parity witness for the decision wording. SHA-256 4124f8001b656d913e0ac7f4ba0c3737ba7199af94d94e462c481e20e41a5558. Quote: Nodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\"\nevidence_paths:\n  - \"project-docs/corpus-work-2026-08/2026-08-08-last2w-decisions.md\"\n  - \"project-docs/corpus-work-2026-08/DECISIONS-REVIEW-SHEET.md\"\nconfidence: \"high\"\nreview_mark: \"Y\"\n---\n",
+    "compiled": "# D09.md\n---\nid: \"D09\"\nschema_version: \"1.0\"\nproject: \"GDDP\"\ntitle: \"Nodes enter graphs only via import tool\"\nsummary: \"Nodes only via import tool\"\nstatement: \"Nodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\"\nstatus: \"accepted\"\nrationale: \"One write path; prevents silent graph drift and review bypass.\"\ndecided_on: \"2026-08-08\"\ndecided_by: \"Sab\"\nsources:\n  -\n    kind: \"review_sheet\"\n    ref: \"project-docs/corpus-work-2026-08/DECISIONS-REVIEW-SHEET.md\"\n    note: \"inclusion and status authority. Quote: D09 | Y | Nodes only via import tool\"\n  -\n    kind: \"memo\"\n    ref: \"project-docs/corpus-work-2026-08/2026-08-08-last2w-decisions.md\"\n    note: \"repo-local decision wording. Quote: Nodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\"\n  -\n    kind: \"other\"\n    ref: \"/Users/sab-mini/repos/MyAPI/Corpus v1.0/40-decisions-and-trajectories/2026-08-08-last2w-decisions.md\"\n    note: \"byte-identical parity witness for the decision wording. SHA-256 4124f8001b656d913e0ac7f4ba0c3737ba7199af94d94e462c481e20e41a5558. Quote: Nodes enter graphs only through the import tool. No hand-authored graph mutation shortcuts.\"\nevidence_paths:\n  - \"project-docs/corpus-work-2026-08/2026-08-08-last2w-decisions.md\"\n  - \"project-docs/corpus-work-2026-08/DECISIONS-REVIEW-SHEET.md\"\nconfidence: \"high\"\nreview_mark: \"Y\"\n---",
+    "heading": "# D09.md\n",
+    "source": "computer"
+  }
+}
