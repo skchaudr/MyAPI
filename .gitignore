@@ -49,3 +49,9 @@ ops/do-sprint/secrets/
 .remember/
 
 .venv/
+
+# Local corpus vault dump + agent run noise (lean copies live under project-docs/)
+Corpus v1.0/
+.pi-subagents/
+.pi/
+.obsidian/
