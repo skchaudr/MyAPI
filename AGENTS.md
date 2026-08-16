@@ -3,20 +3,18 @@
 Personal context engine rebuild. MyAPI maintains an evidence-backed Decision
 Graph and serves current project intent as ContextBriefs through MCP.
 
-Read [`docs/decision-object-is-born-8.10.26.md`](docs/decision-object-is-born-8.10.26.md)
-and [`IMPLEMENTATION-PLAN.md`](IMPLEMENTATION-PLAN.md) first in any cold session.
-The canonical language lives in [`CONTEXT.md`](CONTEXT.md). Earlier substrate and
-history remain in [`project-docs/REBUILD-CONTEXT-ANCHOR.md`](project-docs/REBUILD-CONTEXT-ANCHOR.md),
+Read the Part 1 room `CONTEXT.md` for the stage you are in (`01-decisions` …
+`04-evaluation`). Canonical language lives in [`CONTEXT.md`](CONTEXT.md).
+Earlier substrate remains in [`project-docs/REBUILD-CONTEXT-ANCHOR.md`](project-docs/REBUILD-CONTEXT-ANCHOR.md),
 [`project-docs/ARCHITECTURE.md`](project-docs/ARCHITECTURE.md), and
-[`PROJECT-BRIEF.md`](PROJECT-BRIEF.md).
+[`PROJECT-BRIEF.md`](PROJECT-BRIEF.md). The M1–M8 Decision Graph plan and
+fixture evals are archived at [`project-docs/archive-pre-part2/`](project-docs/archive-pre-part2/).
 
 ## Phase
 
-The Decision Graph direction is accepted. Execute M1 through M8 from
-`IMPLEMENTATION-PLAN.md` in order, beginning with the frozen MyAPI Decision
-evaluation set. MyAPI-rebuild is the first subject corpus, and execution starts
-directly in this repository. Do not invent run/test/lint commands for new rebuild
-surfaces until the repo adds them.
+Part 1 (decisions → corpus → Khoj → eval) is on this branch. Part 2 drops
+next in the same room format. Do not invent run/test/lint commands for new
+rebuild surfaces until the repo adds them.
 
 ## Project snapshot
 
@@ -35,8 +33,8 @@ surfaces until the repo adds them.
 - **MCP surface (target):** `get_project_context`, `get_person_context` —
   the anchor locks these two names; do not fork into `get_user_context` /
   "operator context"
-- **Key dirs:** `project-docs/`, `.handoffs/`, `graphify-out/`, `evals/`,
-  `ingest/`, `rag-pipeline/` (sub-agent contracts)
+- **Key dirs:** `01-decisions/` … `04-evaluation/`, `project-docs/`,
+  `.handoffs/`, `graphify-out/`, `ingest/`, `rag-pipeline/`
 
 ## Command location rules
 
