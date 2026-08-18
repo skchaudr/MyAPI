@@ -26,7 +26,8 @@ async def import_obsidian(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="Only .md files are supported for Obsidian import.")
 
     with tempfile.NamedTemporaryFile(suffix=".md", delete=False) as tmp:
-        tmp.write(await file.read())
+        while chunk := await file.read(1024 * 1024):
+            tmp.write(chunk)
         tmp_path = tmp.name
 
     try:
@@ -51,7 +52,11 @@ async def import_chatgpt(file: UploadFile = File(...)):
     if not file.filename.endswith(".json"):
         raise HTTPException(status_code=400, detail="Only .json files are supported for ChatGPT import.")
 
-    content = await file.read()
+    content = bytearray()
+    while chunk := await file.read(1024 * 1024):
+        content.extend(chunk)
+        if len(content) > 50 * 1024 * 1024:
+            raise HTTPException(status_code=413, detail="File too large")
     try:
         data = json.loads(content)
     except json.JSONDecodeError:
