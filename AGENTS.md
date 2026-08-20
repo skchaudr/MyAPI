@@ -1,19 +1,20 @@
 # AGENTS.md — MyAPI / MyAPI-rebuild
 
-Personal context engine rebuild. A vault of durable handoffs surfaced as
-context briefs via MCP — not v0's single RAG pool.
+Personal context engine rebuild. MyAPI maintains an evidence-backed Decision
+Graph and serves current project intent as ContextBriefs through MCP.
 
-Read [`project-documents/REBUILD-CONTEXT-ANCHOR.md`](project-documents/REBUILD-CONTEXT-ANCHOR.md)
-first in any cold session — it locks the paradigm, glossary, and direction
-so origin/naming don't get re-litigated. Build plan:
-[`project-documents/ARCHITECTURE.md`](project-documents/ARCHITECTURE.md).
-Project brief: [`PROJECT-BRIEF.md`](PROJECT-BRIEF.md).
+Read the Part 1 room `CONTEXT.md` for the stage you are in (`01-decisions` …
+`04-evaluation`). Canonical language lives in [`CONTEXT.md`](CONTEXT.md).
+Earlier substrate remains in [`project-docs/REBUILD-CONTEXT-ANCHOR.md`](project-docs/REBUILD-CONTEXT-ANCHOR.md),
+[`project-docs/ARCHITECTURE.md`](project-docs/ARCHITECTURE.md), and
+[`PROJECT-BRIEF.md`](PROJECT-BRIEF.md). The M1–M8 Decision Graph plan and
+fixture evals are archived at [`project-docs/archive-pre-part2/`](project-docs/archive-pre-part2/).
 
 ## Phase
 
-Planning / docs-first rebuild work is now merged toward `main`. Do not invent
-run/test/lint commands for new rebuild surfaces until the repo adds them.
-Work order is traces → golden briefs → reader → MCP, in that sequence.
+Part 1 (decisions → corpus → Khoj → eval) is on this branch. Part 2 drops
+next in the same room format. Do not invent run/test/lint commands for new
+rebuild surfaces until the repo adds them.
 
 ## Project snapshot
 
@@ -32,8 +33,8 @@ Work order is traces → golden briefs → reader → MCP, in that sequence.
 - **MCP surface (target):** `get_project_context`, `get_person_context` —
   the anchor locks these two names; do not fork into `get_user_context` /
   "operator context"
-- **Key dirs:** `project-documents/`, `handoffs/`, `graphify-out/`, `evals/`,
-  `ingest/`, `rag-pipeline/` (sub-agent contracts)
+- **Key dirs:** `01-decisions/` … `04-evaluation/`, `project-docs/`,
+  `.handoffs/`, `graphify-out/`, `ingest/`, `rag-pipeline/`
 
 ## Command location rules
 

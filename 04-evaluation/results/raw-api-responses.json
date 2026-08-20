@@ -1,31 +1,7 @@
 {
-  "execution_attempt_id": "job_20260815T0045189219fa28cd0235:attempt:0",
-  "target": {
-    "vm": "khoj-38-b",
-    "service": "http://localhost:42110",
-    "email": "gddp-part1@local",
-    "health_http_status": 200
-  },
-  "requests": [
-    {
-      "id": "q1",
-      "query": "What decision was made about how nodes enter GDDP graphs?",
-      "asked_at": "2026-08-15T00:48:03.099381+00:00",
-      "received_at": "2026-08-15T00:48:03.203895+00:00",
-      "http_status": 500,
-      "response": {
-        "detail": "Set your OpenAI API key or enable Local LLM via Khoj settings."
-      }
-    },
-    {
-      "id": "q2",
-      "query": "Why was the import tool chosen as the only path for nodes to enter GDDP graphs?",
-      "asked_at": "2026-08-15T00:48:03.203924+00:00",
-      "received_at": "2026-08-15T00:48:03.313234+00:00",
-      "http_status": 500,
-      "response": {
-        "detail": "Set your OpenAI API key or enable Local LLM via Khoj settings."
-      }
-    }
-  ]
+  "q1": "Nodes can only enter GDDP graphs through the import tool. There are no shortcuts for hand-authored graph mutations [1, 2]. This decision was made to ensure a single write path, which prevents silent graph drift and bypasses review processes [1, 2].",
+  "q2": "The import tool was chosen as the sole path for nodes to enter GDDP graphs to ensure a \"single write path\" [1, 2]. This approach prevents \"silent graph drift\" and ensures that all changes go through proper \"review processes\" [1, 2]. In essence, it's about maintaining data integrity and control over how the graph evolves.",
+  "q3": "The decision that nodes enter GDDP graphs only via the import tool (D09) was made to establish a single write path, preventing silent graph drift and bypassing review processes [1]. This decision was made on 2026-08-08 by Sab and is currently accepted [1].\n\nRegarding which decision replaced an earlier one, your notes do not explicitly state that D09 replaced a previous decision. However, the collection of decisions (D01-D18) represents the current state of accepted practices for the GDDP project [2, 3]. It's possible that D09 formalized a process where a less structured approach might have existed before, but your notes don't detail such a replacement.",
+  "q4": "Based on your notes, there is one explicit relationship between decisions:\n\n*   **D18 \u2014 No load-bearing unverified assumptions** is a **companion** rule to **D17 \u2014 Read code before new machinery** [1]. The rationale for D18 explicitly states this relationship, noting that D18 \"compounds with multi-agent proposal chains\" [1].\n\nWhile other decisions might logically influence or build upon each other, D18 and D17 are the only pair where your notes explicitly define a relationship.",
+  "q5": "I'm sorry, but I don't have any information about the color of Sab's front door on January 1, 2010, or any other date. My knowledge is limited to the notes and conversations we've had."
 }
