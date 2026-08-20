@@ -163,3 +163,21 @@ v0 put Obsidian + chat exports + CLI sessions into **one retrieval pool** and ho
 ## Next session starter
 
 > Read `REBUILD-CONTEXT-ANCHOR.md` and `ARCHITECTURE.md`. Product = vault of durable handoffs (Ascend theme). Path: traces → golden briefs → reader → MCP. Do not re-litigate origin or Codex derail.
+---
+
+## Dated extension — 2026-08-19 (additive; all content above preserved)
+
+Added by node-03 anchor assessment (`part2/layers/anchor/anchor-assessment.md`),
+which found this anchor's orientation stale on four points. Current direction:
+
+- **Active repo is `~/repos/MyAPI` (main)** — carries Part 1 results and Part 2
+  layers (`part2/layers/`). `~/repos/MyAPI-rebuild/` holds the
+  codex/myapi-decision-plan branch (local chat baseline).
+- **Khoj runs on the mini** — `localhost:42110`, local postgres, chat path via
+  OpenRouter; isolated Part 1 corpus user `gddp-part1@local`.
+- **Part 2 experiment governs** — six source classes under test, including git
+  evidence and graphify. This supersedes the 2026-06-21 "do not ingest commit
+  history" rule for the experiment's duration (memo:
+  gddp-config/docs/GDDPvMyAPI-Part2.md).
+- **Graph numbers** — 53,573 nodes / 73,117 links @ d82a5ea (2026-08-08), not
+  862/2186; ARCHITECTURE.md lives at `project-docs/ARCHITECTURE.md`.
