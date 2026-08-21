@@ -4,6 +4,10 @@
 Build a fresh, reproducible corpus snapshot from validated decision objects.
 Corpus is derived from decisions — not a bulk vault dump.
 
+Ok so the shape is not a "bulk vault dump" - then what is the shape? - Sab 
+
+Reading the rest of this file, it's not clear what the shape is; it's not a bulk dump, just a focused targeted "dump" - how do these decision objects make up the structure of this corpus/project knowledge?  
+
 ## Consumes
 - Validated decision objects from `01-decisions/output/`
 - Schema rules in `01-decisions/output/decision-schema.md`
