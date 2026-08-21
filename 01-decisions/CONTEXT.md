@@ -1,5 +1,7 @@
 # 01-decisions — Stage A/B/C room
 
+This needs to be re-done for clarity on what directionally sounds great but sounds lost all the same - Sab  
+
 ## Purpose
 Canonical decision-object work for MyAPI Part 1. Define the schema, then
 extract/normalize/validate decision objects from authoritative sources.
