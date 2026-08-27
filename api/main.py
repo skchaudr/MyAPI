@@ -1,12 +1,27 @@
 import os
+import secrets
+import logging
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends, HTTPException, Security
+from fastapi.security import APIKeyHeader
 from fastapi.middleware.cors import CORSMiddleware
 from api.observability import init_sentry
 from api.routers import enrich, imports, query, meta
 from api import db
 
+logger = logging.getLogger(__name__)
 init_sentry()
+
+api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
+
+def verify_admin_key(api_key: str = Security(api_key_header)):
+    expected_key = os.environ.get("ADMIN_API_KEY")
+    if not expected_key:
+        logger.error("ADMIN_API_KEY environment variable is not set. Failing securely.")
+        raise HTTPException(status_code=500, detail="Internal server error")
+
+    if not api_key or not secrets.compare_digest(api_key, expected_key):
+        raise HTTPException(status_code=401, detail="Unauthorized")
 
 app = FastAPI(title="Context Refinery API", version="1.0.0")
 
@@ -31,6 +46,11 @@ app.include_router(meta.router)
 
 @app.get("/health")
 def health():
+    return {"status": "ok"}
+
+
+@app.get("/admin/info", dependencies=[Depends(verify_admin_key)])
+def admin_info():
     from context_refinery.services import GeminiService
 
     svc = GeminiService()
@@ -48,6 +68,6 @@ def health():
 
 
 if os.getenv("ENABLE_SENTRY_TEST_ENDPOINT") == "1":
-    @app.get("/debug/sentry-test")
+    @app.get("/debug/sentry-test", dependencies=[Depends(verify_admin_key)])
     def sentry_test():
         raise RuntimeError("MyAPI Sentry smoke test")
