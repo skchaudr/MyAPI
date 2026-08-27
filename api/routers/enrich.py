@@ -28,6 +28,7 @@ async def enrich_content(request: EnrichRequest):
                 detail="Gemini not configured (set GEMINI_API_KEY or Vertex ADC)",
             )
         logger.error("Enrichment error", exc_info=True)
+        # SECURITY: Do not expose raw exception strings to the client to prevent internal information leakage.
         raise HTTPException(status_code=500, detail="An internal server error occurred")
 
 
@@ -53,6 +54,7 @@ async def enrich_batch(request: BatchEnrichRequest):
                     detail="Gemini not configured (set GEMINI_API_KEY or Vertex ADC)",
                 )
             logger.error("Batch enrichment error at index %s", i, exc_info=True)
+            # SECURITY: Do not expose raw exception strings to the client to prevent internal information leakage.
             results.append(
                 EnrichResult(index=i, status="error", error="An internal server error occurred")
             )
