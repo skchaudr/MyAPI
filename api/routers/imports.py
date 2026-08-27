@@ -14,6 +14,8 @@ from typing import Optional
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
+MAX_FILE_SIZE = 50 * 1024 * 1024  # 50 MB
+
 class CodexImportRequest(BaseModel):
     root: Optional[str] = "~/.codex/command-logs"
 
@@ -26,7 +28,13 @@ async def import_obsidian(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="Only .md files are supported for Obsidian import.")
 
     with tempfile.NamedTemporaryFile(suffix=".md", delete=False) as tmp:
-        tmp.write(await file.read())
+        total_size = 0
+        while chunk := await file.read(1024 * 1024):
+            total_size += len(chunk)
+            if total_size > MAX_FILE_SIZE:
+                os.remove(tmp.name)
+                raise HTTPException(status_code=413, detail="File too large")
+            tmp.write(chunk)
         tmp_path = tmp.name
 
     try:
@@ -51,9 +59,16 @@ async def import_chatgpt(file: UploadFile = File(...)):
     if not file.filename.endswith(".json"):
         raise HTTPException(status_code=400, detail="Only .json files are supported for ChatGPT import.")
 
-    content = await file.read()
+    content_chunks = bytearray()
+    total_size = 0
+    while chunk := await file.read(1024 * 1024):
+        total_size += len(chunk)
+        if total_size > MAX_FILE_SIZE:
+            raise HTTPException(status_code=413, detail="File too large")
+        content_chunks.extend(chunk)
+
     try:
-        data = json.loads(content)
+        data = json.loads(content_chunks)
     except json.JSONDecodeError:
         raise HTTPException(status_code=422, detail="Invalid JSON file.")
 
