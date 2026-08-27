@@ -52,6 +52,13 @@ def test_infer_source_type_for_codex_sessions_from_adapter_and_path():
     )
 
 
+
+def test_infer_source_type_unknown_path_returns_note():
+    assert infer_source_type("/Users/sab-mini/unknown/path/random.md") == "note"
+    assert infer_source_type("/Users/sab-mini/unknown/path/random.md", adapter="unknown_adapter") == "note"
+    assert infer_source_type("just_some_random_file.txt", adapter=None) == "note"
+
+
 def test_infer_temporal_mode_defaults():
     assert infer_temporal_mode("cli_session") == "episodic"
     assert infer_temporal_mode("conversation") == "episodic"
