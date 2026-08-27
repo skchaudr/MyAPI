@@ -1,3 +1,4 @@
+import asyncio
 import json
 import logging
 import tempfile
@@ -26,7 +27,9 @@ async def import_obsidian(file: UploadFile = File(...)):
         raise HTTPException(status_code=400, detail="Only .md files are supported for Obsidian import.")
 
     with tempfile.NamedTemporaryFile(suffix=".md", delete=False) as tmp:
-        tmp.write(await file.read())
+        loop = asyncio.get_running_loop()
+        while chunk := await file.read(1024 * 1024):
+            await loop.run_in_executor(None, tmp.write, chunk)
         tmp_path = tmp.name
 
     try:
@@ -51,9 +54,16 @@ async def import_chatgpt(file: UploadFile = File(...)):
     if not file.filename.endswith(".json"):
         raise HTTPException(status_code=400, detail="Only .json files are supported for ChatGPT import.")
 
-    content = await file.read()
+    MAX_SIZE = 50 * 1024 * 1024
+    content = bytearray()
+
+    while chunk := await file.read(1024 * 1024):
+        content.extend(chunk)
+        if len(content) > MAX_SIZE:
+            raise HTTPException(status_code=413, detail="File too large. Maximum size is 50MB.")
+
     try:
-        data = json.loads(content)
+        data = json.loads(content.decode("utf-8"))
     except json.JSONDecodeError:
         raise HTTPException(status_code=422, detail="Invalid JSON file.")
 
