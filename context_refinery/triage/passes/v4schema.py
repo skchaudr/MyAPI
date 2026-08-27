@@ -274,7 +274,7 @@ def _mark_needs_title(record: dict) -> None:
 def _show_card(index: int, total: int, rel_path: str, record: dict, missing: list[str], issues: dict[str, str]):
     title = (record.get("title") or Path(rel_path).stem).strip()
     needs = []
-    for field in ["type", "status", "area", "project", "concepts", "tags"]:
+    for field in ("type", "status", "area", "project", "concepts", "tags"):
         if field in issues:
             needs.append(f"[yellow]{field}[/yellow]: {issues[field]}  [dim]current: {_compact_value(record.get(field))}[/dim]")
         elif field in missing:
