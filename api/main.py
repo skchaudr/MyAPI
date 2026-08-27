@@ -1,7 +1,9 @@
 import os
+import secrets
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import APIKeyHeader
 from api.observability import init_sentry
 from api.routers import enrich, imports, query, meta
 from api import db
@@ -29,8 +31,22 @@ app.include_router(meta.router)
 # export.py is retired — export is now client-side via exportService.ts
 
 
+api_key_header = APIKeyHeader(name="X-API-Key")
+
+def verify_admin_api_key(api_key: str = Depends(api_key_header)):
+    expected_api_key = os.environ.get("ADMIN_API_KEY")
+    if not expected_api_key:
+        raise HTTPException(status_code=500, detail="Internal Server Error")
+    if not secrets.compare_digest(api_key, expected_api_key):
+        raise HTTPException(status_code=401, detail="Invalid API Key")
+    return api_key
+
 @app.get("/health")
 def health():
+    return {"status": "ok"}
+
+@app.get("/admin/info", dependencies=[Depends(verify_admin_api_key)])
+def admin_info():
     from context_refinery.services import GeminiService
 
     svc = GeminiService()
