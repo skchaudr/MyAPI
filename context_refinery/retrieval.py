@@ -1379,5 +1379,9 @@ def _parse_date(date_str):
 
     # Handle full ISO timestamps
     # Python 3.10 doesn't support datetime.fromisoformat with Z suffix
-    date_str = date_str.replace("Z", "+00:00")
-    return datetime.fromisoformat(date_str)
+    if date_str.endswith("Z"):
+        date_str = date_str[:-1] + "+00:00"
+    dt = datetime.fromisoformat(date_str)
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
