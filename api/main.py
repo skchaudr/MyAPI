@@ -1,6 +1,9 @@
 import os
 
 from fastapi import FastAPI
+import secrets
+from fastapi import Depends, HTTPException, status
+from fastapi.security import APIKeyHeader
 from fastapi.middleware.cors import CORSMiddleware
 from api.observability import init_sentry
 from api.routers import enrich, imports, query, meta
@@ -29,7 +32,23 @@ app.include_router(meta.router)
 # export.py is retired — export is now client-side via exportService.ts
 
 
-@app.get("/health")
+
+api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
+
+def verify_health_api_key(api_key: str = Depends(api_key_header)):
+    expected_key = os.environ.get("HEALTH_API_KEY")
+    if not expected_key:
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.error("HEALTH_API_KEY is not configured on the server")
+        raise HTTPException(status_code=500, detail="An internal server error occurred")
+    if not api_key or not secrets.compare_digest(api_key, expected_key):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or missing API Key",
+        )
+
+@app.get("/health", dependencies=[Depends(verify_health_api_key)])
 def health():
     from context_refinery.services import GeminiService
 
